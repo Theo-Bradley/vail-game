@@ -2,21 +2,6 @@
 *.gen.*
 .godot/
 
-# Ignore library files but not the gdextension file
-demo/bin/*
-!demo/bin/android
-demo/bin/android/*
-!demo/bin/android/.gitkeep
-!demo/bin/linux
-demo/bin/linux/*
-!demo/bin/linux/.gitkeep
-!demo/bin/macos
-demo/bin/macos/*
-!demo/bin/macos/.gitkeep
-!demo/bin/windows
-demo/bin/windows/*
-!demo/bin/windows/.gitkeep
-!demo/bin/*.gdextension
 .sconsign*.dblite
 
 # Ignore custom.py
@@ -30,9 +15,9 @@ compile_commands.json
 
 # Binaries
 *.o
+*.obj
 *.os
 *.so
-*.obj
 *.bc
 *.pyc
 *.dblite
@@ -51,6 +36,7 @@ compile_commands.json
 
 # VSCode
 .vscode/*
+.vs
 !.vscode/extensions.json
 .DS_Store
 
@@ -60,3 +46,10 @@ compile_commands.json
 # Cmake
 cmake-build*
 CMakeUserPresets.json
+
+#additional ignores
+.vs/*
+*.exe
+*.key
+*.pem
+*.pub

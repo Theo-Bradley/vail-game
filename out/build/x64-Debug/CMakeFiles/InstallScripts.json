@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug/cmake_install.cmake",
+		"C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug/godot-cpp/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

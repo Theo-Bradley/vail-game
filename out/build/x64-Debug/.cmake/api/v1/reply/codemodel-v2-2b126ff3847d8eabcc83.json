@@ -1,0 +1,120 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.17"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"build" : "godot-cpp",
+					"jsonFile" : "directory-godot-cpp-Debug-f3111bd4697ae0e37c98.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "godot-cpp",
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "godot-cpp-template",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "godot-cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "EXTENSION-NAME::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EXTENSION-NAME-Debug-51502f3ee4280f8a8eed.json",
+					"name" : "EXTENSION-NAME",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "generate_bindings::@4487305cb972aeb5fb22",
+					"jsonFile" : "target-generate_bindings-Debug-0bf9385a566d6c098eef.json",
+					"name" : "generate_bindings",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "generate_doc_source::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-generate_doc_source-Debug-924138149ffcef9626ef.json",
+					"name" : "generate_doc_source",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "godot-cpp::@4487305cb972aeb5fb22",
+					"jsonFile" : "target-godot-cpp-Debug-b369f9169aa59fac3311.json",
+					"name" : "godot-cpp",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug",
+		"source" : "C:/Users/fab/Projects/Vail Game/remote/vail-game"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
