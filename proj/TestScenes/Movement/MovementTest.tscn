@@ -16,21 +16,16 @@ size = Vector3(2009.9299, 0.7462891, 20)
 [node name="PlayerParent" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
-[node name="PlayerMovement" type="PlayerMovement" parent="PlayerParent" node_paths=PackedStringArray("Player Controller")]
-"Move Speed" = 5.0
-"Move Acceleration" = 15.0
-"Moving Friction" = 0.67
-"Player Controller" = NodePath("PlayerRigidBody")
+[node name="PlayerMovement" type="PlayerMovement" parent="PlayerParent"]
+"Move Speed" = 6.0
+"Move Acceleration" = 50.0
+"Moving Friction" = 0.45
 
-[node name="PlayerRigidBody" type="CharacterBody3D" parent="PlayerParent/PlayerMovement"]
-axis_lock_angular_x = true
-axis_lock_angular_z = true
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerParent/PlayerMovement/PlayerRigidBody"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerParent/PlayerMovement"]
 mesh = SubResource("BoxMesh_ufdv6")
-skeleton = NodePath("../../..")
+skeleton = NodePath("../..")
 
-[node name="MovementHitbox" type="CollisionShape3D" parent="PlayerParent/PlayerMovement/PlayerRigidBody"]
+[node name="MovementHitbox" type="CollisionShape3D" parent="PlayerParent/PlayerMovement"]
 shape = SubResource("CapsuleShape3D_ufdv6")
 
 [node name="Ground" type="Node3D" parent="."]

@@ -5,11 +5,13 @@
 #include "godot_cpp/variant/variant.hpp"
 #include "godot_cpp/classes/character_body3d.hpp"
 #include "godot_cpp/classes/input.hpp"
+#include "godot_cpp/classes/scene_tree.hpp"
+#include "godot_cpp/classes/scene_tree_timer.hpp"
 
 using namespace godot;
 
-class PlayerMovement : public Node3D {
-	GDCLASS(PlayerMovement, Node3D)
+class PlayerMovement : public CharacterBody3D {
+	GDCLASS(PlayerMovement, CharacterBody3D)
 
 protected:
 	static void _bind_methods();
@@ -19,10 +21,6 @@ public:
 	~PlayerMovement() override = default;
 	void _process(double delta);
 	void _physics_process(double delta);
-
-	CharacterBody3D* pc = nullptr;
-	CharacterBody3D* get_pc();
-	void set_pc(CharacterBody3D* ptr);
 
 	void print_type(const Variant &p_variant) const;
 
