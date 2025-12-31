@@ -2,13 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/fab/Projects/Vail Game/remote/vail-game/bin/windows/EXTENSION-NAME.windows.template_debug.x86_64.dll"
+			"path" : "C:/Users/fab/Projects/Vail Game/remote/vail-game/bin/windows/cpp.windows.template_debug.x86_64.dll"
 		},
 		{
-			"path" : "EXTENSION-NAME.windows.template_debug.x86_64.lib"
+			"path" : "cpp.windows.template_debug.x86_64.lib"
 		},
 		{
-			"path" : "C:/Users/fab/Projects/Vail Game/remote/vail-game/bin/windows/EXTENSION-NAME.windows.template_debug.x86_64.pdb"
+			"path" : "C:/Users/fab/Projects/Vail Game/remote/vail-game/bin/windows/cpp.windows.template_debug.x86_64.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -101,9 +101,6 @@
 					"define" : "DEBUG_ENABLED"
 				},
 				{
-					"define" : "EXTENSION_NAME_EXPORTS"
-				},
-				{
 					"backtrace" : 2,
 					"define" : "GDEXTENSION"
 				},
@@ -130,6 +127,9 @@
 				{
 					"backtrace" : 2,
 					"define" : "_HAS_EXCEPTIONS=0"
+				},
+				{
+					"define" : "cpp_EXPORTS"
 				}
 			],
 			"includes" : 
@@ -170,15 +170,15 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 2,
-			"id" : "godot-cpp::@4487305cb972aeb5fb22"
-		},
-		{
 			"backtrace" : 4,
 			"id" : "generate_doc_source::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "godot-cpp::@4487305cb972aeb5fb22"
 		}
 	],
-	"id" : "EXTENSION-NAME::@6890427a1f51a3e7e1df",
+	"id" : "cpp::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -204,8 +204,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "EXTENSION-NAME",
-	"nameOnDisk" : "EXTENSION-NAME.windows.template_debug.x86_64.dll",
+	"name" : "cpp",
+	"nameOnDisk" : "cpp.windows.template_debug.x86_64.dll",
 	"paths" : 
 	{
 		"build" : ".",

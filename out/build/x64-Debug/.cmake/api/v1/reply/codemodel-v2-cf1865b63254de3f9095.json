@@ -77,9 +77,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "EXTENSION-NAME::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-EXTENSION-NAME-Debug-51502f3ee4280f8a8eed.json",
-					"name" : "EXTENSION-NAME",
+					"id" : "cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp-Debug-25afadb8b92718575666.json",
+					"name" : "cpp",
 					"projectIndex" : 0
 				},
 				{

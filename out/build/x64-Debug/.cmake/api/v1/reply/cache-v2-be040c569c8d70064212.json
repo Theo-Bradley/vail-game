@@ -1307,11 +1307,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "The directory of a Godot project folder"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
-			"value" : "demo"
+			"value" : "proj"
 		},
 		{
 			"name" : "LIBNAME",
@@ -1319,11 +1319,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "The name of the library"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
-			"value" : "EXTENSION-NAME"
+			"value" : "cpp"
 		},
 		{
 			"name" : "_Python3_Compiler_REASON_FAILURE",

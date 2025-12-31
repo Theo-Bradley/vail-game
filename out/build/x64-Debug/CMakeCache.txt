@@ -258,11 +258,11 @@ GODOTCPP_USE_STATIC_CPP:BOOL=ON
 //Treat warnings as errors
 GODOTCPP_WARNING_AS_ERROR:BOOL=OFF
 
-//The directory of a Godot project folder
-GODOT_PROJECT_DIR:STRING=demo
+//No help, variable specified on the command line.
+GODOT_PROJECT_DIR:STRING=proj
 
-//The name of the library
-LIBNAME:STRING=EXTENSION-NAME
+//No help, variable specified on the command line.
+LIBNAME:STRING=cpp
 
 //Value Computed by CMake
 godot-cpp-template_BINARY_DIR:STATIC=C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug

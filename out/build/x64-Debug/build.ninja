@@ -41,65 +41,65 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\out\build\x64-Debug\
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target EXTENSION-NAME
+# Object build statements for SHARED_LIBRARY target cpp
 
 
 #############################################
-# Order-only phony target for EXTENSION-NAME
+# Order-only phony target for cpp
 
-build cmake_object_order_depends_target_EXTENSION-NAME: phony || cmake_object_order_depends_target_godot-cpp gen\doc_source.cpp generate_doc_source
+build cmake_object_order_depends_target_cpp: phony || cmake_object_order_depends_target_godot-cpp gen\doc_source.cpp generate_doc_source
 
-build CMakeFiles\EXTENSION-NAME.dir\src\register_types.cpp.obj: CXX_COMPILER__EXTENSION-NAME_unscanned_Debug C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\src\register_types.cpp || cmake_object_order_depends_target_EXTENSION-NAME
+build CMakeFiles\cpp.dir\src\register_types.cpp.obj: CXX_COMPILER__cpp_unscanned_Debug C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\src\register_types.cpp || cmake_object_order_depends_target_cpp
   CONFIG = Debug
-  DEFINES = -DDEBUG_ENABLED -DEXTENSION_NAME_EXPORTS -DGDEXTENSION -DHOT_RELOAD_ENABLED -DNOMINMAX -DTHREADS_ENABLED -DTYPED_METHOD_BIND -DWINDOWS_ENABLED -D_HAS_EXCEPTIONS=0
+  DEFINES = -DDEBUG_ENABLED -DGDEXTENSION -DHOT_RELOAD_ENABLED -DNOMINMAX -DTHREADS_ENABLED -DTYPED_METHOD_BIND -DWINDOWS_ENABLED -D_HAS_EXCEPTIONS=0 -Dcpp_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MT /MP15 /utf-8
   INCLUDES = -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\godot-cpp\include" -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\out\build\x64-Debug\godot-cpp\gen\include" -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\godot-cpp\gdextension" -external:W0
-  OBJECT_DIR = CMakeFiles\EXTENSION-NAME.dir
-  OBJECT_FILE_DIR = CMakeFiles\EXTENSION-NAME.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\EXTENSION-NAME.dir\
-  TARGET_PDB = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.pdb"
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.pdb"
 
-build CMakeFiles\EXTENSION-NAME.dir\src\example_class.cpp.obj: CXX_COMPILER__EXTENSION-NAME_unscanned_Debug C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\src\example_class.cpp || cmake_object_order_depends_target_EXTENSION-NAME
+build CMakeFiles\cpp.dir\src\example_class.cpp.obj: CXX_COMPILER__cpp_unscanned_Debug C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\src\example_class.cpp || cmake_object_order_depends_target_cpp
   CONFIG = Debug
-  DEFINES = -DDEBUG_ENABLED -DEXTENSION_NAME_EXPORTS -DGDEXTENSION -DHOT_RELOAD_ENABLED -DNOMINMAX -DTHREADS_ENABLED -DTYPED_METHOD_BIND -DWINDOWS_ENABLED -D_HAS_EXCEPTIONS=0
+  DEFINES = -DDEBUG_ENABLED -DGDEXTENSION -DHOT_RELOAD_ENABLED -DNOMINMAX -DTHREADS_ENABLED -DTYPED_METHOD_BIND -DWINDOWS_ENABLED -D_HAS_EXCEPTIONS=0 -Dcpp_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MT /MP15 /utf-8
   INCLUDES = -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\godot-cpp\include" -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\out\build\x64-Debug\godot-cpp\gen\include" -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\godot-cpp\gdextension" -external:W0
-  OBJECT_DIR = CMakeFiles\EXTENSION-NAME.dir
-  OBJECT_FILE_DIR = CMakeFiles\EXTENSION-NAME.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\EXTENSION-NAME.dir\
-  TARGET_PDB = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.pdb"
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.pdb"
 
-build CMakeFiles\EXTENSION-NAME.dir\gen\doc_source.cpp.obj: CXX_COMPILER__EXTENSION-NAME_unscanned_Debug C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\out\build\x64-Debug\gen\doc_source.cpp || cmake_object_order_depends_target_EXTENSION-NAME
+build CMakeFiles\cpp.dir\gen\doc_source.cpp.obj: CXX_COMPILER__cpp_unscanned_Debug C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\out\build\x64-Debug\gen\doc_source.cpp || cmake_object_order_depends_target_cpp
   CONFIG = Debug
-  DEFINES = -DDEBUG_ENABLED -DEXTENSION_NAME_EXPORTS -DGDEXTENSION -DHOT_RELOAD_ENABLED -DNOMINMAX -DTHREADS_ENABLED -DTYPED_METHOD_BIND -DWINDOWS_ENABLED -D_HAS_EXCEPTIONS=0
+  DEFINES = -DDEBUG_ENABLED -DGDEXTENSION -DHOT_RELOAD_ENABLED -DNOMINMAX -DTHREADS_ENABLED -DTYPED_METHOD_BIND -DWINDOWS_ENABLED -D_HAS_EXCEPTIONS=0 -Dcpp_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MT /MP15 /utf-8
   INCLUDES = -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\godot-cpp\include" -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\out\build\x64-Debug\godot-cpp\gen\include" -external:I"C:\Users\fab\Projects\Vail Game\remote\vail-game\godot-cpp\gdextension" -external:W0
-  OBJECT_DIR = CMakeFiles\EXTENSION-NAME.dir
-  OBJECT_FILE_DIR = CMakeFiles\EXTENSION-NAME.dir\gen
-  TARGET_COMPILE_PDB = CMakeFiles\EXTENSION-NAME.dir\
-  TARGET_PDB = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.pdb"
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\gen
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.pdb"
 
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target EXTENSION-NAME
+# Link build statements for SHARED_LIBRARY target cpp
 
 
 #############################################
-# Link the shared library C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.dll
+# Link the shared library C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.dll
 
-build C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.dll EXTENSION-NAME.windows.template_debug.x86_64.lib: CXX_SHARED_LIBRARY_LINKER__EXTENSION-NAME_Debug CMakeFiles\EXTENSION-NAME.dir\src\register_types.cpp.obj CMakeFiles\EXTENSION-NAME.dir\src\example_class.cpp.obj CMakeFiles\EXTENSION-NAME.dir\gen\doc_source.cpp.obj | bin\libgodot-cpp.windows.template_debug.x86_64.lib || bin\libgodot-cpp.windows.template_debug.x86_64.lib generate_doc_source
+build C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.dll cpp.windows.template_debug.x86_64.lib: CXX_SHARED_LIBRARY_LINKER__cpp_Debug CMakeFiles\cpp.dir\src\register_types.cpp.obj CMakeFiles\cpp.dir\src\example_class.cpp.obj CMakeFiles\cpp.dir\gen\doc_source.cpp.obj | bin\libgodot-cpp.windows.template_debug.x86_64.lib || bin\libgodot-cpp.windows.template_debug.x86_64.lib generate_doc_source
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MT
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /DEBUG:FULL
   LINK_LIBRARIES = bin\libgodot-cpp.windows.template_debug.x86_64.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\EXTENSION-NAME.dir
-  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\fab\Projects\Vail Game\remote\vail-game\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/Users/fab/Projects/Vail Game/remote/vail-game/bin/windows/EXTENSION-NAME.windows.template_debug.x86_64.dll" "C:/Users/fab/Projects/Vail Game/remote/vail-game/demo/bin/windows/EXTENSION-NAME.windows.template_debug.x86_64.dll""
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  POST_BUILD = C:\Windows\system32\cmd.exe /C "cd /D "C:\Users\fab\Projects\Vail Game\remote\vail-game\out\build\x64-Debug" && "C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy "C:/Users/fab/Projects/Vail Game/remote/vail-game/bin/windows/cpp.windows.template_debug.x86_64.dll" "C:/Users/fab/Projects/Vail Game/remote/vail-game/proj/bin/windows/cpp.windows.template_debug.x86_64.dll""
   PRE_LINK = cd .
   RESTAT = 1
-  TARGET_COMPILE_PDB = CMakeFiles\EXTENSION-NAME.dir\
-  TARGET_FILE = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.dll"
-  TARGET_IMPLIB = EXTENSION-NAME.windows.template_debug.x86_64.lib
-  TARGET_PDB = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.pdb"
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_FILE = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.dll"
+  TARGET_IMPLIB = cpp.windows.template_debug.x86_64.lib
+  TARGET_PDB = "C:\Users\fab\Projects\Vail Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.pdb"
 
 
 #############################################
@@ -10446,9 +10446,9 @@ build godot-cpp\gen\include\godot_cpp\core\ext_wrappers.gen.inc godot-cpp\gen\in
 # =============================================================================
 # Target aliases.
 
-build EXTENSION-NAME: phony C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.dll
+build cpp: phony C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.dll
 
-build EXTENSION-NAME.windows.template_debug.x86_64.dll: phony C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.dll
+build cpp.windows.template_debug.x86_64.dll: phony C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.dll
 
 build generate_bindings: phony godot-cpp\generate_bindings
 
@@ -10464,7 +10464,7 @@ build libgodot-cpp.windows.template_debug.x86_64.lib: phony bin\libgodot-cpp.win
 #############################################
 # Folder: C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug
 
-build all: phony C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\bin\windows\EXTENSION-NAME.windows.template_debug.x86_64.dll godot-cpp\all
+build all: phony C$:\Users\fab\Projects\Vail$ Game\remote\vail-game\bin\windows\cpp.windows.template_debug.x86_64.dll godot-cpp\all
 
 # =============================================================================
 

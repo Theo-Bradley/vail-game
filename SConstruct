@@ -37,15 +37,28 @@ Run the following command to download godot-cpp:
 
 env = SConscript("godot-cpp/SConstruct", {"env": env, "customs": customs})
 
-env.Append(CPPPATH=["src/"])
-sources = Glob("src/*.cpp")
+def find_directories(directory):
+    directories = ["src/"]
+    for root, dirs, files in os.walk(directory):
+        directories.extend(["src/" + os.path.relpath(os.path.join(root, d), directory).replace("\\", "/") + "/" for d in dirs])
+    return directories
 
-if env["target"] in ["editor", "template_debug"]:
-    try:
-        doc_data = env.GodotCPPDocData("src/gen/doc_data.gen.cpp", source=Glob("doc_classes/*.xml"))
-        sources.append(doc_data)
-    except AttributeError:
-        print("Not including class reference as we're targeting a pre-4.3 baseline.")
+
+#env.Append(CPPPATH=["src/"])
+source_dirs = find_directories("src/")
+env.Append(CPPPATH=source_dirs)
+
+#sources = Glob("src/*.cpp")
+sources = []
+for d in source_dirs:
+    sources.append(Glob(d + "*.cpp"))
+
+#if env["target"] in ["editor", "template_debug"]:
+#    try:
+#        doc_data = env.GodotCPPDocData("src/gen/doc_data.gen.cpp", source=Glob("doc_classes/*.xml"))
+#        sources.append(doc_data)
+#    except AttributeError:
+#        print("Not including class reference as we're targeting a pre-4.3 baseline.")
 
 # .dev doesn't inhibit compatibility, so we don't need to key it.
 # .universal just means "compatible with all relevant arches" so we don't need to key it.

@@ -1,4 +1,4 @@
-C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug/CMakeFiles/EXTENSION-NAME.dir
+C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug/CMakeFiles/cpp.dir
 C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug/CMakeFiles/generate_doc_source.dir
 C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug/CMakeFiles/edit_cache.dir
 C:/Users/fab/Projects/Vail Game/remote/vail-game/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
