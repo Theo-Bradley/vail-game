@@ -22,21 +22,20 @@ void PlayerMovement::_process(double delta)
 
 	moveDirection = Vector2(0, 0);
 	if (input->is_action_pressed("Left"))
-	{
-		moveDirection += Vector2(-1, 0);
-	}
-
+	{moveDirection += Vector2(-1, 0);}
 	if (input->is_action_pressed("Right"))
-	{
-		moveDirection += Vector2(1, 0);
-	}
+	{moveDirection += Vector2(1, 0);}
+	if (input->is_action_pressed("Forward"))
+	{moveDirection += Vector2(0, 1);}
+	if (input->is_action_pressed("Backward"))
+	{moveDirection += Vector2(0, -1);}
 }
 
 void PlayerMovement::_physics_process(double delta)
 {
 	Vector3 u = get_real_velocity(); //inital velocity
-	Vector3 am = moveAccel * Vector3(moveDirection.x, 0.0f, moveDirection.y); //movement acceleration
-	Vector3 af = -u.normalized() * moveFriction * moveAccel * Vector3(1.0f, 0.0f, 1.0f); //friction acceleration (no y friction)
+	Vector3 am = moveAccel * Vector3(moveDirection.x, 0.0f, -moveDirection.y); //movement acceleration (-y because +z is into the camera)
+	Vector3 af = u.length_squared() > 0.1f ? -u.normalized() * moveFriction * moveAccel * Vector3(1.0f, 0.0f, 1.0f) : Vector3(0.f, 0.f, 0.f); //friction accel (no y friction)
 	//if not moving -> no friction
 	if (u.x == 0.0f)
 		af.x = 0.0f;

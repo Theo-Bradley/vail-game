@@ -17,8 +17,8 @@ size = Vector3(2009.9299, 0.7462891, 20)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
 [node name="PlayerMovement" type="PlayerMovement" parent="PlayerParent"]
-"Move Speed" = 6.0
-"Move Acceleration" = 50.0
+"Max Speed" = 6.0
+"Moving Acceleration" = 60.0
 "Moving Friction" = 0.45
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerParent/PlayerMovement"]
