@@ -12,6 +12,8 @@ config_version=5
 
 config/name="game"
 run/main_scene="uid://dc6sfhq6ifhma"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="vail_game"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
