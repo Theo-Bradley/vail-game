@@ -4,7 +4,7 @@ extends StaticBody3D
 var initalized = false;
 
 func _process(_delta: float) -> void:
-	if (!initalized):
+	if (!initalized): #calculate the global velocity for constant_linear_velocity
 		var t = transform;
 		t.origin = Vector3.ZERO;
 		constant_linear_velocity = (t * Vector3(0.0, 0.0, -moveSpeed));
@@ -12,4 +12,4 @@ func _process(_delta: float) -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
-	translate_object_local(Vector3(0.0, 0.0, -moveSpeed * delta));
+	translate_object_local(Vector3(0.0, 0.0, -moveSpeed * delta)); #move the object along local -z
