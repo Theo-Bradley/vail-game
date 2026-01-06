@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc6sfhq6ifhma"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gf4kq"]
+size = Vector3(0.15, 0.15, 0.15)
+
+[node name="ShootingTest" type="Node3D"]
+
+[node name="Gun" type="Gun" parent="." node_paths=PackedStringArray("Muzzle", "Bullet")]
+Muzzle = NodePath("Muzzle")
+Bullet = NodePath("../Bullet")
+
+[node name="Muzzle" type="Node3D" parent="Gun"]
+
+[node name="Bullet" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.295105, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Bullet"]
+mesh = SubResource("BoxMesh_gf4kq")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.8670654)

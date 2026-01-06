@@ -6,6 +6,7 @@
 #include <godot_cpp/godot.hpp>
 
 #include "Player/player_movement.h"
+#include "gun.h"
 
 using namespace godot;
 
@@ -15,6 +16,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 		return;
 	}
 	GDREGISTER_RUNTIME_CLASS(PlayerMovement);
+	GDREGISTER_RUNTIME_CLASS(Gun);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {
