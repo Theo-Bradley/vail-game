@@ -5,6 +5,7 @@
 #include "godot_cpp/variant/variant.hpp"
 #include "godot_cpp/classes/scene_tree.hpp"
 #include "godot_cpp/classes/input.hpp"
+#include"godot_cpp/classes/static_body3d.hpp"
 
 using namespace godot;
 
