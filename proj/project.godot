@@ -17,6 +17,10 @@ config/custom_user_dir_name="vail_game"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*res://Scripts/globals.gd"
+
 [input]
 
 Left={

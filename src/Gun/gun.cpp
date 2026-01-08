@@ -42,6 +42,15 @@ void Gun::Shoot()
 	{
 		UtilityFunctions::push_warning("Failed to set bullet position! Gun::muzzle is nullptr!");
 	}
+	new_bullet->set("moveSpeed", 0.0f);
+	
+	Array shots = get_child(0)->call("_on_shoot");;
+	TypedArray<float>::Iterator it;
+	for (it = shots.begin(); it != shots.end(); ++it)
+	{
+		print_line(*it);
+		//spawn bullet
+	}
 }
 
 void Gun::_process(double delta)

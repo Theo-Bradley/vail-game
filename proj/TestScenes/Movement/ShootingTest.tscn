@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dc6sfhq6ifhma"]
+[gd_scene load_steps=5 format=3 uid="uid://dc6sfhq6ifhma"]
 
-[ext_resource type="Script" uid="uid://ccio3bw3igop7" path="res://TestScenes/Scripts/bullet_move.gd" id="1_2irwe"]
+[ext_resource type="Script" uid="uid://ccio3bw3igop7" path="res://Scripts/bullet_move.gd" id="1_2irwe"]
+[ext_resource type="Script" uid="uid://crx5e1umxskqa" path="res://Scripts/recoil_pistol.gd" id="1_3t6pd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gf4kq"]
 size = Vector3(0.15, 0.15, 0.15)
@@ -16,6 +17,7 @@ Bullet = NodePath("../Bullet")
 
 [node name="Muzzle" type="Node3D" parent="Gun"]
 transform = Transform3D(0.70710677, 0, -0.70710677, 0, 1, 0, 0.70710677, 0, 0.70710677, 0, 0, 0)
+script = ExtResource("1_3t6pd")
 
 [node name="Bullet" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.295105, 0)
@@ -35,3 +37,5 @@ skeleton = NodePath("")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.8670654)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[connection signal="shot" from="Gun" to="Gun/Muzzle" method="_on_shoot"]
