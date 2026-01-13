@@ -12,4 +12,4 @@ func _on_shoot() -> Array[Vector2]:
 	var result: Array[Vector2];
 	current_recoil = clamp(current_recoil + recoil, 0.0, Globals.MAX_PITCH/Globals.recoil_strength); #add recoil and clamp
 	result.push_back(Vector2(0.0, current_recoil * Globals.recoil_strength)); #calc bullet angle offset
-	return result;
+	return result; #in radians

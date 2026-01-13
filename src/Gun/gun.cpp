@@ -14,42 +14,40 @@ void Gun::_bind_methods()
 
 void Gun::Shoot()
 {
-	Node3D* new_bullet = nullptr;
-	#ifdef _DEBUG
-	try
-	{
-		new_bullet = dynamic_cast<Node3D*>(bullet->duplicate());
-	}
-	catch (std::bad_cast)
-	{
-		UtilityFunctions::push_warning("Error std::bad_cast on Gun::Shoot::new_bullet!");
-	}
-	catch (const std::exception& e)
-	{
-		UtilityFunctions::push_error("Unhandled Exception: " + String((e.what())));
-		throw(e);
-	}
-	#else
-	new_bullet = dynamic_cast<Node3D*>(bullet->duplicate());
-	#endif
-	get_tree()->get_current_scene()->add_child(new_bullet);
-	if (muzzle != nullptr)
-	{
-		new_bullet->set_position(muzzle->get_position());
-		new_bullet->set_rotation(muzzle->get_rotation());
-	}
-	else
-	{
-		UtilityFunctions::push_warning("Failed to set bullet position! Gun::muzzle is nullptr!");
-	}
-	new_bullet->set("moveSpeed", 0.0f);
+	Array shots = get_child(0)->call("_on_shoot");
 	
-	Array shots = get_child(0)->call("_on_shoot");;
-	TypedArray<float>::Iterator it;
-	for (it = shots.begin(); it != shots.end(); ++it)
+	TypedArray<Vector2>::Iterator it;
+	for (it = shots.begin(); it != shots.end(); ++it) //loop over result from recoil script
 	{
-		print_line(*it);
 		//spawn bullet
+		Node3D* new_bullet = nullptr;
+		#ifdef _DEBUG
+		try
+		{
+			new_bullet = dynamic_cast<Node3D*>(bullet->duplicate());
+		}
+		catch (std::bad_cast)
+		{
+			UtilityFunctions::push_warning("Error std::bad_cast on Gun::Shoot::new_bullet!");
+		}
+		catch (const std::exception& e)
+		{
+			UtilityFunctions::push_error("Unhandled Exception: " + String((e.what())));
+			throw(e);
+		}
+		#else
+		new_bullet = dynamic_cast<Node3D*>(bullet->duplicate());
+		#endif
+		get_tree()->get_current_scene()->add_child(new_bullet);
+		if (muzzle != nullptr)
+		{
+			new_bullet->set_position(muzzle->get_global_position());
+			new_bullet->set_rotation(muzzle->get_global_rotation() + Vector3(Vector2(*it).y, Vector2(*it).x, 0.0f));
+		}
+		else
+		{
+			UtilityFunctions::push_warning("Failed to set bullet position! Gun::muzzle is nullptr!");
+		}
 	}
 }
 

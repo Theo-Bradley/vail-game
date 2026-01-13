@@ -1,0 +1,27 @@
+#include "player_look.h"
+
+void PlayerLook::_bind_methods() {
+	godot::ClassDB::bind_method(D_METHOD("print_type", "variant"), &PlayerLook::print_type);
+}
+
+void PlayerLook::_input(const Ref<InputEvent> event)
+{
+	if (event->get_class() == "InputEventMouseMotion")
+	{
+		Vector2 sensitivity = get_node<Node>(NodePath("/root/Globals"))->get("sensitivity"); //get mouse sensitivity from Globals.gd
+		yaw += ((Ref<InputEventMouseMotion>)event)->get_screen_relative().x * sensitivity.x * -1.f; //increment pitch and yaw
+		pitch += ((Ref<InputEventMouseMotion>)event)->get_screen_relative().y * sensitivity.y * -1.f; //..
+	}
+}
+
+void PlayerLook::_process(double delta)
+{
+	Vector3 old = get_rotation_degrees();
+	set_rotation_degrees(Vector3(old.x + pitch, old.y + yaw, 0.0f)); //rotate by pitch and yaw
+	pitch = 0.0f; //reset for next frame
+	yaw = 0.0f;
+}
+
+void PlayerLook::print_type(const Variant &p_variant) const {
+	print_line(vformat("Type: %d", p_variant.get_type()));
+}
