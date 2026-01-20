@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SPRING_BONE_SIMULATOR3D_HPP
-#define GODOT_CPP_SPRING_BONE_SIMULATOR3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/skeleton_modifier3d.hpp>
@@ -72,6 +71,7 @@ public:
 		ROTATION_AXIS_Y = 1,
 		ROTATION_AXIS_Z = 2,
 		ROTATION_AXIS_ALL = 3,
+		ROTATION_AXIS_CUSTOM = 4,
 	};
 
 	void set_root_bone_name(int32_t p_index, const String &p_bone_name);
@@ -100,6 +100,8 @@ public:
 	float get_radius(int32_t p_index) const;
 	void set_rotation_axis(int32_t p_index, SpringBoneSimulator3D::RotationAxis p_axis);
 	SpringBoneSimulator3D::RotationAxis get_rotation_axis(int32_t p_index) const;
+	void set_rotation_axis_vector(int32_t p_index, const Vector3 &p_vector);
+	Vector3 get_rotation_axis_vector(int32_t p_index) const;
 	void set_radius_damping_curve(int32_t p_index, const Ref<Curve> &p_curve);
 	Ref<Curve> get_radius_damping_curve(int32_t p_index) const;
 	void set_stiffness(int32_t p_index, float p_stiffness);
@@ -125,6 +127,8 @@ public:
 	int32_t get_joint_bone(int32_t p_index, int32_t p_joint) const;
 	void set_joint_rotation_axis(int32_t p_index, int32_t p_joint, SpringBoneSimulator3D::RotationAxis p_axis);
 	SpringBoneSimulator3D::RotationAxis get_joint_rotation_axis(int32_t p_index, int32_t p_joint) const;
+	void set_joint_rotation_axis_vector(int32_t p_index, int32_t p_joint, const Vector3 &p_vector);
+	Vector3 get_joint_rotation_axis_vector(int32_t p_index, int32_t p_joint) const;
 	void set_joint_radius(int32_t p_index, int32_t p_joint, float p_radius);
 	float get_joint_radius(int32_t p_index, int32_t p_joint) const;
 	void set_joint_stiffness(int32_t p_index, int32_t p_joint, float p_stiffness);
@@ -148,6 +152,8 @@ public:
 	void set_collision_count(int32_t p_index, int32_t p_count);
 	int32_t get_collision_count(int32_t p_index) const;
 	void clear_collisions(int32_t p_index);
+	void set_external_force(const Vector3 &p_force);
+	Vector3 get_external_force() const;
 	void reset();
 
 protected:
@@ -165,4 +171,3 @@ VARIANT_ENUM_CAST(SpringBoneSimulator3D::BoneDirection);
 VARIANT_ENUM_CAST(SpringBoneSimulator3D::CenterFrom);
 VARIANT_ENUM_CAST(SpringBoneSimulator3D::RotationAxis);
 
-#endif // ! GODOT_CPP_SPRING_BONE_SIMULATOR3D_HPP

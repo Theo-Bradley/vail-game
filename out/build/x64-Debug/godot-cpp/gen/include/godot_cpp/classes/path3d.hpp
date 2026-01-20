@@ -30,11 +30,11 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PATH3D_HPP
-#define GODOT_CPP_PATH3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
+#include <godot_cpp/variant/color.hpp>
 
 #include <godot_cpp/core/class_db.hpp>
 
@@ -50,6 +50,8 @@ class Path3D : public Node3D {
 public:
 	void set_curve(const Ref<Curve3D> &p_curve);
 	Ref<Curve3D> get_curve() const;
+	void set_debug_custom_color(const Color &p_debug_custom_color);
+	Color get_debug_custom_color() const;
 
 protected:
 	template <typename T, typename B>
@@ -62,4 +64,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PATH3D_HPP

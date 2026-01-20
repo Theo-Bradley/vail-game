@@ -50,7 +50,7 @@ void Skin::set_bind_count(int32_t p_bind_count) {
 
 int32_t Skin::get_bind_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skin::get_class_static()._native_ptr(), StringName("get_bind_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -78,7 +78,7 @@ void Skin::set_bind_pose(int32_t p_bind_index, const Transform3D &p_pose) {
 
 Transform3D Skin::get_bind_pose(int32_t p_bind_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skin::get_class_static()._native_ptr(), StringName("get_bind_pose")._native_ptr(), 1965739696);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	int64_t p_bind_index_encoded;
 	PtrToArg<int64_t>::encode(p_bind_index, &p_bind_index_encoded);
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_bind_index_encoded);
@@ -94,7 +94,7 @@ void Skin::set_bind_name(int32_t p_bind_index, const StringName &p_name) {
 
 StringName Skin::get_bind_name(int32_t p_bind_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skin::get_class_static()._native_ptr(), StringName("get_bind_name")._native_ptr(), 659327637);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_bind_index_encoded;
 	PtrToArg<int64_t>::encode(p_bind_index, &p_bind_index_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_bind_index_encoded);
@@ -112,7 +112,7 @@ void Skin::set_bind_bone(int32_t p_bind_index, int32_t p_bone) {
 
 int32_t Skin::get_bind_bone(int32_t p_bind_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skin::get_class_static()._native_ptr(), StringName("get_bind_bone")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_bind_index_encoded;
 	PtrToArg<int64_t>::encode(p_bind_index, &p_bind_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_bind_index_encoded);

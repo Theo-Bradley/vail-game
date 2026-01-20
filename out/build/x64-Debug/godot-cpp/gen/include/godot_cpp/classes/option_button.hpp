@@ -30,10 +30,10 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPTION_BUTTON_HPP
-#define GODOT_CPP_OPTION_BUTTON_HPP
+#pragma once
 
 #include <godot_cpp/classes/button.hpp>
+#include <godot_cpp/classes/node.hpp>
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/variant/string.hpp>
 #include <godot_cpp/variant/variant.hpp>
@@ -59,12 +59,14 @@ public:
 	void set_item_id(int32_t p_idx, int32_t p_id);
 	void set_item_metadata(int32_t p_idx, const Variant &p_metadata);
 	void set_item_tooltip(int32_t p_idx, const String &p_tooltip);
+	void set_item_auto_translate_mode(int32_t p_idx, Node::AutoTranslateMode p_mode);
 	String get_item_text(int32_t p_idx) const;
 	Ref<Texture2D> get_item_icon(int32_t p_idx) const;
 	int32_t get_item_id(int32_t p_idx) const;
 	int32_t get_item_index(int32_t p_id) const;
 	Variant get_item_metadata(int32_t p_idx) const;
 	String get_item_tooltip(int32_t p_idx) const;
+	Node::AutoTranslateMode get_item_auto_translate_mode(int32_t p_idx) const;
 	bool is_item_disabled(int32_t p_idx) const;
 	bool is_item_separator(int32_t p_idx) const;
 	void add_separator(const String &p_text = String());
@@ -97,4 +99,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_OPTION_BUTTON_HPP

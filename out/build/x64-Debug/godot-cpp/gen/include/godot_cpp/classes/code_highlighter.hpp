@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CODE_HIGHLIGHTER_HPP
-#define GODOT_CPP_CODE_HIGHLIGHTER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/syntax_highlighter.hpp>
@@ -90,4 +89,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_CODE_HIGHLIGHTER_HPP

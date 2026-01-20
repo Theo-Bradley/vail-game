@@ -48,7 +48,7 @@ void CSGPolygon3D::set_polygon(const PackedVector2Array &p_polygon) {
 
 PackedVector2Array CSGPolygon3D::get_polygon() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_polygon")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void CSGPolygon3D::set_mode(CSGPolygon3D::Mode p_mode) {
 
 CSGPolygon3D::Mode CSGPolygon3D::get_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_mode")._native_ptr(), 1201612222);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CSGPolygon3D::Mode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CSGPolygon3D::Mode(0)));
 	return (CSGPolygon3D::Mode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void CSGPolygon3D::set_depth(float p_depth) {
 
 float CSGPolygon3D::get_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_depth")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void CSGPolygon3D::set_spin_degrees(float p_degrees) {
 
 float CSGPolygon3D::get_spin_degrees() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_spin_degrees")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void CSGPolygon3D::set_spin_sides(int32_t p_spin_sides) {
 
 int32_t CSGPolygon3D::get_spin_sides() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_spin_sides")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void CSGPolygon3D::set_path_node(const NodePath &p_path) {
 
 NodePath CSGPolygon3D::get_path_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_path_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void CSGPolygon3D::set_path_interval_type(CSGPolygon3D::PathIntervalType p_inter
 
 CSGPolygon3D::PathIntervalType CSGPolygon3D::get_path_interval_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_path_interval_type")._native_ptr(), 3434618397);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CSGPolygon3D::PathIntervalType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CSGPolygon3D::PathIntervalType(0)));
 	return (CSGPolygon3D::PathIntervalType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void CSGPolygon3D::set_path_interval(float p_interval) {
 
 float CSGPolygon3D::get_path_interval() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_path_interval")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void CSGPolygon3D::set_path_simplify_angle(float p_degrees) {
 
 float CSGPolygon3D::get_path_simplify_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_path_simplify_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -172,7 +172,7 @@ void CSGPolygon3D::set_path_rotation(CSGPolygon3D::PathRotation p_path_rotation)
 
 CSGPolygon3D::PathRotation CSGPolygon3D::get_path_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_path_rotation")._native_ptr(), 647219346);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CSGPolygon3D::PathRotation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CSGPolygon3D::PathRotation(0)));
 	return (CSGPolygon3D::PathRotation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -186,7 +186,7 @@ void CSGPolygon3D::set_path_rotation_accurate(bool p_enable) {
 
 bool CSGPolygon3D::get_path_rotation_accurate() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_path_rotation_accurate")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -200,7 +200,7 @@ void CSGPolygon3D::set_path_local(bool p_enable) {
 
 bool CSGPolygon3D::is_path_local() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("is_path_local")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -214,7 +214,7 @@ void CSGPolygon3D::set_path_continuous_u(bool p_enable) {
 
 bool CSGPolygon3D::is_path_continuous_u() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("is_path_continuous_u")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -228,7 +228,7 @@ void CSGPolygon3D::set_path_u_distance(float p_distance) {
 
 float CSGPolygon3D::get_path_u_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_path_u_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -242,7 +242,7 @@ void CSGPolygon3D::set_path_joined(bool p_enable) {
 
 bool CSGPolygon3D::is_path_joined() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("is_path_joined")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -254,7 +254,7 @@ void CSGPolygon3D::set_material(const Ref<Material> &p_material) {
 
 Ref<Material> CSGPolygon3D::get_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_material")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 
@@ -268,7 +268,7 @@ void CSGPolygon3D::set_smooth_faces(bool p_smooth_faces) {
 
 bool CSGPolygon3D::get_smooth_faces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGPolygon3D::get_class_static()._native_ptr(), StringName("get_smooth_faces")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

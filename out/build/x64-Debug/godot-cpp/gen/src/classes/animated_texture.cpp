@@ -48,7 +48,7 @@ void AnimatedTexture::set_frames(int32_t p_frames) {
 
 int32_t AnimatedTexture::get_frames() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedTexture::get_class_static()._native_ptr(), StringName("get_frames")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AnimatedTexture::set_current_frame(int32_t p_frame) {
 
 int32_t AnimatedTexture::get_current_frame() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedTexture::get_class_static()._native_ptr(), StringName("get_current_frame")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AnimatedTexture::set_pause(bool p_pause) {
 
 bool AnimatedTexture::get_pause() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedTexture::get_class_static()._native_ptr(), StringName("get_pause")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void AnimatedTexture::set_one_shot(bool p_one_shot) {
 
 bool AnimatedTexture::get_one_shot() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedTexture::get_class_static()._native_ptr(), StringName("get_one_shot")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void AnimatedTexture::set_speed_scale(float p_scale) {
 
 float AnimatedTexture::get_speed_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedTexture::get_class_static()._native_ptr(), StringName("get_speed_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void AnimatedTexture::set_frame_texture(int32_t p_frame, const Ref<Texture2D> &p
 
 Ref<Texture2D> AnimatedTexture::get_frame_texture(int32_t p_frame) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedTexture::get_class_static()._native_ptr(), StringName("get_frame_texture")._native_ptr(), 3536238170);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_frame_encoded;
 	PtrToArg<int64_t>::encode(p_frame, &p_frame_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_frame_encoded));
@@ -136,7 +136,7 @@ void AnimatedTexture::set_frame_duration(int32_t p_frame, float p_duration) {
 
 float AnimatedTexture::get_frame_duration(int32_t p_frame) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedTexture::get_class_static()._native_ptr(), StringName("get_frame_duration")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_frame_encoded;
 	PtrToArg<int64_t>::encode(p_frame, &p_frame_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_frame_encoded);

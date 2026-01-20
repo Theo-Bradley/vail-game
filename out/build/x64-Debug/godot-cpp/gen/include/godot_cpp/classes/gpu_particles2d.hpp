@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GPU_PARTICLES2D_HPP
-#define GODOT_CPP_GPU_PARTICLES2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -141,4 +140,3 @@ public:
 VARIANT_ENUM_CAST(GPUParticles2D::DrawOrder);
 VARIANT_ENUM_CAST(GPUParticles2D::EmitFlags);
 
-#endif // ! GODOT_CPP_GPU_PARTICLES2D_HPP

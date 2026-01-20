@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NINE_PATCH_RECT_HPP
-#define GODOT_CPP_NINE_PATCH_RECT_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -82,4 +81,3 @@ public:
 
 VARIANT_ENUM_CAST(NinePatchRect::AxisStretchMode);
 
-#endif // ! GODOT_CPP_NINE_PATCH_RECT_HPP

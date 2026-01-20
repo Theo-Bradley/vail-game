@@ -44,7 +44,7 @@ namespace godot {
 
 Error ENetConnection::create_host_bound(const String &p_bind_address, int32_t p_bind_port, int32_t p_max_peers, int32_t p_max_channels, int32_t p_in_bandwidth, int32_t p_out_bandwidth) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("create_host_bound")._native_ptr(), 1515002313);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_bind_port_encoded;
 	PtrToArg<int64_t>::encode(p_bind_port, &p_bind_port_encoded);
 	int64_t p_max_peers_encoded;
@@ -60,7 +60,7 @@ Error ENetConnection::create_host_bound(const String &p_bind_address, int32_t p_
 
 Error ENetConnection::create_host(int32_t p_max_peers, int32_t p_max_channels, int32_t p_in_bandwidth, int32_t p_out_bandwidth) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("create_host")._native_ptr(), 117198950);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_max_peers_encoded;
 	PtrToArg<int64_t>::encode(p_max_peers, &p_max_peers_encoded);
 	int64_t p_max_channels_encoded;
@@ -80,7 +80,7 @@ void ENetConnection::destroy() {
 
 Ref<ENetPacketPeer> ENetConnection::connect_to_host(const String &p_address, int32_t p_port, int32_t p_channels, int32_t p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("connect_to_host")._native_ptr(), 2171300490);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ENetPacketPeer>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ENetPacketPeer>()));
 	int64_t p_port_encoded;
 	PtrToArg<int64_t>::encode(p_port, &p_port_encoded);
 	int64_t p_channels_encoded;
@@ -92,7 +92,7 @@ Ref<ENetPacketPeer> ENetConnection::connect_to_host(const String &p_address, int
 
 Array ENetConnection::service(int32_t p_timeout) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("service")._native_ptr(), 2402345344);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_timeout_encoded;
 	PtrToArg<int64_t>::encode(p_timeout, &p_timeout_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_timeout_encoded);
@@ -142,13 +142,13 @@ void ENetConnection::compress(ENetConnection::CompressionMode p_mode) {
 
 Error ENetConnection::dtls_server_setup(const Ref<TLSOptions> &p_server_options) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("dtls_server_setup")._native_ptr(), 1262296096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_server_options != nullptr ? &p_server_options->_owner : nullptr));
 }
 
 Error ENetConnection::dtls_client_setup(const String &p_hostname, const Ref<TLSOptions> &p_client_options) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("dtls_client_setup")._native_ptr(), 1966198364);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_hostname, (p_client_options != nullptr ? &p_client_options->_owner : nullptr));
 }
 
@@ -162,7 +162,7 @@ void ENetConnection::refuse_new_connections(bool p_refuse) {
 
 double ENetConnection::pop_statistic(ENetConnection::HostStatistic p_statistic) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("pop_statistic")._native_ptr(), 2166904170);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_statistic_encoded;
 	PtrToArg<int64_t>::encode(p_statistic, &p_statistic_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_statistic_encoded);
@@ -170,20 +170,20 @@ double ENetConnection::pop_statistic(ENetConnection::HostStatistic p_statistic) 
 
 int32_t ENetConnection::get_max_channels() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("get_max_channels")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t ENetConnection::get_local_port() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("get_local_port")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
-TypedArray<ENetPacketPeer> ENetConnection::get_peers() {
+TypedArray<Ref<ENetPacketPeer>> ENetConnection::get_peers() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetConnection::get_class_static()._native_ptr(), StringName("get_peers")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<ENetPacketPeer>());
-	return internal::_call_native_mb_ret<TypedArray<ENetPacketPeer>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<ENetPacketPeer>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<ENetPacketPeer>>>(_gde_method_bind, _owner);
 }
 
 void ENetConnection::socket_send(const String &p_destination_address, int32_t p_destination_port, const PackedByteArray &p_packet) {

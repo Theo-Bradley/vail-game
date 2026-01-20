@@ -48,7 +48,7 @@ void Decal::set_size(const Vector3 &p_size) {
 
 Vector3 Decal::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void Decal::set_texture(Decal::DecalTexture p_type, const Ref<Texture2D> &p_text
 
 Ref<Texture2D> Decal::get_texture(Decal::DecalTexture p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3244119503);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_type_encoded));
@@ -78,7 +78,7 @@ void Decal::set_emission_energy(float p_energy) {
 
 float Decal::get_emission_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_emission_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void Decal::set_albedo_mix(float p_energy) {
 
 float Decal::get_albedo_mix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_albedo_mix")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void Decal::set_modulate(const Color &p_color) {
 
 Color Decal::get_modulate() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_modulate")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void Decal::set_upper_fade(float p_fade) {
 
 float Decal::get_upper_fade() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_upper_fade")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void Decal::set_lower_fade(float p_fade) {
 
 float Decal::get_lower_fade() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_lower_fade")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void Decal::set_normal_fade(float p_fade) {
 
 float Decal::get_normal_fade() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_normal_fade")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void Decal::set_enable_distance_fade(bool p_enable) {
 
 bool Decal::is_distance_fade_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("is_distance_fade_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void Decal::set_distance_fade_begin(float p_distance) {
 
 float Decal::get_distance_fade_begin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_distance_fade_begin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +188,7 @@ void Decal::set_distance_fade_length(float p_distance) {
 
 float Decal::get_distance_fade_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_distance_fade_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -202,7 +202,7 @@ void Decal::set_cull_mask(uint32_t p_mask) {
 
 uint32_t Decal::get_cull_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Decal::get_class_static()._native_ptr(), StringName("get_cull_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

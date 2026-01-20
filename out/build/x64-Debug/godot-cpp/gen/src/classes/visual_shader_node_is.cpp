@@ -48,7 +48,7 @@ void VisualShaderNodeIs::set_function(VisualShaderNodeIs::Function p_func) {
 
 VisualShaderNodeIs::Function VisualShaderNodeIs::get_function() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeIs::get_class_static()._native_ptr(), StringName("get_function")._native_ptr(), 580678557);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeIs::Function(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeIs::Function(0)));
 	return (VisualShaderNodeIs::Function)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

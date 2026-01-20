@@ -59,6 +59,7 @@
 #include <godot_cpp/variant/quaternion.hpp>
 #include <godot_cpp/variant/rect2.hpp>
 #include <godot_cpp/variant/rect2i.hpp>
+#include <godot_cpp/variant/rid.hpp>
 #include <godot_cpp/variant/signal.hpp>
 #include <godot_cpp/variant/transform2d.hpp>
 #include <godot_cpp/variant/transform3d.hpp>
@@ -145,6 +146,14 @@ void StringName::init_bindings() {
 	_method_bindings.method_replace = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 1340436205);
 	_gde_name = StringName("replacen");
 	_method_bindings.method_replacen = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 1340436205);
+	_gde_name = StringName("replace_char");
+	_method_bindings.method_replace_char = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 787537301);
+	_gde_name = StringName("replace_chars");
+	_method_bindings.method_replace_chars = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3535100402);
+	_gde_name = StringName("remove_char");
+	_method_bindings.method_remove_char = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 2162347432);
+	_gde_name = StringName("remove_chars");
+	_method_bindings.method_remove_chars = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3134094431);
 	_gde_name = StringName("repeat");
 	_method_bindings.method_repeat = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 2162347432);
 	_gde_name = StringName("reverse");
@@ -161,6 +170,8 @@ void StringName::init_bindings() {
 	_method_bindings.method_to_pascal_case = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3942272618);
 	_gde_name = StringName("to_snake_case");
 	_method_bindings.method_to_snake_case = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3942272618);
+	_gde_name = StringName("to_kebab_case");
+	_method_bindings.method_to_kebab_case = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3942272618);
 	_gde_name = StringName("split");
 	_method_bindings.method_split = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 1252735785);
 	_gde_name = StringName("rsplit");
@@ -233,6 +244,8 @@ void StringName::init_bindings() {
 	_method_bindings.method_uri_encode = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3942272618);
 	_gde_name = StringName("uri_decode");
 	_method_bindings.method_uri_decode = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3942272618);
+	_gde_name = StringName("uri_file_decode");
+	_method_bindings.method_uri_file_decode = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3942272618);
 	_gde_name = StringName("c_escape");
 	_method_bindings.method_c_escape = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3942272618);
 	_gde_name = StringName("c_unescape");
@@ -289,10 +302,12 @@ void StringName::init_bindings() {
 	_method_bindings.method_to_utf16_buffer = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 247621236);
 	_gde_name = StringName("to_utf32_buffer");
 	_method_bindings.method_to_utf32_buffer = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 247621236);
-	_gde_name = StringName("hex_decode");
-	_method_bindings.method_hex_decode = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 247621236);
 	_gde_name = StringName("to_wchar_buffer");
 	_method_bindings.method_to_wchar_buffer = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 247621236);
+	_gde_name = StringName("to_multibyte_char_buffer");
+	_method_bindings.method_to_multibyte_char_buffer = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3055765187);
+	_gde_name = StringName("hex_decode");
+	_method_bindings.method_hex_decode = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 247621236);
 	_gde_name = StringName("hash");
 	_method_bindings.method_hash = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_STRING_NAME, _gde_name._native_ptr(), 3173160232);
 	_method_bindings.operator_equal_Variant = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_EQUAL, GDEXTENSION_VARIANT_TYPE_STRING_NAME, GDEXTENSION_VARIANT_TYPE_NIL);
@@ -333,6 +348,7 @@ void StringName::init_bindings() {
 	_method_bindings.operator_module_StringName = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_MODULE, GDEXTENSION_VARIANT_TYPE_STRING_NAME, GDEXTENSION_VARIANT_TYPE_STRING_NAME);
 	_method_bindings.operator_in_StringName = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_IN, GDEXTENSION_VARIANT_TYPE_STRING_NAME, GDEXTENSION_VARIANT_TYPE_STRING_NAME);
 	_method_bindings.operator_module_NodePath = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_MODULE, GDEXTENSION_VARIANT_TYPE_STRING_NAME, GDEXTENSION_VARIANT_TYPE_NODE_PATH);
+	_method_bindings.operator_module_RID = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_MODULE, GDEXTENSION_VARIANT_TYPE_STRING_NAME, GDEXTENSION_VARIANT_TYPE_RID);
 	_method_bindings.operator_module_Object = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_MODULE, GDEXTENSION_VARIANT_TYPE_STRING_NAME, GDEXTENSION_VARIANT_TYPE_OBJECT);
 	_method_bindings.operator_in_Object = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_IN, GDEXTENSION_VARIANT_TYPE_STRING_NAME, GDEXTENSION_VARIANT_TYPE_OBJECT);
 	_method_bindings.operator_module_Callable = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_MODULE, GDEXTENSION_VARIANT_TYPE_STRING_NAME, GDEXTENSION_VARIANT_TYPE_CALLABLE);
@@ -516,6 +532,30 @@ String StringName::replacen(const String &p_what, const String &p_forwhat) const
 	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_replacen, (GDExtensionTypePtr)&opaque, &p_what, &p_forwhat);
 }
 
+String StringName::replace_char(int64_t p_key, int64_t p_with) const {
+	int64_t p_key_encoded;
+	PtrToArg<int64_t>::encode(p_key, &p_key_encoded);
+	int64_t p_with_encoded;
+	PtrToArg<int64_t>::encode(p_with, &p_with_encoded);
+	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_replace_char, (GDExtensionTypePtr)&opaque, &p_key_encoded, &p_with_encoded);
+}
+
+String StringName::replace_chars(const String &p_keys, int64_t p_with) const {
+	int64_t p_with_encoded;
+	PtrToArg<int64_t>::encode(p_with, &p_with_encoded);
+	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_replace_chars, (GDExtensionTypePtr)&opaque, &p_keys, &p_with_encoded);
+}
+
+String StringName::remove_char(int64_t p_what) const {
+	int64_t p_what_encoded;
+	PtrToArg<int64_t>::encode(p_what, &p_what_encoded);
+	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_remove_char, (GDExtensionTypePtr)&opaque, &p_what_encoded);
+}
+
+String StringName::remove_chars(const String &p_chars) const {
+	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_remove_chars, (GDExtensionTypePtr)&opaque, &p_chars);
+}
+
 String StringName::repeat(int64_t p_count) const {
 	int64_t p_count_encoded;
 	PtrToArg<int64_t>::encode(p_count, &p_count_encoded);
@@ -554,6 +594,10 @@ String StringName::to_pascal_case() const {
 
 String StringName::to_snake_case() const {
 	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_to_snake_case, (GDExtensionTypePtr)&opaque);
+}
+
+String StringName::to_kebab_case() const {
+	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_to_kebab_case, (GDExtensionTypePtr)&opaque);
 }
 
 PackedStringArray StringName::split(const String &p_delimiter, bool p_allow_empty, int64_t p_maxsplit) const {
@@ -630,8 +674,8 @@ String StringName::get_basename() const {
 	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_get_basename, (GDExtensionTypePtr)&opaque);
 }
 
-String StringName::path_join(const String &p_file) const {
-	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_path_join, (GDExtensionTypePtr)&opaque, &p_file);
+String StringName::path_join(const String &p_path) const {
+	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_path_join, (GDExtensionTypePtr)&opaque, &p_path);
 }
 
 int64_t StringName::unicode_at(int64_t p_at) const {
@@ -720,6 +764,10 @@ String StringName::uri_encode() const {
 
 String StringName::uri_decode() const {
 	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_uri_decode, (GDExtensionTypePtr)&opaque);
+}
+
+String StringName::uri_file_decode() const {
+	return internal::_call_builtin_method_ptr_ret<String>(_method_bindings.method_uri_file_decode, (GDExtensionTypePtr)&opaque);
 }
 
 String StringName::c_escape() const {
@@ -844,12 +892,16 @@ PackedByteArray StringName::to_utf32_buffer() const {
 	return internal::_call_builtin_method_ptr_ret<PackedByteArray>(_method_bindings.method_to_utf32_buffer, (GDExtensionTypePtr)&opaque);
 }
 
-PackedByteArray StringName::hex_decode() const {
-	return internal::_call_builtin_method_ptr_ret<PackedByteArray>(_method_bindings.method_hex_decode, (GDExtensionTypePtr)&opaque);
-}
-
 PackedByteArray StringName::to_wchar_buffer() const {
 	return internal::_call_builtin_method_ptr_ret<PackedByteArray>(_method_bindings.method_to_wchar_buffer, (GDExtensionTypePtr)&opaque);
+}
+
+PackedByteArray StringName::to_multibyte_char_buffer(const String &p_encoding) const {
+	return internal::_call_builtin_method_ptr_ret<PackedByteArray>(_method_bindings.method_to_multibyte_char_buffer, (GDExtensionTypePtr)&opaque, &p_encoding);
+}
+
+PackedByteArray StringName::hex_decode() const {
+	return internal::_call_builtin_method_ptr_ret<PackedByteArray>(_method_bindings.method_hex_decode, (GDExtensionTypePtr)&opaque);
 }
 
 int64_t StringName::hash() const {
@@ -1004,6 +1056,10 @@ String StringName::operator%(const StringName &p_other) const {
 
 String StringName::operator%(const NodePath &p_other) const {
 	return internal::_call_builtin_operator_ptr<String>(_method_bindings.operator_module_NodePath, (GDExtensionConstTypePtr)&opaque, (GDExtensionConstTypePtr)&p_other);
+}
+
+String StringName::operator%(const RID &p_other) const {
+	return internal::_call_builtin_operator_ptr<String>(_method_bindings.operator_module_RID, (GDExtensionConstTypePtr)&opaque, (GDExtensionConstTypePtr)&p_other);
 }
 
 String StringName::operator%(Object *p_other) const {

@@ -50,7 +50,7 @@ void SubViewportContainer::set_stretch(bool p_enable) {
 
 bool SubViewportContainer::is_stretch_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SubViewportContainer::get_class_static()._native_ptr(), StringName("is_stretch_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void SubViewportContainer::set_stretch_shrink(int32_t p_amount) {
 
 int32_t SubViewportContainer::get_stretch_shrink() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SubViewportContainer::get_class_static()._native_ptr(), StringName("get_stretch_shrink")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -78,7 +78,7 @@ void SubViewportContainer::set_mouse_target(bool p_amount) {
 
 bool SubViewportContainer::is_mouse_target_enabled() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SubViewportContainer::get_class_static()._native_ptr(), StringName("is_mouse_target_enabled")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

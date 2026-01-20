@@ -50,13 +50,13 @@ void SkeletonModification2D::set_enabled(bool p_enabled) {
 
 bool SkeletonModification2D::get_enabled() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2D::get_class_static()._native_ptr(), StringName("get_enabled")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Ref<SkeletonModificationStack2D> SkeletonModification2D::get_modification_stack() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2D::get_class_static()._native_ptr(), StringName("get_modification_stack")._native_ptr(), 2137761694);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<SkeletonModificationStack2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<SkeletonModificationStack2D>()));
 	return Ref<SkeletonModificationStack2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<SkeletonModificationStack2D>(_gde_method_bind, _owner));
 }
 
@@ -70,7 +70,7 @@ void SkeletonModification2D::set_is_setup(bool p_is_setup) {
 
 bool SkeletonModification2D::get_is_setup() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2D::get_class_static()._native_ptr(), StringName("get_is_setup")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -84,13 +84,13 @@ void SkeletonModification2D::set_execution_mode(int32_t p_execution_mode) {
 
 int32_t SkeletonModification2D::get_execution_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2D::get_class_static()._native_ptr(), StringName("get_execution_mode")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 float SkeletonModification2D::clamp_angle(float p_angle, float p_min, float p_max, bool p_invert) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2D::get_class_static()._native_ptr(), StringName("clamp_angle")._native_ptr(), 1229502682);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	double p_angle_encoded;
 	PtrToArg<double>::encode(p_angle, &p_angle_encoded);
 	double p_min_encoded;
@@ -112,7 +112,7 @@ void SkeletonModification2D::set_editor_draw_gizmo(bool p_draw_gizmo) {
 
 bool SkeletonModification2D::get_editor_draw_gizmo() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2D::get_class_static()._native_ptr(), StringName("get_editor_draw_gizmo")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TILE_MAP_HPP
-#define GODOT_CPP_TILE_MAP_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -146,4 +145,3 @@ public:
 
 VARIANT_ENUM_CAST(TileMap::VisibilityMode);
 
-#endif // ! GODOT_CPP_TILE_MAP_HPP

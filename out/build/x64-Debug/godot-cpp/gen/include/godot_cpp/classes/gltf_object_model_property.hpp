@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GLTF_OBJECT_MODEL_PROPERTY_HPP
-#define GODOT_CPP_GLTF_OBJECT_MODEL_PROPERTY_HPP
+#pragma once
 
 #include <godot_cpp/classes/gltf_accessor.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -100,4 +99,3 @@ public:
 
 VARIANT_ENUM_CAST(GLTFObjectModelProperty::GLTFObjectModelType);
 
-#endif // ! GODOT_CPP_GLTF_OBJECT_MODEL_PROPERTY_HPP

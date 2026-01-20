@@ -46,7 +46,7 @@ void RDPipelineSpecializationConstant::set_value(const Variant &p_value) {
 
 Variant RDPipelineSpecializationConstant::get_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineSpecializationConstant::get_class_static()._native_ptr(), StringName("get_value")._native_ptr(), 1214101251);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void RDPipelineSpecializationConstant::set_constant_id(uint32_t p_constant_id) {
 
 uint32_t RDPipelineSpecializationConstant::get_constant_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineSpecializationConstant::get_class_static()._native_ptr(), StringName("get_constant_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

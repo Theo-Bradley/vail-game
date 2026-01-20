@@ -50,7 +50,7 @@ void Sky::set_radiance_size(Sky::RadianceSize p_size) {
 
 Sky::RadianceSize Sky::get_radiance_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Sky::get_class_static()._native_ptr(), StringName("get_radiance_size")._native_ptr(), 2708733976);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Sky::RadianceSize(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Sky::RadianceSize(0)));
 	return (Sky::RadianceSize)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void Sky::set_process_mode(Sky::ProcessMode p_mode) {
 
 Sky::ProcessMode Sky::get_process_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Sky::get_class_static()._native_ptr(), StringName("get_process_mode")._native_ptr(), 731245043);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Sky::ProcessMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Sky::ProcessMode(0)));
 	return (Sky::ProcessMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void Sky::set_material(const Ref<Material> &p_material) {
 
 Ref<Material> Sky::get_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Sky::get_class_static()._native_ptr(), StringName("get_material")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 

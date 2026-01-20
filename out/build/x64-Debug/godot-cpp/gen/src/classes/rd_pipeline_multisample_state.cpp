@@ -48,7 +48,7 @@ void RDPipelineMultisampleState::set_sample_count(RenderingDevice::TextureSample
 
 RenderingDevice::TextureSamples RDPipelineMultisampleState::get_sample_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineMultisampleState::get_class_static()._native_ptr(), StringName("get_sample_count")._native_ptr(), 407791724);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::TextureSamples(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::TextureSamples(0)));
 	return (RenderingDevice::TextureSamples)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void RDPipelineMultisampleState::set_enable_sample_shading(bool p_member) {
 
 bool RDPipelineMultisampleState::get_enable_sample_shading() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineMultisampleState::get_class_static()._native_ptr(), StringName("get_enable_sample_shading")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void RDPipelineMultisampleState::set_min_sample_shading(float p_member) {
 
 float RDPipelineMultisampleState::get_min_sample_shading() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineMultisampleState::get_class_static()._native_ptr(), StringName("get_min_sample_shading")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void RDPipelineMultisampleState::set_enable_alpha_to_coverage(bool p_member) {
 
 bool RDPipelineMultisampleState::get_enable_alpha_to_coverage() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineMultisampleState::get_class_static()._native_ptr(), StringName("get_enable_alpha_to_coverage")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void RDPipelineMultisampleState::set_enable_alpha_to_one(bool p_member) {
 
 bool RDPipelineMultisampleState::get_enable_alpha_to_one() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineMultisampleState::get_class_static()._native_ptr(), StringName("get_enable_alpha_to_one")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void RDPipelineMultisampleState::set_sample_masks(const TypedArray<int> &p_masks
 
 TypedArray<int> RDPipelineMultisampleState::get_sample_masks() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineMultisampleState::get_class_static()._native_ptr(), StringName("get_sample_masks")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<int>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<int>()));
 	return internal::_call_native_mb_ret<TypedArray<int>>(_gde_method_bind, _owner);
 }
 

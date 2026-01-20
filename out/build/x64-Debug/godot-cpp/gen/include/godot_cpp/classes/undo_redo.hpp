@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_UNDO_REDO_HPP
-#define GODOT_CPP_UNDO_REDO_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/string.hpp>
@@ -93,4 +92,3 @@ public:
 
 VARIANT_ENUM_CAST(UndoRedo::MergeMode);
 
-#endif // ! GODOT_CPP_UNDO_REDO_HPP

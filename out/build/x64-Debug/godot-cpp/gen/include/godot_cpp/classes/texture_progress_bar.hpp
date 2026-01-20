@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TEXTURE_PROGRESS_BAR_HPP
-#define GODOT_CPP_TEXTURE_PROGRESS_BAR_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/range.hpp>
@@ -103,4 +102,3 @@ public:
 
 VARIANT_ENUM_CAST(TextureProgressBar::FillMode);
 
-#endif // ! GODOT_CPP_TEXTURE_PROGRESS_BAR_HPP

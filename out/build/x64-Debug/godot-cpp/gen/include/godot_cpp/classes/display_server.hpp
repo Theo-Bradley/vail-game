@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_DISPLAY_SERVER_HPP
-#define GODOT_CPP_DISPLAY_SERVER_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -43,6 +42,7 @@
 #include <godot_cpp/variant/packed_string_array.hpp>
 #include <godot_cpp/variant/rect2.hpp>
 #include <godot_cpp/variant/rect2i.hpp>
+#include <godot_cpp/variant/rid.hpp>
 #include <godot_cpp/variant/string.hpp>
 #include <godot_cpp/variant/typed_array.hpp>
 #include <godot_cpp/variant/variant.hpp>
@@ -58,9 +58,9 @@ namespace godot {
 
 class Image;
 class PackedVector2Array;
-class RID;
 class Resource;
 class Texture2D;
+struct Transform2D;
 
 class DisplayServer : public Object {
 	GDEXTENSION_CLASS(DisplayServer, Object)
@@ -100,6 +100,124 @@ public:
 		FEATURE_WINDOW_EMBEDDING = 29,
 		FEATURE_NATIVE_DIALOG_FILE_MIME = 30,
 		FEATURE_EMOJI_AND_SYMBOL_PICKER = 31,
+		FEATURE_NATIVE_COLOR_PICKER = 32,
+		FEATURE_SELF_FITTING_WINDOWS = 33,
+		FEATURE_ACCESSIBILITY_SCREEN_READER = 34,
+	};
+
+	enum AccessibilityRole {
+		ROLE_UNKNOWN = 0,
+		ROLE_DEFAULT_BUTTON = 1,
+		ROLE_AUDIO = 2,
+		ROLE_VIDEO = 3,
+		ROLE_STATIC_TEXT = 4,
+		ROLE_CONTAINER = 5,
+		ROLE_PANEL = 6,
+		ROLE_BUTTON = 7,
+		ROLE_LINK = 8,
+		ROLE_CHECK_BOX = 9,
+		ROLE_RADIO_BUTTON = 10,
+		ROLE_CHECK_BUTTON = 11,
+		ROLE_SCROLL_BAR = 12,
+		ROLE_SCROLL_VIEW = 13,
+		ROLE_SPLITTER = 14,
+		ROLE_SLIDER = 15,
+		ROLE_SPIN_BUTTON = 16,
+		ROLE_PROGRESS_INDICATOR = 17,
+		ROLE_TEXT_FIELD = 18,
+		ROLE_MULTILINE_TEXT_FIELD = 19,
+		ROLE_COLOR_PICKER = 20,
+		ROLE_TABLE = 21,
+		ROLE_CELL = 22,
+		ROLE_ROW = 23,
+		ROLE_ROW_GROUP = 24,
+		ROLE_ROW_HEADER = 25,
+		ROLE_COLUMN_HEADER = 26,
+		ROLE_TREE = 27,
+		ROLE_TREE_ITEM = 28,
+		ROLE_LIST = 29,
+		ROLE_LIST_ITEM = 30,
+		ROLE_LIST_BOX = 31,
+		ROLE_LIST_BOX_OPTION = 32,
+		ROLE_TAB_BAR = 33,
+		ROLE_TAB = 34,
+		ROLE_TAB_PANEL = 35,
+		ROLE_MENU_BAR = 36,
+		ROLE_MENU = 37,
+		ROLE_MENU_ITEM = 38,
+		ROLE_MENU_ITEM_CHECK_BOX = 39,
+		ROLE_MENU_ITEM_RADIO = 40,
+		ROLE_IMAGE = 41,
+		ROLE_WINDOW = 42,
+		ROLE_TITLE_BAR = 43,
+		ROLE_DIALOG = 44,
+		ROLE_TOOLTIP = 45,
+	};
+
+	enum AccessibilityPopupType {
+		POPUP_MENU = 0,
+		POPUP_LIST = 1,
+		POPUP_TREE = 2,
+		POPUP_DIALOG = 3,
+	};
+
+	enum AccessibilityFlags {
+		FLAG_HIDDEN = 0,
+		FLAG_MULTISELECTABLE = 1,
+		FLAG_REQUIRED = 2,
+		FLAG_VISITED = 3,
+		FLAG_BUSY = 4,
+		FLAG_MODAL = 5,
+		FLAG_TOUCH_PASSTHROUGH = 6,
+		FLAG_READONLY = 7,
+		FLAG_DISABLED = 8,
+		FLAG_CLIPS_CHILDREN = 9,
+	};
+
+	enum AccessibilityAction {
+		ACTION_CLICK = 0,
+		ACTION_FOCUS = 1,
+		ACTION_BLUR = 2,
+		ACTION_COLLAPSE = 3,
+		ACTION_EXPAND = 4,
+		ACTION_DECREMENT = 5,
+		ACTION_INCREMENT = 6,
+		ACTION_HIDE_TOOLTIP = 7,
+		ACTION_SHOW_TOOLTIP = 8,
+		ACTION_SET_TEXT_SELECTION = 9,
+		ACTION_REPLACE_SELECTED_TEXT = 10,
+		ACTION_SCROLL_BACKWARD = 11,
+		ACTION_SCROLL_DOWN = 12,
+		ACTION_SCROLL_FORWARD = 13,
+		ACTION_SCROLL_LEFT = 14,
+		ACTION_SCROLL_RIGHT = 15,
+		ACTION_SCROLL_UP = 16,
+		ACTION_SCROLL_INTO_VIEW = 17,
+		ACTION_SCROLL_TO_POINT = 18,
+		ACTION_SET_SCROLL_OFFSET = 19,
+		ACTION_SET_VALUE = 20,
+		ACTION_SHOW_CONTEXT_MENU = 21,
+		ACTION_CUSTOM = 22,
+	};
+
+	enum AccessibilityLiveMode {
+		LIVE_OFF = 0,
+		LIVE_POLITE = 1,
+		LIVE_ASSERTIVE = 2,
+	};
+
+	enum AccessibilityScrollUnit {
+		SCROLL_UNIT_ITEM = 0,
+		SCROLL_UNIT_PAGE = 1,
+	};
+
+	enum AccessibilityScrollHint {
+		SCROLL_HINT_TOP_LEFT = 0,
+		SCROLL_HINT_BOTTOM_RIGHT = 1,
+		SCROLL_HINT_TOP_EDGE = 2,
+		SCROLL_HINT_BOTTOM_EDGE = 3,
+		SCROLL_HINT_LEFT_EDGE = 4,
+		SCROLL_HINT_RIGHT_EDGE = 5,
 	};
 
 	enum MouseMode {
@@ -180,7 +298,10 @@ public:
 		WINDOW_FLAG_MOUSE_PASSTHROUGH = 7,
 		WINDOW_FLAG_SHARP_CORNERS = 8,
 		WINDOW_FLAG_EXCLUDE_FROM_CAPTURE = 9,
-		WINDOW_FLAG_MAX = 10,
+		WINDOW_FLAG_POPUP_WM_HINT = 10,
+		WINDOW_FLAG_MINIMIZE_DISABLED = 11,
+		WINDOW_FLAG_MAXIMIZE_DISABLED = 12,
+		WINDOW_FLAG_MAX = 13,
 	};
 
 	enum WindowEvent {
@@ -192,6 +313,7 @@ public:
 		WINDOW_EVENT_GO_BACK_REQUEST = 5,
 		WINDOW_EVENT_DPI_CHANGE = 6,
 		WINDOW_EVENT_TITLEBAR_CHANGE = 7,
+		WINDOW_EVENT_FORCE_CLOSE = 8,
 	};
 
 	enum WindowResizeEdge {
@@ -229,6 +351,7 @@ public:
 		TTS_UTTERANCE_BOUNDARY = 3,
 	};
 
+	static const int INVALID_SCREEN = -1;
 	static const int SCREEN_WITH_MOUSE_FOCUS = -4;
 	static const int SCREEN_WITH_KEYBOARD_FOCUS = -3;
 	static const int SCREEN_PRIMARY = -2;
@@ -386,12 +509,89 @@ public:
 	bool window_minimize_on_title_dbl_click() const;
 	void window_start_drag(int32_t p_window_id = 0);
 	void window_start_resize(DisplayServer::WindowResizeEdge p_edge, int32_t p_window_id = 0);
+	int32_t accessibility_should_increase_contrast() const;
+	int32_t accessibility_should_reduce_animation() const;
+	int32_t accessibility_should_reduce_transparency() const;
+	int32_t accessibility_screen_reader_active() const;
+	RID accessibility_create_element(int32_t p_window_id, DisplayServer::AccessibilityRole p_role);
+	RID accessibility_create_sub_element(const RID &p_parent_rid, DisplayServer::AccessibilityRole p_role, int32_t p_insert_pos = -1);
+	RID accessibility_create_sub_text_edit_elements(const RID &p_parent_rid, const RID &p_shaped_text, float p_min_height, int32_t p_insert_pos = -1);
+	bool accessibility_has_element(const RID &p_id) const;
+	void accessibility_free_element(const RID &p_id);
+	void accessibility_element_set_meta(const RID &p_id, const Variant &p_meta);
+	Variant accessibility_element_get_meta(const RID &p_id) const;
+	void accessibility_set_window_rect(int32_t p_window_id, const Rect2 &p_rect_out, const Rect2 &p_rect_in);
+	void accessibility_set_window_focused(int32_t p_window_id, bool p_focused);
+	void accessibility_update_set_focus(const RID &p_id);
+	RID accessibility_get_window_root(int32_t p_window_id) const;
+	void accessibility_update_set_role(const RID &p_id, DisplayServer::AccessibilityRole p_role);
+	void accessibility_update_set_name(const RID &p_id, const String &p_name);
+	void accessibility_update_set_extra_info(const RID &p_id, const String &p_name);
+	void accessibility_update_set_description(const RID &p_id, const String &p_description);
+	void accessibility_update_set_value(const RID &p_id, const String &p_value);
+	void accessibility_update_set_tooltip(const RID &p_id, const String &p_tooltip);
+	void accessibility_update_set_bounds(const RID &p_id, const Rect2 &p_rect);
+	void accessibility_update_set_transform(const RID &p_id, const Transform2D &p_transform);
+	void accessibility_update_add_child(const RID &p_id, const RID &p_child_id);
+	void accessibility_update_add_related_controls(const RID &p_id, const RID &p_related_id);
+	void accessibility_update_add_related_details(const RID &p_id, const RID &p_related_id);
+	void accessibility_update_add_related_described_by(const RID &p_id, const RID &p_related_id);
+	void accessibility_update_add_related_flow_to(const RID &p_id, const RID &p_related_id);
+	void accessibility_update_add_related_labeled_by(const RID &p_id, const RID &p_related_id);
+	void accessibility_update_add_related_radio_group(const RID &p_id, const RID &p_related_id);
+	void accessibility_update_set_active_descendant(const RID &p_id, const RID &p_other_id);
+	void accessibility_update_set_next_on_line(const RID &p_id, const RID &p_other_id);
+	void accessibility_update_set_previous_on_line(const RID &p_id, const RID &p_other_id);
+	void accessibility_update_set_member_of(const RID &p_id, const RID &p_group_id);
+	void accessibility_update_set_in_page_link_target(const RID &p_id, const RID &p_other_id);
+	void accessibility_update_set_error_message(const RID &p_id, const RID &p_other_id);
+	void accessibility_update_set_live(const RID &p_id, DisplayServer::AccessibilityLiveMode p_live);
+	void accessibility_update_add_action(const RID &p_id, DisplayServer::AccessibilityAction p_action, const Callable &p_callable);
+	void accessibility_update_add_custom_action(const RID &p_id, int32_t p_action_id, const String &p_action_description);
+	void accessibility_update_set_table_row_count(const RID &p_id, int32_t p_count);
+	void accessibility_update_set_table_column_count(const RID &p_id, int32_t p_count);
+	void accessibility_update_set_table_row_index(const RID &p_id, int32_t p_index);
+	void accessibility_update_set_table_column_index(const RID &p_id, int32_t p_index);
+	void accessibility_update_set_table_cell_position(const RID &p_id, int32_t p_row_index, int32_t p_column_index);
+	void accessibility_update_set_table_cell_span(const RID &p_id, int32_t p_row_span, int32_t p_column_span);
+	void accessibility_update_set_list_item_count(const RID &p_id, int32_t p_size);
+	void accessibility_update_set_list_item_index(const RID &p_id, int32_t p_index);
+	void accessibility_update_set_list_item_level(const RID &p_id, int32_t p_level);
+	void accessibility_update_set_list_item_selected(const RID &p_id, bool p_selected);
+	void accessibility_update_set_list_item_expanded(const RID &p_id, bool p_expanded);
+	void accessibility_update_set_popup_type(const RID &p_id, DisplayServer::AccessibilityPopupType p_popup);
+	void accessibility_update_set_checked(const RID &p_id, bool p_checekd);
+	void accessibility_update_set_num_value(const RID &p_id, double p_position);
+	void accessibility_update_set_num_range(const RID &p_id, double p_min, double p_max);
+	void accessibility_update_set_num_step(const RID &p_id, double p_step);
+	void accessibility_update_set_num_jump(const RID &p_id, double p_jump);
+	void accessibility_update_set_scroll_x(const RID &p_id, double p_position);
+	void accessibility_update_set_scroll_x_range(const RID &p_id, double p_min, double p_max);
+	void accessibility_update_set_scroll_y(const RID &p_id, double p_position);
+	void accessibility_update_set_scroll_y_range(const RID &p_id, double p_min, double p_max);
+	void accessibility_update_set_text_decorations(const RID &p_id, bool p_underline, bool p_strikethrough, bool p_overline);
+	void accessibility_update_set_text_align(const RID &p_id, HorizontalAlignment p_align);
+	void accessibility_update_set_text_selection(const RID &p_id, const RID &p_text_start_id, int32_t p_start_char, const RID &p_text_end_id, int32_t p_end_char);
+	void accessibility_update_set_flag(const RID &p_id, DisplayServer::AccessibilityFlags p_flag, bool p_value);
+	void accessibility_update_set_classname(const RID &p_id, const String &p_classname);
+	void accessibility_update_set_placeholder(const RID &p_id, const String &p_placeholder);
+	void accessibility_update_set_language(const RID &p_id, const String &p_language);
+	void accessibility_update_set_text_orientation(const RID &p_id, bool p_vertical);
+	void accessibility_update_set_list_orientation(const RID &p_id, bool p_vertical);
+	void accessibility_update_set_shortcut(const RID &p_id, const String &p_shortcut);
+	void accessibility_update_set_url(const RID &p_id, const String &p_url);
+	void accessibility_update_set_role_description(const RID &p_id, const String &p_description);
+	void accessibility_update_set_state_description(const RID &p_id, const String &p_description);
+	void accessibility_update_set_color_value(const RID &p_id, const Color &p_color);
+	void accessibility_update_set_background_color(const RID &p_id, const Color &p_color);
+	void accessibility_update_set_foreground_color(const RID &p_id, const Color &p_color);
 	Vector2i ime_get_selection() const;
 	String ime_get_text() const;
 	void virtual_keyboard_show(const String &p_existing_text, const Rect2 &p_position = Rect2(0, 0, 0, 0), DisplayServer::VirtualKeyboardType p_type = (DisplayServer::VirtualKeyboardType)0, int32_t p_max_length = -1, int32_t p_cursor_start = -1, int32_t p_cursor_end = -1);
 	void virtual_keyboard_hide();
 	int32_t virtual_keyboard_get_height() const;
 	bool has_hardware_keyboard() const;
+	void set_hardware_keyboard_connection_change_callback(const Callable &p_callable);
 	void cursor_set_shape(DisplayServer::CursorShape p_shape);
 	DisplayServer::CursorShape cursor_get_shape() const;
 	void cursor_set_custom_image(const Ref<Resource> &p_cursor, DisplayServer::CursorShape p_shape = (DisplayServer::CursorShape)0, const Vector2 &p_hotspot = Vector2(0, 0));
@@ -399,8 +599,8 @@ public:
 	void enable_for_stealing_focus(int64_t p_process_id);
 	Error dialog_show(const String &p_title, const String &p_description, const PackedStringArray &p_buttons, const Callable &p_callback);
 	Error dialog_input_text(const String &p_title, const String &p_description, const String &p_existing_text, const Callable &p_callback);
-	Error file_dialog_show(const String &p_title, const String &p_current_directory, const String &p_filename, bool p_show_hidden, DisplayServer::FileDialogMode p_mode, const PackedStringArray &p_filters, const Callable &p_callback);
-	Error file_dialog_with_options_show(const String &p_title, const String &p_current_directory, const String &p_root, const String &p_filename, bool p_show_hidden, DisplayServer::FileDialogMode p_mode, const PackedStringArray &p_filters, const TypedArray<Dictionary> &p_options, const Callable &p_callback);
+	Error file_dialog_show(const String &p_title, const String &p_current_directory, const String &p_filename, bool p_show_hidden, DisplayServer::FileDialogMode p_mode, const PackedStringArray &p_filters, const Callable &p_callback, int32_t p_parent_window_id = 0);
+	Error file_dialog_with_options_show(const String &p_title, const String &p_current_directory, const String &p_root, const String &p_filename, bool p_show_hidden, DisplayServer::FileDialogMode p_mode, const PackedStringArray &p_filters, const TypedArray<Dictionary> &p_options, const Callable &p_callback, int32_t p_parent_window_id = 0);
 	void beep() const;
 	int32_t keyboard_get_layout_count() const;
 	int32_t keyboard_get_current_layout() const;
@@ -410,6 +610,7 @@ public:
 	Key keyboard_get_keycode_from_physical(Key p_keycode) const;
 	Key keyboard_get_label_from_physical(Key p_keycode) const;
 	void show_emoji_and_symbol_picker() const;
+	bool color_picker(const Callable &p_callback);
 	void process_events();
 	void force_process_and_drop_events();
 	void set_native_icon(const String &p_filename);
@@ -444,6 +645,13 @@ public:
 } // namespace godot
 
 VARIANT_ENUM_CAST(DisplayServer::Feature);
+VARIANT_ENUM_CAST(DisplayServer::AccessibilityRole);
+VARIANT_ENUM_CAST(DisplayServer::AccessibilityPopupType);
+VARIANT_ENUM_CAST(DisplayServer::AccessibilityFlags);
+VARIANT_ENUM_CAST(DisplayServer::AccessibilityAction);
+VARIANT_ENUM_CAST(DisplayServer::AccessibilityLiveMode);
+VARIANT_ENUM_CAST(DisplayServer::AccessibilityScrollUnit);
+VARIANT_ENUM_CAST(DisplayServer::AccessibilityScrollHint);
 VARIANT_ENUM_CAST(DisplayServer::MouseMode);
 VARIANT_ENUM_CAST(DisplayServer::ScreenOrientation);
 VARIANT_ENUM_CAST(DisplayServer::VirtualKeyboardType);
@@ -457,4 +665,3 @@ VARIANT_ENUM_CAST(DisplayServer::VSyncMode);
 VARIANT_ENUM_CAST(DisplayServer::HandleType);
 VARIANT_ENUM_CAST(DisplayServer::TTSUtteranceEvent);
 
-#endif // ! GODOT_CPP_DISPLAY_SERVER_HPP

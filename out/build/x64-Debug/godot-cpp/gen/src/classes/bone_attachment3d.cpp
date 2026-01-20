@@ -42,7 +42,7 @@ namespace godot {
 
 Skeleton3D *BoneAttachment3D::get_skeleton() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneAttachment3D::get_class_static()._native_ptr(), StringName("get_skeleton")._native_ptr(), 1814733083);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Skeleton3D>(_gde_method_bind, _owner);
 }
 
@@ -54,7 +54,7 @@ void BoneAttachment3D::set_bone_name(const String &p_bone_name) {
 
 String BoneAttachment3D::get_bone_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneAttachment3D::get_class_static()._native_ptr(), StringName("get_bone_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -68,7 +68,7 @@ void BoneAttachment3D::set_bone_idx(int32_t p_bone_idx) {
 
 int32_t BoneAttachment3D::get_bone_idx() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneAttachment3D::get_class_static()._native_ptr(), StringName("get_bone_idx")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void BoneAttachment3D::set_override_pose(bool p_override_pose) {
 
 bool BoneAttachment3D::get_override_pose() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneAttachment3D::get_class_static()._native_ptr(), StringName("get_override_pose")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void BoneAttachment3D::set_use_external_skeleton(bool p_use_external_skeleton) {
 
 bool BoneAttachment3D::get_use_external_skeleton() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneAttachment3D::get_class_static()._native_ptr(), StringName("get_use_external_skeleton")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -114,7 +114,7 @@ void BoneAttachment3D::set_external_skeleton(const NodePath &p_external_skeleton
 
 NodePath BoneAttachment3D::get_external_skeleton() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneAttachment3D::get_class_static()._native_ptr(), StringName("get_external_skeleton")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 

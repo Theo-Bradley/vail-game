@@ -46,7 +46,7 @@ void NavigationPathQueryResult2D::set_path(const PackedVector2Array &p_path) {
 
 PackedVector2Array NavigationPathQueryResult2D::get_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryResult2D::get_class_static()._native_ptr(), StringName("get_path")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void NavigationPathQueryResult2D::set_path_types(const PackedInt32Array &p_path_
 
 PackedInt32Array NavigationPathQueryResult2D::get_path_types() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryResult2D::get_class_static()._native_ptr(), StringName("get_path_types")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -70,7 +70,7 @@ void NavigationPathQueryResult2D::set_path_rids(const TypedArray<RID> &p_path_ri
 
 TypedArray<RID> NavigationPathQueryResult2D::get_path_rids() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryResult2D::get_class_static()._native_ptr(), StringName("get_path_rids")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<RID>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<RID>()));
 	return internal::_call_native_mb_ret<TypedArray<RID>>(_gde_method_bind, _owner);
 }
 
@@ -82,8 +82,22 @@ void NavigationPathQueryResult2D::set_path_owner_ids(const PackedInt64Array &p_p
 
 PackedInt64Array NavigationPathQueryResult2D::get_path_owner_ids() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryResult2D::get_class_static()._native_ptr(), StringName("get_path_owner_ids")._native_ptr(), 235988956);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt64Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt64Array()));
 	return internal::_call_native_mb_ret<PackedInt64Array>(_gde_method_bind, _owner);
+}
+
+void NavigationPathQueryResult2D::set_path_length(float p_length) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryResult2D::get_class_static()._native_ptr(), StringName("set_path_length")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_length_encoded;
+	PtrToArg<double>::encode(p_length, &p_length_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_length_encoded);
+}
+
+float NavigationPathQueryResult2D::get_path_length() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryResult2D::get_class_static()._native_ptr(), StringName("get_path_length")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 void NavigationPathQueryResult2D::reset() {

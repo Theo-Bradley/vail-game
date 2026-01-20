@@ -40,9 +40,9 @@
 
 namespace godot {
 
-RID UniformSetCacheRD::get_cache(const RID &p_shader, uint32_t p_set, const TypedArray<RDUniform> &p_uniforms) {
+RID UniformSetCacheRD::get_cache(const RID &p_shader, uint32_t p_set, const TypedArray<Ref<RDUniform>> &p_uniforms) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(UniformSetCacheRD::get_class_static()._native_ptr(), StringName("get_cache")._native_ptr(), 658571723);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_set_encoded;
 	PtrToArg<int64_t>::encode(p_set, &p_set_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, nullptr, &p_shader, &p_set_encoded, &p_uniforms);

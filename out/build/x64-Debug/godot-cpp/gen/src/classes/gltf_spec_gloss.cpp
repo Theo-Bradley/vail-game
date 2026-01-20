@@ -42,7 +42,7 @@ namespace godot {
 
 Ref<Image> GLTFSpecGloss::get_diffuse_img() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSpecGloss::get_class_static()._native_ptr(), StringName("get_diffuse_img")._native_ptr(), 564927088);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	return Ref<Image>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Image>(_gde_method_bind, _owner));
 }
 
@@ -54,7 +54,7 @@ void GLTFSpecGloss::set_diffuse_img(const Ref<Image> &p_diffuse_img) {
 
 Color GLTFSpecGloss::get_diffuse_factor() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSpecGloss::get_class_static()._native_ptr(), StringName("get_diffuse_factor")._native_ptr(), 3200896285);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -66,7 +66,7 @@ void GLTFSpecGloss::set_diffuse_factor(const Color &p_diffuse_factor) {
 
 float GLTFSpecGloss::get_gloss_factor() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSpecGloss::get_class_static()._native_ptr(), StringName("get_gloss_factor")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void GLTFSpecGloss::set_gloss_factor(float p_gloss_factor) {
 
 Color GLTFSpecGloss::get_specular_factor() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSpecGloss::get_class_static()._native_ptr(), StringName("get_specular_factor")._native_ptr(), 3200896285);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void GLTFSpecGloss::set_specular_factor(const Color &p_specular_factor) {
 
 Ref<Image> GLTFSpecGloss::get_spec_gloss_img() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSpecGloss::get_class_static()._native_ptr(), StringName("get_spec_gloss_img")._native_ptr(), 564927088);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	return Ref<Image>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Image>(_gde_method_bind, _owner));
 }
 

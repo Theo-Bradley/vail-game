@@ -40,7 +40,7 @@ namespace godot {
 
 int32_t Animation::add_track(Animation::TrackType p_type, int32_t p_at_position) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("add_track")._native_ptr(), 3843682357);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_at_position_encoded;
@@ -58,13 +58,13 @@ void Animation::remove_track(int32_t p_track_idx) {
 
 int32_t Animation::get_track_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_track_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Animation::TrackType Animation::track_get_type(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_get_type")._native_ptr(), 3445944217);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Animation::TrackType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Animation::TrackType(0)));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return (Animation::TrackType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -72,7 +72,7 @@ Animation::TrackType Animation::track_get_type(int32_t p_track_idx) const {
 
 NodePath Animation::track_get_path(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_get_path")._native_ptr(), 408788394);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -88,7 +88,7 @@ void Animation::track_set_path(int32_t p_track_idx, const NodePath &p_path) {
 
 int32_t Animation::find_track(const NodePath &p_path, Animation::TrackType p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("find_track")._native_ptr(), 245376003);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path, &p_type_encoded);
@@ -142,7 +142,7 @@ void Animation::track_set_imported(int32_t p_track_idx, bool p_imported) {
 
 bool Animation::track_is_imported(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_is_imported")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -160,7 +160,7 @@ void Animation::track_set_enabled(int32_t p_track_idx, bool p_enabled) {
 
 bool Animation::track_is_enabled(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_is_enabled")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -168,7 +168,7 @@ bool Animation::track_is_enabled(int32_t p_track_idx) const {
 
 int32_t Animation::position_track_insert_key(int32_t p_track_idx, double p_time, const Vector3 &p_position) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("position_track_insert_key")._native_ptr(), 2540608232);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -178,7 +178,7 @@ int32_t Animation::position_track_insert_key(int32_t p_track_idx, double p_time,
 
 int32_t Animation::rotation_track_insert_key(int32_t p_track_idx, double p_time, const Quaternion &p_rotation) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("rotation_track_insert_key")._native_ptr(), 4165004800);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -188,7 +188,7 @@ int32_t Animation::rotation_track_insert_key(int32_t p_track_idx, double p_time,
 
 int32_t Animation::scale_track_insert_key(int32_t p_track_idx, double p_time, const Vector3 &p_scale) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("scale_track_insert_key")._native_ptr(), 2540608232);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -198,7 +198,7 @@ int32_t Animation::scale_track_insert_key(int32_t p_track_idx, double p_time, co
 
 int32_t Animation::blend_shape_track_insert_key(int32_t p_track_idx, double p_time, float p_amount) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("blend_shape_track_insert_key")._native_ptr(), 1534913637);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -210,7 +210,7 @@ int32_t Animation::blend_shape_track_insert_key(int32_t p_track_idx, double p_ti
 
 Vector3 Animation::position_track_interpolate(int32_t p_track_idx, double p_time_sec, bool p_backward) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("position_track_interpolate")._native_ptr(), 3530011197);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_sec_encoded;
@@ -222,7 +222,7 @@ Vector3 Animation::position_track_interpolate(int32_t p_track_idx, double p_time
 
 Quaternion Animation::rotation_track_interpolate(int32_t p_track_idx, double p_time_sec, bool p_backward) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("rotation_track_interpolate")._native_ptr(), 2915876792);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Quaternion());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Quaternion()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_sec_encoded;
@@ -234,7 +234,7 @@ Quaternion Animation::rotation_track_interpolate(int32_t p_track_idx, double p_t
 
 Vector3 Animation::scale_track_interpolate(int32_t p_track_idx, double p_time_sec, bool p_backward) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("scale_track_interpolate")._native_ptr(), 3530011197);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_sec_encoded;
@@ -246,7 +246,7 @@ Vector3 Animation::scale_track_interpolate(int32_t p_track_idx, double p_time_se
 
 float Animation::blend_shape_track_interpolate(int32_t p_track_idx, double p_time_sec, bool p_backward) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("blend_shape_track_interpolate")._native_ptr(), 2482365182);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_sec_encoded;
@@ -258,7 +258,7 @@ float Animation::blend_shape_track_interpolate(int32_t p_track_idx, double p_tim
 
 int32_t Animation::track_insert_key(int32_t p_track_idx, double p_time, const Variant &p_key, float p_transition) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_insert_key")._native_ptr(), 808952278);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -324,7 +324,7 @@ void Animation::track_set_key_time(int32_t p_track_idx, int32_t p_key_idx, doubl
 
 float Animation::track_get_key_transition(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_get_key_transition")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -334,7 +334,7 @@ float Animation::track_get_key_transition(int32_t p_track_idx, int32_t p_key_idx
 
 int32_t Animation::track_get_key_count(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_get_key_count")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -342,7 +342,7 @@ int32_t Animation::track_get_key_count(int32_t p_track_idx) const {
 
 Variant Animation::track_get_key_value(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_get_key_value")._native_ptr(), 678354945);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -352,7 +352,7 @@ Variant Animation::track_get_key_value(int32_t p_track_idx, int32_t p_key_idx) c
 
 double Animation::track_get_key_time(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_get_key_time")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -362,7 +362,7 @@ double Animation::track_get_key_time(int32_t p_track_idx, int32_t p_key_idx) con
 
 int32_t Animation::track_find_key(int32_t p_track_idx, double p_time, Animation::FindMode p_find_mode, bool p_limit, bool p_backward) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_find_key")._native_ptr(), 4230953007);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -388,7 +388,7 @@ void Animation::track_set_interpolation_type(int32_t p_track_idx, Animation::Int
 
 Animation::InterpolationType Animation::track_get_interpolation_type(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_get_interpolation_type")._native_ptr(), 1530756894);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Animation::InterpolationType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Animation::InterpolationType(0)));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return (Animation::InterpolationType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -406,7 +406,7 @@ void Animation::track_set_interpolation_loop_wrap(int32_t p_track_idx, bool p_in
 
 bool Animation::track_get_interpolation_loop_wrap(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_get_interpolation_loop_wrap")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -414,7 +414,7 @@ bool Animation::track_get_interpolation_loop_wrap(int32_t p_track_idx) const {
 
 bool Animation::track_is_compressed(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("track_is_compressed")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -432,7 +432,7 @@ void Animation::value_track_set_update_mode(int32_t p_track_idx, Animation::Upda
 
 Animation::UpdateMode Animation::value_track_get_update_mode(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("value_track_get_update_mode")._native_ptr(), 1440326473);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Animation::UpdateMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Animation::UpdateMode(0)));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return (Animation::UpdateMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -440,7 +440,7 @@ Animation::UpdateMode Animation::value_track_get_update_mode(int32_t p_track_idx
 
 Variant Animation::value_track_interpolate(int32_t p_track_idx, double p_time_sec, bool p_backward) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("value_track_interpolate")._native_ptr(), 747269075);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_sec_encoded;
@@ -452,7 +452,7 @@ Variant Animation::value_track_interpolate(int32_t p_track_idx, double p_time_se
 
 StringName Animation::method_track_get_name(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("method_track_get_name")._native_ptr(), 351665558);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -462,7 +462,7 @@ StringName Animation::method_track_get_name(int32_t p_track_idx, int32_t p_key_i
 
 Array Animation::method_track_get_params(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("method_track_get_params")._native_ptr(), 2345056839);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -472,7 +472,7 @@ Array Animation::method_track_get_params(int32_t p_track_idx, int32_t p_key_idx)
 
 int32_t Animation::bezier_track_insert_key(int32_t p_track_idx, double p_time, float p_value, const Vector2 &p_in_handle, const Vector2 &p_out_handle) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("bezier_track_insert_key")._native_ptr(), 3656773645);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -520,7 +520,7 @@ void Animation::bezier_track_set_key_out_handle(int32_t p_track_idx, int32_t p_k
 
 float Animation::bezier_track_get_key_value(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("bezier_track_get_key_value")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -530,7 +530,7 @@ float Animation::bezier_track_get_key_value(int32_t p_track_idx, int32_t p_key_i
 
 Vector2 Animation::bezier_track_get_key_in_handle(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("bezier_track_get_key_in_handle")._native_ptr(), 3016396712);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -540,7 +540,7 @@ Vector2 Animation::bezier_track_get_key_in_handle(int32_t p_track_idx, int32_t p
 
 Vector2 Animation::bezier_track_get_key_out_handle(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("bezier_track_get_key_out_handle")._native_ptr(), 3016396712);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -550,7 +550,7 @@ Vector2 Animation::bezier_track_get_key_out_handle(int32_t p_track_idx, int32_t 
 
 float Animation::bezier_track_interpolate(int32_t p_track_idx, double p_time) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("bezier_track_interpolate")._native_ptr(), 1900462983);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -560,7 +560,7 @@ float Animation::bezier_track_interpolate(int32_t p_track_idx, double p_time) co
 
 int32_t Animation::audio_track_insert_key(int32_t p_track_idx, double p_time, const Ref<Resource> &p_stream, float p_start_offset, float p_end_offset) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("audio_track_insert_key")._native_ptr(), 4021027286);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -608,7 +608,7 @@ void Animation::audio_track_set_key_end_offset(int32_t p_track_idx, int32_t p_ke
 
 Ref<Resource> Animation::audio_track_get_key_stream(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("audio_track_get_key_stream")._native_ptr(), 635277205);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -618,7 +618,7 @@ Ref<Resource> Animation::audio_track_get_key_stream(int32_t p_track_idx, int32_t
 
 float Animation::audio_track_get_key_start_offset(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("audio_track_get_key_start_offset")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -628,7 +628,7 @@ float Animation::audio_track_get_key_start_offset(int32_t p_track_idx, int32_t p
 
 float Animation::audio_track_get_key_end_offset(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("audio_track_get_key_end_offset")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -648,7 +648,7 @@ void Animation::audio_track_set_use_blend(int32_t p_track_idx, bool p_enable) {
 
 bool Animation::audio_track_is_use_blend(int32_t p_track_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("audio_track_is_use_blend")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_track_idx_encoded);
@@ -656,7 +656,7 @@ bool Animation::audio_track_is_use_blend(int32_t p_track_idx) const {
 
 int32_t Animation::animation_track_insert_key(int32_t p_track_idx, double p_time, const StringName &p_animation) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("animation_track_insert_key")._native_ptr(), 158676774);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	double p_time_encoded;
@@ -676,7 +676,7 @@ void Animation::animation_track_set_key_animation(int32_t p_track_idx, int32_t p
 
 StringName Animation::animation_track_get_key_animation(int32_t p_track_idx, int32_t p_key_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("animation_track_get_key_animation")._native_ptr(), 351665558);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_track_idx_encoded;
 	PtrToArg<int64_t>::encode(p_track_idx, &p_track_idx_encoded);
 	int64_t p_key_idx_encoded;
@@ -700,13 +700,13 @@ void Animation::remove_marker(const StringName &p_name) {
 
 bool Animation::has_marker(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("has_marker")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
 StringName Animation::get_marker_at_time(double p_time) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_marker_at_time")._native_ptr(), 4079494655);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	double p_time_encoded;
 	PtrToArg<double>::encode(p_time, &p_time_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_time_encoded);
@@ -714,7 +714,7 @@ StringName Animation::get_marker_at_time(double p_time) const {
 
 StringName Animation::get_next_marker(double p_time) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_next_marker")._native_ptr(), 4079494655);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	double p_time_encoded;
 	PtrToArg<double>::encode(p_time, &p_time_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_time_encoded);
@@ -722,7 +722,7 @@ StringName Animation::get_next_marker(double p_time) const {
 
 StringName Animation::get_prev_marker(double p_time) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_prev_marker")._native_ptr(), 4079494655);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	double p_time_encoded;
 	PtrToArg<double>::encode(p_time, &p_time_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_time_encoded);
@@ -730,19 +730,19 @@ StringName Animation::get_prev_marker(double p_time) const {
 
 double Animation::get_marker_time(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_marker_time")._native_ptr(), 2349060816);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_name);
 }
 
 PackedStringArray Animation::get_marker_names() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_marker_names")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 Color Animation::get_marker_color(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_marker_color")._native_ptr(), 3742943038);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -762,7 +762,7 @@ void Animation::set_length(float p_time_sec) {
 
 float Animation::get_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -776,7 +776,7 @@ void Animation::set_loop_mode(Animation::LoopMode p_loop_mode) {
 
 Animation::LoopMode Animation::get_loop_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_loop_mode")._native_ptr(), 1988889481);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Animation::LoopMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Animation::LoopMode(0)));
 	return (Animation::LoopMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -790,7 +790,7 @@ void Animation::set_step(float p_size_sec) {
 
 float Animation::get_step() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("get_step")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -834,7 +834,7 @@ void Animation::compress(uint32_t p_page_size, uint32_t p_fps, float p_split_tol
 
 bool Animation::is_capture_included() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Animation::get_class_static()._native_ptr(), StringName("is_capture_included")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

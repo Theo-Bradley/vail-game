@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_DIRECT_SPACE_STATE2D_EXTENSION_HPP
-#define GODOT_CPP_PHYSICS_DIRECT_SPACE_STATE2D_EXTENSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_direct_space_state2d.hpp>
 #include <godot_cpp/classes/physics_server2d_extension_ray_result.hpp>
@@ -89,4 +88,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PHYSICS_DIRECT_SPACE_STATE2D_EXTENSION_HPP

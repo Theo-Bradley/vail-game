@@ -49,19 +49,19 @@ void OpenXRInteractionProfile::set_interaction_profile_path(const String &p_inte
 
 String OpenXRInteractionProfile::get_interaction_profile_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRInteractionProfile::get_class_static()._native_ptr(), StringName("get_interaction_profile_path")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 int32_t OpenXRInteractionProfile::get_binding_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRInteractionProfile::get_class_static()._native_ptr(), StringName("get_binding_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Ref<OpenXRIPBinding> OpenXRInteractionProfile::get_binding(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRInteractionProfile::get_class_static()._native_ptr(), StringName("get_binding")._native_ptr(), 3934429652);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OpenXRIPBinding>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OpenXRIPBinding>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<OpenXRIPBinding>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OpenXRIPBinding>(_gde_method_bind, _owner, &p_index_encoded));
@@ -75,19 +75,19 @@ void OpenXRInteractionProfile::set_bindings(const Array &p_bindings) {
 
 Array OpenXRInteractionProfile::get_bindings() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRInteractionProfile::get_class_static()._native_ptr(), StringName("get_bindings")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
 int32_t OpenXRInteractionProfile::get_binding_modifier_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRInteractionProfile::get_class_static()._native_ptr(), StringName("get_binding_modifier_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Ref<OpenXRIPBindingModifier> OpenXRInteractionProfile::get_binding_modifier(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRInteractionProfile::get_class_static()._native_ptr(), StringName("get_binding_modifier")._native_ptr(), 2419896583);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OpenXRIPBindingModifier>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OpenXRIPBindingModifier>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<OpenXRIPBindingModifier>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OpenXRIPBindingModifier>(_gde_method_bind, _owner, &p_index_encoded));
@@ -101,7 +101,7 @@ void OpenXRInteractionProfile::set_binding_modifiers(const Array &p_binding_modi
 
 Array OpenXRInteractionProfile::get_binding_modifiers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRInteractionProfile::get_class_static()._native_ptr(), StringName("get_binding_modifiers")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPEN_XR_DPAD_BINDING_MODIFIER_HPP
-#define GODOT_CPP_OPEN_XR_DPAD_BINDING_MODIFIER_HPP
+#pragma once
 
 #include <godot_cpp/classes/open_xrip_binding_modifier.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -80,4 +79,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_OPEN_XR_DPAD_BINDING_MODIFIER_HPP

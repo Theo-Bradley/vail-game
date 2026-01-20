@@ -42,13 +42,13 @@ namespace godot {
 
 Joint2D *PhysicalBone2D::get_joint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone2D::get_class_static()._native_ptr(), StringName("get_joint")._native_ptr(), 3582132112);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Joint2D>(_gde_method_bind, _owner);
 }
 
 bool PhysicalBone2D::get_auto_configure_joint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone2D::get_class_static()._native_ptr(), StringName("get_auto_configure_joint")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -70,13 +70,13 @@ void PhysicalBone2D::set_simulate_physics(bool p_simulate_physics) {
 
 bool PhysicalBone2D::get_simulate_physics() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone2D::get_class_static()._native_ptr(), StringName("get_simulate_physics")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool PhysicalBone2D::is_simulating_physics() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone2D::get_class_static()._native_ptr(), StringName("is_simulating_physics")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void PhysicalBone2D::set_bone2d_nodepath(const NodePath &p_nodepath) {
 
 NodePath PhysicalBone2D::get_bone2d_nodepath() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone2D::get_class_static()._native_ptr(), StringName("get_bone2d_nodepath")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void PhysicalBone2D::set_bone2d_index(int32_t p_bone_index) {
 
 int32_t PhysicalBone2D::get_bone2d_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone2D::get_class_static()._native_ptr(), StringName("get_bone2d_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void PhysicalBone2D::set_follow_bone_when_simulating(bool p_follow_bone) {
 
 bool PhysicalBone2D::get_follow_bone_when_simulating() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone2D::get_class_static()._native_ptr(), StringName("get_follow_bone_when_simulating")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

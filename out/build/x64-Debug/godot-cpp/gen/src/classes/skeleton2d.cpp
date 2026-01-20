@@ -43,13 +43,13 @@ namespace godot {
 
 int32_t Skeleton2D::get_bone_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skeleton2D::get_class_static()._native_ptr(), StringName("get_bone_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Bone2D *Skeleton2D::get_bone(int32_t p_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skeleton2D::get_class_static()._native_ptr(), StringName("get_bone")._native_ptr(), 2556267111);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret_obj<Bone2D>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -57,7 +57,7 @@ Bone2D *Skeleton2D::get_bone(int32_t p_idx) {
 
 RID Skeleton2D::get_skeleton() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skeleton2D::get_class_static()._native_ptr(), StringName("get_skeleton")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -69,7 +69,7 @@ void Skeleton2D::set_modification_stack(const Ref<SkeletonModificationStack2D> &
 
 Ref<SkeletonModificationStack2D> Skeleton2D::get_modification_stack() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skeleton2D::get_class_static()._native_ptr(), StringName("get_modification_stack")._native_ptr(), 2107508396);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<SkeletonModificationStack2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<SkeletonModificationStack2D>()));
 	return Ref<SkeletonModificationStack2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<SkeletonModificationStack2D>(_gde_method_bind, _owner));
 }
 
@@ -97,7 +97,7 @@ void Skeleton2D::set_bone_local_pose_override(int32_t p_bone_idx, const Transfor
 
 Transform2D Skeleton2D::get_bone_local_pose_override(int32_t p_bone_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Skeleton2D::get_class_static()._native_ptr(), StringName("get_bone_local_pose_override")._native_ptr(), 2995540667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	int64_t p_bone_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bone_idx, &p_bone_idx_encoded);
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner, &p_bone_idx_encoded);

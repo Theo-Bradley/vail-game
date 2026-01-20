@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_REG_EX_HPP
-#define GODOT_CPP_REG_EX_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -56,7 +55,7 @@ public:
 	void clear();
 	Error compile(const String &p_pattern, bool p_show_error = true);
 	Ref<RegExMatch> search(const String &p_subject, int32_t p_offset = 0, int32_t p_end = -1) const;
-	TypedArray<RegExMatch> search_all(const String &p_subject, int32_t p_offset = 0, int32_t p_end = -1) const;
+	TypedArray<Ref<RegExMatch>> search_all(const String &p_subject, int32_t p_offset = 0, int32_t p_end = -1) const;
 	String sub(const String &p_subject, const String &p_replacement, bool p_all = false, int32_t p_offset = 0, int32_t p_end = -1) const;
 	bool is_valid() const;
 	String get_pattern() const;
@@ -74,4 +73,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_REG_EX_HPP

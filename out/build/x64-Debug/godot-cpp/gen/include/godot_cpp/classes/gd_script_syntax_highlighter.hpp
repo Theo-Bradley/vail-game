@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GD_SCRIPT_SYNTAX_HIGHLIGHTER_HPP
-#define GODOT_CPP_GD_SCRIPT_SYNTAX_HIGHLIGHTER_HPP
+#pragma once
 
 #include <godot_cpp/classes/editor_syntax_highlighter.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -57,4 +56,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_GD_SCRIPT_SYNTAX_HIGHLIGHTER_HPP

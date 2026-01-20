@@ -44,19 +44,19 @@ namespace godot {
 
 RID XRInterfaceExtension::get_color_texture() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRInterfaceExtension::get_class_static()._native_ptr(), StringName("get_color_texture")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID XRInterfaceExtension::get_depth_texture() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRInterfaceExtension::get_class_static()._native_ptr(), StringName("get_depth_texture")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID XRInterfaceExtension::get_velocity_texture() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRInterfaceExtension::get_class_static()._native_ptr(), StringName("get_velocity_texture")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -82,7 +82,7 @@ void XRInterfaceExtension::add_blit(const RID &p_render_target, const Rect2 &p_s
 
 RID XRInterfaceExtension::get_render_target_texture(const RID &p_render_target) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRInterfaceExtension::get_class_static()._native_ptr(), StringName("get_render_target_texture")._native_ptr(), 41030802);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_render_target);
 }
 
@@ -146,6 +146,10 @@ PackedFloat64Array XRInterfaceExtension::_get_projection_for_view(uint32_t p_vie
 
 RID XRInterfaceExtension::_get_vrs_texture() {
 	return RID();
+}
+
+XRInterface::VRSTextureFormat XRInterfaceExtension::_get_vrs_texture_format() {
+	return XRInterface::VRSTextureFormat(0);
 }
 
 void XRInterfaceExtension::_process() {}

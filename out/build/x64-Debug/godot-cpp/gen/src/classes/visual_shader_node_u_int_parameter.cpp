@@ -48,7 +48,7 @@ void VisualShaderNodeUIntParameter::set_default_value_enabled(bool p_enabled) {
 
 bool VisualShaderNodeUIntParameter::is_default_value_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeUIntParameter::get_class_static()._native_ptr(), StringName("is_default_value_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeUIntParameter::set_default_value(int32_t p_value) {
 
 int32_t VisualShaderNodeUIntParameter::get_default_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeUIntParameter::get_class_static()._native_ptr(), StringName("get_default_value")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

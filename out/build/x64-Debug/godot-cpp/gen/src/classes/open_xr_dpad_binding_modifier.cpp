@@ -49,7 +49,7 @@ void OpenXRDpadBindingModifier::set_action_set(const Ref<OpenXRActionSet> &p_act
 
 Ref<OpenXRActionSet> OpenXRDpadBindingModifier::get_action_set() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_action_set")._native_ptr(), 619941079);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OpenXRActionSet>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OpenXRActionSet>()));
 	return Ref<OpenXRActionSet>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OpenXRActionSet>(_gde_method_bind, _owner));
 }
 
@@ -61,7 +61,7 @@ void OpenXRDpadBindingModifier::set_input_path(const String &p_input_path) {
 
 String OpenXRDpadBindingModifier::get_input_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_input_path")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -75,7 +75,7 @@ void OpenXRDpadBindingModifier::set_threshold(float p_threshold) {
 
 float OpenXRDpadBindingModifier::get_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -89,7 +89,7 @@ void OpenXRDpadBindingModifier::set_threshold_released(float p_threshold_release
 
 float OpenXRDpadBindingModifier::get_threshold_released() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_threshold_released")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -103,7 +103,7 @@ void OpenXRDpadBindingModifier::set_center_region(float p_center_region) {
 
 float OpenXRDpadBindingModifier::get_center_region() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_center_region")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -117,7 +117,7 @@ void OpenXRDpadBindingModifier::set_wedge_angle(float p_wedge_angle) {
 
 float OpenXRDpadBindingModifier::get_wedge_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_wedge_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -131,7 +131,7 @@ void OpenXRDpadBindingModifier::set_is_sticky(bool p_is_sticky) {
 
 bool OpenXRDpadBindingModifier::get_is_sticky() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_is_sticky")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -143,7 +143,7 @@ void OpenXRDpadBindingModifier::set_on_haptic(const Ref<OpenXRHapticBase> &p_hap
 
 Ref<OpenXRHapticBase> OpenXRDpadBindingModifier::get_on_haptic() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_on_haptic")._native_ptr(), 922310751);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OpenXRHapticBase>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OpenXRHapticBase>()));
 	return Ref<OpenXRHapticBase>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OpenXRHapticBase>(_gde_method_bind, _owner));
 }
 
@@ -155,7 +155,7 @@ void OpenXRDpadBindingModifier::set_off_haptic(const Ref<OpenXRHapticBase> &p_ha
 
 Ref<OpenXRHapticBase> OpenXRDpadBindingModifier::get_off_haptic() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRDpadBindingModifier::get_class_static()._native_ptr(), StringName("get_off_haptic")._native_ptr(), 922310751);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OpenXRHapticBase>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OpenXRHapticBase>()));
 	return Ref<OpenXRHapticBase>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OpenXRHapticBase>(_gde_method_bind, _owner));
 }
 

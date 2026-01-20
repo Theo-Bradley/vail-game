@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SCENE_TREE_HPP
-#define GODOT_CPP_SCENE_TREE_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/main_loop.hpp>
@@ -69,6 +68,8 @@ public:
 
 	Window *get_root() const;
 	bool has_group(const StringName &p_name) const;
+	bool is_accessibility_enabled() const;
+	bool is_accessibility_supported() const;
 	bool is_auto_accept_quit() const;
 	void set_auto_accept_quit(bool p_enabled);
 	bool is_quit_on_go_back() const;
@@ -85,7 +86,7 @@ public:
 	bool is_paused() const;
 	Ref<SceneTreeTimer> create_timer(double p_time_sec, bool p_process_always = true, bool p_process_in_physics = false, bool p_ignore_time_scale = false);
 	Ref<Tween> create_tween();
-	TypedArray<Tween> get_processed_tweens();
+	TypedArray<Ref<Tween>> get_processed_tweens();
 	int32_t get_node_count() const;
 	int64_t get_frame() const;
 	void quit(int32_t p_exit_code = 0);
@@ -99,7 +100,7 @@ private:
 public:
 	template <typename... Args>
 	void call_group_flags(int64_t p_flags, const StringName &p_group, const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 3 + sizeof...(Args)> variant_args{ Variant(p_flags), Variant(p_group), Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 3 + sizeof...(Args)> variant_args{{ Variant(p_flags), Variant(p_group), Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 3 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -115,7 +116,7 @@ private:
 public:
 	template <typename... Args>
 	void call_group(const StringName &p_group, const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 2 + sizeof...(Args)> variant_args{ Variant(p_group), Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 2 + sizeof...(Args)> variant_args{{ Variant(p_group), Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 2 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -151,4 +152,3 @@ public:
 
 VARIANT_ENUM_CAST(SceneTree::GroupCallFlags);
 
-#endif // ! GODOT_CPP_SCENE_TREE_HPP

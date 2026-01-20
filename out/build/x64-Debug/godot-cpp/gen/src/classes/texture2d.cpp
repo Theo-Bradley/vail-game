@@ -45,25 +45,25 @@ namespace godot {
 
 int32_t Texture2D::get_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture2D::get_class_static()._native_ptr(), StringName("get_width")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t Texture2D::get_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture2D::get_class_static()._native_ptr(), StringName("get_height")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Vector2 Texture2D::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture2D::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 bool Texture2D::has_alpha() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture2D::get_class_static()._native_ptr(), StringName("has_alpha")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -97,13 +97,13 @@ void Texture2D::draw_rect_region(const RID &p_canvas_item, const Rect2 &p_rect, 
 
 Ref<Image> Texture2D::get_image() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture2D::get_class_static()._native_ptr(), StringName("get_image")._native_ptr(), 4190603485);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	return Ref<Image>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Image>(_gde_method_bind, _owner));
 }
 
 Ref<Resource> Texture2D::create_placeholder() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture2D::get_class_static()._native_ptr(), StringName("create_placeholder")._native_ptr(), 121922552);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
 	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner));
 }
 

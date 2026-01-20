@@ -46,7 +46,7 @@ namespace godot {
 
 Error GraphEdit::connect_node(const StringName &p_from_node, int32_t p_from_port, const StringName &p_to_node, int32_t p_to_port, bool p_keep_alive) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("connect_node")._native_ptr(), 1376144231);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_from_port_encoded;
 	PtrToArg<int64_t>::encode(p_from_port, &p_from_port_encoded);
 	int64_t p_to_port_encoded;
@@ -58,7 +58,7 @@ Error GraphEdit::connect_node(const StringName &p_from_node, int32_t p_from_port
 
 bool GraphEdit::is_node_connected(const StringName &p_from_node, int32_t p_from_port, const StringName &p_to_node, int32_t p_to_port) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_node_connected")._native_ptr(), 4216241294);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_from_port_encoded;
 	PtrToArg<int64_t>::encode(p_from_port, &p_from_port_encoded);
 	int64_t p_to_port_encoded;
@@ -96,13 +96,13 @@ void GraphEdit::set_connections(const TypedArray<Dictionary> &p_connections) {
 
 TypedArray<Dictionary> GraphEdit::get_connection_list() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_connection_list")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 
 int32_t GraphEdit::get_connection_count(const StringName &p_from_node, int32_t p_from_port) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_connection_count")._native_ptr(), 861718734);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_from_port_encoded;
 	PtrToArg<int64_t>::encode(p_from_port, &p_from_port_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_from_node, &p_from_port_encoded);
@@ -110,15 +110,21 @@ int32_t GraphEdit::get_connection_count(const StringName &p_from_node, int32_t p
 
 Dictionary GraphEdit::get_closest_connection_at_point(const Vector2 &p_point, float p_max_distance) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_closest_connection_at_point")._native_ptr(), 453879819);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	double p_max_distance_encoded;
 	PtrToArg<double>::encode(p_max_distance, &p_max_distance_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_point, &p_max_distance_encoded);
 }
 
+TypedArray<Dictionary> GraphEdit::get_connection_list_from_node(const StringName &p_node) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_connection_list_from_node")._native_ptr(), 3147814860);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
+	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner, &p_node);
+}
+
 TypedArray<Dictionary> GraphEdit::get_connections_intersecting_with_rect(const Rect2 &p_rect) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_connections_intersecting_with_rect")._native_ptr(), 2709748719);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner, &p_rect);
 }
 
@@ -136,7 +142,7 @@ void GraphEdit::force_connection_drag_end() {
 
 Vector2 GraphEdit::get_scroll_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_scroll_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -200,7 +206,7 @@ void GraphEdit::remove_valid_connection_type(int32_t p_from_type, int32_t p_to_t
 
 bool GraphEdit::is_valid_connection_type(int32_t p_from_type, int32_t p_to_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_valid_connection_type")._native_ptr(), 2522259332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_from_type_encoded;
 	PtrToArg<int64_t>::encode(p_from_type, &p_from_type_encoded);
 	int64_t p_to_type_encoded;
@@ -210,7 +216,7 @@ bool GraphEdit::is_valid_connection_type(int32_t p_from_type, int32_t p_to_type)
 
 PackedVector2Array GraphEdit::get_connection_line(const Vector2 &p_from_node, const Vector2 &p_to_node) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_connection_line")._native_ptr(), 3932192302);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner, &p_from_node, &p_to_node);
 }
 
@@ -228,13 +234,13 @@ void GraphEdit::detach_graph_element_from_frame(const StringName &p_element) {
 
 GraphFrame *GraphEdit::get_element_frame(const StringName &p_element) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_element_frame")._native_ptr(), 988084372);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<GraphFrame>(_gde_method_bind, _owner, &p_element);
 }
 
 TypedArray<StringName> GraphEdit::get_attached_nodes_of_frame(const StringName &p_frame) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_attached_nodes_of_frame")._native_ptr(), 689397652);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<StringName>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<StringName>()));
 	return internal::_call_native_mb_ret<TypedArray<StringName>>(_gde_method_bind, _owner, &p_frame);
 }
 
@@ -248,7 +254,7 @@ void GraphEdit::set_panning_scheme(GraphEdit::PanningScheme p_scheme) {
 
 GraphEdit::PanningScheme GraphEdit::get_panning_scheme() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_panning_scheme")._native_ptr(), 549924446);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GraphEdit::PanningScheme(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GraphEdit::PanningScheme(0)));
 	return (GraphEdit::PanningScheme)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -262,7 +268,7 @@ void GraphEdit::set_zoom(float p_zoom) {
 
 float GraphEdit::get_zoom() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_zoom")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -276,7 +282,7 @@ void GraphEdit::set_zoom_min(float p_zoom_min) {
 
 float GraphEdit::get_zoom_min() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_zoom_min")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -290,7 +296,7 @@ void GraphEdit::set_zoom_max(float p_zoom_max) {
 
 float GraphEdit::get_zoom_max() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_zoom_max")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -304,7 +310,7 @@ void GraphEdit::set_zoom_step(float p_zoom_step) {
 
 float GraphEdit::get_zoom_step() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_zoom_step")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -318,7 +324,7 @@ void GraphEdit::set_show_grid(bool p_enable) {
 
 bool GraphEdit::is_showing_grid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_showing_grid")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -332,7 +338,7 @@ void GraphEdit::set_grid_pattern(GraphEdit::GridPattern p_pattern) {
 
 GraphEdit::GridPattern GraphEdit::get_grid_pattern() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_grid_pattern")._native_ptr(), 1286127528);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GraphEdit::GridPattern(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GraphEdit::GridPattern(0)));
 	return (GraphEdit::GridPattern)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -346,7 +352,7 @@ void GraphEdit::set_snapping_enabled(bool p_enable) {
 
 bool GraphEdit::is_snapping_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_snapping_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -360,7 +366,7 @@ void GraphEdit::set_snapping_distance(int32_t p_pixels) {
 
 int32_t GraphEdit::get_snapping_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_snapping_distance")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -374,7 +380,7 @@ void GraphEdit::set_connection_lines_curvature(float p_curvature) {
 
 float GraphEdit::get_connection_lines_curvature() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_connection_lines_curvature")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -388,7 +394,7 @@ void GraphEdit::set_connection_lines_thickness(float p_pixels) {
 
 float GraphEdit::get_connection_lines_thickness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_connection_lines_thickness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -402,7 +408,7 @@ void GraphEdit::set_connection_lines_antialiased(bool p_pixels) {
 
 bool GraphEdit::is_connection_lines_antialiased() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_connection_lines_antialiased")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -414,7 +420,7 @@ void GraphEdit::set_minimap_size(const Vector2 &p_size) {
 
 Vector2 GraphEdit::get_minimap_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_minimap_size")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -428,7 +434,7 @@ void GraphEdit::set_minimap_opacity(float p_opacity) {
 
 float GraphEdit::get_minimap_opacity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_minimap_opacity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -442,7 +448,7 @@ void GraphEdit::set_minimap_enabled(bool p_enable) {
 
 bool GraphEdit::is_minimap_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_minimap_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -456,7 +462,7 @@ void GraphEdit::set_show_menu(bool p_hidden) {
 
 bool GraphEdit::is_showing_menu() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_showing_menu")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -470,7 +476,7 @@ void GraphEdit::set_show_zoom_label(bool p_enable) {
 
 bool GraphEdit::is_showing_zoom_label() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_showing_zoom_label")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -484,7 +490,7 @@ void GraphEdit::set_show_grid_buttons(bool p_hidden) {
 
 bool GraphEdit::is_showing_grid_buttons() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_showing_grid_buttons")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -498,7 +504,7 @@ void GraphEdit::set_show_zoom_buttons(bool p_hidden) {
 
 bool GraphEdit::is_showing_zoom_buttons() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_showing_zoom_buttons")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -512,7 +518,7 @@ void GraphEdit::set_show_minimap_button(bool p_hidden) {
 
 bool GraphEdit::is_showing_minimap_button() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_showing_minimap_button")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -526,7 +532,7 @@ void GraphEdit::set_show_arrange_button(bool p_hidden) {
 
 bool GraphEdit::is_showing_arrange_button() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_showing_arrange_button")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -540,13 +546,25 @@ void GraphEdit::set_right_disconnects(bool p_enable) {
 
 bool GraphEdit::is_right_disconnects_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("is_right_disconnects_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void GraphEdit::set_type_names(const Dictionary &p_type_names) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("set_type_names")._native_ptr(), 4155329257);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_type_names);
+}
+
+Dictionary GraphEdit::get_type_names() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_type_names")._native_ptr(), 3102165223);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
+	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
 HBoxContainer *GraphEdit::get_menu_hbox() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphEdit::get_class_static()._native_ptr(), StringName("get_menu_hbox")._native_ptr(), 3590609951);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<HBoxContainer>(_gde_method_bind, _owner);
 }
 

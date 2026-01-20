@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SCRIPT_LANGUAGE_HPP
-#define GODOT_CPP_SCRIPT_LANGUAGE_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 
@@ -50,6 +49,7 @@ public:
 		SCRIPT_NAME_CASING_PASCAL_CASE = 1,
 		SCRIPT_NAME_CASING_SNAKE_CASE = 2,
 		SCRIPT_NAME_CASING_KEBAB_CASE = 3,
+		SCRIPT_NAME_CASING_CAMEL_CASE = 4,
 	};
 
 protected:
@@ -65,4 +65,3 @@ public:
 
 VARIANT_ENUM_CAST(ScriptLanguage::ScriptNameCasing);
 
-#endif // ! GODOT_CPP_SCRIPT_LANGUAGE_HPP

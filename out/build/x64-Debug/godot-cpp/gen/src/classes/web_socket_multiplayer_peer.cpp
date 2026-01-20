@@ -42,13 +42,13 @@ namespace godot {
 
 Error WebSocketMultiplayerPeer::create_client(const String &p_url, const Ref<TLSOptions> &p_tls_client_options) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("create_client")._native_ptr(), 1966198364);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_url, (p_tls_client_options != nullptr ? &p_tls_client_options->_owner : nullptr));
 }
 
 Error WebSocketMultiplayerPeer::create_server(int32_t p_port, const String &p_bind_address, const Ref<TLSOptions> &p_tls_server_options) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("create_server")._native_ptr(), 2400822951);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_port_encoded;
 	PtrToArg<int64_t>::encode(p_port, &p_port_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_port_encoded, &p_bind_address, (p_tls_server_options != nullptr ? &p_tls_server_options->_owner : nullptr));
@@ -56,7 +56,7 @@ Error WebSocketMultiplayerPeer::create_server(int32_t p_port, const String &p_bi
 
 Ref<WebSocketPeer> WebSocketMultiplayerPeer::get_peer(int32_t p_peer_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_peer")._native_ptr(), 1381378851);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<WebSocketPeer>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<WebSocketPeer>()));
 	int64_t p_peer_id_encoded;
 	PtrToArg<int64_t>::encode(p_peer_id, &p_peer_id_encoded);
 	return Ref<WebSocketPeer>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<WebSocketPeer>(_gde_method_bind, _owner, &p_peer_id_encoded));
@@ -64,7 +64,7 @@ Ref<WebSocketPeer> WebSocketMultiplayerPeer::get_peer(int32_t p_peer_id) const {
 
 String WebSocketMultiplayerPeer::get_peer_address(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_peer_address")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_id_encoded);
@@ -72,7 +72,7 @@ String WebSocketMultiplayerPeer::get_peer_address(int32_t p_id) const {
 
 int32_t WebSocketMultiplayerPeer::get_peer_port(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_peer_port")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_id_encoded);
@@ -80,7 +80,7 @@ int32_t WebSocketMultiplayerPeer::get_peer_port(int32_t p_id) const {
 
 PackedStringArray WebSocketMultiplayerPeer::get_supported_protocols() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_supported_protocols")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void WebSocketMultiplayerPeer::set_supported_protocols(const PackedStringArray &
 
 PackedStringArray WebSocketMultiplayerPeer::get_handshake_headers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_handshake_headers")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void WebSocketMultiplayerPeer::set_handshake_headers(const PackedStringArray &p_
 
 int32_t WebSocketMultiplayerPeer::get_inbound_buffer_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_inbound_buffer_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void WebSocketMultiplayerPeer::set_inbound_buffer_size(int32_t p_buffer_size) {
 
 int32_t WebSocketMultiplayerPeer::get_outbound_buffer_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_outbound_buffer_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void WebSocketMultiplayerPeer::set_outbound_buffer_size(int32_t p_buffer_size) {
 
 float WebSocketMultiplayerPeer::get_handshake_timeout() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_handshake_timeout")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void WebSocketMultiplayerPeer::set_max_queued_packets(int32_t p_max_queued_packe
 
 int32_t WebSocketMultiplayerPeer::get_max_queued_packets() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_max_queued_packets")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

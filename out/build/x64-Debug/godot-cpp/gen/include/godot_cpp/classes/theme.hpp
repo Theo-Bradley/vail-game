@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_THEME_HPP
-#define GODOT_CPP_THEME_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -130,6 +129,7 @@ public:
 	PackedStringArray get_type_variation_list(const StringName &p_base_type) const;
 	void add_type(const StringName &p_theme_type);
 	void remove_type(const StringName &p_theme_type);
+	void rename_type(const StringName &p_old_theme_type, const StringName &p_theme_type);
 	PackedStringArray get_type_list() const;
 	void merge_with(const Ref<Theme> &p_other);
 	void clear();
@@ -147,4 +147,3 @@ public:
 
 VARIANT_ENUM_CAST(Theme::DataType);
 
-#endif // ! GODOT_CPP_THEME_HPP

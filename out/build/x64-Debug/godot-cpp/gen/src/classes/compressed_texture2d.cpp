@@ -40,13 +40,13 @@ namespace godot {
 
 Error CompressedTexture2D::load(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompressedTexture2D::get_class_static()._native_ptr(), StringName("load")._native_ptr(), 166001499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 String CompressedTexture2D::get_load_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompressedTexture2D::get_class_static()._native_ptr(), StringName("get_load_path")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

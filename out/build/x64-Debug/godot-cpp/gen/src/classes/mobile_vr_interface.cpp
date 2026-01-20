@@ -48,7 +48,7 @@ void MobileVRInterface::set_eye_height(double p_eye_height) {
 
 double MobileVRInterface::get_eye_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_eye_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void MobileVRInterface::set_iod(double p_iod) {
 
 double MobileVRInterface::get_iod() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_iod")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void MobileVRInterface::set_display_width(double p_display_width) {
 
 double MobileVRInterface::get_display_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_display_width")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void MobileVRInterface::set_display_to_lens(double p_display_to_lens) {
 
 double MobileVRInterface::get_display_to_lens() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_display_to_lens")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void MobileVRInterface::set_offset_rect(const Rect2 &p_offset_rect) {
 
 Rect2 MobileVRInterface::get_offset_rect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_offset_rect")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void MobileVRInterface::set_oversample(double p_oversample) {
 
 double MobileVRInterface::get_oversample() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_oversample")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void MobileVRInterface::set_k1(double p_k) {
 
 double MobileVRInterface::get_k1() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_k1")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -144,13 +144,13 @@ void MobileVRInterface::set_k2(double p_k) {
 
 double MobileVRInterface::get_k2() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_k2")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float MobileVRInterface::get_vrs_min_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_vrs_min_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -164,7 +164,7 @@ void MobileVRInterface::set_vrs_min_radius(float p_radius) {
 
 float MobileVRInterface::get_vrs_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MobileVRInterface::get_class_static()._native_ptr(), StringName("get_vrs_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

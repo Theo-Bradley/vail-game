@@ -51,31 +51,31 @@ void Mesh::set_lightmap_size_hint(const Vector2i &p_size) {
 
 Vector2i Mesh::get_lightmap_size_hint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("get_lightmap_size_hint")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
 AABB Mesh::get_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("get_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
 PackedVector3Array Mesh::get_faces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("get_faces")._native_ptr(), 497664490);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector3Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector3Array()));
 	return internal::_call_native_mb_ret<PackedVector3Array>(_gde_method_bind, _owner);
 }
 
 int32_t Mesh::get_surface_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("get_surface_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Array Mesh::surface_get_arrays(int32_t p_surf_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("surface_get_arrays")._native_ptr(), 663333327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_surf_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surf_idx, &p_surf_idx_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_surf_idx_encoded);
@@ -83,7 +83,7 @@ Array Mesh::surface_get_arrays(int32_t p_surf_idx) const {
 
 TypedArray<Array> Mesh::surface_get_blend_shape_arrays(int32_t p_surf_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("surface_get_blend_shape_arrays")._native_ptr(), 663333327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Array>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Array>()));
 	int64_t p_surf_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surf_idx, &p_surf_idx_encoded);
 	return internal::_call_native_mb_ret<TypedArray<Array>>(_gde_method_bind, _owner, &p_surf_idx_encoded);
@@ -99,7 +99,7 @@ void Mesh::surface_set_material(int32_t p_surf_idx, const Ref<Material> &p_mater
 
 Ref<Material> Mesh::surface_get_material(int32_t p_surf_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("surface_get_material")._native_ptr(), 2897466400);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	int64_t p_surf_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surf_idx, &p_surf_idx_encoded);
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner, &p_surf_idx_encoded));
@@ -107,19 +107,19 @@ Ref<Material> Mesh::surface_get_material(int32_t p_surf_idx) const {
 
 Ref<Resource> Mesh::create_placeholder() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("create_placeholder")._native_ptr(), 121922552);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
 	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner));
 }
 
 Ref<ConcavePolygonShape3D> Mesh::create_trimesh_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("create_trimesh_shape")._native_ptr(), 4160111210);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ConcavePolygonShape3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ConcavePolygonShape3D>()));
 	return Ref<ConcavePolygonShape3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ConcavePolygonShape3D>(_gde_method_bind, _owner));
 }
 
 Ref<ConvexPolygonShape3D> Mesh::create_convex_shape(bool p_clean, bool p_simplify) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("create_convex_shape")._native_ptr(), 2529984628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ConvexPolygonShape3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ConvexPolygonShape3D>()));
 	int8_t p_clean_encoded;
 	PtrToArg<bool>::encode(p_clean, &p_clean_encoded);
 	int8_t p_simplify_encoded;
@@ -129,7 +129,7 @@ Ref<ConvexPolygonShape3D> Mesh::create_convex_shape(bool p_clean, bool p_simplif
 
 Ref<Mesh> Mesh::create_outline(float p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("create_outline")._native_ptr(), 1208642001);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Mesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Mesh>()));
 	double p_margin_encoded;
 	PtrToArg<double>::encode(p_margin, &p_margin_encoded);
 	return Ref<Mesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Mesh>(_gde_method_bind, _owner, &p_margin_encoded));
@@ -137,7 +137,7 @@ Ref<Mesh> Mesh::create_outline(float p_margin) const {
 
 Ref<TriangleMesh> Mesh::generate_triangle_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Mesh::get_class_static()._native_ptr(), StringName("generate_triangle_mesh")._native_ptr(), 3476533166);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TriangleMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TriangleMesh>()));
 	return Ref<TriangleMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TriangleMesh>(_gde_method_bind, _owner));
 }
 

@@ -48,7 +48,7 @@ void PanoramaSkyMaterial::set_panorama(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> PanoramaSkyMaterial::get_panorama() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PanoramaSkyMaterial::get_class_static()._native_ptr(), StringName("get_panorama")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -62,7 +62,7 @@ void PanoramaSkyMaterial::set_filtering_enabled(bool p_enabled) {
 
 bool PanoramaSkyMaterial::is_filtering_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PanoramaSkyMaterial::get_class_static()._native_ptr(), StringName("is_filtering_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void PanoramaSkyMaterial::set_energy_multiplier(float p_multiplier) {
 
 float PanoramaSkyMaterial::get_energy_multiplier() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PanoramaSkyMaterial::get_class_static()._native_ptr(), StringName("get_energy_multiplier")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

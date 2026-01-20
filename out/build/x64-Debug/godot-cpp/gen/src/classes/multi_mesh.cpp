@@ -48,7 +48,7 @@ void MultiMesh::set_mesh(const Ref<Mesh> &p_mesh) {
 
 Ref<Mesh> MultiMesh::get_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 1808005922);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Mesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Mesh>()));
 	return Ref<Mesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Mesh>(_gde_method_bind, _owner));
 }
 
@@ -62,7 +62,7 @@ void MultiMesh::set_use_colors(bool p_enable) {
 
 bool MultiMesh::is_using_colors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("is_using_colors")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void MultiMesh::set_use_custom_data(bool p_enable) {
 
 bool MultiMesh::is_using_custom_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("is_using_custom_data")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void MultiMesh::set_transform_format(MultiMesh::TransformFormat p_format) {
 
 MultiMesh::TransformFormat MultiMesh::get_transform_format() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_transform_format")._native_ptr(), 2444156481);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, MultiMesh::TransformFormat(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (MultiMesh::TransformFormat(0)));
 	return (MultiMesh::TransformFormat)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void MultiMesh::set_instance_count(int32_t p_count) {
 
 int32_t MultiMesh::get_instance_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_instance_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void MultiMesh::set_visible_instance_count(int32_t p_count) {
 
 int32_t MultiMesh::get_visible_instance_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_visible_instance_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void MultiMesh::set_physics_interpolation_quality(MultiMesh::PhysicsInterpolatio
 
 MultiMesh::PhysicsInterpolationQuality MultiMesh::get_physics_interpolation_quality() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_physics_interpolation_quality")._native_ptr(), 1465701882);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, MultiMesh::PhysicsInterpolationQuality(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (MultiMesh::PhysicsInterpolationQuality(0)));
 	return (MultiMesh::PhysicsInterpolationQuality)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void MultiMesh::set_instance_transform_2d(int32_t p_instance, const Transform2D 
 
 Transform3D MultiMesh::get_instance_transform(int32_t p_instance) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_instance_transform")._native_ptr(), 1965739696);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	int64_t p_instance_encoded;
 	PtrToArg<int64_t>::encode(p_instance, &p_instance_encoded);
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_instance_encoded);
@@ -162,7 +162,7 @@ Transform3D MultiMesh::get_instance_transform(int32_t p_instance) const {
 
 Transform2D MultiMesh::get_instance_transform_2d(int32_t p_instance) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_instance_transform_2d")._native_ptr(), 3836996910);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	int64_t p_instance_encoded;
 	PtrToArg<int64_t>::encode(p_instance, &p_instance_encoded);
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner, &p_instance_encoded);
@@ -178,7 +178,7 @@ void MultiMesh::set_instance_color(int32_t p_instance, const Color &p_color) {
 
 Color MultiMesh::get_instance_color(int32_t p_instance) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_instance_color")._native_ptr(), 3457211756);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_instance_encoded;
 	PtrToArg<int64_t>::encode(p_instance, &p_instance_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_instance_encoded);
@@ -194,7 +194,7 @@ void MultiMesh::set_instance_custom_data(int32_t p_instance, const Color &p_cust
 
 Color MultiMesh::get_instance_custom_data(int32_t p_instance) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_instance_custom_data")._native_ptr(), 3457211756);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_instance_encoded;
 	PtrToArg<int64_t>::encode(p_instance, &p_instance_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_instance_encoded);
@@ -216,19 +216,19 @@ void MultiMesh::set_custom_aabb(const AABB &p_aabb) {
 
 AABB MultiMesh::get_custom_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_custom_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
 AABB MultiMesh::get_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
 PackedFloat32Array MultiMesh::get_buffer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMesh::get_class_static()._native_ptr(), StringName("get_buffer")._native_ptr(), 675695659);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedFloat32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedFloat32Array()));
 	return internal::_call_native_mb_ret<PackedFloat32Array>(_gde_method_bind, _owner);
 }
 

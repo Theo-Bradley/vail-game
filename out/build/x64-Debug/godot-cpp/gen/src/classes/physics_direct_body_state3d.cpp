@@ -42,55 +42,55 @@ namespace godot {
 
 Vector3 PhysicsDirectBodyState3D::get_total_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_total_gravity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 float PhysicsDirectBodyState3D::get_total_linear_damp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_total_linear_damp")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float PhysicsDirectBodyState3D::get_total_angular_damp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_total_angular_damp")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 Vector3 PhysicsDirectBodyState3D::get_center_of_mass() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_center_of_mass")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 PhysicsDirectBodyState3D::get_center_of_mass_local() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_center_of_mass_local")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Basis PhysicsDirectBodyState3D::get_principal_inertia_axes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_principal_inertia_axes")._native_ptr(), 2716978435);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Basis());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Basis()));
 	return internal::_call_native_mb_ret<Basis>(_gde_method_bind, _owner);
 }
 
 float PhysicsDirectBodyState3D::get_inverse_mass() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_inverse_mass")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 Vector3 PhysicsDirectBodyState3D::get_inverse_inertia() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_inverse_inertia")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Basis PhysicsDirectBodyState3D::get_inverse_inertia_tensor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_inverse_inertia_tensor")._native_ptr(), 2716978435);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Basis());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Basis()));
 	return internal::_call_native_mb_ret<Basis>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void PhysicsDirectBodyState3D::set_linear_velocity(const Vector3 &p_velocity) {
 
 Vector3 PhysicsDirectBodyState3D::get_linear_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_linear_velocity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -114,7 +114,7 @@ void PhysicsDirectBodyState3D::set_angular_velocity(const Vector3 &p_velocity) {
 
 Vector3 PhysicsDirectBodyState3D::get_angular_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_angular_velocity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -126,13 +126,13 @@ void PhysicsDirectBodyState3D::set_transform(const Transform3D &p_transform) {
 
 Transform3D PhysicsDirectBodyState3D::get_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_transform")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
 Vector3 PhysicsDirectBodyState3D::get_velocity_at_local_position(const Vector3 &p_local_position) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_velocity_at_local_position")._native_ptr(), 192990374);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_local_position);
 }
 
@@ -198,7 +198,7 @@ void PhysicsDirectBodyState3D::set_constant_force(const Vector3 &p_force) {
 
 Vector3 PhysicsDirectBodyState3D::get_constant_force() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_constant_force")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -210,7 +210,7 @@ void PhysicsDirectBodyState3D::set_constant_torque(const Vector3 &p_torque) {
 
 Vector3 PhysicsDirectBodyState3D::get_constant_torque() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_constant_torque")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -224,19 +224,47 @@ void PhysicsDirectBodyState3D::set_sleep_state(bool p_enabled) {
 
 bool PhysicsDirectBodyState3D::is_sleeping() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("is_sleeping")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void PhysicsDirectBodyState3D::set_collision_layer(uint32_t p_layer) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("set_collision_layer")._native_ptr(), 1286410249);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_layer_encoded;
+	PtrToArg<int64_t>::encode(p_layer, &p_layer_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_layer_encoded);
+}
+
+uint32_t PhysicsDirectBodyState3D::get_collision_layer() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_collision_layer")._native_ptr(), 3905245786);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void PhysicsDirectBodyState3D::set_collision_mask(uint32_t p_mask) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("set_collision_mask")._native_ptr(), 1286410249);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_mask_encoded;
+	PtrToArg<int64_t>::encode(p_mask, &p_mask_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_mask_encoded);
+}
+
+uint32_t PhysicsDirectBodyState3D::get_collision_mask() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_collision_mask")._native_ptr(), 3905245786);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t PhysicsDirectBodyState3D::get_contact_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Vector3 PhysicsDirectBodyState3D::get_contact_local_position(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_local_position")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -244,7 +272,7 @@ Vector3 PhysicsDirectBodyState3D::get_contact_local_position(int32_t p_contact_i
 
 Vector3 PhysicsDirectBodyState3D::get_contact_local_normal(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_local_normal")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -252,7 +280,7 @@ Vector3 PhysicsDirectBodyState3D::get_contact_local_normal(int32_t p_contact_idx
 
 Vector3 PhysicsDirectBodyState3D::get_contact_impulse(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_impulse")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -260,7 +288,7 @@ Vector3 PhysicsDirectBodyState3D::get_contact_impulse(int32_t p_contact_idx) con
 
 int32_t PhysicsDirectBodyState3D::get_contact_local_shape(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_local_shape")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -268,7 +296,7 @@ int32_t PhysicsDirectBodyState3D::get_contact_local_shape(int32_t p_contact_idx)
 
 Vector3 PhysicsDirectBodyState3D::get_contact_local_velocity_at_position(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_local_velocity_at_position")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -276,7 +304,7 @@ Vector3 PhysicsDirectBodyState3D::get_contact_local_velocity_at_position(int32_t
 
 RID PhysicsDirectBodyState3D::get_contact_collider(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_collider")._native_ptr(), 495598643);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -284,7 +312,7 @@ RID PhysicsDirectBodyState3D::get_contact_collider(int32_t p_contact_idx) const 
 
 Vector3 PhysicsDirectBodyState3D::get_contact_collider_position(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_collider_position")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -292,7 +320,7 @@ Vector3 PhysicsDirectBodyState3D::get_contact_collider_position(int32_t p_contac
 
 uint64_t PhysicsDirectBodyState3D::get_contact_collider_id(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_collider_id")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -300,7 +328,7 @@ uint64_t PhysicsDirectBodyState3D::get_contact_collider_id(int32_t p_contact_idx
 
 Object *PhysicsDirectBodyState3D::get_contact_collider_object(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_collider_object")._native_ptr(), 3332903315);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret_obj<Object>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -308,7 +336,7 @@ Object *PhysicsDirectBodyState3D::get_contact_collider_object(int32_t p_contact_
 
 int32_t PhysicsDirectBodyState3D::get_contact_collider_shape(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_collider_shape")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -316,7 +344,7 @@ int32_t PhysicsDirectBodyState3D::get_contact_collider_shape(int32_t p_contact_i
 
 Vector3 PhysicsDirectBodyState3D::get_contact_collider_velocity_at_position(int32_t p_contact_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_contact_collider_velocity_at_position")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_contact_idx_encoded;
 	PtrToArg<int64_t>::encode(p_contact_idx, &p_contact_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_contact_idx_encoded);
@@ -324,7 +352,7 @@ Vector3 PhysicsDirectBodyState3D::get_contact_collider_velocity_at_position(int3
 
 float PhysicsDirectBodyState3D::get_step() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_step")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -336,7 +364,7 @@ void PhysicsDirectBodyState3D::integrate_forces() {
 
 PhysicsDirectSpaceState3D *PhysicsDirectBodyState3D::get_space_state() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsDirectBodyState3D::get_class_static()._native_ptr(), StringName("get_space_state")._native_ptr(), 2069328350);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<PhysicsDirectSpaceState3D>(_gde_method_bind, _owner);
 }
 

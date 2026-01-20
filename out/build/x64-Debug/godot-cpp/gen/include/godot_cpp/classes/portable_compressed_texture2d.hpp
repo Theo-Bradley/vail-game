@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PORTABLE_COMPRESSED_TEXTURE2D_HPP
-#define GODOT_CPP_PORTABLE_COMPRESSED_TEXTURE2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/image.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -55,6 +54,7 @@ public:
 		COMPRESSION_MODE_S3TC = 3,
 		COMPRESSION_MODE_ETC2 = 4,
 		COMPRESSION_MODE_BPTC = 5,
+		COMPRESSION_MODE_ASTC = 6,
 	};
 
 	void create_from_image(const Ref<Image> &p_image, PortableCompressedTexture2D::CompressionMode p_compression_mode, bool p_normal_map = false, float p_lossy_quality = 0.8);
@@ -64,6 +64,7 @@ public:
 	Vector2 get_size_override() const;
 	void set_keep_compressed_buffer(bool p_keep);
 	bool is_keeping_compressed_buffer() const;
+	void set_basisu_compressor_params(int32_t p_uastc_level, float p_rdo_quality_loss);
 	static void set_keep_all_compressed_buffers(bool p_keep);
 	static bool is_keeping_all_compressed_buffers();
 
@@ -80,4 +81,3 @@ public:
 
 VARIANT_ENUM_CAST(PortableCompressedTexture2D::CompressionMode);
 
-#endif // ! GODOT_CPP_PORTABLE_COMPRESSED_TEXTURE2D_HPP

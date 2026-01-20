@@ -46,7 +46,7 @@ void LinkButton::set_text(const String &p_text) {
 
 String LinkButton::get_text() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LinkButton::get_class_static()._native_ptr(), StringName("get_text")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void LinkButton::set_text_direction(Control::TextDirection p_direction) {
 
 Control::TextDirection LinkButton::get_text_direction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LinkButton::get_class_static()._native_ptr(), StringName("get_text_direction")._native_ptr(), 797257663);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Control::TextDirection(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Control::TextDirection(0)));
 	return (Control::TextDirection)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void LinkButton::set_language(const String &p_language) {
 
 String LinkButton::get_language() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LinkButton::get_class_static()._native_ptr(), StringName("get_language")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -84,7 +84,7 @@ void LinkButton::set_uri(const String &p_uri) {
 
 String LinkButton::get_uri() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LinkButton::get_class_static()._native_ptr(), StringName("get_uri")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void LinkButton::set_underline_mode(LinkButton::UnderlineMode p_underline_mode) 
 
 LinkButton::UnderlineMode LinkButton::get_underline_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LinkButton::get_class_static()._native_ptr(), StringName("get_underline_mode")._native_ptr(), 568343738);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, LinkButton::UnderlineMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (LinkButton::UnderlineMode(0)));
 	return (LinkButton::UnderlineMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -112,7 +112,7 @@ void LinkButton::set_structured_text_bidi_override(TextServer::StructuredTextPar
 
 TextServer::StructuredTextParser LinkButton::get_structured_text_bidi_override() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LinkButton::get_class_static()._native_ptr(), StringName("get_structured_text_bidi_override")._native_ptr(), 3385126229);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::StructuredTextParser(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::StructuredTextParser(0)));
 	return (TextServer::StructuredTextParser)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -124,7 +124,7 @@ void LinkButton::set_structured_text_bidi_override_options(const Array &p_args) 
 
 Array LinkButton::get_structured_text_bidi_override_options() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LinkButton::get_class_static()._native_ptr(), StringName("get_structured_text_bidi_override_options")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 

@@ -44,13 +44,13 @@ namespace godot {
 
 int32_t TileSet::get_next_source_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_next_source_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t TileSet::add_source(const Ref<TileSetSource> &p_source, int32_t p_atlas_source_id_override) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("add_source")._native_ptr(), 1059186179);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_atlas_source_id_override_encoded;
 	PtrToArg<int64_t>::encode(p_atlas_source_id_override, &p_atlas_source_id_override_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_source != nullptr ? &p_source->_owner : nullptr), &p_atlas_source_id_override_encoded);
@@ -76,13 +76,13 @@ void TileSet::set_source_id(int32_t p_source_id, int32_t p_new_source_id) {
 
 int32_t TileSet::get_source_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_source_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t TileSet::get_source_id(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_source_id")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -90,7 +90,7 @@ int32_t TileSet::get_source_id(int32_t p_index) const {
 
 bool TileSet::has_source(int32_t p_source_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("has_source")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_source_id_encoded;
 	PtrToArg<int64_t>::encode(p_source_id, &p_source_id_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_source_id_encoded);
@@ -98,7 +98,7 @@ bool TileSet::has_source(int32_t p_source_id) const {
 
 Ref<TileSetSource> TileSet::get_source(int32_t p_source_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_source")._native_ptr(), 1763540252);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TileSetSource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TileSetSource>()));
 	int64_t p_source_id_encoded;
 	PtrToArg<int64_t>::encode(p_source_id, &p_source_id_encoded);
 	return Ref<TileSetSource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TileSetSource>(_gde_method_bind, _owner, &p_source_id_encoded));
@@ -114,7 +114,7 @@ void TileSet::set_tile_shape(TileSet::TileShape p_shape) {
 
 TileSet::TileShape TileSet::get_tile_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_tile_shape")._native_ptr(), 716918169);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TileSet::TileShape(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TileSet::TileShape(0)));
 	return (TileSet::TileShape)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -128,7 +128,7 @@ void TileSet::set_tile_layout(TileSet::TileLayout p_layout) {
 
 TileSet::TileLayout TileSet::get_tile_layout() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_tile_layout")._native_ptr(), 194628839);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TileSet::TileLayout(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TileSet::TileLayout(0)));
 	return (TileSet::TileLayout)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void TileSet::set_tile_offset_axis(TileSet::TileOffsetAxis p_alignment) {
 
 TileSet::TileOffsetAxis TileSet::get_tile_offset_axis() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_tile_offset_axis")._native_ptr(), 762494114);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TileSet::TileOffsetAxis(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TileSet::TileOffsetAxis(0)));
 	return (TileSet::TileOffsetAxis)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void TileSet::set_tile_size(const Vector2i &p_size) {
 
 Vector2i TileSet::get_tile_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_tile_size")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -168,13 +168,13 @@ void TileSet::set_uv_clipping(bool p_uv_clipping) {
 
 bool TileSet::is_uv_clipping() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("is_uv_clipping")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t TileSet::get_occlusion_layers_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_occlusion_layers_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -216,7 +216,7 @@ void TileSet::set_occlusion_layer_light_mask(int32_t p_layer_index, int32_t p_li
 
 int32_t TileSet::get_occlusion_layer_light_mask(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_occlusion_layer_light_mask")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_layer_index_encoded);
@@ -234,7 +234,7 @@ void TileSet::set_occlusion_layer_sdf_collision(int32_t p_layer_index, bool p_sd
 
 bool TileSet::get_occlusion_layer_sdf_collision(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_occlusion_layer_sdf_collision")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_index_encoded);
@@ -242,7 +242,7 @@ bool TileSet::get_occlusion_layer_sdf_collision(int32_t p_layer_index) const {
 
 int32_t TileSet::get_physics_layers_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_physics_layers_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -284,7 +284,7 @@ void TileSet::set_physics_layer_collision_layer(int32_t p_layer_index, uint32_t 
 
 uint32_t TileSet::get_physics_layer_collision_layer(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_physics_layer_collision_layer")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_layer_index_encoded);
@@ -302,7 +302,7 @@ void TileSet::set_physics_layer_collision_mask(int32_t p_layer_index, uint32_t p
 
 uint32_t TileSet::get_physics_layer_collision_mask(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_physics_layer_collision_mask")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_layer_index_encoded);
@@ -320,7 +320,7 @@ void TileSet::set_physics_layer_collision_priority(int32_t p_layer_index, float 
 
 float TileSet::get_physics_layer_collision_priority(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_physics_layer_collision_priority")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_layer_index_encoded);
@@ -336,7 +336,7 @@ void TileSet::set_physics_layer_physics_material(int32_t p_layer_index, const Re
 
 Ref<PhysicsMaterial> TileSet::get_physics_layer_physics_material(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_physics_layer_physics_material")._native_ptr(), 788318639);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<PhysicsMaterial>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<PhysicsMaterial>()));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return Ref<PhysicsMaterial>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<PhysicsMaterial>(_gde_method_bind, _owner, &p_layer_index_encoded));
@@ -344,7 +344,7 @@ Ref<PhysicsMaterial> TileSet::get_physics_layer_physics_material(int32_t p_layer
 
 int32_t TileSet::get_terrain_sets_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_terrain_sets_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -386,7 +386,7 @@ void TileSet::set_terrain_set_mode(int32_t p_terrain_set, TileSet::TerrainMode p
 
 TileSet::TerrainMode TileSet::get_terrain_set_mode(int32_t p_terrain_set) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_terrain_set_mode")._native_ptr(), 2084469411);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TileSet::TerrainMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TileSet::TerrainMode(0)));
 	int64_t p_terrain_set_encoded;
 	PtrToArg<int64_t>::encode(p_terrain_set, &p_terrain_set_encoded);
 	return (TileSet::TerrainMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_terrain_set_encoded);
@@ -394,7 +394,7 @@ TileSet::TerrainMode TileSet::get_terrain_set_mode(int32_t p_terrain_set) const 
 
 int32_t TileSet::get_terrains_count(int32_t p_terrain_set) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_terrains_count")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_terrain_set_encoded;
 	PtrToArg<int64_t>::encode(p_terrain_set, &p_terrain_set_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_terrain_set_encoded);
@@ -444,7 +444,7 @@ void TileSet::set_terrain_name(int32_t p_terrain_set, int32_t p_terrain_index, c
 
 String TileSet::get_terrain_name(int32_t p_terrain_set, int32_t p_terrain_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_terrain_name")._native_ptr(), 1391810591);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_terrain_set_encoded;
 	PtrToArg<int64_t>::encode(p_terrain_set, &p_terrain_set_encoded);
 	int64_t p_terrain_index_encoded;
@@ -464,7 +464,7 @@ void TileSet::set_terrain_color(int32_t p_terrain_set, int32_t p_terrain_index, 
 
 Color TileSet::get_terrain_color(int32_t p_terrain_set, int32_t p_terrain_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_terrain_color")._native_ptr(), 2165839948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_terrain_set_encoded;
 	PtrToArg<int64_t>::encode(p_terrain_set, &p_terrain_set_encoded);
 	int64_t p_terrain_index_encoded;
@@ -474,7 +474,7 @@ Color TileSet::get_terrain_color(int32_t p_terrain_set, int32_t p_terrain_index)
 
 int32_t TileSet::get_navigation_layers_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_navigation_layers_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -516,7 +516,7 @@ void TileSet::set_navigation_layer_layers(int32_t p_layer_index, uint32_t p_laye
 
 uint32_t TileSet::get_navigation_layer_layers(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_navigation_layer_layers")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_layer_index_encoded);
@@ -536,7 +536,7 @@ void TileSet::set_navigation_layer_layer_value(int32_t p_layer_index, int32_t p_
 
 bool TileSet::get_navigation_layer_layer_value(int32_t p_layer_index, int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_navigation_layer_layer_value")._native_ptr(), 2522259332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	int64_t p_layer_number_encoded;
@@ -546,7 +546,7 @@ bool TileSet::get_navigation_layer_layer_value(int32_t p_layer_index, int32_t p_
 
 int32_t TileSet::get_custom_data_layers_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_custom_data_layers_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -578,7 +578,7 @@ void TileSet::remove_custom_data_layer(int32_t p_layer_index) {
 
 int32_t TileSet::get_custom_data_layer_by_name(const String &p_layer_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_custom_data_layer_by_name")._native_ptr(), 1321353865);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_layer_name);
 }
 
@@ -592,13 +592,13 @@ void TileSet::set_custom_data_layer_name(int32_t p_layer_index, const String &p_
 
 bool TileSet::has_custom_data_layer_by_name(const String &p_layer_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("has_custom_data_layer_by_name")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_name);
 }
 
 String TileSet::get_custom_data_layer_name(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_custom_data_layer_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_layer_index_encoded);
@@ -616,7 +616,7 @@ void TileSet::set_custom_data_layer_type(int32_t p_layer_index, Variant::Type p_
 
 Variant::Type TileSet::get_custom_data_layer_type(int32_t p_layer_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_custom_data_layer_type")._native_ptr(), 2990820875);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant::Type(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant::Type(0)));
 	int64_t p_layer_index_encoded;
 	PtrToArg<int64_t>::encode(p_layer_index, &p_layer_index_encoded);
 	return (Variant::Type)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_layer_index_encoded);
@@ -634,7 +634,7 @@ void TileSet::set_source_level_tile_proxy(int32_t p_source_from, int32_t p_sourc
 
 int32_t TileSet::get_source_level_tile_proxy(int32_t p_source_from) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_source_level_tile_proxy")._native_ptr(), 3744713108);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_source_from_encoded;
 	PtrToArg<int64_t>::encode(p_source_from, &p_source_from_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_source_from_encoded);
@@ -642,7 +642,7 @@ int32_t TileSet::get_source_level_tile_proxy(int32_t p_source_from) {
 
 bool TileSet::has_source_level_tile_proxy(int32_t p_source_from) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("has_source_level_tile_proxy")._native_ptr(), 3067735520);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_source_from_encoded;
 	PtrToArg<int64_t>::encode(p_source_from, &p_source_from_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_source_from_encoded);
@@ -668,7 +668,7 @@ void TileSet::set_coords_level_tile_proxy(int32_t p_source_from, const Vector2i 
 
 Array TileSet::get_coords_level_tile_proxy(int32_t p_source_from, const Vector2i &p_coords_from) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_coords_level_tile_proxy")._native_ptr(), 2856536371);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_source_from_encoded;
 	PtrToArg<int64_t>::encode(p_source_from, &p_source_from_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_source_from_encoded, &p_coords_from);
@@ -676,7 +676,7 @@ Array TileSet::get_coords_level_tile_proxy(int32_t p_source_from, const Vector2i
 
 bool TileSet::has_coords_level_tile_proxy(int32_t p_source_from, const Vector2i &p_coords_from) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("has_coords_level_tile_proxy")._native_ptr(), 3957903770);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_source_from_encoded;
 	PtrToArg<int64_t>::encode(p_source_from, &p_source_from_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_source_from_encoded, &p_coords_from);
@@ -706,7 +706,7 @@ void TileSet::set_alternative_level_tile_proxy(int32_t p_source_from, const Vect
 
 Array TileSet::get_alternative_level_tile_proxy(int32_t p_source_from, const Vector2i &p_coords_from, int32_t p_alternative_from) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_alternative_level_tile_proxy")._native_ptr(), 2303761075);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_source_from_encoded;
 	PtrToArg<int64_t>::encode(p_source_from, &p_source_from_encoded);
 	int64_t p_alternative_from_encoded;
@@ -716,7 +716,7 @@ Array TileSet::get_alternative_level_tile_proxy(int32_t p_source_from, const Vec
 
 bool TileSet::has_alternative_level_tile_proxy(int32_t p_source_from, const Vector2i &p_coords_from, int32_t p_alternative_from) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("has_alternative_level_tile_proxy")._native_ptr(), 180086755);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_source_from_encoded;
 	PtrToArg<int64_t>::encode(p_source_from, &p_source_from_encoded);
 	int64_t p_alternative_from_encoded;
@@ -736,7 +736,7 @@ void TileSet::remove_alternative_level_tile_proxy(int32_t p_source_from, const V
 
 Array TileSet::map_tile_proxy(int32_t p_source_from, const Vector2i &p_coords_from, int32_t p_alternative_from) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("map_tile_proxy")._native_ptr(), 4267935328);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_source_from_encoded;
 	PtrToArg<int64_t>::encode(p_source_from, &p_source_from_encoded);
 	int64_t p_alternative_from_encoded;
@@ -758,7 +758,7 @@ void TileSet::clear_tile_proxies() {
 
 int32_t TileSet::add_pattern(const Ref<TileMapPattern> &p_pattern, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("add_pattern")._native_ptr(), 763712015);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_pattern != nullptr ? &p_pattern->_owner : nullptr), &p_index_encoded);
@@ -766,7 +766,7 @@ int32_t TileSet::add_pattern(const Ref<TileMapPattern> &p_pattern, int32_t p_ind
 
 Ref<TileMapPattern> TileSet::get_pattern(int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_pattern")._native_ptr(), 4207737510);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TileMapPattern>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TileMapPattern>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<TileMapPattern>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TileMapPattern>(_gde_method_bind, _owner, &p_index_encoded));
@@ -782,7 +782,7 @@ void TileSet::remove_pattern(int32_t p_index) {
 
 int32_t TileSet::get_patterns_count() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSet::get_class_static()._native_ptr(), StringName("get_patterns_count")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

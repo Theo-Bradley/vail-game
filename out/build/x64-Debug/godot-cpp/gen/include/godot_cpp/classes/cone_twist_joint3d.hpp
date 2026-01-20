@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CONE_TWIST_JOINT3D_HPP
-#define GODOT_CPP_CONE_TWIST_JOINT3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/joint3d.hpp>
 
@@ -70,4 +69,3 @@ public:
 
 VARIANT_ENUM_CAST(ConeTwistJoint3D::Param);
 
-#endif // ! GODOT_CPP_CONE_TWIST_JOINT3D_HPP

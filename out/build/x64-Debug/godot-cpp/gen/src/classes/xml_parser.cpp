@@ -42,43 +42,43 @@ namespace godot {
 
 Error XMLParser::read() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("read")._native_ptr(), 166280745);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 XMLParser::NodeType XMLParser::get_node_type() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_node_type")._native_ptr(), 2984359541);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, XMLParser::NodeType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (XMLParser::NodeType(0)));
 	return (XMLParser::NodeType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String XMLParser::get_node_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_node_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String XMLParser::get_node_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_node_data")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 uint64_t XMLParser::get_node_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_node_offset")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 int32_t XMLParser::get_attribute_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_attribute_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String XMLParser::get_attribute_name(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_attribute_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -86,7 +86,7 @@ String XMLParser::get_attribute_name(int32_t p_idx) const {
 
 String XMLParser::get_attribute_value(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_attribute_value")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -94,31 +94,31 @@ String XMLParser::get_attribute_value(int32_t p_idx) const {
 
 bool XMLParser::has_attribute(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("has_attribute")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
 String XMLParser::get_named_attribute_value(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_named_attribute_value")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_name);
 }
 
 String XMLParser::get_named_attribute_value_safe(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_named_attribute_value_safe")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_name);
 }
 
 bool XMLParser::is_empty() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("is_empty")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t XMLParser::get_current_line() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("get_current_line")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void XMLParser::skip_section() {
 
 Error XMLParser::seek(uint64_t p_position) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("seek")._native_ptr(), 844576869);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_position_encoded;
 	PtrToArg<int64_t>::encode(p_position, &p_position_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_position_encoded);
@@ -138,13 +138,13 @@ Error XMLParser::seek(uint64_t p_position) {
 
 Error XMLParser::open(const String &p_file) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("open")._native_ptr(), 166001499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_file);
 }
 
 Error XMLParser::open_buffer(const PackedByteArray &p_buffer) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XMLParser::get_class_static()._native_ptr(), StringName("open_buffer")._native_ptr(), 680677267);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_buffer);
 }
 

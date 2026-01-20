@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SURFACE_TOOL_HPP
-#define GODOT_CPP_SURFACE_TOOL_HPP
+#pragma once
 
 #include <godot_cpp/classes/array_mesh.hpp>
 #include <godot_cpp/classes/mesh.hpp>
@@ -129,4 +128,3 @@ public:
 VARIANT_ENUM_CAST(SurfaceTool::CustomFormat);
 VARIANT_ENUM_CAST(SurfaceTool::SkinWeightCount);
 
-#endif // ! GODOT_CPP_SURFACE_TOOL_HPP

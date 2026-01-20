@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FBX_DOCUMENT_HPP
-#define GODOT_CPP_FBX_DOCUMENT_HPP
+#pragma once
 
 #include <godot_cpp/classes/gltf_document.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -57,4 +56,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_FBX_DOCUMENT_HPP

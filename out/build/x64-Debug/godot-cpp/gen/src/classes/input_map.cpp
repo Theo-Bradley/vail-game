@@ -68,13 +68,13 @@ InputMap::~InputMap() {
 
 bool InputMap::has_action(const StringName &p_action) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputMap::get_class_static()._native_ptr(), StringName("has_action")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_action);
 }
 
 TypedArray<StringName> InputMap::get_actions() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputMap::get_class_static()._native_ptr(), StringName("get_actions")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<StringName>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<StringName>()));
 	return internal::_call_native_mb_ret<TypedArray<StringName>>(_gde_method_bind, _owner);
 }
 
@@ -92,6 +92,12 @@ void InputMap::erase_action(const StringName &p_action) {
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_action);
 }
 
+String InputMap::get_action_description(const StringName &p_action) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputMap::get_class_static()._native_ptr(), StringName("get_action_description")._native_ptr(), 957595536);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
+	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_action);
+}
+
 void InputMap::action_set_deadzone(const StringName &p_action, float p_deadzone) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputMap::get_class_static()._native_ptr(), StringName("action_set_deadzone")._native_ptr(), 4135858297);
 	CHECK_METHOD_BIND(_gde_method_bind);
@@ -102,7 +108,7 @@ void InputMap::action_set_deadzone(const StringName &p_action, float p_deadzone)
 
 float InputMap::action_get_deadzone(const StringName &p_action) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputMap::get_class_static()._native_ptr(), StringName("action_get_deadzone")._native_ptr(), 1391627649);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_action);
 }
 
@@ -114,7 +120,7 @@ void InputMap::action_add_event(const StringName &p_action, const Ref<InputEvent
 
 bool InputMap::action_has_event(const StringName &p_action, const Ref<InputEvent> &p_event) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputMap::get_class_static()._native_ptr(), StringName("action_has_event")._native_ptr(), 1185871985);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_action, (p_event != nullptr ? &p_event->_owner : nullptr));
 }
 
@@ -130,15 +136,15 @@ void InputMap::action_erase_events(const StringName &p_action) {
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_action);
 }
 
-TypedArray<InputEvent> InputMap::action_get_events(const StringName &p_action) {
+TypedArray<Ref<InputEvent>> InputMap::action_get_events(const StringName &p_action) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputMap::get_class_static()._native_ptr(), StringName("action_get_events")._native_ptr(), 689397652);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<InputEvent>());
-	return internal::_call_native_mb_ret<TypedArray<InputEvent>>(_gde_method_bind, _owner, &p_action);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<InputEvent>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<InputEvent>>>(_gde_method_bind, _owner, &p_action);
 }
 
 bool InputMap::event_is_action(const Ref<InputEvent> &p_event, const StringName &p_action, bool p_exact_match) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputMap::get_class_static()._native_ptr(), StringName("event_is_action")._native_ptr(), 3193353650);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int8_t p_exact_match_encoded;
 	PtrToArg<bool>::encode(p_exact_match, &p_exact_match_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, (p_event != nullptr ? &p_event->_owner : nullptr), &p_action, &p_exact_match_encoded);

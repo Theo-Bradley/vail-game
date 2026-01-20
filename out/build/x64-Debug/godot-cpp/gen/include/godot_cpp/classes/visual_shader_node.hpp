@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_VISUAL_SHADER_NODE_HPP
-#define GODOT_CPP_VISUAL_SHADER_NODE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -86,4 +85,3 @@ public:
 
 VARIANT_ENUM_CAST(VisualShaderNode::PortType);
 
-#endif // ! GODOT_CPP_VISUAL_SHADER_NODE_HPP

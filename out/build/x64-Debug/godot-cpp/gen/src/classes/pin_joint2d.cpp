@@ -48,7 +48,7 @@ void PinJoint2D::set_softness(float p_softness) {
 
 float PinJoint2D::get_softness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PinJoint2D::get_class_static()._native_ptr(), StringName("get_softness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void PinJoint2D::set_angular_limit_lower(float p_angular_limit_lower) {
 
 float PinJoint2D::get_angular_limit_lower() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PinJoint2D::get_class_static()._native_ptr(), StringName("get_angular_limit_lower")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void PinJoint2D::set_angular_limit_upper(float p_angular_limit_upper) {
 
 float PinJoint2D::get_angular_limit_upper() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PinJoint2D::get_class_static()._native_ptr(), StringName("get_angular_limit_upper")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void PinJoint2D::set_motor_target_velocity(float p_motor_target_velocity) {
 
 float PinJoint2D::get_motor_target_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PinJoint2D::get_class_static()._native_ptr(), StringName("get_motor_target_velocity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void PinJoint2D::set_motor_enabled(bool p_enabled) {
 
 bool PinJoint2D::is_motor_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PinJoint2D::get_class_static()._native_ptr(), StringName("is_motor_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void PinJoint2D::set_angular_limit_enabled(bool p_enabled) {
 
 bool PinJoint2D::is_angular_limit_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PinJoint2D::get_class_static()._native_ptr(), StringName("is_angular_limit_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

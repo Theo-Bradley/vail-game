@@ -40,7 +40,7 @@ namespace godot {
 
 Ref<PhysicsRayQueryParameters2D> PhysicsRayQueryParameters2D::create(const Vector2 &p_from, const Vector2 &p_to, uint32_t p_collision_mask, const TypedArray<RID> &p_exclude) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsRayQueryParameters2D::get_class_static()._native_ptr(), StringName("create")._native_ptr(), 3196569324);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<PhysicsRayQueryParameters2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<PhysicsRayQueryParameters2D>()));
 	int64_t p_collision_mask_encoded;
 	PtrToArg<int64_t>::encode(p_collision_mask, &p_collision_mask_encoded);
 	return Ref<PhysicsRayQueryParameters2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<PhysicsRayQueryParameters2D>(_gde_method_bind, nullptr, &p_from, &p_to, &p_collision_mask_encoded, &p_exclude));
@@ -54,7 +54,7 @@ void PhysicsRayQueryParameters2D::set_from(const Vector2 &p_from) {
 
 Vector2 PhysicsRayQueryParameters2D::get_from() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsRayQueryParameters2D::get_class_static()._native_ptr(), StringName("get_from")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -66,7 +66,7 @@ void PhysicsRayQueryParameters2D::set_to(const Vector2 &p_to) {
 
 Vector2 PhysicsRayQueryParameters2D::get_to() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsRayQueryParameters2D::get_class_static()._native_ptr(), StringName("get_to")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void PhysicsRayQueryParameters2D::set_collision_mask(uint32_t p_collision_mask) 
 
 uint32_t PhysicsRayQueryParameters2D::get_collision_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsRayQueryParameters2D::get_class_static()._native_ptr(), StringName("get_collision_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void PhysicsRayQueryParameters2D::set_exclude(const TypedArray<RID> &p_exclude) 
 
 TypedArray<RID> PhysicsRayQueryParameters2D::get_exclude() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsRayQueryParameters2D::get_class_static()._native_ptr(), StringName("get_exclude")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<RID>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<RID>()));
 	return internal::_call_native_mb_ret<TypedArray<RID>>(_gde_method_bind, _owner);
 }
 
@@ -106,7 +106,7 @@ void PhysicsRayQueryParameters2D::set_collide_with_bodies(bool p_enable) {
 
 bool PhysicsRayQueryParameters2D::is_collide_with_bodies_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsRayQueryParameters2D::get_class_static()._native_ptr(), StringName("is_collide_with_bodies_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -120,7 +120,7 @@ void PhysicsRayQueryParameters2D::set_collide_with_areas(bool p_enable) {
 
 bool PhysicsRayQueryParameters2D::is_collide_with_areas_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsRayQueryParameters2D::get_class_static()._native_ptr(), StringName("is_collide_with_areas_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -134,7 +134,7 @@ void PhysicsRayQueryParameters2D::set_hit_from_inside(bool p_enable) {
 
 bool PhysicsRayQueryParameters2D::is_hit_from_inside_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsRayQueryParameters2D::get_class_static()._native_ptr(), StringName("is_hit_from_inside_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

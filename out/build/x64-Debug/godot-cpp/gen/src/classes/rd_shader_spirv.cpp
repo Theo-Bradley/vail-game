@@ -48,7 +48,7 @@ void RDShaderSPIRV::set_stage_bytecode(RenderingDevice::ShaderStage p_stage, con
 
 PackedByteArray RDShaderSPIRV::get_stage_bytecode(RenderingDevice::ShaderStage p_stage) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDShaderSPIRV::get_class_static()._native_ptr(), StringName("get_stage_bytecode")._native_ptr(), 3816765404);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	int64_t p_stage_encoded;
 	PtrToArg<int64_t>::encode(p_stage, &p_stage_encoded);
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner, &p_stage_encoded);
@@ -64,7 +64,7 @@ void RDShaderSPIRV::set_stage_compile_error(RenderingDevice::ShaderStage p_stage
 
 String RDShaderSPIRV::get_stage_compile_error(RenderingDevice::ShaderStage p_stage) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDShaderSPIRV::get_class_static()._native_ptr(), StringName("get_stage_compile_error")._native_ptr(), 3354920045);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_stage_encoded;
 	PtrToArg<int64_t>::encode(p_stage, &p_stage_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_stage_encoded);

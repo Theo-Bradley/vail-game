@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_EXPORT_PRESET_HPP
-#define GODOT_CPP_EDITOR_EXPORT_PRESET_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -79,6 +78,7 @@ public:
 	int32_t get_customized_files_count() const;
 	bool has_export_file(const String &p_path);
 	EditorExportPreset::FileExportMode get_file_export_mode(const String &p_path, EditorExportPreset::FileExportMode p_default = (EditorExportPreset::FileExportMode)0) const;
+	Variant get_project_setting(const StringName &p_name);
 	String get_preset_name() const;
 	bool is_runnable() const;
 	bool are_advanced_options_enabled() const;
@@ -113,4 +113,3 @@ VARIANT_ENUM_CAST(EditorExportPreset::ExportFilter);
 VARIANT_ENUM_CAST(EditorExportPreset::FileExportMode);
 VARIANT_ENUM_CAST(EditorExportPreset::ScriptExportMode);
 
-#endif // ! GODOT_CPP_EDITOR_EXPORT_PRESET_HPP

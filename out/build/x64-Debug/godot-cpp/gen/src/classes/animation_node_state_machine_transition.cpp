@@ -50,7 +50,7 @@ void AnimationNodeStateMachineTransition::set_switch_mode(AnimationNodeStateMach
 
 AnimationNodeStateMachineTransition::SwitchMode AnimationNodeStateMachineTransition::get_switch_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("get_switch_mode")._native_ptr(), 2138562085);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AnimationNodeStateMachineTransition::SwitchMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AnimationNodeStateMachineTransition::SwitchMode(0)));
 	return (AnimationNodeStateMachineTransition::SwitchMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void AnimationNodeStateMachineTransition::set_advance_mode(AnimationNodeStateMac
 
 AnimationNodeStateMachineTransition::AdvanceMode AnimationNodeStateMachineTransition::get_advance_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("get_advance_mode")._native_ptr(), 61101689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AnimationNodeStateMachineTransition::AdvanceMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AnimationNodeStateMachineTransition::AdvanceMode(0)));
 	return (AnimationNodeStateMachineTransition::AdvanceMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AnimationNodeStateMachineTransition::set_advance_condition(const StringName
 
 StringName AnimationNodeStateMachineTransition::get_advance_condition() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("get_advance_condition")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void AnimationNodeStateMachineTransition::set_xfade_time(float p_secs) {
 
 float AnimationNodeStateMachineTransition::get_xfade_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("get_xfade_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void AnimationNodeStateMachineTransition::set_xfade_curve(const Ref<Curve> &p_cu
 
 Ref<Curve> AnimationNodeStateMachineTransition::get_xfade_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("get_xfade_curve")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -116,7 +116,7 @@ void AnimationNodeStateMachineTransition::set_break_loop_at_end(bool p_enable) {
 
 bool AnimationNodeStateMachineTransition::is_loop_broken_at_end() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("is_loop_broken_at_end")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void AnimationNodeStateMachineTransition::set_reset(bool p_reset) {
 
 bool AnimationNodeStateMachineTransition::is_reset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("is_reset")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void AnimationNodeStateMachineTransition::set_priority(int32_t p_priority) {
 
 int32_t AnimationNodeStateMachineTransition::get_priority() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("get_priority")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -156,7 +156,7 @@ void AnimationNodeStateMachineTransition::set_advance_expression(const String &p
 
 String AnimationNodeStateMachineTransition::get_advance_expression() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachineTransition::get_class_static()._native_ptr(), StringName("get_advance_expression")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

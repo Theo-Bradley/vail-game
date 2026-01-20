@@ -30,10 +30,10 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OS_HPP
-#define GODOT_CPP_OS_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
+#include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/array.hpp>
 #include <godot_cpp/variant/dictionary.hpp>
@@ -46,6 +46,8 @@
 #include <type_traits>
 
 namespace godot {
+
+class Logger;
 
 class OS : public Object {
 	GDEXTENSION_CLASS(OS, Object)
@@ -100,8 +102,8 @@ public:
 	String get_system_font_path(const String &p_font_name, int32_t p_weight = 400, int32_t p_stretch = 100, bool p_italic = false) const;
 	PackedStringArray get_system_font_path_for_text(const String &p_font_name, const String &p_text, const String &p_locale = String(), const String &p_script = String(), int32_t p_weight = 400, int32_t p_stretch = 100, bool p_italic = false) const;
 	String get_executable_path() const;
-	String read_string_from_stdin(int64_t p_buffer_size);
-	PackedByteArray read_buffer_from_stdin(int64_t p_buffer_size);
+	String read_string_from_stdin(int64_t p_buffer_size = 1024);
+	PackedByteArray read_buffer_from_stdin(int64_t p_buffer_size = 1024);
 	OS::StdHandleType get_stdin_type() const;
 	OS::StdHandleType get_stdout_type() const;
 	OS::StdHandleType get_stderr_type() const;
@@ -109,6 +111,7 @@ public:
 	Dictionary execute_with_pipe(const String &p_path, const PackedStringArray &p_arguments, bool p_blocking = true);
 	int32_t create_process(const String &p_path, const PackedStringArray &p_arguments, bool p_open_console = false);
 	int32_t create_instance(const PackedStringArray &p_arguments);
+	Error open_with_program(const String &p_program_path, const PackedStringArray &p_paths);
 	Error kill(int32_t p_pid);
 	Error shell_open(const String &p_uri);
 	Error shell_show_in_file_manager(const String &p_file_or_dir_path, bool p_open_folder = true);
@@ -161,6 +164,8 @@ public:
 	bool request_permissions();
 	PackedStringArray get_granted_permissions() const;
 	void revoke_granted_permissions();
+	void add_logger(const Ref<Logger> &p_logger);
+	void remove_logger(const Ref<Logger> &p_logger);
 
 protected:
 	template <typename T, typename B>
@@ -179,4 +184,3 @@ VARIANT_ENUM_CAST(OS::RenderingDriver);
 VARIANT_ENUM_CAST(OS::SystemDir);
 VARIANT_ENUM_CAST(OS::StdHandleType);
 
-#endif // ! GODOT_CPP_OS_HPP

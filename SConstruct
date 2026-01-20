@@ -9,6 +9,9 @@ libname = "cpp"
 projectdir = "proj"
 
 localEnv = Environment(tools=["default"], PLATFORM="")
+#localEnv = Environment(tools=["gcc", "g++"],
+#CC = "C:\\Program Files\\msys64\\mingw64\\bin\\gcc.exe",
+#CXX = "C:\\Program Files\\msys64\\mingw64\\bin\\g++.exe")
 
 # Build profiles can be used to decrease compile times.
 # You can either specify "disabled_classes", OR
@@ -28,6 +31,7 @@ Help(opts.GenerateHelpText(localEnv))
 
 env = localEnv.Clone()
 
+
 if not (os.path.isdir("godot-cpp") and os.listdir("godot-cpp")):
     print_error("""godot-cpp is not available within this folder, as Git submodules haven't been initialized.
 Run the following command to download godot-cpp:
@@ -43,10 +47,16 @@ def find_directories(directory):
         directories.extend(["src/" + os.path.relpath(os.path.join(root, d), directory).replace("\\", "/") + "/" for d in dirs])
     return directories
 
-
+#env.Append(CC = "gcc")
+#env.Append(CC = "C:\\Program Files\\msys64\\mingw64\\bin\\gcc.exe")
+#env.Append(CXX = "C:\\Program Files\\msys64\\mingw64\\bin\\g++.exe")
 #env.Append(CPPPATH=["src/"])
+if env['target'] in ["editor", "template_debug"]:
+    print("Setting /MTd")
+    env.Append(CCFLAGS=["-MTd"])
 source_dirs = find_directories("src/")
 env.Append(CPPPATH=source_dirs)
+
 
 #sources = Glob("src/*.cpp")
 sources = []

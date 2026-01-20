@@ -48,7 +48,7 @@ void AudioEffectChorus::set_voice_count(int32_t p_voices) {
 
 int32_t AudioEffectChorus::get_voice_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_voice_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void AudioEffectChorus::set_voice_delay_ms(int32_t p_voice_idx, float p_delay_ms
 
 float AudioEffectChorus::get_voice_delay_ms(int32_t p_voice_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_voice_delay_ms")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_voice_idx_encoded;
 	PtrToArg<int64_t>::encode(p_voice_idx, &p_voice_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_voice_idx_encoded);
@@ -82,7 +82,7 @@ void AudioEffectChorus::set_voice_rate_hz(int32_t p_voice_idx, float p_rate_hz) 
 
 float AudioEffectChorus::get_voice_rate_hz(int32_t p_voice_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_voice_rate_hz")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_voice_idx_encoded;
 	PtrToArg<int64_t>::encode(p_voice_idx, &p_voice_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_voice_idx_encoded);
@@ -100,7 +100,7 @@ void AudioEffectChorus::set_voice_depth_ms(int32_t p_voice_idx, float p_depth_ms
 
 float AudioEffectChorus::get_voice_depth_ms(int32_t p_voice_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_voice_depth_ms")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_voice_idx_encoded;
 	PtrToArg<int64_t>::encode(p_voice_idx, &p_voice_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_voice_idx_encoded);
@@ -118,7 +118,7 @@ void AudioEffectChorus::set_voice_level_db(int32_t p_voice_idx, float p_level_db
 
 float AudioEffectChorus::get_voice_level_db(int32_t p_voice_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_voice_level_db")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_voice_idx_encoded;
 	PtrToArg<int64_t>::encode(p_voice_idx, &p_voice_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_voice_idx_encoded);
@@ -136,7 +136,7 @@ void AudioEffectChorus::set_voice_cutoff_hz(int32_t p_voice_idx, float p_cutoff_
 
 float AudioEffectChorus::get_voice_cutoff_hz(int32_t p_voice_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_voice_cutoff_hz")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_voice_idx_encoded;
 	PtrToArg<int64_t>::encode(p_voice_idx, &p_voice_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_voice_idx_encoded);
@@ -154,7 +154,7 @@ void AudioEffectChorus::set_voice_pan(int32_t p_voice_idx, float p_pan) {
 
 float AudioEffectChorus::get_voice_pan(int32_t p_voice_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_voice_pan")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_voice_idx_encoded;
 	PtrToArg<int64_t>::encode(p_voice_idx, &p_voice_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_voice_idx_encoded);
@@ -170,7 +170,7 @@ void AudioEffectChorus::set_wet(float p_amount) {
 
 float AudioEffectChorus::get_wet() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_wet")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -184,7 +184,7 @@ void AudioEffectChorus::set_dry(float p_amount) {
 
 float AudioEffectChorus::get_dry() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectChorus::get_class_static()._native_ptr(), StringName("get_dry")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

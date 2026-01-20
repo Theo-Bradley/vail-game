@@ -48,7 +48,7 @@ void AudioEffectHardLimiter::set_ceiling_db(float p_ceiling) {
 
 float AudioEffectHardLimiter::get_ceiling_db() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectHardLimiter::get_class_static()._native_ptr(), StringName("get_ceiling_db")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AudioEffectHardLimiter::set_pre_gain_db(float p_pre_gain) {
 
 float AudioEffectHardLimiter::get_pre_gain_db() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectHardLimiter::get_class_static()._native_ptr(), StringName("get_pre_gain_db")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AudioEffectHardLimiter::set_release(float p_release) {
 
 float AudioEffectHardLimiter::get_release() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectHardLimiter::get_class_static()._native_ptr(), StringName("get_release")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

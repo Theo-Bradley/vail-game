@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_STRING_NAME_HPP
-#define GODOT_CPP_STRING_NAME_HPP
+#pragma once
 
 #include <godot_cpp/core/defs.hpp>
 
@@ -62,6 +61,7 @@ class PackedVector4Array;
 struct Plane;
 struct Projection;
 struct Quaternion;
+class RID;
 struct Rect2;
 struct Rect2i;
 class Signal;
@@ -115,6 +115,10 @@ class StringName {
 		GDExtensionPtrBuiltInMethod method_format;
 		GDExtensionPtrBuiltInMethod method_replace;
 		GDExtensionPtrBuiltInMethod method_replacen;
+		GDExtensionPtrBuiltInMethod method_replace_char;
+		GDExtensionPtrBuiltInMethod method_replace_chars;
+		GDExtensionPtrBuiltInMethod method_remove_char;
+		GDExtensionPtrBuiltInMethod method_remove_chars;
 		GDExtensionPtrBuiltInMethod method_repeat;
 		GDExtensionPtrBuiltInMethod method_reverse;
 		GDExtensionPtrBuiltInMethod method_insert;
@@ -123,6 +127,7 @@ class StringName {
 		GDExtensionPtrBuiltInMethod method_to_camel_case;
 		GDExtensionPtrBuiltInMethod method_to_pascal_case;
 		GDExtensionPtrBuiltInMethod method_to_snake_case;
+		GDExtensionPtrBuiltInMethod method_to_kebab_case;
 		GDExtensionPtrBuiltInMethod method_split;
 		GDExtensionPtrBuiltInMethod method_rsplit;
 		GDExtensionPtrBuiltInMethod method_split_floats;
@@ -159,6 +164,7 @@ class StringName {
 		GDExtensionPtrBuiltInMethod method_xml_unescape;
 		GDExtensionPtrBuiltInMethod method_uri_encode;
 		GDExtensionPtrBuiltInMethod method_uri_decode;
+		GDExtensionPtrBuiltInMethod method_uri_file_decode;
 		GDExtensionPtrBuiltInMethod method_c_escape;
 		GDExtensionPtrBuiltInMethod method_c_unescape;
 		GDExtensionPtrBuiltInMethod method_json_escape;
@@ -187,8 +193,9 @@ class StringName {
 		GDExtensionPtrBuiltInMethod method_to_utf8_buffer;
 		GDExtensionPtrBuiltInMethod method_to_utf16_buffer;
 		GDExtensionPtrBuiltInMethod method_to_utf32_buffer;
-		GDExtensionPtrBuiltInMethod method_hex_decode;
 		GDExtensionPtrBuiltInMethod method_to_wchar_buffer;
+		GDExtensionPtrBuiltInMethod method_to_multibyte_char_buffer;
+		GDExtensionPtrBuiltInMethod method_hex_decode;
 		GDExtensionPtrBuiltInMethod method_hash;
 		GDExtensionPtrOperatorEvaluator operator_equal_Variant;
 		GDExtensionPtrOperatorEvaluator operator_not_equal_Variant;
@@ -228,6 +235,7 @@ class StringName {
 		GDExtensionPtrOperatorEvaluator operator_module_StringName;
 		GDExtensionPtrOperatorEvaluator operator_in_StringName;
 		GDExtensionPtrOperatorEvaluator operator_module_NodePath;
+		GDExtensionPtrOperatorEvaluator operator_module_RID;
 		GDExtensionPtrOperatorEvaluator operator_module_Object;
 		GDExtensionPtrOperatorEvaluator operator_in_Object;
 		GDExtensionPtrOperatorEvaluator operator_module_Callable;
@@ -293,6 +301,10 @@ public:
 	String format(const Variant &p_values, const String &p_placeholder = "{_}") const;
 	String replace(const String &p_what, const String &p_forwhat) const;
 	String replacen(const String &p_what, const String &p_forwhat) const;
+	String replace_char(int64_t p_key, int64_t p_with) const;
+	String replace_chars(const String &p_keys, int64_t p_with) const;
+	String remove_char(int64_t p_what) const;
+	String remove_chars(const String &p_chars) const;
 	String repeat(int64_t p_count) const;
 	String reverse() const;
 	String insert(int64_t p_position, const String &p_what) const;
@@ -301,6 +313,7 @@ public:
 	String to_camel_case() const;
 	String to_pascal_case() const;
 	String to_snake_case() const;
+	String to_kebab_case() const;
 	PackedStringArray split(const String &p_delimiter = String(), bool p_allow_empty = true, int64_t p_maxsplit = 0) const;
 	PackedStringArray rsplit(const String &p_delimiter = String(), bool p_allow_empty = true, int64_t p_maxsplit = 0) const;
 	PackedFloat64Array split_floats(const String &p_delimiter, bool p_allow_empty = true) const;
@@ -315,7 +328,7 @@ public:
 	String rstrip(const String &p_chars) const;
 	String get_extension() const;
 	String get_basename() const;
-	String path_join(const String &p_file) const;
+	String path_join(const String &p_path) const;
 	int64_t unicode_at(int64_t p_at) const;
 	String indent(const String &p_prefix) const;
 	String dedent() const;
@@ -337,6 +350,7 @@ public:
 	String xml_unescape() const;
 	String uri_encode() const;
 	String uri_decode() const;
+	String uri_file_decode() const;
 	String c_escape() const;
 	String c_unescape() const;
 	String json_escape() const;
@@ -365,8 +379,9 @@ public:
 	PackedByteArray to_utf8_buffer() const;
 	PackedByteArray to_utf16_buffer() const;
 	PackedByteArray to_utf32_buffer() const;
-	PackedByteArray hex_decode() const;
 	PackedByteArray to_wchar_buffer() const;
+	PackedByteArray to_multibyte_char_buffer(const String &p_encoding = String()) const;
+	PackedByteArray hex_decode() const;
 	int64_t hash() const;
 	bool operator==(const Variant &p_other) const;
 	bool operator!=(const Variant &p_other) const;
@@ -404,6 +419,7 @@ public:
 	String operator+(const StringName &p_other) const;
 	String operator%(const StringName &p_other) const;
 	String operator%(const NodePath &p_other) const;
+	String operator%(const RID &p_other) const;
 	String operator%(Object *p_other) const;
 	String operator%(const Callable &p_other) const;
 	String operator%(const Signal &p_other) const;
@@ -424,5 +440,3 @@ public:
 };
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_STRING_NAME_HPP

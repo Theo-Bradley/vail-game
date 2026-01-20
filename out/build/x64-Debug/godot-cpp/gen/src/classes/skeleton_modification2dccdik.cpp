@@ -46,7 +46,7 @@ void SkeletonModification2DCCDIK::set_target_node(const NodePath &p_target_nodep
 
 NodePath SkeletonModification2DCCDIK::get_target_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_target_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void SkeletonModification2DCCDIK::set_tip_node(const NodePath &p_tip_nodepath) {
 
 NodePath SkeletonModification2DCCDIK::get_tip_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_tip_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void SkeletonModification2DCCDIK::set_ccdik_data_chain_length(int32_t p_length) 
 
 int32_t SkeletonModification2DCCDIK::get_ccdik_data_chain_length() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_ccdik_data_chain_length")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void SkeletonModification2DCCDIK::set_ccdik_joint_bone2d_node(int32_t p_joint_id
 
 NodePath SkeletonModification2DCCDIK::get_ccdik_joint_bone2d_node(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_ccdik_joint_bone2d_node")._native_ptr(), 408788394);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -104,7 +104,7 @@ void SkeletonModification2DCCDIK::set_ccdik_joint_bone_index(int32_t p_joint_idx
 
 int32_t SkeletonModification2DCCDIK::get_ccdik_joint_bone_index(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_ccdik_joint_bone_index")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -122,7 +122,7 @@ void SkeletonModification2DCCDIK::set_ccdik_joint_rotate_from_joint(int32_t p_jo
 
 bool SkeletonModification2DCCDIK::get_ccdik_joint_rotate_from_joint(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_ccdik_joint_rotate_from_joint")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -140,7 +140,7 @@ void SkeletonModification2DCCDIK::set_ccdik_joint_enable_constraint(int32_t p_jo
 
 bool SkeletonModification2DCCDIK::get_ccdik_joint_enable_constraint(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_ccdik_joint_enable_constraint")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -158,7 +158,7 @@ void SkeletonModification2DCCDIK::set_ccdik_joint_constraint_angle_min(int32_t p
 
 float SkeletonModification2DCCDIK::get_ccdik_joint_constraint_angle_min(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_ccdik_joint_constraint_angle_min")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -176,7 +176,7 @@ void SkeletonModification2DCCDIK::set_ccdik_joint_constraint_angle_max(int32_t p
 
 float SkeletonModification2DCCDIK::get_ccdik_joint_constraint_angle_max(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_ccdik_joint_constraint_angle_max")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -194,7 +194,7 @@ void SkeletonModification2DCCDIK::set_ccdik_joint_constraint_angle_invert(int32_
 
 bool SkeletonModification2DCCDIK::get_ccdik_joint_constraint_angle_invert(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DCCDIK::get_class_static()._native_ptr(), StringName("get_ccdik_joint_constraint_angle_invert")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);

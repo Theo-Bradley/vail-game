@@ -40,7 +40,7 @@ namespace godot {
 
 Dictionary InstancePlaceholder::get_stored_values(bool p_with_order) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InstancePlaceholder::get_class_static()._native_ptr(), StringName("get_stored_values")._native_ptr(), 2230153369);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	int8_t p_with_order_encoded;
 	PtrToArg<bool>::encode(p_with_order, &p_with_order_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_with_order_encoded);
@@ -48,7 +48,7 @@ Dictionary InstancePlaceholder::get_stored_values(bool p_with_order) {
 
 Node *InstancePlaceholder::create_instance(bool p_replace, const Ref<PackedScene> &p_custom_scene) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InstancePlaceholder::get_class_static()._native_ptr(), StringName("create_instance")._native_ptr(), 3794612210);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int8_t p_replace_encoded;
 	PtrToArg<bool>::encode(p_replace, &p_replace_encoded);
 	return internal::_call_native_mb_ret_obj<Node>(_gde_method_bind, _owner, &p_replace_encoded, (p_custom_scene != nullptr ? &p_custom_scene->_owner : nullptr));
@@ -56,7 +56,7 @@ Node *InstancePlaceholder::create_instance(bool p_replace, const Ref<PackedScene
 
 String InstancePlaceholder::get_instance_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InstancePlaceholder::get_class_static()._native_ptr(), StringName("get_instance_path")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

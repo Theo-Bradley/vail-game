@@ -44,13 +44,13 @@ namespace godot {
 
 Ref<GLTFPhysicsShape> GLTFPhysicsShape::from_node(CollisionShape3D *p_shape_node) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("from_node")._native_ptr(), 3613751275);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<GLTFPhysicsShape>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<GLTFPhysicsShape>()));
 	return Ref<GLTFPhysicsShape>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<GLTFPhysicsShape>(_gde_method_bind, nullptr, (p_shape_node != nullptr ? &p_shape_node->_owner : nullptr)));
 }
 
 CollisionShape3D *GLTFPhysicsShape::to_node(bool p_cache_shapes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("to_node")._native_ptr(), 563689933);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int8_t p_cache_shapes_encoded;
 	PtrToArg<bool>::encode(p_cache_shapes, &p_cache_shapes_encoded);
 	return internal::_call_native_mb_ret_obj<CollisionShape3D>(_gde_method_bind, _owner, &p_cache_shapes_encoded);
@@ -58,13 +58,13 @@ CollisionShape3D *GLTFPhysicsShape::to_node(bool p_cache_shapes) {
 
 Ref<GLTFPhysicsShape> GLTFPhysicsShape::from_resource(const Ref<Shape3D> &p_shape_resource) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("from_resource")._native_ptr(), 3845569786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<GLTFPhysicsShape>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<GLTFPhysicsShape>()));
 	return Ref<GLTFPhysicsShape>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<GLTFPhysicsShape>(_gde_method_bind, nullptr, (p_shape_resource != nullptr ? &p_shape_resource->_owner : nullptr)));
 }
 
 Ref<Shape3D> GLTFPhysicsShape::to_resource(bool p_cache_shapes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("to_resource")._native_ptr(), 1913542110);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Shape3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Shape3D>()));
 	int8_t p_cache_shapes_encoded;
 	PtrToArg<bool>::encode(p_cache_shapes, &p_cache_shapes_encoded);
 	return Ref<Shape3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Shape3D>(_gde_method_bind, _owner, &p_cache_shapes_encoded));
@@ -72,19 +72,19 @@ Ref<Shape3D> GLTFPhysicsShape::to_resource(bool p_cache_shapes) {
 
 Ref<GLTFPhysicsShape> GLTFPhysicsShape::from_dictionary(const Dictionary &p_dictionary) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("from_dictionary")._native_ptr(), 2390691823);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<GLTFPhysicsShape>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<GLTFPhysicsShape>()));
 	return Ref<GLTFPhysicsShape>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<GLTFPhysicsShape>(_gde_method_bind, nullptr, &p_dictionary));
 }
 
 Dictionary GLTFPhysicsShape::to_dictionary() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("to_dictionary")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
 String GLTFPhysicsShape::get_shape_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("get_shape_type")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -96,7 +96,7 @@ void GLTFPhysicsShape::set_shape_type(const String &p_shape_type) {
 
 Vector3 GLTFPhysicsShape::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void GLTFPhysicsShape::set_size(const Vector3 &p_size) {
 
 float GLTFPhysicsShape::get_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -122,7 +122,7 @@ void GLTFPhysicsShape::set_radius(float p_radius) {
 
 float GLTFPhysicsShape::get_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("get_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -136,7 +136,7 @@ void GLTFPhysicsShape::set_height(float p_height) {
 
 bool GLTFPhysicsShape::get_is_trigger() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("get_is_trigger")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -150,7 +150,7 @@ void GLTFPhysicsShape::set_is_trigger(bool p_is_trigger) {
 
 int32_t GLTFPhysicsShape::get_mesh_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("get_mesh_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -164,7 +164,7 @@ void GLTFPhysicsShape::set_mesh_index(int32_t p_mesh_index) {
 
 Ref<ImporterMesh> GLTFPhysicsShape::get_importer_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFPhysicsShape::get_class_static()._native_ptr(), StringName("get_importer_mesh")._native_ptr(), 3161779525);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ImporterMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ImporterMesh>()));
 	return Ref<ImporterMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ImporterMesh>(_gde_method_bind, _owner));
 }
 

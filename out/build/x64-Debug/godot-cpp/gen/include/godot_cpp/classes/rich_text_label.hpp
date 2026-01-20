@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RICH_TEXT_LABEL_HPP
-#define GODOT_CPP_RICH_TEXT_LABEL_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -42,6 +41,7 @@
 #include <godot_cpp/variant/dictionary.hpp>
 #include <godot_cpp/variant/packed_float32_array.hpp>
 #include <godot_cpp/variant/rect2.hpp>
+#include <godot_cpp/variant/rect2i.hpp>
 #include <godot_cpp/variant/string.hpp>
 #include <godot_cpp/variant/variant.hpp>
 #include <godot_cpp/variant/vector2i.hpp>
@@ -97,8 +97,9 @@ public:
 	String get_parsed_text() const;
 	void add_text(const String &p_text);
 	void set_text(const String &p_text);
-	void add_image(const Ref<Texture2D> &p_image, int32_t p_width = 0, int32_t p_height = 0, const Color &p_color = Color(1, 1, 1, 1), InlineAlignment p_inline_align = (InlineAlignment)5, const Rect2 &p_region = Rect2(0, 0, 0, 0), const Variant &p_key = nullptr, bool p_pad = false, const String &p_tooltip = String(), bool p_size_in_percent = false);
-	void update_image(const Variant &p_key, BitField<RichTextLabel::ImageUpdateMask> p_mask, const Ref<Texture2D> &p_image, int32_t p_width = 0, int32_t p_height = 0, const Color &p_color = Color(1, 1, 1, 1), InlineAlignment p_inline_align = (InlineAlignment)5, const Rect2 &p_region = Rect2(0, 0, 0, 0), bool p_pad = false, const String &p_tooltip = String(), bool p_size_in_percent = false);
+	void add_hr(int32_t p_width = 90, int32_t p_height = 2, const Color &p_color = Color(1, 1, 1, 1), HorizontalAlignment p_alignment = (HorizontalAlignment)1, bool p_width_in_percent = true, bool p_height_in_percent = false);
+	void add_image(const Ref<Texture2D> &p_image, int32_t p_width = 0, int32_t p_height = 0, const Color &p_color = Color(1, 1, 1, 1), InlineAlignment p_inline_align = (InlineAlignment)5, const Rect2 &p_region = Rect2(0, 0, 0, 0), const Variant &p_key = nullptr, bool p_pad = false, const String &p_tooltip = String(), bool p_width_in_percent = false, bool p_height_in_percent = false, const String &p_alt_text = String());
+	void update_image(const Variant &p_key, BitField<RichTextLabel::ImageUpdateMask> p_mask, const Ref<Texture2D> &p_image, int32_t p_width = 0, int32_t p_height = 0, const Color &p_color = Color(1, 1, 1, 1), InlineAlignment p_inline_align = (InlineAlignment)5, const Rect2 &p_region = Rect2(0, 0, 0, 0), bool p_pad = false, const String &p_tooltip = String(), bool p_width_in_percent = false, bool p_height_in_percent = false);
 	void newline();
 	bool remove_paragraph(int32_t p_paragraph, bool p_no_invalidate = false);
 	bool invalidate_paragraph(int32_t p_paragraph);
@@ -118,11 +119,12 @@ public:
 	void push_meta(const Variant &p_data, RichTextLabel::MetaUnderline p_underline_mode = (RichTextLabel::MetaUnderline)1, const String &p_tooltip = String());
 	void push_hint(const String &p_description);
 	void push_language(const String &p_language);
-	void push_underline();
-	void push_strikethrough();
-	void push_table(int32_t p_columns, InlineAlignment p_inline_align = (InlineAlignment)0, int32_t p_align_to_row = -1);
+	void push_underline(const Color &p_color = Color(0, 0, 0, 0));
+	void push_strikethrough(const Color &p_color = Color(0, 0, 0, 0));
+	void push_table(int32_t p_columns, InlineAlignment p_inline_align = (InlineAlignment)0, int32_t p_align_to_row = -1, const String &p_name = String());
 	void push_dropcap(const String &p_string, const Ref<Font> &p_font, int32_t p_size, const Rect2 &p_dropcap_margins = Rect2(0, 0, 0, 0), const Color &p_color = Color(1, 1, 1, 1), int32_t p_outline_size = 0, const Color &p_outline_color = Color(0, 0, 0, 0));
 	void set_table_column_expand(int32_t p_column, bool p_expand, int32_t p_ratio = 1, bool p_shrink = true);
+	void set_table_column_name(int32_t p_column, const String &p_name);
 	void set_cell_row_background_color(const Color &p_odd_row_bg, const Color &p_even_row_bg);
 	void set_cell_border_color(const Color &p_color);
 	void set_cell_size_override(const Vector2 &p_min_size, const Vector2 &p_max_size);
@@ -154,12 +156,16 @@ public:
 	PackedFloat32Array get_tab_stops() const;
 	void set_autowrap_mode(TextServer::AutowrapMode p_autowrap_mode);
 	TextServer::AutowrapMode get_autowrap_mode() const;
+	void set_autowrap_trim_flags(BitField<TextServer::LineBreakFlag> p_autowrap_trim_flags);
+	BitField<TextServer::LineBreakFlag> get_autowrap_trim_flags() const;
 	void set_meta_underline(bool p_enable);
 	bool is_meta_underlined() const;
 	void set_hint_underline(bool p_enable);
 	bool is_hint_underlined() const;
 	void set_scroll_active(bool p_active);
 	bool is_scroll_active() const;
+	void set_scroll_follow_visible_characters(bool p_follow);
+	bool is_scroll_following_visible_characters() const;
 	void set_scroll_follow(bool p_follow);
 	bool is_scroll_following() const;
 	VScrollBar *get_v_scroll_bar();
@@ -213,12 +219,16 @@ public:
 	int32_t get_visible_paragraph_count() const;
 	int32_t get_content_height() const;
 	int32_t get_content_width() const;
+	int32_t get_line_height(int32_t p_line) const;
+	int32_t get_line_width(int32_t p_line) const;
+	Rect2i get_visible_content_rect() const;
 	float get_line_offset(int32_t p_line);
 	float get_paragraph_offset(int32_t p_paragraph);
 	Dictionary parse_expressions_for_values(const PackedStringArray &p_expressions);
 	void set_effects(const Array &p_effects);
 	Array get_effects();
 	void install_effect(const Variant &p_effect);
+	void reload_effects();
 	PopupMenu *get_menu() const;
 	bool is_menu_visible() const;
 	void menu_option(int32_t p_option);
@@ -239,4 +249,3 @@ VARIANT_ENUM_CAST(RichTextLabel::MenuItems);
 VARIANT_ENUM_CAST(RichTextLabel::MetaUnderline);
 VARIANT_BITFIELD_CAST(RichTextLabel::ImageUpdateMask);
 
-#endif // ! GODOT_CPP_RICH_TEXT_LABEL_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FONT_HPP
-#define GODOT_CPP_FONT_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -55,8 +54,8 @@ class Font : public Resource {
 	GDEXTENSION_CLASS(Font, Resource)
 
 public:
-	void set_fallbacks(const TypedArray<Font> &p_fallbacks);
-	TypedArray<Font> get_fallbacks() const;
+	void set_fallbacks(const TypedArray<Ref<Font>> &p_fallbacks);
+	TypedArray<Ref<Font>> get_fallbacks() const;
 	RID find_variation(const Dictionary &p_variation_coordinates, int32_t p_face_index = 0, float p_strength = 0.0, const Transform2D &p_transform = Transform2D(), int32_t p_spacing_top = 0, int32_t p_spacing_bottom = 0, int32_t p_spacing_space = 0, int32_t p_spacing_glyph = 0, float p_baseline_offset = 0.0) const;
 	TypedArray<RID> get_rids() const;
 	float get_height(int32_t p_font_size = 16) const;
@@ -75,13 +74,13 @@ public:
 	void set_cache_capacity(int32_t p_single_line, int32_t p_multi_line);
 	Vector2 get_string_size(const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0) const;
 	Vector2 get_multiline_string_size(const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, int32_t p_max_lines = -1, BitField<TextServer::LineBreakFlag> p_brk_flags = (BitField<TextServer::LineBreakFlag>)3, BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0) const;
-	void draw_string(const RID &p_canvas_item, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, const Color &p_modulate = Color(1, 1, 1, 1), BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0) const;
-	void draw_multiline_string(const RID &p_canvas_item, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, int32_t p_max_lines = -1, const Color &p_modulate = Color(1, 1, 1, 1), BitField<TextServer::LineBreakFlag> p_brk_flags = (BitField<TextServer::LineBreakFlag>)3, BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0) const;
-	void draw_string_outline(const RID &p_canvas_item, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, int32_t p_size = 1, const Color &p_modulate = Color(1, 1, 1, 1), BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0) const;
-	void draw_multiline_string_outline(const RID &p_canvas_item, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, int32_t p_max_lines = -1, int32_t p_size = 1, const Color &p_modulate = Color(1, 1, 1, 1), BitField<TextServer::LineBreakFlag> p_brk_flags = (BitField<TextServer::LineBreakFlag>)3, BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0) const;
+	void draw_string(const RID &p_canvas_item, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, const Color &p_modulate = Color(1, 1, 1, 1), BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0, float p_oversampling = 0.0) const;
+	void draw_multiline_string(const RID &p_canvas_item, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, int32_t p_max_lines = -1, const Color &p_modulate = Color(1, 1, 1, 1), BitField<TextServer::LineBreakFlag> p_brk_flags = (BitField<TextServer::LineBreakFlag>)3, BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0, float p_oversampling = 0.0) const;
+	void draw_string_outline(const RID &p_canvas_item, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, int32_t p_size = 1, const Color &p_modulate = Color(1, 1, 1, 1), BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0, float p_oversampling = 0.0) const;
+	void draw_multiline_string_outline(const RID &p_canvas_item, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment = (HorizontalAlignment)0, float p_width = -1, int32_t p_font_size = 16, int32_t p_max_lines = -1, int32_t p_size = 1, const Color &p_modulate = Color(1, 1, 1, 1), BitField<TextServer::LineBreakFlag> p_brk_flags = (BitField<TextServer::LineBreakFlag>)3, BitField<TextServer::JustificationFlag> p_justification_flags = (BitField<TextServer::JustificationFlag>)3, TextServer::Direction p_direction = (TextServer::Direction)0, TextServer::Orientation p_orientation = (TextServer::Orientation)0, float p_oversampling = 0.0) const;
 	Vector2 get_char_size(char32_t p_char, int32_t p_font_size) const;
-	float draw_char(const RID &p_canvas_item, const Vector2 &p_pos, char32_t p_char, int32_t p_font_size, const Color &p_modulate = Color(1, 1, 1, 1)) const;
-	float draw_char_outline(const RID &p_canvas_item, const Vector2 &p_pos, char32_t p_char, int32_t p_font_size, int32_t p_size = -1, const Color &p_modulate = Color(1, 1, 1, 1)) const;
+	float draw_char(const RID &p_canvas_item, const Vector2 &p_pos, char32_t p_char, int32_t p_font_size, const Color &p_modulate = Color(1, 1, 1, 1), float p_oversampling = 0.0) const;
+	float draw_char_outline(const RID &p_canvas_item, const Vector2 &p_pos, char32_t p_char, int32_t p_font_size, int32_t p_size = -1, const Color &p_modulate = Color(1, 1, 1, 1), float p_oversampling = 0.0) const;
 	bool has_char(char32_t p_char) const;
 	String get_supported_chars() const;
 	bool is_language_supported(const String &p_language) const;
@@ -101,4 +100,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_FONT_HPP

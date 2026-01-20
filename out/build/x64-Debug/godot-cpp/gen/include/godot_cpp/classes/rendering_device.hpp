@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RENDERING_DEVICE_HPP
-#define GODOT_CPP_RENDERING_DEVICE_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/rd_pipeline_specialization_constant.hpp>
@@ -330,7 +329,21 @@ public:
 		DATA_FORMAT_G16_B16_R16_3PLANE_422_UNORM = 215,
 		DATA_FORMAT_G16_B16R16_2PLANE_422_UNORM = 216,
 		DATA_FORMAT_G16_B16_R16_3PLANE_444_UNORM = 217,
-		DATA_FORMAT_MAX = 218,
+		DATA_FORMAT_ASTC_4x4_SFLOAT_BLOCK = 218,
+		DATA_FORMAT_ASTC_5x4_SFLOAT_BLOCK = 219,
+		DATA_FORMAT_ASTC_5x5_SFLOAT_BLOCK = 220,
+		DATA_FORMAT_ASTC_6x5_SFLOAT_BLOCK = 221,
+		DATA_FORMAT_ASTC_6x6_SFLOAT_BLOCK = 222,
+		DATA_FORMAT_ASTC_8x5_SFLOAT_BLOCK = 223,
+		DATA_FORMAT_ASTC_8x6_SFLOAT_BLOCK = 224,
+		DATA_FORMAT_ASTC_8x8_SFLOAT_BLOCK = 225,
+		DATA_FORMAT_ASTC_10x5_SFLOAT_BLOCK = 226,
+		DATA_FORMAT_ASTC_10x6_SFLOAT_BLOCK = 227,
+		DATA_FORMAT_ASTC_10x8_SFLOAT_BLOCK = 228,
+		DATA_FORMAT_ASTC_10x10_SFLOAT_BLOCK = 229,
+		DATA_FORMAT_ASTC_12x10_SFLOAT_BLOCK = 230,
+		DATA_FORMAT_ASTC_12x12_SFLOAT_BLOCK = 231,
+		DATA_FORMAT_MAX = 232,
 	};
 
 	enum BarrierMask : uint64_t {
@@ -610,7 +623,10 @@ public:
 	};
 
 	enum Features {
+		SUPPORTS_METALFX_SPATIAL = 3,
+		SUPPORTS_METALFX_TEMPORAL = 4,
 		SUPPORTS_BUFFER_DEVICE_ADDRESS = 6,
+		SUPPORTS_IMAGE_ATOMIC_32_BIT = 7,
 	};
 
 	enum Limit {
@@ -713,7 +729,7 @@ public:
 	RID texture_create(const Ref<RDTextureFormat> &p_format, const Ref<RDTextureView> &p_view, const TypedArray<PackedByteArray> &p_data = Array());
 	RID texture_create_shared(const Ref<RDTextureView> &p_view, const RID &p_with_texture);
 	RID texture_create_shared_from_slice(const Ref<RDTextureView> &p_view, const RID &p_with_texture, uint32_t p_layer, uint32_t p_mipmap, uint32_t p_mipmaps = 1, RenderingDevice::TextureSliceType p_slice_type = (RenderingDevice::TextureSliceType)0);
-	RID texture_create_from_extension(RenderingDevice::TextureType p_type, RenderingDevice::DataFormat p_format, RenderingDevice::TextureSamples p_samples, BitField<RenderingDevice::TextureUsageBits> p_usage_flags, uint64_t p_image, uint64_t p_width, uint64_t p_height, uint64_t p_depth, uint64_t p_layers);
+	RID texture_create_from_extension(RenderingDevice::TextureType p_type, RenderingDevice::DataFormat p_format, RenderingDevice::TextureSamples p_samples, BitField<RenderingDevice::TextureUsageBits> p_usage_flags, uint64_t p_image, uint64_t p_width, uint64_t p_height, uint64_t p_depth, uint64_t p_layers, uint64_t p_mipmaps = 1);
 	Error texture_update(const RID &p_texture, uint32_t p_layer, const PackedByteArray &p_data);
 	PackedByteArray texture_get_data(const RID &p_texture, uint32_t p_layer);
 	Error texture_get_data_async(const RID &p_texture, uint32_t p_layer, const Callable &p_callback);
@@ -727,19 +743,19 @@ public:
 	Error texture_resolve_multisample(const RID &p_from_texture, const RID &p_to_texture);
 	Ref<RDTextureFormat> texture_get_format(const RID &p_texture);
 	uint64_t texture_get_native_handle(const RID &p_texture);
-	int64_t framebuffer_format_create(const TypedArray<RDAttachmentFormat> &p_attachments, uint32_t p_view_count = 1);
-	int64_t framebuffer_format_create_multipass(const TypedArray<RDAttachmentFormat> &p_attachments, const TypedArray<RDFramebufferPass> &p_passes, uint32_t p_view_count = 1);
+	int64_t framebuffer_format_create(const TypedArray<Ref<RDAttachmentFormat>> &p_attachments, uint32_t p_view_count = 1);
+	int64_t framebuffer_format_create_multipass(const TypedArray<Ref<RDAttachmentFormat>> &p_attachments, const TypedArray<Ref<RDFramebufferPass>> &p_passes, uint32_t p_view_count = 1);
 	int64_t framebuffer_format_create_empty(RenderingDevice::TextureSamples p_samples = (RenderingDevice::TextureSamples)0);
 	RenderingDevice::TextureSamples framebuffer_format_get_texture_samples(int64_t p_format, uint32_t p_render_pass = 0);
 	RID framebuffer_create(const TypedArray<RID> &p_textures, int64_t p_validate_with_format = -1, uint32_t p_view_count = 1);
-	RID framebuffer_create_multipass(const TypedArray<RID> &p_textures, const TypedArray<RDFramebufferPass> &p_passes, int64_t p_validate_with_format = -1, uint32_t p_view_count = 1);
+	RID framebuffer_create_multipass(const TypedArray<RID> &p_textures, const TypedArray<Ref<RDFramebufferPass>> &p_passes, int64_t p_validate_with_format = -1, uint32_t p_view_count = 1);
 	RID framebuffer_create_empty(const Vector2i &p_size, RenderingDevice::TextureSamples p_samples = (RenderingDevice::TextureSamples)0, int64_t p_validate_with_format = -1);
 	int64_t framebuffer_get_format(const RID &p_framebuffer);
 	bool framebuffer_is_valid(const RID &p_framebuffer) const;
 	RID sampler_create(const Ref<RDSamplerState> &p_state);
 	bool sampler_is_format_supported_for_filter(RenderingDevice::DataFormat p_format, RenderingDevice::SamplerFilter p_sampler_filter) const;
 	RID vertex_buffer_create(uint32_t p_size_bytes, const PackedByteArray &p_data = PackedByteArray(), BitField<RenderingDevice::BufferCreationBits> p_creation_bits = (BitField<RenderingDevice::BufferCreationBits>)0);
-	int64_t vertex_format_create(const TypedArray<RDVertexAttribute> &p_vertex_descriptions);
+	int64_t vertex_format_create(const TypedArray<Ref<RDVertexAttribute>> &p_vertex_descriptions);
 	RID vertex_array_create(uint32_t p_vertex_count, int64_t p_vertex_format, const TypedArray<RID> &p_src_buffers, const PackedInt64Array &p_offsets = PackedInt64Array());
 	RID index_buffer_create(uint32_t p_size_indices, RenderingDevice::IndexBufferFormat p_format, const PackedByteArray &p_data = PackedByteArray(), bool p_use_restart_indices = false, BitField<RenderingDevice::BufferCreationBits> p_creation_bits = (BitField<RenderingDevice::BufferCreationBits>)0);
 	RID index_array_create(const RID &p_index_buffer, uint32_t p_index_offset, uint32_t p_index_count);
@@ -752,7 +768,7 @@ public:
 	RID uniform_buffer_create(uint32_t p_size_bytes, const PackedByteArray &p_data = PackedByteArray(), BitField<RenderingDevice::BufferCreationBits> p_creation_bits = (BitField<RenderingDevice::BufferCreationBits>)0);
 	RID storage_buffer_create(uint32_t p_size_bytes, const PackedByteArray &p_data = PackedByteArray(), BitField<RenderingDevice::StorageBufferUsage> p_usage = (BitField<RenderingDevice::StorageBufferUsage>)0, BitField<RenderingDevice::BufferCreationBits> p_creation_bits = (BitField<RenderingDevice::BufferCreationBits>)0);
 	RID texture_buffer_create(uint32_t p_size_bytes, RenderingDevice::DataFormat p_format, const PackedByteArray &p_data = PackedByteArray());
-	RID uniform_set_create(const TypedArray<RDUniform> &p_uniforms, const RID &p_shader, uint32_t p_shader_set);
+	RID uniform_set_create(const TypedArray<Ref<RDUniform>> &p_uniforms, const RID &p_shader, uint32_t p_shader_set);
 	bool uniform_set_is_valid(const RID &p_uniform_set);
 	Error buffer_copy(const RID &p_src_buffer, const RID &p_dst_buffer, uint32_t p_src_offset, uint32_t p_dst_offset, uint32_t p_size);
 	Error buffer_update(const RID &p_buffer, uint32_t p_offset, uint32_t p_size_bytes, const PackedByteArray &p_data);
@@ -760,9 +776,9 @@ public:
 	PackedByteArray buffer_get_data(const RID &p_buffer, uint32_t p_offset_bytes = 0, uint32_t p_size_bytes = 0);
 	Error buffer_get_data_async(const RID &p_buffer, const Callable &p_callback, uint32_t p_offset_bytes = 0, uint32_t p_size_bytes = 0);
 	uint64_t buffer_get_device_address(const RID &p_buffer);
-	RID render_pipeline_create(const RID &p_shader, int64_t p_framebuffer_format, int64_t p_vertex_format, RenderingDevice::RenderPrimitive p_primitive, const Ref<RDPipelineRasterizationState> &p_rasterization_state, const Ref<RDPipelineMultisampleState> &p_multisample_state, const Ref<RDPipelineDepthStencilState> &p_stencil_state, const Ref<RDPipelineColorBlendState> &p_color_blend_state, BitField<RenderingDevice::PipelineDynamicStateFlags> p_dynamic_state_flags = (BitField<RenderingDevice::PipelineDynamicStateFlags>)0, uint32_t p_for_render_pass = 0, const TypedArray<RDPipelineSpecializationConstant> &p_specialization_constants = {});
+	RID render_pipeline_create(const RID &p_shader, int64_t p_framebuffer_format, int64_t p_vertex_format, RenderingDevice::RenderPrimitive p_primitive, const Ref<RDPipelineRasterizationState> &p_rasterization_state, const Ref<RDPipelineMultisampleState> &p_multisample_state, const Ref<RDPipelineDepthStencilState> &p_stencil_state, const Ref<RDPipelineColorBlendState> &p_color_blend_state, BitField<RenderingDevice::PipelineDynamicStateFlags> p_dynamic_state_flags = (BitField<RenderingDevice::PipelineDynamicStateFlags>)0, uint32_t p_for_render_pass = 0, const TypedArray<Ref<RDPipelineSpecializationConstant>> &p_specialization_constants = {});
 	bool render_pipeline_is_valid(const RID &p_render_pipeline);
-	RID compute_pipeline_create(const RID &p_shader, const TypedArray<RDPipelineSpecializationConstant> &p_specialization_constants = {});
+	RID compute_pipeline_create(const RID &p_shader, const TypedArray<Ref<RDPipelineSpecializationConstant>> &p_specialization_constants = {});
 	bool compute_pipeline_is_valid(const RID &p_compute_pipeline);
 	int32_t screen_get_width(int32_t p_screen = 0) const;
 	int32_t screen_get_height(int32_t p_screen = 0) const;
@@ -876,4 +892,3 @@ VARIANT_ENUM_CAST(RenderingDevice::MemoryType);
 VARIANT_ENUM_CAST(RenderingDevice::BreadcrumbMarker);
 VARIANT_BITFIELD_CAST(RenderingDevice::DrawFlags);
 
-#endif // ! GODOT_CPP_RENDERING_DEVICE_HPP

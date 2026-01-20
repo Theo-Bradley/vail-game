@@ -46,7 +46,7 @@ void SkeletonModification2DJiggle::set_target_node(const NodePath &p_target_node
 
 NodePath SkeletonModification2DJiggle::get_target_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_target_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void SkeletonModification2DJiggle::set_jiggle_data_chain_length(int32_t p_length
 
 int32_t SkeletonModification2DJiggle::get_jiggle_data_chain_length() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_data_chain_length")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void SkeletonModification2DJiggle::set_stiffness(float p_stiffness) {
 
 float SkeletonModification2DJiggle::get_stiffness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_stiffness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void SkeletonModification2DJiggle::set_mass(float p_mass) {
 
 float SkeletonModification2DJiggle::get_mass() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_mass")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void SkeletonModification2DJiggle::set_damping(float p_damping) {
 
 float SkeletonModification2DJiggle::get_damping() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_damping")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void SkeletonModification2DJiggle::set_use_gravity(bool p_use_gravity) {
 
 bool SkeletonModification2DJiggle::get_use_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_use_gravity")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -128,7 +128,7 @@ void SkeletonModification2DJiggle::set_gravity(const Vector2 &p_gravity) {
 
 Vector2 SkeletonModification2DJiggle::get_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void SkeletonModification2DJiggle::set_use_colliders(bool p_use_colliders) {
 
 bool SkeletonModification2DJiggle::get_use_colliders() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_use_colliders")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -156,7 +156,7 @@ void SkeletonModification2DJiggle::set_collision_mask(int32_t p_collision_mask) 
 
 int32_t SkeletonModification2DJiggle::get_collision_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_collision_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -170,7 +170,7 @@ void SkeletonModification2DJiggle::set_jiggle_joint_bone2d_node(int32_t p_joint_
 
 NodePath SkeletonModification2DJiggle::get_jiggle_joint_bone2d_node(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_joint_bone2d_node")._native_ptr(), 408788394);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -188,7 +188,7 @@ void SkeletonModification2DJiggle::set_jiggle_joint_bone_index(int32_t p_joint_i
 
 int32_t SkeletonModification2DJiggle::get_jiggle_joint_bone_index(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_joint_bone_index")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -206,7 +206,7 @@ void SkeletonModification2DJiggle::set_jiggle_joint_override(int32_t p_joint_idx
 
 bool SkeletonModification2DJiggle::get_jiggle_joint_override(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_joint_override")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -224,7 +224,7 @@ void SkeletonModification2DJiggle::set_jiggle_joint_stiffness(int32_t p_joint_id
 
 float SkeletonModification2DJiggle::get_jiggle_joint_stiffness(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_joint_stiffness")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -242,7 +242,7 @@ void SkeletonModification2DJiggle::set_jiggle_joint_mass(int32_t p_joint_idx, fl
 
 float SkeletonModification2DJiggle::get_jiggle_joint_mass(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_joint_mass")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -260,7 +260,7 @@ void SkeletonModification2DJiggle::set_jiggle_joint_damping(int32_t p_joint_idx,
 
 float SkeletonModification2DJiggle::get_jiggle_joint_damping(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_joint_damping")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -278,7 +278,7 @@ void SkeletonModification2DJiggle::set_jiggle_joint_use_gravity(int32_t p_joint_
 
 bool SkeletonModification2DJiggle::get_jiggle_joint_use_gravity(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_joint_use_gravity")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -294,7 +294,7 @@ void SkeletonModification2DJiggle::set_jiggle_joint_gravity(int32_t p_joint_idx,
 
 Vector2 SkeletonModification2DJiggle::get_jiggle_joint_gravity(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DJiggle::get_class_static()._native_ptr(), StringName("get_jiggle_joint_gravity")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_joint_idx_encoded);

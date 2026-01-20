@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GLOBAL_CONSTANTS_HPP
-#define GODOT_CPP_GLOBAL_CONSTANTS_HPP
+#pragma once
 
 #include <cstdint>
 
@@ -490,7 +489,10 @@ enum PropertyHint {
 	PROPERTY_HINT_PASSWORD = 36,
 	PROPERTY_HINT_TOOL_BUTTON = 39,
 	PROPERTY_HINT_ONESHOT = 40,
-	PROPERTY_HINT_MAX = 42,
+	PROPERTY_HINT_GROUP_ENABLE = 42,
+	PROPERTY_HINT_INPUT_NAME = 43,
+	PROPERTY_HINT_FILE_PATH = 44,
+	PROPERTY_HINT_MAX = 45,
 };
 
 enum PropertyUsageFlags : uint64_t {
@@ -541,5 +543,3 @@ enum MethodFlags : uint64_t {
 };
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_GLOBAL_CONSTANTS_HPP

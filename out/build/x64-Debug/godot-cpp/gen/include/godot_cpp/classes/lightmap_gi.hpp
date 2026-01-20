@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_LIGHTMAP_GI_HPP
-#define GODOT_CPP_LIGHTMAP_GI_HPP
+#pragma once
 
 #include <godot_cpp/classes/lightmap_gi_data.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -149,4 +148,3 @@ VARIANT_ENUM_CAST(LightmapGI::GenerateProbes);
 VARIANT_ENUM_CAST(LightmapGI::BakeError);
 VARIANT_ENUM_CAST(LightmapGI::EnvironmentMode);
 
-#endif // ! GODOT_CPP_LIGHTMAP_GI_HPP

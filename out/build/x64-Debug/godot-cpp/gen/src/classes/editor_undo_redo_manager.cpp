@@ -42,14 +42,16 @@
 
 namespace godot {
 
-void EditorUndoRedoManager::create_action(const String &p_name, UndoRedo::MergeMode p_merge_mode, Object *p_custom_context, bool p_backward_undo_ops) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorUndoRedoManager::get_class_static()._native_ptr(), StringName("create_action")._native_ptr(), 2107025470);
+void EditorUndoRedoManager::create_action(const String &p_name, UndoRedo::MergeMode p_merge_mode, Object *p_custom_context, bool p_backward_undo_ops, bool p_mark_unsaved) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorUndoRedoManager::get_class_static()._native_ptr(), StringName("create_action")._native_ptr(), 796197507);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	int64_t p_merge_mode_encoded;
 	PtrToArg<int64_t>::encode(p_merge_mode, &p_merge_mode_encoded);
 	int8_t p_backward_undo_ops_encoded;
 	PtrToArg<bool>::encode(p_backward_undo_ops, &p_backward_undo_ops_encoded);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_name, &p_merge_mode_encoded, (p_custom_context != nullptr ? &p_custom_context->_owner : nullptr), &p_backward_undo_ops_encoded);
+	int8_t p_mark_unsaved_encoded;
+	PtrToArg<bool>::encode(p_mark_unsaved, &p_mark_unsaved_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_name, &p_merge_mode_encoded, (p_custom_context != nullptr ? &p_custom_context->_owner : nullptr), &p_backward_undo_ops_encoded, &p_mark_unsaved_encoded);
 }
 
 void EditorUndoRedoManager::commit_action(bool p_execute) {
@@ -62,7 +64,7 @@ void EditorUndoRedoManager::commit_action(bool p_execute) {
 
 bool EditorUndoRedoManager::is_committing_action() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorUndoRedoManager::get_class_static()._native_ptr(), StringName("is_committing_action")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -114,13 +116,13 @@ void EditorUndoRedoManager::add_undo_reference(Object *p_object) {
 
 int32_t EditorUndoRedoManager::get_object_history_id(Object *p_object) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorUndoRedoManager::get_class_static()._native_ptr(), StringName("get_object_history_id")._native_ptr(), 1107568780);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_object != nullptr ? &p_object->_owner : nullptr));
 }
 
 UndoRedo *EditorUndoRedoManager::get_history_undo_redo(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorUndoRedoManager::get_class_static()._native_ptr(), StringName("get_history_undo_redo")._native_ptr(), 2417974513);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret_obj<UndoRedo>(_gde_method_bind, _owner, &p_id_encoded);

@@ -50,7 +50,7 @@ void CompositorEffect::set_enabled(bool p_enabled) {
 
 bool CompositorEffect::get_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompositorEffect::get_class_static()._native_ptr(), StringName("get_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void CompositorEffect::set_effect_callback_type(CompositorEffect::EffectCallback
 
 CompositorEffect::EffectCallbackType CompositorEffect::get_effect_callback_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompositorEffect::get_class_static()._native_ptr(), StringName("get_effect_callback_type")._native_ptr(), 1221912590);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CompositorEffect::EffectCallbackType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CompositorEffect::EffectCallbackType(0)));
 	return (CompositorEffect::EffectCallbackType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -78,7 +78,7 @@ void CompositorEffect::set_access_resolved_color(bool p_enable) {
 
 bool CompositorEffect::get_access_resolved_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompositorEffect::get_class_static()._native_ptr(), StringName("get_access_resolved_color")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void CompositorEffect::set_access_resolved_depth(bool p_enable) {
 
 bool CompositorEffect::get_access_resolved_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompositorEffect::get_class_static()._native_ptr(), StringName("get_access_resolved_depth")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -106,7 +106,7 @@ void CompositorEffect::set_needs_motion_vectors(bool p_enable) {
 
 bool CompositorEffect::get_needs_motion_vectors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompositorEffect::get_class_static()._native_ptr(), StringName("get_needs_motion_vectors")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -120,7 +120,7 @@ void CompositorEffect::set_needs_normal_roughness(bool p_enable) {
 
 bool CompositorEffect::get_needs_normal_roughness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompositorEffect::get_class_static()._native_ptr(), StringName("get_needs_normal_roughness")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -134,7 +134,7 @@ void CompositorEffect::set_needs_separate_specular(bool p_enable) {
 
 bool CompositorEffect::get_needs_separate_specular() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CompositorEffect::get_class_static()._native_ptr(), StringName("get_needs_separate_specular")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

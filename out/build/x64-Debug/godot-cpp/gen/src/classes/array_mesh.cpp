@@ -49,13 +49,13 @@ void ArrayMesh::add_blend_shape(const StringName &p_name) {
 
 int32_t ArrayMesh::get_blend_shape_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("get_blend_shape_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 StringName ArrayMesh::get_blend_shape_name(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("get_blend_shape_name")._native_ptr(), 659327637);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_index_encoded);
@@ -85,7 +85,7 @@ void ArrayMesh::set_blend_shape_mode(Mesh::BlendShapeMode p_mode) {
 
 Mesh::BlendShapeMode ArrayMesh::get_blend_shape_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("get_blend_shape_mode")._native_ptr(), 836485024);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Mesh::BlendShapeMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Mesh::BlendShapeMode(0)));
 	return (Mesh::BlendShapeMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -143,7 +143,7 @@ void ArrayMesh::surface_update_skin_region(int32_t p_surf_idx, int32_t p_offset,
 
 int32_t ArrayMesh::surface_get_array_len(int32_t p_surf_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("surface_get_array_len")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_surf_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surf_idx, &p_surf_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_surf_idx_encoded);
@@ -151,7 +151,7 @@ int32_t ArrayMesh::surface_get_array_len(int32_t p_surf_idx) const {
 
 int32_t ArrayMesh::surface_get_array_index_len(int32_t p_surf_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("surface_get_array_index_len")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_surf_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surf_idx, &p_surf_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_surf_idx_encoded);
@@ -159,7 +159,7 @@ int32_t ArrayMesh::surface_get_array_index_len(int32_t p_surf_idx) const {
 
 BitField<Mesh::ArrayFormat> ArrayMesh::surface_get_format(int32_t p_surf_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("surface_get_format")._native_ptr(), 3718287884);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<Mesh::ArrayFormat>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<Mesh::ArrayFormat>(0)));
 	int64_t p_surf_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surf_idx, &p_surf_idx_encoded);
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_surf_idx_encoded);
@@ -167,7 +167,7 @@ BitField<Mesh::ArrayFormat> ArrayMesh::surface_get_format(int32_t p_surf_idx) co
 
 Mesh::PrimitiveType ArrayMesh::surface_get_primitive_type(int32_t p_surf_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("surface_get_primitive_type")._native_ptr(), 4141943888);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Mesh::PrimitiveType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Mesh::PrimitiveType(0)));
 	int64_t p_surf_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surf_idx, &p_surf_idx_encoded);
 	return (Mesh::PrimitiveType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_surf_idx_encoded);
@@ -175,7 +175,7 @@ Mesh::PrimitiveType ArrayMesh::surface_get_primitive_type(int32_t p_surf_idx) co
 
 int32_t ArrayMesh::surface_find_by_name(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("surface_find_by_name")._native_ptr(), 1321353865);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -189,7 +189,7 @@ void ArrayMesh::surface_set_name(int32_t p_surf_idx, const String &p_name) {
 
 String ArrayMesh::surface_get_name(int32_t p_surf_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("surface_get_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_surf_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surf_idx, &p_surf_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_surf_idx_encoded);
@@ -203,7 +203,7 @@ void ArrayMesh::regen_normal_maps() {
 
 Error ArrayMesh::lightmap_unwrap(const Transform3D &p_transform, float p_texel_size) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("lightmap_unwrap")._native_ptr(), 1476641071);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	double p_texel_size_encoded;
 	PtrToArg<double>::encode(p_texel_size, &p_texel_size_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_transform, &p_texel_size_encoded);
@@ -217,7 +217,7 @@ void ArrayMesh::set_custom_aabb(const AABB &p_aabb) {
 
 AABB ArrayMesh::get_custom_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("get_custom_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
@@ -229,7 +229,7 @@ void ArrayMesh::set_shadow_mesh(const Ref<ArrayMesh> &p_mesh) {
 
 Ref<ArrayMesh> ArrayMesh::get_shadow_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ArrayMesh::get_class_static()._native_ptr(), StringName("get_shadow_mesh")._native_ptr(), 3206942465);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ArrayMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ArrayMesh>()));
 	return Ref<ArrayMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ArrayMesh>(_gde_method_bind, _owner));
 }
 

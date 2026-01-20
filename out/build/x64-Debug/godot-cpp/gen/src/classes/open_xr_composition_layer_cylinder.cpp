@@ -48,7 +48,7 @@ void OpenXRCompositionLayerCylinder::set_radius(float p_radius) {
 
 float OpenXRCompositionLayerCylinder::get_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRCompositionLayerCylinder::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void OpenXRCompositionLayerCylinder::set_aspect_ratio(float p_aspect_ratio) {
 
 float OpenXRCompositionLayerCylinder::get_aspect_ratio() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRCompositionLayerCylinder::get_class_static()._native_ptr(), StringName("get_aspect_ratio")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void OpenXRCompositionLayerCylinder::set_central_angle(float p_angle) {
 
 float OpenXRCompositionLayerCylinder::get_central_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRCompositionLayerCylinder::get_class_static()._native_ptr(), StringName("get_central_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void OpenXRCompositionLayerCylinder::set_fallback_segments(uint32_t p_segments) 
 
 uint32_t OpenXRCompositionLayerCylinder::get_fallback_segments() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRCompositionLayerCylinder::get_class_static()._native_ptr(), StringName("get_fallback_segments")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_PLAYER_HPP
-#define GODOT_CPP_ANIMATION_PLAYER_HPP
+#pragma once
 
 #include <godot_cpp/classes/animation_mixer.hpp>
 #include <godot_cpp/classes/tween.hpp>
@@ -129,4 +128,3 @@ public:
 VARIANT_ENUM_CAST(AnimationPlayer::AnimationProcessCallback);
 VARIANT_ENUM_CAST(AnimationPlayer::AnimationMethodCallMode);
 
-#endif // ! GODOT_CPP_ANIMATION_PLAYER_HPP

@@ -48,7 +48,7 @@ void InputEventJoypadMotion::set_axis(JoyAxis p_axis) {
 
 JoyAxis InputEventJoypadMotion::get_axis() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventJoypadMotion::get_class_static()._native_ptr(), StringName("get_axis")._native_ptr(), 4019121683);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, JoyAxis(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (JoyAxis(0)));
 	return (JoyAxis)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void InputEventJoypadMotion::set_axis_value(float p_axis_value) {
 
 float InputEventJoypadMotion::get_axis_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventJoypadMotion::get_class_static()._native_ptr(), StringName("get_axis_value")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

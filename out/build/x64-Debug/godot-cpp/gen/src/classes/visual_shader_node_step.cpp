@@ -48,7 +48,7 @@ void VisualShaderNodeStep::set_op_type(VisualShaderNodeStep::OpType p_op_type) {
 
 VisualShaderNodeStep::OpType VisualShaderNodeStep::get_op_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeStep::get_class_static()._native_ptr(), StringName("get_op_type")._native_ptr(), 3274022781);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeStep::OpType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeStep::OpType(0)));
 	return (VisualShaderNodeStep::OpType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

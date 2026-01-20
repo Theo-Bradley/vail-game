@@ -40,7 +40,7 @@ namespace godot {
 
 String JSON::stringify(const Variant &p_data, const String &p_indent, bool p_sort_keys, bool p_full_precision) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("stringify")._native_ptr(), 462733549);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int8_t p_sort_keys_encoded;
 	PtrToArg<bool>::encode(p_sort_keys, &p_sort_keys_encoded);
 	int8_t p_full_precision_encoded;
@@ -50,13 +50,13 @@ String JSON::stringify(const Variant &p_data, const String &p_indent, bool p_sor
 
 Variant JSON::parse_string(const String &p_json_string) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("parse_string")._native_ptr(), 309047738);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, nullptr, &p_json_string);
 }
 
 Error JSON::parse(const String &p_json_text, bool p_keep_text) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("parse")._native_ptr(), 885841341);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int8_t p_keep_text_encoded;
 	PtrToArg<bool>::encode(p_keep_text, &p_keep_text_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_json_text, &p_keep_text_encoded);
@@ -64,7 +64,7 @@ Error JSON::parse(const String &p_json_text, bool p_keep_text) {
 
 Variant JSON::get_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("get_data")._native_ptr(), 1214101251);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner);
 }
 
@@ -76,25 +76,25 @@ void JSON::set_data(const Variant &p_data) {
 
 String JSON::get_parsed_text() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("get_parsed_text")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 int32_t JSON::get_error_line() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("get_error_line")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String JSON::get_error_message() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("get_error_message")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 Variant JSON::from_native(const Variant &p_variant, bool p_full_objects) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("from_native")._native_ptr(), 2963479484);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int8_t p_full_objects_encoded;
 	PtrToArg<bool>::encode(p_full_objects, &p_full_objects_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, nullptr, &p_variant, &p_full_objects_encoded);
@@ -102,7 +102,7 @@ Variant JSON::from_native(const Variant &p_variant, bool p_full_objects) {
 
 Variant JSON::to_native(const Variant &p_json, bool p_allow_objects) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JSON::get_class_static()._native_ptr(), StringName("to_native")._native_ptr(), 2963479484);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int8_t p_allow_objects_encoded;
 	PtrToArg<bool>::encode(p_allow_objects, &p_allow_objects_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, nullptr, &p_json, &p_allow_objects_encoded);

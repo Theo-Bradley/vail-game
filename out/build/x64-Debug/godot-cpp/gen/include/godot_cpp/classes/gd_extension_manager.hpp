@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GD_EXTENSION_MANAGER_HPP
-#define GODOT_CPP_GD_EXTENSION_MANAGER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/core/object.hpp>
@@ -84,4 +83,3 @@ public:
 
 VARIANT_ENUM_CAST(GDExtensionManager::LoadStatus);
 
-#endif // ! GODOT_CPP_GD_EXTENSION_MANAGER_HPP

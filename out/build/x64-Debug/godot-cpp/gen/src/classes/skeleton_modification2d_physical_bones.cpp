@@ -48,7 +48,7 @@ void SkeletonModification2DPhysicalBones::set_physical_bone_chain_length(int32_t
 
 int32_t SkeletonModification2DPhysicalBones::get_physical_bone_chain_length() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DPhysicalBones::get_class_static()._native_ptr(), StringName("get_physical_bone_chain_length")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void SkeletonModification2DPhysicalBones::set_physical_bone_node(int32_t p_joint
 
 NodePath SkeletonModification2DPhysicalBones::get_physical_bone_node(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DPhysicalBones::get_class_static()._native_ptr(), StringName("get_physical_bone_node")._native_ptr(), 408788394);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, &p_joint_idx_encoded);

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICAL_BONE2D_HPP
-#define GODOT_CPP_PHYSICAL_BONE2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/rigid_body2d.hpp>
 #include <godot_cpp/variant/node_path.hpp>
@@ -72,4 +71,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PHYSICAL_BONE2D_HPP

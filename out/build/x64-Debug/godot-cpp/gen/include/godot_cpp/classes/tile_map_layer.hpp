@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TILE_MAP_LAYER_HPP
-#define GODOT_CPP_TILE_MAP_LAYER_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -107,6 +106,8 @@ public:
 	bool is_using_kinematic_bodies() const;
 	void set_collision_visibility_mode(TileMapLayer::DebugVisibilityMode p_visibility_mode);
 	TileMapLayer::DebugVisibilityMode get_collision_visibility_mode() const;
+	void set_physics_quadrant_size(int32_t p_size);
+	int32_t get_physics_quadrant_size() const;
 	void set_occlusion_enabled(bool p_enabled);
 	bool is_occlusion_enabled() const;
 	void set_navigation_enabled(bool p_enabled);
@@ -141,4 +142,3 @@ public:
 
 VARIANT_ENUM_CAST(TileMapLayer::DebugVisibilityMode);
 
-#endif // ! GODOT_CPP_TILE_MAP_LAYER_HPP

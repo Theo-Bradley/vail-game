@@ -48,7 +48,7 @@ void InputEventJoypadButton::set_button_index(JoyButton p_button_index) {
 
 JoyButton InputEventJoypadButton::get_button_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventJoypadButton::get_class_static()._native_ptr(), StringName("get_button_index")._native_ptr(), 595588182);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, JoyButton(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (JoyButton(0)));
 	return (JoyButton)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void InputEventJoypadButton::set_pressure(float p_pressure) {
 
 float InputEventJoypadButton::get_pressure() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventJoypadButton::get_class_static()._native_ptr(), StringName("get_pressure")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

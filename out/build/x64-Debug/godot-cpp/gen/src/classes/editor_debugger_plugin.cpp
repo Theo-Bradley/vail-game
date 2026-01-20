@@ -44,7 +44,7 @@ namespace godot {
 
 Ref<EditorDebuggerSession> EditorDebuggerPlugin::get_session(int32_t p_id) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorDebuggerPlugin::get_class_static()._native_ptr(), StringName("get_session")._native_ptr(), 3061968499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<EditorDebuggerSession>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<EditorDebuggerSession>()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return Ref<EditorDebuggerSession>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<EditorDebuggerSession>(_gde_method_bind, _owner, &p_id_encoded));
@@ -52,7 +52,7 @@ Ref<EditorDebuggerSession> EditorDebuggerPlugin::get_session(int32_t p_id) {
 
 Array EditorDebuggerPlugin::get_sessions() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorDebuggerPlugin::get_class_static()._native_ptr(), StringName("get_sessions")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 

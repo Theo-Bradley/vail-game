@@ -46,7 +46,7 @@ void RectangleShape2D::set_size(const Vector2 &p_size) {
 
 Vector2 RectangleShape2D::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RectangleShape2D::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 

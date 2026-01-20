@@ -1,4 +1,5 @@
 #include "gun.h"
+#include "godot_cpp/classes/resource_loader.hpp"
 
 void Gun::_bind_methods()
 {
@@ -7,13 +8,23 @@ void Gun::_bind_methods()
 	ClassDB::bind_method(D_METHOD("get_muzzle"), &Gun::get_muzzle);
 	ClassDB::bind_method(D_METHOD("set_muzzle", "ref"), &Gun::set_muzzle);
 	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Muzzle", PROPERTY_HINT_NODE_TYPE, "Node3D"), "set_muzzle", "get_muzzle");
-	ClassDB::bind_method(D_METHOD("get_bullet"), &Gun::get_bullet);
-	ClassDB::bind_method(D_METHOD("set_bullet", "ref"), &Gun::set_bullet);
-	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Bullet", PROPERTY_HINT_NODE_TYPE, "Node3D"), "set_bullet", "get_bullet");
+	//ClassDB::bind_method(D_METHOD("get_bullet"), &Gun::get_bullet);
+	//ClassDB::bind_method(D_METHOD("set_bullet", "ref"), &Gun::set_bullet);
+	//ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Bullet", PROPERTY_HINT_NODE_TYPE, "Node3D"), "set_bullet", "get_bullet");
+	ClassDB::bind_method(D_METHOD("get_bullet_res"), &Gun::get_bullet_res);
+	ClassDB::bind_method(D_METHOD("set_bullet_res", "res"), &Gun::set_bullet_res);
+	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Bullet Resource", PROPERTY_HINT_RESOURCE_TYPE, "PackedScene"), "set_bullet_res", "get_bullet_res");
 }
 
 void Gun::Shoot()
 {
+	if (bullet_res == nullptr)
+	{
+		#ifdef _DEBUG
+		UtilityFunctions::push_warning("Error nullptr Gun::Shoot::bullet_res!");
+		#endif
+		return;
+	}
 	Array shots = get_child(0)->call("_on_shoot");
 	
 	TypedArray<Vector2>::Iterator it;
@@ -24,7 +35,7 @@ void Gun::Shoot()
 		#ifdef _DEBUG
 		try
 		{
-			new_bullet = dynamic_cast<Node3D*>(bullet->duplicate());
+			new_bullet = dynamic_cast<Node3D*>(bullet_res->instantiate());
 		}
 		catch (std::bad_cast)
 		{
@@ -36,7 +47,7 @@ void Gun::Shoot()
 			throw(e);
 		}
 		#else
-		new_bullet = dynamic_cast<Node3D*>(bullet->duplicate());
+		new_bullet = dynamic_cast<Node3D*>(bullet_res->instantiate());
 		#endif
 		get_tree()->get_current_scene()->add_child(new_bullet);
 		if (muzzle != nullptr)
@@ -73,7 +84,7 @@ Node3D* Gun::get_muzzle()
 	return muzzle;
 }
 
-void Gun::set_bullet(Node3D* ref)
+/*void Gun::set_bullet(Node3D* ref)
 {
 	bullet = ref;
 }
@@ -81,4 +92,14 @@ void Gun::set_bullet(Node3D* ref)
 Node3D* Gun::get_bullet()
 {
 	return bullet;
+}*/
+
+Ref<PackedScene> Gun::get_bullet_res()
+{
+	return bullet_res;
+}
+
+void Gun::set_bullet_res(Ref<PackedScene> res)
+{
+	bullet_res = res;
 }

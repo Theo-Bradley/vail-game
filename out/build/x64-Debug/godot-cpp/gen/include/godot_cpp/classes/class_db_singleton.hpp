@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CLASS_DB_SINGLETON_HPP
-#define GODOT_CPP_CLASS_DB_SINGLETON_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/core/object.hpp>
@@ -88,7 +87,7 @@ private:
 public:
 	template <typename... Args>
 	Variant class_call_static(const StringName &p_class, const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 2 + sizeof...(Args)> variant_args{ Variant(p_class), Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 2 + sizeof...(Args)> variant_args{{ Variant(p_class), Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 2 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -225,4 +224,3 @@ VARIANT_ENUM_CAST(ClassDBSingleton::APIType);
 	VARIANT_ENUM_CAST(ClassDB::APIType); \
 	
 
-#endif // ! GODOT_CPP_CLASS_DB_SINGLETON_HPP

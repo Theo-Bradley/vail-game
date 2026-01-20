@@ -43,7 +43,7 @@ namespace godot {
 
 Shader::Mode Shader::get_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Shader::get_class_static()._native_ptr(), StringName("get_mode")._native_ptr(), 3392948163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Shader::Mode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Shader::Mode(0)));
 	return (Shader::Mode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -55,7 +55,7 @@ void Shader::set_code(const String &p_code) {
 
 String Shader::get_code() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Shader::get_class_static()._native_ptr(), StringName("get_code")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -69,7 +69,7 @@ void Shader::set_default_texture_parameter(const StringName &p_name, const Ref<T
 
 Ref<Texture> Shader::get_default_texture_parameter(const StringName &p_name, int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Shader::get_class_static()._native_ptr(), StringName("get_default_texture_parameter")._native_ptr(), 4213877425);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<Texture>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture>(_gde_method_bind, _owner, &p_name, &p_index_encoded));
@@ -77,7 +77,7 @@ Ref<Texture> Shader::get_default_texture_parameter(const StringName &p_name, int
 
 Array Shader::get_shader_uniform_list(bool p_get_groups) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Shader::get_class_static()._native_ptr(), StringName("get_shader_uniform_list")._native_ptr(), 1230511656);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int8_t p_get_groups_encoded;
 	PtrToArg<bool>::encode(p_get_groups, &p_get_groups_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_get_groups_encoded);

@@ -54,13 +54,13 @@ void CodeHighlighter::remove_keyword_color(const String &p_keyword) {
 
 bool CodeHighlighter::has_keyword_color(const String &p_keyword) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("has_keyword_color")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_keyword);
 }
 
 Color CodeHighlighter::get_keyword_color(const String &p_keyword) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_keyword_color")._native_ptr(), 3855908743);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_keyword);
 }
 
@@ -78,7 +78,7 @@ void CodeHighlighter::clear_keyword_colors() {
 
 Dictionary CodeHighlighter::get_keyword_colors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_keyword_colors")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
@@ -96,13 +96,13 @@ void CodeHighlighter::remove_member_keyword_color(const String &p_member_keyword
 
 bool CodeHighlighter::has_member_keyword_color(const String &p_member_keyword) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("has_member_keyword_color")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_member_keyword);
 }
 
 Color CodeHighlighter::get_member_keyword_color(const String &p_member_keyword) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_member_keyword_color")._native_ptr(), 3855908743);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_member_keyword);
 }
 
@@ -120,7 +120,7 @@ void CodeHighlighter::clear_member_keyword_colors() {
 
 Dictionary CodeHighlighter::get_member_keyword_colors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_member_keyword_colors")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
@@ -140,7 +140,7 @@ void CodeHighlighter::remove_color_region(const String &p_start_key) {
 
 bool CodeHighlighter::has_color_region(const String &p_start_key) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("has_color_region")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_start_key);
 }
 
@@ -158,7 +158,7 @@ void CodeHighlighter::clear_color_regions() {
 
 Dictionary CodeHighlighter::get_color_regions() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_color_regions")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
@@ -170,7 +170,7 @@ void CodeHighlighter::set_function_color(const Color &p_color) {
 
 Color CodeHighlighter::get_function_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_function_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -182,7 +182,7 @@ void CodeHighlighter::set_number_color(const Color &p_color) {
 
 Color CodeHighlighter::get_number_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_number_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -194,7 +194,7 @@ void CodeHighlighter::set_symbol_color(const Color &p_color) {
 
 Color CodeHighlighter::get_symbol_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_symbol_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -206,7 +206,7 @@ void CodeHighlighter::set_member_variable_color(const Color &p_color) {
 
 Color CodeHighlighter::get_member_variable_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeHighlighter::get_class_static()._native_ptr(), StringName("get_member_variable_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 

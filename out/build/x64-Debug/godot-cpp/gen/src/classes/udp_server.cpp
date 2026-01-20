@@ -42,7 +42,7 @@ namespace godot {
 
 Error UDPServer::listen(uint16_t p_port, const String &p_bind_address) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(UDPServer::get_class_static()._native_ptr(), StringName("listen")._native_ptr(), 3167955072);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_port_encoded;
 	PtrToArg<int64_t>::encode(p_port, &p_port_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_port_encoded, &p_bind_address);
@@ -50,31 +50,31 @@ Error UDPServer::listen(uint16_t p_port, const String &p_bind_address) {
 
 Error UDPServer::poll() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(UDPServer::get_class_static()._native_ptr(), StringName("poll")._native_ptr(), 166280745);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool UDPServer::is_connection_available() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(UDPServer::get_class_static()._native_ptr(), StringName("is_connection_available")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t UDPServer::get_local_port() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(UDPServer::get_class_static()._native_ptr(), StringName("get_local_port")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool UDPServer::is_listening() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(UDPServer::get_class_static()._native_ptr(), StringName("is_listening")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Ref<PacketPeerUDP> UDPServer::take_connection() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(UDPServer::get_class_static()._native_ptr(), StringName("take_connection")._native_ptr(), 808734560);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<PacketPeerUDP>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<PacketPeerUDP>()));
 	return Ref<PacketPeerUDP>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<PacketPeerUDP>(_gde_method_bind, _owner));
 }
 
@@ -94,7 +94,7 @@ void UDPServer::set_max_pending_connections(int32_t p_max_pending_connections) {
 
 int32_t UDPServer::get_max_pending_connections() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(UDPServer::get_class_static()._native_ptr(), StringName("get_max_pending_connections")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

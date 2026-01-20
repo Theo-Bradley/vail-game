@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_E_NET_MULTIPLAYER_PEER_HPP
-#define GODOT_CPP_E_NET_MULTIPLAYER_PEER_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/multiplayer_peer.hpp>
@@ -70,4 +69,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_E_NET_MULTIPLAYER_PEER_HPP

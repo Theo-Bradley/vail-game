@@ -56,7 +56,7 @@ void SurfaceTool::set_skin_weight_count(SurfaceTool::SkinWeightCount p_count) {
 
 SurfaceTool::SkinWeightCount SurfaceTool::get_skin_weight_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SurfaceTool::get_class_static()._native_ptr(), StringName("get_skin_weight_count")._native_ptr(), 1072401130);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SurfaceTool::SkinWeightCount(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SurfaceTool::SkinWeightCount(0)));
 	return (SurfaceTool::SkinWeightCount)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void SurfaceTool::set_custom_format(int32_t p_channel_index, SurfaceTool::Custom
 
 SurfaceTool::CustomFormat SurfaceTool::get_custom_format(int32_t p_channel_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SurfaceTool::get_class_static()._native_ptr(), StringName("get_custom_format")._native_ptr(), 839863283);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SurfaceTool::CustomFormat(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SurfaceTool::CustomFormat(0)));
 	int64_t p_channel_index_encoded;
 	PtrToArg<int64_t>::encode(p_channel_index, &p_channel_index_encoded);
 	return (SurfaceTool::CustomFormat)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_channel_index_encoded);
@@ -198,13 +198,13 @@ void SurfaceTool::optimize_indices_for_cache() {
 
 AABB SurfaceTool::get_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SurfaceTool::get_class_static()._native_ptr(), StringName("get_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
 PackedInt32Array SurfaceTool::generate_lod(float p_nd_threshold, int32_t p_target_index_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SurfaceTool::get_class_static()._native_ptr(), StringName("generate_lod")._native_ptr(), 1938056459);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	double p_nd_threshold_encoded;
 	PtrToArg<double>::encode(p_nd_threshold, &p_nd_threshold_encoded);
 	int64_t p_target_index_count_encoded;
@@ -220,7 +220,7 @@ void SurfaceTool::set_material(const Ref<Material> &p_material) {
 
 Mesh::PrimitiveType SurfaceTool::get_primitive_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SurfaceTool::get_class_static()._native_ptr(), StringName("get_primitive_type")._native_ptr(), 768822145);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Mesh::PrimitiveType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Mesh::PrimitiveType(0)));
 	return (Mesh::PrimitiveType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -264,7 +264,7 @@ void SurfaceTool::append_from(const Ref<Mesh> &p_existing, int32_t p_surface, co
 
 Ref<ArrayMesh> SurfaceTool::commit(const Ref<ArrayMesh> &p_existing, uint64_t p_flags) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SurfaceTool::get_class_static()._native_ptr(), StringName("commit")._native_ptr(), 4107864055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ArrayMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ArrayMesh>()));
 	int64_t p_flags_encoded;
 	PtrToArg<int64_t>::encode(p_flags, &p_flags_encoded);
 	return Ref<ArrayMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ArrayMesh>(_gde_method_bind, _owner, (p_existing != nullptr ? &p_existing->_owner : nullptr), &p_flags_encoded));
@@ -272,7 +272,7 @@ Ref<ArrayMesh> SurfaceTool::commit(const Ref<ArrayMesh> &p_existing, uint64_t p_
 
 Array SurfaceTool::commit_to_arrays() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SurfaceTool::get_class_static()._native_ptr(), StringName("commit_to_arrays")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 

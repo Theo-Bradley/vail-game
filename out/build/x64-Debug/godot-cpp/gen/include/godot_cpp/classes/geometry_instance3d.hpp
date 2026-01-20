@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GEOMETRY_INSTANCE3D_HPP
-#define GODOT_CPP_GEOMETRY_INSTANCE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/visual_instance3d.hpp>
@@ -129,4 +128,3 @@ VARIANT_ENUM_CAST(GeometryInstance3D::GIMode);
 VARIANT_ENUM_CAST(GeometryInstance3D::LightmapScale);
 VARIANT_ENUM_CAST(GeometryInstance3D::VisibilityRangeFadeMode);
 
-#endif // ! GODOT_CPP_GEOMETRY_INSTANCE3D_HPP

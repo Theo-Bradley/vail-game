@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SCRIPT_EDITOR_HPP
-#define GODOT_CPP_SCRIPT_EDITOR_HPP
+#pragma once
 
 #include <godot_cpp/classes/panel_container.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -60,10 +59,11 @@ public:
 	void unregister_syntax_highlighter(const Ref<EditorSyntaxHighlighter> &p_syntax_highlighter);
 	void goto_line(int32_t p_line_number);
 	Ref<Script> get_current_script();
-	TypedArray<Script> get_open_scripts() const;
+	TypedArray<Ref<Script>> get_open_scripts() const;
 	void open_script_create_dialog(const String &p_base_name, const String &p_base_path);
 	void goto_help(const String &p_topic);
 	void update_docs_from_script(const Ref<Script> &p_script);
+	void clear_docs_from_script(const Ref<Script> &p_script);
 
 protected:
 	template <typename T, typename B>
@@ -76,4 +76,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_SCRIPT_EDITOR_HPP

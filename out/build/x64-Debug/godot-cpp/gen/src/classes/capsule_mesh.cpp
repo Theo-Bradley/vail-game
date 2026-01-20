@@ -48,7 +48,7 @@ void CapsuleMesh::set_radius(float p_radius) {
 
 float CapsuleMesh::get_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CapsuleMesh::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void CapsuleMesh::set_height(float p_height) {
 
 float CapsuleMesh::get_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CapsuleMesh::get_class_static()._native_ptr(), StringName("get_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void CapsuleMesh::set_radial_segments(int32_t p_segments) {
 
 int32_t CapsuleMesh::get_radial_segments() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CapsuleMesh::get_class_static()._native_ptr(), StringName("get_radial_segments")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void CapsuleMesh::set_rings(int32_t p_rings) {
 
 int32_t CapsuleMesh::get_rings() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CapsuleMesh::get_class_static()._native_ptr(), StringName("get_rings")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

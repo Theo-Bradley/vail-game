@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_STREAM_PLAYER_HPP
-#define GODOT_CPP_AUDIO_STREAM_PLAYER_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_server.hpp>
 #include <godot_cpp/classes/node.hpp>
@@ -99,4 +98,3 @@ public:
 
 VARIANT_ENUM_CAST(AudioStreamPlayer::MixTarget);
 
-#endif // ! GODOT_CPP_AUDIO_STREAM_PLAYER_HPP

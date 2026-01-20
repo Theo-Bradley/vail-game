@@ -46,7 +46,7 @@ void BoxMesh::set_size(const Vector3 &p_size) {
 
 Vector3 BoxMesh::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoxMesh::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void BoxMesh::set_subdivide_width(int32_t p_subdivide) {
 
 int32_t BoxMesh::get_subdivide_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoxMesh::get_class_static()._native_ptr(), StringName("get_subdivide_width")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void BoxMesh::set_subdivide_height(int32_t p_divisions) {
 
 int32_t BoxMesh::get_subdivide_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoxMesh::get_class_static()._native_ptr(), StringName("get_subdivide_height")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void BoxMesh::set_subdivide_depth(int32_t p_divisions) {
 
 int32_t BoxMesh::get_subdivide_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoxMesh::get_class_static()._native_ptr(), StringName("get_subdivide_depth")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

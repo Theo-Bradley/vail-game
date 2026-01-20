@@ -46,7 +46,7 @@ void XRFaceModifier3D::set_face_tracker(const StringName &p_tracker_name) {
 
 StringName XRFaceModifier3D::get_face_tracker() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRFaceModifier3D::get_class_static()._native_ptr(), StringName("get_face_tracker")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void XRFaceModifier3D::set_target(const NodePath &p_target) {
 
 NodePath XRFaceModifier3D::get_target() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRFaceModifier3D::get_class_static()._native_ptr(), StringName("get_target")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 

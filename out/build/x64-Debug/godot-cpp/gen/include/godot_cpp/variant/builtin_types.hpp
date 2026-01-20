@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_BUILTIN_TYPES_HPP
-#define GODOT_CPP_BUILTIN_TYPES_HPP
+#pragma once
 
 #include <godot_cpp/variant/aabb.hpp>
 #include <godot_cpp/variant/array.hpp>
@@ -67,5 +66,3 @@
 #include <godot_cpp/variant/vector3i.hpp>
 #include <godot_cpp/variant/vector4.hpp>
 #include <godot_cpp/variant/vector4i.hpp>
-
-#endif // ! GODOT_CPP_BUILTIN_TYPES_HPP

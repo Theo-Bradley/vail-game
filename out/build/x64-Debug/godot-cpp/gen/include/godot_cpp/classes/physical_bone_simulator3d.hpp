@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICAL_BONE_SIMULATOR3D_HPP
-#define GODOT_CPP_PHYSICAL_BONE_SIMULATOR3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/skeleton_modifier3d.hpp>
 #include <godot_cpp/variant/string_name.hpp>
@@ -66,4 +65,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PHYSICAL_BONE_SIMULATOR3D_HPP

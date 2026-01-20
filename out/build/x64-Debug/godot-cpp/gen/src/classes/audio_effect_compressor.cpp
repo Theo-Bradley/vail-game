@@ -48,7 +48,7 @@ void AudioEffectCompressor::set_threshold(float p_threshold) {
 
 float AudioEffectCompressor::get_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectCompressor::get_class_static()._native_ptr(), StringName("get_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AudioEffectCompressor::set_ratio(float p_ratio) {
 
 float AudioEffectCompressor::get_ratio() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectCompressor::get_class_static()._native_ptr(), StringName("get_ratio")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AudioEffectCompressor::set_gain(float p_gain) {
 
 float AudioEffectCompressor::get_gain() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectCompressor::get_class_static()._native_ptr(), StringName("get_gain")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void AudioEffectCompressor::set_attack_us(float p_attack_us) {
 
 float AudioEffectCompressor::get_attack_us() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectCompressor::get_class_static()._native_ptr(), StringName("get_attack_us")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void AudioEffectCompressor::set_release_ms(float p_release_ms) {
 
 float AudioEffectCompressor::get_release_ms() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectCompressor::get_class_static()._native_ptr(), StringName("get_release_ms")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void AudioEffectCompressor::set_mix(float p_mix) {
 
 float AudioEffectCompressor::get_mix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectCompressor::get_class_static()._native_ptr(), StringName("get_mix")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void AudioEffectCompressor::set_sidechain(const StringName &p_sidechain) {
 
 StringName AudioEffectCompressor::get_sidechain() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectCompressor::get_class_static()._native_ptr(), StringName("get_sidechain")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 

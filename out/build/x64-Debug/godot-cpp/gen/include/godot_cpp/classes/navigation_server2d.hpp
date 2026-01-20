@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NAVIGATION_SERVER2D_HPP
-#define GODOT_CPP_NAVIGATION_SERVER2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/core/object.hpp>
@@ -61,6 +60,19 @@ class NavigationServer2D : public Object {
 	static NavigationServer2D *singleton;
 
 public:
+	enum ProcessInfo {
+		INFO_ACTIVE_MAPS = 0,
+		INFO_REGION_COUNT = 1,
+		INFO_AGENT_COUNT = 2,
+		INFO_LINK_COUNT = 3,
+		INFO_POLYGON_COUNT = 4,
+		INFO_EDGE_COUNT = 5,
+		INFO_EDGE_MERGE_COUNT = 6,
+		INFO_EDGE_CONNECTION_COUNT = 7,
+		INFO_EDGE_FREE_COUNT = 8,
+		INFO_OBSTACLE_COUNT = 9,
+	};
+
 	static NavigationServer2D *get_singleton();
 
 	TypedArray<RID> get_maps() const;
@@ -69,6 +81,8 @@ public:
 	bool map_is_active(const RID &p_map) const;
 	void map_set_cell_size(const RID &p_map, float p_cell_size);
 	float map_get_cell_size(const RID &p_map) const;
+	void map_set_merge_rasterizer_cell_scale(const RID &p_map, float p_scale);
+	float map_get_merge_rasterizer_cell_scale(const RID &p_map) const;
 	void map_set_use_edge_connections(const RID &p_map, bool p_enabled);
 	bool map_get_use_edge_connections(const RID &p_map) const;
 	void map_set_edge_connection_margin(const RID &p_map, float p_margin);
@@ -89,6 +103,9 @@ public:
 	Vector2 map_get_random_point(const RID &p_map, uint32_t p_navigation_layers, bool p_uniformly) const;
 	void query_path(const Ref<NavigationPathQueryParameters2D> &p_parameters, const Ref<NavigationPathQueryResult2D> &p_result, const Callable &p_callback = Callable());
 	RID region_create();
+	uint32_t region_get_iteration_id(const RID &p_region) const;
+	void region_set_use_async_iterations(const RID &p_region, bool p_enabled);
+	bool region_get_use_async_iterations(const RID &p_region) const;
 	void region_set_enabled(const RID &p_region, bool p_enabled);
 	bool region_get_enabled(const RID &p_region) const;
 	void region_set_use_edge_connections(const RID &p_region, bool p_enabled);
@@ -114,6 +131,7 @@ public:
 	Vector2 region_get_random_point(const RID &p_region, uint32_t p_navigation_layers, bool p_uniformly) const;
 	Rect2 region_get_bounds(const RID &p_region) const;
 	RID link_create();
+	uint32_t link_get_iteration_id(const RID &p_link) const;
 	void link_set_map(const RID &p_link, const RID &p_map);
 	RID link_get_map(const RID &p_link) const;
 	void link_set_enabled(const RID &p_link, bool p_enabled);
@@ -190,8 +208,10 @@ public:
 	void source_geometry_parser_set_callback(const RID &p_parser, const Callable &p_callback);
 	PackedVector2Array simplify_path(const PackedVector2Array &p_path, float p_epsilon);
 	void free_rid(const RID &p_rid);
+	void set_active(bool p_active);
 	void set_debug_enabled(bool p_enabled);
 	bool get_debug_enabled() const;
+	int32_t get_process_info(NavigationServer2D::ProcessInfo p_process_info) const;
 
 protected:
 	template <typename T, typename B>
@@ -206,4 +226,5 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_NAVIGATION_SERVER2D_HPP
+VARIANT_ENUM_CAST(NavigationServer2D::ProcessInfo);
+

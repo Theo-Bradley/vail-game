@@ -48,7 +48,7 @@ void DampedSpringJoint2D::set_length(float p_length) {
 
 float DampedSpringJoint2D::get_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(DampedSpringJoint2D::get_class_static()._native_ptr(), StringName("get_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void DampedSpringJoint2D::set_rest_length(float p_rest_length) {
 
 float DampedSpringJoint2D::get_rest_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(DampedSpringJoint2D::get_class_static()._native_ptr(), StringName("get_rest_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void DampedSpringJoint2D::set_stiffness(float p_stiffness) {
 
 float DampedSpringJoint2D::get_stiffness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(DampedSpringJoint2D::get_class_static()._native_ptr(), StringName("get_stiffness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void DampedSpringJoint2D::set_damping(float p_damping) {
 
 float DampedSpringJoint2D::get_damping() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(DampedSpringJoint2D::get_class_static()._native_ptr(), StringName("get_damping")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

@@ -51,7 +51,7 @@ void Area3D::set_gravity_space_override_mode(Area3D::SpaceOverride p_space_overr
 
 Area3D::SpaceOverride Area3D::get_gravity_space_override_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_gravity_space_override_mode")._native_ptr(), 958191869);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Area3D::SpaceOverride(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Area3D::SpaceOverride(0)));
 	return (Area3D::SpaceOverride)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -65,7 +65,7 @@ void Area3D::set_gravity_is_point(bool p_enable) {
 
 bool Area3D::is_gravity_a_point() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("is_gravity_a_point")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -79,7 +79,7 @@ void Area3D::set_gravity_point_unit_distance(float p_distance_scale) {
 
 float Area3D::get_gravity_point_unit_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_gravity_point_unit_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -91,7 +91,7 @@ void Area3D::set_gravity_point_center(const Vector3 &p_center) {
 
 Vector3 Area3D::get_gravity_point_center() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_gravity_point_center")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -103,7 +103,7 @@ void Area3D::set_gravity_direction(const Vector3 &p_direction) {
 
 Vector3 Area3D::get_gravity_direction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_gravity_direction")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -117,7 +117,7 @@ void Area3D::set_gravity(float p_gravity) {
 
 float Area3D::get_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -131,7 +131,7 @@ void Area3D::set_linear_damp_space_override_mode(Area3D::SpaceOverride p_space_o
 
 Area3D::SpaceOverride Area3D::get_linear_damp_space_override_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_linear_damp_space_override_mode")._native_ptr(), 958191869);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Area3D::SpaceOverride(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Area3D::SpaceOverride(0)));
 	return (Area3D::SpaceOverride)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -145,7 +145,7 @@ void Area3D::set_angular_damp_space_override_mode(Area3D::SpaceOverride p_space_
 
 Area3D::SpaceOverride Area3D::get_angular_damp_space_override_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_angular_damp_space_override_mode")._native_ptr(), 958191869);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Area3D::SpaceOverride(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Area3D::SpaceOverride(0)));
 	return (Area3D::SpaceOverride)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -159,7 +159,7 @@ void Area3D::set_angular_damp(float p_angular_damp) {
 
 float Area3D::get_angular_damp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_angular_damp")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -173,7 +173,7 @@ void Area3D::set_linear_damp(float p_linear_damp) {
 
 float Area3D::get_linear_damp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_linear_damp")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -187,7 +187,7 @@ void Area3D::set_priority(int32_t p_priority) {
 
 int32_t Area3D::get_priority() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_priority")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -201,7 +201,7 @@ void Area3D::set_wind_force_magnitude(float p_wind_force_magnitude) {
 
 float Area3D::get_wind_force_magnitude() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_wind_force_magnitude")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -215,7 +215,7 @@ void Area3D::set_wind_attenuation_factor(float p_wind_attenuation_factor) {
 
 float Area3D::get_wind_attenuation_factor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_wind_attenuation_factor")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -227,7 +227,7 @@ void Area3D::set_wind_source_path(const NodePath &p_wind_source_path) {
 
 NodePath Area3D::get_wind_source_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_wind_source_path")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -241,7 +241,7 @@ void Area3D::set_monitorable(bool p_enable) {
 
 bool Area3D::is_monitorable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("is_monitorable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -255,43 +255,43 @@ void Area3D::set_monitoring(bool p_enable) {
 
 bool Area3D::is_monitoring() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("is_monitoring")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 TypedArray<Node3D> Area3D::get_overlapping_bodies() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_overlapping_bodies")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Node3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Node3D>()));
 	return internal::_call_native_mb_ret<TypedArray<Node3D>>(_gde_method_bind, _owner);
 }
 
 TypedArray<Area3D> Area3D::get_overlapping_areas() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_overlapping_areas")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Area3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Area3D>()));
 	return internal::_call_native_mb_ret<TypedArray<Area3D>>(_gde_method_bind, _owner);
 }
 
 bool Area3D::has_overlapping_bodies() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("has_overlapping_bodies")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool Area3D::has_overlapping_areas() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("has_overlapping_areas")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool Area3D::overlaps_body(Node *p_body) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("overlaps_body")._native_ptr(), 3093956946);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, (p_body != nullptr ? &p_body->_owner : nullptr));
 }
 
 bool Area3D::overlaps_area(Node *p_area) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("overlaps_area")._native_ptr(), 3093956946);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, (p_area != nullptr ? &p_area->_owner : nullptr));
 }
 
@@ -305,7 +305,7 @@ void Area3D::set_audio_bus_override(bool p_enable) {
 
 bool Area3D::is_overriding_audio_bus() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("is_overriding_audio_bus")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -317,7 +317,7 @@ void Area3D::set_audio_bus_name(const StringName &p_name) {
 
 StringName Area3D::get_audio_bus_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_audio_bus_name")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -331,7 +331,7 @@ void Area3D::set_use_reverb_bus(bool p_enable) {
 
 bool Area3D::is_using_reverb_bus() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("is_using_reverb_bus")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -343,7 +343,7 @@ void Area3D::set_reverb_bus_name(const StringName &p_name) {
 
 StringName Area3D::get_reverb_bus_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_reverb_bus_name")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -357,7 +357,7 @@ void Area3D::set_reverb_amount(float p_amount) {
 
 float Area3D::get_reverb_amount() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_reverb_amount")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -371,7 +371,7 @@ void Area3D::set_reverb_uniformity(float p_amount) {
 
 float Area3D::get_reverb_uniformity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Area3D::get_class_static()._native_ptr(), StringName("get_reverb_uniformity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

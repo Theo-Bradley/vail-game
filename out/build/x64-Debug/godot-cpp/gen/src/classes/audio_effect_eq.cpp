@@ -50,7 +50,7 @@ void AudioEffectEQ::set_band_gain_db(int32_t p_band_idx, float p_volume_db) {
 
 float AudioEffectEQ::get_band_gain_db(int32_t p_band_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectEQ::get_class_static()._native_ptr(), StringName("get_band_gain_db")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_band_idx_encoded;
 	PtrToArg<int64_t>::encode(p_band_idx, &p_band_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_band_idx_encoded);
@@ -58,7 +58,7 @@ float AudioEffectEQ::get_band_gain_db(int32_t p_band_idx) const {
 
 int32_t AudioEffectEQ::get_band_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectEQ::get_class_static()._native_ptr(), StringName("get_band_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_VISUAL_SHADER_NODE_VARYING_SETTER_HPP
-#define GODOT_CPP_VISUAL_SHADER_NODE_VARYING_SETTER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/visual_shader_node_varying.hpp>
@@ -57,4 +56,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_VISUAL_SHADER_NODE_VARYING_SETTER_HPP

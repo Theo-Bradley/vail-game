@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GD_EXTENSION_HPP
-#define GODOT_CPP_GD_EXTENSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -69,4 +68,3 @@ public:
 
 VARIANT_ENUM_CAST(GDExtension::InitializationLevel);
 
-#endif // ! GODOT_CPP_GD_EXTENSION_HPP

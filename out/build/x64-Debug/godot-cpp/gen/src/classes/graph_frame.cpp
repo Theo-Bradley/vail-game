@@ -48,13 +48,13 @@ void GraphFrame::set_title(const String &p_title) {
 
 String GraphFrame::get_title() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphFrame::get_class_static()._native_ptr(), StringName("get_title")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 HBoxContainer *GraphFrame::get_titlebar_hbox() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphFrame::get_class_static()._native_ptr(), StringName("get_titlebar_hbox")._native_ptr(), 3590609951);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<HBoxContainer>(_gde_method_bind, _owner);
 }
 
@@ -68,7 +68,7 @@ void GraphFrame::set_autoshrink_enabled(bool p_shrink) {
 
 bool GraphFrame::is_autoshrink_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphFrame::get_class_static()._native_ptr(), StringName("is_autoshrink_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -82,7 +82,7 @@ void GraphFrame::set_autoshrink_margin(int32_t p_autoshrink_margin) {
 
 int32_t GraphFrame::get_autoshrink_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphFrame::get_class_static()._native_ptr(), StringName("get_autoshrink_margin")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -96,7 +96,7 @@ void GraphFrame::set_drag_margin(int32_t p_drag_margin) {
 
 int32_t GraphFrame::get_drag_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphFrame::get_class_static()._native_ptr(), StringName("get_drag_margin")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -110,7 +110,7 @@ void GraphFrame::set_tint_color_enabled(bool p_enable) {
 
 bool GraphFrame::is_tint_color_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphFrame::get_class_static()._native_ptr(), StringName("is_tint_color_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -122,7 +122,7 @@ void GraphFrame::set_tint_color(const Color &p_color) {
 
 Color GraphFrame::get_tint_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphFrame::get_class_static()._native_ptr(), StringName("get_tint_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 

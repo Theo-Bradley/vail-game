@@ -48,7 +48,7 @@ void RDVertexAttribute::set_location(uint32_t p_member) {
 
 uint32_t RDVertexAttribute::get_location() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDVertexAttribute::get_class_static()._native_ptr(), StringName("get_location")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void RDVertexAttribute::set_offset(uint32_t p_member) {
 
 uint32_t RDVertexAttribute::get_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDVertexAttribute::get_class_static()._native_ptr(), StringName("get_offset")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void RDVertexAttribute::set_format(RenderingDevice::DataFormat p_member) {
 
 RenderingDevice::DataFormat RDVertexAttribute::get_format() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDVertexAttribute::get_class_static()._native_ptr(), StringName("get_format")._native_ptr(), 2235804183);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::DataFormat(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::DataFormat(0)));
 	return (RenderingDevice::DataFormat)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void RDVertexAttribute::set_stride(uint32_t p_member) {
 
 uint32_t RDVertexAttribute::get_stride() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDVertexAttribute::get_class_static()._native_ptr(), StringName("get_stride")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void RDVertexAttribute::set_frequency(RenderingDevice::VertexFrequency p_member)
 
 RenderingDevice::VertexFrequency RDVertexAttribute::get_frequency() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDVertexAttribute::get_class_static()._native_ptr(), StringName("get_frequency")._native_ptr(), 4154106413);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::VertexFrequency(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::VertexFrequency(0)));
 	return (RenderingDevice::VertexFrequency)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -48,7 +48,7 @@ void XRHandTracker::set_has_tracking_data(bool p_has_data) {
 
 bool XRHandTracker::get_has_tracking_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRHandTracker::get_class_static()._native_ptr(), StringName("get_has_tracking_data")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void XRHandTracker::set_hand_tracking_source(XRHandTracker::HandTrackingSource p
 
 XRHandTracker::HandTrackingSource XRHandTracker::get_hand_tracking_source() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRHandTracker::get_class_static()._native_ptr(), StringName("get_hand_tracking_source")._native_ptr(), 2475045250);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, XRHandTracker::HandTrackingSource(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (XRHandTracker::HandTrackingSource(0)));
 	return (XRHandTracker::HandTrackingSource)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void XRHandTracker::set_hand_joint_flags(XRHandTracker::HandJoint p_joint, BitFi
 
 BitField<XRHandTracker::HandJointFlags> XRHandTracker::get_hand_joint_flags(XRHandTracker::HandJoint p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRHandTracker::get_class_static()._native_ptr(), StringName("get_hand_joint_flags")._native_ptr(), 1730972401);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<XRHandTracker::HandJointFlags>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<XRHandTracker::HandJointFlags>(0)));
 	int64_t p_joint_encoded;
 	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_joint_encoded);
@@ -92,7 +92,7 @@ void XRHandTracker::set_hand_joint_transform(XRHandTracker::HandJoint p_joint, c
 
 Transform3D XRHandTracker::get_hand_joint_transform(XRHandTracker::HandJoint p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRHandTracker::get_class_static()._native_ptr(), StringName("get_hand_joint_transform")._native_ptr(), 1090840196);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	int64_t p_joint_encoded;
 	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_joint_encoded);
@@ -110,7 +110,7 @@ void XRHandTracker::set_hand_joint_radius(XRHandTracker::HandJoint p_joint, floa
 
 float XRHandTracker::get_hand_joint_radius(XRHandTracker::HandJoint p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRHandTracker::get_class_static()._native_ptr(), StringName("get_hand_joint_radius")._native_ptr(), 3400025734);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_joint_encoded;
 	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_joint_encoded);
@@ -126,7 +126,7 @@ void XRHandTracker::set_hand_joint_linear_velocity(XRHandTracker::HandJoint p_jo
 
 Vector3 XRHandTracker::get_hand_joint_linear_velocity(XRHandTracker::HandJoint p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRHandTracker::get_class_static()._native_ptr(), StringName("get_hand_joint_linear_velocity")._native_ptr(), 547240792);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_joint_encoded;
 	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_joint_encoded);
@@ -142,7 +142,7 @@ void XRHandTracker::set_hand_joint_angular_velocity(XRHandTracker::HandJoint p_j
 
 Vector3 XRHandTracker::get_hand_joint_angular_velocity(XRHandTracker::HandJoint p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRHandTracker::get_class_static()._native_ptr(), StringName("get_hand_joint_angular_velocity")._native_ptr(), 547240792);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_joint_encoded;
 	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_joint_encoded);

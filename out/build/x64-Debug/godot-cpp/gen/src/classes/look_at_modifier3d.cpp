@@ -46,7 +46,7 @@ void LookAtModifier3D::set_target_node(const NodePath &p_target_node) {
 
 NodePath LookAtModifier3D::get_target_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_target_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void LookAtModifier3D::set_bone_name(const String &p_bone_name) {
 
 String LookAtModifier3D::get_bone_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_bone_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void LookAtModifier3D::set_bone(int32_t p_bone) {
 
 int32_t LookAtModifier3D::get_bone() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_bone")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void LookAtModifier3D::set_forward_axis(SkeletonModifier3D::BoneAxis p_forward_a
 
 SkeletonModifier3D::BoneAxis LookAtModifier3D::get_forward_axis() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_forward_axis")._native_ptr(), 4076020284);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SkeletonModifier3D::BoneAxis(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SkeletonModifier3D::BoneAxis(0)));
 	return (SkeletonModifier3D::BoneAxis)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -100,7 +100,7 @@ void LookAtModifier3D::set_primary_rotation_axis(Vector3::Axis p_axis) {
 
 Vector3::Axis LookAtModifier3D::get_primary_rotation_axis() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_primary_rotation_axis")._native_ptr(), 3050976882);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3::Axis(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3::Axis(0)));
 	return (Vector3::Axis)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -114,7 +114,7 @@ void LookAtModifier3D::set_use_secondary_rotation(bool p_enabled) {
 
 bool LookAtModifier3D::is_using_secondary_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("is_using_secondary_rotation")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -128,7 +128,7 @@ void LookAtModifier3D::set_origin_safe_margin(float p_margin) {
 
 float LookAtModifier3D::get_origin_safe_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_origin_safe_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void LookAtModifier3D::set_origin_from(LookAtModifier3D::OriginFrom p_origin_fro
 
 LookAtModifier3D::OriginFrom LookAtModifier3D::get_origin_from() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_origin_from")._native_ptr(), 4057166297);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, LookAtModifier3D::OriginFrom(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (LookAtModifier3D::OriginFrom(0)));
 	return (LookAtModifier3D::OriginFrom)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void LookAtModifier3D::set_origin_bone_name(const String &p_bone_name) {
 
 String LookAtModifier3D::get_origin_bone_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_origin_bone_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -168,7 +168,7 @@ void LookAtModifier3D::set_origin_bone(int32_t p_bone) {
 
 int32_t LookAtModifier3D::get_origin_bone() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_origin_bone")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -180,7 +180,7 @@ void LookAtModifier3D::set_origin_external_node(const NodePath &p_external_node)
 
 NodePath LookAtModifier3D::get_origin_external_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_origin_external_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -192,7 +192,7 @@ void LookAtModifier3D::set_origin_offset(const Vector3 &p_offset) {
 
 Vector3 LookAtModifier3D::get_origin_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_origin_offset")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -206,7 +206,7 @@ void LookAtModifier3D::set_duration(float p_duration) {
 
 float LookAtModifier3D::get_duration() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_duration")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -220,7 +220,7 @@ void LookAtModifier3D::set_transition_type(Tween::TransitionType p_transition_ty
 
 Tween::TransitionType LookAtModifier3D::get_transition_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_transition_type")._native_ptr(), 3842314528);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Tween::TransitionType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Tween::TransitionType(0)));
 	return (Tween::TransitionType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -234,7 +234,7 @@ void LookAtModifier3D::set_ease_type(Tween::EaseType p_ease_type) {
 
 Tween::EaseType LookAtModifier3D::get_ease_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_ease_type")._native_ptr(), 631880200);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Tween::EaseType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Tween::EaseType(0)));
 	return (Tween::EaseType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -248,7 +248,7 @@ void LookAtModifier3D::set_use_angle_limitation(bool p_enabled) {
 
 bool LookAtModifier3D::is_using_angle_limitation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("is_using_angle_limitation")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -262,7 +262,7 @@ void LookAtModifier3D::set_symmetry_limitation(bool p_enabled) {
 
 bool LookAtModifier3D::is_limitation_symmetry() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("is_limitation_symmetry")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -276,7 +276,7 @@ void LookAtModifier3D::set_primary_limit_angle(float p_angle) {
 
 float LookAtModifier3D::get_primary_limit_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_primary_limit_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -290,7 +290,7 @@ void LookAtModifier3D::set_primary_damp_threshold(float p_power) {
 
 float LookAtModifier3D::get_primary_damp_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_primary_damp_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -304,7 +304,7 @@ void LookAtModifier3D::set_primary_positive_limit_angle(float p_angle) {
 
 float LookAtModifier3D::get_primary_positive_limit_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_primary_positive_limit_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -318,7 +318,7 @@ void LookAtModifier3D::set_primary_positive_damp_threshold(float p_power) {
 
 float LookAtModifier3D::get_primary_positive_damp_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_primary_positive_damp_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -332,7 +332,7 @@ void LookAtModifier3D::set_primary_negative_limit_angle(float p_angle) {
 
 float LookAtModifier3D::get_primary_negative_limit_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_primary_negative_limit_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -346,7 +346,7 @@ void LookAtModifier3D::set_primary_negative_damp_threshold(float p_power) {
 
 float LookAtModifier3D::get_primary_negative_damp_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_primary_negative_damp_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -360,7 +360,7 @@ void LookAtModifier3D::set_secondary_limit_angle(float p_angle) {
 
 float LookAtModifier3D::get_secondary_limit_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_secondary_limit_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -374,7 +374,7 @@ void LookAtModifier3D::set_secondary_damp_threshold(float p_power) {
 
 float LookAtModifier3D::get_secondary_damp_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_secondary_damp_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -388,7 +388,7 @@ void LookAtModifier3D::set_secondary_positive_limit_angle(float p_angle) {
 
 float LookAtModifier3D::get_secondary_positive_limit_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_secondary_positive_limit_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -402,7 +402,7 @@ void LookAtModifier3D::set_secondary_positive_damp_threshold(float p_power) {
 
 float LookAtModifier3D::get_secondary_positive_damp_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_secondary_positive_damp_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -416,7 +416,7 @@ void LookAtModifier3D::set_secondary_negative_limit_angle(float p_angle) {
 
 float LookAtModifier3D::get_secondary_negative_limit_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_secondary_negative_limit_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -430,25 +430,25 @@ void LookAtModifier3D::set_secondary_negative_damp_threshold(float p_power) {
 
 float LookAtModifier3D::get_secondary_negative_damp_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_secondary_negative_damp_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float LookAtModifier3D::get_interpolation_remaining() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("get_interpolation_remaining")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool LookAtModifier3D::is_interpolating() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("is_interpolating")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool LookAtModifier3D::is_target_within_limitation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LookAtModifier3D::get_class_static()._native_ptr(), StringName("is_target_within_limitation")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

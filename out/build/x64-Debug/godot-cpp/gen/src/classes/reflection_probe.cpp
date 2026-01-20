@@ -48,7 +48,7 @@ void ReflectionProbe::set_intensity(float p_intensity) {
 
 float ReflectionProbe::get_intensity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_intensity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void ReflectionProbe::set_blend_distance(float p_blend_distance) {
 
 float ReflectionProbe::get_blend_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_blend_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void ReflectionProbe::set_ambient_mode(ReflectionProbe::AmbientMode p_ambient) {
 
 ReflectionProbe::AmbientMode ReflectionProbe::get_ambient_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_ambient_mode")._native_ptr(), 1014607621);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ReflectionProbe::AmbientMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ReflectionProbe::AmbientMode(0)));
 	return (ReflectionProbe::AmbientMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void ReflectionProbe::set_ambient_color(const Color &p_ambient) {
 
 Color ReflectionProbe::get_ambient_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_ambient_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void ReflectionProbe::set_ambient_color_energy(float p_ambient_energy) {
 
 float ReflectionProbe::get_ambient_color_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_ambient_color_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void ReflectionProbe::set_max_distance(float p_max_distance) {
 
 float ReflectionProbe::get_max_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_max_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void ReflectionProbe::set_mesh_lod_threshold(float p_ratio) {
 
 float ReflectionProbe::get_mesh_lod_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_mesh_lod_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void ReflectionProbe::set_size(const Vector3 &p_size) {
 
 Vector3 ReflectionProbe::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void ReflectionProbe::set_origin_offset(const Vector3 &p_origin_offset) {
 
 Vector3 ReflectionProbe::get_origin_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_origin_offset")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -168,7 +168,7 @@ void ReflectionProbe::set_as_interior(bool p_enable) {
 
 bool ReflectionProbe::is_set_as_interior() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("is_set_as_interior")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -182,7 +182,7 @@ void ReflectionProbe::set_enable_box_projection(bool p_enable) {
 
 bool ReflectionProbe::is_box_projection_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("is_box_projection_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -196,7 +196,7 @@ void ReflectionProbe::set_enable_shadows(bool p_enable) {
 
 bool ReflectionProbe::are_shadows_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("are_shadows_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -210,7 +210,7 @@ void ReflectionProbe::set_cull_mask(uint32_t p_layers) {
 
 uint32_t ReflectionProbe::get_cull_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_cull_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -224,7 +224,7 @@ void ReflectionProbe::set_reflection_mask(uint32_t p_layers) {
 
 uint32_t ReflectionProbe::get_reflection_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_reflection_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -238,7 +238,7 @@ void ReflectionProbe::set_update_mode(ReflectionProbe::UpdateMode p_mode) {
 
 ReflectionProbe::UpdateMode ReflectionProbe::get_update_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ReflectionProbe::get_class_static()._native_ptr(), StringName("get_update_mode")._native_ptr(), 2367550552);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ReflectionProbe::UpdateMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ReflectionProbe::UpdateMode(0)));
 	return (ReflectionProbe::UpdateMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

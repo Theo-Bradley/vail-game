@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CPU_PARTICLES2D_HPP
-#define GODOT_CPP_CPU_PARTICLES2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -183,4 +182,3 @@ VARIANT_ENUM_CAST(CPUParticles2D::Parameter);
 VARIANT_ENUM_CAST(CPUParticles2D::ParticleFlags);
 VARIANT_ENUM_CAST(CPUParticles2D::EmissionShape);
 
-#endif // ! GODOT_CPP_CPU_PARTICLES2D_HPP

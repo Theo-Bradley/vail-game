@@ -66,7 +66,7 @@ IP::~IP() {
 
 String IP::resolve_hostname(const String &p_host, IP::Type p_ip_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(IP::get_class_static()._native_ptr(), StringName("resolve_hostname")._native_ptr(), 4283295457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_ip_type_encoded;
 	PtrToArg<int64_t>::encode(p_ip_type, &p_ip_type_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_host, &p_ip_type_encoded);
@@ -74,7 +74,7 @@ String IP::resolve_hostname(const String &p_host, IP::Type p_ip_type) {
 
 PackedStringArray IP::resolve_hostname_addresses(const String &p_host, IP::Type p_ip_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(IP::get_class_static()._native_ptr(), StringName("resolve_hostname_addresses")._native_ptr(), 773767525);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	int64_t p_ip_type_encoded;
 	PtrToArg<int64_t>::encode(p_ip_type, &p_ip_type_encoded);
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner, &p_host, &p_ip_type_encoded);
@@ -82,7 +82,7 @@ PackedStringArray IP::resolve_hostname_addresses(const String &p_host, IP::Type 
 
 int32_t IP::resolve_hostname_queue_item(const String &p_host, IP::Type p_ip_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(IP::get_class_static()._native_ptr(), StringName("resolve_hostname_queue_item")._native_ptr(), 1749894742);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_ip_type_encoded;
 	PtrToArg<int64_t>::encode(p_ip_type, &p_ip_type_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_host, &p_ip_type_encoded);
@@ -90,7 +90,7 @@ int32_t IP::resolve_hostname_queue_item(const String &p_host, IP::Type p_ip_type
 
 IP::ResolverStatus IP::get_resolve_item_status(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(IP::get_class_static()._native_ptr(), StringName("get_resolve_item_status")._native_ptr(), 3812250196);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, IP::ResolverStatus(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (IP::ResolverStatus(0)));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return (IP::ResolverStatus)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_id_encoded);
@@ -98,7 +98,7 @@ IP::ResolverStatus IP::get_resolve_item_status(int32_t p_id) const {
 
 String IP::get_resolve_item_address(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(IP::get_class_static()._native_ptr(), StringName("get_resolve_item_address")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_id_encoded);
@@ -106,7 +106,7 @@ String IP::get_resolve_item_address(int32_t p_id) const {
 
 Array IP::get_resolve_item_addresses(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(IP::get_class_static()._native_ptr(), StringName("get_resolve_item_addresses")._native_ptr(), 663333327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_id_encoded);
@@ -122,13 +122,13 @@ void IP::erase_resolve_item(int32_t p_id) {
 
 PackedStringArray IP::get_local_addresses() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(IP::get_class_static()._native_ptr(), StringName("get_local_addresses")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 TypedArray<Dictionary> IP::get_local_interfaces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(IP::get_class_static()._native_ptr(), StringName("get_local_interfaces")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 

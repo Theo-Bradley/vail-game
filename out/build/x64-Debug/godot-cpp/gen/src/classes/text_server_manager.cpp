@@ -75,7 +75,7 @@ void TextServerManager::add_interface(const Ref<TextServer> &p_interface) {
 
 int32_t TextServerManager::get_interface_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextServerManager::get_class_static()._native_ptr(), StringName("get_interface_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -87,7 +87,7 @@ void TextServerManager::remove_interface(const Ref<TextServer> &p_interface) {
 
 Ref<TextServer> TextServerManager::get_interface(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextServerManager::get_class_static()._native_ptr(), StringName("get_interface")._native_ptr(), 1672475555);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TextServer>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TextServer>()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return Ref<TextServer>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TextServer>(_gde_method_bind, _owner, &p_idx_encoded));
@@ -95,13 +95,13 @@ Ref<TextServer> TextServerManager::get_interface(int32_t p_idx) const {
 
 TypedArray<Dictionary> TextServerManager::get_interfaces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextServerManager::get_class_static()._native_ptr(), StringName("get_interfaces")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 
 Ref<TextServer> TextServerManager::find_interface(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextServerManager::get_class_static()._native_ptr(), StringName("find_interface")._native_ptr(), 2240905781);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TextServer>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TextServer>()));
 	return Ref<TextServer>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TextServer>(_gde_method_bind, _owner, &p_name));
 }
 
@@ -113,7 +113,7 @@ void TextServerManager::set_primary_interface(const Ref<TextServer> &p_index) {
 
 Ref<TextServer> TextServerManager::get_primary_interface() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextServerManager::get_class_static()._native_ptr(), StringName("get_primary_interface")._native_ptr(), 905850878);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TextServer>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TextServer>()));
 	return Ref<TextServer>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TextServer>(_gde_method_bind, _owner));
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NOISE_TEXTURE2D_HPP
-#define GODOT_CPP_NOISE_TEXTURE2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/texture2d.hpp>
@@ -51,26 +50,26 @@ class NoiseTexture2D : public Texture2D {
 public:
 	void set_width(int32_t p_width);
 	void set_height(int32_t p_height);
+	void set_generate_mipmaps(bool p_invert);
+	bool is_generating_mipmaps() const;
+	void set_noise(const Ref<Noise> &p_noise);
+	Ref<Noise> get_noise();
+	void set_color_ramp(const Ref<Gradient> &p_gradient);
+	Ref<Gradient> get_color_ramp() const;
+	void set_seamless(bool p_seamless);
+	bool get_seamless();
 	void set_invert(bool p_invert);
 	bool get_invert() const;
 	void set_in_3d_space(bool p_enable);
 	bool is_in_3d_space() const;
-	void set_generate_mipmaps(bool p_invert);
-	bool is_generating_mipmaps() const;
-	void set_seamless(bool p_seamless);
-	bool get_seamless();
-	void set_seamless_blend_skirt(float p_seamless_blend_skirt);
-	float get_seamless_blend_skirt();
 	void set_as_normal_map(bool p_as_normal_map);
 	bool is_normal_map();
-	void set_bump_strength(float p_bump_strength);
-	float get_bump_strength();
 	void set_normalize(bool p_normalize);
 	bool is_normalized() const;
-	void set_color_ramp(const Ref<Gradient> &p_gradient);
-	Ref<Gradient> get_color_ramp() const;
-	void set_noise(const Ref<Noise> &p_noise);
-	Ref<Noise> get_noise();
+	void set_seamless_blend_skirt(float p_seamless_blend_skirt);
+	float get_seamless_blend_skirt();
+	void set_bump_strength(float p_bump_strength);
+	float get_bump_strength();
 
 protected:
 	template <typename T, typename B>
@@ -83,4 +82,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_NOISE_TEXTURE2D_HPP

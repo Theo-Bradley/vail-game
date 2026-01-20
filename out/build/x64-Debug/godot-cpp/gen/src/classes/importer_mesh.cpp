@@ -46,13 +46,13 @@ void ImporterMesh::add_blend_shape(const String &p_name) {
 
 int32_t ImporterMesh::get_blend_shape_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_blend_shape_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String ImporterMesh::get_blend_shape_name(int32_t p_blend_shape_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_blend_shape_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_blend_shape_idx_encoded;
 	PtrToArg<int64_t>::encode(p_blend_shape_idx, &p_blend_shape_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_blend_shape_idx_encoded);
@@ -68,7 +68,7 @@ void ImporterMesh::set_blend_shape_mode(Mesh::BlendShapeMode p_mode) {
 
 Mesh::BlendShapeMode ImporterMesh::get_blend_shape_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_blend_shape_mode")._native_ptr(), 836485024);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Mesh::BlendShapeMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Mesh::BlendShapeMode(0)));
 	return (Mesh::BlendShapeMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -84,13 +84,13 @@ void ImporterMesh::add_surface(Mesh::PrimitiveType p_primitive, const Array &p_a
 
 int32_t ImporterMesh::get_surface_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Mesh::PrimitiveType ImporterMesh::get_surface_primitive_type(int32_t p_surface_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_primitive_type")._native_ptr(), 3552571330);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Mesh::PrimitiveType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Mesh::PrimitiveType(0)));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	return (Mesh::PrimitiveType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_surface_idx_encoded);
@@ -98,7 +98,7 @@ Mesh::PrimitiveType ImporterMesh::get_surface_primitive_type(int32_t p_surface_i
 
 String ImporterMesh::get_surface_name(int32_t p_surface_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_surface_idx_encoded);
@@ -106,7 +106,7 @@ String ImporterMesh::get_surface_name(int32_t p_surface_idx) const {
 
 Array ImporterMesh::get_surface_arrays(int32_t p_surface_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_arrays")._native_ptr(), 663333327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_surface_idx_encoded);
@@ -114,7 +114,7 @@ Array ImporterMesh::get_surface_arrays(int32_t p_surface_idx) const {
 
 Array ImporterMesh::get_surface_blend_shape_arrays(int32_t p_surface_idx, int32_t p_blend_shape_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_blend_shape_arrays")._native_ptr(), 2345056839);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	int64_t p_blend_shape_idx_encoded;
@@ -124,7 +124,7 @@ Array ImporterMesh::get_surface_blend_shape_arrays(int32_t p_surface_idx, int32_
 
 int32_t ImporterMesh::get_surface_lod_count(int32_t p_surface_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_lod_count")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_surface_idx_encoded);
@@ -132,7 +132,7 @@ int32_t ImporterMesh::get_surface_lod_count(int32_t p_surface_idx) const {
 
 float ImporterMesh::get_surface_lod_size(int32_t p_surface_idx, int32_t p_lod_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_lod_size")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	int64_t p_lod_idx_encoded;
@@ -142,7 +142,7 @@ float ImporterMesh::get_surface_lod_size(int32_t p_surface_idx, int32_t p_lod_id
 
 PackedInt32Array ImporterMesh::get_surface_lod_indices(int32_t p_surface_idx, int32_t p_lod_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_lod_indices")._native_ptr(), 1265128013);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	int64_t p_lod_idx_encoded;
@@ -152,7 +152,7 @@ PackedInt32Array ImporterMesh::get_surface_lod_indices(int32_t p_surface_idx, in
 
 Ref<Material> ImporterMesh::get_surface_material(int32_t p_surface_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_material")._native_ptr(), 2897466400);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner, &p_surface_idx_encoded));
@@ -160,7 +160,7 @@ Ref<Material> ImporterMesh::get_surface_material(int32_t p_surface_idx) const {
 
 uint64_t ImporterMesh::get_surface_format(int32_t p_surface_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_surface_format")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_surface_idx_encoded;
 	PtrToArg<int64_t>::encode(p_surface_idx, &p_surface_idx_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_surface_idx_encoded);
@@ -194,7 +194,7 @@ void ImporterMesh::generate_lods(float p_normal_merge_angle, float p_normal_spli
 
 Ref<ArrayMesh> ImporterMesh::get_mesh(const Ref<ArrayMesh> &p_base_mesh) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 1457573577);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ArrayMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ArrayMesh>()));
 	return Ref<ArrayMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ArrayMesh>(_gde_method_bind, _owner, (p_base_mesh != nullptr ? &p_base_mesh->_owner : nullptr)));
 }
 
@@ -212,7 +212,7 @@ void ImporterMesh::set_lightmap_size_hint(const Vector2i &p_size) {
 
 Vector2i ImporterMesh::get_lightmap_size_hint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMesh::get_class_static()._native_ptr(), StringName("get_lightmap_size_hint")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 

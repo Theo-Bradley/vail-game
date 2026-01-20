@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GRAPH_EDIT_HPP
-#define GODOT_CPP_GRAPH_EDIT_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -75,6 +74,7 @@ public:
 	TypedArray<Dictionary> get_connection_list() const;
 	int32_t get_connection_count(const StringName &p_from_node, int32_t p_from_port);
 	Dictionary get_closest_connection_at_point(const Vector2 &p_point, float p_max_distance = 4.0) const;
+	TypedArray<Dictionary> get_connection_list_from_node(const StringName &p_node) const;
 	TypedArray<Dictionary> get_connections_intersecting_with_rect(const Rect2 &p_rect) const;
 	void clear_connections();
 	void force_connection_drag_end();
@@ -136,6 +136,8 @@ public:
 	bool is_showing_arrange_button() const;
 	void set_right_disconnects(bool p_enable);
 	bool is_right_disconnects_enabled() const;
+	void set_type_names(const Dictionary &p_type_names);
+	Dictionary get_type_names() const;
 	HBoxContainer *get_menu_hbox();
 	void arrange_nodes();
 	void set_selected(Node *p_node);
@@ -170,4 +172,3 @@ public:
 VARIANT_ENUM_CAST(GraphEdit::PanningScheme);
 VARIANT_ENUM_CAST(GraphEdit::GridPattern);
 
-#endif // ! GODOT_CPP_GRAPH_EDIT_HPP

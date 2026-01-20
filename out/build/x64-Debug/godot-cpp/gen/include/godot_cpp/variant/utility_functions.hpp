@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_UTILITY_FUNCTIONS_HPP
-#define GODOT_CPP_UTILITY_FUNCTIONS_HPP
+#pragma once
 
 #include <godot_cpp/variant/builtin_types.hpp>
 #include <godot_cpp/variant/variant.hpp>
@@ -116,7 +115,7 @@ private:
 public:
 	template <typename... Args>
 	static Variant max(const Variant &p_arg1, const Variant &p_arg2, const Args &...p_args) {
-		std::array<Variant, 2 + sizeof...(Args)> variant_args{ p_arg1, p_arg2, Variant(p_args)... };
+		std::array<Variant, 2 + sizeof...(Args)> variant_args{{ p_arg1, p_arg2, Variant(p_args)... }};
 		std::array<const Variant *, 2 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -132,7 +131,7 @@ private:
 public:
 	template <typename... Args>
 	static Variant min(const Variant &p_arg1, const Variant &p_arg2, const Args &...p_args) {
-		std::array<Variant, 2 + sizeof...(Args)> variant_args{ p_arg1, p_arg2, Variant(p_args)... };
+		std::array<Variant, 2 + sizeof...(Args)> variant_args{{ p_arg1, p_arg2, Variant(p_args)... }};
 		std::array<const Variant *, 2 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -164,7 +163,7 @@ private:
 public:
 	template <typename... Args>
 	static String str(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -180,7 +179,7 @@ private:
 public:
 	template <typename... Args>
 	static void print(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -194,7 +193,7 @@ private:
 public:
 	template <typename... Args>
 	static void print_rich(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -208,7 +207,7 @@ private:
 public:
 	template <typename... Args>
 	static void printerr(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -222,7 +221,7 @@ private:
 public:
 	template <typename... Args>
 	static void printt(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -236,7 +235,7 @@ private:
 public:
 	template <typename... Args>
 	static void prints(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -250,7 +249,7 @@ private:
 public:
 	template <typename... Args>
 	static void printraw(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -264,7 +263,7 @@ private:
 public:
 	template <typename... Args>
 	static void print_verbose(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -278,7 +277,7 @@ private:
 public:
 	template <typename... Args>
 	static void push_error(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -292,7 +291,7 @@ private:
 public:
 	template <typename... Args>
 	static void push_warning(const Variant &p_arg1, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ p_arg1, Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ p_arg1, Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -314,5 +313,3 @@ public:
 };
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_UTILITY_FUNCTIONS_HPP

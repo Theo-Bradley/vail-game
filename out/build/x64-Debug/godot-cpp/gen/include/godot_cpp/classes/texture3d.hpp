@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TEXTURE3D_HPP
-#define GODOT_CPP_TEXTURE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/image.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -55,14 +54,14 @@ public:
 	int32_t get_height() const;
 	int32_t get_depth() const;
 	bool has_mipmaps() const;
-	TypedArray<Image> get_data() const;
+	TypedArray<Ref<Image>> get_data() const;
 	Ref<Resource> create_placeholder() const;
 	virtual Image::Format _get_format() const;
 	virtual int32_t _get_width() const;
 	virtual int32_t _get_height() const;
 	virtual int32_t _get_depth() const;
 	virtual bool _has_mipmaps() const;
-	virtual TypedArray<Image> _get_data() const;
+	virtual TypedArray<Ref<Image>> _get_data() const;
 
 protected:
 	template <typename T, typename B>
@@ -93,4 +92,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_TEXTURE3D_HPP

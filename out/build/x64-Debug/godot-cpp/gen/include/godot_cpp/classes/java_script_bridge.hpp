@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_JAVA_SCRIPT_BRIDGE_HPP
-#define GODOT_CPP_JAVA_SCRIPT_BRIDGE_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -69,7 +68,7 @@ private:
 public:
 	template <typename... Args>
 	Variant create_object(const String &p_object, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ Variant(p_object), Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ Variant(p_object), Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -94,4 +93,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_JAVA_SCRIPT_BRIDGE_HPP

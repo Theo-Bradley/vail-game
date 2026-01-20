@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_MESH_CONVEX_DECOMPOSITION_SETTINGS_HPP
-#define GODOT_CPP_MESH_CONVEX_DECOMPOSITION_SETTINGS_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -91,4 +90,3 @@ public:
 
 VARIANT_ENUM_CAST(MeshConvexDecompositionSettings::Mode);
 
-#endif // ! GODOT_CPP_MESH_CONVEX_DECOMPOSITION_SETTINGS_HPP

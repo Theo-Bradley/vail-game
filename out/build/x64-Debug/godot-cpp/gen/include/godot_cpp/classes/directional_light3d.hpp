@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_DIRECTIONAL_LIGHT3D_HPP
-#define GODOT_CPP_DIRECTIONAL_LIGHT3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/light3d.hpp>
 
@@ -78,4 +77,3 @@ public:
 VARIANT_ENUM_CAST(DirectionalLight3D::ShadowMode);
 VARIANT_ENUM_CAST(DirectionalLight3D::SkyMode);
 
-#endif // ! GODOT_CPP_DIRECTIONAL_LIGHT3D_HPP

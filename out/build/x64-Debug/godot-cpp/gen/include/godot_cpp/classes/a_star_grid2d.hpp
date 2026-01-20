@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_A_STAR_GRID2D_HPP
-#define GODOT_CPP_A_STAR_GRID2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -132,4 +131,3 @@ VARIANT_ENUM_CAST(AStarGrid2D::Heuristic);
 VARIANT_ENUM_CAST(AStarGrid2D::DiagonalMode);
 VARIANT_ENUM_CAST(AStarGrid2D::CellShape);
 
-#endif // ! GODOT_CPP_A_STAR_GRID2D_HPP

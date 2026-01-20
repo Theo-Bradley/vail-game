@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CONTAINER_HPP
-#define GODOT_CPP_CONTAINER_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/variant/packed_int32_array.hpp>
@@ -73,4 +72,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_CONTAINER_HPP

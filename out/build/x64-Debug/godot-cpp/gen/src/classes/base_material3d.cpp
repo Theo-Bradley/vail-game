@@ -48,7 +48,7 @@ void BaseMaterial3D::set_albedo(const Color &p_albedo) {
 
 Color BaseMaterial3D::get_albedo() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_albedo")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void BaseMaterial3D::set_transparency(BaseMaterial3D::Transparency p_transparenc
 
 BaseMaterial3D::Transparency BaseMaterial3D::get_transparency() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_transparency")._native_ptr(), 990903061);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::Transparency(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::Transparency(0)));
 	return (BaseMaterial3D::Transparency)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void BaseMaterial3D::set_alpha_antialiasing(BaseMaterial3D::AlphaAntiAliasing p_
 
 BaseMaterial3D::AlphaAntiAliasing BaseMaterial3D::get_alpha_antialiasing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_alpha_antialiasing")._native_ptr(), 2889939400);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::AlphaAntiAliasing(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::AlphaAntiAliasing(0)));
 	return (BaseMaterial3D::AlphaAntiAliasing)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void BaseMaterial3D::set_alpha_antialiasing_edge(float p_edge) {
 
 float BaseMaterial3D::get_alpha_antialiasing_edge() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_alpha_antialiasing_edge")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void BaseMaterial3D::set_shading_mode(BaseMaterial3D::ShadingMode p_shading_mode
 
 BaseMaterial3D::ShadingMode BaseMaterial3D::get_shading_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_shading_mode")._native_ptr(), 2132070559);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::ShadingMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::ShadingMode(0)));
 	return (BaseMaterial3D::ShadingMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void BaseMaterial3D::set_specular(float p_specular) {
 
 float BaseMaterial3D::get_specular() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_specular")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void BaseMaterial3D::set_metallic(float p_metallic) {
 
 float BaseMaterial3D::get_metallic() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_metallic")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void BaseMaterial3D::set_roughness(float p_roughness) {
 
 float BaseMaterial3D::get_roughness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_roughness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void BaseMaterial3D::set_emission(const Color &p_emission) {
 
 Color BaseMaterial3D::get_emission() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_emission")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -172,7 +172,7 @@ void BaseMaterial3D::set_emission_energy_multiplier(float p_emission_energy_mult
 
 float BaseMaterial3D::get_emission_energy_multiplier() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_emission_energy_multiplier")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -186,7 +186,7 @@ void BaseMaterial3D::set_emission_intensity(float p_emission_energy_multiplier) 
 
 float BaseMaterial3D::get_emission_intensity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_emission_intensity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -200,7 +200,7 @@ void BaseMaterial3D::set_normal_scale(float p_normal_scale) {
 
 float BaseMaterial3D::get_normal_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_normal_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -214,7 +214,7 @@ void BaseMaterial3D::set_rim(float p_rim) {
 
 float BaseMaterial3D::get_rim() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_rim")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -228,7 +228,7 @@ void BaseMaterial3D::set_rim_tint(float p_rim_tint) {
 
 float BaseMaterial3D::get_rim_tint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_rim_tint")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -242,7 +242,7 @@ void BaseMaterial3D::set_clearcoat(float p_clearcoat) {
 
 float BaseMaterial3D::get_clearcoat() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_clearcoat")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -256,7 +256,7 @@ void BaseMaterial3D::set_clearcoat_roughness(float p_clearcoat_roughness) {
 
 float BaseMaterial3D::get_clearcoat_roughness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_clearcoat_roughness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -270,7 +270,7 @@ void BaseMaterial3D::set_anisotropy(float p_anisotropy) {
 
 float BaseMaterial3D::get_anisotropy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_anisotropy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -284,7 +284,7 @@ void BaseMaterial3D::set_heightmap_scale(float p_heightmap_scale) {
 
 float BaseMaterial3D::get_heightmap_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_heightmap_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -298,7 +298,7 @@ void BaseMaterial3D::set_subsurface_scattering_strength(float p_strength) {
 
 float BaseMaterial3D::get_subsurface_scattering_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_subsurface_scattering_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -310,7 +310,7 @@ void BaseMaterial3D::set_transmittance_color(const Color &p_color) {
 
 Color BaseMaterial3D::get_transmittance_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_transmittance_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -324,7 +324,7 @@ void BaseMaterial3D::set_transmittance_depth(float p_depth) {
 
 float BaseMaterial3D::get_transmittance_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_transmittance_depth")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -338,7 +338,7 @@ void BaseMaterial3D::set_transmittance_boost(float p_boost) {
 
 float BaseMaterial3D::get_transmittance_boost() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_transmittance_boost")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -350,7 +350,7 @@ void BaseMaterial3D::set_backlight(const Color &p_backlight) {
 
 Color BaseMaterial3D::get_backlight() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_backlight")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -364,7 +364,7 @@ void BaseMaterial3D::set_refraction(float p_refraction) {
 
 float BaseMaterial3D::get_refraction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_refraction")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -378,7 +378,7 @@ void BaseMaterial3D::set_point_size(float p_point_size) {
 
 float BaseMaterial3D::get_point_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_point_size")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -392,7 +392,7 @@ void BaseMaterial3D::set_detail_uv(BaseMaterial3D::DetailUV p_detail_uv) {
 
 BaseMaterial3D::DetailUV BaseMaterial3D::get_detail_uv() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_detail_uv")._native_ptr(), 2306920512);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::DetailUV(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::DetailUV(0)));
 	return (BaseMaterial3D::DetailUV)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -406,7 +406,7 @@ void BaseMaterial3D::set_blend_mode(BaseMaterial3D::BlendMode p_blend_mode) {
 
 BaseMaterial3D::BlendMode BaseMaterial3D::get_blend_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_blend_mode")._native_ptr(), 4022690962);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::BlendMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::BlendMode(0)));
 	return (BaseMaterial3D::BlendMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -420,8 +420,22 @@ void BaseMaterial3D::set_depth_draw_mode(BaseMaterial3D::DepthDrawMode p_depth_d
 
 BaseMaterial3D::DepthDrawMode BaseMaterial3D::get_depth_draw_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_depth_draw_mode")._native_ptr(), 2578197639);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::DepthDrawMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::DepthDrawMode(0)));
 	return (BaseMaterial3D::DepthDrawMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_depth_test(BaseMaterial3D::DepthTest p_depth_test) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_depth_test")._native_ptr(), 3918692338);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_depth_test_encoded;
+	PtrToArg<int64_t>::encode(p_depth_test, &p_depth_test_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_depth_test_encoded);
+}
+
+BaseMaterial3D::DepthTest BaseMaterial3D::get_depth_test() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_depth_test")._native_ptr(), 3434785811);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::DepthTest(0)));
+	return (BaseMaterial3D::DepthTest)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 void BaseMaterial3D::set_cull_mode(BaseMaterial3D::CullMode p_cull_mode) {
@@ -434,7 +448,7 @@ void BaseMaterial3D::set_cull_mode(BaseMaterial3D::CullMode p_cull_mode) {
 
 BaseMaterial3D::CullMode BaseMaterial3D::get_cull_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_cull_mode")._native_ptr(), 1941499586);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::CullMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::CullMode(0)));
 	return (BaseMaterial3D::CullMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -448,7 +462,7 @@ void BaseMaterial3D::set_diffuse_mode(BaseMaterial3D::DiffuseMode p_diffuse_mode
 
 BaseMaterial3D::DiffuseMode BaseMaterial3D::get_diffuse_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_diffuse_mode")._native_ptr(), 3973617136);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::DiffuseMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::DiffuseMode(0)));
 	return (BaseMaterial3D::DiffuseMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -462,7 +476,7 @@ void BaseMaterial3D::set_specular_mode(BaseMaterial3D::SpecularMode p_specular_m
 
 BaseMaterial3D::SpecularMode BaseMaterial3D::get_specular_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_specular_mode")._native_ptr(), 2569953298);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::SpecularMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::SpecularMode(0)));
 	return (BaseMaterial3D::SpecularMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -478,7 +492,7 @@ void BaseMaterial3D::set_flag(BaseMaterial3D::Flags p_flag, bool p_enable) {
 
 bool BaseMaterial3D::get_flag(BaseMaterial3D::Flags p_flag) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_flag")._native_ptr(), 1286410065);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_flag_encoded;
 	PtrToArg<int64_t>::encode(p_flag, &p_flag_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_flag_encoded);
@@ -494,7 +508,7 @@ void BaseMaterial3D::set_texture_filter(BaseMaterial3D::TextureFilter p_mode) {
 
 BaseMaterial3D::TextureFilter BaseMaterial3D::get_texture_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_texture_filter")._native_ptr(), 3289213076);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::TextureFilter(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::TextureFilter(0)));
 	return (BaseMaterial3D::TextureFilter)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -510,7 +524,7 @@ void BaseMaterial3D::set_feature(BaseMaterial3D::Feature p_feature, bool p_enabl
 
 bool BaseMaterial3D::get_feature(BaseMaterial3D::Feature p_feature) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_feature")._native_ptr(), 1965241794);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_feature_encoded;
 	PtrToArg<int64_t>::encode(p_feature, &p_feature_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_feature_encoded);
@@ -526,7 +540,7 @@ void BaseMaterial3D::set_texture(BaseMaterial3D::TextureParam p_param, const Ref
 
 Ref<Texture2D> BaseMaterial3D::get_texture(BaseMaterial3D::TextureParam p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 329605813);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_param_encoded));
@@ -542,7 +556,7 @@ void BaseMaterial3D::set_detail_blend_mode(BaseMaterial3D::BlendMode p_detail_bl
 
 BaseMaterial3D::BlendMode BaseMaterial3D::get_detail_blend_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_detail_blend_mode")._native_ptr(), 4022690962);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::BlendMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::BlendMode(0)));
 	return (BaseMaterial3D::BlendMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -554,7 +568,7 @@ void BaseMaterial3D::set_uv1_scale(const Vector3 &p_scale) {
 
 Vector3 BaseMaterial3D::get_uv1_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_uv1_scale")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -566,7 +580,7 @@ void BaseMaterial3D::set_uv1_offset(const Vector3 &p_offset) {
 
 Vector3 BaseMaterial3D::get_uv1_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_uv1_offset")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -580,7 +594,7 @@ void BaseMaterial3D::set_uv1_triplanar_blend_sharpness(float p_sharpness) {
 
 float BaseMaterial3D::get_uv1_triplanar_blend_sharpness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_uv1_triplanar_blend_sharpness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -592,7 +606,7 @@ void BaseMaterial3D::set_uv2_scale(const Vector3 &p_scale) {
 
 Vector3 BaseMaterial3D::get_uv2_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_uv2_scale")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -604,7 +618,7 @@ void BaseMaterial3D::set_uv2_offset(const Vector3 &p_offset) {
 
 Vector3 BaseMaterial3D::get_uv2_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_uv2_offset")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -618,7 +632,7 @@ void BaseMaterial3D::set_uv2_triplanar_blend_sharpness(float p_sharpness) {
 
 float BaseMaterial3D::get_uv2_triplanar_blend_sharpness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_uv2_triplanar_blend_sharpness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -632,7 +646,7 @@ void BaseMaterial3D::set_billboard_mode(BaseMaterial3D::BillboardMode p_mode) {
 
 BaseMaterial3D::BillboardMode BaseMaterial3D::get_billboard_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_billboard_mode")._native_ptr(), 1283840139);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::BillboardMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::BillboardMode(0)));
 	return (BaseMaterial3D::BillboardMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -646,7 +660,7 @@ void BaseMaterial3D::set_particles_anim_h_frames(int32_t p_frames) {
 
 int32_t BaseMaterial3D::get_particles_anim_h_frames() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_particles_anim_h_frames")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -660,7 +674,7 @@ void BaseMaterial3D::set_particles_anim_v_frames(int32_t p_frames) {
 
 int32_t BaseMaterial3D::get_particles_anim_v_frames() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_particles_anim_v_frames")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -674,7 +688,7 @@ void BaseMaterial3D::set_particles_anim_loop(bool p_loop) {
 
 bool BaseMaterial3D::get_particles_anim_loop() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_particles_anim_loop")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -688,7 +702,7 @@ void BaseMaterial3D::set_heightmap_deep_parallax(bool p_enable) {
 
 bool BaseMaterial3D::is_heightmap_deep_parallax_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("is_heightmap_deep_parallax_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -702,7 +716,7 @@ void BaseMaterial3D::set_heightmap_deep_parallax_min_layers(int32_t p_layer) {
 
 int32_t BaseMaterial3D::get_heightmap_deep_parallax_min_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_heightmap_deep_parallax_min_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -716,7 +730,7 @@ void BaseMaterial3D::set_heightmap_deep_parallax_max_layers(int32_t p_layer) {
 
 int32_t BaseMaterial3D::get_heightmap_deep_parallax_max_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_heightmap_deep_parallax_max_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -730,7 +744,7 @@ void BaseMaterial3D::set_heightmap_deep_parallax_flip_tangent(bool p_flip) {
 
 bool BaseMaterial3D::get_heightmap_deep_parallax_flip_tangent() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_heightmap_deep_parallax_flip_tangent")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -744,7 +758,7 @@ void BaseMaterial3D::set_heightmap_deep_parallax_flip_binormal(bool p_flip) {
 
 bool BaseMaterial3D::get_heightmap_deep_parallax_flip_binormal() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_heightmap_deep_parallax_flip_binormal")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -758,7 +772,7 @@ void BaseMaterial3D::set_grow(float p_amount) {
 
 float BaseMaterial3D::get_grow() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_grow")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -772,7 +786,7 @@ void BaseMaterial3D::set_emission_operator(BaseMaterial3D::EmissionOperator p_op
 
 BaseMaterial3D::EmissionOperator BaseMaterial3D::get_emission_operator() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_emission_operator")._native_ptr(), 974205018);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::EmissionOperator(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::EmissionOperator(0)));
 	return (BaseMaterial3D::EmissionOperator)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -786,7 +800,7 @@ void BaseMaterial3D::set_ao_light_affect(float p_amount) {
 
 float BaseMaterial3D::get_ao_light_affect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_ao_light_affect")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -800,7 +814,7 @@ void BaseMaterial3D::set_alpha_scissor_threshold(float p_threshold) {
 
 float BaseMaterial3D::get_alpha_scissor_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_alpha_scissor_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -814,7 +828,7 @@ void BaseMaterial3D::set_alpha_hash_scale(float p_threshold) {
 
 float BaseMaterial3D::get_alpha_hash_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_alpha_hash_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -828,7 +842,7 @@ void BaseMaterial3D::set_grow_enabled(bool p_enable) {
 
 bool BaseMaterial3D::is_grow_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("is_grow_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -842,7 +856,7 @@ void BaseMaterial3D::set_metallic_texture_channel(BaseMaterial3D::TextureChannel
 
 BaseMaterial3D::TextureChannel BaseMaterial3D::get_metallic_texture_channel() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_metallic_texture_channel")._native_ptr(), 568133867);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::TextureChannel(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::TextureChannel(0)));
 	return (BaseMaterial3D::TextureChannel)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -856,7 +870,7 @@ void BaseMaterial3D::set_roughness_texture_channel(BaseMaterial3D::TextureChanne
 
 BaseMaterial3D::TextureChannel BaseMaterial3D::get_roughness_texture_channel() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_roughness_texture_channel")._native_ptr(), 568133867);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::TextureChannel(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::TextureChannel(0)));
 	return (BaseMaterial3D::TextureChannel)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -870,7 +884,7 @@ void BaseMaterial3D::set_ao_texture_channel(BaseMaterial3D::TextureChannel p_cha
 
 BaseMaterial3D::TextureChannel BaseMaterial3D::get_ao_texture_channel() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_ao_texture_channel")._native_ptr(), 568133867);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::TextureChannel(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::TextureChannel(0)));
 	return (BaseMaterial3D::TextureChannel)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -884,7 +898,7 @@ void BaseMaterial3D::set_refraction_texture_channel(BaseMaterial3D::TextureChann
 
 BaseMaterial3D::TextureChannel BaseMaterial3D::get_refraction_texture_channel() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_refraction_texture_channel")._native_ptr(), 568133867);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::TextureChannel(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::TextureChannel(0)));
 	return (BaseMaterial3D::TextureChannel)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -898,7 +912,7 @@ void BaseMaterial3D::set_proximity_fade_enabled(bool p_enabled) {
 
 bool BaseMaterial3D::is_proximity_fade_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("is_proximity_fade_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -912,7 +926,7 @@ void BaseMaterial3D::set_proximity_fade_distance(float p_distance) {
 
 float BaseMaterial3D::get_proximity_fade_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_proximity_fade_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -926,7 +940,7 @@ void BaseMaterial3D::set_msdf_pixel_range(float p_range) {
 
 float BaseMaterial3D::get_msdf_pixel_range() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_msdf_pixel_range")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -940,7 +954,7 @@ void BaseMaterial3D::set_msdf_outline_size(float p_size) {
 
 float BaseMaterial3D::get_msdf_outline_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_msdf_outline_size")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -954,7 +968,7 @@ void BaseMaterial3D::set_distance_fade(BaseMaterial3D::DistanceFadeMode p_mode) 
 
 BaseMaterial3D::DistanceFadeMode BaseMaterial3D::get_distance_fade() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_distance_fade")._native_ptr(), 2694575734);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseMaterial3D::DistanceFadeMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::DistanceFadeMode(0)));
 	return (BaseMaterial3D::DistanceFadeMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -968,7 +982,7 @@ void BaseMaterial3D::set_distance_fade_max_distance(float p_distance) {
 
 float BaseMaterial3D::get_distance_fade_max_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_distance_fade_max_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -982,7 +996,117 @@ void BaseMaterial3D::set_distance_fade_min_distance(float p_distance) {
 
 float BaseMaterial3D::get_distance_fade_min_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_distance_fade_min_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_z_clip_scale(float p_scale) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_z_clip_scale")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_scale_encoded;
+	PtrToArg<double>::encode(p_scale, &p_scale_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_scale_encoded);
+}
+
+float BaseMaterial3D::get_z_clip_scale() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_z_clip_scale")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_fov_override(float p_scale) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_fov_override")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_scale_encoded;
+	PtrToArg<double>::encode(p_scale, &p_scale_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_scale_encoded);
+}
+
+float BaseMaterial3D::get_fov_override() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_fov_override")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_stencil_mode(BaseMaterial3D::StencilMode p_stencil_mode) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_stencil_mode")._native_ptr(), 2272367200);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_stencil_mode_encoded;
+	PtrToArg<int64_t>::encode(p_stencil_mode, &p_stencil_mode_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_stencil_mode_encoded);
+}
+
+BaseMaterial3D::StencilMode BaseMaterial3D::get_stencil_mode() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_stencil_mode")._native_ptr(), 2908443456);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::StencilMode(0)));
+	return (BaseMaterial3D::StencilMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_stencil_flags(int32_t p_stencil_flags) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_stencil_flags")._native_ptr(), 1286410249);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_stencil_flags_encoded;
+	PtrToArg<int64_t>::encode(p_stencil_flags, &p_stencil_flags_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_stencil_flags_encoded);
+}
+
+int32_t BaseMaterial3D::get_stencil_flags() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_stencil_flags")._native_ptr(), 3905245786);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_stencil_compare(BaseMaterial3D::StencilCompare p_stencil_compare) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_stencil_compare")._native_ptr(), 3741726481);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_stencil_compare_encoded;
+	PtrToArg<int64_t>::encode(p_stencil_compare, &p_stencil_compare_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_stencil_compare_encoded);
+}
+
+BaseMaterial3D::StencilCompare BaseMaterial3D::get_stencil_compare() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_stencil_compare")._native_ptr(), 2824600492);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseMaterial3D::StencilCompare(0)));
+	return (BaseMaterial3D::StencilCompare)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_stencil_reference(int32_t p_stencil_reference) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_stencil_reference")._native_ptr(), 1286410249);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_stencil_reference_encoded;
+	PtrToArg<int64_t>::encode(p_stencil_reference, &p_stencil_reference_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_stencil_reference_encoded);
+}
+
+int32_t BaseMaterial3D::get_stencil_reference() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_stencil_reference")._native_ptr(), 3905245786);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_stencil_effect_color(const Color &p_stencil_color) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_stencil_effect_color")._native_ptr(), 2920490490);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_stencil_color);
+}
+
+Color BaseMaterial3D::get_stencil_effect_color() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_stencil_effect_color")._native_ptr(), 3444240500);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
+	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
+}
+
+void BaseMaterial3D::set_stencil_effect_outline_thickness(float p_stencil_outline_thickness) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("set_stencil_effect_outline_thickness")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_stencil_outline_thickness_encoded;
+	PtrToArg<double>::encode(p_stencil_outline_thickness, &p_stencil_outline_thickness_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_stencil_outline_thickness_encoded);
+}
+
+float BaseMaterial3D::get_stencil_effect_outline_thickness() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseMaterial3D::get_class_static()._native_ptr(), StringName("get_stencil_effect_outline_thickness")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

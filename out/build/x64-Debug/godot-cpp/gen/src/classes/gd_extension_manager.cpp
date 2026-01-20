@@ -69,37 +69,37 @@ GDExtensionManager::~GDExtensionManager() {
 
 GDExtensionManager::LoadStatus GDExtensionManager::load_extension(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GDExtensionManager::get_class_static()._native_ptr(), StringName("load_extension")._native_ptr(), 4024158731);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GDExtensionManager::LoadStatus(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GDExtensionManager::LoadStatus(0)));
 	return (GDExtensionManager::LoadStatus)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 GDExtensionManager::LoadStatus GDExtensionManager::reload_extension(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GDExtensionManager::get_class_static()._native_ptr(), StringName("reload_extension")._native_ptr(), 4024158731);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GDExtensionManager::LoadStatus(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GDExtensionManager::LoadStatus(0)));
 	return (GDExtensionManager::LoadStatus)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 GDExtensionManager::LoadStatus GDExtensionManager::unload_extension(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GDExtensionManager::get_class_static()._native_ptr(), StringName("unload_extension")._native_ptr(), 4024158731);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GDExtensionManager::LoadStatus(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GDExtensionManager::LoadStatus(0)));
 	return (GDExtensionManager::LoadStatus)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 bool GDExtensionManager::is_extension_loaded(const String &p_path) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GDExtensionManager::get_class_static()._native_ptr(), StringName("is_extension_loaded")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_path);
 }
 
 PackedStringArray GDExtensionManager::get_loaded_extensions() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GDExtensionManager::get_class_static()._native_ptr(), StringName("get_loaded_extensions")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 Ref<GDExtension> GDExtensionManager::get_extension(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GDExtensionManager::get_class_static()._native_ptr(), StringName("get_extension")._native_ptr(), 49743343);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<GDExtension>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<GDExtension>()));
 	return Ref<GDExtension>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<GDExtension>(_gde_method_bind, _owner, &p_path));
 }
 

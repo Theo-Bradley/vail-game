@@ -62,7 +62,7 @@ void PhysicalBone3D::set_joint_type(PhysicalBone3D::JointType p_joint_type) {
 
 PhysicalBone3D::JointType PhysicalBone3D::get_joint_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_joint_type")._native_ptr(), 931347320);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PhysicalBone3D::JointType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PhysicalBone3D::JointType(0)));
 	return (PhysicalBone3D::JointType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void PhysicalBone3D::set_joint_offset(const Transform3D &p_offset) {
 
 Transform3D PhysicalBone3D::get_joint_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_joint_offset")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void PhysicalBone3D::set_joint_rotation(const Vector3 &p_euler) {
 
 Vector3 PhysicalBone3D::get_joint_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_joint_rotation")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -98,25 +98,25 @@ void PhysicalBone3D::set_body_offset(const Transform3D &p_offset) {
 
 Transform3D PhysicalBone3D::get_body_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_body_offset")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
 bool PhysicalBone3D::get_simulate_physics() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_simulate_physics")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool PhysicalBone3D::is_simulating_physics() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("is_simulating_physics")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t PhysicalBone3D::get_bone_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_bone_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void PhysicalBone3D::set_mass(float p_mass) {
 
 float PhysicalBone3D::get_mass() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_mass")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void PhysicalBone3D::set_friction(float p_friction) {
 
 float PhysicalBone3D::get_friction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_friction")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void PhysicalBone3D::set_bounce(float p_bounce) {
 
 float PhysicalBone3D::get_bounce() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_bounce")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -172,7 +172,7 @@ void PhysicalBone3D::set_gravity_scale(float p_gravity_scale) {
 
 float PhysicalBone3D::get_gravity_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_gravity_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -186,7 +186,7 @@ void PhysicalBone3D::set_linear_damp_mode(PhysicalBone3D::DampMode p_linear_damp
 
 PhysicalBone3D::DampMode PhysicalBone3D::get_linear_damp_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_linear_damp_mode")._native_ptr(), 205884699);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PhysicalBone3D::DampMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PhysicalBone3D::DampMode(0)));
 	return (PhysicalBone3D::DampMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -200,7 +200,7 @@ void PhysicalBone3D::set_angular_damp_mode(PhysicalBone3D::DampMode p_angular_da
 
 PhysicalBone3D::DampMode PhysicalBone3D::get_angular_damp_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_angular_damp_mode")._native_ptr(), 205884699);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PhysicalBone3D::DampMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PhysicalBone3D::DampMode(0)));
 	return (PhysicalBone3D::DampMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -214,7 +214,7 @@ void PhysicalBone3D::set_linear_damp(float p_linear_damp) {
 
 float PhysicalBone3D::get_linear_damp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_linear_damp")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -228,7 +228,7 @@ void PhysicalBone3D::set_angular_damp(float p_angular_damp) {
 
 float PhysicalBone3D::get_angular_damp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_angular_damp")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -240,7 +240,7 @@ void PhysicalBone3D::set_linear_velocity(const Vector3 &p_linear_velocity) {
 
 Vector3 PhysicalBone3D::get_linear_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_linear_velocity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -252,7 +252,7 @@ void PhysicalBone3D::set_angular_velocity(const Vector3 &p_angular_velocity) {
 
 Vector3 PhysicalBone3D::get_angular_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("get_angular_velocity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -266,7 +266,7 @@ void PhysicalBone3D::set_use_custom_integrator(bool p_enable) {
 
 bool PhysicalBone3D::is_using_custom_integrator() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("is_using_custom_integrator")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -280,7 +280,7 @@ void PhysicalBone3D::set_can_sleep(bool p_able_to_sleep) {
 
 bool PhysicalBone3D::is_able_to_sleep() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalBone3D::get_class_static()._native_ptr(), StringName("is_able_to_sleep")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

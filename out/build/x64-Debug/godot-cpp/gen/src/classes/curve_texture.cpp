@@ -56,7 +56,7 @@ void CurveTexture::set_curve(const Ref<Curve> &p_curve) {
 
 Ref<Curve> CurveTexture::get_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CurveTexture::get_class_static()._native_ptr(), StringName("get_curve")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -70,7 +70,7 @@ void CurveTexture::set_texture_mode(CurveTexture::TextureMode p_texture_mode) {
 
 CurveTexture::TextureMode CurveTexture::get_texture_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CurveTexture::get_class_static()._native_ptr(), StringName("get_texture_mode")._native_ptr(), 715756376);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CurveTexture::TextureMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CurveTexture::TextureMode(0)));
 	return (CurveTexture::TextureMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

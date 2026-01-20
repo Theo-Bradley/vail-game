@@ -49,13 +49,13 @@ void EditorResourcePicker::set_base_type(const String &p_base_type) {
 
 String EditorResourcePicker::get_base_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorResourcePicker::get_class_static()._native_ptr(), StringName("get_base_type")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 PackedStringArray EditorResourcePicker::get_allowed_types() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorResourcePicker::get_class_static()._native_ptr(), StringName("get_allowed_types")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -67,7 +67,7 @@ void EditorResourcePicker::set_edited_resource(const Ref<Resource> &p_resource) 
 
 Ref<Resource> EditorResourcePicker::get_edited_resource() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorResourcePicker::get_class_static()._native_ptr(), StringName("get_edited_resource")._native_ptr(), 2674603643);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
 	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner));
 }
 
@@ -81,7 +81,7 @@ void EditorResourcePicker::set_toggle_mode(bool p_enable) {
 
 bool EditorResourcePicker::is_toggle_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorResourcePicker::get_class_static()._native_ptr(), StringName("is_toggle_mode")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -103,7 +103,7 @@ void EditorResourcePicker::set_editable(bool p_enable) {
 
 bool EditorResourcePicker::is_editable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorResourcePicker::get_class_static()._native_ptr(), StringName("is_editable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

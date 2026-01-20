@@ -50,7 +50,7 @@ void AnimationNodeOneShot::set_fadein_time(double p_time) {
 
 double AnimationNodeOneShot::get_fadein_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("get_fadein_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AnimationNodeOneShot::set_fadein_curve(const Ref<Curve> &p_curve) {
 
 Ref<Curve> AnimationNodeOneShot::get_fadein_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("get_fadein_curve")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -76,7 +76,7 @@ void AnimationNodeOneShot::set_fadeout_time(double p_time) {
 
 double AnimationNodeOneShot::get_fadeout_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("get_fadeout_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void AnimationNodeOneShot::set_fadeout_curve(const Ref<Curve> &p_curve) {
 
 Ref<Curve> AnimationNodeOneShot::get_fadeout_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("get_fadeout_curve")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -102,7 +102,7 @@ void AnimationNodeOneShot::set_break_loop_at_end(bool p_enable) {
 
 bool AnimationNodeOneShot::is_loop_broken_at_end() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("is_loop_broken_at_end")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void AnimationNodeOneShot::set_autorestart(bool p_active) {
 
 bool AnimationNodeOneShot::has_autorestart() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("has_autorestart")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void AnimationNodeOneShot::set_autorestart_delay(double p_time) {
 
 double AnimationNodeOneShot::get_autorestart_delay() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("get_autorestart_delay")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void AnimationNodeOneShot::set_autorestart_random_delay(double p_time) {
 
 double AnimationNodeOneShot::get_autorestart_random_delay() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("get_autorestart_random_delay")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void AnimationNodeOneShot::set_mix_mode(AnimationNodeOneShot::MixMode p_mode) {
 
 AnimationNodeOneShot::MixMode AnimationNodeOneShot::get_mix_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeOneShot::get_class_static()._native_ptr(), StringName("get_mix_mode")._native_ptr(), 3076550526);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AnimationNodeOneShot::MixMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AnimationNodeOneShot::MixMode(0)));
 	return (AnimationNodeOneShot::MixMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_COMMAND_PALETTE_HPP
-#define GODOT_CPP_EDITOR_COMMAND_PALETTE_HPP
+#pragma once
 
 #include <godot_cpp/classes/confirmation_dialog.hpp>
 #include <godot_cpp/variant/string.hpp>
@@ -62,4 +61,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_COMMAND_PALETTE_HPP

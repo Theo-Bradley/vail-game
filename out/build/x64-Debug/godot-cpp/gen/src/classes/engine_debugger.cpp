@@ -72,7 +72,7 @@ EngineDebugger::~EngineDebugger() {
 
 bool EngineDebugger::is_active() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EngineDebugger::get_class_static()._native_ptr(), StringName("is_active")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,13 +90,13 @@ void EngineDebugger::unregister_profiler(const StringName &p_name) {
 
 bool EngineDebugger::is_profiling(const StringName &p_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EngineDebugger::get_class_static()._native_ptr(), StringName("is_profiling")._native_ptr(), 2041966384);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
 bool EngineDebugger::has_profiler(const StringName &p_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EngineDebugger::get_class_static()._native_ptr(), StringName("has_profiler")._native_ptr(), 2041966384);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -128,7 +128,7 @@ void EngineDebugger::unregister_message_capture(const StringName &p_name) {
 
 bool EngineDebugger::has_capture(const StringName &p_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EngineDebugger::get_class_static()._native_ptr(), StringName("has_capture")._native_ptr(), 2041966384);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -174,7 +174,7 @@ void EngineDebugger::set_lines_left(int32_t p_lines) {
 
 int32_t EngineDebugger::get_lines_left() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EngineDebugger::get_class_static()._native_ptr(), StringName("get_lines_left")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -188,13 +188,13 @@ void EngineDebugger::set_depth(int32_t p_depth) {
 
 int32_t EngineDebugger::get_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EngineDebugger::get_class_static()._native_ptr(), StringName("get_depth")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool EngineDebugger::is_breakpoint(int32_t p_line, const StringName &p_source) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EngineDebugger::get_class_static()._native_ptr(), StringName("is_breakpoint")._native_ptr(), 921227809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_line_encoded, &p_source);
@@ -202,7 +202,7 @@ bool EngineDebugger::is_breakpoint(int32_t p_line, const StringName &p_source) c
 
 bool EngineDebugger::is_skipping_breakpoints() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EngineDebugger::get_class_static()._native_ptr(), StringName("is_skipping_breakpoints")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

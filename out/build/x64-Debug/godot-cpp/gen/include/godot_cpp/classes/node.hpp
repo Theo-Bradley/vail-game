@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NODE_HPP
-#define GODOT_CPP_NODE_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -39,6 +38,7 @@
 #include <godot_cpp/variant/array.hpp>
 #include <godot_cpp/variant/node_path.hpp>
 #include <godot_cpp/variant/packed_string_array.hpp>
+#include <godot_cpp/variant/rid.hpp>
 #include <godot_cpp/variant/string.hpp>
 #include <godot_cpp/variant/string_name.hpp>
 #include <godot_cpp/variant/typed_array.hpp>
@@ -139,6 +139,7 @@ public:
 	static const int NOTIFICATION_WM_DPI_CHANGE = 1009;
 	static const int NOTIFICATION_VP_MOUSE_ENTER = 1010;
 	static const int NOTIFICATION_VP_MOUSE_EXIT = 1011;
+	static const int NOTIFICATION_WM_POSITION_CHANGED = 1012;
 	static const int NOTIFICATION_OS_MEMORY_WARNING = 2009;
 	static const int NOTIFICATION_TRANSLATION_CHANGED = 2010;
 	static const int NOTIFICATION_WM_ABOUT = 2011;
@@ -149,10 +150,13 @@ public:
 	static const int NOTIFICATION_APPLICATION_FOCUS_IN = 2016;
 	static const int NOTIFICATION_APPLICATION_FOCUS_OUT = 2017;
 	static const int NOTIFICATION_TEXT_SERVER_CHANGED = 2018;
+	static const int NOTIFICATION_ACCESSIBILITY_UPDATE = 3000;
+	static const int NOTIFICATION_ACCESSIBILITY_INVALIDATE = 3001;
 
 	static void print_orphan_nodes();
+	static TypedArray<int> get_orphan_node_ids();
 	void add_sibling(Node *p_sibling, bool p_force_readable_name = false);
-	void set_name(const String &p_name);
+	void set_name(const StringName &p_name);
 	StringName get_name() const;
 	void add_child(Node *p_node, bool p_force_readable_name = false, Node::InternalMode p_internal = (Node::InternalMode)0);
 	void remove_child(Node *p_node);
@@ -218,6 +222,8 @@ public:
 	BitField<Node::ProcessThreadMessages> get_process_thread_messages() const;
 	void set_process_thread_group_order(int32_t p_order);
 	int32_t get_process_thread_group_order() const;
+	void queue_accessibility_update();
+	RID get_accessibility_element() const;
 	void set_display_folded(bool p_fold);
 	bool is_displayed_folded() const;
 	void set_process_internal(bool p_enable);
@@ -231,6 +237,7 @@ public:
 	void reset_physics_interpolation();
 	void set_auto_translate_mode(Node::AutoTranslateMode p_mode);
 	Node::AutoTranslateMode get_auto_translate_mode() const;
+	bool can_auto_translate() const;
 	void set_translation_domain_inherited();
 	Window *get_window() const;
 	Window *get_last_exclusive_window() const;
@@ -251,7 +258,7 @@ public:
 	bool is_multiplayer_authority() const;
 	Ref<MultiplayerAPI> get_multiplayer() const;
 	void rpc_config(const StringName &p_method, const Variant &p_config);
-	Variant get_rpc_config() const;
+	Variant get_node_rpc_config() const;
 	void set_editor_description(const String &p_editor_description);
 	String get_editor_description() const;
 	void set_unique_name_in_owner(bool p_enable);
@@ -265,7 +272,7 @@ private:
 public:
 	template <typename... Args>
 	Error rpc(const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -279,7 +286,7 @@ private:
 public:
 	template <typename... Args>
 	Error rpc_id(int64_t p_peer_id, const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 2 + sizeof...(Args)> variant_args{ Variant(p_peer_id), Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 2 + sizeof...(Args)> variant_args{{ Variant(p_peer_id), Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 2 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -294,7 +301,7 @@ private:
 public:
 	template <typename... Args>
 	Variant call_deferred_thread_group(const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -310,7 +317,7 @@ private:
 public:
 	template <typename... Args>
 	Variant call_thread_safe(const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -325,10 +332,12 @@ public:
 	virtual void _exit_tree();
 	virtual void _ready();
 	virtual PackedStringArray _get_configuration_warnings() const;
+	virtual PackedStringArray _get_accessibility_configuration_warnings() const;
 	virtual void _input(const Ref<InputEvent> &p_event);
 	virtual void _shortcut_input(const Ref<InputEvent> &p_event);
 	virtual void _unhandled_input(const Ref<InputEvent> &p_event);
 	virtual void _unhandled_key_input(const Ref<InputEvent> &p_event);
+	virtual RID _get_focused_accessibility_element() const;
 
 protected:
 	template <typename T, typename B>
@@ -352,6 +361,9 @@ protected:
 		if constexpr (!std::is_same_v<decltype(&B::_get_configuration_warnings), decltype(&T::_get_configuration_warnings)>) {
 			BIND_VIRTUAL_METHOD(T, _get_configuration_warnings, 1139954409);
 		}
+		if constexpr (!std::is_same_v<decltype(&B::_get_accessibility_configuration_warnings), decltype(&T::_get_accessibility_configuration_warnings)>) {
+			BIND_VIRTUAL_METHOD(T, _get_accessibility_configuration_warnings, 1139954409);
+		}
 		if constexpr (!std::is_same_v<decltype(&B::_input), decltype(&T::_input)>) {
 			BIND_VIRTUAL_METHOD(T, _input, 3754044979);
 		}
@@ -364,7 +376,12 @@ protected:
 		if constexpr (!std::is_same_v<decltype(&B::_unhandled_key_input), decltype(&T::_unhandled_key_input)>) {
 			BIND_VIRTUAL_METHOD(T, _unhandled_key_input, 3754044979);
 		}
+		if constexpr (!std::is_same_v<decltype(&B::_get_focused_accessibility_element), decltype(&T::_get_focused_accessibility_element)>) {
+			BIND_VIRTUAL_METHOD(T, _get_focused_accessibility_element, 2944877500);
+		}
 	}
+
+	String _to_string() const { return (!get_name().is_empty() ? String(get_name()) + ":" : "") + Object::_to_string(); }
 
 public:
 	template <typename T>
@@ -381,4 +398,3 @@ VARIANT_ENUM_CAST(Node::DuplicateFlags);
 VARIANT_ENUM_CAST(Node::InternalMode);
 VARIANT_ENUM_CAST(Node::AutoTranslateMode);
 
-#endif // ! GODOT_CPP_NODE_HPP

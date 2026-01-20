@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TWEEN_HPP
-#define GODOT_CPP_TWEEN_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -133,4 +132,3 @@ VARIANT_ENUM_CAST(Tween::TweenPauseMode);
 VARIANT_ENUM_CAST(Tween::TransitionType);
 VARIANT_ENUM_CAST(Tween::EaseType);
 
-#endif // ! GODOT_CPP_TWEEN_HPP

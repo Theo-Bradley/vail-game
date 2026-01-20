@@ -72,7 +72,7 @@ void EditorPlugin::add_control_to_container(EditorPlugin::CustomControlContainer
 
 Button *EditorPlugin::add_control_to_bottom_panel(Control *p_control, const String &p_title, const Ref<Shortcut> &p_shortcut) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorPlugin::get_class_static()._native_ptr(), StringName("add_control_to_bottom_panel")._native_ptr(), 111032269);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Button>(_gde_method_bind, _owner, (p_control != nullptr ? &p_control->_owner : nullptr), &p_title, (p_shortcut != nullptr ? &p_shortcut->_owner : nullptr));
 }
 
@@ -130,7 +130,7 @@ void EditorPlugin::remove_tool_menu_item(const String &p_name) {
 
 PopupMenu *EditorPlugin::get_export_as_menu() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorPlugin::get_class_static()._native_ptr(), StringName("get_export_as_menu")._native_ptr(), 1775878644);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<PopupMenu>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void EditorPlugin::remove_autoload_singleton(const String &p_name) {
 
 int32_t EditorPlugin::update_overlays() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorPlugin::get_class_static()._native_ptr(), StringName("update_overlays")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -178,7 +178,7 @@ void EditorPlugin::hide_bottom_panel() {
 
 EditorUndoRedoManager *EditorPlugin::get_undo_redo() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorPlugin::get_class_static()._native_ptr(), StringName("get_undo_redo")._native_ptr(), 773492341);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorUndoRedoManager>(_gde_method_bind, _owner);
 }
 
@@ -342,13 +342,13 @@ void EditorPlugin::remove_context_menu_plugin(const Ref<EditorContextMenuPlugin>
 
 EditorInterface *EditorPlugin::get_editor_interface() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorPlugin::get_class_static()._native_ptr(), StringName("get_editor_interface")._native_ptr(), 4223731786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorInterface>(_gde_method_bind, _owner);
 }
 
 ScriptCreateDialog *EditorPlugin::get_script_create_dialog() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorPlugin::get_class_static()._native_ptr(), StringName("get_script_create_dialog")._native_ptr(), 3121871482);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<ScriptCreateDialog>(_gde_method_bind, _owner);
 }
 
@@ -366,7 +366,7 @@ void EditorPlugin::remove_debugger_plugin(const Ref<EditorDebuggerPlugin> &p_scr
 
 String EditorPlugin::get_plugin_version() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorPlugin::get_class_static()._native_ptr(), StringName("get_plugin_version")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

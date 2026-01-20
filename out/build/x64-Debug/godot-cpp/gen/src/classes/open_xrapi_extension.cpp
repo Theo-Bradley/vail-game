@@ -36,7 +36,7 @@
 #include <godot_cpp/core/engine_ptrcall.hpp>
 #include <godot_cpp/core/error_macros.hpp>
 
-#include <godot_cpp/classes/open_xr_extension_wrapper_extension.hpp>
+#include <godot_cpp/classes/open_xr_extension_wrapper.hpp>
 #include <godot_cpp/variant/array.hpp>
 #include <godot_cpp/variant/rect2i.hpp>
 #include <godot_cpp/variant/vector2i.hpp>
@@ -45,31 +45,31 @@ namespace godot {
 
 uint64_t OpenXRAPIExtension::get_instance() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_instance")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t OpenXRAPIExtension::get_system_id() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_system_id")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t OpenXRAPIExtension::get_session() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_session")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 Transform3D OpenXRAPIExtension::transform_from_pose(const void *p_pose) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("transform_from_pose")._native_ptr(), 2963875352);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_pose);
 }
 
 bool OpenXRAPIExtension::xr_result(uint64_t p_result, const String &p_format, const Array &p_args) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("xr_result")._native_ptr(), 3886436197);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_result_encoded;
 	PtrToArg<int64_t>::encode(p_result, &p_result_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_result_encoded, &p_format, &p_args);
@@ -77,7 +77,7 @@ bool OpenXRAPIExtension::xr_result(uint64_t p_result, const String &p_format, co
 
 bool OpenXRAPIExtension::openxr_is_enabled(bool p_check_run_in_editor) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("openxr_is_enabled")._native_ptr(), 2703660260);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int8_t p_check_run_in_editor_encoded;
 	PtrToArg<bool>::encode(p_check_run_in_editor, &p_check_run_in_editor_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, nullptr, &p_check_run_in_editor_encoded);
@@ -85,13 +85,13 @@ bool OpenXRAPIExtension::openxr_is_enabled(bool p_check_run_in_editor) {
 
 uint64_t OpenXRAPIExtension::get_instance_proc_addr(const String &p_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_instance_proc_addr")._native_ptr(), 1597066294);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_name);
 }
 
 String OpenXRAPIExtension::get_error_string(uint64_t p_result) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_error_string")._native_ptr(), 990163283);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_result_encoded;
 	PtrToArg<int64_t>::encode(p_result, &p_result_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_result_encoded);
@@ -99,7 +99,7 @@ String OpenXRAPIExtension::get_error_string(uint64_t p_result) {
 
 String OpenXRAPIExtension::get_swapchain_format_name(int64_t p_swapchain_format) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_swapchain_format_name")._native_ptr(), 990163283);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_swapchain_format_encoded;
 	PtrToArg<int64_t>::encode(p_swapchain_format, &p_swapchain_format_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_swapchain_format_encoded);
@@ -135,93 +135,111 @@ void OpenXRAPIExtension::insert_debug_label(const String &p_label_name) {
 
 bool OpenXRAPIExtension::is_initialized() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("is_initialized")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool OpenXRAPIExtension::is_running() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("is_running")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void OpenXRAPIExtension::set_custom_play_space(const void *p_space) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("set_custom_play_space")._native_ptr(), 1286410249);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_space);
 }
 
 uint64_t OpenXRAPIExtension::get_play_space() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_play_space")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 int64_t OpenXRAPIExtension::get_predicted_display_time() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_predicted_display_time")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int64_t OpenXRAPIExtension::get_next_frame_time() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_next_frame_time")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool OpenXRAPIExtension::can_render() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("can_render")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 RID OpenXRAPIExtension::find_action(const String &p_name, const RID &p_action_set) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("find_action")._native_ptr(), 4106179378);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_name, &p_action_set);
 }
 
 uint64_t OpenXRAPIExtension::action_get_handle(const RID &p_action) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("action_get_handle")._native_ptr(), 3917799429);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_action);
 }
 
 uint64_t OpenXRAPIExtension::get_hand_tracker(int32_t p_hand_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_hand_tracker")._native_ptr(), 3744713108);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_hand_index_encoded;
 	PtrToArg<int64_t>::encode(p_hand_index, &p_hand_index_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_hand_index_encoded);
 }
 
-void OpenXRAPIExtension::register_composition_layer_provider(OpenXRExtensionWrapperExtension *p_extension) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("register_composition_layer_provider")._native_ptr(), 1997997368);
+void OpenXRAPIExtension::register_composition_layer_provider(OpenXRExtensionWrapper *p_extension) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("register_composition_layer_provider")._native_ptr(), 1477360496);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_extension != nullptr ? &p_extension->_owner : nullptr));
 }
 
-void OpenXRAPIExtension::unregister_composition_layer_provider(OpenXRExtensionWrapperExtension *p_extension) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("unregister_composition_layer_provider")._native_ptr(), 1997997368);
+void OpenXRAPIExtension::unregister_composition_layer_provider(OpenXRExtensionWrapper *p_extension) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("unregister_composition_layer_provider")._native_ptr(), 1477360496);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_extension != nullptr ? &p_extension->_owner : nullptr));
 }
 
-void OpenXRAPIExtension::register_projection_views_extension(OpenXRExtensionWrapperExtension *p_extension) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("register_projection_views_extension")._native_ptr(), 1997997368);
+void OpenXRAPIExtension::register_projection_views_extension(OpenXRExtensionWrapper *p_extension) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("register_projection_views_extension")._native_ptr(), 1477360496);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_extension != nullptr ? &p_extension->_owner : nullptr));
 }
 
-void OpenXRAPIExtension::unregister_projection_views_extension(OpenXRExtensionWrapperExtension *p_extension) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("unregister_projection_views_extension")._native_ptr(), 1997997368);
+void OpenXRAPIExtension::unregister_projection_views_extension(OpenXRExtensionWrapper *p_extension) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("unregister_projection_views_extension")._native_ptr(), 1477360496);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_extension != nullptr ? &p_extension->_owner : nullptr));
+}
+
+void OpenXRAPIExtension::register_frame_info_extension(OpenXRExtensionWrapper *p_extension) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("register_frame_info_extension")._native_ptr(), 1477360496);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_extension != nullptr ? &p_extension->_owner : nullptr));
+}
+
+void OpenXRAPIExtension::unregister_frame_info_extension(OpenXRExtensionWrapper *p_extension) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("unregister_frame_info_extension")._native_ptr(), 1477360496);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_extension != nullptr ? &p_extension->_owner : nullptr));
 }
 
 double OpenXRAPIExtension::get_render_state_z_near() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_render_state_z_near")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 double OpenXRAPIExtension::get_render_state_z_far() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_render_state_z_far")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -245,13 +263,13 @@ void OpenXRAPIExtension::set_velocity_target_size(const Vector2i &p_target_size)
 
 PackedInt64Array OpenXRAPIExtension::get_supported_swapchain_formats() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_supported_swapchain_formats")._native_ptr(), 3851388692);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt64Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt64Array()));
 	return internal::_call_native_mb_ret<PackedInt64Array>(_gde_method_bind, _owner);
 }
 
 uint64_t OpenXRAPIExtension::openxr_swapchain_create(uint64_t p_create_flags, uint64_t p_usage_flags, int64_t p_swapchain_format, uint32_t p_width, uint32_t p_height, uint32_t p_sample_count, uint32_t p_array_size) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("openxr_swapchain_create")._native_ptr(), 2162228999);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_create_flags_encoded;
 	PtrToArg<int64_t>::encode(p_create_flags, &p_create_flags_encoded);
 	int64_t p_usage_flags_encoded;
@@ -279,7 +297,7 @@ void OpenXRAPIExtension::openxr_swapchain_free(uint64_t p_swapchain) {
 
 uint64_t OpenXRAPIExtension::openxr_swapchain_get_swapchain(uint64_t p_swapchain) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("openxr_swapchain_get_swapchain")._native_ptr(), 3744713108);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_swapchain_encoded;
 	PtrToArg<int64_t>::encode(p_swapchain, &p_swapchain_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_swapchain_encoded);
@@ -295,7 +313,7 @@ void OpenXRAPIExtension::openxr_swapchain_acquire(uint64_t p_swapchain) {
 
 RID OpenXRAPIExtension::openxr_swapchain_get_image(uint64_t p_swapchain) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("openxr_swapchain_get_image")._native_ptr(), 937000113);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_swapchain_encoded;
 	PtrToArg<int64_t>::encode(p_swapchain, &p_swapchain_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_swapchain_encoded);
@@ -311,7 +329,7 @@ void OpenXRAPIExtension::openxr_swapchain_release(uint64_t p_swapchain) {
 
 uint64_t OpenXRAPIExtension::get_projection_layer() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("get_projection_layer")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
@@ -331,7 +349,7 @@ void OpenXRAPIExtension::set_emulate_environment_blend_mode_alpha_blend(bool p_e
 
 OpenXRAPIExtension::OpenXRAlphaBlendModeSupport OpenXRAPIExtension::is_environment_blend_mode_alpha_supported() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAPIExtension::get_class_static()._native_ptr(), StringName("is_environment_blend_mode_alpha_supported")._native_ptr(), 1579290861);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, OpenXRAPIExtension::OpenXRAlphaBlendModeSupport(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (OpenXRAPIExtension::OpenXRAlphaBlendModeSupport(0)));
 	return (OpenXRAPIExtension::OpenXRAlphaBlendModeSupport)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

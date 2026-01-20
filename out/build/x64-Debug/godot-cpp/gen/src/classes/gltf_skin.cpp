@@ -42,7 +42,7 @@ namespace godot {
 
 int32_t GLTFSkin::get_skin_root() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_skin_root")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -56,7 +56,7 @@ void GLTFSkin::set_skin_root(int32_t p_skin_root) {
 
 PackedInt32Array GLTFSkin::get_joints_original() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_joints_original")._native_ptr(), 969006518);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -68,7 +68,7 @@ void GLTFSkin::set_joints_original(const PackedInt32Array &p_joints_original) {
 
 TypedArray<Transform3D> GLTFSkin::get_inverse_binds() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_inverse_binds")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Transform3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Transform3D>()));
 	return internal::_call_native_mb_ret<TypedArray<Transform3D>>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void GLTFSkin::set_inverse_binds(const TypedArray<Transform3D> &p_inverse_binds)
 
 PackedInt32Array GLTFSkin::get_joints() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_joints")._native_ptr(), 969006518);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void GLTFSkin::set_joints(const PackedInt32Array &p_joints) {
 
 PackedInt32Array GLTFSkin::get_non_joints() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_non_joints")._native_ptr(), 969006518);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void GLTFSkin::set_non_joints(const PackedInt32Array &p_non_joints) {
 
 PackedInt32Array GLTFSkin::get_roots() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_roots")._native_ptr(), 969006518);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void GLTFSkin::set_roots(const PackedInt32Array &p_roots) {
 
 int32_t GLTFSkin::get_skeleton() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_skeleton")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void GLTFSkin::set_skeleton(int32_t p_skeleton) {
 
 Dictionary GLTFSkin::get_joint_i_to_bone_i() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_joint_i_to_bone_i")._native_ptr(), 2382534195);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void GLTFSkin::set_joint_i_to_bone_i(const Dictionary &p_joint_i_to_bone_i) {
 
 Dictionary GLTFSkin::get_joint_i_to_name() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_joint_i_to_name")._native_ptr(), 2382534195);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void GLTFSkin::set_joint_i_to_name(const Dictionary &p_joint_i_to_name) {
 
 Ref<Skin> GLTFSkin::get_godot_skin() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFSkin::get_class_static()._native_ptr(), StringName("get_godot_skin")._native_ptr(), 1032037385);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Skin>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Skin>()));
 	return Ref<Skin>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Skin>(_gde_method_bind, _owner));
 }
 

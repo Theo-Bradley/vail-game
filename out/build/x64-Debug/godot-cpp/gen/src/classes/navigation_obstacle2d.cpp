@@ -40,7 +40,7 @@ namespace godot {
 
 RID NavigationObstacle2D::get_rid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_rid")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -54,7 +54,7 @@ void NavigationObstacle2D::set_avoidance_enabled(bool p_enabled) {
 
 bool NavigationObstacle2D::get_avoidance_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_avoidance_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -66,7 +66,7 @@ void NavigationObstacle2D::set_navigation_map(const RID &p_navigation_map) {
 
 RID NavigationObstacle2D::get_navigation_map() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_navigation_map")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void NavigationObstacle2D::set_radius(float p_radius) {
 
 float NavigationObstacle2D::get_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void NavigationObstacle2D::set_velocity(const Vector2 &p_velocity) {
 
 Vector2 NavigationObstacle2D::get_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_velocity")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void NavigationObstacle2D::set_vertices(const PackedVector2Array &p_vertices) {
 
 PackedVector2Array NavigationObstacle2D::get_vertices() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_vertices")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void NavigationObstacle2D::set_avoidance_layers(uint32_t p_layers) {
 
 uint32_t NavigationObstacle2D::get_avoidance_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_avoidance_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -134,7 +134,7 @@ void NavigationObstacle2D::set_avoidance_layer_value(int32_t p_layer_number, boo
 
 bool NavigationObstacle2D::get_avoidance_layer_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_avoidance_layer_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -150,7 +150,7 @@ void NavigationObstacle2D::set_affect_navigation_mesh(bool p_enabled) {
 
 bool NavigationObstacle2D::get_affect_navigation_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_affect_navigation_mesh")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -164,7 +164,7 @@ void NavigationObstacle2D::set_carve_navigation_mesh(bool p_enabled) {
 
 bool NavigationObstacle2D::get_carve_navigation_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationObstacle2D::get_class_static()._native_ptr(), StringName("get_carve_navigation_mesh")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

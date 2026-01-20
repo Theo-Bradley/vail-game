@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FBX_STATE_HPP
-#define GODOT_CPP_FBX_STATE_HPP
+#pragma once
 
 #include <godot_cpp/classes/gltf_state.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -60,4 +59,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_FBX_STATE_HPP

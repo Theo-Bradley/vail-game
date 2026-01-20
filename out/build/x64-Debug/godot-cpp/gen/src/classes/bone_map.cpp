@@ -42,7 +42,7 @@ namespace godot {
 
 Ref<SkeletonProfile> BoneMap::get_profile() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneMap::get_class_static()._native_ptr(), StringName("get_profile")._native_ptr(), 4291782652);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<SkeletonProfile>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<SkeletonProfile>()));
 	return Ref<SkeletonProfile>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<SkeletonProfile>(_gde_method_bind, _owner));
 }
 
@@ -54,7 +54,7 @@ void BoneMap::set_profile(const Ref<SkeletonProfile> &p_profile) {
 
 StringName BoneMap::get_skeleton_bone_name(const StringName &p_profile_bone_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneMap::get_class_static()._native_ptr(), StringName("get_skeleton_bone_name")._native_ptr(), 1965194235);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_profile_bone_name);
 }
 
@@ -66,7 +66,7 @@ void BoneMap::set_skeleton_bone_name(const StringName &p_profile_bone_name, cons
 
 StringName BoneMap::find_profile_bone_name(const StringName &p_skeleton_bone_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BoneMap::get_class_static()._native_ptr(), StringName("find_profile_bone_name")._native_ptr(), 1965194235);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_skeleton_bone_name);
 }
 

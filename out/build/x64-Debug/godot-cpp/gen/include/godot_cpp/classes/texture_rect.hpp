@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TEXTURE_RECT_HPP
-#define GODOT_CPP_TEXTURE_RECT_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -92,4 +91,3 @@ public:
 VARIANT_ENUM_CAST(TextureRect::ExpandMode);
 VARIANT_ENUM_CAST(TextureRect::StretchMode);
 
-#endif // ! GODOT_CPP_TEXTURE_RECT_HPP

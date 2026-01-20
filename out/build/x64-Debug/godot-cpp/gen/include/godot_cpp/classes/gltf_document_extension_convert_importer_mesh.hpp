@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GLTF_DOCUMENT_EXTENSION_CONVERT_IMPORTER_MESH_HPP
-#define GODOT_CPP_GLTF_DOCUMENT_EXTENSION_CONVERT_IMPORTER_MESH_HPP
+#pragma once
 
 #include <godot_cpp/classes/gltf_document_extension.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -57,4 +56,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_GLTF_DOCUMENT_EXTENSION_CONVERT_IMPORTER_MESH_HPP

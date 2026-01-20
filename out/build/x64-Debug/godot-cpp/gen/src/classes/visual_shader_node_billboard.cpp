@@ -48,7 +48,7 @@ void VisualShaderNodeBillboard::set_billboard_type(VisualShaderNodeBillboard::Bi
 
 VisualShaderNodeBillboard::BillboardType VisualShaderNodeBillboard::get_billboard_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeBillboard::get_class_static()._native_ptr(), StringName("get_billboard_type")._native_ptr(), 3724188517);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeBillboard::BillboardType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeBillboard::BillboardType(0)));
 	return (VisualShaderNodeBillboard::BillboardType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeBillboard::set_keep_scale_enabled(bool p_enabled) {
 
 bool VisualShaderNodeBillboard::is_keep_scale_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeBillboard::get_class_static()._native_ptr(), StringName("is_keep_scale_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_EFFECT_SPECTRUM_ANALYZER_INSTANCE_HPP
-#define GODOT_CPP_AUDIO_EFFECT_SPECTRUM_ANALYZER_INSTANCE_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_effect_instance.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -67,4 +66,3 @@ public:
 
 VARIANT_ENUM_CAST(AudioEffectSpectrumAnalyzerInstance::MagnitudeMode);
 
-#endif // ! GODOT_CPP_AUDIO_EFFECT_SPECTRUM_ANALYZER_INSTANCE_HPP

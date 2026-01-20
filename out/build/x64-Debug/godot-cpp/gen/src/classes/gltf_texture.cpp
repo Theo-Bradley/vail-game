@@ -40,7 +40,7 @@ namespace godot {
 
 int32_t GLTFTexture::get_src_image() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFTexture::get_class_static()._native_ptr(), StringName("get_src_image")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -54,7 +54,7 @@ void GLTFTexture::set_src_image(int32_t p_src_image) {
 
 int32_t GLTFTexture::get_sampler() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFTexture::get_class_static()._native_ptr(), StringName("get_sampler")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

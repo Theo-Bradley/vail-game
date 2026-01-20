@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TIME_HPP
-#define GODOT_CPP_TIME_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/dictionary.hpp>
@@ -114,4 +113,3 @@ public:
 VARIANT_ENUM_CAST(Time::Month);
 VARIANT_ENUM_CAST(Time::Weekday);
 
-#endif // ! GODOT_CPP_TIME_HPP

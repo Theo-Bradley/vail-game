@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CPU_PARTICLES3D_HPP
-#define GODOT_CPP_CPU_PARTICLES3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/geometry_instance3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -203,4 +202,3 @@ VARIANT_ENUM_CAST(CPUParticles3D::Parameter);
 VARIANT_ENUM_CAST(CPUParticles3D::ParticleFlags);
 VARIANT_ENUM_CAST(CPUParticles3D::EmissionShape);
 
-#endif // ! GODOT_CPP_CPU_PARTICLES3D_HPP

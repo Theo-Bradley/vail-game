@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SPRITE_BASE3D_HPP
-#define GODOT_CPP_SPRITE_BASE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/base_material3d.hpp>
 #include <godot_cpp/classes/geometry_instance3d.hpp>
@@ -118,4 +117,3 @@ public:
 VARIANT_ENUM_CAST(SpriteBase3D::DrawFlags);
 VARIANT_ENUM_CAST(SpriteBase3D::AlphaCutMode);
 
-#endif // ! GODOT_CPP_SPRITE_BASE3D_HPP

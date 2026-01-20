@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CONFIRMATION_DIALOG_HPP
-#define GODOT_CPP_CONFIRMATION_DIALOG_HPP
+#pragma once
 
 #include <godot_cpp/classes/accept_dialog.hpp>
 #include <godot_cpp/variant/string.hpp>
@@ -63,4 +62,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_CONFIRMATION_DIALOG_HPP

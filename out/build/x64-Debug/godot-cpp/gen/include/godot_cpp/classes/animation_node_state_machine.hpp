@@ -30,12 +30,12 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_NODE_STATE_MACHINE_HPP
-#define GODOT_CPP_ANIMATION_NODE_STATE_MACHINE_HPP
+#pragma once
 
 #include <godot_cpp/classes/animation_root_node.hpp>
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/variant/string_name.hpp>
+#include <godot_cpp/variant/typed_array.hpp>
 #include <godot_cpp/variant/vector2.hpp>
 
 #include <godot_cpp/core/class_db.hpp>
@@ -64,6 +64,7 @@ public:
 	void rename_node(const StringName &p_name, const StringName &p_new_name);
 	bool has_node(const StringName &p_name) const;
 	StringName get_node_name(const Ref<AnimationNode> &p_node) const;
+	TypedArray<StringName> get_node_list() const;
 	void set_node_position(const StringName &p_name, const Vector2 &p_position);
 	Vector2 get_node_position(const StringName &p_name) const;
 	bool has_transition(const StringName &p_from, const StringName &p_to) const;
@@ -96,4 +97,3 @@ public:
 
 VARIANT_ENUM_CAST(AnimationNodeStateMachine::StateMachineType);
 
-#endif // ! GODOT_CPP_ANIMATION_NODE_STATE_MACHINE_HPP

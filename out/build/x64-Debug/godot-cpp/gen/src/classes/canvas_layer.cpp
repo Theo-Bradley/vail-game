@@ -48,7 +48,7 @@ void CanvasLayer::set_layer(int32_t p_layer) {
 
 int32_t CanvasLayer::get_layer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_layer")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void CanvasLayer::set_visible(bool p_visible) {
 
 bool CanvasLayer::is_visible() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("is_visible")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -86,13 +86,13 @@ void CanvasLayer::set_transform(const Transform2D &p_transform) {
 
 Transform2D CanvasLayer::get_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
 Transform2D CanvasLayer::get_final_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_final_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void CanvasLayer::set_offset(const Vector2 &p_offset) {
 
 Vector2 CanvasLayer::get_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void CanvasLayer::set_rotation(float p_radians) {
 
 float CanvasLayer::get_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_rotation")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void CanvasLayer::set_scale(const Vector2 &p_scale) {
 
 Vector2 CanvasLayer::get_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_scale")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void CanvasLayer::set_follow_viewport(bool p_enable) {
 
 bool CanvasLayer::is_following_viewport() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("is_following_viewport")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void CanvasLayer::set_follow_viewport_scale(float p_scale) {
 
 float CanvasLayer::get_follow_viewport_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_follow_viewport_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -170,13 +170,13 @@ void CanvasLayer::set_custom_viewport(Node *p_viewport) {
 
 Node *CanvasLayer::get_custom_viewport() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_custom_viewport")._native_ptr(), 3160264692);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node>(_gde_method_bind, _owner);
 }
 
 RID CanvasLayer::get_canvas() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasLayer::get_class_static()._native_ptr(), StringName("get_canvas")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 

@@ -48,7 +48,7 @@ void Path2D::set_curve(const Ref<Curve2D> &p_curve) {
 
 Ref<Curve2D> Path2D::get_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Path2D::get_class_static()._native_ptr(), StringName("get_curve")._native_ptr(), 660369445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve2D>()));
 	return Ref<Curve2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve2D>(_gde_method_bind, _owner));
 }
 

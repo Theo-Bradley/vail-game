@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_INSTANCE_PLACEHOLDER_HPP
-#define GODOT_CPP_INSTANCE_PLACEHOLDER_HPP
+#pragma once
 
 #include <godot_cpp/classes/node.hpp>
 #include <godot_cpp/classes/packed_scene.hpp>
@@ -64,4 +63,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_INSTANCE_PLACEHOLDER_HPP

@@ -52,7 +52,7 @@ namespace godot {
 
 RID CanvasItem::get_canvas_item() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_canvas_item")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -66,13 +66,13 @@ void CanvasItem::set_visible(bool p_visible) {
 
 bool CanvasItem::is_visible() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("is_visible")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool CanvasItem::is_visible_in_tree() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("is_visible_in_tree")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -110,7 +110,7 @@ void CanvasItem::set_as_top_level(bool p_enable) {
 
 bool CanvasItem::is_set_as_top_level() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("is_set_as_top_level")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -124,7 +124,7 @@ void CanvasItem::set_light_mask(int32_t p_light_mask) {
 
 int32_t CanvasItem::get_light_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_light_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -136,7 +136,7 @@ void CanvasItem::set_modulate(const Color &p_modulate) {
 
 Color CanvasItem::get_modulate() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_modulate")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -148,7 +148,7 @@ void CanvasItem::set_self_modulate(const Color &p_self_modulate) {
 
 Color CanvasItem::get_self_modulate() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_self_modulate")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -162,7 +162,7 @@ void CanvasItem::set_z_index(int32_t p_z_index) {
 
 int32_t CanvasItem::get_z_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_z_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -176,7 +176,7 @@ void CanvasItem::set_z_as_relative(bool p_enable) {
 
 bool CanvasItem::is_z_relative() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("is_z_relative")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -190,7 +190,7 @@ void CanvasItem::set_y_sort_enabled(bool p_enabled) {
 
 bool CanvasItem::is_y_sort_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("is_y_sort_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -204,7 +204,7 @@ void CanvasItem::set_draw_behind_parent(bool p_enable) {
 
 bool CanvasItem::is_draw_behind_parent_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("is_draw_behind_parent_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -384,8 +384,8 @@ void CanvasItem::draw_colored_polygon(const PackedVector2Array &p_points, const 
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_points, &p_color, &p_uvs, (p_texture != nullptr ? &p_texture->_owner : nullptr));
 }
 
-void CanvasItem::draw_string(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment, float p_width, int32_t p_font_size, const Color &p_modulate, BitField<TextServer::JustificationFlag> p_justification_flags, TextServer::Direction p_direction, TextServer::Orientation p_orientation) const {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_string")._native_ptr(), 728290553);
+void CanvasItem::draw_string(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment, float p_width, int32_t p_font_size, const Color &p_modulate, BitField<TextServer::JustificationFlag> p_justification_flags, TextServer::Direction p_direction, TextServer::Orientation p_orientation, float p_oversampling) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_string")._native_ptr(), 719605945);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	int64_t p_alignment_encoded;
 	PtrToArg<int64_t>::encode(p_alignment, &p_alignment_encoded);
@@ -397,47 +397,13 @@ void CanvasItem::draw_string(const Ref<Font> &p_font, const Vector2 &p_pos, cons
 	PtrToArg<int64_t>::encode(p_direction, &p_direction_encoded);
 	int64_t p_orientation_encoded;
 	PtrToArg<int64_t>::encode(p_orientation, &p_orientation_encoded);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_text, &p_alignment_encoded, &p_width_encoded, &p_font_size_encoded, &p_modulate, &p_justification_flags, &p_direction_encoded, &p_orientation_encoded);
+	double p_oversampling_encoded;
+	PtrToArg<double>::encode(p_oversampling, &p_oversampling_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_text, &p_alignment_encoded, &p_width_encoded, &p_font_size_encoded, &p_modulate, &p_justification_flags, &p_direction_encoded, &p_orientation_encoded, &p_oversampling_encoded);
 }
 
-void CanvasItem::draw_multiline_string(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment, float p_width, int32_t p_font_size, int32_t p_max_lines, const Color &p_modulate, BitField<TextServer::LineBreakFlag> p_brk_flags, BitField<TextServer::JustificationFlag> p_justification_flags, TextServer::Direction p_direction, TextServer::Orientation p_orientation) const {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_multiline_string")._native_ptr(), 1927038192);
-	CHECK_METHOD_BIND(_gde_method_bind);
-	int64_t p_alignment_encoded;
-	PtrToArg<int64_t>::encode(p_alignment, &p_alignment_encoded);
-	double p_width_encoded;
-	PtrToArg<double>::encode(p_width, &p_width_encoded);
-	int64_t p_font_size_encoded;
-	PtrToArg<int64_t>::encode(p_font_size, &p_font_size_encoded);
-	int64_t p_max_lines_encoded;
-	PtrToArg<int64_t>::encode(p_max_lines, &p_max_lines_encoded);
-	int64_t p_direction_encoded;
-	PtrToArg<int64_t>::encode(p_direction, &p_direction_encoded);
-	int64_t p_orientation_encoded;
-	PtrToArg<int64_t>::encode(p_orientation, &p_orientation_encoded);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_text, &p_alignment_encoded, &p_width_encoded, &p_font_size_encoded, &p_max_lines_encoded, &p_modulate, &p_brk_flags, &p_justification_flags, &p_direction_encoded, &p_orientation_encoded);
-}
-
-void CanvasItem::draw_string_outline(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment, float p_width, int32_t p_font_size, int32_t p_size, const Color &p_modulate, BitField<TextServer::JustificationFlag> p_justification_flags, TextServer::Direction p_direction, TextServer::Orientation p_orientation) const {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_string_outline")._native_ptr(), 340562381);
-	CHECK_METHOD_BIND(_gde_method_bind);
-	int64_t p_alignment_encoded;
-	PtrToArg<int64_t>::encode(p_alignment, &p_alignment_encoded);
-	double p_width_encoded;
-	PtrToArg<double>::encode(p_width, &p_width_encoded);
-	int64_t p_font_size_encoded;
-	PtrToArg<int64_t>::encode(p_font_size, &p_font_size_encoded);
-	int64_t p_size_encoded;
-	PtrToArg<int64_t>::encode(p_size, &p_size_encoded);
-	int64_t p_direction_encoded;
-	PtrToArg<int64_t>::encode(p_direction, &p_direction_encoded);
-	int64_t p_orientation_encoded;
-	PtrToArg<int64_t>::encode(p_orientation, &p_orientation_encoded);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_text, &p_alignment_encoded, &p_width_encoded, &p_font_size_encoded, &p_size_encoded, &p_modulate, &p_justification_flags, &p_direction_encoded, &p_orientation_encoded);
-}
-
-void CanvasItem::draw_multiline_string_outline(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment, float p_width, int32_t p_font_size, int32_t p_max_lines, int32_t p_size, const Color &p_modulate, BitField<TextServer::LineBreakFlag> p_brk_flags, BitField<TextServer::JustificationFlag> p_justification_flags, TextServer::Direction p_direction, TextServer::Orientation p_orientation) const {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_multiline_string_outline")._native_ptr(), 1912318525);
+void CanvasItem::draw_multiline_string(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment, float p_width, int32_t p_font_size, int32_t p_max_lines, const Color &p_modulate, BitField<TextServer::LineBreakFlag> p_brk_flags, BitField<TextServer::JustificationFlag> p_justification_flags, TextServer::Direction p_direction, TextServer::Orientation p_orientation, float p_oversampling) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_multiline_string")._native_ptr(), 2341488182);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	int64_t p_alignment_encoded;
 	PtrToArg<int64_t>::encode(p_alignment, &p_alignment_encoded);
@@ -447,31 +413,77 @@ void CanvasItem::draw_multiline_string_outline(const Ref<Font> &p_font, const Ve
 	PtrToArg<int64_t>::encode(p_font_size, &p_font_size_encoded);
 	int64_t p_max_lines_encoded;
 	PtrToArg<int64_t>::encode(p_max_lines, &p_max_lines_encoded);
+	int64_t p_direction_encoded;
+	PtrToArg<int64_t>::encode(p_direction, &p_direction_encoded);
+	int64_t p_orientation_encoded;
+	PtrToArg<int64_t>::encode(p_orientation, &p_orientation_encoded);
+	double p_oversampling_encoded;
+	PtrToArg<double>::encode(p_oversampling, &p_oversampling_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_text, &p_alignment_encoded, &p_width_encoded, &p_font_size_encoded, &p_max_lines_encoded, &p_modulate, &p_brk_flags, &p_justification_flags, &p_direction_encoded, &p_orientation_encoded, &p_oversampling_encoded);
+}
+
+void CanvasItem::draw_string_outline(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment, float p_width, int32_t p_font_size, int32_t p_size, const Color &p_modulate, BitField<TextServer::JustificationFlag> p_justification_flags, TextServer::Direction p_direction, TextServer::Orientation p_orientation, float p_oversampling) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_string_outline")._native_ptr(), 707403449);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_alignment_encoded;
+	PtrToArg<int64_t>::encode(p_alignment, &p_alignment_encoded);
+	double p_width_encoded;
+	PtrToArg<double>::encode(p_width, &p_width_encoded);
+	int64_t p_font_size_encoded;
+	PtrToArg<int64_t>::encode(p_font_size, &p_font_size_encoded);
 	int64_t p_size_encoded;
 	PtrToArg<int64_t>::encode(p_size, &p_size_encoded);
 	int64_t p_direction_encoded;
 	PtrToArg<int64_t>::encode(p_direction, &p_direction_encoded);
 	int64_t p_orientation_encoded;
 	PtrToArg<int64_t>::encode(p_orientation, &p_orientation_encoded);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_text, &p_alignment_encoded, &p_width_encoded, &p_font_size_encoded, &p_max_lines_encoded, &p_size_encoded, &p_modulate, &p_brk_flags, &p_justification_flags, &p_direction_encoded, &p_orientation_encoded);
+	double p_oversampling_encoded;
+	PtrToArg<double>::encode(p_oversampling, &p_oversampling_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_text, &p_alignment_encoded, &p_width_encoded, &p_font_size_encoded, &p_size_encoded, &p_modulate, &p_justification_flags, &p_direction_encoded, &p_orientation_encoded, &p_oversampling_encoded);
 }
 
-void CanvasItem::draw_char(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_char, int32_t p_font_size, const Color &p_modulate) const {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_char")._native_ptr(), 3339793283);
+void CanvasItem::draw_multiline_string_outline(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_text, HorizontalAlignment p_alignment, float p_width, int32_t p_font_size, int32_t p_max_lines, int32_t p_size, const Color &p_modulate, BitField<TextServer::LineBreakFlag> p_brk_flags, BitField<TextServer::JustificationFlag> p_justification_flags, TextServer::Direction p_direction, TextServer::Orientation p_orientation, float p_oversampling) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_multiline_string_outline")._native_ptr(), 3050414441);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_alignment_encoded;
+	PtrToArg<int64_t>::encode(p_alignment, &p_alignment_encoded);
+	double p_width_encoded;
+	PtrToArg<double>::encode(p_width, &p_width_encoded);
+	int64_t p_font_size_encoded;
+	PtrToArg<int64_t>::encode(p_font_size, &p_font_size_encoded);
+	int64_t p_max_lines_encoded;
+	PtrToArg<int64_t>::encode(p_max_lines, &p_max_lines_encoded);
+	int64_t p_size_encoded;
+	PtrToArg<int64_t>::encode(p_size, &p_size_encoded);
+	int64_t p_direction_encoded;
+	PtrToArg<int64_t>::encode(p_direction, &p_direction_encoded);
+	int64_t p_orientation_encoded;
+	PtrToArg<int64_t>::encode(p_orientation, &p_orientation_encoded);
+	double p_oversampling_encoded;
+	PtrToArg<double>::encode(p_oversampling, &p_oversampling_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_text, &p_alignment_encoded, &p_width_encoded, &p_font_size_encoded, &p_max_lines_encoded, &p_size_encoded, &p_modulate, &p_brk_flags, &p_justification_flags, &p_direction_encoded, &p_orientation_encoded, &p_oversampling_encoded);
+}
+
+void CanvasItem::draw_char(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_char, int32_t p_font_size, const Color &p_modulate, float p_oversampling) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_char")._native_ptr(), 1336210142);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	int64_t p_font_size_encoded;
 	PtrToArg<int64_t>::encode(p_font_size, &p_font_size_encoded);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_char, &p_font_size_encoded, &p_modulate);
+	double p_oversampling_encoded;
+	PtrToArg<double>::encode(p_oversampling, &p_oversampling_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_char, &p_font_size_encoded, &p_modulate, &p_oversampling_encoded);
 }
 
-void CanvasItem::draw_char_outline(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_char, int32_t p_font_size, int32_t p_size, const Color &p_modulate) const {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_char_outline")._native_ptr(), 3302344391);
+void CanvasItem::draw_char_outline(const Ref<Font> &p_font, const Vector2 &p_pos, const String &p_char, int32_t p_font_size, int32_t p_size, const Color &p_modulate, float p_oversampling) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("draw_char_outline")._native_ptr(), 1846384149);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	int64_t p_font_size_encoded;
 	PtrToArg<int64_t>::encode(p_font_size, &p_font_size_encoded);
 	int64_t p_size_encoded;
 	PtrToArg<int64_t>::encode(p_size, &p_size_encoded);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_char, &p_font_size_encoded, &p_size_encoded, &p_modulate);
+	double p_oversampling_encoded;
+	PtrToArg<double>::encode(p_oversampling, &p_oversampling_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_font != nullptr ? &p_font->_owner : nullptr), &p_pos, &p_char, &p_font_size_encoded, &p_size_encoded, &p_modulate, &p_oversampling_encoded);
 }
 
 void CanvasItem::draw_mesh(const Ref<Mesh> &p_mesh, const Ref<Texture2D> &p_texture, const Transform2D &p_transform, const Color &p_modulate) {
@@ -522,73 +534,73 @@ void CanvasItem::draw_end_animation() {
 
 Transform2D CanvasItem::get_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
 Transform2D CanvasItem::get_global_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_global_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
 Transform2D CanvasItem::get_global_transform_with_canvas() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_global_transform_with_canvas")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
 Transform2D CanvasItem::get_viewport_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_viewport_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
 Rect2 CanvasItem::get_viewport_rect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_viewport_rect")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 
 Transform2D CanvasItem::get_canvas_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_canvas_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
 Transform2D CanvasItem::get_screen_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_screen_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
 Vector2 CanvasItem::get_local_mouse_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_local_mouse_position")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 Vector2 CanvasItem::get_global_mouse_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_global_mouse_position")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 RID CanvasItem::get_canvas() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_canvas")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 CanvasLayer *CanvasItem::get_canvas_layer_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_canvas_layer_node")._native_ptr(), 2602762519);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<CanvasLayer>(_gde_method_bind, _owner);
 }
 
 Ref<World2D> CanvasItem::get_world_2d() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_world_2d")._native_ptr(), 2339128592);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<World2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<World2D>()));
 	return Ref<World2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<World2D>(_gde_method_bind, _owner));
 }
 
@@ -600,7 +612,7 @@ void CanvasItem::set_material(const Ref<Material> &p_material) {
 
 Ref<Material> CanvasItem::get_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_material")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 
@@ -612,7 +624,7 @@ void CanvasItem::set_instance_shader_parameter(const StringName &p_name, const V
 
 Variant CanvasItem::get_instance_shader_parameter(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_instance_shader_parameter")._native_ptr(), 2760726917);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -626,7 +638,7 @@ void CanvasItem::set_use_parent_material(bool p_enable) {
 
 bool CanvasItem::get_use_parent_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_use_parent_material")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -640,7 +652,7 @@ void CanvasItem::set_notify_local_transform(bool p_enable) {
 
 bool CanvasItem::is_local_transform_notification_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("is_local_transform_notification_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -654,7 +666,7 @@ void CanvasItem::set_notify_transform(bool p_enable) {
 
 bool CanvasItem::is_transform_notification_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("is_transform_notification_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -666,13 +678,13 @@ void CanvasItem::force_update_transform() {
 
 Vector2 CanvasItem::make_canvas_position_local(const Vector2 &p_viewport_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("make_canvas_position_local")._native_ptr(), 2656412154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_viewport_point);
 }
 
 Ref<InputEvent> CanvasItem::make_input_local(const Ref<InputEvent> &p_event) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("make_input_local")._native_ptr(), 811130057);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<InputEvent>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<InputEvent>()));
 	return Ref<InputEvent>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<InputEvent>(_gde_method_bind, _owner, (p_event != nullptr ? &p_event->_owner : nullptr)));
 }
 
@@ -686,7 +698,7 @@ void CanvasItem::set_visibility_layer(uint32_t p_layer) {
 
 uint32_t CanvasItem::get_visibility_layer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_visibility_layer")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -702,7 +714,7 @@ void CanvasItem::set_visibility_layer_bit(uint32_t p_layer, bool p_enabled) {
 
 bool CanvasItem::get_visibility_layer_bit(uint32_t p_layer) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_visibility_layer_bit")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_encoded;
 	PtrToArg<int64_t>::encode(p_layer, &p_layer_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_encoded);
@@ -718,7 +730,7 @@ void CanvasItem::set_texture_filter(CanvasItem::TextureFilter p_mode) {
 
 CanvasItem::TextureFilter CanvasItem::get_texture_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_texture_filter")._native_ptr(), 121960042);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CanvasItem::TextureFilter(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CanvasItem::TextureFilter(0)));
 	return (CanvasItem::TextureFilter)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -732,7 +744,7 @@ void CanvasItem::set_texture_repeat(CanvasItem::TextureRepeat p_mode) {
 
 CanvasItem::TextureRepeat CanvasItem::get_texture_repeat() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_texture_repeat")._native_ptr(), 2667158319);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CanvasItem::TextureRepeat(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CanvasItem::TextureRepeat(0)));
 	return (CanvasItem::TextureRepeat)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -746,7 +758,7 @@ void CanvasItem::set_clip_children_mode(CanvasItem::ClipChildrenMode p_mode) {
 
 CanvasItem::ClipChildrenMode CanvasItem::get_clip_children_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItem::get_class_static()._native_ptr(), StringName("get_clip_children_mode")._native_ptr(), 3581808349);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CanvasItem::ClipChildrenMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CanvasItem::ClipChildrenMode(0)));
 	return (CanvasItem::ClipChildrenMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

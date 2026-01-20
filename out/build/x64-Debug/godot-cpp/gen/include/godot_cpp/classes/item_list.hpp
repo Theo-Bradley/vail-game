@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ITEM_LIST_HPP
-#define GODOT_CPP_ITEM_LIST_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/node.hpp>
@@ -165,4 +164,3 @@ public:
 VARIANT_ENUM_CAST(ItemList::IconMode);
 VARIANT_ENUM_CAST(ItemList::SelectMode);
 
-#endif // ! GODOT_CPP_ITEM_LIST_HPP

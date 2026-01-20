@@ -70,13 +70,13 @@ Input::~Input() {
 
 bool Input::is_anything_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_anything_pressed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool Input::is_key_pressed(Key p_keycode) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_key_pressed")._native_ptr(), 1938909964);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_keycode_encoded;
 	PtrToArg<int64_t>::encode(p_keycode, &p_keycode_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_keycode_encoded);
@@ -84,7 +84,7 @@ bool Input::is_key_pressed(Key p_keycode) const {
 
 bool Input::is_physical_key_pressed(Key p_keycode) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_physical_key_pressed")._native_ptr(), 1938909964);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_keycode_encoded;
 	PtrToArg<int64_t>::encode(p_keycode, &p_keycode_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_keycode_encoded);
@@ -92,7 +92,7 @@ bool Input::is_physical_key_pressed(Key p_keycode) const {
 
 bool Input::is_key_label_pressed(Key p_keycode) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_key_label_pressed")._native_ptr(), 1938909964);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_keycode_encoded;
 	PtrToArg<int64_t>::encode(p_keycode, &p_keycode_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_keycode_encoded);
@@ -100,7 +100,7 @@ bool Input::is_key_label_pressed(Key p_keycode) const {
 
 bool Input::is_mouse_button_pressed(MouseButton p_button) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_mouse_button_pressed")._native_ptr(), 1821097125);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_button_encoded;
 	PtrToArg<int64_t>::encode(p_button, &p_button_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_button_encoded);
@@ -108,7 +108,7 @@ bool Input::is_mouse_button_pressed(MouseButton p_button) const {
 
 bool Input::is_joy_button_pressed(int32_t p_device, JoyButton p_button) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_joy_button_pressed")._native_ptr(), 787208542);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_device_encoded;
 	PtrToArg<int64_t>::encode(p_device, &p_device_encoded);
 	int64_t p_button_encoded;
@@ -118,7 +118,7 @@ bool Input::is_joy_button_pressed(int32_t p_device, JoyButton p_button) const {
 
 bool Input::is_action_pressed(const StringName &p_action, bool p_exact_match) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_action_pressed")._native_ptr(), 1558498928);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int8_t p_exact_match_encoded;
 	PtrToArg<bool>::encode(p_exact_match, &p_exact_match_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_action, &p_exact_match_encoded);
@@ -126,7 +126,7 @@ bool Input::is_action_pressed(const StringName &p_action, bool p_exact_match) co
 
 bool Input::is_action_just_pressed(const StringName &p_action, bool p_exact_match) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_action_just_pressed")._native_ptr(), 1558498928);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int8_t p_exact_match_encoded;
 	PtrToArg<bool>::encode(p_exact_match, &p_exact_match_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_action, &p_exact_match_encoded);
@@ -134,15 +134,31 @@ bool Input::is_action_just_pressed(const StringName &p_action, bool p_exact_matc
 
 bool Input::is_action_just_released(const StringName &p_action, bool p_exact_match) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_action_just_released")._native_ptr(), 1558498928);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int8_t p_exact_match_encoded;
 	PtrToArg<bool>::encode(p_exact_match, &p_exact_match_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_action, &p_exact_match_encoded);
 }
 
+bool Input::is_action_just_pressed_by_event(const StringName &p_action, const Ref<InputEvent> &p_event, bool p_exact_match) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_action_just_pressed_by_event")._native_ptr(), 551972873);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	int8_t p_exact_match_encoded;
+	PtrToArg<bool>::encode(p_exact_match, &p_exact_match_encoded);
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_action, (p_event != nullptr ? &p_event->_owner : nullptr), &p_exact_match_encoded);
+}
+
+bool Input::is_action_just_released_by_event(const StringName &p_action, const Ref<InputEvent> &p_event, bool p_exact_match) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_action_just_released_by_event")._native_ptr(), 551972873);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	int8_t p_exact_match_encoded;
+	PtrToArg<bool>::encode(p_exact_match, &p_exact_match_encoded);
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_action, (p_event != nullptr ? &p_event->_owner : nullptr), &p_exact_match_encoded);
+}
+
 float Input::get_action_strength(const StringName &p_action, bool p_exact_match) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_action_strength")._native_ptr(), 801543509);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int8_t p_exact_match_encoded;
 	PtrToArg<bool>::encode(p_exact_match, &p_exact_match_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_action, &p_exact_match_encoded);
@@ -150,7 +166,7 @@ float Input::get_action_strength(const StringName &p_action, bool p_exact_match)
 
 float Input::get_action_raw_strength(const StringName &p_action, bool p_exact_match) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_action_raw_strength")._native_ptr(), 801543509);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int8_t p_exact_match_encoded;
 	PtrToArg<bool>::encode(p_exact_match, &p_exact_match_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_action, &p_exact_match_encoded);
@@ -158,13 +174,13 @@ float Input::get_action_raw_strength(const StringName &p_action, bool p_exact_ma
 
 float Input::get_axis(const StringName &p_negative_action, const StringName &p_positive_action) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_axis")._native_ptr(), 1958752504);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_negative_action, &p_positive_action);
 }
 
 Vector2 Input::get_vector(const StringName &p_negative_x, const StringName &p_positive_x, const StringName &p_negative_y, const StringName &p_positive_y, float p_deadzone) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_vector")._native_ptr(), 2479607902);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	double p_deadzone_encoded;
 	PtrToArg<double>::encode(p_deadzone, &p_deadzone_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_negative_x, &p_positive_x, &p_negative_y, &p_positive_y, &p_deadzone_encoded);
@@ -186,7 +202,7 @@ void Input::remove_joy_mapping(const String &p_guid) {
 
 bool Input::is_joy_known(int32_t p_device) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_joy_known")._native_ptr(), 3067735520);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_device_encoded;
 	PtrToArg<int64_t>::encode(p_device, &p_device_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_device_encoded);
@@ -194,7 +210,7 @@ bool Input::is_joy_known(int32_t p_device) {
 
 float Input::get_joy_axis(int32_t p_device, JoyAxis p_axis) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_joy_axis")._native_ptr(), 4063175957);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_device_encoded;
 	PtrToArg<int64_t>::encode(p_device, &p_device_encoded);
 	int64_t p_axis_encoded;
@@ -204,7 +220,7 @@ float Input::get_joy_axis(int32_t p_device, JoyAxis p_axis) const {
 
 String Input::get_joy_name(int32_t p_device) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_joy_name")._native_ptr(), 990163283);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_device_encoded;
 	PtrToArg<int64_t>::encode(p_device, &p_device_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_device_encoded);
@@ -212,7 +228,7 @@ String Input::get_joy_name(int32_t p_device) {
 
 String Input::get_joy_guid(int32_t p_device) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_joy_guid")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_device_encoded;
 	PtrToArg<int64_t>::encode(p_device, &p_device_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_device_encoded);
@@ -220,7 +236,7 @@ String Input::get_joy_guid(int32_t p_device) const {
 
 Dictionary Input::get_joy_info(int32_t p_device) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_joy_info")._native_ptr(), 3485342025);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	int64_t p_device_encoded;
 	PtrToArg<int64_t>::encode(p_device, &p_device_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_device_encoded);
@@ -228,7 +244,7 @@ Dictionary Input::get_joy_info(int32_t p_device) const {
 
 bool Input::should_ignore_device(int32_t p_vendor_id, int32_t p_product_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("should_ignore_device")._native_ptr(), 2522259332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_vendor_id_encoded;
 	PtrToArg<int64_t>::encode(p_vendor_id, &p_vendor_id_encoded);
 	int64_t p_product_id_encoded;
@@ -238,13 +254,13 @@ bool Input::should_ignore_device(int32_t p_vendor_id, int32_t p_product_id) cons
 
 TypedArray<int> Input::get_connected_joypads() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_connected_joypads")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<int>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<int>()));
 	return internal::_call_native_mb_ret<TypedArray<int>>(_gde_method_bind, _owner);
 }
 
 Vector2 Input::get_joy_vibration_strength(int32_t p_device) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_joy_vibration_strength")._native_ptr(), 3114997196);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_device_encoded;
 	PtrToArg<int64_t>::encode(p_device, &p_device_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_device_encoded);
@@ -252,7 +268,7 @@ Vector2 Input::get_joy_vibration_strength(int32_t p_device) {
 
 float Input::get_joy_vibration_duration(int32_t p_device) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_joy_vibration_duration")._native_ptr(), 4025615559);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_device_encoded;
 	PtrToArg<int64_t>::encode(p_device, &p_device_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_device_encoded);
@@ -292,25 +308,25 @@ void Input::vibrate_handheld(int32_t p_duration_ms, float p_amplitude) {
 
 Vector3 Input::get_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 Input::get_accelerometer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_accelerometer")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 Input::get_magnetometer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_magnetometer")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 Input::get_gyroscope() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_gyroscope")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -340,19 +356,19 @@ void Input::set_gyroscope(const Vector3 &p_value) {
 
 Vector2 Input::get_last_mouse_velocity() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_last_mouse_velocity")._native_ptr(), 1497962370);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 Vector2 Input::get_last_mouse_screen_velocity() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_last_mouse_screen_velocity")._native_ptr(), 1497962370);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 BitField<MouseButtonMask> Input::get_mouse_button_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_mouse_button_mask")._native_ptr(), 2512161324);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<MouseButtonMask>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<MouseButtonMask>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -366,7 +382,7 @@ void Input::set_mouse_mode(Input::MouseMode p_mode) {
 
 Input::MouseMode Input::get_mouse_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_mouse_mode")._native_ptr(), 965286182);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Input::MouseMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Input::MouseMode(0)));
 	return (Input::MouseMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -400,7 +416,7 @@ void Input::set_default_cursor_shape(Input::CursorShape p_shape) {
 
 Input::CursorShape Input::get_current_cursor_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("get_current_cursor_shape")._native_ptr(), 3455658929);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Input::CursorShape(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Input::CursorShape(0)));
 	return (Input::CursorShape)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -428,7 +444,7 @@ void Input::set_use_accumulated_input(bool p_enable) {
 
 bool Input::is_using_accumulated_input() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_using_accumulated_input")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -448,7 +464,7 @@ void Input::set_emulate_mouse_from_touch(bool p_enable) {
 
 bool Input::is_emulating_mouse_from_touch() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_emulating_mouse_from_touch")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -462,7 +478,7 @@ void Input::set_emulate_touch_from_mouse(bool p_enable) {
 
 bool Input::is_emulating_touch_from_mouse() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Input::get_class_static()._native_ptr(), StringName("is_emulating_touch_from_mouse")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

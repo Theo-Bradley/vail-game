@@ -50,7 +50,7 @@ void OpenXRAnalogThresholdModifier::set_on_threshold(float p_on_threshold) {
 
 float OpenXRAnalogThresholdModifier::get_on_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAnalogThresholdModifier::get_class_static()._native_ptr(), StringName("get_on_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void OpenXRAnalogThresholdModifier::set_off_threshold(float p_off_threshold) {
 
 float OpenXRAnalogThresholdModifier::get_off_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAnalogThresholdModifier::get_class_static()._native_ptr(), StringName("get_off_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void OpenXRAnalogThresholdModifier::set_on_haptic(const Ref<OpenXRHapticBase> &p
 
 Ref<OpenXRHapticBase> OpenXRAnalogThresholdModifier::get_on_haptic() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAnalogThresholdModifier::get_class_static()._native_ptr(), StringName("get_on_haptic")._native_ptr(), 922310751);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OpenXRHapticBase>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OpenXRHapticBase>()));
 	return Ref<OpenXRHapticBase>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OpenXRHapticBase>(_gde_method_bind, _owner));
 }
 
@@ -88,7 +88,7 @@ void OpenXRAnalogThresholdModifier::set_off_haptic(const Ref<OpenXRHapticBase> &
 
 Ref<OpenXRHapticBase> OpenXRAnalogThresholdModifier::get_off_haptic() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAnalogThresholdModifier::get_class_static()._native_ptr(), StringName("get_off_haptic")._native_ptr(), 922310751);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OpenXRHapticBase>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OpenXRHapticBase>()));
 	return Ref<OpenXRHapticBase>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OpenXRHapticBase>(_gde_method_bind, _owner));
 }
 

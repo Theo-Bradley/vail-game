@@ -48,7 +48,7 @@ void AnimationNodeSync::set_use_sync(bool p_enable) {
 
 bool AnimationNodeSync::is_using_sync() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeSync::get_class_static()._native_ptr(), StringName("is_using_sync")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

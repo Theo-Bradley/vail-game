@@ -48,7 +48,7 @@ void InputEventScreenTouch::set_index(int32_t p_index) {
 
 int32_t InputEventScreenTouch::get_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenTouch::get_class_static()._native_ptr(), StringName("get_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void InputEventScreenTouch::set_position(const Vector2 &p_position) {
 
 Vector2 InputEventScreenTouch::get_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenTouch::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void InputEventScreenTouch::set_double_tap(bool p_double_tap) {
 
 bool InputEventScreenTouch::is_double_tap() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenTouch::get_class_static()._native_ptr(), StringName("is_double_tap")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

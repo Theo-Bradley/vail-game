@@ -46,7 +46,7 @@ void InputEventMouse::set_button_mask(BitField<MouseButtonMask> p_button_mask) {
 
 BitField<MouseButtonMask> InputEventMouse::get_button_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMouse::get_class_static()._native_ptr(), StringName("get_button_mask")._native_ptr(), 2512161324);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<MouseButtonMask>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<MouseButtonMask>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void InputEventMouse::set_position(const Vector2 &p_position) {
 
 Vector2 InputEventMouse::get_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMouse::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -70,7 +70,7 @@ void InputEventMouse::set_global_position(const Vector2 &p_global_position) {
 
 Vector2 InputEventMouse::get_global_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMouse::get_class_static()._native_ptr(), StringName("get_global_position")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 

@@ -60,13 +60,19 @@ void EditorSelection::remove_node(Node *p_node) {
 
 TypedArray<Node> EditorSelection::get_selected_nodes() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSelection::get_class_static()._native_ptr(), StringName("get_selected_nodes")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Node>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Node>()));
+	return internal::_call_native_mb_ret<TypedArray<Node>>(_gde_method_bind, _owner);
+}
+
+TypedArray<Node> EditorSelection::get_top_selected_nodes() {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSelection::get_class_static()._native_ptr(), StringName("get_top_selected_nodes")._native_ptr(), 2915620761);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Node>()));
 	return internal::_call_native_mb_ret<TypedArray<Node>>(_gde_method_bind, _owner);
 }
 
 TypedArray<Node> EditorSelection::get_transformable_selected_nodes() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSelection::get_class_static()._native_ptr(), StringName("get_transformable_selected_nodes")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Node>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Node>()));
 	return internal::_call_native_mb_ret<TypedArray<Node>>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ENVIRONMENT_HPP
-#define GODOT_CPP_ENVIRONMENT_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -305,4 +304,3 @@ VARIANT_ENUM_CAST(Environment::GlowBlendMode);
 VARIANT_ENUM_CAST(Environment::FogMode);
 VARIANT_ENUM_CAST(Environment::SDFGIYScale);
 
-#endif // ! GODOT_CPP_ENVIRONMENT_HPP

@@ -51,7 +51,7 @@ void Environment::set_background(Environment::BGMode p_mode) {
 
 Environment::BGMode Environment::get_background() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_background")._native_ptr(), 1843210413);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Environment::BGMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Environment::BGMode(0)));
 	return (Environment::BGMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -63,7 +63,7 @@ void Environment::set_sky(const Ref<Sky> &p_sky) {
 
 Ref<Sky> Environment::get_sky() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sky")._native_ptr(), 1177136966);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Sky>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Sky>()));
 	return Ref<Sky>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Sky>(_gde_method_bind, _owner));
 }
 
@@ -77,7 +77,7 @@ void Environment::set_sky_custom_fov(float p_scale) {
 
 float Environment::get_sky_custom_fov() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sky_custom_fov")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -89,7 +89,7 @@ void Environment::set_sky_rotation(const Vector3 &p_euler_radians) {
 
 Vector3 Environment::get_sky_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sky_rotation")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -101,7 +101,7 @@ void Environment::set_bg_color(const Color &p_color) {
 
 Color Environment::get_bg_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_bg_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -115,7 +115,7 @@ void Environment::set_bg_energy_multiplier(float p_energy) {
 
 float Environment::get_bg_energy_multiplier() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_bg_energy_multiplier")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -129,7 +129,7 @@ void Environment::set_bg_intensity(float p_energy) {
 
 float Environment::get_bg_intensity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_bg_intensity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -143,7 +143,7 @@ void Environment::set_canvas_max_layer(int32_t p_layer) {
 
 int32_t Environment::get_canvas_max_layer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_canvas_max_layer")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -157,7 +157,7 @@ void Environment::set_camera_feed_id(int32_t p_id) {
 
 int32_t Environment::get_camera_feed_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_camera_feed_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -169,7 +169,7 @@ void Environment::set_ambient_light_color(const Color &p_color) {
 
 Color Environment::get_ambient_light_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ambient_light_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -183,7 +183,7 @@ void Environment::set_ambient_source(Environment::AmbientSource p_source) {
 
 Environment::AmbientSource Environment::get_ambient_source() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ambient_source")._native_ptr(), 67453933);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Environment::AmbientSource(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Environment::AmbientSource(0)));
 	return (Environment::AmbientSource)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -197,7 +197,7 @@ void Environment::set_ambient_light_energy(float p_energy) {
 
 float Environment::get_ambient_light_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ambient_light_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -211,7 +211,7 @@ void Environment::set_ambient_light_sky_contribution(float p_ratio) {
 
 float Environment::get_ambient_light_sky_contribution() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ambient_light_sky_contribution")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -225,7 +225,7 @@ void Environment::set_reflection_source(Environment::ReflectionSource p_source) 
 
 Environment::ReflectionSource Environment::get_reflection_source() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_reflection_source")._native_ptr(), 777700713);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Environment::ReflectionSource(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Environment::ReflectionSource(0)));
 	return (Environment::ReflectionSource)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -239,7 +239,7 @@ void Environment::set_tonemapper(Environment::ToneMapper p_mode) {
 
 Environment::ToneMapper Environment::get_tonemapper() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_tonemapper")._native_ptr(), 2908408137);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Environment::ToneMapper(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Environment::ToneMapper(0)));
 	return (Environment::ToneMapper)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -253,7 +253,7 @@ void Environment::set_tonemap_exposure(float p_exposure) {
 
 float Environment::get_tonemap_exposure() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_tonemap_exposure")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -267,7 +267,7 @@ void Environment::set_tonemap_white(float p_white) {
 
 float Environment::get_tonemap_white() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_tonemap_white")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -281,7 +281,7 @@ void Environment::set_ssr_enabled(bool p_enabled) {
 
 bool Environment::is_ssr_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_ssr_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -295,7 +295,7 @@ void Environment::set_ssr_max_steps(int32_t p_max_steps) {
 
 int32_t Environment::get_ssr_max_steps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssr_max_steps")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -309,7 +309,7 @@ void Environment::set_ssr_fade_in(float p_fade_in) {
 
 float Environment::get_ssr_fade_in() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssr_fade_in")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -323,7 +323,7 @@ void Environment::set_ssr_fade_out(float p_fade_out) {
 
 float Environment::get_ssr_fade_out() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssr_fade_out")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -337,7 +337,7 @@ void Environment::set_ssr_depth_tolerance(float p_depth_tolerance) {
 
 float Environment::get_ssr_depth_tolerance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssr_depth_tolerance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -351,7 +351,7 @@ void Environment::set_ssao_enabled(bool p_enabled) {
 
 bool Environment::is_ssao_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_ssao_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -365,7 +365,7 @@ void Environment::set_ssao_radius(float p_radius) {
 
 float Environment::get_ssao_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssao_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -379,7 +379,7 @@ void Environment::set_ssao_intensity(float p_intensity) {
 
 float Environment::get_ssao_intensity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssao_intensity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -393,7 +393,7 @@ void Environment::set_ssao_power(float p_power) {
 
 float Environment::get_ssao_power() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssao_power")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -407,7 +407,7 @@ void Environment::set_ssao_detail(float p_detail) {
 
 float Environment::get_ssao_detail() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssao_detail")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -421,7 +421,7 @@ void Environment::set_ssao_horizon(float p_horizon) {
 
 float Environment::get_ssao_horizon() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssao_horizon")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -435,7 +435,7 @@ void Environment::set_ssao_sharpness(float p_sharpness) {
 
 float Environment::get_ssao_sharpness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssao_sharpness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -449,7 +449,7 @@ void Environment::set_ssao_direct_light_affect(float p_amount) {
 
 float Environment::get_ssao_direct_light_affect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssao_direct_light_affect")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -463,7 +463,7 @@ void Environment::set_ssao_ao_channel_affect(float p_amount) {
 
 float Environment::get_ssao_ao_channel_affect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssao_ao_channel_affect")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -477,7 +477,7 @@ void Environment::set_ssil_enabled(bool p_enabled) {
 
 bool Environment::is_ssil_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_ssil_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -491,7 +491,7 @@ void Environment::set_ssil_radius(float p_radius) {
 
 float Environment::get_ssil_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssil_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -505,7 +505,7 @@ void Environment::set_ssil_intensity(float p_intensity) {
 
 float Environment::get_ssil_intensity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssil_intensity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -519,7 +519,7 @@ void Environment::set_ssil_sharpness(float p_sharpness) {
 
 float Environment::get_ssil_sharpness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssil_sharpness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -533,7 +533,7 @@ void Environment::set_ssil_normal_rejection(float p_normal_rejection) {
 
 float Environment::get_ssil_normal_rejection() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_ssil_normal_rejection")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -547,7 +547,7 @@ void Environment::set_sdfgi_enabled(bool p_enabled) {
 
 bool Environment::is_sdfgi_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_sdfgi_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -561,7 +561,7 @@ void Environment::set_sdfgi_cascades(int32_t p_amount) {
 
 int32_t Environment::get_sdfgi_cascades() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_cascades")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -575,7 +575,7 @@ void Environment::set_sdfgi_min_cell_size(float p_size) {
 
 float Environment::get_sdfgi_min_cell_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_min_cell_size")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -589,7 +589,7 @@ void Environment::set_sdfgi_max_distance(float p_distance) {
 
 float Environment::get_sdfgi_max_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_max_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -603,7 +603,7 @@ void Environment::set_sdfgi_cascade0_distance(float p_distance) {
 
 float Environment::get_sdfgi_cascade0_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_cascade0_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -617,7 +617,7 @@ void Environment::set_sdfgi_y_scale(Environment::SDFGIYScale p_scale) {
 
 Environment::SDFGIYScale Environment::get_sdfgi_y_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_y_scale")._native_ptr(), 2568002245);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Environment::SDFGIYScale(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Environment::SDFGIYScale(0)));
 	return (Environment::SDFGIYScale)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -631,7 +631,7 @@ void Environment::set_sdfgi_use_occlusion(bool p_enable) {
 
 bool Environment::is_sdfgi_using_occlusion() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_sdfgi_using_occlusion")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -645,7 +645,7 @@ void Environment::set_sdfgi_bounce_feedback(float p_amount) {
 
 float Environment::get_sdfgi_bounce_feedback() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_bounce_feedback")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -659,7 +659,7 @@ void Environment::set_sdfgi_read_sky_light(bool p_enable) {
 
 bool Environment::is_sdfgi_reading_sky_light() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_sdfgi_reading_sky_light")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -673,7 +673,7 @@ void Environment::set_sdfgi_energy(float p_amount) {
 
 float Environment::get_sdfgi_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -687,7 +687,7 @@ void Environment::set_sdfgi_normal_bias(float p_bias) {
 
 float Environment::get_sdfgi_normal_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_normal_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -701,7 +701,7 @@ void Environment::set_sdfgi_probe_bias(float p_bias) {
 
 float Environment::get_sdfgi_probe_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_sdfgi_probe_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -715,7 +715,7 @@ void Environment::set_glow_enabled(bool p_enabled) {
 
 bool Environment::is_glow_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_glow_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -731,7 +731,7 @@ void Environment::set_glow_level(int32_t p_idx, float p_intensity) {
 
 float Environment::get_glow_level(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_level")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -747,7 +747,7 @@ void Environment::set_glow_normalized(bool p_normalize) {
 
 bool Environment::is_glow_normalized() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_glow_normalized")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -761,7 +761,7 @@ void Environment::set_glow_intensity(float p_intensity) {
 
 float Environment::get_glow_intensity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_intensity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -775,7 +775,7 @@ void Environment::set_glow_strength(float p_strength) {
 
 float Environment::get_glow_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -789,7 +789,7 @@ void Environment::set_glow_mix(float p_mix) {
 
 float Environment::get_glow_mix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_mix")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -803,7 +803,7 @@ void Environment::set_glow_bloom(float p_amount) {
 
 float Environment::get_glow_bloom() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_bloom")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -817,7 +817,7 @@ void Environment::set_glow_blend_mode(Environment::GlowBlendMode p_mode) {
 
 Environment::GlowBlendMode Environment::get_glow_blend_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_blend_mode")._native_ptr(), 1529667332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Environment::GlowBlendMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Environment::GlowBlendMode(0)));
 	return (Environment::GlowBlendMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -831,7 +831,7 @@ void Environment::set_glow_hdr_bleed_threshold(float p_threshold) {
 
 float Environment::get_glow_hdr_bleed_threshold() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_hdr_bleed_threshold")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -845,7 +845,7 @@ void Environment::set_glow_hdr_bleed_scale(float p_scale) {
 
 float Environment::get_glow_hdr_bleed_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_hdr_bleed_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -859,7 +859,7 @@ void Environment::set_glow_hdr_luminance_cap(float p_amount) {
 
 float Environment::get_glow_hdr_luminance_cap() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_hdr_luminance_cap")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -873,7 +873,7 @@ void Environment::set_glow_map_strength(float p_strength) {
 
 float Environment::get_glow_map_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_map_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -885,7 +885,7 @@ void Environment::set_glow_map(const Ref<Texture> &p_mode) {
 
 Ref<Texture> Environment::get_glow_map() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_glow_map")._native_ptr(), 4037048985);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture>()));
 	return Ref<Texture>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture>(_gde_method_bind, _owner));
 }
 
@@ -899,7 +899,7 @@ void Environment::set_fog_enabled(bool p_enabled) {
 
 bool Environment::is_fog_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_fog_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -913,7 +913,7 @@ void Environment::set_fog_mode(Environment::FogMode p_mode) {
 
 Environment::FogMode Environment::get_fog_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_mode")._native_ptr(), 2456062483);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Environment::FogMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Environment::FogMode(0)));
 	return (Environment::FogMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -925,7 +925,7 @@ void Environment::set_fog_light_color(const Color &p_light_color) {
 
 Color Environment::get_fog_light_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_light_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -939,7 +939,7 @@ void Environment::set_fog_light_energy(float p_light_energy) {
 
 float Environment::get_fog_light_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_light_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -953,7 +953,7 @@ void Environment::set_fog_sun_scatter(float p_sun_scatter) {
 
 float Environment::get_fog_sun_scatter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_sun_scatter")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -967,7 +967,7 @@ void Environment::set_fog_density(float p_density) {
 
 float Environment::get_fog_density() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_density")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -981,7 +981,7 @@ void Environment::set_fog_height(float p_height) {
 
 float Environment::get_fog_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -995,7 +995,7 @@ void Environment::set_fog_height_density(float p_height_density) {
 
 float Environment::get_fog_height_density() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_height_density")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1009,7 +1009,7 @@ void Environment::set_fog_aerial_perspective(float p_aerial_perspective) {
 
 float Environment::get_fog_aerial_perspective() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_aerial_perspective")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1023,7 +1023,7 @@ void Environment::set_fog_sky_affect(float p_sky_affect) {
 
 float Environment::get_fog_sky_affect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_sky_affect")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1037,7 +1037,7 @@ void Environment::set_fog_depth_curve(float p_curve) {
 
 float Environment::get_fog_depth_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_depth_curve")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1051,7 +1051,7 @@ void Environment::set_fog_depth_begin(float p_begin) {
 
 float Environment::get_fog_depth_begin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_depth_begin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1065,7 +1065,7 @@ void Environment::set_fog_depth_end(float p_end) {
 
 float Environment::get_fog_depth_end() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_fog_depth_end")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1079,7 +1079,7 @@ void Environment::set_volumetric_fog_enabled(bool p_enabled) {
 
 bool Environment::is_volumetric_fog_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_volumetric_fog_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -1091,7 +1091,7 @@ void Environment::set_volumetric_fog_emission(const Color &p_color) {
 
 Color Environment::get_volumetric_fog_emission() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_emission")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -1103,7 +1103,7 @@ void Environment::set_volumetric_fog_albedo(const Color &p_color) {
 
 Color Environment::get_volumetric_fog_albedo() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_albedo")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -1117,7 +1117,7 @@ void Environment::set_volumetric_fog_density(float p_density) {
 
 float Environment::get_volumetric_fog_density() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_density")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1131,7 +1131,7 @@ void Environment::set_volumetric_fog_emission_energy(float p_begin) {
 
 float Environment::get_volumetric_fog_emission_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_emission_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1145,7 +1145,7 @@ void Environment::set_volumetric_fog_anisotropy(float p_anisotropy) {
 
 float Environment::get_volumetric_fog_anisotropy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_anisotropy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1159,7 +1159,7 @@ void Environment::set_volumetric_fog_length(float p_length) {
 
 float Environment::get_volumetric_fog_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1173,7 +1173,7 @@ void Environment::set_volumetric_fog_detail_spread(float p_detail_spread) {
 
 float Environment::get_volumetric_fog_detail_spread() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_detail_spread")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1187,7 +1187,7 @@ void Environment::set_volumetric_fog_gi_inject(float p_gi_inject) {
 
 float Environment::get_volumetric_fog_gi_inject() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_gi_inject")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1201,7 +1201,7 @@ void Environment::set_volumetric_fog_ambient_inject(float p_enabled) {
 
 float Environment::get_volumetric_fog_ambient_inject() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_ambient_inject")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1215,7 +1215,7 @@ void Environment::set_volumetric_fog_sky_affect(float p_sky_affect) {
 
 float Environment::get_volumetric_fog_sky_affect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_sky_affect")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1229,7 +1229,7 @@ void Environment::set_volumetric_fog_temporal_reprojection_enabled(bool p_enable
 
 bool Environment::is_volumetric_fog_temporal_reprojection_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_volumetric_fog_temporal_reprojection_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -1243,7 +1243,7 @@ void Environment::set_volumetric_fog_temporal_reprojection_amount(float p_tempor
 
 float Environment::get_volumetric_fog_temporal_reprojection_amount() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_volumetric_fog_temporal_reprojection_amount")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1257,7 +1257,7 @@ void Environment::set_adjustment_enabled(bool p_enabled) {
 
 bool Environment::is_adjustment_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("is_adjustment_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -1271,7 +1271,7 @@ void Environment::set_adjustment_brightness(float p_brightness) {
 
 float Environment::get_adjustment_brightness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_adjustment_brightness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1285,7 +1285,7 @@ void Environment::set_adjustment_contrast(float p_contrast) {
 
 float Environment::get_adjustment_contrast() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_adjustment_contrast")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1299,7 +1299,7 @@ void Environment::set_adjustment_saturation(float p_saturation) {
 
 float Environment::get_adjustment_saturation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_adjustment_saturation")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -1311,7 +1311,7 @@ void Environment::set_adjustment_color_correction(const Ref<Texture> &p_color_co
 
 Ref<Texture> Environment::get_adjustment_color_correction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Environment::get_class_static()._native_ptr(), StringName("get_adjustment_color_correction")._native_ptr(), 4037048985);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture>()));
 	return Ref<Texture>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture>(_gde_method_bind, _owner));
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_MOTION_RESULT_HPP
-#define GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_MOTION_RESULT_HPP
+#pragma once
 
 #include <godot_cpp/variant/rid.hpp>
 
@@ -55,5 +54,3 @@ struct PhysicsServer2DExtensionMotionResult {
 GDVIRTUAL_NATIVE_PTR(PhysicsServer2DExtensionMotionResult);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_MOTION_RESULT_HPP

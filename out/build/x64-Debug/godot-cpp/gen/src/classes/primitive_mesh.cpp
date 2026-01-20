@@ -48,13 +48,13 @@ void PrimitiveMesh::set_material(const Ref<Material> &p_material) {
 
 Ref<Material> PrimitiveMesh::get_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PrimitiveMesh::get_class_static()._native_ptr(), StringName("get_material")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 
 Array PrimitiveMesh::get_mesh_arrays() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PrimitiveMesh::get_class_static()._native_ptr(), StringName("get_mesh_arrays")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
@@ -66,7 +66,7 @@ void PrimitiveMesh::set_custom_aabb(const AABB &p_aabb) {
 
 AABB PrimitiveMesh::get_custom_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PrimitiveMesh::get_class_static()._native_ptr(), StringName("get_custom_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void PrimitiveMesh::set_flip_faces(bool p_flip_faces) {
 
 bool PrimitiveMesh::get_flip_faces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PrimitiveMesh::get_class_static()._native_ptr(), StringName("get_flip_faces")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -94,7 +94,7 @@ void PrimitiveMesh::set_add_uv2(bool p_add_uv2) {
 
 bool PrimitiveMesh::get_add_uv2() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PrimitiveMesh::get_class_static()._native_ptr(), StringName("get_add_uv2")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void PrimitiveMesh::set_uv2_padding(float p_uv2_padding) {
 
 float PrimitiveMesh::get_uv2_padding() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PrimitiveMesh::get_class_static()._native_ptr(), StringName("get_uv2_padding")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

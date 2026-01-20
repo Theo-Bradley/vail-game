@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_XR_INTERFACE_HPP
-#define GODOT_CPP_XR_INTERFACE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -79,12 +78,19 @@ public:
 		XR_PLAY_AREA_SITTING = 2,
 		XR_PLAY_AREA_ROOMSCALE = 3,
 		XR_PLAY_AREA_STAGE = 4,
+		XR_PLAY_AREA_CUSTOM = 2147483647,
 	};
 
 	enum EnvironmentBlendMode {
 		XR_ENV_BLEND_MODE_OPAQUE = 0,
 		XR_ENV_BLEND_MODE_ADDITIVE = 1,
 		XR_ENV_BLEND_MODE_ALPHA_BLEND = 2,
+	};
+
+	enum VRSTextureFormat {
+		XR_VRS_TEXTURE_FORMAT_UNIFIED = 0,
+		XR_VRS_TEXTURE_FORMAT_FRAGMENT_SHADING_RATE = 1,
+		XR_VRS_TEXTURE_FORMAT_FRAGMENT_DENSITY_MAP = 2,
 	};
 
 	StringName get_name() const;
@@ -131,5 +137,5 @@ VARIANT_ENUM_CAST(XRInterface::Capabilities);
 VARIANT_ENUM_CAST(XRInterface::TrackingStatus);
 VARIANT_ENUM_CAST(XRInterface::PlayAreaMode);
 VARIANT_ENUM_CAST(XRInterface::EnvironmentBlendMode);
+VARIANT_ENUM_CAST(XRInterface::VRSTextureFormat);
 
-#endif // ! GODOT_CPP_XR_INTERFACE_HPP

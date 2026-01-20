@@ -61,7 +61,7 @@ void FileDialog::set_filters(const PackedStringArray &p_filters) {
 
 PackedStringArray FileDialog::get_filters() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_filters")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -79,13 +79,13 @@ void FileDialog::set_filename_filter(const String &p_filter) {
 
 String FileDialog::get_filename_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_filename_filter")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String FileDialog::get_option_name(int32_t p_option) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_option_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_option_encoded;
 	PtrToArg<int64_t>::encode(p_option, &p_option_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_option_encoded);
@@ -93,7 +93,7 @@ String FileDialog::get_option_name(int32_t p_option) const {
 
 PackedStringArray FileDialog::get_option_values(int32_t p_option) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_option_values")._native_ptr(), 647634434);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	int64_t p_option_encoded;
 	PtrToArg<int64_t>::encode(p_option, &p_option_encoded);
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner, &p_option_encoded);
@@ -101,7 +101,7 @@ PackedStringArray FileDialog::get_option_values(int32_t p_option) const {
 
 int32_t FileDialog::get_option_default(int32_t p_option) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_option_default")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_option_encoded;
 	PtrToArg<int64_t>::encode(p_option, &p_option_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_option_encoded);
@@ -143,7 +143,7 @@ void FileDialog::set_option_count(int32_t p_count) {
 
 int32_t FileDialog::get_option_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_option_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -157,25 +157,25 @@ void FileDialog::add_option(const String &p_name, const PackedStringArray &p_val
 
 Dictionary FileDialog::get_selected_options() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_selected_options")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
 String FileDialog::get_current_dir() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_current_dir")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String FileDialog::get_current_file() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_current_file")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String FileDialog::get_current_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_current_path")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -207,7 +207,7 @@ void FileDialog::set_mode_overrides_title(bool p_override) {
 
 bool FileDialog::is_mode_overriding_title() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("is_mode_overriding_title")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -221,19 +221,33 @@ void FileDialog::set_file_mode(FileDialog::FileMode p_mode) {
 
 FileDialog::FileMode FileDialog::get_file_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_file_mode")._native_ptr(), 4074825319);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FileDialog::FileMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FileDialog::FileMode(0)));
 	return (FileDialog::FileMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void FileDialog::set_display_mode(FileDialog::DisplayMode p_mode) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("set_display_mode")._native_ptr(), 2692197101);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_mode_encoded;
+	PtrToArg<int64_t>::encode(p_mode, &p_mode_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_mode_encoded);
+}
+
+FileDialog::DisplayMode FileDialog::get_display_mode() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_display_mode")._native_ptr(), 1092104624);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FileDialog::DisplayMode(0)));
+	return (FileDialog::DisplayMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 VBoxContainer *FileDialog::get_vbox() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_vbox")._native_ptr(), 915758477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<VBoxContainer>(_gde_method_bind, _owner);
 }
 
 LineEdit *FileDialog::get_line_edit() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_line_edit")._native_ptr(), 4071694264);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<LineEdit>(_gde_method_bind, _owner);
 }
 
@@ -247,7 +261,7 @@ void FileDialog::set_access(FileDialog::Access p_access) {
 
 FileDialog::Access FileDialog::get_access() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_access")._native_ptr(), 3344081076);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FileDialog::Access(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FileDialog::Access(0)));
 	return (FileDialog::Access)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -259,7 +273,7 @@ void FileDialog::set_root_subfolder(const String &p_dir) {
 
 String FileDialog::get_root_subfolder() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_root_subfolder")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -273,7 +287,7 @@ void FileDialog::set_show_hidden_files(bool p_show) {
 
 bool FileDialog::is_showing_hidden_files() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("is_showing_hidden_files")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -287,8 +301,26 @@ void FileDialog::set_use_native_dialog(bool p_native) {
 
 bool FileDialog::get_use_native_dialog() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("get_use_native_dialog")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void FileDialog::set_customization_flag_enabled(FileDialog::Customization p_flag, bool p_enabled) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("set_customization_flag_enabled")._native_ptr(), 3849177100);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_flag_encoded;
+	PtrToArg<int64_t>::encode(p_flag, &p_flag_encoded);
+	int8_t p_enabled_encoded;
+	PtrToArg<bool>::encode(p_enabled, &p_enabled_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_flag_encoded, &p_enabled_encoded);
+}
+
+bool FileDialog::is_customization_flag_enabled(FileDialog::Customization p_flag) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FileDialog::get_class_static()._native_ptr(), StringName("is_customization_flag_enabled")._native_ptr(), 3722277863);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	int64_t p_flag_encoded;
+	PtrToArg<int64_t>::encode(p_flag, &p_flag_encoded);
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_flag_encoded);
 }
 
 void FileDialog::deselect_all() {

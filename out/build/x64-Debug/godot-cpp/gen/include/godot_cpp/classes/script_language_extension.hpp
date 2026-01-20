@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SCRIPT_LANGUAGE_EXTENSION_HPP
-#define GODOT_CPP_SCRIPT_LANGUAGE_EXTENSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -350,4 +349,3 @@ VARIANT_ENUM_CAST(ScriptLanguageExtension::LookupResultType);
 VARIANT_ENUM_CAST(ScriptLanguageExtension::CodeCompletionLocation);
 VARIANT_ENUM_CAST(ScriptLanguageExtension::CodeCompletionKind);
 
-#endif // ! GODOT_CPP_SCRIPT_LANGUAGE_EXTENSION_HPP

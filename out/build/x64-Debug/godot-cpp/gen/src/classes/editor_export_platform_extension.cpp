@@ -37,7 +37,6 @@
 #include <godot_cpp/core/error_macros.hpp>
 
 #include <godot_cpp/classes/editor_export_preset.hpp>
-#include <godot_cpp/classes/image_texture.hpp>
 #include <godot_cpp/classes/texture2d.hpp>
 #include <godot_cpp/variant/string_name.hpp>
 
@@ -51,7 +50,7 @@ void EditorExportPlatformExtension::set_config_error(const String &p_error_text)
 
 String EditorExportPlatformExtension::get_config_error() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorExportPlatformExtension::get_class_static()._native_ptr(), StringName("get_config_error")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -65,7 +64,7 @@ void EditorExportPlatformExtension::set_config_missing_templates(bool p_missing_
 
 bool EditorExportPlatformExtension::get_config_missing_templates() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorExportPlatformExtension::get_class_static()._native_ptr(), StringName("get_config_missing_templates")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -117,8 +116,8 @@ String EditorExportPlatformExtension::_get_options_tooltip() const {
 	return String();
 }
 
-Ref<ImageTexture> EditorExportPlatformExtension::_get_option_icon(int32_t p_device) const {
-	return Ref<ImageTexture>();
+Ref<Texture2D> EditorExportPlatformExtension::_get_option_icon(int32_t p_device) const {
+	return Ref<Texture2D>();
 }
 
 String EditorExportPlatformExtension::_get_option_label(int32_t p_device) const {

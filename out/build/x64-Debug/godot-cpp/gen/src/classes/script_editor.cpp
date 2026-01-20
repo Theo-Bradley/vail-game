@@ -45,19 +45,19 @@ namespace godot {
 
 ScriptEditorBase *ScriptEditor::get_current_editor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScriptEditor::get_class_static()._native_ptr(), StringName("get_current_editor")._native_ptr(), 1906266726);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<ScriptEditorBase>(_gde_method_bind, _owner);
 }
 
 TypedArray<ScriptEditorBase> ScriptEditor::get_open_script_editors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScriptEditor::get_class_static()._native_ptr(), StringName("get_open_script_editors")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<ScriptEditorBase>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<ScriptEditorBase>()));
 	return internal::_call_native_mb_ret<TypedArray<ScriptEditorBase>>(_gde_method_bind, _owner);
 }
 
 PackedStringArray ScriptEditor::get_breakpoints() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScriptEditor::get_class_static()._native_ptr(), StringName("get_breakpoints")._native_ptr(), 2981934095);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -83,14 +83,14 @@ void ScriptEditor::goto_line(int32_t p_line_number) {
 
 Ref<Script> ScriptEditor::get_current_script() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScriptEditor::get_class_static()._native_ptr(), StringName("get_current_script")._native_ptr(), 2146468882);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Script>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Script>()));
 	return Ref<Script>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Script>(_gde_method_bind, _owner));
 }
 
-TypedArray<Script> ScriptEditor::get_open_scripts() const {
+TypedArray<Ref<Script>> ScriptEditor::get_open_scripts() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScriptEditor::get_class_static()._native_ptr(), StringName("get_open_scripts")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Script>());
-	return internal::_call_native_mb_ret<TypedArray<Script>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<Script>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<Script>>>(_gde_method_bind, _owner);
 }
 
 void ScriptEditor::open_script_create_dialog(const String &p_base_name, const String &p_base_path) {
@@ -107,6 +107,12 @@ void ScriptEditor::goto_help(const String &p_topic) {
 
 void ScriptEditor::update_docs_from_script(const Ref<Script> &p_script) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScriptEditor::get_class_static()._native_ptr(), StringName("update_docs_from_script")._native_ptr(), 3657522847);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_script != nullptr ? &p_script->_owner : nullptr));
+}
+
+void ScriptEditor::clear_docs_from_script(const Ref<Script> &p_script) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScriptEditor::get_class_static()._native_ptr(), StringName("clear_docs_from_script")._native_ptr(), 3657522847);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_script != nullptr ? &p_script->_owner : nullptr));
 }

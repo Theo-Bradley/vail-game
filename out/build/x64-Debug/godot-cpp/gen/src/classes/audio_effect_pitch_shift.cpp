@@ -48,7 +48,7 @@ void AudioEffectPitchShift::set_pitch_scale(float p_rate) {
 
 float AudioEffectPitchShift::get_pitch_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectPitchShift::get_class_static()._native_ptr(), StringName("get_pitch_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AudioEffectPitchShift::set_oversampling(int32_t p_amount) {
 
 int32_t AudioEffectPitchShift::get_oversampling() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectPitchShift::get_class_static()._native_ptr(), StringName("get_oversampling")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AudioEffectPitchShift::set_fft_size(AudioEffectPitchShift::FFTSize p_size) 
 
 AudioEffectPitchShift::FFTSize AudioEffectPitchShift::get_fft_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectPitchShift::get_class_static()._native_ptr(), StringName("get_fft_size")._native_ptr(), 2361246789);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioEffectPitchShift::FFTSize(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioEffectPitchShift::FFTSize(0)));
 	return (AudioEffectPitchShift::FFTSize)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

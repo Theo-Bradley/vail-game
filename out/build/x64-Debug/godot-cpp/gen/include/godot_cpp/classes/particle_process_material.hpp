@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PARTICLE_PROCESS_MATERIAL_HPP
-#define GODOT_CPP_PARTICLE_PROCESS_MATERIAL_HPP
+#pragma once
 
 #include <godot_cpp/classes/material.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -222,4 +221,3 @@ VARIANT_ENUM_CAST(ParticleProcessMaterial::EmissionShape);
 VARIANT_ENUM_CAST(ParticleProcessMaterial::SubEmitterMode);
 VARIANT_ENUM_CAST(ParticleProcessMaterial::CollisionMode);
 
-#endif // ! GODOT_CPP_PARTICLE_PROCESS_MATERIAL_HPP

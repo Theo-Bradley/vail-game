@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_COLOR_PICKER_HPP
-#define GODOT_CPP_COLOR_PICKER_HPP
+#pragma once
 
 #include <godot_cpp/classes/v_box_container.hpp>
 #include <godot_cpp/variant/color.hpp>
@@ -51,6 +50,7 @@ public:
 		MODE_RGB = 0,
 		MODE_HSV = 1,
 		MODE_RAW = 2,
+		MODE_LINEAR = 2,
 		MODE_OKHSL = 3,
 	};
 
@@ -60,6 +60,8 @@ public:
 		SHAPE_VHS_CIRCLE = 2,
 		SHAPE_OKHSL_CIRCLE = 3,
 		SHAPE_NONE = 4,
+		SHAPE_OK_HS_RECTANGLE = 5,
+		SHAPE_OK_HL_RECTANGLE = 6,
 	};
 
 	void set_pick_color(const Color &p_color);
@@ -70,6 +72,8 @@ public:
 	ColorPicker::ColorModeType get_color_mode() const;
 	void set_edit_alpha(bool p_show);
 	bool is_editing_alpha() const;
+	void set_edit_intensity(bool p_show);
+	bool is_editing_intensity() const;
 	void set_can_add_swatches(bool p_enabled);
 	bool are_swatches_enabled() const;
 	void set_presets_visible(bool p_visible);
@@ -105,4 +109,3 @@ public:
 VARIANT_ENUM_CAST(ColorPicker::ColorModeType);
 VARIANT_ENUM_CAST(ColorPicker::PickerShapeType);
 
-#endif // ! GODOT_CPP_COLOR_PICKER_HPP

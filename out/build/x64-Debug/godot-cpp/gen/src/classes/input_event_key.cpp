@@ -56,7 +56,7 @@ void InputEventKey::set_keycode(Key p_keycode) {
 
 Key InputEventKey::get_keycode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("get_keycode")._native_ptr(), 1585896689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Key(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Key(0)));
 	return (Key)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -70,7 +70,7 @@ void InputEventKey::set_physical_keycode(Key p_physical_keycode) {
 
 Key InputEventKey::get_physical_keycode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("get_physical_keycode")._native_ptr(), 1585896689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Key(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Key(0)));
 	return (Key)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -84,7 +84,7 @@ void InputEventKey::set_key_label(Key p_key_label) {
 
 Key InputEventKey::get_key_label() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("get_key_label")._native_ptr(), 1585896689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Key(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Key(0)));
 	return (Key)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void InputEventKey::set_unicode(char32_t p_unicode) {
 
 char32_t InputEventKey::get_unicode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("get_unicode")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<char32_t>(_gde_method_bind, _owner);
 }
 
@@ -112,7 +112,7 @@ void InputEventKey::set_location(KeyLocation p_location) {
 
 KeyLocation InputEventKey::get_location() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("get_location")._native_ptr(), 211810873);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, KeyLocation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (KeyLocation(0)));
 	return (KeyLocation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -126,43 +126,43 @@ void InputEventKey::set_echo(bool p_echo) {
 
 Key InputEventKey::get_keycode_with_modifiers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("get_keycode_with_modifiers")._native_ptr(), 1585896689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Key(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Key(0)));
 	return (Key)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Key InputEventKey::get_physical_keycode_with_modifiers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("get_physical_keycode_with_modifiers")._native_ptr(), 1585896689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Key(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Key(0)));
 	return (Key)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Key InputEventKey::get_key_label_with_modifiers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("get_key_label_with_modifiers")._native_ptr(), 1585896689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Key(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Key(0)));
 	return (Key)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String InputEventKey::as_text_keycode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("as_text_keycode")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String InputEventKey::as_text_physical_keycode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("as_text_physical_keycode")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String InputEventKey::as_text_key_label() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("as_text_key_label")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String InputEventKey::as_text_location() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventKey::get_class_static()._native_ptr(), StringName("as_text_location")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

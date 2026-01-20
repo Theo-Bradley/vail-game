@@ -48,7 +48,7 @@ void VisualShaderNodeIntParameter::set_hint(VisualShaderNodeIntParameter::Hint p
 
 VisualShaderNodeIntParameter::Hint VisualShaderNodeIntParameter::get_hint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeIntParameter::get_class_static()._native_ptr(), StringName("get_hint")._native_ptr(), 4250814924);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeIntParameter::Hint(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeIntParameter::Hint(0)));
 	return (VisualShaderNodeIntParameter::Hint)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeIntParameter::set_min(int32_t p_value) {
 
 int32_t VisualShaderNodeIntParameter::get_min() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeIntParameter::get_class_static()._native_ptr(), StringName("get_min")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void VisualShaderNodeIntParameter::set_max(int32_t p_value) {
 
 int32_t VisualShaderNodeIntParameter::get_max() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeIntParameter::get_class_static()._native_ptr(), StringName("get_max")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void VisualShaderNodeIntParameter::set_step(int32_t p_value) {
 
 int32_t VisualShaderNodeIntParameter::get_step() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeIntParameter::get_class_static()._native_ptr(), StringName("get_step")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void VisualShaderNodeIntParameter::set_enum_names(const PackedStringArray &p_nam
 
 PackedStringArray VisualShaderNodeIntParameter::get_enum_names() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeIntParameter::get_class_static()._native_ptr(), StringName("get_enum_names")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void VisualShaderNodeIntParameter::set_default_value_enabled(bool p_enabled) {
 
 bool VisualShaderNodeIntParameter::is_default_value_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeIntParameter::get_class_static()._native_ptr(), StringName("is_default_value_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void VisualShaderNodeIntParameter::set_default_value(int32_t p_value) {
 
 int32_t VisualShaderNodeIntParameter::get_default_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeIntParameter::get_class_static()._native_ptr(), StringName("get_default_value")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

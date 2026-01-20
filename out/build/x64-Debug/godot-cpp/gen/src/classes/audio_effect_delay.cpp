@@ -48,7 +48,7 @@ void AudioEffectDelay::set_dry(float p_amount) {
 
 float AudioEffectDelay::get_dry() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_dry")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AudioEffectDelay::set_tap1_active(bool p_amount) {
 
 bool AudioEffectDelay::is_tap1_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("is_tap1_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AudioEffectDelay::set_tap1_delay_ms(float p_amount) {
 
 float AudioEffectDelay::get_tap1_delay_ms() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_tap1_delay_ms")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void AudioEffectDelay::set_tap1_level_db(float p_amount) {
 
 float AudioEffectDelay::get_tap1_level_db() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_tap1_level_db")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void AudioEffectDelay::set_tap1_pan(float p_amount) {
 
 float AudioEffectDelay::get_tap1_pan() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_tap1_pan")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void AudioEffectDelay::set_tap2_active(bool p_amount) {
 
 bool AudioEffectDelay::is_tap2_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("is_tap2_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void AudioEffectDelay::set_tap2_delay_ms(float p_amount) {
 
 float AudioEffectDelay::get_tap2_delay_ms() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_tap2_delay_ms")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void AudioEffectDelay::set_tap2_level_db(float p_amount) {
 
 float AudioEffectDelay::get_tap2_level_db() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_tap2_level_db")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void AudioEffectDelay::set_tap2_pan(float p_amount) {
 
 float AudioEffectDelay::get_tap2_pan() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_tap2_pan")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void AudioEffectDelay::set_feedback_active(bool p_amount) {
 
 bool AudioEffectDelay::is_feedback_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("is_feedback_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +188,7 @@ void AudioEffectDelay::set_feedback_delay_ms(float p_amount) {
 
 float AudioEffectDelay::get_feedback_delay_ms() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_feedback_delay_ms")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -202,7 +202,7 @@ void AudioEffectDelay::set_feedback_level_db(float p_amount) {
 
 float AudioEffectDelay::get_feedback_level_db() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_feedback_level_db")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -216,7 +216,7 @@ void AudioEffectDelay::set_feedback_lowpass(float p_amount) {
 
 float AudioEffectDelay::get_feedback_lowpass() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDelay::get_class_static()._native_ptr(), StringName("get_feedback_lowpass")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

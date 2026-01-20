@@ -48,7 +48,7 @@ void VehicleWheel3D::set_radius(float p_length) {
 
 float VehicleWheel3D::get_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VehicleWheel3D::set_suspension_rest_length(float p_length) {
 
 float VehicleWheel3D::get_suspension_rest_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_suspension_rest_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void VehicleWheel3D::set_suspension_travel(float p_length) {
 
 float VehicleWheel3D::get_suspension_travel() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_suspension_travel")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void VehicleWheel3D::set_suspension_stiffness(float p_length) {
 
 float VehicleWheel3D::get_suspension_stiffness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_suspension_stiffness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void VehicleWheel3D::set_suspension_max_force(float p_length) {
 
 float VehicleWheel3D::get_suspension_max_force() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_suspension_max_force")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void VehicleWheel3D::set_damping_compression(float p_length) {
 
 float VehicleWheel3D::get_damping_compression() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_damping_compression")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void VehicleWheel3D::set_damping_relaxation(float p_length) {
 
 float VehicleWheel3D::get_damping_relaxation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_damping_relaxation")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void VehicleWheel3D::set_use_as_traction(bool p_enable) {
 
 bool VehicleWheel3D::is_used_as_traction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("is_used_as_traction")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void VehicleWheel3D::set_use_as_steering(bool p_enable) {
 
 bool VehicleWheel3D::is_used_as_steering() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("is_used_as_steering")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -174,31 +174,31 @@ void VehicleWheel3D::set_friction_slip(float p_length) {
 
 float VehicleWheel3D::get_friction_slip() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_friction_slip")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool VehicleWheel3D::is_in_contact() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("is_in_contact")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Node3D *VehicleWheel3D::get_contact_body() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_contact_body")._native_ptr(), 151077316);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node3D>(_gde_method_bind, _owner);
 }
 
 Vector3 VehicleWheel3D::get_contact_point() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_contact_point")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 VehicleWheel3D::get_contact_normal() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_contact_normal")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -212,19 +212,19 @@ void VehicleWheel3D::set_roll_influence(float p_roll_influence) {
 
 float VehicleWheel3D::get_roll_influence() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_roll_influence")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float VehicleWheel3D::get_skidinfo() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_skidinfo")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float VehicleWheel3D::get_rpm() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_rpm")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -238,7 +238,7 @@ void VehicleWheel3D::set_engine_force(float p_engine_force) {
 
 float VehicleWheel3D::get_engine_force() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_engine_force")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -252,7 +252,7 @@ void VehicleWheel3D::set_brake(float p_brake) {
 
 float VehicleWheel3D::get_brake() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_brake")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -266,7 +266,7 @@ void VehicleWheel3D::set_steering(float p_steering) {
 
 float VehicleWheel3D::get_steering() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VehicleWheel3D::get_class_static()._native_ptr(), StringName("get_steering")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

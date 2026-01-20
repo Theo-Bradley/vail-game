@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_SHAPE_RESULT_HPP
-#define GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_SHAPE_RESULT_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/rid.hpp>
@@ -48,5 +47,3 @@ struct PhysicsServer3DExtensionShapeResult {
 GDVIRTUAL_NATIVE_PTR(PhysicsServer3DExtensionShapeResult);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_SHAPE_RESULT_HPP

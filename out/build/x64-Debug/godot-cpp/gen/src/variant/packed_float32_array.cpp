@@ -103,6 +103,8 @@ void PackedFloat32Array::init_bindings() {
 	_method_bindings.method_rfind = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_PACKED_FLOAT32_ARRAY, _gde_name._native_ptr(), 1343150241);
 	_gde_name = StringName("count");
 	_method_bindings.method_count = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_PACKED_FLOAT32_ARRAY, _gde_name._native_ptr(), 2859915090);
+	_gde_name = StringName("erase");
+	_method_bindings.method_erase = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_PACKED_FLOAT32_ARRAY, _gde_name._native_ptr(), 4094791666);
 	_method_bindings.indexed_setter = internal::gdextension_interface_variant_get_ptr_indexed_setter(GDEXTENSION_VARIANT_TYPE_PACKED_FLOAT32_ARRAY);
 	_method_bindings.indexed_getter = internal::gdextension_interface_variant_get_ptr_indexed_getter(GDEXTENSION_VARIANT_TYPE_PACKED_FLOAT32_ARRAY);
 	_method_bindings.operator_equal_Variant = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_EQUAL, GDEXTENSION_VARIANT_TYPE_PACKED_FLOAT32_ARRAY, GDEXTENSION_VARIANT_TYPE_NIL);
@@ -265,6 +267,12 @@ int64_t PackedFloat32Array::count(double p_value) const {
 	double p_value_encoded;
 	PtrToArg<double>::encode(p_value, &p_value_encoded);
 	return internal::_call_builtin_method_ptr_ret<int64_t>(_method_bindings.method_count, (GDExtensionTypePtr)&opaque, &p_value_encoded);
+}
+
+bool PackedFloat32Array::erase(double p_value) {
+	double p_value_encoded;
+	PtrToArg<double>::encode(p_value, &p_value_encoded);
+	return internal::_call_builtin_method_ptr_ret<int8_t>(_method_bindings.method_erase, (GDExtensionTypePtr)&opaque, &p_value_encoded);
 }
 
 bool PackedFloat32Array::operator==(const Variant &p_other) const {

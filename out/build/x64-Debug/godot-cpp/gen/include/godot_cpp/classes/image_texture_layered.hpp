@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_IMAGE_TEXTURE_LAYERED_HPP
-#define GODOT_CPP_IMAGE_TEXTURE_LAYERED_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -50,7 +49,7 @@ class ImageTextureLayered : public TextureLayered {
 	GDEXTENSION_CLASS(ImageTextureLayered, TextureLayered)
 
 public:
-	Error create_from_images(const TypedArray<Image> &p_images);
+	Error create_from_images(const TypedArray<Ref<Image>> &p_images);
 	void update_layer(const Ref<Image> &p_image, int32_t p_layer);
 
 protected:
@@ -64,4 +63,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_IMAGE_TEXTURE_LAYERED_HPP

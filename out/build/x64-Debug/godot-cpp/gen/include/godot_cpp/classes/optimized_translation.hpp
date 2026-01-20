@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPTIMIZED_TRANSLATION_HPP
-#define GODOT_CPP_OPTIMIZED_TRANSLATION_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/translation.hpp>
@@ -59,4 +58,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_OPTIMIZED_TRANSLATION_HPP

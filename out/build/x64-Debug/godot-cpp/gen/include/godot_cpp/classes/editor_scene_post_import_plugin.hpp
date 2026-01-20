@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_SCENE_POST_IMPORT_PLUGIN_HPP
-#define GODOT_CPP_EDITOR_SCENE_POST_IMPORT_PLUGIN_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -113,4 +112,3 @@ public:
 
 VARIANT_ENUM_CAST(EditorScenePostImportPlugin::InternalImportCategory);
 
-#endif // ! GODOT_CPP_EDITOR_SCENE_POST_IMPORT_PLUGIN_HPP

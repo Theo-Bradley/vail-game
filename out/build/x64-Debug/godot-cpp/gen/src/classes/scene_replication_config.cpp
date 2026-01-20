@@ -40,7 +40,7 @@ namespace godot {
 
 TypedArray<NodePath> SceneReplicationConfig::get_properties() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneReplicationConfig::get_class_static()._native_ptr(), StringName("get_properties")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<NodePath>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<NodePath>()));
 	return internal::_call_native_mb_ret<TypedArray<NodePath>>(_gde_method_bind, _owner);
 }
 
@@ -54,7 +54,7 @@ void SceneReplicationConfig::add_property(const NodePath &p_path, int32_t p_inde
 
 bool SceneReplicationConfig::has_property(const NodePath &p_path) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneReplicationConfig::get_class_static()._native_ptr(), StringName("has_property")._native_ptr(), 861721659);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_path);
 }
 
@@ -66,13 +66,13 @@ void SceneReplicationConfig::remove_property(const NodePath &p_path) {
 
 int32_t SceneReplicationConfig::property_get_index(const NodePath &p_path) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneReplicationConfig::get_class_static()._native_ptr(), StringName("property_get_index")._native_ptr(), 1382022557);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 bool SceneReplicationConfig::property_get_spawn(const NodePath &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneReplicationConfig::get_class_static()._native_ptr(), StringName("property_get_spawn")._native_ptr(), 3456846888);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_path);
 }
 
@@ -86,7 +86,7 @@ void SceneReplicationConfig::property_set_spawn(const NodePath &p_path, bool p_e
 
 SceneReplicationConfig::ReplicationMode SceneReplicationConfig::property_get_replication_mode(const NodePath &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneReplicationConfig::get_class_static()._native_ptr(), StringName("property_get_replication_mode")._native_ptr(), 2870606336);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SceneReplicationConfig::ReplicationMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SceneReplicationConfig::ReplicationMode(0)));
 	return (SceneReplicationConfig::ReplicationMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
@@ -100,7 +100,7 @@ void SceneReplicationConfig::property_set_replication_mode(const NodePath &p_pat
 
 bool SceneReplicationConfig::property_get_sync(const NodePath &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneReplicationConfig::get_class_static()._native_ptr(), StringName("property_get_sync")._native_ptr(), 3456846888);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_path);
 }
 
@@ -114,7 +114,7 @@ void SceneReplicationConfig::property_set_sync(const NodePath &p_path, bool p_en
 
 bool SceneReplicationConfig::property_get_watch(const NodePath &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneReplicationConfig::get_class_static()._native_ptr(), StringName("property_get_watch")._native_ptr(), 3456846888);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_path);
 }
 

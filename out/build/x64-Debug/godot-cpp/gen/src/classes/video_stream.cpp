@@ -48,7 +48,7 @@ void VideoStream::set_file(const String &p_file) {
 
 String VideoStream::get_file() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VideoStream::get_class_static()._native_ptr(), StringName("get_file")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

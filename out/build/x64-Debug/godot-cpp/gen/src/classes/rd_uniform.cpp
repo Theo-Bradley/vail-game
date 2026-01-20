@@ -48,7 +48,7 @@ void RDUniform::set_uniform_type(RenderingDevice::UniformType p_member) {
 
 RenderingDevice::UniformType RDUniform::get_uniform_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDUniform::get_class_static()._native_ptr(), StringName("get_uniform_type")._native_ptr(), 475470040);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::UniformType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::UniformType(0)));
 	return (RenderingDevice::UniformType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void RDUniform::set_binding(int32_t p_member) {
 
 int32_t RDUniform::get_binding() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDUniform::get_class_static()._native_ptr(), StringName("get_binding")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void RDUniform::clear_ids() {
 
 TypedArray<RID> RDUniform::get_ids() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDUniform::get_class_static()._native_ptr(), StringName("get_ids")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<RID>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<RID>()));
 	return internal::_call_native_mb_ret<TypedArray<RID>>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_NODE_ANIMATION_HPP
-#define GODOT_CPP_ANIMATION_NODE_ANIMATION_HPP
+#pragma once
 
 #include <godot_cpp/classes/animation.hpp>
 #include <godot_cpp/classes/animation_root_node.hpp>
@@ -83,4 +82,3 @@ public:
 
 VARIANT_ENUM_CAST(AnimationNodeAnimation::PlayMode);
 
-#endif // ! GODOT_CPP_ANIMATION_NODE_ANIMATION_HPP

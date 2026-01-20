@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_WEB_RTC_PEER_CONNECTION_HPP
-#define GODOT_CPP_WEB_RTC_PEER_CONNECTION_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -104,4 +103,3 @@ VARIANT_ENUM_CAST(WebRTCPeerConnection::ConnectionState);
 VARIANT_ENUM_CAST(WebRTCPeerConnection::GatheringState);
 VARIANT_ENUM_CAST(WebRTCPeerConnection::SignalingState);
 
-#endif // ! GODOT_CPP_WEB_RTC_PEER_CONNECTION_HPP

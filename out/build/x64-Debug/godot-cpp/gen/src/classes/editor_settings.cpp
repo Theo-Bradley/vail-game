@@ -45,7 +45,7 @@ namespace godot {
 
 bool EditorSettings::has_setting(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSettings::get_class_static()._native_ptr(), StringName("has_setting")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -57,7 +57,7 @@ void EditorSettings::set_setting(const String &p_name, const Variant &p_value) {
 
 Variant EditorSettings::get_setting(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSettings::get_class_static()._native_ptr(), StringName("get_setting")._native_ptr(), 1868160156);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -89,7 +89,7 @@ void EditorSettings::set_project_metadata(const String &p_section, const String 
 
 Variant EditorSettings::get_project_metadata(const String &p_section, const String &p_key, const Variant &p_default) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSettings::get_class_static()._native_ptr(), StringName("get_project_metadata")._native_ptr(), 89809366);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_section, &p_key, &p_default);
 }
 
@@ -101,7 +101,7 @@ void EditorSettings::set_favorites(const PackedStringArray &p_dirs) {
 
 PackedStringArray EditorSettings::get_favorites() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSettings::get_class_static()._native_ptr(), StringName("get_favorites")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -113,11 +113,11 @@ void EditorSettings::set_recent_dirs(const PackedStringArray &p_dirs) {
 
 PackedStringArray EditorSettings::get_recent_dirs() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSettings::get_class_static()._native_ptr(), StringName("get_recent_dirs")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
-void EditorSettings::set_builtin_action_override(const String &p_name, const TypedArray<InputEvent> &p_actions_list) {
+void EditorSettings::set_builtin_action_override(const String &p_name, const TypedArray<Ref<InputEvent>> &p_actions_list) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSettings::get_class_static()._native_ptr(), StringName("set_builtin_action_override")._native_ptr(), 1209351045);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_name, &p_actions_list);
@@ -125,13 +125,13 @@ void EditorSettings::set_builtin_action_override(const String &p_name, const Typ
 
 bool EditorSettings::check_changed_settings_in_group(const String &p_setting_prefix) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSettings::get_class_static()._native_ptr(), StringName("check_changed_settings_in_group")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_setting_prefix);
 }
 
 PackedStringArray EditorSettings::get_changed_settings() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSettings::get_class_static()._native_ptr(), StringName("get_changed_settings")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 

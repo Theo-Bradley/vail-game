@@ -42,13 +42,13 @@ namespace godot {
 
 Error WebRTCMultiplayerPeer::create_server(const Array &p_channels_config) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebRTCMultiplayerPeer::get_class_static()._native_ptr(), StringName("create_server")._native_ptr(), 2865356025);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_channels_config);
 }
 
 Error WebRTCMultiplayerPeer::create_client(int32_t p_peer_id, const Array &p_channels_config) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebRTCMultiplayerPeer::get_class_static()._native_ptr(), StringName("create_client")._native_ptr(), 2641732907);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_peer_id_encoded;
 	PtrToArg<int64_t>::encode(p_peer_id, &p_peer_id_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_peer_id_encoded, &p_channels_config);
@@ -56,7 +56,7 @@ Error WebRTCMultiplayerPeer::create_client(int32_t p_peer_id, const Array &p_cha
 
 Error WebRTCMultiplayerPeer::create_mesh(int32_t p_peer_id, const Array &p_channels_config) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebRTCMultiplayerPeer::get_class_static()._native_ptr(), StringName("create_mesh")._native_ptr(), 2641732907);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_peer_id_encoded;
 	PtrToArg<int64_t>::encode(p_peer_id, &p_peer_id_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_peer_id_encoded, &p_channels_config);
@@ -64,7 +64,7 @@ Error WebRTCMultiplayerPeer::create_mesh(int32_t p_peer_id, const Array &p_chann
 
 Error WebRTCMultiplayerPeer::add_peer(const Ref<WebRTCPeerConnection> &p_peer, int32_t p_peer_id, int32_t p_unreliable_lifetime) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebRTCMultiplayerPeer::get_class_static()._native_ptr(), StringName("add_peer")._native_ptr(), 4078953270);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_peer_id_encoded;
 	PtrToArg<int64_t>::encode(p_peer_id, &p_peer_id_encoded);
 	int64_t p_unreliable_lifetime_encoded;
@@ -82,7 +82,7 @@ void WebRTCMultiplayerPeer::remove_peer(int32_t p_peer_id) {
 
 bool WebRTCMultiplayerPeer::has_peer(int32_t p_peer_id) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebRTCMultiplayerPeer::get_class_static()._native_ptr(), StringName("has_peer")._native_ptr(), 3067735520);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_peer_id_encoded;
 	PtrToArg<int64_t>::encode(p_peer_id, &p_peer_id_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_peer_id_encoded);
@@ -90,7 +90,7 @@ bool WebRTCMultiplayerPeer::has_peer(int32_t p_peer_id) {
 
 Dictionary WebRTCMultiplayerPeer::get_peer(int32_t p_peer_id) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebRTCMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_peer")._native_ptr(), 3554694381);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	int64_t p_peer_id_encoded;
 	PtrToArg<int64_t>::encode(p_peer_id, &p_peer_id_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_peer_id_encoded);
@@ -98,7 +98,7 @@ Dictionary WebRTCMultiplayerPeer::get_peer(int32_t p_peer_id) {
 
 Dictionary WebRTCMultiplayerPeer::get_peers() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebRTCMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_peers")._native_ptr(), 2382534195);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 

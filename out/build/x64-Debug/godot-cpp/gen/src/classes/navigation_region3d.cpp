@@ -42,7 +42,7 @@ namespace godot {
 
 RID NavigationRegion3D::get_rid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_rid")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -54,7 +54,7 @@ void NavigationRegion3D::set_navigation_mesh(const Ref<NavigationMesh> &p_naviga
 
 Ref<NavigationMesh> NavigationRegion3D::get_navigation_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_navigation_mesh")._native_ptr(), 1468720886);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<NavigationMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<NavigationMesh>()));
 	return Ref<NavigationMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<NavigationMesh>(_gde_method_bind, _owner));
 }
 
@@ -68,7 +68,7 @@ void NavigationRegion3D::set_enabled(bool p_enabled) {
 
 bool NavigationRegion3D::is_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("is_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void NavigationRegion3D::set_navigation_map(const RID &p_navigation_map) {
 
 RID NavigationRegion3D::get_navigation_map() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_navigation_map")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -94,7 +94,7 @@ void NavigationRegion3D::set_use_edge_connections(bool p_enabled) {
 
 bool NavigationRegion3D::get_use_edge_connections() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_use_edge_connections")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void NavigationRegion3D::set_navigation_layers(uint32_t p_navigation_layers) {
 
 uint32_t NavigationRegion3D::get_navigation_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_navigation_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -124,7 +124,7 @@ void NavigationRegion3D::set_navigation_layer_value(int32_t p_layer_number, bool
 
 bool NavigationRegion3D::get_navigation_layer_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_navigation_layer_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -132,7 +132,7 @@ bool NavigationRegion3D::get_navigation_layer_value(int32_t p_layer_number) cons
 
 RID NavigationRegion3D::get_region_rid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_region_rid")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void NavigationRegion3D::set_enter_cost(float p_enter_cost) {
 
 float NavigationRegion3D::get_enter_cost() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_enter_cost")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void NavigationRegion3D::set_travel_cost(float p_travel_cost) {
 
 float NavigationRegion3D::get_travel_cost() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_travel_cost")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -174,13 +174,13 @@ void NavigationRegion3D::bake_navigation_mesh(bool p_on_thread) {
 
 bool NavigationRegion3D::is_baking() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("is_baking")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 AABB NavigationRegion3D::get_bounds() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationRegion3D::get_class_static()._native_ptr(), StringName("get_bounds")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 

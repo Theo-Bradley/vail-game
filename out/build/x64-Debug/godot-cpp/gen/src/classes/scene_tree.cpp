@@ -51,19 +51,31 @@ namespace godot {
 
 Window *SceneTree::get_root() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_root")._native_ptr(), 1757182445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Window>(_gde_method_bind, _owner);
 }
 
 bool SceneTree::has_group(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("has_group")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
+}
+
+bool SceneTree::is_accessibility_enabled() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_accessibility_enabled")._native_ptr(), 36873697);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+bool SceneTree::is_accessibility_supported() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_accessibility_supported")._native_ptr(), 36873697);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool SceneTree::is_auto_accept_quit() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_auto_accept_quit")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -77,7 +89,7 @@ void SceneTree::set_auto_accept_quit(bool p_enabled) {
 
 bool SceneTree::is_quit_on_go_back() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_quit_on_go_back")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -99,7 +111,7 @@ void SceneTree::set_debug_collisions_hint(bool p_enable) {
 
 bool SceneTree::is_debugging_collisions_hint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_debugging_collisions_hint")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -113,7 +125,7 @@ void SceneTree::set_debug_paths_hint(bool p_enable) {
 
 bool SceneTree::is_debugging_paths_hint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_debugging_paths_hint")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -127,7 +139,7 @@ void SceneTree::set_debug_navigation_hint(bool p_enable) {
 
 bool SceneTree::is_debugging_navigation_hint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_debugging_navigation_hint")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -139,7 +151,7 @@ void SceneTree::set_edited_scene_root(Node *p_scene) {
 
 Node *SceneTree::get_edited_scene_root() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_edited_scene_root")._native_ptr(), 3160264692);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node>(_gde_method_bind, _owner);
 }
 
@@ -153,13 +165,13 @@ void SceneTree::set_pause(bool p_enable) {
 
 bool SceneTree::is_paused() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_paused")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Ref<SceneTreeTimer> SceneTree::create_timer(double p_time_sec, bool p_process_always, bool p_process_in_physics, bool p_ignore_time_scale) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("create_timer")._native_ptr(), 2709170273);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<SceneTreeTimer>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<SceneTreeTimer>()));
 	double p_time_sec_encoded;
 	PtrToArg<double>::encode(p_time_sec, &p_time_sec_encoded);
 	int8_t p_process_always_encoded;
@@ -173,25 +185,25 @@ Ref<SceneTreeTimer> SceneTree::create_timer(double p_time_sec, bool p_process_al
 
 Ref<Tween> SceneTree::create_tween() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("create_tween")._native_ptr(), 3426978995);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner));
 }
 
-TypedArray<Tween> SceneTree::get_processed_tweens() {
+TypedArray<Ref<Tween>> SceneTree::get_processed_tweens() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_processed_tweens")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Tween>());
-	return internal::_call_native_mb_ret<TypedArray<Tween>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<Tween>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<Tween>>>(_gde_method_bind, _owner);
 }
 
 int32_t SceneTree::get_node_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_node_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int64_t SceneTree::get_frame() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_frame")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -213,7 +225,7 @@ void SceneTree::set_physics_interpolation_enabled(bool p_enabled) {
 
 bool SceneTree::is_physics_interpolation_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_physics_interpolation_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -273,19 +285,19 @@ void SceneTree::set_group(const StringName &p_group, const String &p_property, c
 
 TypedArray<Node> SceneTree::get_nodes_in_group(const StringName &p_group) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_nodes_in_group")._native_ptr(), 689397652);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Node>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Node>()));
 	return internal::_call_native_mb_ret<TypedArray<Node>>(_gde_method_bind, _owner, &p_group);
 }
 
 Node *SceneTree::get_first_node_in_group(const StringName &p_group) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_first_node_in_group")._native_ptr(), 4071044623);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node>(_gde_method_bind, _owner, &p_group);
 }
 
 int32_t SceneTree::get_node_count_in_group(const StringName &p_group) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_node_count_in_group")._native_ptr(), 2458036349);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_group);
 }
 
@@ -297,25 +309,25 @@ void SceneTree::set_current_scene(Node *p_child_node) {
 
 Node *SceneTree::get_current_scene() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_current_scene")._native_ptr(), 3160264692);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node>(_gde_method_bind, _owner);
 }
 
 Error SceneTree::change_scene_to_file(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("change_scene_to_file")._native_ptr(), 166001499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 Error SceneTree::change_scene_to_packed(const Ref<PackedScene> &p_packed_scene) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("change_scene_to_packed")._native_ptr(), 107349098);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_packed_scene != nullptr ? &p_packed_scene->_owner : nullptr));
 }
 
 Error SceneTree::reload_current_scene() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("reload_current_scene")._native_ptr(), 166280745);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -333,7 +345,7 @@ void SceneTree::set_multiplayer(const Ref<MultiplayerAPI> &p_multiplayer, const 
 
 Ref<MultiplayerAPI> SceneTree::get_multiplayer(const NodePath &p_for_path) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("get_multiplayer")._native_ptr(), 3453401404);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<MultiplayerAPI>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<MultiplayerAPI>()));
 	return Ref<MultiplayerAPI>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<MultiplayerAPI>(_gde_method_bind, _owner, &p_for_path));
 }
 
@@ -347,7 +359,7 @@ void SceneTree::set_multiplayer_poll_enabled(bool p_enabled) {
 
 bool SceneTree::is_multiplayer_poll_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SceneTree::get_class_static()._native_ptr(), StringName("is_multiplayer_poll_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

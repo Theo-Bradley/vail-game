@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_VISUAL_SHADER_NODE_COMPARE_HPP
-#define GODOT_CPP_VISUAL_SHADER_NODE_COMPARE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/visual_shader_node.hpp>
@@ -96,4 +95,3 @@ VARIANT_ENUM_CAST(VisualShaderNodeCompare::ComparisonType);
 VARIANT_ENUM_CAST(VisualShaderNodeCompare::Function);
 VARIANT_ENUM_CAST(VisualShaderNodeCompare::Condition);
 
-#endif // ! GODOT_CPP_VISUAL_SHADER_NODE_COMPARE_HPP

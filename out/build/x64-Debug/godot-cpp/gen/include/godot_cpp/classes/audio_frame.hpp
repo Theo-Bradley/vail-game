@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_FRAME_HPP
-#define GODOT_CPP_AUDIO_FRAME_HPP
+#pragma once
 
 #include <godot_cpp/core/method_ptrcall.hpp>
 
@@ -45,5 +44,3 @@ struct AudioFrame {
 GDVIRTUAL_NATIVE_PTR(AudioFrame);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_AUDIO_FRAME_HPP

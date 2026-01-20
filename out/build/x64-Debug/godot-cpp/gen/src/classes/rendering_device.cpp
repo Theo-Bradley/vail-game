@@ -57,19 +57,19 @@ namespace godot {
 
 RID RenderingDevice::texture_create(const Ref<RDTextureFormat> &p_format, const Ref<RDTextureView> &p_view, const TypedArray<PackedByteArray> &p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_create")._native_ptr(), 3709173589);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, (p_format != nullptr ? &p_format->_owner : nullptr), (p_view != nullptr ? &p_view->_owner : nullptr), &p_data);
 }
 
 RID RenderingDevice::texture_create_shared(const Ref<RDTextureView> &p_view, const RID &p_with_texture) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_create_shared")._native_ptr(), 3178156134);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, (p_view != nullptr ? &p_view->_owner : nullptr), &p_with_texture);
 }
 
 RID RenderingDevice::texture_create_shared_from_slice(const Ref<RDTextureView> &p_view, const RID &p_with_texture, uint32_t p_layer, uint32_t p_mipmap, uint32_t p_mipmaps, RenderingDevice::TextureSliceType p_slice_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_create_shared_from_slice")._native_ptr(), 1808971279);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_layer_encoded;
 	PtrToArg<int64_t>::encode(p_layer, &p_layer_encoded);
 	int64_t p_mipmap_encoded;
@@ -81,9 +81,9 @@ RID RenderingDevice::texture_create_shared_from_slice(const Ref<RDTextureView> &
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, (p_view != nullptr ? &p_view->_owner : nullptr), &p_with_texture, &p_layer_encoded, &p_mipmap_encoded, &p_mipmaps_encoded, &p_slice_type_encoded);
 }
 
-RID RenderingDevice::texture_create_from_extension(RenderingDevice::TextureType p_type, RenderingDevice::DataFormat p_format, RenderingDevice::TextureSamples p_samples, BitField<RenderingDevice::TextureUsageBits> p_usage_flags, uint64_t p_image, uint64_t p_width, uint64_t p_height, uint64_t p_depth, uint64_t p_layers) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_create_from_extension")._native_ptr(), 1397171480);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+RID RenderingDevice::texture_create_from_extension(RenderingDevice::TextureType p_type, RenderingDevice::DataFormat p_format, RenderingDevice::TextureSamples p_samples, BitField<RenderingDevice::TextureUsageBits> p_usage_flags, uint64_t p_image, uint64_t p_width, uint64_t p_height, uint64_t p_depth, uint64_t p_layers, uint64_t p_mipmaps) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_create_from_extension")._native_ptr(), 3732868568);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_format_encoded;
@@ -100,12 +100,14 @@ RID RenderingDevice::texture_create_from_extension(RenderingDevice::TextureType 
 	PtrToArg<int64_t>::encode(p_depth, &p_depth_encoded);
 	int64_t p_layers_encoded;
 	PtrToArg<int64_t>::encode(p_layers, &p_layers_encoded);
-	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_type_encoded, &p_format_encoded, &p_samples_encoded, &p_usage_flags, &p_image_encoded, &p_width_encoded, &p_height_encoded, &p_depth_encoded, &p_layers_encoded);
+	int64_t p_mipmaps_encoded;
+	PtrToArg<int64_t>::encode(p_mipmaps, &p_mipmaps_encoded);
+	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_type_encoded, &p_format_encoded, &p_samples_encoded, &p_usage_flags, &p_image_encoded, &p_width_encoded, &p_height_encoded, &p_depth_encoded, &p_layers_encoded, &p_mipmaps_encoded);
 }
 
 Error RenderingDevice::texture_update(const RID &p_texture, uint32_t p_layer, const PackedByteArray &p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_update")._native_ptr(), 1349464008);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_layer_encoded;
 	PtrToArg<int64_t>::encode(p_layer, &p_layer_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_texture, &p_layer_encoded, &p_data);
@@ -113,7 +115,7 @@ Error RenderingDevice::texture_update(const RID &p_texture, uint32_t p_layer, co
 
 PackedByteArray RenderingDevice::texture_get_data(const RID &p_texture, uint32_t p_layer) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_get_data")._native_ptr(), 1859412099);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	int64_t p_layer_encoded;
 	PtrToArg<int64_t>::encode(p_layer, &p_layer_encoded);
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner, &p_texture, &p_layer_encoded);
@@ -121,7 +123,7 @@ PackedByteArray RenderingDevice::texture_get_data(const RID &p_texture, uint32_t
 
 Error RenderingDevice::texture_get_data_async(const RID &p_texture, uint32_t p_layer, const Callable &p_callback) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_get_data_async")._native_ptr(), 498832090);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_layer_encoded;
 	PtrToArg<int64_t>::encode(p_layer, &p_layer_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_texture, &p_layer_encoded, &p_callback);
@@ -129,7 +131,7 @@ Error RenderingDevice::texture_get_data_async(const RID &p_texture, uint32_t p_l
 
 bool RenderingDevice::texture_is_format_supported_for_usage(RenderingDevice::DataFormat p_format, BitField<RenderingDevice::TextureUsageBits> p_usage_flags) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_is_format_supported_for_usage")._native_ptr(), 2592520478);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_format_encoded;
 	PtrToArg<int64_t>::encode(p_format, &p_format_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_format_encoded, &p_usage_flags);
@@ -137,13 +139,13 @@ bool RenderingDevice::texture_is_format_supported_for_usage(RenderingDevice::Dat
 
 bool RenderingDevice::texture_is_shared(const RID &p_texture) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_is_shared")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_texture);
 }
 
 bool RenderingDevice::texture_is_valid(const RID &p_texture) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_is_valid")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_texture);
 }
 
@@ -157,13 +159,13 @@ void RenderingDevice::texture_set_discardable(const RID &p_texture, bool p_disca
 
 bool RenderingDevice::texture_is_discardable(const RID &p_texture) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_is_discardable")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_texture);
 }
 
 Error RenderingDevice::texture_copy(const RID &p_from_texture, const RID &p_to_texture, const Vector3 &p_from_pos, const Vector3 &p_to_pos, const Vector3 &p_size, uint32_t p_src_mipmap, uint32_t p_dst_mipmap, uint32_t p_src_layer, uint32_t p_dst_layer) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_copy")._native_ptr(), 2859522160);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_src_mipmap_encoded;
 	PtrToArg<int64_t>::encode(p_src_mipmap, &p_src_mipmap_encoded);
 	int64_t p_dst_mipmap_encoded;
@@ -177,7 +179,7 @@ Error RenderingDevice::texture_copy(const RID &p_from_texture, const RID &p_to_t
 
 Error RenderingDevice::texture_clear(const RID &p_texture, const Color &p_color, uint32_t p_base_mipmap, uint32_t p_mipmap_count, uint32_t p_base_layer, uint32_t p_layer_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_clear")._native_ptr(), 3477703247);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_base_mipmap_encoded;
 	PtrToArg<int64_t>::encode(p_base_mipmap, &p_base_mipmap_encoded);
 	int64_t p_mipmap_count_encoded;
@@ -191,33 +193,33 @@ Error RenderingDevice::texture_clear(const RID &p_texture, const Color &p_color,
 
 Error RenderingDevice::texture_resolve_multisample(const RID &p_from_texture, const RID &p_to_texture) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_resolve_multisample")._native_ptr(), 3181288260);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_from_texture, &p_to_texture);
 }
 
 Ref<RDTextureFormat> RenderingDevice::texture_get_format(const RID &p_texture) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_get_format")._native_ptr(), 1374471690);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<RDTextureFormat>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<RDTextureFormat>()));
 	return Ref<RDTextureFormat>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<RDTextureFormat>(_gde_method_bind, _owner, &p_texture));
 }
 
 uint64_t RenderingDevice::texture_get_native_handle(const RID &p_texture) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_get_native_handle")._native_ptr(), 3917799429);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_texture);
 }
 
-int64_t RenderingDevice::framebuffer_format_create(const TypedArray<RDAttachmentFormat> &p_attachments, uint32_t p_view_count) {
+int64_t RenderingDevice::framebuffer_format_create(const TypedArray<Ref<RDAttachmentFormat>> &p_attachments, uint32_t p_view_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_format_create")._native_ptr(), 697032759);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_view_count_encoded;
 	PtrToArg<int64_t>::encode(p_view_count, &p_view_count_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_attachments, &p_view_count_encoded);
 }
 
-int64_t RenderingDevice::framebuffer_format_create_multipass(const TypedArray<RDAttachmentFormat> &p_attachments, const TypedArray<RDFramebufferPass> &p_passes, uint32_t p_view_count) {
+int64_t RenderingDevice::framebuffer_format_create_multipass(const TypedArray<Ref<RDAttachmentFormat>> &p_attachments, const TypedArray<Ref<RDFramebufferPass>> &p_passes, uint32_t p_view_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_format_create_multipass")._native_ptr(), 2647479094);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_view_count_encoded;
 	PtrToArg<int64_t>::encode(p_view_count, &p_view_count_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_attachments, &p_passes, &p_view_count_encoded);
@@ -225,7 +227,7 @@ int64_t RenderingDevice::framebuffer_format_create_multipass(const TypedArray<RD
 
 int64_t RenderingDevice::framebuffer_format_create_empty(RenderingDevice::TextureSamples p_samples) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_format_create_empty")._native_ptr(), 555930169);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_samples_encoded;
 	PtrToArg<int64_t>::encode(p_samples, &p_samples_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_samples_encoded);
@@ -233,7 +235,7 @@ int64_t RenderingDevice::framebuffer_format_create_empty(RenderingDevice::Textur
 
 RenderingDevice::TextureSamples RenderingDevice::framebuffer_format_get_texture_samples(int64_t p_format, uint32_t p_render_pass) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_format_get_texture_samples")._native_ptr(), 4223391010);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::TextureSamples(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::TextureSamples(0)));
 	int64_t p_format_encoded;
 	PtrToArg<int64_t>::encode(p_format, &p_format_encoded);
 	int64_t p_render_pass_encoded;
@@ -243,7 +245,7 @@ RenderingDevice::TextureSamples RenderingDevice::framebuffer_format_get_texture_
 
 RID RenderingDevice::framebuffer_create(const TypedArray<RID> &p_textures, int64_t p_validate_with_format, uint32_t p_view_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_create")._native_ptr(), 3284231055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_validate_with_format_encoded;
 	PtrToArg<int64_t>::encode(p_validate_with_format, &p_validate_with_format_encoded);
 	int64_t p_view_count_encoded;
@@ -251,9 +253,9 @@ RID RenderingDevice::framebuffer_create(const TypedArray<RID> &p_textures, int64
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_textures, &p_validate_with_format_encoded, &p_view_count_encoded);
 }
 
-RID RenderingDevice::framebuffer_create_multipass(const TypedArray<RID> &p_textures, const TypedArray<RDFramebufferPass> &p_passes, int64_t p_validate_with_format, uint32_t p_view_count) {
+RID RenderingDevice::framebuffer_create_multipass(const TypedArray<RID> &p_textures, const TypedArray<Ref<RDFramebufferPass>> &p_passes, int64_t p_validate_with_format, uint32_t p_view_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_create_multipass")._native_ptr(), 1750306695);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_validate_with_format_encoded;
 	PtrToArg<int64_t>::encode(p_validate_with_format, &p_validate_with_format_encoded);
 	int64_t p_view_count_encoded;
@@ -263,7 +265,7 @@ RID RenderingDevice::framebuffer_create_multipass(const TypedArray<RID> &p_textu
 
 RID RenderingDevice::framebuffer_create_empty(const Vector2i &p_size, RenderingDevice::TextureSamples p_samples, int64_t p_validate_with_format) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_create_empty")._native_ptr(), 3058360618);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_samples_encoded;
 	PtrToArg<int64_t>::encode(p_samples, &p_samples_encoded);
 	int64_t p_validate_with_format_encoded;
@@ -273,25 +275,25 @@ RID RenderingDevice::framebuffer_create_empty(const Vector2i &p_size, RenderingD
 
 int64_t RenderingDevice::framebuffer_get_format(const RID &p_framebuffer) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_get_format")._native_ptr(), 3917799429);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_framebuffer);
 }
 
 bool RenderingDevice::framebuffer_is_valid(const RID &p_framebuffer) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("framebuffer_is_valid")._native_ptr(), 4155700596);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_framebuffer);
 }
 
 RID RenderingDevice::sampler_create(const Ref<RDSamplerState> &p_state) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("sampler_create")._native_ptr(), 2327892535);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, (p_state != nullptr ? &p_state->_owner : nullptr));
 }
 
 bool RenderingDevice::sampler_is_format_supported_for_filter(RenderingDevice::DataFormat p_format, RenderingDevice::SamplerFilter p_sampler_filter) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("sampler_is_format_supported_for_filter")._native_ptr(), 2247922238);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_format_encoded;
 	PtrToArg<int64_t>::encode(p_format, &p_format_encoded);
 	int64_t p_sampler_filter_encoded;
@@ -301,21 +303,21 @@ bool RenderingDevice::sampler_is_format_supported_for_filter(RenderingDevice::Da
 
 RID RenderingDevice::vertex_buffer_create(uint32_t p_size_bytes, const PackedByteArray &p_data, BitField<RenderingDevice::BufferCreationBits> p_creation_bits) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("vertex_buffer_create")._native_ptr(), 2089548973);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_size_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_size_bytes, &p_size_bytes_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_size_bytes_encoded, &p_data, &p_creation_bits);
 }
 
-int64_t RenderingDevice::vertex_format_create(const TypedArray<RDVertexAttribute> &p_vertex_descriptions) {
+int64_t RenderingDevice::vertex_format_create(const TypedArray<Ref<RDVertexAttribute>> &p_vertex_descriptions) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("vertex_format_create")._native_ptr(), 1242678479);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_vertex_descriptions);
 }
 
 RID RenderingDevice::vertex_array_create(uint32_t p_vertex_count, int64_t p_vertex_format, const TypedArray<RID> &p_src_buffers, const PackedInt64Array &p_offsets) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("vertex_array_create")._native_ptr(), 3799816279);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_vertex_count_encoded;
 	PtrToArg<int64_t>::encode(p_vertex_count, &p_vertex_count_encoded);
 	int64_t p_vertex_format_encoded;
@@ -325,7 +327,7 @@ RID RenderingDevice::vertex_array_create(uint32_t p_vertex_count, int64_t p_vert
 
 RID RenderingDevice::index_buffer_create(uint32_t p_size_indices, RenderingDevice::IndexBufferFormat p_format, const PackedByteArray &p_data, bool p_use_restart_indices, BitField<RenderingDevice::BufferCreationBits> p_creation_bits) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("index_buffer_create")._native_ptr(), 2368684885);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_size_indices_encoded;
 	PtrToArg<int64_t>::encode(p_size_indices, &p_size_indices_encoded);
 	int64_t p_format_encoded;
@@ -337,7 +339,7 @@ RID RenderingDevice::index_buffer_create(uint32_t p_size_indices, RenderingDevic
 
 RID RenderingDevice::index_array_create(const RID &p_index_buffer, uint32_t p_index_offset, uint32_t p_index_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("index_array_create")._native_ptr(), 2256026069);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_index_offset_encoded;
 	PtrToArg<int64_t>::encode(p_index_offset, &p_index_offset_encoded);
 	int64_t p_index_count_encoded;
@@ -347,7 +349,7 @@ RID RenderingDevice::index_array_create(const RID &p_index_buffer, uint32_t p_in
 
 Ref<RDShaderSPIRV> RenderingDevice::shader_compile_spirv_from_source(const Ref<RDShaderSource> &p_shader_source, bool p_allow_cache) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("shader_compile_spirv_from_source")._native_ptr(), 1178973306);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<RDShaderSPIRV>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<RDShaderSPIRV>()));
 	int8_t p_allow_cache_encoded;
 	PtrToArg<bool>::encode(p_allow_cache, &p_allow_cache_encoded);
 	return Ref<RDShaderSPIRV>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<RDShaderSPIRV>(_gde_method_bind, _owner, (p_shader_source != nullptr ? &p_shader_source->_owner : nullptr), &p_allow_cache_encoded));
@@ -355,37 +357,37 @@ Ref<RDShaderSPIRV> RenderingDevice::shader_compile_spirv_from_source(const Ref<R
 
 PackedByteArray RenderingDevice::shader_compile_binary_from_spirv(const Ref<RDShaderSPIRV> &p_spirv_data, const String &p_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("shader_compile_binary_from_spirv")._native_ptr(), 134910450);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner, (p_spirv_data != nullptr ? &p_spirv_data->_owner : nullptr), &p_name);
 }
 
 RID RenderingDevice::shader_create_from_spirv(const Ref<RDShaderSPIRV> &p_spirv_data, const String &p_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("shader_create_from_spirv")._native_ptr(), 342949005);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, (p_spirv_data != nullptr ? &p_spirv_data->_owner : nullptr), &p_name);
 }
 
 RID RenderingDevice::shader_create_from_bytecode(const PackedByteArray &p_binary_data, const RID &p_placeholder_rid) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("shader_create_from_bytecode")._native_ptr(), 1687031350);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_binary_data, &p_placeholder_rid);
 }
 
 RID RenderingDevice::shader_create_placeholder() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("shader_create_placeholder")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::shader_get_vertex_input_attribute_mask(const RID &p_shader) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("shader_get_vertex_input_attribute_mask")._native_ptr(), 3917799429);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_shader);
 }
 
 RID RenderingDevice::uniform_buffer_create(uint32_t p_size_bytes, const PackedByteArray &p_data, BitField<RenderingDevice::BufferCreationBits> p_creation_bits) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("uniform_buffer_create")._native_ptr(), 2089548973);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_size_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_size_bytes, &p_size_bytes_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_size_bytes_encoded, &p_data, &p_creation_bits);
@@ -393,7 +395,7 @@ RID RenderingDevice::uniform_buffer_create(uint32_t p_size_bytes, const PackedBy
 
 RID RenderingDevice::storage_buffer_create(uint32_t p_size_bytes, const PackedByteArray &p_data, BitField<RenderingDevice::StorageBufferUsage> p_usage, BitField<RenderingDevice::BufferCreationBits> p_creation_bits) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("storage_buffer_create")._native_ptr(), 1609052553);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_size_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_size_bytes, &p_size_bytes_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_size_bytes_encoded, &p_data, &p_usage, &p_creation_bits);
@@ -401,7 +403,7 @@ RID RenderingDevice::storage_buffer_create(uint32_t p_size_bytes, const PackedBy
 
 RID RenderingDevice::texture_buffer_create(uint32_t p_size_bytes, RenderingDevice::DataFormat p_format, const PackedByteArray &p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("texture_buffer_create")._native_ptr(), 1470338698);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_size_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_size_bytes, &p_size_bytes_encoded);
 	int64_t p_format_encoded;
@@ -409,9 +411,9 @@ RID RenderingDevice::texture_buffer_create(uint32_t p_size_bytes, RenderingDevic
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_size_bytes_encoded, &p_format_encoded, &p_data);
 }
 
-RID RenderingDevice::uniform_set_create(const TypedArray<RDUniform> &p_uniforms, const RID &p_shader, uint32_t p_shader_set) {
+RID RenderingDevice::uniform_set_create(const TypedArray<Ref<RDUniform>> &p_uniforms, const RID &p_shader, uint32_t p_shader_set) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("uniform_set_create")._native_ptr(), 2280795797);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_shader_set_encoded;
 	PtrToArg<int64_t>::encode(p_shader_set, &p_shader_set_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_uniforms, &p_shader, &p_shader_set_encoded);
@@ -419,13 +421,13 @@ RID RenderingDevice::uniform_set_create(const TypedArray<RDUniform> &p_uniforms,
 
 bool RenderingDevice::uniform_set_is_valid(const RID &p_uniform_set) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("uniform_set_is_valid")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_uniform_set);
 }
 
 Error RenderingDevice::buffer_copy(const RID &p_src_buffer, const RID &p_dst_buffer, uint32_t p_src_offset, uint32_t p_dst_offset, uint32_t p_size) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("buffer_copy")._native_ptr(), 864257779);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_src_offset_encoded;
 	PtrToArg<int64_t>::encode(p_src_offset, &p_src_offset_encoded);
 	int64_t p_dst_offset_encoded;
@@ -437,7 +439,7 @@ Error RenderingDevice::buffer_copy(const RID &p_src_buffer, const RID &p_dst_buf
 
 Error RenderingDevice::buffer_update(const RID &p_buffer, uint32_t p_offset, uint32_t p_size_bytes, const PackedByteArray &p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("buffer_update")._native_ptr(), 3454956949);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_offset_encoded;
 	PtrToArg<int64_t>::encode(p_offset, &p_offset_encoded);
 	int64_t p_size_bytes_encoded;
@@ -447,7 +449,7 @@ Error RenderingDevice::buffer_update(const RID &p_buffer, uint32_t p_offset, uin
 
 Error RenderingDevice::buffer_clear(const RID &p_buffer, uint32_t p_offset, uint32_t p_size_bytes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("buffer_clear")._native_ptr(), 2452320800);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_offset_encoded;
 	PtrToArg<int64_t>::encode(p_offset, &p_offset_encoded);
 	int64_t p_size_bytes_encoded;
@@ -457,7 +459,7 @@ Error RenderingDevice::buffer_clear(const RID &p_buffer, uint32_t p_offset, uint
 
 PackedByteArray RenderingDevice::buffer_get_data(const RID &p_buffer, uint32_t p_offset_bytes, uint32_t p_size_bytes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("buffer_get_data")._native_ptr(), 3101830688);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	int64_t p_offset_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_offset_bytes, &p_offset_bytes_encoded);
 	int64_t p_size_bytes_encoded;
@@ -467,7 +469,7 @@ PackedByteArray RenderingDevice::buffer_get_data(const RID &p_buffer, uint32_t p
 
 Error RenderingDevice::buffer_get_data_async(const RID &p_buffer, const Callable &p_callback, uint32_t p_offset_bytes, uint32_t p_size_bytes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("buffer_get_data_async")._native_ptr(), 2370287848);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_offset_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_offset_bytes, &p_offset_bytes_encoded);
 	int64_t p_size_bytes_encoded;
@@ -477,13 +479,13 @@ Error RenderingDevice::buffer_get_data_async(const RID &p_buffer, const Callable
 
 uint64_t RenderingDevice::buffer_get_device_address(const RID &p_buffer) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("buffer_get_device_address")._native_ptr(), 3917799429);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_buffer);
 }
 
-RID RenderingDevice::render_pipeline_create(const RID &p_shader, int64_t p_framebuffer_format, int64_t p_vertex_format, RenderingDevice::RenderPrimitive p_primitive, const Ref<RDPipelineRasterizationState> &p_rasterization_state, const Ref<RDPipelineMultisampleState> &p_multisample_state, const Ref<RDPipelineDepthStencilState> &p_stencil_state, const Ref<RDPipelineColorBlendState> &p_color_blend_state, BitField<RenderingDevice::PipelineDynamicStateFlags> p_dynamic_state_flags, uint32_t p_for_render_pass, const TypedArray<RDPipelineSpecializationConstant> &p_specialization_constants) {
+RID RenderingDevice::render_pipeline_create(const RID &p_shader, int64_t p_framebuffer_format, int64_t p_vertex_format, RenderingDevice::RenderPrimitive p_primitive, const Ref<RDPipelineRasterizationState> &p_rasterization_state, const Ref<RDPipelineMultisampleState> &p_multisample_state, const Ref<RDPipelineDepthStencilState> &p_stencil_state, const Ref<RDPipelineColorBlendState> &p_color_blend_state, BitField<RenderingDevice::PipelineDynamicStateFlags> p_dynamic_state_flags, uint32_t p_for_render_pass, const TypedArray<Ref<RDPipelineSpecializationConstant>> &p_specialization_constants) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("render_pipeline_create")._native_ptr(), 2385451958);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_framebuffer_format_encoded;
 	PtrToArg<int64_t>::encode(p_framebuffer_format, &p_framebuffer_format_encoded);
 	int64_t p_vertex_format_encoded;
@@ -497,25 +499,25 @@ RID RenderingDevice::render_pipeline_create(const RID &p_shader, int64_t p_frame
 
 bool RenderingDevice::render_pipeline_is_valid(const RID &p_render_pipeline) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("render_pipeline_is_valid")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_render_pipeline);
 }
 
-RID RenderingDevice::compute_pipeline_create(const RID &p_shader, const TypedArray<RDPipelineSpecializationConstant> &p_specialization_constants) {
+RID RenderingDevice::compute_pipeline_create(const RID &p_shader, const TypedArray<Ref<RDPipelineSpecializationConstant>> &p_specialization_constants) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("compute_pipeline_create")._native_ptr(), 1448838280);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_shader, &p_specialization_constants);
 }
 
 bool RenderingDevice::compute_pipeline_is_valid(const RID &p_compute_pipeline) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("compute_pipeline_is_valid")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_compute_pipeline);
 }
 
 int32_t RenderingDevice::screen_get_width(int32_t p_screen) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("screen_get_width")._native_ptr(), 1591665591);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_screen_encoded;
 	PtrToArg<int64_t>::encode(p_screen, &p_screen_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_screen_encoded);
@@ -523,7 +525,7 @@ int32_t RenderingDevice::screen_get_width(int32_t p_screen) const {
 
 int32_t RenderingDevice::screen_get_height(int32_t p_screen) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("screen_get_height")._native_ptr(), 1591665591);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_screen_encoded;
 	PtrToArg<int64_t>::encode(p_screen, &p_screen_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_screen_encoded);
@@ -531,7 +533,7 @@ int32_t RenderingDevice::screen_get_height(int32_t p_screen) const {
 
 int64_t RenderingDevice::screen_get_framebuffer_format(int32_t p_screen) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("screen_get_framebuffer_format")._native_ptr(), 1591665591);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_screen_encoded;
 	PtrToArg<int64_t>::encode(p_screen, &p_screen_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_screen_encoded);
@@ -539,7 +541,7 @@ int64_t RenderingDevice::screen_get_framebuffer_format(int32_t p_screen) const {
 
 int64_t RenderingDevice::draw_list_begin_for_screen(int32_t p_screen, const Color &p_clear_color) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("draw_list_begin_for_screen")._native_ptr(), 3988079995);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_screen_encoded;
 	PtrToArg<int64_t>::encode(p_screen, &p_screen_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_screen_encoded, &p_clear_color);
@@ -547,7 +549,7 @@ int64_t RenderingDevice::draw_list_begin_for_screen(int32_t p_screen, const Colo
 
 int64_t RenderingDevice::draw_list_begin(const RID &p_framebuffer, BitField<RenderingDevice::DrawFlags> p_draw_flags, const PackedColorArray &p_clear_color_values, float p_clear_depth_value, uint32_t p_clear_stencil_value, const Rect2 &p_region, uint32_t p_breadcrumb) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("draw_list_begin")._native_ptr(), 1317926357);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	double p_clear_depth_value_encoded;
 	PtrToArg<double>::encode(p_clear_depth_value, &p_clear_depth_value_encoded);
 	int64_t p_clear_stencil_value_encoded;
@@ -559,7 +561,7 @@ int64_t RenderingDevice::draw_list_begin(const RID &p_framebuffer, BitField<Rend
 
 PackedInt64Array RenderingDevice::draw_list_begin_split(const RID &p_framebuffer, uint32_t p_splits, RenderingDevice::InitialAction p_initial_color_action, RenderingDevice::FinalAction p_final_color_action, RenderingDevice::InitialAction p_initial_depth_action, RenderingDevice::FinalAction p_final_depth_action, const PackedColorArray &p_clear_color_values, float p_clear_depth, uint32_t p_clear_stencil, const Rect2 &p_region, const TypedArray<RID> &p_storage_textures) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("draw_list_begin_split")._native_ptr(), 2406300660);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt64Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt64Array()));
 	int64_t p_splits_encoded;
 	PtrToArg<int64_t>::encode(p_splits, &p_splits_encoded);
 	int64_t p_initial_color_action_encoded;
@@ -677,13 +679,13 @@ void RenderingDevice::draw_list_disable_scissor(int64_t p_draw_list) {
 
 int64_t RenderingDevice::draw_list_switch_to_next_pass() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("draw_list_switch_to_next_pass")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 PackedInt64Array RenderingDevice::draw_list_switch_to_next_pass_split(uint32_t p_splits) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("draw_list_switch_to_next_pass_split")._native_ptr(), 2865087369);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt64Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt64Array()));
 	int64_t p_splits_encoded;
 	PtrToArg<int64_t>::encode(p_splits, &p_splits_encoded);
 	return internal::_call_native_mb_ret<PackedInt64Array>(_gde_method_bind, _owner, &p_splits_encoded);
@@ -697,7 +699,7 @@ void RenderingDevice::draw_list_end() {
 
 int64_t RenderingDevice::compute_list_begin() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("compute_list_begin")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -781,19 +783,19 @@ void RenderingDevice::capture_timestamp(const String &p_name) {
 
 uint32_t RenderingDevice::get_captured_timestamps_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_captured_timestamps_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::get_captured_timestamps_frame() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_captured_timestamps_frame")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::get_captured_timestamp_gpu_time(uint32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_captured_timestamp_gpu_time")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -801,7 +803,7 @@ uint64_t RenderingDevice::get_captured_timestamp_gpu_time(uint32_t p_index) cons
 
 uint64_t RenderingDevice::get_captured_timestamp_cpu_time(uint32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_captured_timestamp_cpu_time")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -809,7 +811,7 @@ uint64_t RenderingDevice::get_captured_timestamp_cpu_time(uint32_t p_index) cons
 
 String RenderingDevice::get_captured_timestamp_name(uint32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_captured_timestamp_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_index_encoded);
@@ -817,7 +819,7 @@ String RenderingDevice::get_captured_timestamp_name(uint32_t p_index) const {
 
 bool RenderingDevice::has_feature(RenderingDevice::Features p_feature) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("has_feature")._native_ptr(), 1772728326);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_feature_encoded;
 	PtrToArg<int64_t>::encode(p_feature, &p_feature_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_feature_encoded);
@@ -825,7 +827,7 @@ bool RenderingDevice::has_feature(RenderingDevice::Features p_feature) const {
 
 uint64_t RenderingDevice::limit_get(RenderingDevice::Limit p_limit) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("limit_get")._native_ptr(), 1559202131);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_limit_encoded;
 	PtrToArg<int64_t>::encode(p_limit, &p_limit_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_limit_encoded);
@@ -833,7 +835,7 @@ uint64_t RenderingDevice::limit_get(RenderingDevice::Limit p_limit) const {
 
 uint32_t RenderingDevice::get_frame_delay() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_frame_delay")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -863,7 +865,7 @@ void RenderingDevice::full_barrier() {
 
 RenderingDevice *RenderingDevice::create_local_device() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("create_local_device")._native_ptr(), 2846302423);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<RenderingDevice>(_gde_method_bind, _owner);
 }
 
@@ -893,25 +895,25 @@ void RenderingDevice::draw_command_end_label() {
 
 String RenderingDevice::get_device_vendor_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_device_vendor_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String RenderingDevice::get_device_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_device_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String RenderingDevice::get_device_pipeline_cache_uuid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_device_pipeline_cache_uuid")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::get_memory_usage(RenderingDevice::MemoryType p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_memory_usage")._native_ptr(), 251690689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_type_encoded);
@@ -919,7 +921,7 @@ uint64_t RenderingDevice::get_memory_usage(RenderingDevice::MemoryType p_type) c
 
 uint64_t RenderingDevice::get_driver_resource(RenderingDevice::DriverResource p_resource, const RID &p_rid, uint64_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_driver_resource")._native_ptr(), 501815484);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_resource_encoded;
 	PtrToArg<int64_t>::encode(p_resource, &p_resource_encoded);
 	int64_t p_index_encoded;
@@ -929,19 +931,19 @@ uint64_t RenderingDevice::get_driver_resource(RenderingDevice::DriverResource p_
 
 String RenderingDevice::get_perf_report() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_perf_report")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String RenderingDevice::get_driver_and_device_memory_report() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_driver_and_device_memory_report")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String RenderingDevice::get_tracked_object_name(uint32_t p_type_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_tracked_object_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_type_index_encoded;
 	PtrToArg<int64_t>::encode(p_type_index, &p_type_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_type_index_encoded);
@@ -949,25 +951,25 @@ String RenderingDevice::get_tracked_object_name(uint32_t p_type_index) const {
 
 uint64_t RenderingDevice::get_tracked_object_type_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_tracked_object_type_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::get_driver_total_memory() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_driver_total_memory")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::get_driver_allocation_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_driver_allocation_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::get_driver_memory_by_object_type(uint32_t p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_driver_memory_by_object_type")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_type_encoded);
@@ -975,7 +977,7 @@ uint64_t RenderingDevice::get_driver_memory_by_object_type(uint32_t p_type) cons
 
 uint64_t RenderingDevice::get_driver_allocs_by_object_type(uint32_t p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_driver_allocs_by_object_type")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_type_encoded);
@@ -983,19 +985,19 @@ uint64_t RenderingDevice::get_driver_allocs_by_object_type(uint32_t p_type) cons
 
 uint64_t RenderingDevice::get_device_total_memory() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_device_total_memory")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::get_device_allocation_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_device_allocation_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingDevice::get_device_memory_by_object_type(uint32_t p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_device_memory_by_object_type")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_type_encoded);
@@ -1003,7 +1005,7 @@ uint64_t RenderingDevice::get_device_memory_by_object_type(uint32_t p_type) cons
 
 uint64_t RenderingDevice::get_device_allocs_by_object_type(uint32_t p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingDevice::get_class_static()._native_ptr(), StringName("get_device_allocs_by_object_type")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_type_encoded);

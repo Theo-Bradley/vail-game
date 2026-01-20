@@ -49,7 +49,7 @@ void SpriteFrames::add_animation(const StringName &p_anim) {
 
 bool SpriteFrames::has_animation(const StringName &p_anim) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpriteFrames::get_class_static()._native_ptr(), StringName("has_animation")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_anim);
 }
 
@@ -73,7 +73,7 @@ void SpriteFrames::rename_animation(const StringName &p_anim, const StringName &
 
 PackedStringArray SpriteFrames::get_animation_names() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpriteFrames::get_class_static()._native_ptr(), StringName("get_animation_names")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -87,7 +87,7 @@ void SpriteFrames::set_animation_speed(const StringName &p_anim, double p_fps) {
 
 double SpriteFrames::get_animation_speed(const StringName &p_anim) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpriteFrames::get_class_static()._native_ptr(), StringName("get_animation_speed")._native_ptr(), 2349060816);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_anim);
 }
 
@@ -101,7 +101,7 @@ void SpriteFrames::set_animation_loop(const StringName &p_anim, bool p_loop) {
 
 bool SpriteFrames::get_animation_loop(const StringName &p_anim) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpriteFrames::get_class_static()._native_ptr(), StringName("get_animation_loop")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_anim);
 }
 
@@ -135,13 +135,13 @@ void SpriteFrames::remove_frame(const StringName &p_anim, int32_t p_idx) {
 
 int32_t SpriteFrames::get_frame_count(const StringName &p_anim) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpriteFrames::get_class_static()._native_ptr(), StringName("get_frame_count")._native_ptr(), 2458036349);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_anim);
 }
 
 Ref<Texture2D> SpriteFrames::get_frame_texture(const StringName &p_anim, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpriteFrames::get_class_static()._native_ptr(), StringName("get_frame_texture")._native_ptr(), 2900517879);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_anim, &p_idx_encoded));
@@ -149,7 +149,7 @@ Ref<Texture2D> SpriteFrames::get_frame_texture(const StringName &p_anim, int32_t
 
 float SpriteFrames::get_frame_duration(const StringName &p_anim, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpriteFrames::get_class_static()._native_ptr(), StringName("get_frame_duration")._native_ptr(), 1129309260);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_anim, &p_idx_encoded);

@@ -49,13 +49,13 @@ void AudioStreamPlayback::set_sample_playback(const Ref<AudioSamplePlayback> &p_
 
 Ref<AudioSamplePlayback> AudioStreamPlayback::get_sample_playback() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayback::get_class_static()._native_ptr(), StringName("get_sample_playback")._native_ptr(), 3482738536);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioSamplePlayback>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioSamplePlayback>()));
 	return Ref<AudioSamplePlayback>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioSamplePlayback>(_gde_method_bind, _owner));
 }
 
 PackedVector2Array AudioStreamPlayback::mix_audio(float p_rate_scale, int32_t p_frames) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayback::get_class_static()._native_ptr(), StringName("mix_audio")._native_ptr(), 3341291446);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	double p_rate_scale_encoded;
 	PtrToArg<double>::encode(p_rate_scale, &p_rate_scale_encoded);
 	int64_t p_frames_encoded;
@@ -87,19 +87,19 @@ void AudioStreamPlayback::stop() {
 
 int32_t AudioStreamPlayback::get_loop_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayback::get_class_static()._native_ptr(), StringName("get_loop_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 double AudioStreamPlayback::get_playback_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayback::get_class_static()._native_ptr(), StringName("get_playback_position")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool AudioStreamPlayback::is_playing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayback::get_class_static()._native_ptr(), StringName("is_playing")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

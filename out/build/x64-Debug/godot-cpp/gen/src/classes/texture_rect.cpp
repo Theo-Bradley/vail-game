@@ -48,7 +48,7 @@ void TextureRect::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> TextureRect::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureRect::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -62,7 +62,7 @@ void TextureRect::set_expand_mode(TextureRect::ExpandMode p_expand_mode) {
 
 TextureRect::ExpandMode TextureRect::get_expand_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureRect::get_class_static()._native_ptr(), StringName("get_expand_mode")._native_ptr(), 3863824733);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextureRect::ExpandMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextureRect::ExpandMode(0)));
 	return (TextureRect::ExpandMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void TextureRect::set_flip_h(bool p_enable) {
 
 bool TextureRect::is_flipped_h() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureRect::get_class_static()._native_ptr(), StringName("is_flipped_h")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void TextureRect::set_flip_v(bool p_enable) {
 
 bool TextureRect::is_flipped_v() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureRect::get_class_static()._native_ptr(), StringName("is_flipped_v")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void TextureRect::set_stretch_mode(TextureRect::StretchMode p_stretch_mode) {
 
 TextureRect::StretchMode TextureRect::get_stretch_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureRect::get_class_static()._native_ptr(), StringName("get_stretch_mode")._native_ptr(), 346396079);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextureRect::StretchMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextureRect::StretchMode(0)));
 	return (TextureRect::StretchMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

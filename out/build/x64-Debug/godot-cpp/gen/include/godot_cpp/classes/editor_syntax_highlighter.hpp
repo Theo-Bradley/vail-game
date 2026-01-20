@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_SYNTAX_HIGHLIGHTER_HPP
-#define GODOT_CPP_EDITOR_SYNTAX_HIGHLIGHTER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/syntax_highlighter.hpp>
@@ -50,6 +49,7 @@ class EditorSyntaxHighlighter : public SyntaxHighlighter {
 public:
 	virtual String _get_name() const;
 	virtual PackedStringArray _get_supported_languages() const;
+	virtual Ref<EditorSyntaxHighlighter> _create() const;
 
 protected:
 	template <typename T, typename B>
@@ -61,6 +61,9 @@ protected:
 		if constexpr (!std::is_same_v<decltype(&B::_get_supported_languages), decltype(&T::_get_supported_languages)>) {
 			BIND_VIRTUAL_METHOD(T, _get_supported_languages, 1139954409);
 		}
+		if constexpr (!std::is_same_v<decltype(&B::_create), decltype(&T::_create)>) {
+			BIND_VIRTUAL_METHOD(T, _create, 3789807118);
+		}
 	}
 
 public:
@@ -68,4 +71,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_SYNTAX_HIGHLIGHTER_HPP

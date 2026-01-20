@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CAMERA2D_HPP
-#define GODOT_CPP_CAMERA2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/node2d.hpp>
@@ -71,6 +70,8 @@ public:
 	bool is_enabled() const;
 	void make_current();
 	bool is_current() const;
+	void set_limit_enabled(bool p_limit_enabled);
+	bool is_limit_enabled() const;
 	void set_limit(Side p_margin, int32_t p_limit);
 	int32_t get_limit(Side p_margin) const;
 	void set_limit_smoothing_enabled(bool p_limit_smoothing_enabled);
@@ -87,13 +88,14 @@ public:
 	float get_drag_margin(Side p_margin) const;
 	Vector2 get_target_position() const;
 	Vector2 get_screen_center_position() const;
+	float get_screen_rotation() const;
 	void set_zoom(const Vector2 &p_zoom);
 	Vector2 get_zoom() const;
 	void set_custom_viewport(Node *p_viewport);
 	Node *get_custom_viewport() const;
 	void set_position_smoothing_speed(float p_position_smoothing_speed);
 	float get_position_smoothing_speed() const;
-	void set_position_smoothing_enabled(bool p_position_smoothing_speed);
+	void set_position_smoothing_enabled(bool p_enabled);
 	bool is_position_smoothing_enabled() const;
 	void set_rotation_smoothing_enabled(bool p_enabled);
 	bool is_rotation_smoothing_enabled() const;
@@ -123,4 +125,3 @@ public:
 VARIANT_ENUM_CAST(Camera2D::AnchorMode);
 VARIANT_ENUM_CAST(Camera2D::Camera2DProcessCallback);
 
-#endif // ! GODOT_CPP_CAMERA2D_HPP

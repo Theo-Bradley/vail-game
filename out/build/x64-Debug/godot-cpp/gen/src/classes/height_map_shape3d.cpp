@@ -50,7 +50,7 @@ void HeightMapShape3D::set_map_width(int32_t p_width) {
 
 int32_t HeightMapShape3D::get_map_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HeightMapShape3D::get_class_static()._native_ptr(), StringName("get_map_width")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void HeightMapShape3D::set_map_depth(int32_t p_height) {
 
 int32_t HeightMapShape3D::get_map_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HeightMapShape3D::get_class_static()._native_ptr(), StringName("get_map_depth")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,19 +76,19 @@ void HeightMapShape3D::set_map_data(const PackedFloat32Array &p_data) {
 
 PackedFloat32Array HeightMapShape3D::get_map_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HeightMapShape3D::get_class_static()._native_ptr(), StringName("get_map_data")._native_ptr(), 675695659);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedFloat32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedFloat32Array()));
 	return internal::_call_native_mb_ret<PackedFloat32Array>(_gde_method_bind, _owner);
 }
 
 float HeightMapShape3D::get_min_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HeightMapShape3D::get_class_static()._native_ptr(), StringName("get_min_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float HeightMapShape3D::get_max_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HeightMapShape3D::get_class_static()._native_ptr(), StringName("get_max_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

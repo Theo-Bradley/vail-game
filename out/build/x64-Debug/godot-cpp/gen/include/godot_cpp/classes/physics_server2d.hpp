@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_SERVER2D_HPP
-#define GODOT_CPP_PHYSICS_SERVER2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_test_motion_result2d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -337,4 +336,3 @@ VARIANT_ENUM_CAST(PhysicsServer2D::CCDMode);
 VARIANT_ENUM_CAST(PhysicsServer2D::AreaBodyStatus);
 VARIANT_ENUM_CAST(PhysicsServer2D::ProcessInfo);
 
-#endif // ! GODOT_CPP_PHYSICS_SERVER2D_HPP

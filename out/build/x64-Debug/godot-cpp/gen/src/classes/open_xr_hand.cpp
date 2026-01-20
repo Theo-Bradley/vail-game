@@ -48,7 +48,7 @@ void OpenXRHand::set_hand(OpenXRHand::Hands p_hand) {
 
 OpenXRHand::Hands OpenXRHand::get_hand() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRHand::get_class_static()._native_ptr(), StringName("get_hand")._native_ptr(), 2850644561);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, OpenXRHand::Hands(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (OpenXRHand::Hands(0)));
 	return (OpenXRHand::Hands)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void OpenXRHand::set_hand_skeleton(const NodePath &p_hand_skeleton) {
 
 NodePath OpenXRHand::get_hand_skeleton() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRHand::get_class_static()._native_ptr(), StringName("get_hand_skeleton")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void OpenXRHand::set_motion_range(OpenXRHand::MotionRange p_motion_range) {
 
 OpenXRHand::MotionRange OpenXRHand::get_motion_range() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRHand::get_class_static()._native_ptr(), StringName("get_motion_range")._native_ptr(), 2191822314);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, OpenXRHand::MotionRange(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (OpenXRHand::MotionRange(0)));
 	return (OpenXRHand::MotionRange)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void OpenXRHand::set_skeleton_rig(OpenXRHand::SkeletonRig p_skeleton_rig) {
 
 OpenXRHand::SkeletonRig OpenXRHand::get_skeleton_rig() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRHand::get_class_static()._native_ptr(), StringName("get_skeleton_rig")._native_ptr(), 968409338);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, OpenXRHand::SkeletonRig(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (OpenXRHand::SkeletonRig(0)));
 	return (OpenXRHand::SkeletonRig)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void OpenXRHand::set_bone_update(OpenXRHand::BoneUpdate p_bone_update) {
 
 OpenXRHand::BoneUpdate OpenXRHand::get_bone_update() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRHand::get_class_static()._native_ptr(), StringName("get_bone_update")._native_ptr(), 1310695248);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, OpenXRHand::BoneUpdate(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (OpenXRHand::BoneUpdate(0)));
 	return (OpenXRHand::BoneUpdate)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

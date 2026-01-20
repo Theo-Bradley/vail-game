@@ -43,7 +43,7 @@ namespace godot {
 
 RID SoftBody3D::get_physics_rid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_physics_rid")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -57,7 +57,7 @@ void SoftBody3D::set_collision_mask(uint32_t p_collision_mask) {
 
 uint32_t SoftBody3D::get_collision_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_collision_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -71,7 +71,7 @@ void SoftBody3D::set_collision_layer(uint32_t p_collision_layer) {
 
 uint32_t SoftBody3D::get_collision_layer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_collision_layer")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -87,7 +87,7 @@ void SoftBody3D::set_collision_mask_value(int32_t p_layer_number, bool p_value) 
 
 bool SoftBody3D::get_collision_mask_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_collision_mask_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -105,7 +105,7 @@ void SoftBody3D::set_collision_layer_value(int32_t p_layer_number, bool p_value)
 
 bool SoftBody3D::get_collision_layer_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_collision_layer_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -119,7 +119,7 @@ void SoftBody3D::set_parent_collision_ignore(const NodePath &p_parent_collision_
 
 NodePath SoftBody3D::get_parent_collision_ignore() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_parent_collision_ignore")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -133,13 +133,13 @@ void SoftBody3D::set_disable_mode(SoftBody3D::DisableMode p_mode) {
 
 SoftBody3D::DisableMode SoftBody3D::get_disable_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_disable_mode")._native_ptr(), 4135042476);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SoftBody3D::DisableMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SoftBody3D::DisableMode(0)));
 	return (SoftBody3D::DisableMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 TypedArray<PhysicsBody3D> SoftBody3D::get_collision_exceptions() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_collision_exceptions")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<PhysicsBody3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<PhysicsBody3D>()));
 	return internal::_call_native_mb_ret<TypedArray<PhysicsBody3D>>(_gde_method_bind, _owner);
 }
 
@@ -165,7 +165,7 @@ void SoftBody3D::set_simulation_precision(int32_t p_simulation_precision) {
 
 int32_t SoftBody3D::get_simulation_precision() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_simulation_precision")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -179,7 +179,7 @@ void SoftBody3D::set_total_mass(float p_mass) {
 
 float SoftBody3D::get_total_mass() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_total_mass")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -193,7 +193,21 @@ void SoftBody3D::set_linear_stiffness(float p_linear_stiffness) {
 
 float SoftBody3D::get_linear_stiffness() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_linear_stiffness")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void SoftBody3D::set_shrinking_factor(float p_shrinking_factor) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("set_shrinking_factor")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_shrinking_factor_encoded;
+	PtrToArg<double>::encode(p_shrinking_factor, &p_shrinking_factor_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_shrinking_factor_encoded);
+}
+
+float SoftBody3D::get_shrinking_factor() {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_shrinking_factor")._native_ptr(), 191475506);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -207,7 +221,7 @@ void SoftBody3D::set_pressure_coefficient(float p_pressure_coefficient) {
 
 float SoftBody3D::get_pressure_coefficient() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_pressure_coefficient")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -221,7 +235,7 @@ void SoftBody3D::set_damping_coefficient(float p_damping_coefficient) {
 
 float SoftBody3D::get_damping_coefficient() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_damping_coefficient")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -235,16 +249,44 @@ void SoftBody3D::set_drag_coefficient(float p_drag_coefficient) {
 
 float SoftBody3D::get_drag_coefficient() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_drag_coefficient")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 Vector3 SoftBody3D::get_point_transform(int32_t p_point_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("get_point_transform")._native_ptr(), 871989493);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_point_index_encoded;
 	PtrToArg<int64_t>::encode(p_point_index, &p_point_index_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_point_index_encoded);
+}
+
+void SoftBody3D::apply_impulse(int32_t p_point_index, const Vector3 &p_impulse) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("apply_impulse")._native_ptr(), 1530502735);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_point_index_encoded;
+	PtrToArg<int64_t>::encode(p_point_index, &p_point_index_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_point_index_encoded, &p_impulse);
+}
+
+void SoftBody3D::apply_force(int32_t p_point_index, const Vector3 &p_force) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("apply_force")._native_ptr(), 1530502735);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_point_index_encoded;
+	PtrToArg<int64_t>::encode(p_point_index, &p_point_index_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_point_index_encoded, &p_force);
+}
+
+void SoftBody3D::apply_central_impulse(const Vector3 &p_impulse) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("apply_central_impulse")._native_ptr(), 3460891852);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_impulse);
+}
+
+void SoftBody3D::apply_central_force(const Vector3 &p_force) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("apply_central_force")._native_ptr(), 3460891852);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_force);
 }
 
 void SoftBody3D::set_point_pinned(int32_t p_point_index, bool p_pinned, const NodePath &p_attachment_path, int32_t p_insert_at) {
@@ -261,7 +303,7 @@ void SoftBody3D::set_point_pinned(int32_t p_point_index, bool p_pinned, const No
 
 bool SoftBody3D::is_point_pinned(int32_t p_point_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("is_point_pinned")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_point_index_encoded;
 	PtrToArg<int64_t>::encode(p_point_index, &p_point_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_point_index_encoded);
@@ -277,7 +319,7 @@ void SoftBody3D::set_ray_pickable(bool p_ray_pickable) {
 
 bool SoftBody3D::is_ray_pickable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SoftBody3D::get_class_static()._native_ptr(), StringName("is_ray_pickable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

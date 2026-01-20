@@ -42,7 +42,7 @@ namespace godot {
 
 RID NavigationAgent2D::get_rid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_rid")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -56,7 +56,7 @@ void NavigationAgent2D::set_avoidance_enabled(bool p_enabled) {
 
 bool NavigationAgent2D::get_avoidance_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_avoidance_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -70,7 +70,7 @@ void NavigationAgent2D::set_path_desired_distance(float p_desired_distance) {
 
 float NavigationAgent2D::get_path_desired_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_desired_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -84,7 +84,7 @@ void NavigationAgent2D::set_target_desired_distance(float p_desired_distance) {
 
 float NavigationAgent2D::get_target_desired_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_target_desired_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void NavigationAgent2D::set_radius(float p_radius) {
 
 float NavigationAgent2D::get_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -112,7 +112,7 @@ void NavigationAgent2D::set_neighbor_distance(float p_neighbor_distance) {
 
 float NavigationAgent2D::get_neighbor_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_neighbor_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -126,7 +126,7 @@ void NavigationAgent2D::set_max_neighbors(int32_t p_max_neighbors) {
 
 int32_t NavigationAgent2D::get_max_neighbors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_max_neighbors")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -140,7 +140,7 @@ void NavigationAgent2D::set_time_horizon_agents(float p_time_horizon) {
 
 float NavigationAgent2D::get_time_horizon_agents() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_time_horizon_agents")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void NavigationAgent2D::set_time_horizon_obstacles(float p_time_horizon) {
 
 float NavigationAgent2D::get_time_horizon_obstacles() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_time_horizon_obstacles")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -168,7 +168,7 @@ void NavigationAgent2D::set_max_speed(float p_max_speed) {
 
 float NavigationAgent2D::get_max_speed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_max_speed")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -182,7 +182,7 @@ void NavigationAgent2D::set_path_max_distance(float p_max_speed) {
 
 float NavigationAgent2D::get_path_max_distance() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_max_distance")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -196,7 +196,7 @@ void NavigationAgent2D::set_navigation_layers(uint32_t p_navigation_layers) {
 
 uint32_t NavigationAgent2D::get_navigation_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_navigation_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -212,7 +212,7 @@ void NavigationAgent2D::set_navigation_layer_value(int32_t p_layer_number, bool 
 
 bool NavigationAgent2D::get_navigation_layer_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_navigation_layer_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -228,7 +228,7 @@ void NavigationAgent2D::set_pathfinding_algorithm(NavigationPathQueryParameters2
 
 NavigationPathQueryParameters2D::PathfindingAlgorithm NavigationAgent2D::get_pathfinding_algorithm() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_pathfinding_algorithm")._native_ptr(), 3000421146);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NavigationPathQueryParameters2D::PathfindingAlgorithm(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NavigationPathQueryParameters2D::PathfindingAlgorithm(0)));
 	return (NavigationPathQueryParameters2D::PathfindingAlgorithm)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -242,7 +242,7 @@ void NavigationAgent2D::set_path_postprocessing(NavigationPathQueryParameters2D:
 
 NavigationPathQueryParameters2D::PathPostProcessing NavigationAgent2D::get_path_postprocessing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_postprocessing")._native_ptr(), 3798118993);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NavigationPathQueryParameters2D::PathPostProcessing(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NavigationPathQueryParameters2D::PathPostProcessing(0)));
 	return (NavigationPathQueryParameters2D::PathPostProcessing)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -254,7 +254,7 @@ void NavigationAgent2D::set_path_metadata_flags(BitField<NavigationPathQueryPara
 
 BitField<NavigationPathQueryParameters2D::PathMetadataFlags> NavigationAgent2D::get_path_metadata_flags() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_metadata_flags")._native_ptr(), 488152976);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<NavigationPathQueryParameters2D::PathMetadataFlags>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<NavigationPathQueryParameters2D::PathMetadataFlags>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -266,7 +266,7 @@ void NavigationAgent2D::set_navigation_map(const RID &p_navigation_map) {
 
 RID NavigationAgent2D::get_navigation_map() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_navigation_map")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -278,7 +278,7 @@ void NavigationAgent2D::set_target_position(const Vector2 &p_position) {
 
 Vector2 NavigationAgent2D::get_target_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_target_position")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -292,7 +292,7 @@ void NavigationAgent2D::set_simplify_path(bool p_enabled) {
 
 bool NavigationAgent2D::get_simplify_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_simplify_path")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -306,13 +306,75 @@ void NavigationAgent2D::set_simplify_epsilon(float p_epsilon) {
 
 float NavigationAgent2D::get_simplify_epsilon() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_simplify_epsilon")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void NavigationAgent2D::set_path_return_max_length(float p_length) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("set_path_return_max_length")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_length_encoded;
+	PtrToArg<double>::encode(p_length, &p_length_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_length_encoded);
+}
+
+float NavigationAgent2D::get_path_return_max_length() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_return_max_length")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void NavigationAgent2D::set_path_return_max_radius(float p_radius) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("set_path_return_max_radius")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_radius_encoded;
+	PtrToArg<double>::encode(p_radius, &p_radius_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_radius_encoded);
+}
+
+float NavigationAgent2D::get_path_return_max_radius() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_return_max_radius")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void NavigationAgent2D::set_path_search_max_polygons(int32_t p_max_polygons) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("set_path_search_max_polygons")._native_ptr(), 1286410249);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_max_polygons_encoded;
+	PtrToArg<int64_t>::encode(p_max_polygons, &p_max_polygons_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_max_polygons_encoded);
+}
+
+int32_t NavigationAgent2D::get_path_search_max_polygons() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_search_max_polygons")._native_ptr(), 3905245786);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void NavigationAgent2D::set_path_search_max_distance(float p_distance) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("set_path_search_max_distance")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_distance_encoded;
+	PtrToArg<double>::encode(p_distance, &p_distance_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_distance_encoded);
+}
+
+float NavigationAgent2D::get_path_search_max_distance() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_search_max_distance")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+float NavigationAgent2D::get_path_length() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_path_length")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 Vector2 NavigationAgent2D::get_next_path_position() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_next_path_position")._native_ptr(), 1497962370);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -330,55 +392,55 @@ void NavigationAgent2D::set_velocity(const Vector2 &p_velocity) {
 
 Vector2 NavigationAgent2D::get_velocity() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_velocity")._native_ptr(), 1497962370);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 float NavigationAgent2D::distance_to_target() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("distance_to_target")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 Ref<NavigationPathQueryResult2D> NavigationAgent2D::get_current_navigation_result() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_current_navigation_result")._native_ptr(), 166799483);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<NavigationPathQueryResult2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<NavigationPathQueryResult2D>()));
 	return Ref<NavigationPathQueryResult2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<NavigationPathQueryResult2D>(_gde_method_bind, _owner));
 }
 
 PackedVector2Array NavigationAgent2D::get_current_navigation_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_current_navigation_path")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
 int32_t NavigationAgent2D::get_current_navigation_path_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_current_navigation_path_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool NavigationAgent2D::is_target_reached() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("is_target_reached")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool NavigationAgent2D::is_target_reachable() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("is_target_reachable")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool NavigationAgent2D::is_navigation_finished() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("is_navigation_finished")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Vector2 NavigationAgent2D::get_final_position() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_final_position")._native_ptr(), 1497962370);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -392,7 +454,7 @@ void NavigationAgent2D::set_avoidance_layers(uint32_t p_layers) {
 
 uint32_t NavigationAgent2D::get_avoidance_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_avoidance_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -406,7 +468,7 @@ void NavigationAgent2D::set_avoidance_mask(uint32_t p_mask) {
 
 uint32_t NavigationAgent2D::get_avoidance_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_avoidance_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -422,7 +484,7 @@ void NavigationAgent2D::set_avoidance_layer_value(int32_t p_layer_number, bool p
 
 bool NavigationAgent2D::get_avoidance_layer_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_avoidance_layer_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -440,7 +502,7 @@ void NavigationAgent2D::set_avoidance_mask_value(int32_t p_mask_number, bool p_v
 
 bool NavigationAgent2D::get_avoidance_mask_value(int32_t p_mask_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_avoidance_mask_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_mask_number_encoded;
 	PtrToArg<int64_t>::encode(p_mask_number, &p_mask_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_mask_number_encoded);
@@ -456,7 +518,7 @@ void NavigationAgent2D::set_avoidance_priority(float p_priority) {
 
 float NavigationAgent2D::get_avoidance_priority() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_avoidance_priority")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -470,7 +532,7 @@ void NavigationAgent2D::set_debug_enabled(bool p_enabled) {
 
 bool NavigationAgent2D::get_debug_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_debug_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -484,7 +546,7 @@ void NavigationAgent2D::set_debug_use_custom(bool p_enabled) {
 
 bool NavigationAgent2D::get_debug_use_custom() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_debug_use_custom")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -496,7 +558,7 @@ void NavigationAgent2D::set_debug_path_custom_color(const Color &p_color) {
 
 Color NavigationAgent2D::get_debug_path_custom_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_debug_path_custom_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -510,7 +572,7 @@ void NavigationAgent2D::set_debug_path_custom_point_size(float p_point_size) {
 
 float NavigationAgent2D::get_debug_path_custom_point_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_debug_path_custom_point_size")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -524,7 +586,7 @@ void NavigationAgent2D::set_debug_path_custom_line_width(float p_line_width) {
 
 float NavigationAgent2D::get_debug_path_custom_line_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationAgent2D::get_class_static()._native_ptr(), StringName("get_debug_path_custom_line_width")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

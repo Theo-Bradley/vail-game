@@ -48,13 +48,13 @@ void InputEventWithModifiers::set_command_or_control_autoremap(bool p_enable) {
 
 bool InputEventWithModifiers::is_command_or_control_autoremap() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventWithModifiers::get_class_static()._native_ptr(), StringName("is_command_or_control_autoremap")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool InputEventWithModifiers::is_command_or_control_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventWithModifiers::get_class_static()._native_ptr(), StringName("is_command_or_control_pressed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -68,7 +68,7 @@ void InputEventWithModifiers::set_alt_pressed(bool p_pressed) {
 
 bool InputEventWithModifiers::is_alt_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventWithModifiers::get_class_static()._native_ptr(), StringName("is_alt_pressed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -82,7 +82,7 @@ void InputEventWithModifiers::set_shift_pressed(bool p_pressed) {
 
 bool InputEventWithModifiers::is_shift_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventWithModifiers::get_class_static()._native_ptr(), StringName("is_shift_pressed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -96,7 +96,7 @@ void InputEventWithModifiers::set_ctrl_pressed(bool p_pressed) {
 
 bool InputEventWithModifiers::is_ctrl_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventWithModifiers::get_class_static()._native_ptr(), StringName("is_ctrl_pressed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -110,13 +110,13 @@ void InputEventWithModifiers::set_meta_pressed(bool p_pressed) {
 
 bool InputEventWithModifiers::is_meta_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventWithModifiers::get_class_static()._native_ptr(), StringName("is_meta_pressed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 BitField<KeyModifierMask> InputEventWithModifiers::get_modifiers_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventWithModifiers::get_class_static()._native_ptr(), StringName("get_modifiers_mask")._native_ptr(), 1258259499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<KeyModifierMask>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<KeyModifierMask>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

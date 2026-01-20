@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AREA2D_HPP
-#define GODOT_CPP_AREA2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/collision_object2d.hpp>
 #include <godot_cpp/variant/string_name.hpp>
@@ -109,4 +108,3 @@ public:
 
 VARIANT_ENUM_CAST(Area2D::SpaceOverride);
 
-#endif // ! GODOT_CPP_AREA2D_HPP

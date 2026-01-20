@@ -43,13 +43,13 @@ namespace godot {
 
 Error FontFile::load_bitmap_font(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("load_bitmap_font")._native_ptr(), 166001499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 Error FontFile::load_dynamic_font(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("load_dynamic_font")._native_ptr(), 166001499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
@@ -61,7 +61,7 @@ void FontFile::set_data(const PackedByteArray &p_data) {
 
 PackedByteArray FontFile::get_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_data")._native_ptr(), 2362200018);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner);
 }
 
@@ -109,7 +109,7 @@ void FontFile::set_antialiasing(TextServer::FontAntialiasing p_antialiasing) {
 
 TextServer::FontAntialiasing FontFile::get_antialiasing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_antialiasing")._native_ptr(), 4262718649);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::FontAntialiasing(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::FontAntialiasing(0)));
 	return (TextServer::FontAntialiasing)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -123,7 +123,7 @@ void FontFile::set_disable_embedded_bitmaps(bool p_disable_embedded_bitmaps) {
 
 bool FontFile::get_disable_embedded_bitmaps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_disable_embedded_bitmaps")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -137,7 +137,7 @@ void FontFile::set_generate_mipmaps(bool p_generate_mipmaps) {
 
 bool FontFile::get_generate_mipmaps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_generate_mipmaps")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -151,7 +151,7 @@ void FontFile::set_multichannel_signed_distance_field(bool p_msdf) {
 
 bool FontFile::is_multichannel_signed_distance_field() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("is_multichannel_signed_distance_field")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -165,7 +165,7 @@ void FontFile::set_msdf_pixel_range(int32_t p_msdf_pixel_range) {
 
 int32_t FontFile::get_msdf_pixel_range() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_msdf_pixel_range")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -179,7 +179,7 @@ void FontFile::set_msdf_size(int32_t p_msdf_size) {
 
 int32_t FontFile::get_msdf_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_msdf_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -193,7 +193,7 @@ void FontFile::set_fixed_size(int32_t p_fixed_size) {
 
 int32_t FontFile::get_fixed_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_fixed_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -207,7 +207,7 @@ void FontFile::set_fixed_size_scale_mode(TextServer::FixedSizeScaleMode p_fixed_
 
 TextServer::FixedSizeScaleMode FontFile::get_fixed_size_scale_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_fixed_size_scale_mode")._native_ptr(), 753873478);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::FixedSizeScaleMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::FixedSizeScaleMode(0)));
 	return (TextServer::FixedSizeScaleMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -221,7 +221,7 @@ void FontFile::set_allow_system_fallback(bool p_allow_system_fallback) {
 
 bool FontFile::is_allow_system_fallback() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("is_allow_system_fallback")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -235,7 +235,21 @@ void FontFile::set_force_autohinter(bool p_force_autohinter) {
 
 bool FontFile::is_force_autohinter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("is_force_autohinter")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void FontFile::set_modulate_color_glyphs(bool p_modulate) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("set_modulate_color_glyphs")._native_ptr(), 2586408642);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int8_t p_modulate_encoded;
+	PtrToArg<bool>::encode(p_modulate, &p_modulate_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_modulate_encoded);
+}
+
+bool FontFile::is_modulate_color_glyphs() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("is_modulate_color_glyphs")._native_ptr(), 36873697);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -249,7 +263,7 @@ void FontFile::set_hinting(TextServer::Hinting p_hinting) {
 
 TextServer::Hinting FontFile::get_hinting() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_hinting")._native_ptr(), 3683214614);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::Hinting(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::Hinting(0)));
 	return (TextServer::Hinting)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -263,7 +277,7 @@ void FontFile::set_subpixel_positioning(TextServer::SubpixelPositioning p_subpix
 
 TextServer::SubpixelPositioning FontFile::get_subpixel_positioning() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_subpixel_positioning")._native_ptr(), 1069238588);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::SubpixelPositioning(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::SubpixelPositioning(0)));
 	return (TextServer::SubpixelPositioning)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -277,7 +291,7 @@ void FontFile::set_keep_rounding_remainders(bool p_keep_rounding_remainders) {
 
 bool FontFile::get_keep_rounding_remainders() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_keep_rounding_remainders")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -291,13 +305,13 @@ void FontFile::set_oversampling(float p_oversampling) {
 
 float FontFile::get_oversampling() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_oversampling")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 int32_t FontFile::get_cache_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_cache_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -317,7 +331,7 @@ void FontFile::remove_cache(int32_t p_cache_index) {
 
 TypedArray<Vector2i> FontFile::get_size_cache_list(int32_t p_cache_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_size_cache_list")._native_ptr(), 663333327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Vector2i>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Vector2i>()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	return internal::_call_native_mb_ret<TypedArray<Vector2i>>(_gde_method_bind, _owner, &p_cache_index_encoded);
@@ -349,7 +363,7 @@ void FontFile::set_variation_coordinates(int32_t p_cache_index, const Dictionary
 
 Dictionary FontFile::get_variation_coordinates(int32_t p_cache_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_variation_coordinates")._native_ptr(), 3485342025);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_cache_index_encoded);
@@ -367,7 +381,7 @@ void FontFile::set_embolden(int32_t p_cache_index, float p_strength) {
 
 float FontFile::get_embolden(int32_t p_cache_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_embolden")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_cache_index_encoded);
@@ -383,7 +397,7 @@ void FontFile::set_transform(int32_t p_cache_index, const Transform2D &p_transfo
 
 Transform2D FontFile::get_transform(int32_t p_cache_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_transform")._native_ptr(), 3836996910);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner, &p_cache_index_encoded);
@@ -403,7 +417,7 @@ void FontFile::set_extra_spacing(int32_t p_cache_index, TextServer::SpacingType 
 
 int64_t FontFile::get_extra_spacing(int32_t p_cache_index, TextServer::SpacingType p_spacing) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_extra_spacing")._native_ptr(), 1924257185);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_spacing_encoded;
@@ -423,7 +437,7 @@ void FontFile::set_extra_baseline_offset(int32_t p_cache_index, float p_baseline
 
 float FontFile::get_extra_baseline_offset(int32_t p_cache_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_extra_baseline_offset")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_cache_index_encoded);
@@ -441,7 +455,7 @@ void FontFile::set_face_index(int32_t p_cache_index, int64_t p_face_index) {
 
 int64_t FontFile::get_face_index(int32_t p_cache_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_face_index")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_cache_index_encoded);
@@ -461,7 +475,7 @@ void FontFile::set_cache_ascent(int32_t p_cache_index, int32_t p_size, float p_a
 
 float FontFile::get_cache_ascent(int32_t p_cache_index, int32_t p_size) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_cache_ascent")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_size_encoded;
@@ -483,7 +497,7 @@ void FontFile::set_cache_descent(int32_t p_cache_index, int32_t p_size, float p_
 
 float FontFile::get_cache_descent(int32_t p_cache_index, int32_t p_size) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_cache_descent")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_size_encoded;
@@ -505,7 +519,7 @@ void FontFile::set_cache_underline_position(int32_t p_cache_index, int32_t p_siz
 
 float FontFile::get_cache_underline_position(int32_t p_cache_index, int32_t p_size) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_cache_underline_position")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_size_encoded;
@@ -527,7 +541,7 @@ void FontFile::set_cache_underline_thickness(int32_t p_cache_index, int32_t p_si
 
 float FontFile::get_cache_underline_thickness(int32_t p_cache_index, int32_t p_size) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_cache_underline_thickness")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_size_encoded;
@@ -549,7 +563,7 @@ void FontFile::set_cache_scale(int32_t p_cache_index, int32_t p_size, float p_sc
 
 float FontFile::get_cache_scale(int32_t p_cache_index, int32_t p_size) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_cache_scale")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_size_encoded;
@@ -559,7 +573,7 @@ float FontFile::get_cache_scale(int32_t p_cache_index, int32_t p_size) const {
 
 int32_t FontFile::get_texture_count(int32_t p_cache_index, const Vector2i &p_size) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_texture_count")._native_ptr(), 1987661582);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_cache_index_encoded, &p_size);
@@ -595,7 +609,7 @@ void FontFile::set_texture_image(int32_t p_cache_index, const Vector2i &p_size, 
 
 Ref<Image> FontFile::get_texture_image(int32_t p_cache_index, const Vector2i &p_size, int32_t p_texture_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_texture_image")._native_ptr(), 3878418953);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_texture_index_encoded;
@@ -615,7 +629,7 @@ void FontFile::set_texture_offsets(int32_t p_cache_index, const Vector2i &p_size
 
 PackedInt32Array FontFile::get_texture_offsets(int32_t p_cache_index, const Vector2i &p_size, int32_t p_texture_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_texture_offsets")._native_ptr(), 3703444828);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_texture_index_encoded;
@@ -625,7 +639,7 @@ PackedInt32Array FontFile::get_texture_offsets(int32_t p_cache_index, const Vect
 
 PackedInt32Array FontFile::get_glyph_list(int32_t p_cache_index, const Vector2i &p_size) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_glyph_list")._native_ptr(), 681709689);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_cache_index_encoded, &p_size);
@@ -663,7 +677,7 @@ void FontFile::set_glyph_advance(int32_t p_cache_index, int32_t p_size, int32_t 
 
 Vector2 FontFile::get_glyph_advance(int32_t p_cache_index, int32_t p_size, int32_t p_glyph) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_glyph_advance")._native_ptr(), 1601573536);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_size_encoded;
@@ -685,7 +699,7 @@ void FontFile::set_glyph_offset(int32_t p_cache_index, const Vector2i &p_size, i
 
 Vector2 FontFile::get_glyph_offset(int32_t p_cache_index, const Vector2i &p_size, int32_t p_glyph) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_glyph_offset")._native_ptr(), 3205412300);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_glyph_encoded;
@@ -705,7 +719,7 @@ void FontFile::set_glyph_size(int32_t p_cache_index, const Vector2i &p_size, int
 
 Vector2 FontFile::get_glyph_size(int32_t p_cache_index, const Vector2i &p_size, int32_t p_glyph) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_glyph_size")._native_ptr(), 3205412300);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_glyph_encoded;
@@ -725,7 +739,7 @@ void FontFile::set_glyph_uv_rect(int32_t p_cache_index, const Vector2i &p_size, 
 
 Rect2 FontFile::get_glyph_uv_rect(int32_t p_cache_index, const Vector2i &p_size, int32_t p_glyph) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_glyph_uv_rect")._native_ptr(), 3927917900);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_glyph_encoded;
@@ -747,7 +761,7 @@ void FontFile::set_glyph_texture_idx(int32_t p_cache_index, const Vector2i &p_si
 
 int32_t FontFile::get_glyph_texture_idx(int32_t p_cache_index, const Vector2i &p_size, int32_t p_glyph) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_glyph_texture_idx")._native_ptr(), 1629411054);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_glyph_encoded;
@@ -757,7 +771,7 @@ int32_t FontFile::get_glyph_texture_idx(int32_t p_cache_index, const Vector2i &p
 
 TypedArray<Vector2i> FontFile::get_kerning_list(int32_t p_cache_index, int32_t p_size) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_kerning_list")._native_ptr(), 2345056839);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Vector2i>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Vector2i>()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_size_encoded;
@@ -797,7 +811,7 @@ void FontFile::set_kerning(int32_t p_cache_index, int32_t p_size, const Vector2i
 
 Vector2 FontFile::get_kerning(int32_t p_cache_index, int32_t p_size, const Vector2i &p_glyph_pair) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_kerning")._native_ptr(), 1611912865);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_cache_index_encoded;
 	PtrToArg<int64_t>::encode(p_cache_index, &p_cache_index_encoded);
 	int64_t p_size_encoded;
@@ -837,7 +851,7 @@ void FontFile::set_language_support_override(const String &p_language, bool p_su
 
 bool FontFile::get_language_support_override(const String &p_language) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_language_support_override")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_language);
 }
 
@@ -849,7 +863,7 @@ void FontFile::remove_language_support_override(const String &p_language) {
 
 PackedStringArray FontFile::get_language_support_overrides() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_language_support_overrides")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -863,7 +877,7 @@ void FontFile::set_script_support_override(const String &p_script, bool p_suppor
 
 bool FontFile::get_script_support_override(const String &p_script) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_script_support_override")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_script);
 }
 
@@ -875,7 +889,7 @@ void FontFile::remove_script_support_override(const String &p_script) {
 
 PackedStringArray FontFile::get_script_support_overrides() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_script_support_overrides")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -887,13 +901,13 @@ void FontFile::set_opentype_feature_overrides(const Dictionary &p_overrides) {
 
 Dictionary FontFile::get_opentype_feature_overrides() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_opentype_feature_overrides")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
 int32_t FontFile::get_glyph_index(int32_t p_size, char32_t p_char, char32_t p_variation_selector) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_glyph_index")._native_ptr(), 864943070);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_size_encoded;
 	PtrToArg<int64_t>::encode(p_size, &p_size_encoded);
 	int64_t p_char_encoded;
@@ -905,7 +919,7 @@ int32_t FontFile::get_glyph_index(int32_t p_size, char32_t p_char, char32_t p_va
 
 char32_t FontFile::get_char_from_glyph_index(int32_t p_size, int32_t p_glyph_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontFile::get_class_static()._native_ptr(), StringName("get_char_from_glyph_index")._native_ptr(), 3175239445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_size_encoded;
 	PtrToArg<int64_t>::encode(p_size, &p_size_encoded);
 	int64_t p_glyph_index_encoded;

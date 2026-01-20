@@ -48,7 +48,7 @@ void VisibleOnScreenEnabler3D::set_enable_mode(VisibleOnScreenEnabler3D::EnableM
 
 VisibleOnScreenEnabler3D::EnableMode VisibleOnScreenEnabler3D::get_enable_mode() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisibleOnScreenEnabler3D::get_class_static()._native_ptr(), StringName("get_enable_mode")._native_ptr(), 3352990031);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisibleOnScreenEnabler3D::EnableMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisibleOnScreenEnabler3D::EnableMode(0)));
 	return (VisibleOnScreenEnabler3D::EnableMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void VisibleOnScreenEnabler3D::set_enable_node_path(const NodePath &p_path) {
 
 NodePath VisibleOnScreenEnabler3D::get_enable_node_path() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisibleOnScreenEnabler3D::get_class_static()._native_ptr(), StringName("get_enable_node_path")._native_ptr(), 277076166);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 

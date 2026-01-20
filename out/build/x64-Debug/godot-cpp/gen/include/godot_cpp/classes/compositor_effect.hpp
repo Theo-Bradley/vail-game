@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_COMPOSITOR_EFFECT_HPP
-#define GODOT_CPP_COMPOSITOR_EFFECT_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -89,4 +88,3 @@ public:
 
 VARIANT_ENUM_CAST(CompositorEffect::EffectCallbackType);
 
-#endif // ! GODOT_CPP_COMPOSITOR_EFFECT_HPP

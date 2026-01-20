@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SPRING_BONE_COLLISION_PLANE3D_HPP
-#define GODOT_CPP_SPRING_BONE_COLLISION_PLANE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/spring_bone_collision3d.hpp>
 
@@ -56,4 +55,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_SPRING_BONE_COLLISION_PLANE3D_HPP

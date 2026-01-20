@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_COLLISION_OBJECT3D_HPP
-#define GODOT_CPP_COLLISION_OBJECT3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -119,4 +118,3 @@ public:
 
 VARIANT_ENUM_CAST(CollisionObject3D::DisableMode);
 
-#endif // ! GODOT_CPP_COLLISION_OBJECT3D_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_VIEWPORT_TEXTURE_HPP
-#define GODOT_CPP_VIEWPORT_TEXTURE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/texture2d.hpp>
@@ -61,4 +60,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_VIEWPORT_TEXTURE_HPP

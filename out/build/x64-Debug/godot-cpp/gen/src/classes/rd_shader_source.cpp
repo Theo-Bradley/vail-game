@@ -48,7 +48,7 @@ void RDShaderSource::set_stage_source(RenderingDevice::ShaderStage p_stage, cons
 
 String RDShaderSource::get_stage_source(RenderingDevice::ShaderStage p_stage) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDShaderSource::get_class_static()._native_ptr(), StringName("get_stage_source")._native_ptr(), 3354920045);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_stage_encoded;
 	PtrToArg<int64_t>::encode(p_stage, &p_stage_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_stage_encoded);
@@ -64,7 +64,7 @@ void RDShaderSource::set_language(RenderingDevice::ShaderLanguage p_language) {
 
 RenderingDevice::ShaderLanguage RDShaderSource::get_language() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDShaderSource::get_class_static()._native_ptr(), StringName("get_language")._native_ptr(), 1063538261);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::ShaderLanguage(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::ShaderLanguage(0)));
 	return (RenderingDevice::ShaderLanguage)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

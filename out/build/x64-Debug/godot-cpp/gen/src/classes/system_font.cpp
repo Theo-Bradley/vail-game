@@ -48,7 +48,7 @@ void SystemFont::set_antialiasing(TextServer::FontAntialiasing p_antialiasing) {
 
 TextServer::FontAntialiasing SystemFont::get_antialiasing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_antialiasing")._native_ptr(), 4262718649);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::FontAntialiasing(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::FontAntialiasing(0)));
 	return (TextServer::FontAntialiasing)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void SystemFont::set_disable_embedded_bitmaps(bool p_disable_embedded_bitmaps) {
 
 bool SystemFont::get_disable_embedded_bitmaps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_disable_embedded_bitmaps")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void SystemFont::set_generate_mipmaps(bool p_generate_mipmaps) {
 
 bool SystemFont::get_generate_mipmaps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_generate_mipmaps")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void SystemFont::set_allow_system_fallback(bool p_allow_system_fallback) {
 
 bool SystemFont::is_allow_system_fallback() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("is_allow_system_fallback")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,21 @@ void SystemFont::set_force_autohinter(bool p_force_autohinter) {
 
 bool SystemFont::is_force_autohinter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("is_force_autohinter")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void SystemFont::set_modulate_color_glyphs(bool p_modulate) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("set_modulate_color_glyphs")._native_ptr(), 2586408642);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int8_t p_modulate_encoded;
+	PtrToArg<bool>::encode(p_modulate, &p_modulate_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_modulate_encoded);
+}
+
+bool SystemFont::is_modulate_color_glyphs() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("is_modulate_color_glyphs")._native_ptr(), 36873697);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +132,7 @@ void SystemFont::set_hinting(TextServer::Hinting p_hinting) {
 
 TextServer::Hinting SystemFont::get_hinting() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_hinting")._native_ptr(), 3683214614);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::Hinting(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::Hinting(0)));
 	return (TextServer::Hinting)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +146,7 @@ void SystemFont::set_subpixel_positioning(TextServer::SubpixelPositioning p_subp
 
 TextServer::SubpixelPositioning SystemFont::get_subpixel_positioning() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_subpixel_positioning")._native_ptr(), 1069238588);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::SubpixelPositioning(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::SubpixelPositioning(0)));
 	return (TextServer::SubpixelPositioning)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +160,7 @@ void SystemFont::set_keep_rounding_remainders(bool p_keep_rounding_remainders) {
 
 bool SystemFont::get_keep_rounding_remainders() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_keep_rounding_remainders")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +174,7 @@ void SystemFont::set_multichannel_signed_distance_field(bool p_msdf) {
 
 bool SystemFont::is_multichannel_signed_distance_field() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("is_multichannel_signed_distance_field")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +188,7 @@ void SystemFont::set_msdf_pixel_range(int32_t p_msdf_pixel_range) {
 
 int32_t SystemFont::get_msdf_pixel_range() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_msdf_pixel_range")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +202,7 @@ void SystemFont::set_msdf_size(int32_t p_msdf_size) {
 
 int32_t SystemFont::get_msdf_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_msdf_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -202,13 +216,13 @@ void SystemFont::set_oversampling(float p_oversampling) {
 
 float SystemFont::get_oversampling() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_oversampling")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 PackedStringArray SystemFont::get_font_names() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_font_names")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -220,7 +234,7 @@ void SystemFont::set_font_names(const PackedStringArray &p_names) {
 
 bool SystemFont::get_font_italic() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SystemFont::get_class_static()._native_ptr(), StringName("get_font_italic")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

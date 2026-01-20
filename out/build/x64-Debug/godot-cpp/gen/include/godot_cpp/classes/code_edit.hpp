@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CODE_EDIT_HPP
-#define GODOT_CPP_CODE_EDIT_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -212,4 +211,3 @@ public:
 VARIANT_ENUM_CAST(CodeEdit::CodeCompletionKind);
 VARIANT_ENUM_CAST(CodeEdit::CodeCompletionLocation);
 
-#endif // ! GODOT_CPP_CODE_EDIT_HPP

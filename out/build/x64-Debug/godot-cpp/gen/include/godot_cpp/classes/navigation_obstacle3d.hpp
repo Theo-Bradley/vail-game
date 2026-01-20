@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NAVIGATION_OBSTACLE3D_HPP
-#define GODOT_CPP_NAVIGATION_OBSTACLE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node3d.hpp>
 #include <godot_cpp/variant/packed_vector3_array.hpp>
@@ -83,4 +82,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_NAVIGATION_OBSTACLE3D_HPP

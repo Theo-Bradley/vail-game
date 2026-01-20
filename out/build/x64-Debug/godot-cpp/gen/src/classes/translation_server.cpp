@@ -75,25 +75,25 @@ void TranslationServer::set_locale(const String &p_locale) {
 
 String TranslationServer::get_locale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_locale")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String TranslationServer::get_tool_locale() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_tool_locale")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 int32_t TranslationServer::compare_locales(const String &p_locale_a, const String &p_locale_b) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("compare_locales")._native_ptr(), 2878152881);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_locale_a, &p_locale_b);
 }
 
 String TranslationServer::standardize_locale(const String &p_locale, bool p_add_defaults) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("standardize_locale")._native_ptr(), 4216441673);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int8_t p_add_defaults_encoded;
 	PtrToArg<bool>::encode(p_add_defaults, &p_add_defaults_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_locale, &p_add_defaults_encoded);
@@ -101,55 +101,55 @@ String TranslationServer::standardize_locale(const String &p_locale, bool p_add_
 
 PackedStringArray TranslationServer::get_all_languages() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_all_languages")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 String TranslationServer::get_language_name(const String &p_language) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_language_name")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_language);
 }
 
 PackedStringArray TranslationServer::get_all_scripts() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_all_scripts")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 String TranslationServer::get_script_name(const String &p_script) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_script_name")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_script);
 }
 
 PackedStringArray TranslationServer::get_all_countries() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_all_countries")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 String TranslationServer::get_country_name(const String &p_country) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_country_name")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_country);
 }
 
 String TranslationServer::get_locale_name(const String &p_locale) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_locale_name")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_locale);
 }
 
 StringName TranslationServer::translate(const StringName &p_message, const StringName &p_context) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("translate")._native_ptr(), 1829228469);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_message, &p_context);
 }
 
 StringName TranslationServer::translate_plural(const StringName &p_message, const StringName &p_plural_message, int32_t p_n, const StringName &p_context) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("translate_plural")._native_ptr(), 229954002);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_n_encoded;
 	PtrToArg<int64_t>::encode(p_n, &p_n_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_message, &p_plural_message, &p_n_encoded, &p_context);
@@ -169,19 +169,19 @@ void TranslationServer::remove_translation(const Ref<Translation> &p_translation
 
 Ref<Translation> TranslationServer::get_translation_object(const String &p_locale) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_translation_object")._native_ptr(), 2065240175);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Translation>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Translation>()));
 	return Ref<Translation>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Translation>(_gde_method_bind, _owner, &p_locale));
 }
 
 bool TranslationServer::has_domain(const StringName &p_domain) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("has_domain")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_domain);
 }
 
 Ref<TranslationDomain> TranslationServer::get_or_add_domain(const StringName &p_domain) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_or_add_domain")._native_ptr(), 397200075);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TranslationDomain>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TranslationDomain>()));
 	return Ref<TranslationDomain>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TranslationDomain>(_gde_method_bind, _owner, &p_domain));
 }
 
@@ -199,13 +199,13 @@ void TranslationServer::clear() {
 
 PackedStringArray TranslationServer::get_loaded_locales() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("get_loaded_locales")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 bool TranslationServer::is_pseudolocalization_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("is_pseudolocalization_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -225,7 +225,7 @@ void TranslationServer::reload_pseudolocalization() {
 
 StringName TranslationServer::pseudolocalize(const StringName &p_message) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationServer::get_class_static()._native_ptr(), StringName("pseudolocalize")._native_ptr(), 1965194235);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_message);
 }
 

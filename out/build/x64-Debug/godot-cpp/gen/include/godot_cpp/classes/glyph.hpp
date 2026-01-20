@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GLYPH_HPP
-#define GODOT_CPP_GLYPH_HPP
+#pragma once
 
 #include <godot_cpp/variant/rid.hpp>
 
@@ -54,5 +53,3 @@ struct Glyph {
 GDVIRTUAL_NATIVE_PTR(Glyph);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_GLYPH_HPP

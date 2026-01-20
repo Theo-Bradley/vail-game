@@ -48,7 +48,7 @@ void VisualShaderNodeTransformParameter::set_default_value_enabled(bool p_enable
 
 bool VisualShaderNodeTransformParameter::is_default_value_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTransformParameter::get_class_static()._native_ptr(), StringName("is_default_value_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void VisualShaderNodeTransformParameter::set_default_value(const Transform3D &p_
 
 Transform3D VisualShaderNodeTransformParameter::get_default_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTransformParameter::get_class_static()._native_ptr(), StringName("get_default_value")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 

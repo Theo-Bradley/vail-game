@@ -48,7 +48,7 @@ void RDSamplerState::set_mag_filter(RenderingDevice::SamplerFilter p_member) {
 
 RenderingDevice::SamplerFilter RDSamplerState::get_mag_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_mag_filter")._native_ptr(), 2209202801);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::SamplerFilter(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::SamplerFilter(0)));
 	return (RenderingDevice::SamplerFilter)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void RDSamplerState::set_min_filter(RenderingDevice::SamplerFilter p_member) {
 
 RenderingDevice::SamplerFilter RDSamplerState::get_min_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_min_filter")._native_ptr(), 2209202801);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::SamplerFilter(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::SamplerFilter(0)));
 	return (RenderingDevice::SamplerFilter)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void RDSamplerState::set_mip_filter(RenderingDevice::SamplerFilter p_member) {
 
 RenderingDevice::SamplerFilter RDSamplerState::get_mip_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_mip_filter")._native_ptr(), 2209202801);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::SamplerFilter(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::SamplerFilter(0)));
 	return (RenderingDevice::SamplerFilter)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void RDSamplerState::set_repeat_u(RenderingDevice::SamplerRepeatMode p_member) {
 
 RenderingDevice::SamplerRepeatMode RDSamplerState::get_repeat_u() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_repeat_u")._native_ptr(), 3227895872);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::SamplerRepeatMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::SamplerRepeatMode(0)));
 	return (RenderingDevice::SamplerRepeatMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void RDSamplerState::set_repeat_v(RenderingDevice::SamplerRepeatMode p_member) {
 
 RenderingDevice::SamplerRepeatMode RDSamplerState::get_repeat_v() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_repeat_v")._native_ptr(), 3227895872);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::SamplerRepeatMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::SamplerRepeatMode(0)));
 	return (RenderingDevice::SamplerRepeatMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void RDSamplerState::set_repeat_w(RenderingDevice::SamplerRepeatMode p_member) {
 
 RenderingDevice::SamplerRepeatMode RDSamplerState::get_repeat_w() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_repeat_w")._native_ptr(), 3227895872);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::SamplerRepeatMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::SamplerRepeatMode(0)));
 	return (RenderingDevice::SamplerRepeatMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void RDSamplerState::set_lod_bias(float p_member) {
 
 float RDSamplerState::get_lod_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_lod_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void RDSamplerState::set_use_anisotropy(bool p_member) {
 
 bool RDSamplerState::get_use_anisotropy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_use_anisotropy")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void RDSamplerState::set_anisotropy_max(float p_member) {
 
 float RDSamplerState::get_anisotropy_max() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_anisotropy_max")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void RDSamplerState::set_enable_compare(bool p_member) {
 
 bool RDSamplerState::get_enable_compare() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_enable_compare")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +188,7 @@ void RDSamplerState::set_compare_op(RenderingDevice::CompareOperator p_member) {
 
 RenderingDevice::CompareOperator RDSamplerState::get_compare_op() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_compare_op")._native_ptr(), 269730778);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::CompareOperator(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::CompareOperator(0)));
 	return (RenderingDevice::CompareOperator)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -202,7 +202,7 @@ void RDSamplerState::set_min_lod(float p_member) {
 
 float RDSamplerState::get_min_lod() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_min_lod")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -216,7 +216,7 @@ void RDSamplerState::set_max_lod(float p_member) {
 
 float RDSamplerState::get_max_lod() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_max_lod")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -230,7 +230,7 @@ void RDSamplerState::set_border_color(RenderingDevice::SamplerBorderColor p_memb
 
 RenderingDevice::SamplerBorderColor RDSamplerState::get_border_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_border_color")._native_ptr(), 3514246478);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::SamplerBorderColor(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::SamplerBorderColor(0)));
 	return (RenderingDevice::SamplerBorderColor)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -244,7 +244,7 @@ void RDSamplerState::set_unnormalized_uvw(bool p_member) {
 
 bool RDSamplerState::get_unnormalized_uvw() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDSamplerState::get_class_static()._native_ptr(), StringName("get_unnormalized_uvw")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

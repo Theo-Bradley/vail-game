@@ -43,7 +43,7 @@ namespace godot {
 
 Vector2 StyleBox::get_minimum_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBox::get_class_static()._native_ptr(), StringName("get_minimum_size")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -67,7 +67,7 @@ void StyleBox::set_content_margin_all(float p_offset) {
 
 float StyleBox::get_content_margin(Side p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBox::get_class_static()._native_ptr(), StringName("get_content_margin")._native_ptr(), 2869120046);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_margin_encoded;
 	PtrToArg<int64_t>::encode(p_margin, &p_margin_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_margin_encoded);
@@ -75,7 +75,7 @@ float StyleBox::get_content_margin(Side p_margin) const {
 
 float StyleBox::get_margin(Side p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBox::get_class_static()._native_ptr(), StringName("get_margin")._native_ptr(), 2869120046);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_margin_encoded;
 	PtrToArg<int64_t>::encode(p_margin, &p_margin_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_margin_encoded);
@@ -83,7 +83,7 @@ float StyleBox::get_margin(Side p_margin) const {
 
 Vector2 StyleBox::get_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBox::get_class_static()._native_ptr(), StringName("get_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -95,13 +95,13 @@ void StyleBox::draw(const RID &p_canvas_item, const Rect2 &p_rect) const {
 
 CanvasItem *StyleBox::get_current_item_drawn() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBox::get_class_static()._native_ptr(), StringName("get_current_item_drawn")._native_ptr(), 3213695180);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<CanvasItem>(_gde_method_bind, _owner);
 }
 
 bool StyleBox::test_mask(const Vector2 &p_point, const Rect2 &p_rect) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBox::get_class_static()._native_ptr(), StringName("test_mask")._native_ptr(), 3735564539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_point, &p_rect);
 }
 

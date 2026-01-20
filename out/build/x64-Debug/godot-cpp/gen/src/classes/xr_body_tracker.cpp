@@ -48,7 +48,7 @@ void XRBodyTracker::set_has_tracking_data(bool p_has_data) {
 
 bool XRBodyTracker::get_has_tracking_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRBodyTracker::get_class_static()._native_ptr(), StringName("get_has_tracking_data")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void XRBodyTracker::set_body_flags(BitField<XRBodyTracker::BodyFlags> p_flags) {
 
 BitField<XRBodyTracker::BodyFlags> XRBodyTracker::get_body_flags() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRBodyTracker::get_class_static()._native_ptr(), StringName("get_body_flags")._native_ptr(), 3543166366);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<XRBodyTracker::BodyFlags>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<XRBodyTracker::BodyFlags>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void XRBodyTracker::set_joint_flags(XRBodyTracker::Joint p_joint, BitField<XRBod
 
 BitField<XRBodyTracker::JointFlags> XRBodyTracker::get_joint_flags(XRBodyTracker::Joint p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRBodyTracker::get_class_static()._native_ptr(), StringName("get_joint_flags")._native_ptr(), 1030162609);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<XRBodyTracker::JointFlags>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<XRBodyTracker::JointFlags>(0)));
 	int64_t p_joint_encoded;
 	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_joint_encoded);
@@ -90,7 +90,7 @@ void XRBodyTracker::set_joint_transform(XRBodyTracker::Joint p_joint, const Tran
 
 Transform3D XRBodyTracker::get_joint_transform(XRBodyTracker::Joint p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRBodyTracker::get_class_static()._native_ptr(), StringName("get_joint_transform")._native_ptr(), 3474811534);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	int64_t p_joint_encoded;
 	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_joint_encoded);

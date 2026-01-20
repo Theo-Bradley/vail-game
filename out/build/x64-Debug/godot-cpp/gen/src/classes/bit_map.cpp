@@ -77,13 +77,13 @@ void BitMap::set_bit(int32_t p_x, int32_t p_y, bool p_bit) {
 
 bool BitMap::get_bitv(const Vector2i &p_position) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BitMap::get_class_static()._native_ptr(), StringName("get_bitv")._native_ptr(), 3900751641);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_position);
 }
 
 bool BitMap::get_bit(int32_t p_x, int32_t p_y) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BitMap::get_class_static()._native_ptr(), StringName("get_bit")._native_ptr(), 2522259332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_x_encoded;
 	PtrToArg<int64_t>::encode(p_x, &p_x_encoded);
 	int64_t p_y_encoded;
@@ -101,13 +101,13 @@ void BitMap::set_bit_rect(const Rect2i &p_rect, bool p_bit) {
 
 int32_t BitMap::get_true_bit_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BitMap::get_class_static()._native_ptr(), StringName("get_true_bit_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Vector2i BitMap::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BitMap::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -127,13 +127,13 @@ void BitMap::grow_mask(int32_t p_pixels, const Rect2i &p_rect) {
 
 Ref<Image> BitMap::convert_to_image() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BitMap::get_class_static()._native_ptr(), StringName("convert_to_image")._native_ptr(), 4190603485);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	return Ref<Image>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Image>(_gde_method_bind, _owner));
 }
 
 TypedArray<PackedVector2Array> BitMap::opaque_to_polygons(const Rect2i &p_rect, float p_epsilon) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BitMap::get_class_static()._native_ptr(), StringName("opaque_to_polygons")._native_ptr(), 48478126);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<PackedVector2Array>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<PackedVector2Array>()));
 	double p_epsilon_encoded;
 	PtrToArg<double>::encode(p_epsilon, &p_epsilon_encoded);
 	return internal::_call_native_mb_ret<TypedArray<PackedVector2Array>>(_gde_method_bind, _owner, &p_rect, &p_epsilon_encoded);

@@ -48,7 +48,7 @@ void MultiMeshInstance3D::set_multimesh(const Ref<MultiMesh> &p_multimesh) {
 
 Ref<MultiMesh> MultiMeshInstance3D::get_multimesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMeshInstance3D::get_class_static()._native_ptr(), StringName("get_multimesh")._native_ptr(), 1385450523);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<MultiMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<MultiMesh>()));
 	return Ref<MultiMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<MultiMesh>(_gde_method_bind, _owner));
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RENDER_SCENE_DATA_HPP
-#define GODOT_CPP_RENDER_SCENE_DATA_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/projection.hpp>
@@ -67,4 +66,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_RENDER_SCENE_DATA_HPP

@@ -30,11 +30,11 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_STREAM_OGG_VORBIS_HPP
-#define GODOT_CPP_AUDIO_STREAM_OGG_VORBIS_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_stream.hpp>
 #include <godot_cpp/classes/ref.hpp>
+#include <godot_cpp/variant/dictionary.hpp>
 
 #include <godot_cpp/core/class_db.hpp>
 
@@ -64,6 +64,8 @@ public:
 	int32_t get_beat_count() const;
 	void set_bar_beats(int32_t p_count);
 	int32_t get_bar_beats() const;
+	void set_tags(const Dictionary &p_tags);
+	Dictionary get_tags() const;
 
 protected:
 	template <typename T, typename B>
@@ -76,4 +78,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_AUDIO_STREAM_OGG_VORBIS_HPP

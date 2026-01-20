@@ -48,13 +48,13 @@ void StreamPeerBuffer::seek(int32_t p_position) {
 
 int32_t StreamPeerBuffer::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeerBuffer::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t StreamPeerBuffer::get_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeerBuffer::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void StreamPeerBuffer::set_data_array(const PackedByteArray &p_data) {
 
 PackedByteArray StreamPeerBuffer::get_data_array() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeerBuffer::get_class_static()._native_ptr(), StringName("get_data_array")._native_ptr(), 2362200018);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void StreamPeerBuffer::clear() {
 
 Ref<StreamPeerBuffer> StreamPeerBuffer::duplicate() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeerBuffer::get_class_static()._native_ptr(), StringName("duplicate")._native_ptr(), 2474064677);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<StreamPeerBuffer>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<StreamPeerBuffer>()));
 	return Ref<StreamPeerBuffer>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<StreamPeerBuffer>(_gde_method_bind, _owner));
 }
 

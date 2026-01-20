@@ -50,7 +50,7 @@ void PinJoint3D::set_param(PinJoint3D::Param p_param, float p_value) {
 
 float PinJoint3D::get_param(PinJoint3D::Param p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PinJoint3D::get_class_static()._native_ptr(), StringName("get_param")._native_ptr(), 1758438771);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_param_encoded);

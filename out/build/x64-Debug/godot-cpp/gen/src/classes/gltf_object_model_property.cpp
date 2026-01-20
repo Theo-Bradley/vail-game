@@ -55,13 +55,13 @@ void GLTFObjectModelProperty::append_path_to_property(const NodePath &p_node_pat
 
 GLTFAccessor::GLTFAccessorType GLTFObjectModelProperty::get_accessor_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("get_accessor_type")._native_ptr(), 1998183368);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GLTFAccessor::GLTFAccessorType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GLTFAccessor::GLTFAccessorType(0)));
 	return (GLTFAccessor::GLTFAccessorType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Ref<Expression> GLTFObjectModelProperty::get_gltf_to_godot_expression() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("get_gltf_to_godot_expression")._native_ptr(), 2240072449);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Expression>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Expression>()));
 	return Ref<Expression>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Expression>(_gde_method_bind, _owner));
 }
 
@@ -73,7 +73,7 @@ void GLTFObjectModelProperty::set_gltf_to_godot_expression(const Ref<Expression>
 
 Ref<Expression> GLTFObjectModelProperty::get_godot_to_gltf_expression() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("get_godot_to_gltf_expression")._native_ptr(), 2240072449);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Expression>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Expression>()));
 	return Ref<Expression>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Expression>(_gde_method_bind, _owner));
 }
 
@@ -85,13 +85,13 @@ void GLTFObjectModelProperty::set_godot_to_gltf_expression(const Ref<Expression>
 
 TypedArray<NodePath> GLTFObjectModelProperty::get_node_paths() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("get_node_paths")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<NodePath>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<NodePath>()));
 	return internal::_call_native_mb_ret<TypedArray<NodePath>>(_gde_method_bind, _owner);
 }
 
 bool GLTFObjectModelProperty::has_node_paths() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("has_node_paths")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -103,7 +103,7 @@ void GLTFObjectModelProperty::set_node_paths(const TypedArray<NodePath> &p_node_
 
 GLTFObjectModelProperty::GLTFObjectModelType GLTFObjectModelProperty::get_object_model_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("get_object_model_type")._native_ptr(), 1094778507);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GLTFObjectModelProperty::GLTFObjectModelType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GLTFObjectModelProperty::GLTFObjectModelType(0)));
 	return (GLTFObjectModelProperty::GLTFObjectModelType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -117,13 +117,13 @@ void GLTFObjectModelProperty::set_object_model_type(GLTFObjectModelProperty::GLT
 
 TypedArray<PackedStringArray> GLTFObjectModelProperty::get_json_pointers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("get_json_pointers")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<PackedStringArray>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<PackedStringArray>()));
 	return internal::_call_native_mb_ret<TypedArray<PackedStringArray>>(_gde_method_bind, _owner);
 }
 
 bool GLTFObjectModelProperty::has_json_pointers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("has_json_pointers")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -135,7 +135,7 @@ void GLTFObjectModelProperty::set_json_pointers(const TypedArray<PackedStringArr
 
 Variant::Type GLTFObjectModelProperty::get_variant_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFObjectModelProperty::get_class_static()._native_ptr(), StringName("get_variant_type")._native_ptr(), 3416842102);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant::Type(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant::Type(0)));
 	return (Variant::Type)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

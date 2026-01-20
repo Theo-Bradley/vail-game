@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_COMPRESSED_CUBEMAP_HPP
-#define GODOT_CPP_COMPRESSED_CUBEMAP_HPP
+#pragma once
 
 #include <godot_cpp/classes/compressed_texture_layered.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -57,4 +56,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_COMPRESSED_CUBEMAP_HPP

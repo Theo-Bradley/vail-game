@@ -76,7 +76,7 @@ void AudioStreamRandomizer::set_stream(int32_t p_index, const Ref<AudioStream> &
 
 Ref<AudioStream> AudioStreamRandomizer::get_stream(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamRandomizer::get_class_static()._native_ptr(), StringName("get_stream")._native_ptr(), 2739380747);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStream>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStream>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<AudioStream>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStream>(_gde_method_bind, _owner, &p_index_encoded));
@@ -94,7 +94,7 @@ void AudioStreamRandomizer::set_stream_probability_weight(int32_t p_index, float
 
 float AudioStreamRandomizer::get_stream_probability_weight(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamRandomizer::get_class_static()._native_ptr(), StringName("get_stream_probability_weight")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_index_encoded);
@@ -110,7 +110,7 @@ void AudioStreamRandomizer::set_streams_count(int32_t p_count) {
 
 int32_t AudioStreamRandomizer::get_streams_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamRandomizer::get_class_static()._native_ptr(), StringName("get_streams_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -124,7 +124,7 @@ void AudioStreamRandomizer::set_random_pitch(float p_scale) {
 
 float AudioStreamRandomizer::get_random_pitch() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamRandomizer::get_class_static()._native_ptr(), StringName("get_random_pitch")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -138,7 +138,7 @@ void AudioStreamRandomizer::set_random_volume_offset_db(float p_db_offset) {
 
 float AudioStreamRandomizer::get_random_volume_offset_db() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamRandomizer::get_class_static()._native_ptr(), StringName("get_random_volume_offset_db")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -152,7 +152,7 @@ void AudioStreamRandomizer::set_playback_mode(AudioStreamRandomizer::PlaybackMod
 
 AudioStreamRandomizer::PlaybackMode AudioStreamRandomizer::get_playback_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamRandomizer::get_class_static()._native_ptr(), StringName("get_playback_mode")._native_ptr(), 3943055077);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioStreamRandomizer::PlaybackMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioStreamRandomizer::PlaybackMode(0)));
 	return (AudioStreamRandomizer::PlaybackMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

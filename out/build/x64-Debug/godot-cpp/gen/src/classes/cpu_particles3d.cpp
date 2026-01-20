@@ -147,79 +147,79 @@ void CPUParticles3D::set_speed_scale(double p_scale) {
 
 bool CPUParticles3D::is_emitting() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("is_emitting")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t CPUParticles3D::get_amount() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_amount")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 double CPUParticles3D::get_lifetime() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_lifetime")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool CPUParticles3D::get_one_shot() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_one_shot")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 double CPUParticles3D::get_pre_process_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_pre_process_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float CPUParticles3D::get_explosiveness_ratio() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_explosiveness_ratio")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float CPUParticles3D::get_randomness_ratio() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_randomness_ratio")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 AABB CPUParticles3D::get_visibility_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_visibility_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
 double CPUParticles3D::get_lifetime_randomness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_lifetime_randomness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool CPUParticles3D::get_use_local_coordinates() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_use_local_coordinates")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t CPUParticles3D::get_fixed_fps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_fixed_fps")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool CPUParticles3D::get_fractional_delta() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_fractional_delta")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 double CPUParticles3D::get_speed_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_speed_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -233,7 +233,7 @@ void CPUParticles3D::set_draw_order(CPUParticles3D::DrawOrder p_order) {
 
 CPUParticles3D::DrawOrder CPUParticles3D::get_draw_order() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_draw_order")._native_ptr(), 1321900776);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CPUParticles3D::DrawOrder(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CPUParticles3D::DrawOrder(0)));
 	return (CPUParticles3D::DrawOrder)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -245,7 +245,7 @@ void CPUParticles3D::set_mesh(const Ref<Mesh> &p_mesh) {
 
 Ref<Mesh> CPUParticles3D::get_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 1808005922);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Mesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Mesh>()));
 	return Ref<Mesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Mesh>(_gde_method_bind, _owner));
 }
 
@@ -259,7 +259,7 @@ void CPUParticles3D::set_use_fixed_seed(bool p_use_fixed_seed) {
 
 bool CPUParticles3D::get_use_fixed_seed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_use_fixed_seed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -273,7 +273,7 @@ void CPUParticles3D::set_seed(uint32_t p_seed) {
 
 uint32_t CPUParticles3D::get_seed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_seed")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -295,7 +295,7 @@ void CPUParticles3D::request_particles_process(float p_process_time) {
 
 AABB CPUParticles3D::capture_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("capture_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
@@ -307,7 +307,7 @@ void CPUParticles3D::set_direction(const Vector3 &p_direction) {
 
 Vector3 CPUParticles3D::get_direction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_direction")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -321,7 +321,7 @@ void CPUParticles3D::set_spread(float p_degrees) {
 
 float CPUParticles3D::get_spread() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_spread")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -335,7 +335,7 @@ void CPUParticles3D::set_flatness(float p_amount) {
 
 float CPUParticles3D::get_flatness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_flatness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -351,7 +351,7 @@ void CPUParticles3D::set_param_min(CPUParticles3D::Parameter p_param, float p_va
 
 float CPUParticles3D::get_param_min(CPUParticles3D::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_param_min")._native_ptr(), 597646162);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_param_encoded);
@@ -369,7 +369,7 @@ void CPUParticles3D::set_param_max(CPUParticles3D::Parameter p_param, float p_va
 
 float CPUParticles3D::get_param_max(CPUParticles3D::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_param_max")._native_ptr(), 597646162);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_param_encoded);
@@ -385,7 +385,7 @@ void CPUParticles3D::set_param_curve(CPUParticles3D::Parameter p_param, const Re
 
 Ref<Curve> CPUParticles3D::get_param_curve(CPUParticles3D::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_param_curve")._native_ptr(), 4132790277);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner, &p_param_encoded));
@@ -399,7 +399,7 @@ void CPUParticles3D::set_color(const Color &p_color) {
 
 Color CPUParticles3D::get_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -411,7 +411,7 @@ void CPUParticles3D::set_color_ramp(const Ref<Gradient> &p_ramp) {
 
 Ref<Gradient> CPUParticles3D::get_color_ramp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_color_ramp")._native_ptr(), 132272999);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Gradient>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Gradient>()));
 	return Ref<Gradient>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Gradient>(_gde_method_bind, _owner));
 }
 
@@ -423,7 +423,7 @@ void CPUParticles3D::set_color_initial_ramp(const Ref<Gradient> &p_ramp) {
 
 Ref<Gradient> CPUParticles3D::get_color_initial_ramp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_color_initial_ramp")._native_ptr(), 132272999);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Gradient>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Gradient>()));
 	return Ref<Gradient>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Gradient>(_gde_method_bind, _owner));
 }
 
@@ -439,7 +439,7 @@ void CPUParticles3D::set_particle_flag(CPUParticles3D::ParticleFlags p_particle_
 
 bool CPUParticles3D::get_particle_flag(CPUParticles3D::ParticleFlags p_particle_flag) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_particle_flag")._native_ptr(), 2845201987);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_particle_flag_encoded;
 	PtrToArg<int64_t>::encode(p_particle_flag, &p_particle_flag_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_particle_flag_encoded);
@@ -455,7 +455,7 @@ void CPUParticles3D::set_emission_shape(CPUParticles3D::EmissionShape p_shape) {
 
 CPUParticles3D::EmissionShape CPUParticles3D::get_emission_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_shape")._native_ptr(), 2961454842);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CPUParticles3D::EmissionShape(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CPUParticles3D::EmissionShape(0)));
 	return (CPUParticles3D::EmissionShape)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -469,7 +469,7 @@ void CPUParticles3D::set_emission_sphere_radius(float p_radius) {
 
 float CPUParticles3D::get_emission_sphere_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_sphere_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -481,7 +481,7 @@ void CPUParticles3D::set_emission_box_extents(const Vector3 &p_extents) {
 
 Vector3 CPUParticles3D::get_emission_box_extents() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_box_extents")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -493,7 +493,7 @@ void CPUParticles3D::set_emission_points(const PackedVector3Array &p_array) {
 
 PackedVector3Array CPUParticles3D::get_emission_points() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_points")._native_ptr(), 497664490);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector3Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector3Array()));
 	return internal::_call_native_mb_ret<PackedVector3Array>(_gde_method_bind, _owner);
 }
 
@@ -505,7 +505,7 @@ void CPUParticles3D::set_emission_normals(const PackedVector3Array &p_array) {
 
 PackedVector3Array CPUParticles3D::get_emission_normals() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_normals")._native_ptr(), 497664490);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector3Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector3Array()));
 	return internal::_call_native_mb_ret<PackedVector3Array>(_gde_method_bind, _owner);
 }
 
@@ -517,7 +517,7 @@ void CPUParticles3D::set_emission_colors(const PackedColorArray &p_array) {
 
 PackedColorArray CPUParticles3D::get_emission_colors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_colors")._native_ptr(), 1392750486);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedColorArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedColorArray()));
 	return internal::_call_native_mb_ret<PackedColorArray>(_gde_method_bind, _owner);
 }
 
@@ -529,7 +529,7 @@ void CPUParticles3D::set_emission_ring_axis(const Vector3 &p_axis) {
 
 Vector3 CPUParticles3D::get_emission_ring_axis() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_ring_axis")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -543,7 +543,7 @@ void CPUParticles3D::set_emission_ring_height(float p_height) {
 
 float CPUParticles3D::get_emission_ring_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_ring_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -557,7 +557,7 @@ void CPUParticles3D::set_emission_ring_radius(float p_radius) {
 
 float CPUParticles3D::get_emission_ring_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_ring_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -571,7 +571,7 @@ void CPUParticles3D::set_emission_ring_inner_radius(float p_inner_radius) {
 
 float CPUParticles3D::get_emission_ring_inner_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_ring_inner_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -585,13 +585,13 @@ void CPUParticles3D::set_emission_ring_cone_angle(float p_cone_angle) {
 
 float CPUParticles3D::get_emission_ring_cone_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_emission_ring_cone_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 Vector3 CPUParticles3D::get_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -603,7 +603,7 @@ void CPUParticles3D::set_gravity(const Vector3 &p_accel_vec) {
 
 bool CPUParticles3D::get_split_scale() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_split_scale")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -617,7 +617,7 @@ void CPUParticles3D::set_split_scale(bool p_split_scale) {
 
 Ref<Curve> CPUParticles3D::get_scale_curve_x() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_scale_curve_x")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -629,7 +629,7 @@ void CPUParticles3D::set_scale_curve_x(const Ref<Curve> &p_scale_curve) {
 
 Ref<Curve> CPUParticles3D::get_scale_curve_y() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_scale_curve_y")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -641,7 +641,7 @@ void CPUParticles3D::set_scale_curve_y(const Ref<Curve> &p_scale_curve) {
 
 Ref<Curve> CPUParticles3D::get_scale_curve_z() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles3D::get_class_static()._native_ptr(), StringName("get_scale_curve_z")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 

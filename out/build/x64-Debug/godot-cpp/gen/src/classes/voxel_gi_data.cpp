@@ -46,37 +46,37 @@ void VoxelGIData::allocate(const Transform3D &p_to_cell_xform, const AABB &p_aab
 
 AABB VoxelGIData::get_bounds() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_bounds")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 
 Vector3 VoxelGIData::get_octree_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_octree_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Transform3D VoxelGIData::get_to_cell_xform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_to_cell_xform")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
 PackedByteArray VoxelGIData::get_octree_cells() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_octree_cells")._native_ptr(), 2362200018);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner);
 }
 
 PackedByteArray VoxelGIData::get_data_cells() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_data_cells")._native_ptr(), 2362200018);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner);
 }
 
 PackedInt32Array VoxelGIData::get_level_counts() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_level_counts")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void VoxelGIData::set_dynamic_range(float p_dynamic_range) {
 
 float VoxelGIData::get_dynamic_range() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_dynamic_range")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void VoxelGIData::set_energy(float p_energy) {
 
 float VoxelGIData::get_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void VoxelGIData::set_bias(float p_bias) {
 
 float VoxelGIData::get_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void VoxelGIData::set_normal_bias(float p_bias) {
 
 float VoxelGIData::get_normal_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_normal_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void VoxelGIData::set_propagation(float p_propagation) {
 
 float VoxelGIData::get_propagation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("get_propagation")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void VoxelGIData::set_interior(bool p_interior) {
 
 bool VoxelGIData::is_interior() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("is_interior")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void VoxelGIData::set_use_two_bounces(bool p_enable) {
 
 bool VoxelGIData::is_using_two_bounces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGIData::get_class_static()._native_ptr(), StringName("is_using_two_bounces")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

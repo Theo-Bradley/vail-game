@@ -50,7 +50,7 @@ void EditorProperty::set_label(const String &p_text) {
 
 String EditorProperty::get_label() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("get_label")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void EditorProperty::set_read_only(bool p_read_only) {
 
 bool EditorProperty::is_read_only() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_read_only")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -78,7 +78,7 @@ void EditorProperty::set_draw_label(bool p_draw_label) {
 
 bool EditorProperty::is_draw_label() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_draw_label")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void EditorProperty::set_draw_background(bool p_draw_background) {
 
 bool EditorProperty::is_draw_background() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_draw_background")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -106,7 +106,7 @@ void EditorProperty::set_checkable(bool p_checkable) {
 
 bool EditorProperty::is_checkable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_checkable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -120,7 +120,7 @@ void EditorProperty::set_checked(bool p_checked) {
 
 bool EditorProperty::is_checked() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_checked")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -134,7 +134,7 @@ void EditorProperty::set_draw_warning(bool p_draw_warning) {
 
 bool EditorProperty::is_draw_warning() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_draw_warning")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -148,7 +148,7 @@ void EditorProperty::set_keying(bool p_keying) {
 
 bool EditorProperty::is_keying() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_keying")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -162,19 +162,19 @@ void EditorProperty::set_deletable(bool p_deletable) {
 
 bool EditorProperty::is_deletable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_deletable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 StringName EditorProperty::get_edited_property() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("get_edited_property")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
 Object *EditorProperty::get_edited_object() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("get_edited_object")._native_ptr(), 2050059866);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Object>(_gde_method_bind, _owner);
 }
 
@@ -206,7 +206,7 @@ void EditorProperty::set_selectable(bool p_selectable) {
 
 bool EditorProperty::is_selectable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_selectable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -220,7 +220,7 @@ void EditorProperty::set_use_folding(bool p_use_folding) {
 
 bool EditorProperty::is_using_folding() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_using_folding")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -234,7 +234,7 @@ void EditorProperty::set_name_split_ratio(float p_ratio) {
 
 float EditorProperty::get_name_split_ratio() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("get_name_split_ratio")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -246,7 +246,7 @@ void EditorProperty::deselect() {
 
 bool EditorProperty::is_selected() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorProperty::get_class_static()._native_ptr(), StringName("is_selected")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

@@ -49,7 +49,7 @@ void LightmapGI::set_light_data(const Ref<LightmapGIData> &p_data) {
 
 Ref<LightmapGIData> LightmapGI::get_light_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_light_data")._native_ptr(), 290354153);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<LightmapGIData>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<LightmapGIData>()));
 	return Ref<LightmapGIData>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<LightmapGIData>(_gde_method_bind, _owner));
 }
 
@@ -63,7 +63,7 @@ void LightmapGI::set_bake_quality(LightmapGI::BakeQuality p_bake_quality) {
 
 LightmapGI::BakeQuality LightmapGI::get_bake_quality() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_bake_quality")._native_ptr(), 688832735);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, LightmapGI::BakeQuality(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (LightmapGI::BakeQuality(0)));
 	return (LightmapGI::BakeQuality)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -77,7 +77,7 @@ void LightmapGI::set_bounces(int32_t p_bounces) {
 
 int32_t LightmapGI::get_bounces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_bounces")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -91,7 +91,7 @@ void LightmapGI::set_bounce_indirect_energy(float p_bounce_indirect_energy) {
 
 float LightmapGI::get_bounce_indirect_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_bounce_indirect_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -105,7 +105,7 @@ void LightmapGI::set_generate_probes(LightmapGI::GenerateProbes p_subdivision) {
 
 LightmapGI::GenerateProbes LightmapGI::get_generate_probes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_generate_probes")._native_ptr(), 3930596226);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, LightmapGI::GenerateProbes(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (LightmapGI::GenerateProbes(0)));
 	return (LightmapGI::GenerateProbes)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -119,7 +119,7 @@ void LightmapGI::set_bias(float p_bias) {
 
 float LightmapGI::get_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -133,7 +133,7 @@ void LightmapGI::set_environment_mode(LightmapGI::EnvironmentMode p_mode) {
 
 LightmapGI::EnvironmentMode LightmapGI::get_environment_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_environment_mode")._native_ptr(), 4128646479);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, LightmapGI::EnvironmentMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (LightmapGI::EnvironmentMode(0)));
 	return (LightmapGI::EnvironmentMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -145,7 +145,7 @@ void LightmapGI::set_environment_custom_sky(const Ref<Sky> &p_sky) {
 
 Ref<Sky> LightmapGI::get_environment_custom_sky() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_environment_custom_sky")._native_ptr(), 1177136966);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Sky>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Sky>()));
 	return Ref<Sky>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Sky>(_gde_method_bind, _owner));
 }
 
@@ -157,7 +157,7 @@ void LightmapGI::set_environment_custom_color(const Color &p_color) {
 
 Color LightmapGI::get_environment_custom_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_environment_custom_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -171,7 +171,7 @@ void LightmapGI::set_environment_custom_energy(float p_energy) {
 
 float LightmapGI::get_environment_custom_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_environment_custom_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -185,7 +185,7 @@ void LightmapGI::set_texel_scale(float p_texel_scale) {
 
 float LightmapGI::get_texel_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_texel_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -199,7 +199,7 @@ void LightmapGI::set_max_texture_size(int32_t p_max_texture_size) {
 
 int32_t LightmapGI::get_max_texture_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_max_texture_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -213,7 +213,7 @@ void LightmapGI::set_supersampling_enabled(bool p_enable) {
 
 bool LightmapGI::is_supersampling_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("is_supersampling_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -227,7 +227,7 @@ void LightmapGI::set_supersampling_factor(float p_factor) {
 
 float LightmapGI::get_supersampling_factor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_supersampling_factor")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -241,7 +241,7 @@ void LightmapGI::set_use_denoiser(bool p_use_denoiser) {
 
 bool LightmapGI::is_using_denoiser() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("is_using_denoiser")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -255,7 +255,7 @@ void LightmapGI::set_denoiser_strength(float p_denoiser_strength) {
 
 float LightmapGI::get_denoiser_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_denoiser_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -269,7 +269,7 @@ void LightmapGI::set_denoiser_range(int32_t p_denoiser_range) {
 
 int32_t LightmapGI::get_denoiser_range() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_denoiser_range")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -283,7 +283,7 @@ void LightmapGI::set_interior(bool p_enable) {
 
 bool LightmapGI::is_interior() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("is_interior")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -297,7 +297,7 @@ void LightmapGI::set_directional(bool p_directional) {
 
 bool LightmapGI::is_directional() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("is_directional")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -311,7 +311,7 @@ void LightmapGI::set_shadowmask_mode(LightmapGIData::ShadowmaskMode p_mode) {
 
 LightmapGIData::ShadowmaskMode LightmapGI::get_shadowmask_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_shadowmask_mode")._native_ptr(), 785478560);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, LightmapGIData::ShadowmaskMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (LightmapGIData::ShadowmaskMode(0)));
 	return (LightmapGIData::ShadowmaskMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -325,7 +325,7 @@ void LightmapGI::set_use_texture_for_bounces(bool p_use_texture_for_bounces) {
 
 bool LightmapGI::is_using_texture_for_bounces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("is_using_texture_for_bounces")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -337,7 +337,7 @@ void LightmapGI::set_camera_attributes(const Ref<CameraAttributes> &p_camera_att
 
 Ref<CameraAttributes> LightmapGI::get_camera_attributes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGI::get_class_static()._native_ptr(), StringName("get_camera_attributes")._native_ptr(), 3921283215);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<CameraAttributes>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<CameraAttributes>()));
 	return Ref<CameraAttributes>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<CameraAttributes>(_gde_method_bind, _owner));
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_VISIBLE_ON_SCREEN_ENABLER2D_HPP
-#define GODOT_CPP_VISIBLE_ON_SCREEN_ENABLER2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/visible_on_screen_notifier2d.hpp>
 #include <godot_cpp/variant/node_path.hpp>
@@ -70,4 +69,3 @@ public:
 
 VARIANT_ENUM_CAST(VisibleOnScreenEnabler2D::EnableMode);
 
-#endif // ! GODOT_CPP_VISIBLE_ON_SCREEN_ENABLER2D_HPP

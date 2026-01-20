@@ -50,7 +50,7 @@ void EditorFeatureProfile::set_disable_class(const StringName &p_class_name, boo
 
 bool EditorFeatureProfile::is_class_disabled(const StringName &p_class_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFeatureProfile::get_class_static()._native_ptr(), StringName("is_class_disabled")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_class_name);
 }
 
@@ -64,7 +64,7 @@ void EditorFeatureProfile::set_disable_class_editor(const StringName &p_class_na
 
 bool EditorFeatureProfile::is_class_editor_disabled(const StringName &p_class_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFeatureProfile::get_class_static()._native_ptr(), StringName("is_class_editor_disabled")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_class_name);
 }
 
@@ -78,7 +78,7 @@ void EditorFeatureProfile::set_disable_class_property(const StringName &p_class_
 
 bool EditorFeatureProfile::is_class_property_disabled(const StringName &p_class_name, const StringName &p_property) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFeatureProfile::get_class_static()._native_ptr(), StringName("is_class_property_disabled")._native_ptr(), 471820014);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_class_name, &p_property);
 }
 
@@ -94,7 +94,7 @@ void EditorFeatureProfile::set_disable_feature(EditorFeatureProfile::Feature p_f
 
 bool EditorFeatureProfile::is_feature_disabled(EditorFeatureProfile::Feature p_feature) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFeatureProfile::get_class_static()._native_ptr(), StringName("is_feature_disabled")._native_ptr(), 2974403161);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_feature_encoded;
 	PtrToArg<int64_t>::encode(p_feature, &p_feature_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_feature_encoded);
@@ -102,7 +102,7 @@ bool EditorFeatureProfile::is_feature_disabled(EditorFeatureProfile::Feature p_f
 
 String EditorFeatureProfile::get_feature_name(EditorFeatureProfile::Feature p_feature) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFeatureProfile::get_class_static()._native_ptr(), StringName("get_feature_name")._native_ptr(), 3401335809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_feature_encoded;
 	PtrToArg<int64_t>::encode(p_feature, &p_feature_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_feature_encoded);
@@ -110,13 +110,13 @@ String EditorFeatureProfile::get_feature_name(EditorFeatureProfile::Feature p_fe
 
 Error EditorFeatureProfile::save_to_file(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFeatureProfile::get_class_static()._native_ptr(), StringName("save_to_file")._native_ptr(), 166001499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 Error EditorFeatureProfile::load_from_file(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFeatureProfile::get_class_static()._native_ptr(), StringName("load_from_file")._native_ptr(), 166001499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 

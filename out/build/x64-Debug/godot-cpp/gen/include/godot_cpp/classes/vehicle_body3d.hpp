@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_VEHICLE_BODY3D_HPP
-#define GODOT_CPP_VEHICLE_BODY3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/rigid_body3d.hpp>
 
@@ -63,4 +62,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_VEHICLE_BODY3D_HPP

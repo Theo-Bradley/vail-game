@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CSG_POLYGON3D_HPP
-#define GODOT_CPP_CSG_POLYGON3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/csg_primitive3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -117,4 +116,3 @@ VARIANT_ENUM_CAST(CSGPolygon3D::Mode);
 VARIANT_ENUM_CAST(CSGPolygon3D::PathRotation);
 VARIANT_ENUM_CAST(CSGPolygon3D::PathIntervalType);
 
-#endif // ! GODOT_CPP_CSG_POLYGON3D_HPP

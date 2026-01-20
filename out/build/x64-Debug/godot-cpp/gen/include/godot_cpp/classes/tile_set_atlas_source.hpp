@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TILE_SET_ATLAS_SOURCE_HPP
-#define GODOT_CPP_TILE_SET_ATLAS_SOURCE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/tile_set_source.hpp>
@@ -117,4 +116,3 @@ public:
 
 VARIANT_ENUM_CAST(TileSetAtlasSource::TileAnimationMode);
 
-#endif // ! GODOT_CPP_TILE_SET_ATLAS_SOURCE_HPP

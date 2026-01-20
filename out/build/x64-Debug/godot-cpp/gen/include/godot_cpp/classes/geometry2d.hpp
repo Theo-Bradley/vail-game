@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GEOMETRY2D_HPP
-#define GODOT_CPP_GEOMETRY2D_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/dictionary.hpp>
@@ -119,4 +118,3 @@ VARIANT_ENUM_CAST(Geometry2D::PolyBooleanOperation);
 VARIANT_ENUM_CAST(Geometry2D::PolyJoinType);
 VARIANT_ENUM_CAST(Geometry2D::PolyEndType);
 
-#endif // ! GODOT_CPP_GEOMETRY2D_HPP

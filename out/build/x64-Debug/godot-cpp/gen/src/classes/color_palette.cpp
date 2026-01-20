@@ -46,7 +46,7 @@ void ColorPalette::set_colors(const PackedColorArray &p_colors) {
 
 PackedColorArray ColorPalette::get_colors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ColorPalette::get_class_static()._native_ptr(), StringName("get_colors")._native_ptr(), 1392750486);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedColorArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedColorArray()));
 	return internal::_call_native_mb_ret<PackedColorArray>(_gde_method_bind, _owner);
 }
 

@@ -62,7 +62,7 @@ void VisualShader::add_node(VisualShader::Type p_type, const Ref<VisualShaderNod
 
 Ref<VisualShaderNode> VisualShader::get_node(VisualShader::Type p_type, int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("get_node")._native_ptr(), 3784670312);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<VisualShaderNode>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<VisualShaderNode>()));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_id_encoded;
@@ -82,7 +82,7 @@ void VisualShader::set_node_position(VisualShader::Type p_type, int32_t p_id, co
 
 Vector2 VisualShader::get_node_position(VisualShader::Type p_type, int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("get_node_position")._native_ptr(), 2175036082);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_id_encoded;
@@ -92,7 +92,7 @@ Vector2 VisualShader::get_node_position(VisualShader::Type p_type, int32_t p_id)
 
 PackedInt32Array VisualShader::get_node_list(VisualShader::Type p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("get_node_list")._native_ptr(), 2370592410);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_type_encoded);
@@ -100,7 +100,7 @@ PackedInt32Array VisualShader::get_node_list(VisualShader::Type p_type) const {
 
 int32_t VisualShader::get_valid_node_id(VisualShader::Type p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("get_valid_node_id")._native_ptr(), 629467342);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_type_encoded);
@@ -128,7 +128,7 @@ void VisualShader::replace_node(VisualShader::Type p_type, int32_t p_id, const S
 
 bool VisualShader::is_node_connection(VisualShader::Type p_type, int32_t p_from_node, int32_t p_from_port, int32_t p_to_node, int32_t p_to_port) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("is_node_connection")._native_ptr(), 3922381898);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_from_node_encoded;
@@ -144,7 +144,7 @@ bool VisualShader::is_node_connection(VisualShader::Type p_type, int32_t p_from_
 
 bool VisualShader::can_connect_nodes(VisualShader::Type p_type, int32_t p_from_node, int32_t p_from_port, int32_t p_to_node, int32_t p_to_port) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("can_connect_nodes")._native_ptr(), 3922381898);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_from_node_encoded;
@@ -160,7 +160,7 @@ bool VisualShader::can_connect_nodes(VisualShader::Type p_type, int32_t p_from_n
 
 Error VisualShader::connect_nodes(VisualShader::Type p_type, int32_t p_from_node, int32_t p_from_port, int32_t p_to_node, int32_t p_to_port) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("connect_nodes")._native_ptr(), 3081049573);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_from_node_encoded;
@@ -208,22 +208,10 @@ void VisualShader::connect_nodes_forced(VisualShader::Type p_type, int32_t p_fro
 
 TypedArray<Dictionary> VisualShader::get_node_connections(VisualShader::Type p_type) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("get_node_connections")._native_ptr(), 1441964831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner, &p_type_encoded);
-}
-
-void VisualShader::set_graph_offset(const Vector2 &p_offset) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("set_graph_offset")._native_ptr(), 743155724);
-	CHECK_METHOD_BIND(_gde_method_bind);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_offset);
-}
-
-Vector2 VisualShader::get_graph_offset() const {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("get_graph_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
-	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 void VisualShader::attach_node_to_frame(VisualShader::Type p_type, int32_t p_id, int32_t p_frame) {
@@ -266,8 +254,20 @@ void VisualShader::remove_varying(const String &p_name) {
 
 bool VisualShader::has_varying(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("has_varying")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
+}
+
+void VisualShader::set_graph_offset(const Vector2 &p_offset) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("set_graph_offset")._native_ptr(), 743155724);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_offset);
+}
+
+Vector2 VisualShader::get_graph_offset() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShader::get_class_static()._native_ptr(), StringName("get_graph_offset")._native_ptr(), 3341600327);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
+	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 } // namespace godot

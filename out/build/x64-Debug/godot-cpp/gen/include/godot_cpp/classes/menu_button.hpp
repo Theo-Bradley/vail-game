@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_MENU_BUTTON_HPP
-#define GODOT_CPP_MENU_BUTTON_HPP
+#pragma once
 
 #include <godot_cpp/classes/button.hpp>
 
@@ -66,4 +65,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_MENU_BUTTON_HPP

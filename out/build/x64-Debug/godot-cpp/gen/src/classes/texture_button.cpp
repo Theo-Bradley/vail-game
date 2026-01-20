@@ -103,7 +103,7 @@ void TextureButton::set_flip_h(bool p_enable) {
 
 bool TextureButton::is_flipped_h() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("is_flipped_h")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -117,55 +117,55 @@ void TextureButton::set_flip_v(bool p_enable) {
 
 bool TextureButton::is_flipped_v() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("is_flipped_v")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Ref<Texture2D> TextureButton::get_texture_normal() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("get_texture_normal")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
 Ref<Texture2D> TextureButton::get_texture_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("get_texture_pressed")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
 Ref<Texture2D> TextureButton::get_texture_hover() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("get_texture_hover")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
 Ref<Texture2D> TextureButton::get_texture_disabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("get_texture_disabled")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
 Ref<Texture2D> TextureButton::get_texture_focused() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("get_texture_focused")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
 Ref<BitMap> TextureButton::get_click_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("get_click_mask")._native_ptr(), 2459671998);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<BitMap>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<BitMap>()));
 	return Ref<BitMap>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<BitMap>(_gde_method_bind, _owner));
 }
 
 bool TextureButton::get_ignore_texture_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("get_ignore_texture_size")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 TextureButton::StretchMode TextureButton::get_stretch_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureButton::get_class_static()._native_ptr(), StringName("get_stretch_mode")._native_ptr(), 33815122);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextureButton::StretchMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextureButton::StretchMode(0)));
 	return (TextureButton::StretchMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

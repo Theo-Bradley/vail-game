@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GPU_PARTICLES_COLLISION_BOX3D_HPP
-#define GODOT_CPP_GPU_PARTICLES_COLLISION_BOX3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/gpu_particles_collision3d.hpp>
 #include <godot_cpp/variant/vector3.hpp>
@@ -60,4 +59,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_GPU_PARTICLES_COLLISION_BOX3D_HPP

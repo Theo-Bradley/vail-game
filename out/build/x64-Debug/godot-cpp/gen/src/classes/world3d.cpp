@@ -44,19 +44,19 @@ namespace godot {
 
 RID World3D::get_space() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(World3D::get_class_static()._native_ptr(), StringName("get_space")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID World3D::get_navigation_map() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(World3D::get_class_static()._native_ptr(), StringName("get_navigation_map")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID World3D::get_scenario() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(World3D::get_class_static()._native_ptr(), StringName("get_scenario")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -68,7 +68,7 @@ void World3D::set_environment(const Ref<Environment> &p_env) {
 
 Ref<Environment> World3D::get_environment() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(World3D::get_class_static()._native_ptr(), StringName("get_environment")._native_ptr(), 3082064660);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Environment>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Environment>()));
 	return Ref<Environment>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Environment>(_gde_method_bind, _owner));
 }
 
@@ -80,7 +80,7 @@ void World3D::set_fallback_environment(const Ref<Environment> &p_env) {
 
 Ref<Environment> World3D::get_fallback_environment() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(World3D::get_class_static()._native_ptr(), StringName("get_fallback_environment")._native_ptr(), 3082064660);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Environment>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Environment>()));
 	return Ref<Environment>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Environment>(_gde_method_bind, _owner));
 }
 
@@ -92,13 +92,13 @@ void World3D::set_camera_attributes(const Ref<CameraAttributes> &p_attributes) {
 
 Ref<CameraAttributes> World3D::get_camera_attributes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(World3D::get_class_static()._native_ptr(), StringName("get_camera_attributes")._native_ptr(), 3921283215);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<CameraAttributes>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<CameraAttributes>()));
 	return Ref<CameraAttributes>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<CameraAttributes>(_gde_method_bind, _owner));
 }
 
 PhysicsDirectSpaceState3D *World3D::get_direct_space_state() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(World3D::get_class_static()._native_ptr(), StringName("get_direct_space_state")._native_ptr(), 2069328350);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<PhysicsDirectSpaceState3D>(_gde_method_bind, _owner);
 }
 

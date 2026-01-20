@@ -80,7 +80,7 @@ void EditorNode3DGizmoPlugin::add_material(const String &p_name, const Ref<Stand
 
 Ref<StandardMaterial3D> EditorNode3DGizmoPlugin::get_material(const String &p_name, const Ref<EditorNode3DGizmo> &p_gizmo) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorNode3DGizmoPlugin::get_class_static()._native_ptr(), StringName("get_material")._native_ptr(), 974464017);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<StandardMaterial3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<StandardMaterial3D>()));
 	return Ref<StandardMaterial3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<StandardMaterial3D>(_gde_method_bind, _owner, &p_name, (p_gizmo != nullptr ? &p_gizmo->_owner : nullptr)));
 }
 

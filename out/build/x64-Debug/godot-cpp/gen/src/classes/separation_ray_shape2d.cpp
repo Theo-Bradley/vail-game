@@ -48,7 +48,7 @@ void SeparationRayShape2D::set_length(float p_length) {
 
 float SeparationRayShape2D::get_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SeparationRayShape2D::get_class_static()._native_ptr(), StringName("get_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void SeparationRayShape2D::set_slide_on_slope(bool p_active) {
 
 bool SeparationRayShape2D::get_slide_on_slope() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SeparationRayShape2D::get_class_static()._native_ptr(), StringName("get_slide_on_slope")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

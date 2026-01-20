@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SKELETON_MODIFICATION2D_PHYSICAL_BONES_HPP
-#define GODOT_CPP_SKELETON_MODIFICATION2D_PHYSICAL_BONES_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/skeleton_modification2d.hpp>
@@ -68,4 +67,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_SKELETON_MODIFICATION2D_PHYSICAL_BONES_HPP

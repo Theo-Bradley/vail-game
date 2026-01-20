@@ -48,7 +48,7 @@ void VisualShaderNodeVec4Parameter::set_default_value_enabled(bool p_enabled) {
 
 bool VisualShaderNodeVec4Parameter::is_default_value_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeVec4Parameter::get_class_static()._native_ptr(), StringName("is_default_value_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void VisualShaderNodeVec4Parameter::set_default_value(const Vector4 &p_value) {
 
 Vector4 VisualShaderNodeVec4Parameter::get_default_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeVec4Parameter::get_class_static()._native_ptr(), StringName("get_default_value")._native_ptr(), 2435802345);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector4());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector4()));
 	return internal::_call_native_mb_ret<Vector4>(_gde_method_bind, _owner);
 }
 

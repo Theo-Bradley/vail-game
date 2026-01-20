@@ -55,7 +55,7 @@ void AnimationNodeStateMachine::replace_node(const StringName &p_name, const Ref
 
 Ref<AnimationNode> AnimationNodeStateMachine::get_node(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_node")._native_ptr(), 625644256);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AnimationNode>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AnimationNode>()));
 	return Ref<AnimationNode>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AnimationNode>(_gde_method_bind, _owner, &p_name));
 }
 
@@ -73,14 +73,20 @@ void AnimationNodeStateMachine::rename_node(const StringName &p_name, const Stri
 
 bool AnimationNodeStateMachine::has_node(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("has_node")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
 StringName AnimationNodeStateMachine::get_node_name(const Ref<AnimationNode> &p_node) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_node_name")._native_ptr(), 739213945);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, (p_node != nullptr ? &p_node->_owner : nullptr));
+}
+
+TypedArray<StringName> AnimationNodeStateMachine::get_node_list() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_node_list")._native_ptr(), 3995934104);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<StringName>()));
+	return internal::_call_native_mb_ret<TypedArray<StringName>>(_gde_method_bind, _owner);
 }
 
 void AnimationNodeStateMachine::set_node_position(const StringName &p_name, const Vector2 &p_position) {
@@ -91,13 +97,13 @@ void AnimationNodeStateMachine::set_node_position(const StringName &p_name, cons
 
 Vector2 AnimationNodeStateMachine::get_node_position(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_node_position")._native_ptr(), 3100822709);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_name);
 }
 
 bool AnimationNodeStateMachine::has_transition(const StringName &p_from, const StringName &p_to) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("has_transition")._native_ptr(), 471820014);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_from, &p_to);
 }
 
@@ -109,7 +115,7 @@ void AnimationNodeStateMachine::add_transition(const StringName &p_from, const S
 
 Ref<AnimationNodeStateMachineTransition> AnimationNodeStateMachine::get_transition(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_transition")._native_ptr(), 4192381260);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AnimationNodeStateMachineTransition>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AnimationNodeStateMachineTransition>()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return Ref<AnimationNodeStateMachineTransition>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AnimationNodeStateMachineTransition>(_gde_method_bind, _owner, &p_idx_encoded));
@@ -117,7 +123,7 @@ Ref<AnimationNodeStateMachineTransition> AnimationNodeStateMachine::get_transiti
 
 StringName AnimationNodeStateMachine::get_transition_from(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_transition_from")._native_ptr(), 659327637);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -125,7 +131,7 @@ StringName AnimationNodeStateMachine::get_transition_from(int32_t p_idx) const {
 
 StringName AnimationNodeStateMachine::get_transition_to(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_transition_to")._native_ptr(), 659327637);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -133,7 +139,7 @@ StringName AnimationNodeStateMachine::get_transition_to(int32_t p_idx) const {
 
 int32_t AnimationNodeStateMachine::get_transition_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_transition_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -159,7 +165,7 @@ void AnimationNodeStateMachine::set_graph_offset(const Vector2 &p_offset) {
 
 Vector2 AnimationNodeStateMachine::get_graph_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_graph_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -173,7 +179,7 @@ void AnimationNodeStateMachine::set_state_machine_type(AnimationNodeStateMachine
 
 AnimationNodeStateMachine::StateMachineType AnimationNodeStateMachine::get_state_machine_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("get_state_machine_type")._native_ptr(), 1140726469);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AnimationNodeStateMachine::StateMachineType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AnimationNodeStateMachine::StateMachineType(0)));
 	return (AnimationNodeStateMachine::StateMachineType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -187,7 +193,7 @@ void AnimationNodeStateMachine::set_allow_transition_to_self(bool p_enable) {
 
 bool AnimationNodeStateMachine::is_allow_transition_to_self() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("is_allow_transition_to_self")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -201,7 +207,7 @@ void AnimationNodeStateMachine::set_reset_ends(bool p_enable) {
 
 bool AnimationNodeStateMachine::are_ends_reset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeStateMachine::get_class_static()._native_ptr(), StringName("are_ends_reset")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

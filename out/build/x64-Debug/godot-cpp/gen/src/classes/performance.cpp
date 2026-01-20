@@ -68,7 +68,7 @@ Performance::~Performance() {
 
 double Performance::get_monitor(Performance::Monitor p_monitor) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Performance::get_class_static()._native_ptr(), StringName("get_monitor")._native_ptr(), 1943275655);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_monitor_encoded;
 	PtrToArg<int64_t>::encode(p_monitor, &p_monitor_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_monitor_encoded);
@@ -88,25 +88,25 @@ void Performance::remove_custom_monitor(const StringName &p_id) {
 
 bool Performance::has_custom_monitor(const StringName &p_id) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Performance::get_class_static()._native_ptr(), StringName("has_custom_monitor")._native_ptr(), 2041966384);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_id);
 }
 
 Variant Performance::get_custom_monitor(const StringName &p_id) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Performance::get_class_static()._native_ptr(), StringName("get_custom_monitor")._native_ptr(), 2138907829);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_id);
 }
 
 uint64_t Performance::get_monitor_modification_time() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Performance::get_class_static()._native_ptr(), StringName("get_monitor_modification_time")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 TypedArray<StringName> Performance::get_custom_monitor_names() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Performance::get_class_static()._native_ptr(), StringName("get_custom_monitor_names")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<StringName>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<StringName>()));
 	return internal::_call_native_mb_ret<TypedArray<StringName>>(_gde_method_bind, _owner);
 }
 

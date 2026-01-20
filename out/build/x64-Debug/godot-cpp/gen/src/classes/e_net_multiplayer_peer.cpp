@@ -44,7 +44,7 @@ namespace godot {
 
 Error ENetMultiplayerPeer::create_server(int32_t p_port, int32_t p_max_clients, int32_t p_max_channels, int32_t p_in_bandwidth, int32_t p_out_bandwidth) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetMultiplayerPeer::get_class_static()._native_ptr(), StringName("create_server")._native_ptr(), 2917761309);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_port_encoded;
 	PtrToArg<int64_t>::encode(p_port, &p_port_encoded);
 	int64_t p_max_clients_encoded;
@@ -60,7 +60,7 @@ Error ENetMultiplayerPeer::create_server(int32_t p_port, int32_t p_max_clients, 
 
 Error ENetMultiplayerPeer::create_client(const String &p_address, int32_t p_port, int32_t p_channel_count, int32_t p_in_bandwidth, int32_t p_out_bandwidth, int32_t p_local_port) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetMultiplayerPeer::get_class_static()._native_ptr(), StringName("create_client")._native_ptr(), 2327163476);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_port_encoded;
 	PtrToArg<int64_t>::encode(p_port, &p_port_encoded);
 	int64_t p_channel_count_encoded;
@@ -76,7 +76,7 @@ Error ENetMultiplayerPeer::create_client(const String &p_address, int32_t p_port
 
 Error ENetMultiplayerPeer::create_mesh(int32_t p_unique_id) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetMultiplayerPeer::get_class_static()._native_ptr(), StringName("create_mesh")._native_ptr(), 844576869);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_unique_id_encoded;
 	PtrToArg<int64_t>::encode(p_unique_id, &p_unique_id_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_unique_id_encoded);
@@ -84,7 +84,7 @@ Error ENetMultiplayerPeer::create_mesh(int32_t p_unique_id) {
 
 Error ENetMultiplayerPeer::add_mesh_peer(int32_t p_peer_id, const Ref<ENetConnection> &p_host) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetMultiplayerPeer::get_class_static()._native_ptr(), StringName("add_mesh_peer")._native_ptr(), 1293458335);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_peer_id_encoded;
 	PtrToArg<int64_t>::encode(p_peer_id, &p_peer_id_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_peer_id_encoded, (p_host != nullptr ? &p_host->_owner : nullptr));
@@ -98,13 +98,13 @@ void ENetMultiplayerPeer::set_bind_ip(const String &p_ip) {
 
 Ref<ENetConnection> ENetMultiplayerPeer::get_host() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_host")._native_ptr(), 4103238886);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ENetConnection>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ENetConnection>()));
 	return Ref<ENetConnection>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ENetConnection>(_gde_method_bind, _owner));
 }
 
 Ref<ENetPacketPeer> ENetMultiplayerPeer::get_peer(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetMultiplayerPeer::get_class_static()._native_ptr(), StringName("get_peer")._native_ptr(), 3793311544);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ENetPacketPeer>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ENetPacketPeer>()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return Ref<ENetPacketPeer>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ENetPacketPeer>(_gde_method_bind, _owner, &p_id_encoded));

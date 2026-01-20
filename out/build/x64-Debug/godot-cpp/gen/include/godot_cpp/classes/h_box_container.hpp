@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_H_BOX_CONTAINER_HPP
-#define GODOT_CPP_H_BOX_CONTAINER_HPP
+#pragma once
 
 #include <godot_cpp/classes/box_container.hpp>
 
@@ -56,4 +55,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_H_BOX_CONTAINER_HPP

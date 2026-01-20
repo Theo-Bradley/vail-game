@@ -46,7 +46,7 @@ void GPUParticlesAttractorBox3D::set_size(const Vector3 &p_size) {
 
 Vector3 GPUParticlesAttractorBox3D::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesAttractorBox3D::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 

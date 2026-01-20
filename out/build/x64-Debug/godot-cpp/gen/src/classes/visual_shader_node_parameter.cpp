@@ -46,7 +46,7 @@ void VisualShaderNodeParameter::set_parameter_name(const String &p_name) {
 
 String VisualShaderNodeParameter::get_parameter_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeParameter::get_class_static()._native_ptr(), StringName("get_parameter_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void VisualShaderNodeParameter::set_qualifier(VisualShaderNodeParameter::Qualifi
 
 VisualShaderNodeParameter::Qualifier VisualShaderNodeParameter::get_qualifier() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeParameter::get_class_static()._native_ptr(), StringName("get_qualifier")._native_ptr(), 3558406205);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeParameter::Qualifier(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeParameter::Qualifier(0)));
 	return (VisualShaderNodeParameter::Qualifier)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

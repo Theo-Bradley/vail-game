@@ -49,13 +49,13 @@ void PacketPeerDTLS::poll() {
 
 Error PacketPeerDTLS::connect_to_peer(const Ref<PacketPeerUDP> &p_packet_peer, const String &p_hostname, const Ref<TLSOptions> &p_client_options) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PacketPeerDTLS::get_class_static()._native_ptr(), StringName("connect_to_peer")._native_ptr(), 2880188099);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_packet_peer != nullptr ? &p_packet_peer->_owner : nullptr), &p_hostname, (p_client_options != nullptr ? &p_client_options->_owner : nullptr));
 }
 
 PacketPeerDTLS::Status PacketPeerDTLS::get_status() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PacketPeerDTLS::get_class_static()._native_ptr(), StringName("get_status")._native_ptr(), 3248654679);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PacketPeerDTLS::Status(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PacketPeerDTLS::Status(0)));
 	return (PacketPeerDTLS::Status)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

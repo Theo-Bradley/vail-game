@@ -46,7 +46,7 @@ void RemoteTransform3D::set_remote_node(const NodePath &p_path) {
 
 NodePath RemoteTransform3D::get_remote_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RemoteTransform3D::get_class_static()._native_ptr(), StringName("get_remote_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -66,7 +66,7 @@ void RemoteTransform3D::set_use_global_coordinates(bool p_use_global_coordinates
 
 bool RemoteTransform3D::get_use_global_coordinates() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RemoteTransform3D::get_class_static()._native_ptr(), StringName("get_use_global_coordinates")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void RemoteTransform3D::set_update_position(bool p_update_remote_position) {
 
 bool RemoteTransform3D::get_update_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RemoteTransform3D::get_class_static()._native_ptr(), StringName("get_update_position")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -94,7 +94,7 @@ void RemoteTransform3D::set_update_rotation(bool p_update_remote_rotation) {
 
 bool RemoteTransform3D::get_update_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RemoteTransform3D::get_class_static()._native_ptr(), StringName("get_update_rotation")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void RemoteTransform3D::set_update_scale(bool p_update_remote_scale) {
 
 bool RemoteTransform3D::get_update_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RemoteTransform3D::get_class_static()._native_ptr(), StringName("get_update_scale")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

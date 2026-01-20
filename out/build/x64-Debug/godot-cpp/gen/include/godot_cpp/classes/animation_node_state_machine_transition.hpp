@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_NODE_STATE_MACHINE_TRANSITION_HPP
-#define GODOT_CPP_ANIMATION_NODE_STATE_MACHINE_TRANSITION_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -95,4 +94,3 @@ public:
 VARIANT_ENUM_CAST(AnimationNodeStateMachineTransition::SwitchMode);
 VARIANT_ENUM_CAST(AnimationNodeStateMachineTransition::AdvanceMode);
 
-#endif // ! GODOT_CPP_ANIMATION_NODE_STATE_MACHINE_TRANSITION_HPP

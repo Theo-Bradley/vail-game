@@ -44,13 +44,13 @@ namespace godot {
 
 Ref<AudioStreamOggVorbis> AudioStreamOggVorbis::load_from_buffer(const PackedByteArray &p_stream_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("load_from_buffer")._native_ptr(), 354904730);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStreamOggVorbis>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStreamOggVorbis>()));
 	return Ref<AudioStreamOggVorbis>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStreamOggVorbis>(_gde_method_bind, nullptr, &p_stream_data));
 }
 
 Ref<AudioStreamOggVorbis> AudioStreamOggVorbis::load_from_file(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("load_from_file")._native_ptr(), 797568536);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStreamOggVorbis>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStreamOggVorbis>()));
 	return Ref<AudioStreamOggVorbis>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStreamOggVorbis>(_gde_method_bind, nullptr, &p_path));
 }
 
@@ -62,7 +62,7 @@ void AudioStreamOggVorbis::set_packet_sequence(const Ref<OggPacketSequence> &p_p
 
 Ref<OggPacketSequence> AudioStreamOggVorbis::get_packet_sequence() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("get_packet_sequence")._native_ptr(), 2801636033);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OggPacketSequence>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OggPacketSequence>()));
 	return Ref<OggPacketSequence>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OggPacketSequence>(_gde_method_bind, _owner));
 }
 
@@ -76,7 +76,7 @@ void AudioStreamOggVorbis::set_loop(bool p_enable) {
 
 bool AudioStreamOggVorbis::has_loop() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("has_loop")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void AudioStreamOggVorbis::set_loop_offset(double p_seconds) {
 
 double AudioStreamOggVorbis::get_loop_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("get_loop_offset")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void AudioStreamOggVorbis::set_bpm(double p_bpm) {
 
 double AudioStreamOggVorbis::get_bpm() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("get_bpm")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void AudioStreamOggVorbis::set_beat_count(int32_t p_count) {
 
 int32_t AudioStreamOggVorbis::get_beat_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("get_beat_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,8 +132,20 @@ void AudioStreamOggVorbis::set_bar_beats(int32_t p_count) {
 
 int32_t AudioStreamOggVorbis::get_bar_beats() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("get_bar_beats")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void AudioStreamOggVorbis::set_tags(const Dictionary &p_tags) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("set_tags")._native_ptr(), 4155329257);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_tags);
+}
+
+Dictionary AudioStreamOggVorbis::get_tags() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamOggVorbis::get_class_static()._native_ptr(), StringName("get_tags")._native_ptr(), 3102165223);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
+	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
 } // namespace godot

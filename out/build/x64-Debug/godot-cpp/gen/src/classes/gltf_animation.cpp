@@ -42,7 +42,7 @@ namespace godot {
 
 String GLTFAnimation::get_original_name() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFAnimation::get_class_static()._native_ptr(), StringName("get_original_name")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -54,7 +54,7 @@ void GLTFAnimation::set_original_name(const String &p_original_name) {
 
 bool GLTFAnimation::get_loop() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFAnimation::get_class_static()._native_ptr(), StringName("get_loop")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -68,7 +68,7 @@ void GLTFAnimation::set_loop(bool p_loop) {
 
 Variant GLTFAnimation::get_additional_data(const StringName &p_extension_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFAnimation::get_class_static()._native_ptr(), StringName("get_additional_data")._native_ptr(), 2138907829);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_extension_name);
 }
 

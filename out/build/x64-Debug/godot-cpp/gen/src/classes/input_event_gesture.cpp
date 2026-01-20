@@ -46,7 +46,7 @@ void InputEventGesture::set_position(const Vector2 &p_position) {
 
 Vector2 InputEventGesture::get_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventGesture::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 

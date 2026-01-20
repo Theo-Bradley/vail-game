@@ -46,7 +46,7 @@ void Joint3D::set_node_a(const NodePath &p_node) {
 
 NodePath Joint3D::get_node_a() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Joint3D::get_class_static()._native_ptr(), StringName("get_node_a")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void Joint3D::set_node_b(const NodePath &p_node) {
 
 NodePath Joint3D::get_node_b() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Joint3D::get_class_static()._native_ptr(), StringName("get_node_b")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void Joint3D::set_solver_priority(int32_t p_priority) {
 
 int32_t Joint3D::get_solver_priority() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Joint3D::get_class_static()._native_ptr(), StringName("get_solver_priority")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -86,13 +86,13 @@ void Joint3D::set_exclude_nodes_from_collision(bool p_enable) {
 
 bool Joint3D::get_exclude_nodes_from_collision() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Joint3D::get_class_static()._native_ptr(), StringName("get_exclude_nodes_from_collision")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 RID Joint3D::get_rid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Joint3D::get_class_static()._native_ptr(), StringName("get_rid")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 

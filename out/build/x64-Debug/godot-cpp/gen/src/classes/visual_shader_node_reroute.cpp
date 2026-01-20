@@ -40,7 +40,7 @@ namespace godot {
 
 VisualShaderNode::PortType VisualShaderNodeReroute::get_port_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeReroute::get_class_static()._native_ptr(), StringName("get_port_type")._native_ptr(), 1287173294);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNode::PortType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNode::PortType(0)));
 	return (VisualShaderNode::PortType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

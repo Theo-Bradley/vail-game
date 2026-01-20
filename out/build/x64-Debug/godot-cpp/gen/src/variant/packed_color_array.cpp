@@ -104,6 +104,8 @@ void PackedColorArray::init_bindings() {
 	_method_bindings.method_rfind = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_PACKED_COLOR_ARRAY, _gde_name._native_ptr(), 3156095363);
 	_gde_name = StringName("count");
 	_method_bindings.method_count = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_PACKED_COLOR_ARRAY, _gde_name._native_ptr(), 1682108616);
+	_gde_name = StringName("erase");
+	_method_bindings.method_erase = internal::gdextension_interface_variant_get_ptr_builtin_method(GDEXTENSION_VARIANT_TYPE_PACKED_COLOR_ARRAY, _gde_name._native_ptr(), 1007858200);
 	_method_bindings.indexed_setter = internal::gdextension_interface_variant_get_ptr_indexed_setter(GDEXTENSION_VARIANT_TYPE_PACKED_COLOR_ARRAY);
 	_method_bindings.indexed_getter = internal::gdextension_interface_variant_get_ptr_indexed_getter(GDEXTENSION_VARIANT_TYPE_PACKED_COLOR_ARRAY);
 	_method_bindings.operator_equal_Variant = internal::gdextension_interface_variant_get_ptr_operator_evaluator(GDEXTENSION_VARIANT_OP_EQUAL, GDEXTENSION_VARIANT_TYPE_PACKED_COLOR_ARRAY, GDEXTENSION_VARIANT_TYPE_NIL);
@@ -246,6 +248,10 @@ int64_t PackedColorArray::rfind(const Color &p_value, int64_t p_from) const {
 
 int64_t PackedColorArray::count(const Color &p_value) const {
 	return internal::_call_builtin_method_ptr_ret<int64_t>(_method_bindings.method_count, (GDExtensionTypePtr)&opaque, &p_value);
+}
+
+bool PackedColorArray::erase(const Color &p_value) {
+	return internal::_call_builtin_method_ptr_ret<int8_t>(_method_bindings.method_erase, (GDExtensionTypePtr)&opaque, &p_value);
 }
 
 bool PackedColorArray::operator==(const Variant &p_other) const {

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CAPSULE_SHAPE3D_HPP
-#define GODOT_CPP_CAPSULE_SHAPE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/shape3d.hpp>
@@ -50,6 +49,8 @@ public:
 	float get_radius() const;
 	void set_height(float p_height);
 	float get_height() const;
+	void set_mid_height(float p_mid_height);
+	float get_mid_height() const;
 
 protected:
 	template <typename T, typename B>
@@ -62,4 +63,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_CAPSULE_SHAPE3D_HPP

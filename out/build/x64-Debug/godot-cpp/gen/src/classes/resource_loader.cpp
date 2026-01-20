@@ -69,7 +69,7 @@ ResourceLoader::~ResourceLoader() {
 
 Error ResourceLoader::load_threaded_request(const String &p_path, const String &p_type_hint, bool p_use_sub_threads, ResourceLoader::CacheMode p_cache_mode) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("load_threaded_request")._native_ptr(), 3614384323);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int8_t p_use_sub_threads_encoded;
 	PtrToArg<bool>::encode(p_use_sub_threads, &p_use_sub_threads_encoded);
 	int64_t p_cache_mode_encoded;
@@ -79,19 +79,19 @@ Error ResourceLoader::load_threaded_request(const String &p_path, const String &
 
 ResourceLoader::ThreadLoadStatus ResourceLoader::load_threaded_get_status(const String &p_path, const Array &p_progress) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("load_threaded_get_status")._native_ptr(), 4137685479);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ResourceLoader::ThreadLoadStatus(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ResourceLoader::ThreadLoadStatus(0)));
 	return (ResourceLoader::ThreadLoadStatus)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path, &p_progress);
 }
 
 Ref<Resource> ResourceLoader::load_threaded_get(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("load_threaded_get")._native_ptr(), 1748875256);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
 	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner, &p_path));
 }
 
 Ref<Resource> ResourceLoader::load(const String &p_path, const String &p_type_hint, ResourceLoader::CacheMode p_cache_mode) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("load")._native_ptr(), 3358495409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
 	int64_t p_cache_mode_encoded;
 	PtrToArg<int64_t>::encode(p_cache_mode, &p_cache_mode_encoded);
 	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner, &p_path, &p_type_hint, &p_cache_mode_encoded));
@@ -99,7 +99,7 @@ Ref<Resource> ResourceLoader::load(const String &p_path, const String &p_type_hi
 
 PackedStringArray ResourceLoader::get_recognized_extensions_for_type(const String &p_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("get_recognized_extensions_for_type")._native_ptr(), 3538744774);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner, &p_type);
 }
 
@@ -127,37 +127,37 @@ void ResourceLoader::set_abort_on_missing_resources(bool p_abort) {
 
 PackedStringArray ResourceLoader::get_dependencies(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("get_dependencies")._native_ptr(), 3538744774);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner, &p_path);
 }
 
 bool ResourceLoader::has_cached(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("has_cached")._native_ptr(), 2323990056);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_path);
 }
 
 Ref<Resource> ResourceLoader::get_cached_ref(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("get_cached_ref")._native_ptr(), 1748875256);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
 	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner, &p_path));
 }
 
 bool ResourceLoader::exists(const String &p_path, const String &p_type_hint) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("exists")._native_ptr(), 4185558881);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_path, &p_type_hint);
 }
 
 int64_t ResourceLoader::get_resource_uid(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("get_resource_uid")._native_ptr(), 1597066294);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path);
 }
 
 PackedStringArray ResourceLoader::list_directory(const String &p_directory_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceLoader::get_class_static()._native_ptr(), StringName("list_directory")._native_ptr(), 3538744774);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner, &p_directory_path);
 }
 

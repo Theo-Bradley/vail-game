@@ -48,7 +48,7 @@ void Polygon2D::set_polygon(const PackedVector2Array &p_polygon) {
 
 PackedVector2Array Polygon2D::get_polygon() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_polygon")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void Polygon2D::set_uv(const PackedVector2Array &p_uv) {
 
 PackedVector2Array Polygon2D::get_uv() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_uv")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void Polygon2D::set_color(const Color &p_color) {
 
 Color Polygon2D::get_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -84,7 +84,7 @@ void Polygon2D::set_polygons(const Array &p_polygons) {
 
 Array Polygon2D::get_polygons() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_polygons")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
@@ -96,7 +96,7 @@ void Polygon2D::set_vertex_colors(const PackedColorArray &p_vertex_colors) {
 
 PackedColorArray Polygon2D::get_vertex_colors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_vertex_colors")._native_ptr(), 1392750486);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedColorArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedColorArray()));
 	return internal::_call_native_mb_ret<PackedColorArray>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void Polygon2D::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> Polygon2D::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -120,7 +120,7 @@ void Polygon2D::set_texture_offset(const Vector2 &p_texture_offset) {
 
 Vector2 Polygon2D::get_texture_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_texture_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -134,7 +134,7 @@ void Polygon2D::set_texture_rotation(float p_texture_rotation) {
 
 float Polygon2D::get_texture_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_texture_rotation")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void Polygon2D::set_texture_scale(const Vector2 &p_texture_scale) {
 
 Vector2 Polygon2D::get_texture_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_texture_scale")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void Polygon2D::set_invert_enabled(bool p_invert) {
 
 bool Polygon2D::get_invert_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_invert_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void Polygon2D::set_antialiased(bool p_antialiased) {
 
 bool Polygon2D::get_antialiased() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_antialiased")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +188,7 @@ void Polygon2D::set_invert_border(float p_invert_border) {
 
 float Polygon2D::get_invert_border() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_invert_border")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -200,7 +200,7 @@ void Polygon2D::set_offset(const Vector2 &p_offset) {
 
 Vector2 Polygon2D::get_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -212,13 +212,13 @@ void Polygon2D::add_bone(const NodePath &p_path, const PackedFloat32Array &p_wei
 
 int32_t Polygon2D::get_bone_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_bone_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 NodePath Polygon2D::get_bone_path(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_bone_path")._native_ptr(), 408788394);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, &p_index_encoded);
@@ -226,7 +226,7 @@ NodePath Polygon2D::get_bone_path(int32_t p_index) const {
 
 PackedFloat32Array Polygon2D::get_bone_weights(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_bone_weights")._native_ptr(), 1542882410);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedFloat32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedFloat32Array()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<PackedFloat32Array>(_gde_method_bind, _owner, &p_index_encoded);
@@ -270,7 +270,7 @@ void Polygon2D::set_skeleton(const NodePath &p_skeleton) {
 
 NodePath Polygon2D::get_skeleton() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_skeleton")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -284,7 +284,7 @@ void Polygon2D::set_internal_vertex_count(int32_t p_internal_vertex_count) {
 
 int32_t Polygon2D::get_internal_vertex_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Polygon2D::get_class_static()._native_ptr(), StringName("get_internal_vertex_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_SETTINGS_HPP
-#define GODOT_CPP_EDITOR_SETTINGS_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -68,7 +67,7 @@ public:
 	PackedStringArray get_favorites() const;
 	void set_recent_dirs(const PackedStringArray &p_dirs);
 	PackedStringArray get_recent_dirs() const;
-	void set_builtin_action_override(const String &p_name, const TypedArray<InputEvent> &p_actions_list);
+	void set_builtin_action_override(const String &p_name, const TypedArray<Ref<InputEvent>> &p_actions_list);
 	bool check_changed_settings_in_group(const String &p_setting_prefix) const;
 	PackedStringArray get_changed_settings() const;
 	void mark_setting_changed(const String &p_setting);
@@ -84,4 +83,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_SETTINGS_HPP

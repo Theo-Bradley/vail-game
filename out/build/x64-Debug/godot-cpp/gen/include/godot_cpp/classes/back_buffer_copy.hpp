@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_BACK_BUFFER_COPY_HPP
-#define GODOT_CPP_BACK_BUFFER_COPY_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/variant/rect2.hpp>
@@ -70,4 +69,3 @@ public:
 
 VARIANT_ENUM_CAST(BackBufferCopy::CopyMode);
 
-#endif // ! GODOT_CPP_BACK_BUFFER_COPY_HPP

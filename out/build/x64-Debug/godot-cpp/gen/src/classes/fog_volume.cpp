@@ -48,7 +48,7 @@ void FogVolume::set_size(const Vector3 &p_size) {
 
 Vector3 FogVolume::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FogVolume::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void FogVolume::set_shape(RenderingServer::FogVolumeShape p_shape) {
 
 RenderingServer::FogVolumeShape FogVolume::get_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FogVolume::get_class_static()._native_ptr(), StringName("get_shape")._native_ptr(), 3920334604);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::FogVolumeShape(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::FogVolumeShape(0)));
 	return (RenderingServer::FogVolumeShape)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void FogVolume::set_material(const Ref<Material> &p_material) {
 
 Ref<Material> FogVolume::get_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FogVolume::get_class_static()._native_ptr(), StringName("get_material")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 

@@ -42,7 +42,7 @@ namespace godot {
 
 Dictionary SyntaxHighlighter::get_line_syntax_highlighting(int32_t p_line) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SyntaxHighlighter::get_class_static()._native_ptr(), StringName("get_line_syntax_highlighting")._native_ptr(), 3554694381);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_line_encoded);
@@ -62,7 +62,7 @@ void SyntaxHighlighter::clear_highlighting_cache() {
 
 TextEdit *SyntaxHighlighter::get_text_edit() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SyntaxHighlighter::get_class_static()._native_ptr(), StringName("get_text_edit")._native_ptr(), 1893027089);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<TextEdit>(_gde_method_bind, _owner);
 }
 

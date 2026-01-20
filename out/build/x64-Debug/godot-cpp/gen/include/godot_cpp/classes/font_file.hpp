@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FONT_FILE_HPP
-#define GODOT_CPP_FONT_FILE_HPP
+#pragma once
 
 #include <godot_cpp/classes/font.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -89,6 +88,8 @@ public:
 	bool is_allow_system_fallback() const;
 	void set_force_autohinter(bool p_force_autohinter);
 	bool is_force_autohinter() const;
+	void set_modulate_color_glyphs(bool p_modulate);
+	bool is_modulate_color_glyphs() const;
 	void set_hinting(TextServer::Hinting p_hinting);
 	TextServer::Hinting get_hinting() const;
 	void set_subpixel_positioning(TextServer::SubpixelPositioning p_subpixel_positioning);
@@ -176,4 +177,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_FONT_FILE_HPP

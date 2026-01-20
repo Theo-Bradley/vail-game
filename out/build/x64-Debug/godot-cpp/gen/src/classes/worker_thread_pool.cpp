@@ -68,7 +68,7 @@ WorkerThreadPool::~WorkerThreadPool() {
 
 int64_t WorkerThreadPool::add_task(const Callable &p_action, bool p_high_priority, const String &p_description) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorkerThreadPool::get_class_static()._native_ptr(), StringName("add_task")._native_ptr(), 3745067146);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int8_t p_high_priority_encoded;
 	PtrToArg<bool>::encode(p_high_priority, &p_high_priority_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_action, &p_high_priority_encoded, &p_description);
@@ -76,7 +76,7 @@ int64_t WorkerThreadPool::add_task(const Callable &p_action, bool p_high_priorit
 
 bool WorkerThreadPool::is_task_completed(int64_t p_task_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorkerThreadPool::get_class_static()._native_ptr(), StringName("is_task_completed")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_task_id_encoded;
 	PtrToArg<int64_t>::encode(p_task_id, &p_task_id_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_task_id_encoded);
@@ -84,15 +84,21 @@ bool WorkerThreadPool::is_task_completed(int64_t p_task_id) const {
 
 Error WorkerThreadPool::wait_for_task_completion(int64_t p_task_id) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorkerThreadPool::get_class_static()._native_ptr(), StringName("wait_for_task_completion")._native_ptr(), 844576869);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_task_id_encoded;
 	PtrToArg<int64_t>::encode(p_task_id, &p_task_id_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_task_id_encoded);
 }
 
+int64_t WorkerThreadPool::get_caller_task_id() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorkerThreadPool::get_class_static()._native_ptr(), StringName("get_caller_task_id")._native_ptr(), 3905245786);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
 int64_t WorkerThreadPool::add_group_task(const Callable &p_action, int32_t p_elements, int32_t p_tasks_needed, bool p_high_priority, const String &p_description) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorkerThreadPool::get_class_static()._native_ptr(), StringName("add_group_task")._native_ptr(), 1801953219);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_elements_encoded;
 	PtrToArg<int64_t>::encode(p_elements, &p_elements_encoded);
 	int64_t p_tasks_needed_encoded;
@@ -104,7 +110,7 @@ int64_t WorkerThreadPool::add_group_task(const Callable &p_action, int32_t p_ele
 
 bool WorkerThreadPool::is_group_task_completed(int64_t p_group_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorkerThreadPool::get_class_static()._native_ptr(), StringName("is_group_task_completed")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_group_id_encoded;
 	PtrToArg<int64_t>::encode(p_group_id, &p_group_id_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_group_id_encoded);
@@ -112,7 +118,7 @@ bool WorkerThreadPool::is_group_task_completed(int64_t p_group_id) const {
 
 uint32_t WorkerThreadPool::get_group_processed_element_count(int64_t p_group_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorkerThreadPool::get_class_static()._native_ptr(), StringName("get_group_processed_element_count")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_group_id_encoded;
 	PtrToArg<int64_t>::encode(p_group_id, &p_group_id_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_group_id_encoded);
@@ -124,6 +130,12 @@ void WorkerThreadPool::wait_for_group_task_completion(int64_t p_group_id) {
 	int64_t p_group_id_encoded;
 	PtrToArg<int64_t>::encode(p_group_id, &p_group_id_encoded);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_group_id_encoded);
+}
+
+int64_t WorkerThreadPool::get_caller_group_id() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorkerThreadPool::get_class_static()._native_ptr(), StringName("get_caller_group_id")._native_ptr(), 3905245786);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 } // namespace godot

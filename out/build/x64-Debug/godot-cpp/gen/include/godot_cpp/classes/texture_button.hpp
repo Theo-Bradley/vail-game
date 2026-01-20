@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TEXTURE_BUTTON_HPP
-#define GODOT_CPP_TEXTURE_BUTTON_HPP
+#pragma once
 
 #include <godot_cpp/classes/base_button.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -93,4 +92,3 @@ public:
 
 VARIANT_ENUM_CAST(TextureButton::StretchMode);
 
-#endif // ! GODOT_CPP_TEXTURE_BUTTON_HPP

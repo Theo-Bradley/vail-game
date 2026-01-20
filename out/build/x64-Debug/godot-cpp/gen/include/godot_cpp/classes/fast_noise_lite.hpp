@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FAST_NOISE_LITE_HPP
-#define GODOT_CPP_FAST_NOISE_LITE_HPP
+#pragma once
 
 #include <godot_cpp/classes/noise.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -153,4 +152,3 @@ VARIANT_ENUM_CAST(FastNoiseLite::CellularReturnType);
 VARIANT_ENUM_CAST(FastNoiseLite::DomainWarpType);
 VARIANT_ENUM_CAST(FastNoiseLite::DomainWarpFractalType);
 
-#endif // ! GODOT_CPP_FAST_NOISE_LITE_HPP

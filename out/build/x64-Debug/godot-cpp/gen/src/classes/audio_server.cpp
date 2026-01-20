@@ -79,7 +79,7 @@ void AudioServer::set_bus_count(int32_t p_amount) {
 
 int32_t AudioServer::get_bus_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -119,7 +119,7 @@ void AudioServer::set_bus_name(int32_t p_bus_idx, const String &p_name) {
 
 String AudioServer::get_bus_name(int32_t p_bus_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -127,13 +127,13 @@ String AudioServer::get_bus_name(int32_t p_bus_idx) const {
 
 int32_t AudioServer::get_bus_index(const StringName &p_bus_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_index")._native_ptr(), 2458036349);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_bus_name);
 }
 
 int32_t AudioServer::get_bus_channels(int32_t p_bus_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_channels")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -151,7 +151,7 @@ void AudioServer::set_bus_volume_db(int32_t p_bus_idx, float p_volume_db) {
 
 float AudioServer::get_bus_volume_db(int32_t p_bus_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_volume_db")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -169,7 +169,7 @@ void AudioServer::set_bus_volume_linear(int32_t p_bus_idx, float p_volume_linear
 
 float AudioServer::get_bus_volume_linear(int32_t p_bus_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_volume_linear")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -185,7 +185,7 @@ void AudioServer::set_bus_send(int32_t p_bus_idx, const StringName &p_send) {
 
 StringName AudioServer::get_bus_send(int32_t p_bus_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_send")._native_ptr(), 659327637);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -203,7 +203,7 @@ void AudioServer::set_bus_solo(int32_t p_bus_idx, bool p_enable) {
 
 bool AudioServer::is_bus_solo(int32_t p_bus_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("is_bus_solo")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -221,7 +221,7 @@ void AudioServer::set_bus_mute(int32_t p_bus_idx, bool p_enable) {
 
 bool AudioServer::is_bus_mute(int32_t p_bus_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("is_bus_mute")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -239,7 +239,7 @@ void AudioServer::set_bus_bypass_effects(int32_t p_bus_idx, bool p_enable) {
 
 bool AudioServer::is_bus_bypassing_effects(int32_t p_bus_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("is_bus_bypassing_effects")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -267,7 +267,7 @@ void AudioServer::remove_bus_effect(int32_t p_bus_idx, int32_t p_effect_idx) {
 
 int32_t AudioServer::get_bus_effect_count(int32_t p_bus_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_effect_count")._native_ptr(), 3744713108);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_bus_idx_encoded);
@@ -275,7 +275,7 @@ int32_t AudioServer::get_bus_effect_count(int32_t p_bus_idx) {
 
 Ref<AudioEffect> AudioServer::get_bus_effect(int32_t p_bus_idx, int32_t p_effect_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_effect")._native_ptr(), 726064442);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioEffect>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioEffect>()));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	int64_t p_effect_idx_encoded;
@@ -285,7 +285,7 @@ Ref<AudioEffect> AudioServer::get_bus_effect(int32_t p_bus_idx, int32_t p_effect
 
 Ref<AudioEffectInstance> AudioServer::get_bus_effect_instance(int32_t p_bus_idx, int32_t p_effect_idx, int32_t p_channel) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_effect_instance")._native_ptr(), 1829771234);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioEffectInstance>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioEffectInstance>()));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	int64_t p_effect_idx_encoded;
@@ -321,7 +321,7 @@ void AudioServer::set_bus_effect_enabled(int32_t p_bus_idx, int32_t p_effect_idx
 
 bool AudioServer::is_bus_effect_enabled(int32_t p_bus_idx, int32_t p_effect_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("is_bus_effect_enabled")._native_ptr(), 2522259332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	int64_t p_effect_idx_encoded;
@@ -331,7 +331,7 @@ bool AudioServer::is_bus_effect_enabled(int32_t p_bus_idx, int32_t p_effect_idx)
 
 float AudioServer::get_bus_peak_volume_left_db(int32_t p_bus_idx, int32_t p_channel) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_peak_volume_left_db")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	int64_t p_channel_encoded;
@@ -341,7 +341,7 @@ float AudioServer::get_bus_peak_volume_left_db(int32_t p_bus_idx, int32_t p_chan
 
 float AudioServer::get_bus_peak_volume_right_db(int32_t p_bus_idx, int32_t p_channel) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_bus_peak_volume_right_db")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_bus_idx_encoded;
 	PtrToArg<int64_t>::encode(p_bus_idx, &p_bus_idx_encoded);
 	int64_t p_channel_encoded;
@@ -359,7 +359,7 @@ void AudioServer::set_playback_speed_scale(float p_scale) {
 
 float AudioServer::get_playback_speed_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_playback_speed_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -377,37 +377,37 @@ void AudioServer::unlock() {
 
 AudioServer::SpeakerMode AudioServer::get_speaker_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_speaker_mode")._native_ptr(), 2549190337);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioServer::SpeakerMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioServer::SpeakerMode(0)));
 	return (AudioServer::SpeakerMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 float AudioServer::get_mix_rate() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_mix_rate")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float AudioServer::get_input_mix_rate() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_input_mix_rate")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 String AudioServer::get_driver_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_driver_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 PackedStringArray AudioServer::get_output_device_list() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_output_device_list")._native_ptr(), 2981934095);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 String AudioServer::get_output_device() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_output_device")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -419,31 +419,31 @@ void AudioServer::set_output_device(const String &p_name) {
 
 double AudioServer::get_time_to_next_mix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_time_to_next_mix")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 double AudioServer::get_time_since_last_mix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_time_since_last_mix")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 double AudioServer::get_output_latency() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_output_latency")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 PackedStringArray AudioServer::get_input_device_list() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_input_device_list")._native_ptr(), 2981934095);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 String AudioServer::get_input_device() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("get_input_device")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -461,7 +461,7 @@ void AudioServer::set_bus_layout(const Ref<AudioBusLayout> &p_bus_layout) {
 
 Ref<AudioBusLayout> AudioServer::generate_bus_layout() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("generate_bus_layout")._native_ptr(), 3769973890);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioBusLayout>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioBusLayout>()));
 	return Ref<AudioBusLayout>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioBusLayout>(_gde_method_bind, _owner));
 }
 
@@ -475,7 +475,7 @@ void AudioServer::set_enable_tagging_used_audio_streams(bool p_enable) {
 
 bool AudioServer::is_stream_registered_as_sample(const Ref<AudioStream> &p_stream) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioServer::get_class_static()._native_ptr(), StringName("is_stream_registered_as_sample")._native_ptr(), 500225754);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, (p_stream != nullptr ? &p_stream->_owner : nullptr));
 }
 

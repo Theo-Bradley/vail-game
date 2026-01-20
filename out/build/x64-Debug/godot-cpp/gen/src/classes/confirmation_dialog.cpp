@@ -42,7 +42,7 @@ namespace godot {
 
 Button *ConfirmationDialog::get_cancel_button() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ConfirmationDialog::get_class_static()._native_ptr(), StringName("get_cancel_button")._native_ptr(), 1856205918);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Button>(_gde_method_bind, _owner);
 }
 
@@ -54,7 +54,7 @@ void ConfirmationDialog::set_cancel_button_text(const String &p_text) {
 
 String ConfirmationDialog::get_cancel_button_text() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ConfirmationDialog::get_class_static()._native_ptr(), StringName("get_cancel_button_text")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

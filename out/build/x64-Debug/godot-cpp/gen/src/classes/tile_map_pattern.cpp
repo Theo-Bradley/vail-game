@@ -50,7 +50,7 @@ void TileMapPattern::set_cell(const Vector2i &p_coords, int32_t p_source_id, con
 
 bool TileMapPattern::has_cell(const Vector2i &p_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileMapPattern::get_class_static()._native_ptr(), StringName("has_cell")._native_ptr(), 3900751641);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_coords);
 }
 
@@ -64,31 +64,31 @@ void TileMapPattern::remove_cell(const Vector2i &p_coords, bool p_update_size) {
 
 int32_t TileMapPattern::get_cell_source_id(const Vector2i &p_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileMapPattern::get_class_static()._native_ptr(), StringName("get_cell_source_id")._native_ptr(), 2485466453);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_coords);
 }
 
 Vector2i TileMapPattern::get_cell_atlas_coords(const Vector2i &p_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileMapPattern::get_class_static()._native_ptr(), StringName("get_cell_atlas_coords")._native_ptr(), 3050897911);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner, &p_coords);
 }
 
 int32_t TileMapPattern::get_cell_alternative_tile(const Vector2i &p_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileMapPattern::get_class_static()._native_ptr(), StringName("get_cell_alternative_tile")._native_ptr(), 2485466453);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_coords);
 }
 
 TypedArray<Vector2i> TileMapPattern::get_used_cells() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileMapPattern::get_class_static()._native_ptr(), StringName("get_used_cells")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Vector2i>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Vector2i>()));
 	return internal::_call_native_mb_ret<TypedArray<Vector2i>>(_gde_method_bind, _owner);
 }
 
 Vector2i TileMapPattern::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileMapPattern::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -100,7 +100,7 @@ void TileMapPattern::set_size(const Vector2i &p_size) {
 
 bool TileMapPattern::is_empty() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileMapPattern::get_class_static()._native_ptr(), StringName("is_empty")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

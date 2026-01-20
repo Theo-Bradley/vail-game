@@ -44,13 +44,13 @@ namespace godot {
 
 Button *AcceptDialog::get_ok_button() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("get_ok_button")._native_ptr(), 1856205918);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Button>(_gde_method_bind, _owner);
 }
 
 Label *AcceptDialog::get_label() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("get_label")._native_ptr(), 566733104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Label>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void AcceptDialog::set_hide_on_ok(bool p_enabled) {
 
 bool AcceptDialog::get_hide_on_ok() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("get_hide_on_ok")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -78,13 +78,13 @@ void AcceptDialog::set_close_on_escape(bool p_enabled) {
 
 bool AcceptDialog::get_close_on_escape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("get_close_on_escape")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Button *AcceptDialog::add_button(const String &p_text, bool p_right, const String &p_action) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("add_button")._native_ptr(), 3328440682);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int8_t p_right_encoded;
 	PtrToArg<bool>::encode(p_right, &p_right_encoded);
 	return internal::_call_native_mb_ret_obj<Button>(_gde_method_bind, _owner, &p_text, &p_right_encoded, &p_action);
@@ -92,7 +92,7 @@ Button *AcceptDialog::add_button(const String &p_text, bool p_right, const Strin
 
 Button *AcceptDialog::add_cancel_button(const String &p_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("add_cancel_button")._native_ptr(), 242045556);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Button>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -116,7 +116,7 @@ void AcceptDialog::set_text(const String &p_text) {
 
 String AcceptDialog::get_text() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("get_text")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void AcceptDialog::set_autowrap(bool p_autowrap) {
 
 bool AcceptDialog::has_autowrap() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("has_autowrap")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void AcceptDialog::set_ok_button_text(const String &p_text) {
 
 String AcceptDialog::get_ok_button_text() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AcceptDialog::get_class_static()._native_ptr(), StringName("get_ok_button_text")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

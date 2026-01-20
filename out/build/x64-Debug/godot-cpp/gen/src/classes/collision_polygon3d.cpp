@@ -48,7 +48,7 @@ void CollisionPolygon3D::set_depth(float p_depth) {
 
 float CollisionPolygon3D::get_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionPolygon3D::get_class_static()._native_ptr(), StringName("get_depth")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void CollisionPolygon3D::set_polygon(const PackedVector2Array &p_polygon) {
 
 PackedVector2Array CollisionPolygon3D::get_polygon() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionPolygon3D::get_class_static()._native_ptr(), StringName("get_polygon")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void CollisionPolygon3D::set_disabled(bool p_disabled) {
 
 bool CollisionPolygon3D::is_disabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionPolygon3D::get_class_static()._native_ptr(), StringName("is_disabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void CollisionPolygon3D::set_debug_color(const Color &p_color) {
 
 Color CollisionPolygon3D::get_debug_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionPolygon3D::get_class_static()._native_ptr(), StringName("get_debug_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -100,7 +100,7 @@ void CollisionPolygon3D::set_enable_debug_fill(bool p_enable) {
 
 bool CollisionPolygon3D::get_enable_debug_fill() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionPolygon3D::get_class_static()._native_ptr(), StringName("get_enable_debug_fill")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -114,7 +114,7 @@ void CollisionPolygon3D::set_margin(float p_margin) {
 
 float CollisionPolygon3D::get_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionPolygon3D::get_class_static()._native_ptr(), StringName("get_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

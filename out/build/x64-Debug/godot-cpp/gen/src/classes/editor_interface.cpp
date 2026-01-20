@@ -96,58 +96,58 @@ void EditorInterface::restart_editor(bool p_save) {
 
 EditorCommandPalette *EditorInterface::get_command_palette() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_command_palette")._native_ptr(), 2471163807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorCommandPalette>(_gde_method_bind, _owner);
 }
 
 EditorFileSystem *EditorInterface::get_resource_filesystem() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_resource_filesystem")._native_ptr(), 780151678);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorFileSystem>(_gde_method_bind, _owner);
 }
 
 EditorPaths *EditorInterface::get_editor_paths() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_paths")._native_ptr(), 1595760068);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorPaths>(_gde_method_bind, _owner);
 }
 
 EditorResourcePreview *EditorInterface::get_resource_previewer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_resource_previewer")._native_ptr(), 943486957);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorResourcePreview>(_gde_method_bind, _owner);
 }
 
 EditorSelection *EditorInterface::get_selection() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_selection")._native_ptr(), 2690272531);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorSelection>(_gde_method_bind, _owner);
 }
 
 Ref<EditorSettings> EditorInterface::get_editor_settings() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_settings")._native_ptr(), 4086932459);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<EditorSettings>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<EditorSettings>()));
 	return Ref<EditorSettings>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<EditorSettings>(_gde_method_bind, _owner));
 }
 
 EditorToaster *EditorInterface::get_editor_toaster() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_toaster")._native_ptr(), 3612675797);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorToaster>(_gde_method_bind, _owner);
 }
 
 EditorUndoRedoManager *EditorInterface::get_editor_undo_redo() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_undo_redo")._native_ptr(), 3819628421);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorUndoRedoManager>(_gde_method_bind, _owner);
 }
 
-TypedArray<Texture2D> EditorInterface::make_mesh_previews(const TypedArray<Mesh> &p_meshes, int32_t p_preview_size) {
+TypedArray<Ref<Texture2D>> EditorInterface::make_mesh_previews(const TypedArray<Ref<Mesh>> &p_meshes, int32_t p_preview_size) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("make_mesh_previews")._native_ptr(), 878078554);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<Texture2D>>()));
 	int64_t p_preview_size_encoded;
 	PtrToArg<int64_t>::encode(p_preview_size, &p_preview_size_encoded);
-	return internal::_call_native_mb_ret<TypedArray<Texture2D>>(_gde_method_bind, _owner, &p_meshes, &p_preview_size_encoded);
+	return internal::_call_native_mb_ret<TypedArray<Ref<Texture2D>>>(_gde_method_bind, _owner, &p_meshes, &p_preview_size_encoded);
 }
 
 void EditorInterface::set_plugin_enabled(const String &p_plugin, bool p_enabled) {
@@ -160,43 +160,43 @@ void EditorInterface::set_plugin_enabled(const String &p_plugin, bool p_enabled)
 
 bool EditorInterface::is_plugin_enabled(const String &p_plugin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("is_plugin_enabled")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_plugin);
 }
 
 Ref<Theme> EditorInterface::get_editor_theme() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_theme")._native_ptr(), 3846893731);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Theme>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Theme>()));
 	return Ref<Theme>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Theme>(_gde_method_bind, _owner));
 }
 
 Control *EditorInterface::get_base_control() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_base_control")._native_ptr(), 2783021301);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Control>(_gde_method_bind, _owner);
 }
 
 VBoxContainer *EditorInterface::get_editor_main_screen() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_main_screen")._native_ptr(), 1706218421);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<VBoxContainer>(_gde_method_bind, _owner);
 }
 
 ScriptEditor *EditorInterface::get_script_editor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_script_editor")._native_ptr(), 90868003);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<ScriptEditor>(_gde_method_bind, _owner);
 }
 
 SubViewport *EditorInterface::get_editor_viewport_2d() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_viewport_2d")._native_ptr(), 3750751911);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<SubViewport>(_gde_method_bind, _owner);
 }
 
 SubViewport *EditorInterface::get_editor_viewport_3d(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_viewport_3d")._native_ptr(), 1970834490);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret_obj<SubViewport>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -218,19 +218,19 @@ void EditorInterface::set_distraction_free_mode(bool p_enter) {
 
 bool EditorInterface::is_distraction_free_mode_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("is_distraction_free_mode_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool EditorInterface::is_multi_window_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("is_multi_window_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 float EditorInterface::get_editor_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_editor_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -264,7 +264,7 @@ void EditorInterface::popup_dialog_centered_clamped(Window *p_dialog, const Vect
 
 String EditorInterface::get_current_feature_profile() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_current_feature_profile")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -306,7 +306,7 @@ void EditorInterface::popup_create_dialog(const Callable &p_callback, const Stri
 
 FileSystemDock *EditorInterface::get_file_system_dock() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_file_system_dock")._native_ptr(), 3751012327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<FileSystemDock>(_gde_method_bind, _owner);
 }
 
@@ -318,25 +318,25 @@ void EditorInterface::select_file(const String &p_file) {
 
 PackedStringArray EditorInterface::get_selected_paths() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_selected_paths")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
 String EditorInterface::get_current_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_current_path")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String EditorInterface::get_current_directory() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_current_directory")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 EditorInspector *EditorInterface::get_inspector() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_inspector")._native_ptr(), 3517113938);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorInspector>(_gde_method_bind, _owner);
 }
 
@@ -388,19 +388,25 @@ void EditorInterface::reload_scene_from_path(const String &p_scene_filepath) {
 
 PackedStringArray EditorInterface::get_open_scenes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_open_scenes")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
+}
+
+TypedArray<Node> EditorInterface::get_open_scene_roots() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_open_scene_roots")._native_ptr(), 3995934104);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Node>()));
+	return internal::_call_native_mb_ret<TypedArray<Node>>(_gde_method_bind, _owner);
 }
 
 Node *EditorInterface::get_edited_scene_root() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_edited_scene_root")._native_ptr(), 3160264692);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node>(_gde_method_bind, _owner);
 }
 
 Error EditorInterface::save_scene() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("save_scene")._native_ptr(), 166280745);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -416,6 +422,12 @@ void EditorInterface::save_all_scenes() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("save_all_scenes")._native_ptr(), 3218959716);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner);
+}
+
+Error EditorInterface::close_scene() {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("close_scene")._native_ptr(), 166280745);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
+	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 void EditorInterface::mark_scene_as_unsaved() {
@@ -450,13 +462,13 @@ void EditorInterface::stop_playing_scene() {
 
 bool EditorInterface::is_playing_scene() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("is_playing_scene")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 String EditorInterface::get_playing_scene() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("get_playing_scene")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -470,7 +482,7 @@ void EditorInterface::set_movie_maker_enabled(bool p_enabled) {
 
 bool EditorInterface::is_movie_maker_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorInterface::get_class_static()._native_ptr(), StringName("is_movie_maker_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

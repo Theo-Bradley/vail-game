@@ -1,24 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://dc6sfhq6ifhma"]
+[gd_scene load_steps=4 format=3 uid="uid://dc6sfhq6ifhma"]
 
-[ext_resource type="Script" uid="uid://ccio3bw3igop7" path="res://Scripts/bullet_move.gd" id="1_2irwe"]
 [ext_resource type="Script" uid="uid://crx5e1umxskqa" path="res://Scripts/recoil_pistol.gd" id="1_3t6pd"]
+[ext_resource type="PackedScene" uid="uid://bhbd7m4k3dgwo" path="res://TestScenes/Guns/Bullets/bullet.tscn" id="1_oyfhf"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_3t6pd"]
 size = Vector3(0.06, 0.06, 0.15)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_gf4kq"]
-size = Vector3(0.15, 0.15, 0.15)
-
-[sub_resource type="BoxMesh" id="BoxMesh_gf4kq"]
-size = Vector3(0.15, 0.15, 0.3)
 
 [node name="ShootingTest" type="Node3D"]
 
 [node name="PlayerLook" type="PlayerLook" parent="."]
 
-[node name="Gun" type="Gun" parent="PlayerLook" node_paths=PackedStringArray("Muzzle", "Bullet")]
+[node name="Gun" type="Gun" parent="PlayerLook" node_paths=PackedStringArray("Muzzle")]
 Muzzle = NodePath("Muzzle")
-Bullet = NodePath("../../Bullet")
+"Bullet Resource" = ExtResource("1_oyfhf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
 
 [node name="Muzzle" type="Node3D" parent="PlayerLook/Gun"]
@@ -31,19 +25,5 @@ recoil_decay = 12.0
 mesh = SubResource("BoxMesh_3t6pd")
 
 [node name="Camera3D" type="Camera3D" parent="PlayerLook"]
-
-[node name="Bullet" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.295105, 0)
-constant_linear_velocity = Vector3(10, 10, 10)
-constant_angular_velocity = Vector3(0, 0.17453292, 0)
-script = ExtResource("1_2irwe")
-moveSpeed = 5.0
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Bullet"]
-shape = SubResource("BoxShape3D_gf4kq")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Bullet"]
-mesh = SubResource("BoxMesh_gf4kq")
-skeleton = NodePath("")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]

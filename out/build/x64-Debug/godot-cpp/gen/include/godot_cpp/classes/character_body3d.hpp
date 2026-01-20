@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CHARACTER_BODY3D_HPP
-#define GODOT_CPP_CHARACTER_BODY3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_body3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -124,4 +123,3 @@ public:
 VARIANT_ENUM_CAST(CharacterBody3D::MotionMode);
 VARIANT_ENUM_CAST(CharacterBody3D::PlatformOnLeave);
 
-#endif // ! GODOT_CPP_CHARACTER_BODY3D_HPP

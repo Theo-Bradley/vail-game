@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_EFFECT_BAND_PASS_FILTER_HPP
-#define GODOT_CPP_AUDIO_EFFECT_BAND_PASS_FILTER_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_effect_filter.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -57,4 +56,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_AUDIO_EFFECT_BAND_PASS_FILTER_HPP

@@ -48,7 +48,7 @@ void CameraTexture::set_camera_feed_id(int32_t p_feed_id) {
 
 int32_t CameraTexture::get_camera_feed_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraTexture::get_class_static()._native_ptr(), StringName("get_camera_feed_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void CameraTexture::set_which_feed(CameraServer::FeedImage p_which_feed) {
 
 CameraServer::FeedImage CameraTexture::get_which_feed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraTexture::get_class_static()._native_ptr(), StringName("get_which_feed")._native_ptr(), 91039457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CameraServer::FeedImage(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CameraServer::FeedImage(0)));
 	return (CameraServer::FeedImage)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void CameraTexture::set_camera_active(bool p_active) {
 
 bool CameraTexture::get_camera_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraTexture::get_class_static()._native_ptr(), StringName("get_camera_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

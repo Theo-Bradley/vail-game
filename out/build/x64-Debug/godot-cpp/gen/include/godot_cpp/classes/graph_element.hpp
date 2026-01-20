@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GRAPH_ELEMENT_HPP
-#define GODOT_CPP_GRAPH_ELEMENT_HPP
+#pragma once
 
 #include <godot_cpp/classes/container.hpp>
 #include <godot_cpp/variant/vector2.hpp>
@@ -68,4 +67,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_GRAPH_ELEMENT_HPP

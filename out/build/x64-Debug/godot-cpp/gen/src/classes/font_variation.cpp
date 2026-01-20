@@ -46,7 +46,7 @@ void FontVariation::set_base_font(const Ref<Font> &p_font) {
 
 Ref<Font> FontVariation::get_base_font() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontVariation::get_class_static()._native_ptr(), StringName("get_base_font")._native_ptr(), 3229501585);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Font>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Font>()));
 	return Ref<Font>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Font>(_gde_method_bind, _owner));
 }
 
@@ -58,7 +58,7 @@ void FontVariation::set_variation_opentype(const Dictionary &p_coords) {
 
 Dictionary FontVariation::get_variation_opentype() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontVariation::get_class_static()._native_ptr(), StringName("get_variation_opentype")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void FontVariation::set_variation_embolden(float p_strength) {
 
 float FontVariation::get_variation_embolden() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontVariation::get_class_static()._native_ptr(), StringName("get_variation_embolden")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void FontVariation::set_variation_face_index(int32_t p_face_index) {
 
 int32_t FontVariation::get_variation_face_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontVariation::get_class_static()._native_ptr(), StringName("get_variation_face_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void FontVariation::set_variation_transform(const Transform2D &p_transform) {
 
 Transform2D FontVariation::get_variation_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontVariation::get_class_static()._native_ptr(), StringName("get_variation_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
@@ -128,7 +128,7 @@ void FontVariation::set_baseline_offset(float p_baseline_offset) {
 
 float FontVariation::get_baseline_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FontVariation::get_class_static()._native_ptr(), StringName("get_baseline_offset")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

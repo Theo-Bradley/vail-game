@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FILE_ACCESS_HPP
-#define GODOT_CPP_FILE_ACCESS_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -135,6 +134,8 @@ public:
 	void close();
 	static bool file_exists(const String &p_path);
 	static uint64_t get_modified_time(const String &p_file);
+	static uint64_t get_access_time(const String &p_file);
+	static int64_t get_size(const String &p_file);
 	static BitField<FileAccess::UnixPermissionFlags> get_unix_permissions(const String &p_file);
 	static Error set_unix_permissions(const String &p_file, BitField<FileAccess::UnixPermissionFlags> p_permissions);
 	static bool get_hidden_attribute(const String &p_file);
@@ -159,4 +160,3 @@ VARIANT_ENUM_CAST(FileAccess::ModeFlags);
 VARIANT_ENUM_CAST(FileAccess::CompressionMode);
 VARIANT_BITFIELD_CAST(FileAccess::UnixPermissionFlags);
 
-#endif // ! GODOT_CPP_FILE_ACCESS_HPP

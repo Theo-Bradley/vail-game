@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PACKED_SCENE_HPP
-#define GODOT_CPP_PACKED_SCENE_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -75,4 +74,3 @@ public:
 
 VARIANT_ENUM_CAST(PackedScene::GenEditState);
 
-#endif // ! GODOT_CPP_PACKED_SCENE_HPP

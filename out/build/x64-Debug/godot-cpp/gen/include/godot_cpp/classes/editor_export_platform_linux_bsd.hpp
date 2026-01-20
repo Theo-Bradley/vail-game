@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_EXPORT_PLATFORM_LINUX_BSD_HPP
-#define GODOT_CPP_EDITOR_EXPORT_PLATFORM_LINUX_BSD_HPP
+#pragma once
 
 #include <godot_cpp/classes/editor_export_platform_pc.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -57,4 +56,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_EXPORT_PLATFORM_LINUX_BSD_HPP

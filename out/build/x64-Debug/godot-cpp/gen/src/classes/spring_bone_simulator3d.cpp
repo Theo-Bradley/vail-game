@@ -50,7 +50,7 @@ void SpringBoneSimulator3D::set_root_bone_name(int32_t p_index, const String &p_
 
 String SpringBoneSimulator3D::get_root_bone_name(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_root_bone_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_index_encoded);
@@ -68,7 +68,7 @@ void SpringBoneSimulator3D::set_root_bone(int32_t p_index, int32_t p_bone) {
 
 int32_t SpringBoneSimulator3D::get_root_bone(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_root_bone")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -84,7 +84,7 @@ void SpringBoneSimulator3D::set_end_bone_name(int32_t p_index, const String &p_b
 
 String SpringBoneSimulator3D::get_end_bone_name(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_end_bone_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_index_encoded);
@@ -102,7 +102,7 @@ void SpringBoneSimulator3D::set_end_bone(int32_t p_index, int32_t p_bone) {
 
 int32_t SpringBoneSimulator3D::get_end_bone(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_end_bone")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -120,7 +120,7 @@ void SpringBoneSimulator3D::set_extend_end_bone(int32_t p_index, bool p_enabled)
 
 bool SpringBoneSimulator3D::is_end_bone_extended(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("is_end_bone_extended")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -138,7 +138,7 @@ void SpringBoneSimulator3D::set_end_bone_direction(int32_t p_index, SpringBoneSi
 
 SpringBoneSimulator3D::BoneDirection SpringBoneSimulator3D::get_end_bone_direction(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_end_bone_direction")._native_ptr(), 2438315700);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SpringBoneSimulator3D::BoneDirection(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SpringBoneSimulator3D::BoneDirection(0)));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return (SpringBoneSimulator3D::BoneDirection)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -156,7 +156,7 @@ void SpringBoneSimulator3D::set_end_bone_length(int32_t p_index, float p_length)
 
 float SpringBoneSimulator3D::get_end_bone_length(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_end_bone_length")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_index_encoded);
@@ -174,7 +174,7 @@ void SpringBoneSimulator3D::set_center_from(int32_t p_index, SpringBoneSimulator
 
 SpringBoneSimulator3D::CenterFrom SpringBoneSimulator3D::get_center_from(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_center_from")._native_ptr(), 2721930813);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SpringBoneSimulator3D::CenterFrom(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SpringBoneSimulator3D::CenterFrom(0)));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return (SpringBoneSimulator3D::CenterFrom)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -190,7 +190,7 @@ void SpringBoneSimulator3D::set_center_node(int32_t p_index, const NodePath &p_n
 
 NodePath SpringBoneSimulator3D::get_center_node(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_center_node")._native_ptr(), 408788394);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, &p_index_encoded);
@@ -206,7 +206,7 @@ void SpringBoneSimulator3D::set_center_bone_name(int32_t p_index, const String &
 
 String SpringBoneSimulator3D::get_center_bone_name(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_center_bone_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_index_encoded);
@@ -224,7 +224,7 @@ void SpringBoneSimulator3D::set_center_bone(int32_t p_index, int32_t p_bone) {
 
 int32_t SpringBoneSimulator3D::get_center_bone(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_center_bone")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -242,7 +242,7 @@ void SpringBoneSimulator3D::set_radius(int32_t p_index, float p_radius) {
 
 float SpringBoneSimulator3D::get_radius(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_index_encoded);
@@ -260,10 +260,26 @@ void SpringBoneSimulator3D::set_rotation_axis(int32_t p_index, SpringBoneSimulat
 
 SpringBoneSimulator3D::RotationAxis SpringBoneSimulator3D::get_rotation_axis(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_rotation_axis")._native_ptr(), 748837671);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SpringBoneSimulator3D::RotationAxis(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SpringBoneSimulator3D::RotationAxis(0)));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return (SpringBoneSimulator3D::RotationAxis)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
+}
+
+void SpringBoneSimulator3D::set_rotation_axis_vector(int32_t p_index, const Vector3 &p_vector) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("set_rotation_axis_vector")._native_ptr(), 1530502735);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_index_encoded;
+	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_index_encoded, &p_vector);
+}
+
+Vector3 SpringBoneSimulator3D::get_rotation_axis_vector(int32_t p_index) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_rotation_axis_vector")._native_ptr(), 711720468);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
+	int64_t p_index_encoded;
+	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
+	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_index_encoded);
 }
 
 void SpringBoneSimulator3D::set_radius_damping_curve(int32_t p_index, const Ref<Curve> &p_curve) {
@@ -276,7 +292,7 @@ void SpringBoneSimulator3D::set_radius_damping_curve(int32_t p_index, const Ref<
 
 Ref<Curve> SpringBoneSimulator3D::get_radius_damping_curve(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_radius_damping_curve")._native_ptr(), 747537754);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner, &p_index_encoded));
@@ -294,7 +310,7 @@ void SpringBoneSimulator3D::set_stiffness(int32_t p_index, float p_stiffness) {
 
 float SpringBoneSimulator3D::get_stiffness(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_stiffness")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_index_encoded);
@@ -310,7 +326,7 @@ void SpringBoneSimulator3D::set_stiffness_damping_curve(int32_t p_index, const R
 
 Ref<Curve> SpringBoneSimulator3D::get_stiffness_damping_curve(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_stiffness_damping_curve")._native_ptr(), 747537754);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner, &p_index_encoded));
@@ -328,7 +344,7 @@ void SpringBoneSimulator3D::set_drag(int32_t p_index, float p_drag) {
 
 float SpringBoneSimulator3D::get_drag(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_drag")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_index_encoded);
@@ -344,7 +360,7 @@ void SpringBoneSimulator3D::set_drag_damping_curve(int32_t p_index, const Ref<Cu
 
 Ref<Curve> SpringBoneSimulator3D::get_drag_damping_curve(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_drag_damping_curve")._native_ptr(), 747537754);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner, &p_index_encoded));
@@ -362,7 +378,7 @@ void SpringBoneSimulator3D::set_gravity(int32_t p_index, float p_gravity) {
 
 float SpringBoneSimulator3D::get_gravity(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_index_encoded);
@@ -378,7 +394,7 @@ void SpringBoneSimulator3D::set_gravity_damping_curve(int32_t p_index, const Ref
 
 Ref<Curve> SpringBoneSimulator3D::get_gravity_damping_curve(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_gravity_damping_curve")._native_ptr(), 747537754);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner, &p_index_encoded));
@@ -394,7 +410,7 @@ void SpringBoneSimulator3D::set_gravity_direction(int32_t p_index, const Vector3
 
 Vector3 SpringBoneSimulator3D::get_gravity_direction(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_gravity_direction")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_index_encoded);
@@ -410,7 +426,7 @@ void SpringBoneSimulator3D::set_setting_count(int32_t p_count) {
 
 int32_t SpringBoneSimulator3D::get_setting_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_setting_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -432,7 +448,7 @@ void SpringBoneSimulator3D::set_individual_config(int32_t p_index, bool p_enable
 
 bool SpringBoneSimulator3D::is_config_individual(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("is_config_individual")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -440,7 +456,7 @@ bool SpringBoneSimulator3D::is_config_individual(int32_t p_index) const {
 
 String SpringBoneSimulator3D::get_joint_bone_name(int32_t p_index, int32_t p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_bone_name")._native_ptr(), 1391810591);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_joint_encoded;
@@ -450,7 +466,7 @@ String SpringBoneSimulator3D::get_joint_bone_name(int32_t p_index, int32_t p_joi
 
 int32_t SpringBoneSimulator3D::get_joint_bone(int32_t p_index, int32_t p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_bone")._native_ptr(), 3175239445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_joint_encoded;
@@ -472,12 +488,32 @@ void SpringBoneSimulator3D::set_joint_rotation_axis(int32_t p_index, int32_t p_j
 
 SpringBoneSimulator3D::RotationAxis SpringBoneSimulator3D::get_joint_rotation_axis(int32_t p_index, int32_t p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_rotation_axis")._native_ptr(), 2488679199);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SpringBoneSimulator3D::RotationAxis(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SpringBoneSimulator3D::RotationAxis(0)));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_joint_encoded;
 	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
 	return (SpringBoneSimulator3D::RotationAxis)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded, &p_joint_encoded);
+}
+
+void SpringBoneSimulator3D::set_joint_rotation_axis_vector(int32_t p_index, int32_t p_joint, const Vector3 &p_vector) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("set_joint_rotation_axis_vector")._native_ptr(), 2866752138);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_index_encoded;
+	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
+	int64_t p_joint_encoded;
+	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_index_encoded, &p_joint_encoded, &p_vector);
+}
+
+Vector3 SpringBoneSimulator3D::get_joint_rotation_axis_vector(int32_t p_index, int32_t p_joint) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_rotation_axis_vector")._native_ptr(), 1592972041);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
+	int64_t p_index_encoded;
+	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
+	int64_t p_joint_encoded;
+	PtrToArg<int64_t>::encode(p_joint, &p_joint_encoded);
+	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_index_encoded, &p_joint_encoded);
 }
 
 void SpringBoneSimulator3D::set_joint_radius(int32_t p_index, int32_t p_joint, float p_radius) {
@@ -494,7 +530,7 @@ void SpringBoneSimulator3D::set_joint_radius(int32_t p_index, int32_t p_joint, f
 
 float SpringBoneSimulator3D::get_joint_radius(int32_t p_index, int32_t p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_radius")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_joint_encoded;
@@ -516,7 +552,7 @@ void SpringBoneSimulator3D::set_joint_stiffness(int32_t p_index, int32_t p_joint
 
 float SpringBoneSimulator3D::get_joint_stiffness(int32_t p_index, int32_t p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_stiffness")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_joint_encoded;
@@ -538,7 +574,7 @@ void SpringBoneSimulator3D::set_joint_drag(int32_t p_index, int32_t p_joint, flo
 
 float SpringBoneSimulator3D::get_joint_drag(int32_t p_index, int32_t p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_drag")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_joint_encoded;
@@ -560,7 +596,7 @@ void SpringBoneSimulator3D::set_joint_gravity(int32_t p_index, int32_t p_joint, 
 
 float SpringBoneSimulator3D::get_joint_gravity(int32_t p_index, int32_t p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_gravity")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_joint_encoded;
@@ -580,7 +616,7 @@ void SpringBoneSimulator3D::set_joint_gravity_direction(int32_t p_index, int32_t
 
 Vector3 SpringBoneSimulator3D::get_joint_gravity_direction(int32_t p_index, int32_t p_joint) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_gravity_direction")._native_ptr(), 1592972041);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_joint_encoded;
@@ -590,7 +626,7 @@ Vector3 SpringBoneSimulator3D::get_joint_gravity_direction(int32_t p_index, int3
 
 int32_t SpringBoneSimulator3D::get_joint_count(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_joint_count")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -608,7 +644,7 @@ void SpringBoneSimulator3D::set_enable_all_child_collisions(int32_t p_index, boo
 
 bool SpringBoneSimulator3D::are_all_child_collisions_enabled(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("are_all_child_collisions_enabled")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -626,7 +662,7 @@ void SpringBoneSimulator3D::set_exclude_collision_path(int32_t p_index, int32_t 
 
 NodePath SpringBoneSimulator3D::get_exclude_collision_path(int32_t p_index, int32_t p_collision) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_exclude_collision_path")._native_ptr(), 464924783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_collision_encoded;
@@ -646,7 +682,7 @@ void SpringBoneSimulator3D::set_exclude_collision_count(int32_t p_index, int32_t
 
 int32_t SpringBoneSimulator3D::get_exclude_collision_count(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_exclude_collision_count")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -672,7 +708,7 @@ void SpringBoneSimulator3D::set_collision_path(int32_t p_index, int32_t p_collis
 
 NodePath SpringBoneSimulator3D::get_collision_path(int32_t p_index, int32_t p_collision) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_collision_path")._native_ptr(), 464924783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	int64_t p_collision_encoded;
@@ -692,7 +728,7 @@ void SpringBoneSimulator3D::set_collision_count(int32_t p_index, int32_t p_count
 
 int32_t SpringBoneSimulator3D::get_collision_count(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_collision_count")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -704,6 +740,18 @@ void SpringBoneSimulator3D::clear_collisions(int32_t p_index) {
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_index_encoded);
+}
+
+void SpringBoneSimulator3D::set_external_force(const Vector3 &p_force) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("set_external_force")._native_ptr(), 3460891852);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_force);
+}
+
+Vector3 SpringBoneSimulator3D::get_external_force() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneSimulator3D::get_class_static()._native_ptr(), StringName("get_external_force")._native_ptr(), 3360562783);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
+	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 void SpringBoneSimulator3D::reset() {

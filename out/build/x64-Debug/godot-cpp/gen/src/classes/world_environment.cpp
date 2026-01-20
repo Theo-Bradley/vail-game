@@ -50,7 +50,7 @@ void WorldEnvironment::set_environment(const Ref<Environment> &p_env) {
 
 Ref<Environment> WorldEnvironment::get_environment() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorldEnvironment::get_class_static()._native_ptr(), StringName("get_environment")._native_ptr(), 3082064660);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Environment>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Environment>()));
 	return Ref<Environment>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Environment>(_gde_method_bind, _owner));
 }
 
@@ -62,7 +62,7 @@ void WorldEnvironment::set_camera_attributes(const Ref<CameraAttributes> &p_came
 
 Ref<CameraAttributes> WorldEnvironment::get_camera_attributes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorldEnvironment::get_class_static()._native_ptr(), StringName("get_camera_attributes")._native_ptr(), 3921283215);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<CameraAttributes>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<CameraAttributes>()));
 	return Ref<CameraAttributes>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<CameraAttributes>(_gde_method_bind, _owner));
 }
 
@@ -74,7 +74,7 @@ void WorldEnvironment::set_compositor(const Ref<Compositor> &p_compositor) {
 
 Ref<Compositor> WorldEnvironment::get_compositor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WorldEnvironment::get_class_static()._native_ptr(), StringName("get_compositor")._native_ptr(), 3647707413);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Compositor>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Compositor>()));
 	return Ref<Compositor>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Compositor>(_gde_method_bind, _owner));
 }
 

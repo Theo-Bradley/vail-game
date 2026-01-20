@@ -48,7 +48,7 @@ void GPUParticlesAttractor3D::set_cull_mask(uint32_t p_mask) {
 
 uint32_t GPUParticlesAttractor3D::get_cull_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesAttractor3D::get_class_static()._native_ptr(), StringName("get_cull_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void GPUParticlesAttractor3D::set_strength(float p_strength) {
 
 float GPUParticlesAttractor3D::get_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesAttractor3D::get_class_static()._native_ptr(), StringName("get_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void GPUParticlesAttractor3D::set_attenuation(float p_attenuation) {
 
 float GPUParticlesAttractor3D::get_attenuation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesAttractor3D::get_class_static()._native_ptr(), StringName("get_attenuation")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void GPUParticlesAttractor3D::set_directionality(float p_amount) {
 
 float GPUParticlesAttractor3D::get_directionality() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesAttractor3D::get_class_static()._native_ptr(), StringName("get_directionality")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

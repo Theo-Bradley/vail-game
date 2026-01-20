@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_LOOK_AT_MODIFIER3D_HPP
-#define GODOT_CPP_LOOK_AT_MODIFIER3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/skeleton_modifier3d.hpp>
 #include <godot_cpp/classes/tween.hpp>
@@ -130,4 +129,3 @@ public:
 
 VARIANT_ENUM_CAST(LookAtModifier3D::OriginFrom);
 
-#endif // ! GODOT_CPP_LOOK_AT_MODIFIER3D_HPP

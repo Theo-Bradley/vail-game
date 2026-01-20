@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_WINDOW_HPP
-#define GODOT_CPP_WINDOW_HPP
+#pragma once
 
 #include <godot_cpp/classes/display_server.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -79,7 +78,10 @@ public:
 		FLAG_MOUSE_PASSTHROUGH = 7,
 		FLAG_SHARP_CORNERS = 8,
 		FLAG_EXCLUDE_FROM_CAPTURE = 9,
-		FLAG_MAX = 10,
+		FLAG_POPUP_WM_HINT = 10,
+		FLAG_MINIMIZE_DISABLED = 11,
+		FLAG_MAXIMIZE_DISABLED = 12,
+		FLAG_MAX = 13,
 	};
 
 	enum ContentScaleMode {
@@ -125,7 +127,6 @@ public:
 
 	void set_title(const String &p_title);
 	String get_title() const;
-	int32_t get_window_id() const;
 	void set_initial_position(Window::WindowInitialPosition p_initial_position);
 	Window::WindowInitialPosition get_initial_position() const;
 	void set_current_screen(int32_t p_index);
@@ -183,8 +184,6 @@ public:
 	bool get_keep_title_visible() const;
 	void set_content_scale_factor(float p_factor);
 	float get_content_scale_factor() const;
-	void set_use_font_oversampling(bool p_enable);
-	bool is_using_font_oversampling() const;
 	void set_mouse_passthrough_polygon(const PackedVector2Array &p_polygon);
 	PackedVector2Array get_mouse_passthrough_polygon() const;
 	void set_wrap_controls(bool p_enable);
@@ -229,11 +228,19 @@ public:
 	float get_theme_default_base_scale() const;
 	Ref<Font> get_theme_default_font() const;
 	int32_t get_theme_default_font_size() const;
+	int32_t get_window_id() const;
+	void set_accessibility_name(const String &p_name);
+	String get_accessibility_name() const;
+	void set_accessibility_description(const String &p_description);
+	String get_accessibility_description() const;
+	static Window *get_focused_window();
 	void set_layout_direction(Window::LayoutDirection p_direction);
 	Window::LayoutDirection get_layout_direction() const;
 	bool is_layout_rtl() const;
 	void set_auto_translate(bool p_enable);
 	bool is_auto_translating() const;
+	void set_use_font_oversampling(bool p_enable);
+	bool is_using_font_oversampling() const;
 	void popup(const Rect2i &p_rect = Rect2i(0, 0, 0, 0));
 	void popup_on_parent(const Rect2i &p_parent_rect);
 	void popup_centered(const Vector2i &p_minsize = Vector2i(0, 0));
@@ -268,4 +275,3 @@ VARIANT_ENUM_CAST(Window::ContentScaleStretch);
 VARIANT_ENUM_CAST(Window::LayoutDirection);
 VARIANT_ENUM_CAST(Window::WindowInitialPosition);
 
-#endif // ! GODOT_CPP_WINDOW_HPP

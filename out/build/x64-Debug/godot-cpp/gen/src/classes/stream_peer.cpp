@@ -42,19 +42,19 @@ namespace godot {
 
 Error StreamPeer::put_data(const PackedByteArray &p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("put_data")._native_ptr(), 680677267);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_data);
 }
 
 Array StreamPeer::put_partial_data(const PackedByteArray &p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("put_partial_data")._native_ptr(), 2934048347);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_data);
 }
 
 Array StreamPeer::get_data(int32_t p_bytes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_data")._native_ptr(), 1171824711);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_bytes, &p_bytes_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_bytes_encoded);
@@ -62,7 +62,7 @@ Array StreamPeer::get_data(int32_t p_bytes) {
 
 Array StreamPeer::get_partial_data(int32_t p_bytes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_partial_data")._native_ptr(), 1171824711);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_bytes, &p_bytes_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_bytes_encoded);
@@ -70,7 +70,7 @@ Array StreamPeer::get_partial_data(int32_t p_bytes) {
 
 int32_t StreamPeer::get_available_bytes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_available_bytes")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -84,7 +84,7 @@ void StreamPeer::set_big_endian(bool p_enable) {
 
 bool StreamPeer::is_big_endian_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("is_big_endian_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -198,73 +198,73 @@ void StreamPeer::put_var(const Variant &p_value, bool p_full_objects) {
 
 int8_t StreamPeer::get_8() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_8")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 uint8_t StreamPeer::get_u8() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_u8")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int16_t StreamPeer::get_16() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_16")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 uint16_t StreamPeer::get_u16() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_u16")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t StreamPeer::get_32() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_32")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 uint32_t StreamPeer::get_u32() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_u32")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int64_t StreamPeer::get_64() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_64")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 uint64_t StreamPeer::get_u64() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_u64")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 float StreamPeer::get_half() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_half")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float StreamPeer::get_float() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_float")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 double StreamPeer::get_double() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_double")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 String StreamPeer::get_string(int32_t p_bytes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_string")._native_ptr(), 2309358862);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_bytes, &p_bytes_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_bytes_encoded);
@@ -272,7 +272,7 @@ String StreamPeer::get_string(int32_t p_bytes) {
 
 String StreamPeer::get_utf8_string(int32_t p_bytes) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_utf8_string")._native_ptr(), 2309358862);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_bytes_encoded;
 	PtrToArg<int64_t>::encode(p_bytes, &p_bytes_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_bytes_encoded);
@@ -280,7 +280,7 @@ String StreamPeer::get_utf8_string(int32_t p_bytes) {
 
 Variant StreamPeer::get_var(bool p_allow_objects) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StreamPeer::get_class_static()._native_ptr(), StringName("get_var")._native_ptr(), 3442865206);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int8_t p_allow_objects_encoded;
 	PtrToArg<bool>::encode(p_allow_objects, &p_allow_objects_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_allow_objects_encoded);

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_UNDO_REDO_MANAGER_HPP
-#define GODOT_CPP_EDITOR_UNDO_REDO_MANAGER_HPP
+#pragma once
 
 #include <godot_cpp/classes/undo_redo.hpp>
 #include <godot_cpp/core/object.hpp>
@@ -56,7 +55,7 @@ public:
 		INVALID_HISTORY = -99,
 	};
 
-	void create_action(const String &p_name, UndoRedo::MergeMode p_merge_mode = (UndoRedo::MergeMode)0, Object *p_custom_context = nullptr, bool p_backward_undo_ops = false);
+	void create_action(const String &p_name, UndoRedo::MergeMode p_merge_mode = (UndoRedo::MergeMode)0, Object *p_custom_context = nullptr, bool p_backward_undo_ops = false, bool p_mark_unsaved = true);
 	void commit_action(bool p_execute = true);
 	bool is_committing_action() const;
 	void force_fixed_history();
@@ -67,7 +66,7 @@ private:
 public:
 	template <typename... Args>
 	void add_do_method(Object *p_object, const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 2 + sizeof...(Args)> variant_args{ Variant(p_object), Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 2 + sizeof...(Args)> variant_args{{ Variant(p_object), Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 2 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -81,7 +80,7 @@ private:
 public:
 	template <typename... Args>
 	void add_undo_method(Object *p_object, const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 2 + sizeof...(Args)> variant_args{ Variant(p_object), Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 2 + sizeof...(Args)> variant_args{{ Variant(p_object), Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 2 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -109,4 +108,3 @@ public:
 
 VARIANT_ENUM_CAST(EditorUndoRedoManager::SpecialHistory);
 
-#endif // ! GODOT_CPP_EDITOR_UNDO_REDO_MANAGER_HPP

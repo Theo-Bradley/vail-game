@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPEN_XR_VISIBILITY_MASK_HPP
-#define GODOT_CPP_OPEN_XR_VISIBILITY_MASK_HPP
+#pragma once
 
 #include <godot_cpp/classes/visual_instance3d.hpp>
 
@@ -56,4 +55,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_OPEN_XR_VISIBILITY_MASK_HPP

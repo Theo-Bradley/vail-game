@@ -30,12 +30,11 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_BUILTIN_VARARG_METHODS_HPP
-#define GODOT_CPP_BUILTIN_VARARG_METHODS_HPP
+#pragma once
 
 template <typename... Args>
 Variant Callable::call(const Args &...p_args) const {
-	std::array<Variant, 0 + sizeof...(Args)> variant_args{ Variant(p_args)... };
+	std::array<Variant, 0 + sizeof...(Args)> variant_args{{ Variant(p_args)... }};
 	std::array<const Variant *, 0 + sizeof...(Args)> call_args;
 	for (size_t i = 0; i < variant_args.size(); i++) {
 		call_args[i] = &variant_args[i];
@@ -47,7 +46,7 @@ Variant Callable::call(const Args &...p_args) const {
 
 template <typename... Args>
 void Callable::call_deferred(const Args &...p_args) const {
-	std::array<Variant, 0 + sizeof...(Args)> variant_args{ Variant(p_args)... };
+	std::array<Variant, 0 + sizeof...(Args)> variant_args{{ Variant(p_args)... }};
 	std::array<const Variant *, 0 + sizeof...(Args)> call_args;
 	for (size_t i = 0; i < variant_args.size(); i++) {
 		call_args[i] = &variant_args[i];
@@ -57,7 +56,7 @@ void Callable::call_deferred(const Args &...p_args) const {
 
 template <typename... Args>
 void Callable::rpc(const Args &...p_args) const {
-	std::array<Variant, 0 + sizeof...(Args)> variant_args{ Variant(p_args)... };
+	std::array<Variant, 0 + sizeof...(Args)> variant_args{{ Variant(p_args)... }};
 	std::array<const Variant *, 0 + sizeof...(Args)> call_args;
 	for (size_t i = 0; i < variant_args.size(); i++) {
 		call_args[i] = &variant_args[i];
@@ -67,7 +66,7 @@ void Callable::rpc(const Args &...p_args) const {
 
 template <typename... Args>
 void Callable::rpc_id(int64_t p_peer_id, const Args &...p_args) const {
-	std::array<Variant, 1 + sizeof...(Args)> variant_args{ Variant(p_peer_id), Variant(p_args)... };
+	std::array<Variant, 1 + sizeof...(Args)> variant_args{{ Variant(p_peer_id), Variant(p_args)... }};
 	std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 	for (size_t i = 0; i < variant_args.size(); i++) {
 		call_args[i] = &variant_args[i];
@@ -77,7 +76,7 @@ void Callable::rpc_id(int64_t p_peer_id, const Args &...p_args) const {
 
 template <typename... Args>
 Callable Callable::bind(const Args &...p_args) const {
-	std::array<Variant, 0 + sizeof...(Args)> variant_args{ Variant(p_args)... };
+	std::array<Variant, 0 + sizeof...(Args)> variant_args{{ Variant(p_args)... }};
 	std::array<const Variant *, 0 + sizeof...(Args)> call_args;
 	for (size_t i = 0; i < variant_args.size(); i++) {
 		call_args[i] = &variant_args[i];
@@ -89,12 +88,10 @@ Callable Callable::bind(const Args &...p_args) const {
 
 template <typename... Args>
 void Signal::emit(const Args &...p_args) const {
-	std::array<Variant, 0 + sizeof...(Args)> variant_args{ Variant(p_args)... };
+	std::array<Variant, 0 + sizeof...(Args)> variant_args{{ Variant(p_args)... }};
 	std::array<const Variant *, 0 + sizeof...(Args)> call_args;
 	for (size_t i = 0; i < variant_args.size(); i++) {
 		call_args[i] = &variant_args[i];
 	}
 	_method_bindings.method_emit((GDExtensionTypePtr)&opaque, reinterpret_cast<GDExtensionConstTypePtr *>(call_args.data()), nullptr, 0 + sizeof...(Args));
 }
-
-#endif // ! GODOT_CPP_BUILTIN_VARARG_METHODS_HPP

@@ -50,7 +50,7 @@ void PhysicalSkyMaterial::set_rayleigh_coefficient(float p_rayleigh) {
 
 float PhysicalSkyMaterial::get_rayleigh_coefficient() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_rayleigh_coefficient")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void PhysicalSkyMaterial::set_rayleigh_color(const Color &p_color) {
 
 Color PhysicalSkyMaterial::get_rayleigh_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_rayleigh_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void PhysicalSkyMaterial::set_mie_coefficient(float p_mie) {
 
 float PhysicalSkyMaterial::get_mie_coefficient() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_mie_coefficient")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void PhysicalSkyMaterial::set_mie_eccentricity(float p_eccentricity) {
 
 float PhysicalSkyMaterial::get_mie_eccentricity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_mie_eccentricity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void PhysicalSkyMaterial::set_mie_color(const Color &p_color) {
 
 Color PhysicalSkyMaterial::get_mie_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_mie_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void PhysicalSkyMaterial::set_turbidity(float p_turbidity) {
 
 float PhysicalSkyMaterial::get_turbidity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_turbidity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void PhysicalSkyMaterial::set_sun_disk_scale(float p_scale) {
 
 float PhysicalSkyMaterial::get_sun_disk_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_sun_disk_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void PhysicalSkyMaterial::set_ground_color(const Color &p_color) {
 
 Color PhysicalSkyMaterial::get_ground_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_ground_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -156,7 +156,7 @@ void PhysicalSkyMaterial::set_energy_multiplier(float p_multiplier) {
 
 float PhysicalSkyMaterial::get_energy_multiplier() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_energy_multiplier")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -170,7 +170,7 @@ void PhysicalSkyMaterial::set_use_debanding(bool p_use_debanding) {
 
 bool PhysicalSkyMaterial::get_use_debanding() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_use_debanding")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -182,7 +182,7 @@ void PhysicalSkyMaterial::set_night_sky(const Ref<Texture2D> &p_night_sky) {
 
 Ref<Texture2D> PhysicalSkyMaterial::get_night_sky() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicalSkyMaterial::get_class_static()._native_ptr(), StringName("get_night_sky")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 

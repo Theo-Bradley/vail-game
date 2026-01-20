@@ -50,7 +50,7 @@ void VisualShaderNodeCubemap::set_source(VisualShaderNodeCubemap::Source p_value
 
 VisualShaderNodeCubemap::Source VisualShaderNodeCubemap::get_source() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeCubemap::get_class_static()._native_ptr(), StringName("get_source")._native_ptr(), 2222048781);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeCubemap::Source(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeCubemap::Source(0)));
 	return (VisualShaderNodeCubemap::Source)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeCubemap::set_cube_map(const Ref<TextureLayered> &p_value) {
 
 Ref<TextureLayered> VisualShaderNodeCubemap::get_cube_map() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeCubemap::get_class_static()._native_ptr(), StringName("get_cube_map")._native_ptr(), 3984243839);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TextureLayered>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TextureLayered>()));
 	return Ref<TextureLayered>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TextureLayered>(_gde_method_bind, _owner));
 }
 
@@ -76,7 +76,7 @@ void VisualShaderNodeCubemap::set_texture_type(VisualShaderNodeCubemap::TextureT
 
 VisualShaderNodeCubemap::TextureType VisualShaderNodeCubemap::get_texture_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeCubemap::get_class_static()._native_ptr(), StringName("get_texture_type")._native_ptr(), 3356498888);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeCubemap::TextureType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeCubemap::TextureType(0)));
 	return (VisualShaderNodeCubemap::TextureType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

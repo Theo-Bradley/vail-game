@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NATIVE_MENU_HPP
-#define GODOT_CPP_NATIVE_MENU_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -159,4 +158,3 @@ public:
 VARIANT_ENUM_CAST(NativeMenu::Feature);
 VARIANT_ENUM_CAST(NativeMenu::SystemMenus);
 
-#endif // ! GODOT_CPP_NATIVE_MENU_HPP

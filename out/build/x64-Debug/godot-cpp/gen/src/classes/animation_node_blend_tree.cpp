@@ -37,7 +37,6 @@
 #include <godot_cpp/core/error_macros.hpp>
 
 #include <godot_cpp/classes/animation_node.hpp>
-#include <godot_cpp/variant/string_name.hpp>
 
 namespace godot {
 
@@ -49,7 +48,7 @@ void AnimationNodeBlendTree::add_node(const StringName &p_name, const Ref<Animat
 
 Ref<AnimationNode> AnimationNodeBlendTree::get_node(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendTree::get_class_static()._native_ptr(), StringName("get_node")._native_ptr(), 625644256);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AnimationNode>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AnimationNode>()));
 	return Ref<AnimationNode>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AnimationNode>(_gde_method_bind, _owner, &p_name));
 }
 
@@ -67,7 +66,7 @@ void AnimationNodeBlendTree::rename_node(const StringName &p_name, const StringN
 
 bool AnimationNodeBlendTree::has_node(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendTree::get_class_static()._native_ptr(), StringName("has_node")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -87,6 +86,12 @@ void AnimationNodeBlendTree::disconnect_node(const StringName &p_input_node, int
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_input_node, &p_input_index_encoded);
 }
 
+TypedArray<StringName> AnimationNodeBlendTree::get_node_list() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendTree::get_class_static()._native_ptr(), StringName("get_node_list")._native_ptr(), 3995934104);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<StringName>()));
+	return internal::_call_native_mb_ret<TypedArray<StringName>>(_gde_method_bind, _owner);
+}
+
 void AnimationNodeBlendTree::set_node_position(const StringName &p_name, const Vector2 &p_position) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendTree::get_class_static()._native_ptr(), StringName("set_node_position")._native_ptr(), 1999414630);
 	CHECK_METHOD_BIND(_gde_method_bind);
@@ -95,7 +100,7 @@ void AnimationNodeBlendTree::set_node_position(const StringName &p_name, const V
 
 Vector2 AnimationNodeBlendTree::get_node_position(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendTree::get_class_static()._native_ptr(), StringName("get_node_position")._native_ptr(), 3100822709);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -107,7 +112,7 @@ void AnimationNodeBlendTree::set_graph_offset(const Vector2 &p_offset) {
 
 Vector2 AnimationNodeBlendTree::get_graph_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendTree::get_class_static()._native_ptr(), StringName("get_graph_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 

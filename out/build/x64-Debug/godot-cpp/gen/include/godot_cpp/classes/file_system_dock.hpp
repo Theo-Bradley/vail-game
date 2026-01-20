@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FILE_SYSTEM_DOCK_HPP
-#define GODOT_CPP_FILE_SYSTEM_DOCK_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/v_box_container.hpp>
@@ -64,4 +63,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_FILE_SYSTEM_DOCK_HPP

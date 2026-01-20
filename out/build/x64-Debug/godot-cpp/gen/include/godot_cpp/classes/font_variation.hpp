@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FONT_VARIATION_HPP
-#define GODOT_CPP_FONT_VARIATION_HPP
+#pragma once
 
 #include <godot_cpp/classes/font.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -75,4 +74,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_FONT_VARIATION_HPP

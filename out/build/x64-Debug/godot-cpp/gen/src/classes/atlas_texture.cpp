@@ -46,7 +46,7 @@ void AtlasTexture::set_atlas(const Ref<Texture2D> &p_atlas) {
 
 Ref<Texture2D> AtlasTexture::get_atlas() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AtlasTexture::get_class_static()._native_ptr(), StringName("get_atlas")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -58,7 +58,7 @@ void AtlasTexture::set_region(const Rect2 &p_region) {
 
 Rect2 AtlasTexture::get_region() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AtlasTexture::get_class_static()._native_ptr(), StringName("get_region")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 
@@ -70,7 +70,7 @@ void AtlasTexture::set_margin(const Rect2 &p_margin) {
 
 Rect2 AtlasTexture::get_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AtlasTexture::get_class_static()._native_ptr(), StringName("get_margin")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 
@@ -84,7 +84,7 @@ void AtlasTexture::set_filter_clip(bool p_enable) {
 
 bool AtlasTexture::has_filter_clip() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AtlasTexture::get_class_static()._native_ptr(), StringName("has_filter_clip")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

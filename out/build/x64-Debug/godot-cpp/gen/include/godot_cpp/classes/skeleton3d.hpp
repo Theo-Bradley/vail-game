@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SKELETON3D_HPP
-#define GODOT_CPP_SKELETON3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -61,6 +60,7 @@ public:
 	enum ModifierCallbackModeProcess {
 		MODIFIER_CALLBACK_MODE_PROCESS_PHYSICS = 0,
 		MODIFIER_CALLBACK_MODE_PROCESS_IDLE = 1,
+		MODIFIER_CALLBACK_MODE_PROCESS_MANUAL = 2,
 	};
 
 	static const int NOTIFICATION_UPDATE_SKELETON = 50;
@@ -110,6 +110,7 @@ public:
 	bool is_show_rest_only() const;
 	void set_modifier_callback_mode_process(Skeleton3D::ModifierCallbackModeProcess p_mode);
 	Skeleton3D::ModifierCallbackModeProcess get_modifier_callback_mode_process() const;
+	void advance(double p_delta);
 	void clear_bones_global_pose_override();
 	void set_bone_global_pose_override(int32_t p_bone_idx, const Transform3D &p_pose, float p_amount, bool p_persistent = false);
 	Transform3D get_bone_global_pose_override(int32_t p_bone_idx) const;
@@ -134,4 +135,3 @@ public:
 
 VARIANT_ENUM_CAST(Skeleton3D::ModifierCallbackModeProcess);
 
-#endif // ! GODOT_CPP_SKELETON3D_HPP

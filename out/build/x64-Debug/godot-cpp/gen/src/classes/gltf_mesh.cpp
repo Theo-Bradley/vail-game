@@ -44,7 +44,7 @@ namespace godot {
 
 String GLTFMesh::get_original_name() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFMesh::get_class_static()._native_ptr(), StringName("get_original_name")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -56,7 +56,7 @@ void GLTFMesh::set_original_name(const String &p_original_name) {
 
 Ref<ImporterMesh> GLTFMesh::get_mesh() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFMesh::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 3754628756);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ImporterMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ImporterMesh>()));
 	return Ref<ImporterMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ImporterMesh>(_gde_method_bind, _owner));
 }
 
@@ -68,7 +68,7 @@ void GLTFMesh::set_mesh(const Ref<ImporterMesh> &p_mesh) {
 
 PackedFloat32Array GLTFMesh::get_blend_weights() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFMesh::get_class_static()._native_ptr(), StringName("get_blend_weights")._native_ptr(), 2445143706);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedFloat32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedFloat32Array()));
 	return internal::_call_native_mb_ret<PackedFloat32Array>(_gde_method_bind, _owner);
 }
 
@@ -78,13 +78,13 @@ void GLTFMesh::set_blend_weights(const PackedFloat32Array &p_blend_weights) {
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_blend_weights);
 }
 
-TypedArray<Material> GLTFMesh::get_instance_materials() {
+TypedArray<Ref<Material>> GLTFMesh::get_instance_materials() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFMesh::get_class_static()._native_ptr(), StringName("get_instance_materials")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Material>());
-	return internal::_call_native_mb_ret<TypedArray<Material>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<Material>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<Material>>>(_gde_method_bind, _owner);
 }
 
-void GLTFMesh::set_instance_materials(const TypedArray<Material> &p_instance_materials) {
+void GLTFMesh::set_instance_materials(const TypedArray<Ref<Material>> &p_instance_materials) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFMesh::get_class_static()._native_ptr(), StringName("set_instance_materials")._native_ptr(), 381264803);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_instance_materials);
@@ -92,7 +92,7 @@ void GLTFMesh::set_instance_materials(const TypedArray<Material> &p_instance_mat
 
 Variant GLTFMesh::get_additional_data(const StringName &p_extension_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFMesh::get_class_static()._native_ptr(), StringName("get_additional_data")._native_ptr(), 2138907829);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_extension_name);
 }
 

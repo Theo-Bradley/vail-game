@@ -54,7 +54,7 @@ void Resource::take_over_path(const String &p_path) {
 
 String Resource::get_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("get_path")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -72,13 +72,13 @@ void Resource::set_name(const String &p_name) {
 
 String Resource::get_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("get_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 RID Resource::get_rid() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("get_rid")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -92,13 +92,13 @@ void Resource::set_local_to_scene(bool p_enable) {
 
 bool Resource::is_local_to_scene() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("is_local_to_scene")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Node *Resource::get_local_scene() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("get_local_scene")._native_ptr(), 3160264692);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node>(_gde_method_bind, _owner);
 }
 
@@ -122,19 +122,19 @@ void Resource::set_id_for_path(const String &p_path, const String &p_id) {
 
 String Resource::get_id_for_path(const String &p_path) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("get_id_for_path")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_path);
 }
 
 bool Resource::is_built_in() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("is_built_in")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 String Resource::generate_scene_unique_id() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("generate_scene_unique_id")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, nullptr);
 }
 
@@ -146,7 +146,7 @@ void Resource::set_scene_unique_id(const String &p_id) {
 
 String Resource::get_scene_unique_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("get_scene_unique_id")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -156,12 +156,20 @@ void Resource::emit_changed() {
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner);
 }
 
-Ref<Resource> Resource::duplicate(bool p_subresources) const {
+Ref<Resource> Resource::duplicate(bool p_deep) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("duplicate")._native_ptr(), 482882304);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
-	int8_t p_subresources_encoded;
-	PtrToArg<bool>::encode(p_subresources, &p_subresources_encoded);
-	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner, &p_subresources_encoded));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
+	int8_t p_deep_encoded;
+	PtrToArg<bool>::encode(p_deep, &p_deep_encoded);
+	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner, &p_deep_encoded));
+}
+
+Ref<Resource> Resource::duplicate_deep(Resource::DeepDuplicateMode p_deep_subresources_mode) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Resource::get_class_static()._native_ptr(), StringName("duplicate_deep")._native_ptr(), 905779109);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
+	int64_t p_deep_subresources_mode_encoded;
+	PtrToArg<int64_t>::encode(p_deep_subresources_mode, &p_deep_subresources_mode_encoded);
+	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner, &p_deep_subresources_mode_encoded));
 }
 
 void Resource::_setup_local_to_scene() {}

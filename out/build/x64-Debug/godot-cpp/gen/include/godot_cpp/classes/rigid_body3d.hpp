@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RIGID_BODY3D_HPP
-#define GODOT_CPP_RIGID_BODY3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_body3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -147,4 +146,3 @@ VARIANT_ENUM_CAST(RigidBody3D::FreezeMode);
 VARIANT_ENUM_CAST(RigidBody3D::CenterOfMassMode);
 VARIANT_ENUM_CAST(RigidBody3D::DampMode);
 
-#endif // ! GODOT_CPP_RIGID_BODY3D_HPP

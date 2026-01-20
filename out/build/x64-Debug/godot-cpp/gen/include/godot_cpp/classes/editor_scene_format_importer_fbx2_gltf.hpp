@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_SCENE_FORMAT_IMPORTER_FBX2_GLTF_HPP
-#define GODOT_CPP_EDITOR_SCENE_FORMAT_IMPORTER_FBX2_GLTF_HPP
+#pragma once
 
 #include <godot_cpp/classes/editor_scene_format_importer.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -57,4 +56,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_SCENE_FORMAT_IMPORTER_FBX2_GLTF_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_RAY_RESULT_HPP
-#define GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_RAY_RESULT_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/rid.hpp>
@@ -50,5 +49,3 @@ struct PhysicsServer2DExtensionRayResult {
 GDVIRTUAL_NATIVE_PTR(PhysicsServer2DExtensionRayResult);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_RAY_RESULT_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RD_PIPELINE_DEPTH_STENCIL_STATE_HPP
-#define GODOT_CPP_RD_PIPELINE_DEPTH_STENCIL_STATE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -101,4 +100,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_RD_PIPELINE_DEPTH_STENCIL_STATE_HPP

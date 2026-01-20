@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_IMAGE_HPP
-#define GODOT_CPP_IMAGE_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -174,6 +173,8 @@ public:
 	PackedByteArray save_jpg_to_buffer(float p_quality = 0.75) const;
 	Error save_exr(const String &p_path, bool p_grayscale = false) const;
 	PackedByteArray save_exr_to_buffer(bool p_grayscale = false) const;
+	Error save_dds(const String &p_path) const;
+	PackedByteArray save_dds_to_buffer() const;
 	Error save_webp(const String &p_path, bool p_lossy = false, float p_quality = 0.75) const;
 	PackedByteArray save_webp_to_buffer(bool p_lossy = false, float p_quality = 0.75) const;
 	Image::AlphaMode detect_alpha() const;
@@ -213,6 +214,7 @@ public:
 	Error load_tga_from_buffer(const PackedByteArray &p_buffer);
 	Error load_bmp_from_buffer(const PackedByteArray &p_buffer);
 	Error load_ktx_from_buffer(const PackedByteArray &p_buffer);
+	Error load_dds_from_buffer(const PackedByteArray &p_buffer);
 	Error load_svg_from_buffer(const PackedByteArray &p_buffer, float p_scale = 1.0);
 	Error load_svg_from_string(const String &p_svg_str, float p_scale = 1.0);
 
@@ -237,4 +239,3 @@ VARIANT_ENUM_CAST(Image::UsedChannels);
 VARIANT_ENUM_CAST(Image::CompressSource);
 VARIANT_ENUM_CAST(Image::ASTCFormat);
 
-#endif // ! GODOT_CPP_IMAGE_HPP

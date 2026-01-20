@@ -48,7 +48,7 @@ void StatusIndicator::set_tooltip(const String &p_tooltip) {
 
 String StatusIndicator::get_tooltip() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StatusIndicator::get_class_static()._native_ptr(), StringName("get_tooltip")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void StatusIndicator::set_icon(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> StatusIndicator::get_icon() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StatusIndicator::get_class_static()._native_ptr(), StringName("get_icon")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -74,7 +74,7 @@ void StatusIndicator::set_visible(bool p_visible) {
 
 bool StatusIndicator::is_visible() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StatusIndicator::get_class_static()._native_ptr(), StringName("is_visible")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -86,13 +86,13 @@ void StatusIndicator::set_menu(const NodePath &p_menu) {
 
 NodePath StatusIndicator::get_menu() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StatusIndicator::get_class_static()._native_ptr(), StringName("get_menu")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
 Rect2 StatusIndicator::get_rect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StatusIndicator::get_class_static()._native_ptr(), StringName("get_rect")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 

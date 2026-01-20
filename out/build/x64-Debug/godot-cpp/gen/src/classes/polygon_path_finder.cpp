@@ -48,25 +48,25 @@ void PolygonPathFinder::setup(const PackedVector2Array &p_points, const PackedIn
 
 PackedVector2Array PolygonPathFinder::find_path(const Vector2 &p_from, const Vector2 &p_to) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PolygonPathFinder::get_class_static()._native_ptr(), StringName("find_path")._native_ptr(), 1562168077);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner, &p_from, &p_to);
 }
 
 PackedVector2Array PolygonPathFinder::get_intersections(const Vector2 &p_from, const Vector2 &p_to) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PolygonPathFinder::get_class_static()._native_ptr(), StringName("get_intersections")._native_ptr(), 3932192302);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner, &p_from, &p_to);
 }
 
 Vector2 PolygonPathFinder::get_closest_point(const Vector2 &p_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PolygonPathFinder::get_class_static()._native_ptr(), StringName("get_closest_point")._native_ptr(), 2656412154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_point);
 }
 
 bool PolygonPathFinder::is_point_inside(const Vector2 &p_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PolygonPathFinder::get_class_static()._native_ptr(), StringName("is_point_inside")._native_ptr(), 556197845);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_point);
 }
 
@@ -82,7 +82,7 @@ void PolygonPathFinder::set_point_penalty(int32_t p_idx, float p_penalty) {
 
 float PolygonPathFinder::get_point_penalty(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PolygonPathFinder::get_class_static()._native_ptr(), StringName("get_point_penalty")._native_ptr(), 2339986948);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -90,7 +90,7 @@ float PolygonPathFinder::get_point_penalty(int32_t p_idx) const {
 
 Rect2 PolygonPathFinder::get_bounds() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PolygonPathFinder::get_class_static()._native_ptr(), StringName("get_bounds")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 

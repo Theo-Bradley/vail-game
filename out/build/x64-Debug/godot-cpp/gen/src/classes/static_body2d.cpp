@@ -56,13 +56,13 @@ void StaticBody2D::set_constant_angular_velocity(float p_vel) {
 
 Vector2 StaticBody2D::get_constant_linear_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StaticBody2D::get_class_static()._native_ptr(), StringName("get_constant_linear_velocity")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 float StaticBody2D::get_constant_angular_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StaticBody2D::get_class_static()._native_ptr(), StringName("get_constant_angular_velocity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void StaticBody2D::set_physics_material_override(const Ref<PhysicsMaterial> &p_p
 
 Ref<PhysicsMaterial> StaticBody2D::get_physics_material_override() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StaticBody2D::get_class_static()._native_ptr(), StringName("get_physics_material_override")._native_ptr(), 2521850424);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<PhysicsMaterial>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<PhysicsMaterial>()));
 	return Ref<PhysicsMaterial>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<PhysicsMaterial>(_gde_method_bind, _owner));
 }
 

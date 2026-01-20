@@ -49,7 +49,7 @@ void GeometryInstance3D::set_material_override(const Ref<Material> &p_material) 
 
 Ref<Material> GeometryInstance3D::get_material_override() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_material_override")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 
@@ -61,7 +61,7 @@ void GeometryInstance3D::set_material_overlay(const Ref<Material> &p_material) {
 
 Ref<Material> GeometryInstance3D::get_material_overlay() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_material_overlay")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 
@@ -75,7 +75,7 @@ void GeometryInstance3D::set_cast_shadows_setting(GeometryInstance3D::ShadowCast
 
 GeometryInstance3D::ShadowCastingSetting GeometryInstance3D::get_cast_shadows_setting() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_cast_shadows_setting")._native_ptr(), 3383019359);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GeometryInstance3D::ShadowCastingSetting(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GeometryInstance3D::ShadowCastingSetting(0)));
 	return (GeometryInstance3D::ShadowCastingSetting)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -89,7 +89,7 @@ void GeometryInstance3D::set_lod_bias(float p_bias) {
 
 float GeometryInstance3D::get_lod_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_lod_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -103,7 +103,7 @@ void GeometryInstance3D::set_transparency(float p_transparency) {
 
 float GeometryInstance3D::get_transparency() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_transparency")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -117,7 +117,7 @@ void GeometryInstance3D::set_visibility_range_end_margin(float p_distance) {
 
 float GeometryInstance3D::get_visibility_range_end_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_end_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -131,7 +131,7 @@ void GeometryInstance3D::set_visibility_range_end(float p_distance) {
 
 float GeometryInstance3D::get_visibility_range_end() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_end")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -145,7 +145,7 @@ void GeometryInstance3D::set_visibility_range_begin_margin(float p_distance) {
 
 float GeometryInstance3D::get_visibility_range_begin_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_begin_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -159,7 +159,7 @@ void GeometryInstance3D::set_visibility_range_begin(float p_distance) {
 
 float GeometryInstance3D::get_visibility_range_begin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_begin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -173,7 +173,7 @@ void GeometryInstance3D::set_visibility_range_fade_mode(GeometryInstance3D::Visi
 
 GeometryInstance3D::VisibilityRangeFadeMode GeometryInstance3D::get_visibility_range_fade_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_fade_mode")._native_ptr(), 2067221882);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GeometryInstance3D::VisibilityRangeFadeMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GeometryInstance3D::VisibilityRangeFadeMode(0)));
 	return (GeometryInstance3D::VisibilityRangeFadeMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -185,7 +185,7 @@ void GeometryInstance3D::set_instance_shader_parameter(const StringName &p_name,
 
 Variant GeometryInstance3D::get_instance_shader_parameter(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_instance_shader_parameter")._native_ptr(), 2760726917);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -199,7 +199,7 @@ void GeometryInstance3D::set_extra_cull_margin(float p_margin) {
 
 float GeometryInstance3D::get_extra_cull_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_extra_cull_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -213,7 +213,7 @@ void GeometryInstance3D::set_lightmap_texel_scale(float p_scale) {
 
 float GeometryInstance3D::get_lightmap_texel_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_lightmap_texel_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -227,7 +227,7 @@ void GeometryInstance3D::set_lightmap_scale(GeometryInstance3D::LightmapScale p_
 
 GeometryInstance3D::LightmapScale GeometryInstance3D::get_lightmap_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_lightmap_scale")._native_ptr(), 798767852);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GeometryInstance3D::LightmapScale(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GeometryInstance3D::LightmapScale(0)));
 	return (GeometryInstance3D::LightmapScale)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -241,7 +241,7 @@ void GeometryInstance3D::set_gi_mode(GeometryInstance3D::GIMode p_mode) {
 
 GeometryInstance3D::GIMode GeometryInstance3D::get_gi_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_gi_mode")._native_ptr(), 2188566509);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GeometryInstance3D::GIMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GeometryInstance3D::GIMode(0)));
 	return (GeometryInstance3D::GIMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -255,7 +255,7 @@ void GeometryInstance3D::set_ignore_occlusion_culling(bool p_ignore_culling) {
 
 bool GeometryInstance3D::is_ignoring_occlusion_culling() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("is_ignoring_occlusion_culling")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -267,7 +267,7 @@ void GeometryInstance3D::set_custom_aabb(const AABB &p_aabb) {
 
 AABB GeometryInstance3D::get_custom_aabb() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GeometryInstance3D::get_class_static()._native_ptr(), StringName("get_custom_aabb")._native_ptr(), 1068685055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_INPUT_HPP
-#define GODOT_CPP_INPUT_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -98,6 +97,8 @@ public:
 	bool is_action_pressed(const StringName &p_action, bool p_exact_match = false) const;
 	bool is_action_just_pressed(const StringName &p_action, bool p_exact_match = false) const;
 	bool is_action_just_released(const StringName &p_action, bool p_exact_match = false) const;
+	bool is_action_just_pressed_by_event(const StringName &p_action, const Ref<InputEvent> &p_event, bool p_exact_match = false) const;
+	bool is_action_just_released_by_event(const StringName &p_action, const Ref<InputEvent> &p_event, bool p_exact_match = false) const;
 	float get_action_strength(const StringName &p_action, bool p_exact_match = false) const;
 	float get_action_raw_strength(const StringName &p_action, bool p_exact_match = false) const;
 	float get_axis(const StringName &p_negative_action, const StringName &p_positive_action) const;
@@ -160,4 +161,3 @@ public:
 VARIANT_ENUM_CAST(Input::MouseMode);
 VARIANT_ENUM_CAST(Input::CursorShape);
 
-#endif // ! GODOT_CPP_INPUT_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_MULTIPLAYER_SYNCHRONIZER_HPP
-#define GODOT_CPP_MULTIPLAYER_SYNCHRONIZER_HPP
+#pragma once
 
 #include <godot_cpp/classes/node.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -87,4 +86,3 @@ public:
 
 VARIANT_ENUM_CAST(MultiplayerSynchronizer::VisibilityUpdateMode);
 
-#endif // ! GODOT_CPP_MULTIPLAYER_SYNCHRONIZER_HPP

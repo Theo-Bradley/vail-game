@@ -46,7 +46,7 @@ void StyleBoxFlat::set_bg_color(const Color &p_color) {
 
 Color StyleBoxFlat::get_bg_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_bg_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void StyleBoxFlat::set_border_color(const Color &p_color) {
 
 Color StyleBoxFlat::get_border_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_border_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void StyleBoxFlat::set_border_width_all(int32_t p_width) {
 
 int32_t StyleBoxFlat::get_border_width_min() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_border_width_min")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void StyleBoxFlat::set_border_width(Side p_margin, int32_t p_width) {
 
 int32_t StyleBoxFlat::get_border_width(Side p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_border_width")._native_ptr(), 1983885014);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_margin_encoded;
 	PtrToArg<int64_t>::encode(p_margin, &p_margin_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_margin_encoded);
@@ -104,7 +104,7 @@ void StyleBoxFlat::set_border_blend(bool p_blend) {
 
 bool StyleBoxFlat::get_border_blend() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_border_blend")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -128,7 +128,7 @@ void StyleBoxFlat::set_corner_radius(Corner p_corner, int32_t p_radius) {
 
 int32_t StyleBoxFlat::get_corner_radius(Corner p_corner) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_corner_radius")._native_ptr(), 3982397690);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_corner_encoded;
 	PtrToArg<int64_t>::encode(p_corner, &p_corner_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_corner_encoded);
@@ -154,7 +154,7 @@ void StyleBoxFlat::set_expand_margin_all(float p_size) {
 
 float StyleBoxFlat::get_expand_margin(Side p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_expand_margin")._native_ptr(), 2869120046);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_margin_encoded;
 	PtrToArg<int64_t>::encode(p_margin, &p_margin_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_margin_encoded);
@@ -170,7 +170,7 @@ void StyleBoxFlat::set_draw_center(bool p_draw_center) {
 
 bool StyleBoxFlat::is_draw_center_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("is_draw_center_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -182,7 +182,7 @@ void StyleBoxFlat::set_skew(const Vector2 &p_skew) {
 
 Vector2 StyleBoxFlat::get_skew() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_skew")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -194,7 +194,7 @@ void StyleBoxFlat::set_shadow_color(const Color &p_color) {
 
 Color StyleBoxFlat::get_shadow_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_shadow_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -208,7 +208,7 @@ void StyleBoxFlat::set_shadow_size(int32_t p_size) {
 
 int32_t StyleBoxFlat::get_shadow_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_shadow_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -220,7 +220,7 @@ void StyleBoxFlat::set_shadow_offset(const Vector2 &p_offset) {
 
 Vector2 StyleBoxFlat::get_shadow_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_shadow_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -234,7 +234,7 @@ void StyleBoxFlat::set_anti_aliased(bool p_anti_aliased) {
 
 bool StyleBoxFlat::is_anti_aliased() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("is_anti_aliased")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -248,7 +248,7 @@ void StyleBoxFlat::set_aa_size(float p_size) {
 
 float StyleBoxFlat::get_aa_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_aa_size")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -262,7 +262,7 @@ void StyleBoxFlat::set_corner_detail(int32_t p_detail) {
 
 int32_t StyleBoxFlat::get_corner_detail() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxFlat::get_class_static()._native_ptr(), StringName("get_corner_detail")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

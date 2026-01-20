@@ -30,9 +30,9 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_EXPORT_PLATFORM_HPP
-#define GODOT_CPP_EDITOR_EXPORT_PLATFORM_HPP
+#pragma once
 
+#include <godot_cpp/classes/editor_export_preset.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -47,8 +47,6 @@
 #include <type_traits>
 
 namespace godot {
-
-class EditorExportPreset;
 
 class EditorExportPlatform : public RefCounted {
 	GDEXTENSION_CLASS(EditorExportPlatform, RefCounted)
@@ -95,7 +93,7 @@ public:
 	int64_t ssh_run_on_remote_no_wait(const String &p_host, const String &p_port, const PackedStringArray &p_ssh_args, const String &p_cmd_args, int32_t p_port_fwd = -1) const;
 	Error ssh_push_to_remote(const String &p_host, const String &p_port, const PackedStringArray &p_scp_args, const String &p_src_file, const String &p_dst_file) const;
 	Dictionary get_internal_export_files(const Ref<EditorExportPreset> &p_preset, bool p_debug);
-	static PackedStringArray get_forced_export_files();
+	static PackedStringArray get_forced_export_files(const Ref<EditorExportPreset> &p_preset = nullptr);
 
 protected:
 	template <typename T, typename B>
@@ -111,4 +109,3 @@ public:
 VARIANT_ENUM_CAST(EditorExportPlatform::ExportMessageType);
 VARIANT_BITFIELD_CAST(EditorExportPlatform::DebugFlags);
 
-#endif // ! GODOT_CPP_EDITOR_EXPORT_PLATFORM_HPP

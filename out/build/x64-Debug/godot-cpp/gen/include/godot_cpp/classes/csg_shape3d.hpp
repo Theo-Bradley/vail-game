@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CSG_SHAPE3D_HPP
-#define GODOT_CPP_CSG_SHAPE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/geometry_instance3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -73,11 +72,11 @@ public:
 	bool get_collision_layer_value(int32_t p_layer_number) const;
 	void set_collision_priority(float p_priority);
 	float get_collision_priority() const;
+	Ref<ConcavePolygonShape3D> bake_collision_shape();
 	void set_calculate_tangents(bool p_enabled);
 	bool is_calculating_tangents() const;
 	Array get_meshes() const;
 	Ref<ArrayMesh> bake_static_mesh();
-	Ref<ConcavePolygonShape3D> bake_collision_shape();
 
 protected:
 	template <typename T, typename B>
@@ -92,4 +91,3 @@ public:
 
 VARIANT_ENUM_CAST(CSGShape3D::Operation);
 
-#endif // ! GODOT_CPP_CSG_SHAPE3D_HPP

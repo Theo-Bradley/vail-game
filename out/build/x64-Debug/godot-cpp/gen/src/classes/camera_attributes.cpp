@@ -48,7 +48,7 @@ void CameraAttributes::set_exposure_multiplier(float p_multiplier) {
 
 float CameraAttributes::get_exposure_multiplier() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributes::get_class_static()._native_ptr(), StringName("get_exposure_multiplier")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void CameraAttributes::set_exposure_sensitivity(float p_sensitivity) {
 
 float CameraAttributes::get_exposure_sensitivity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributes::get_class_static()._native_ptr(), StringName("get_exposure_sensitivity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void CameraAttributes::set_auto_exposure_enabled(bool p_enabled) {
 
 bool CameraAttributes::is_auto_exposure_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributes::get_class_static()._native_ptr(), StringName("is_auto_exposure_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void CameraAttributes::set_auto_exposure_speed(float p_exposure_speed) {
 
 float CameraAttributes::get_auto_exposure_speed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributes::get_class_static()._native_ptr(), StringName("get_auto_exposure_speed")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void CameraAttributes::set_auto_exposure_scale(float p_exposure_grey) {
 
 float CameraAttributes::get_auto_exposure_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributes::get_class_static()._native_ptr(), StringName("get_auto_exposure_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

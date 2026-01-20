@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_MOTION_RESULT_HPP
-#define GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_MOTION_RESULT_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_server3d_extension_motion_collision.hpp>
 
@@ -50,5 +49,3 @@ struct PhysicsServer3DExtensionMotionResult {
 GDVIRTUAL_NATIVE_PTR(PhysicsServer3DExtensionMotionResult);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_MOTION_RESULT_HPP

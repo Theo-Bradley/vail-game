@@ -49,7 +49,7 @@ void XRNode3D::set_tracker(const StringName &p_tracker_name) {
 
 StringName XRNode3D::get_tracker() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRNode3D::get_class_static()._native_ptr(), StringName("get_tracker")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -61,7 +61,7 @@ void XRNode3D::set_pose_name(const StringName &p_pose) {
 
 StringName XRNode3D::get_pose_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRNode3D::get_class_static()._native_ptr(), StringName("get_pose_name")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -75,25 +75,25 @@ void XRNode3D::set_show_when_tracked(bool p_show) {
 
 bool XRNode3D::get_show_when_tracked() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRNode3D::get_class_static()._native_ptr(), StringName("get_show_when_tracked")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool XRNode3D::get_is_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRNode3D::get_class_static()._native_ptr(), StringName("get_is_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool XRNode3D::get_has_tracking_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRNode3D::get_class_static()._native_ptr(), StringName("get_has_tracking_data")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Ref<XRPose> XRNode3D::get_pose() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRNode3D::get_class_static()._native_ptr(), StringName("get_pose")._native_ptr(), 2806551826);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<XRPose>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<XRPose>()));
 	return Ref<XRPose>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<XRPose>(_gde_method_bind, _owner));
 }
 

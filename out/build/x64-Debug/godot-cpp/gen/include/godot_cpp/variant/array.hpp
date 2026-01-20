@@ -30,10 +30,12 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ARRAY_HPP
-#define GODOT_CPP_ARRAY_HPP
+#pragma once
 
 #include <godot_cpp/core/defs.hpp>
+
+#include <godot_cpp/core/error_macros.hpp>
+#include <initializer_list>
 
 #include <godot_cpp/variant/array_helpers.hpp>
 
@@ -113,6 +115,7 @@ class Array {
 		GDExtensionPtrBuiltInMethod method_bsearch_custom;
 		GDExtensionPtrBuiltInMethod method_reverse;
 		GDExtensionPtrBuiltInMethod method_duplicate;
+		GDExtensionPtrBuiltInMethod method_duplicate_deep;
 		GDExtensionPtrBuiltInMethod method_slice;
 		GDExtensionPtrBuiltInMethod method_filter;
 		GDExtensionPtrBuiltInMethod method_map;
@@ -148,6 +151,9 @@ class Array {
 	static void _init_bindings_constructors_destructor();
 
 	Array(const Variant *p_variant);
+
+	const Variant *ptr() const;
+	Variant *ptrw();
 
 public:
 	_FORCE_INLINE_ GDExtensionTypePtr _native_ptr() const { return const_cast<uint8_t(*)[ARRAY_SIZE]>(&opaque); }
@@ -201,6 +207,7 @@ public:
 	int64_t bsearch_custom(const Variant &p_value, const Callable &p_func, bool p_before = true) const;
 	void reverse();
 	Array duplicate(bool p_deep = false) const;
+	Array duplicate_deep(int64_t p_deep_subresources_mode = 1) const;
 	Array slice(int64_t p_begin, int64_t p_end = 2147483647, int64_t p_step = 1, bool p_deep = false) const;
 	Array filter(const Callable &p_method) const;
 	Array map(const Callable &p_method) const;
@@ -235,9 +242,48 @@ public:
 	const Variant &operator[](int64_t p_index) const;
 	Variant &operator[](int64_t p_index);
 	void set_typed(uint32_t p_type, const StringName &p_class_name, const Variant &p_script);
-	void _ref(const Array &p_from) const;
+
+	struct Iterator {
+		_FORCE_INLINE_ Variant &operator*() const;
+		_FORCE_INLINE_ Variant *operator->() const;
+		_FORCE_INLINE_ Iterator &operator++();
+		_FORCE_INLINE_ Iterator &operator--();
+
+		_FORCE_INLINE_ bool operator==(const Iterator &b) const { return elem_ptr == b.elem_ptr; }
+		_FORCE_INLINE_ bool operator!=(const Iterator &b) const { return elem_ptr != b.elem_ptr; }
+
+		Iterator(Variant *p_ptr) { elem_ptr = p_ptr; }
+		Iterator() {}
+		Iterator(const Iterator &p_it) { elem_ptr = p_it.elem_ptr; }
+
+	private:
+		Variant *elem_ptr = nullptr;
+	};
+
+	struct ConstIterator {
+		_FORCE_INLINE_ const Variant &operator*() const;
+		_FORCE_INLINE_ const Variant *operator->() const;
+		_FORCE_INLINE_ ConstIterator &operator++();
+		_FORCE_INLINE_ ConstIterator &operator--();
+
+		_FORCE_INLINE_ bool operator==(const ConstIterator &b) const { return elem_ptr == b.elem_ptr; }
+		_FORCE_INLINE_ bool operator!=(const ConstIterator &b) const { return elem_ptr != b.elem_ptr; }
+
+		ConstIterator(const Variant *p_ptr) { elem_ptr = p_ptr; }
+		ConstIterator() {}
+		ConstIterator(const ConstIterator &p_it) { elem_ptr = p_it.elem_ptr; }
+
+	private:
+		const Variant *elem_ptr = nullptr;
+	};
+
+	_FORCE_INLINE_ Iterator begin();
+	_FORCE_INLINE_ Iterator end();
+
+	_FORCE_INLINE_ ConstIterator begin() const;
+	_FORCE_INLINE_ ConstIterator end() const;
+	
+	_FORCE_INLINE_ Array(std::initializer_list<Variant> p_init);
 };
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_ARRAY_HPP

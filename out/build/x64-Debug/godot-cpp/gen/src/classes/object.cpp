@@ -43,13 +43,13 @@ namespace godot {
 
 String Object::get_class() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_class")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 bool Object::is_class(const String &p_class) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("is_class")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_class);
 }
 
@@ -61,7 +61,7 @@ void Object::set(const StringName &p_property, const Variant &p_value) {
 
 Variant Object::get(const StringName &p_property) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get")._native_ptr(), 2760726917);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_property);
 }
 
@@ -73,31 +73,31 @@ void Object::set_indexed(const NodePath &p_property_path, const Variant &p_value
 
 Variant Object::get_indexed(const NodePath &p_property_path) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_indexed")._native_ptr(), 4006125091);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_property_path);
 }
 
 TypedArray<Dictionary> Object::get_property_list() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_property_list")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 
 TypedArray<Dictionary> Object::get_method_list() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_method_list")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 
 bool Object::property_can_revert(const StringName &p_property) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("property_can_revert")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_property);
 }
 
 Variant Object::property_get_revert(const StringName &p_property) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("property_get_revert")._native_ptr(), 2760726917);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_property);
 }
 
@@ -113,13 +113,13 @@ void Object::notification(int32_t p_what, bool p_reversed) {
 
 String Object::to_string() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("to_string")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 uint64_t Object::get_instance_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_instance_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
@@ -131,7 +131,7 @@ void Object::set_script(const Variant &p_script) {
 
 Variant Object::get_script() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_script")._native_ptr(), 1214101251);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner);
 }
 
@@ -149,19 +149,19 @@ void Object::remove_meta(const StringName &p_name) {
 
 Variant Object::get_meta(const StringName &p_name, const Variant &p_default) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_meta")._native_ptr(), 3990617847);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_name, &p_default);
 }
 
 bool Object::has_meta(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("has_meta")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
 TypedArray<StringName> Object::get_meta_list() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_meta_list")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<StringName>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<StringName>()));
 	return internal::_call_native_mb_ret<TypedArray<StringName>>(_gde_method_bind, _owner);
 }
 
@@ -173,7 +173,7 @@ void Object::add_user_signal(const String &p_signal, const Array &p_arguments) {
 
 bool Object::has_user_signal(const StringName &p_signal) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("has_user_signal")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_signal);
 }
 
@@ -185,7 +185,7 @@ void Object::remove_user_signal(const StringName &p_signal) {
 
 Error Object::emit_signal_internal(const Variant **p_args, GDExtensionInt p_arg_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("emit_signal")._native_ptr(), 4047867050);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	GDExtensionCallError error;
 	Variant ret;
 	internal::gdextension_interface_object_method_bind_call(_gde_method_bind, _owner, reinterpret_cast<GDExtensionConstVariantPtr *>(p_args), p_arg_count, &ret, &error);
@@ -194,7 +194,7 @@ Error Object::emit_signal_internal(const Variant **p_args, GDExtensionInt p_arg_
 
 Variant Object::call_internal(const Variant **p_args, GDExtensionInt p_arg_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("call")._native_ptr(), 3400424181);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	GDExtensionCallError error;
 	Variant ret;
 	internal::gdextension_interface_object_method_bind_call(_gde_method_bind, _owner, reinterpret_cast<GDExtensionConstVariantPtr *>(p_args), p_arg_count, &ret, &error);
@@ -203,7 +203,7 @@ Variant Object::call_internal(const Variant **p_args, GDExtensionInt p_arg_count
 
 Variant Object::call_deferred_internal(const Variant **p_args, GDExtensionInt p_arg_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("call_deferred")._native_ptr(), 3400424181);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	GDExtensionCallError error;
 	Variant ret;
 	internal::gdextension_interface_object_method_bind_call(_gde_method_bind, _owner, reinterpret_cast<GDExtensionConstVariantPtr *>(p_args), p_arg_count, &ret, &error);
@@ -218,49 +218,49 @@ void Object::set_deferred(const StringName &p_property, const Variant &p_value) 
 
 Variant Object::callv(const StringName &p_method, const Array &p_arg_array) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("callv")._native_ptr(), 1260104456);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_method, &p_arg_array);
 }
 
 bool Object::has_method(const StringName &p_method) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("has_method")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_method);
 }
 
 int32_t Object::get_method_argument_count(const StringName &p_method) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_method_argument_count")._native_ptr(), 2458036349);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_method);
 }
 
 bool Object::has_signal(const StringName &p_signal) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("has_signal")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_signal);
 }
 
 TypedArray<Dictionary> Object::get_signal_list() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_signal_list")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 
 TypedArray<Dictionary> Object::get_signal_connection_list(const StringName &p_signal) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_signal_connection_list")._native_ptr(), 3147814860);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner, &p_signal);
 }
 
 TypedArray<Dictionary> Object::get_incoming_connections() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_incoming_connections")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 
 Error Object::connect(const StringName &p_signal, const Callable &p_callable, uint32_t p_flags) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("connect")._native_ptr(), 1518946055);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_flags_encoded;
 	PtrToArg<int64_t>::encode(p_flags, &p_flags_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_signal, &p_callable, &p_flags_encoded);
@@ -274,13 +274,13 @@ void Object::disconnect(const StringName &p_signal, const Callable &p_callable) 
 
 bool Object::is_connected(const StringName &p_signal, const Callable &p_callable) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("is_connected")._native_ptr(), 768136979);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_signal, &p_callable);
 }
 
 bool Object::has_connections(const StringName &p_signal) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("has_connections")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_signal);
 }
 
@@ -294,7 +294,7 @@ void Object::set_block_signals(bool p_enable) {
 
 bool Object::is_blocking_signals() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("is_blocking_signals")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -314,19 +314,19 @@ void Object::set_message_translation(bool p_enable) {
 
 bool Object::can_translate_messages() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("can_translate_messages")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 String Object::tr(const StringName &p_message, const StringName &p_context) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("tr")._native_ptr(), 1195764410);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_message, &p_context);
 }
 
 String Object::tr_n(const StringName &p_message, const StringName &p_plural_message, int32_t p_n, const StringName &p_context) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("tr_n")._native_ptr(), 162698058);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_n_encoded;
 	PtrToArg<int64_t>::encode(p_n, &p_n_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_message, &p_plural_message, &p_n_encoded, &p_context);
@@ -334,7 +334,7 @@ String Object::tr_n(const StringName &p_message, const StringName &p_plural_mess
 
 StringName Object::get_translation_domain() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("get_translation_domain")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -346,7 +346,7 @@ void Object::set_translation_domain(const StringName &p_domain) {
 
 bool Object::is_queued_for_deletion() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Object::get_class_static()._native_ptr(), StringName("is_queued_for_deletion")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

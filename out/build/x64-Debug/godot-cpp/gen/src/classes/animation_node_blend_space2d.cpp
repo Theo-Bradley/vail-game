@@ -56,7 +56,7 @@ void AnimationNodeBlendSpace2D::set_blend_point_position(int32_t p_point, const 
 
 Vector2 AnimationNodeBlendSpace2D::get_blend_point_position(int32_t p_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_blend_point_position")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_point_encoded;
 	PtrToArg<int64_t>::encode(p_point, &p_point_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_point_encoded);
@@ -72,7 +72,7 @@ void AnimationNodeBlendSpace2D::set_blend_point_node(int32_t p_point, const Ref<
 
 Ref<AnimationRootNode> AnimationNodeBlendSpace2D::get_blend_point_node(int32_t p_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_blend_point_node")._native_ptr(), 665599029);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AnimationRootNode>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AnimationRootNode>()));
 	int64_t p_point_encoded;
 	PtrToArg<int64_t>::encode(p_point, &p_point_encoded);
 	return Ref<AnimationRootNode>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AnimationRootNode>(_gde_method_bind, _owner, &p_point_encoded));
@@ -88,7 +88,7 @@ void AnimationNodeBlendSpace2D::remove_blend_point(int32_t p_point) {
 
 int32_t AnimationNodeBlendSpace2D::get_blend_point_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_blend_point_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void AnimationNodeBlendSpace2D::add_triangle(int32_t p_x, int32_t p_y, int32_t p
 
 int32_t AnimationNodeBlendSpace2D::get_triangle_point(int32_t p_triangle, int32_t p_point) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_triangle_point")._native_ptr(), 50157827);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_triangle_encoded;
 	PtrToArg<int64_t>::encode(p_triangle, &p_triangle_encoded);
 	int64_t p_point_encoded;
@@ -126,7 +126,7 @@ void AnimationNodeBlendSpace2D::remove_triangle(int32_t p_triangle) {
 
 int32_t AnimationNodeBlendSpace2D::get_triangle_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_triangle_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -138,7 +138,7 @@ void AnimationNodeBlendSpace2D::set_min_space(const Vector2 &p_min_space) {
 
 Vector2 AnimationNodeBlendSpace2D::get_min_space() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_min_space")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -150,7 +150,7 @@ void AnimationNodeBlendSpace2D::set_max_space(const Vector2 &p_max_space) {
 
 Vector2 AnimationNodeBlendSpace2D::get_max_space() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_max_space")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -162,7 +162,7 @@ void AnimationNodeBlendSpace2D::set_snap(const Vector2 &p_snap) {
 
 Vector2 AnimationNodeBlendSpace2D::get_snap() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_snap")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void AnimationNodeBlendSpace2D::set_x_label(const String &p_text) {
 
 String AnimationNodeBlendSpace2D::get_x_label() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_x_label")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -186,7 +186,7 @@ void AnimationNodeBlendSpace2D::set_y_label(const String &p_text) {
 
 String AnimationNodeBlendSpace2D::get_y_label() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_y_label")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -200,7 +200,7 @@ void AnimationNodeBlendSpace2D::set_auto_triangles(bool p_enable) {
 
 bool AnimationNodeBlendSpace2D::get_auto_triangles() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_auto_triangles")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -214,7 +214,7 @@ void AnimationNodeBlendSpace2D::set_blend_mode(AnimationNodeBlendSpace2D::BlendM
 
 AnimationNodeBlendSpace2D::BlendMode AnimationNodeBlendSpace2D::get_blend_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("get_blend_mode")._native_ptr(), 1398433632);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AnimationNodeBlendSpace2D::BlendMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AnimationNodeBlendSpace2D::BlendMode(0)));
 	return (AnimationNodeBlendSpace2D::BlendMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -228,7 +228,7 @@ void AnimationNodeBlendSpace2D::set_use_sync(bool p_enable) {
 
 bool AnimationNodeBlendSpace2D::is_using_sync() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeBlendSpace2D::get_class_static()._native_ptr(), StringName("is_using_sync")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

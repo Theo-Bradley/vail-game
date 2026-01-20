@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_INTERFACE_HPP
-#define GODOT_CPP_EDITOR_INTERFACE_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/node.hpp>
@@ -90,7 +89,7 @@ public:
 	Ref<EditorSettings> get_editor_settings() const;
 	EditorToaster *get_editor_toaster() const;
 	EditorUndoRedoManager *get_editor_undo_redo() const;
-	TypedArray<Texture2D> make_mesh_previews(const TypedArray<Mesh> &p_meshes, int32_t p_preview_size);
+	TypedArray<Ref<Texture2D>> make_mesh_previews(const TypedArray<Ref<Mesh>> &p_meshes, int32_t p_preview_size);
 	void set_plugin_enabled(const String &p_plugin, bool p_enabled);
 	bool is_plugin_enabled(const String &p_plugin) const;
 	Ref<Theme> get_editor_theme() const;
@@ -128,10 +127,12 @@ public:
 	void open_scene_from_path(const String &p_scene_filepath, bool p_set_inherited = false);
 	void reload_scene_from_path(const String &p_scene_filepath);
 	PackedStringArray get_open_scenes() const;
+	TypedArray<Node> get_open_scene_roots() const;
 	Node *get_edited_scene_root() const;
 	Error save_scene();
 	void save_scene_as(const String &p_path, bool p_with_preview = true);
 	void save_all_scenes();
+	Error close_scene();
 	void mark_scene_as_unsaved();
 	void play_main_scene();
 	void play_current_scene();
@@ -155,4 +156,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_INTERFACE_HPP

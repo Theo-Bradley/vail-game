@@ -30,12 +30,12 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NAVIGATION_PATH_QUERY_PARAMETERS3D_HPP
-#define GODOT_CPP_NAVIGATION_PATH_QUERY_PARAMETERS3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
 #include <godot_cpp/variant/rid.hpp>
+#include <godot_cpp/variant/typed_array.hpp>
 #include <godot_cpp/variant/vector3.hpp>
 
 #include <godot_cpp/core/class_db.hpp>
@@ -84,6 +84,18 @@ public:
 	bool get_simplify_path() const;
 	void set_simplify_epsilon(float p_epsilon);
 	float get_simplify_epsilon() const;
+	void set_included_regions(const TypedArray<RID> &p_regions);
+	TypedArray<RID> get_included_regions() const;
+	void set_excluded_regions(const TypedArray<RID> &p_regions);
+	TypedArray<RID> get_excluded_regions() const;
+	void set_path_return_max_length(float p_length);
+	float get_path_return_max_length() const;
+	void set_path_return_max_radius(float p_radius);
+	float get_path_return_max_radius() const;
+	void set_path_search_max_polygons(int32_t p_max_polygons);
+	int32_t get_path_search_max_polygons() const;
+	void set_path_search_max_distance(float p_distance);
+	float get_path_search_max_distance() const;
 
 protected:
 	template <typename T, typename B>
@@ -100,4 +112,3 @@ VARIANT_ENUM_CAST(NavigationPathQueryParameters3D::PathfindingAlgorithm);
 VARIANT_ENUM_CAST(NavigationPathQueryParameters3D::PathPostProcessing);
 VARIANT_BITFIELD_CAST(NavigationPathQueryParameters3D::PathMetadataFlags);
 
-#endif // ! GODOT_CPP_NAVIGATION_PATH_QUERY_PARAMETERS3D_HPP

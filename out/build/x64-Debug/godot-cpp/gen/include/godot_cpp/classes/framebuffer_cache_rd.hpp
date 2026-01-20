@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_FRAMEBUFFER_CACHE_RD_HPP
-#define GODOT_CPP_FRAMEBUFFER_CACHE_RD_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/rid.hpp>
@@ -49,7 +48,7 @@ class FramebufferCacheRD : public Object {
 	GDEXTENSION_CLASS(FramebufferCacheRD, Object)
 
 public:
-	static RID get_cache_multipass(const TypedArray<RID> &p_textures, const TypedArray<RDFramebufferPass> &p_passes, uint32_t p_views);
+	static RID get_cache_multipass(const TypedArray<RID> &p_textures, const TypedArray<Ref<RDFramebufferPass>> &p_passes, uint32_t p_views);
 
 protected:
 	template <typename T, typename B>
@@ -62,4 +61,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_FRAMEBUFFER_CACHE_RD_HPP

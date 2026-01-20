@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_STREAM_WAV_HPP
-#define GODOT_CPP_AUDIO_STREAM_WAV_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_stream.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -81,6 +80,8 @@ public:
 	int32_t get_mix_rate() const;
 	void set_stereo(bool p_stereo);
 	bool is_stereo() const;
+	void set_tags(const Dictionary &p_tags);
+	Dictionary get_tags() const;
 	Error save_to_wav(const String &p_path);
 
 protected:
@@ -97,4 +98,3 @@ public:
 VARIANT_ENUM_CAST(AudioStreamWAV::Format);
 VARIANT_ENUM_CAST(AudioStreamWAV::LoopMode);
 
-#endif // ! GODOT_CPP_AUDIO_STREAM_WAV_HPP

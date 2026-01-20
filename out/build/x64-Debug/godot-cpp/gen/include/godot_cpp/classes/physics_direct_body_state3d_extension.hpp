@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_DIRECT_BODY_STATE3D_EXTENSION_HPP
-#define GODOT_CPP_PHYSICS_DIRECT_BODY_STATE3D_EXTENSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_direct_body_state3d.hpp>
 #include <godot_cpp/variant/basis.hpp>
@@ -83,6 +82,10 @@ public:
 	virtual Vector3 _get_constant_torque() const;
 	virtual void _set_sleep_state(bool p_enabled);
 	virtual bool _is_sleeping() const;
+	virtual void _set_collision_layer(uint32_t p_layer);
+	virtual uint32_t _get_collision_layer() const;
+	virtual void _set_collision_mask(uint32_t p_mask);
+	virtual uint32_t _get_collision_mask() const;
 	virtual int32_t _get_contact_count() const;
 	virtual Vector3 _get_contact_local_position(int32_t p_contact_idx) const;
 	virtual Vector3 _get_contact_local_normal(int32_t p_contact_idx) const;
@@ -196,6 +199,18 @@ protected:
 		if constexpr (!std::is_same_v<decltype(&B::_is_sleeping), decltype(&T::_is_sleeping)>) {
 			BIND_VIRTUAL_METHOD(T, _is_sleeping, 36873697);
 		}
+		if constexpr (!std::is_same_v<decltype(&B::_set_collision_layer), decltype(&T::_set_collision_layer)>) {
+			BIND_VIRTUAL_METHOD(T, _set_collision_layer, 1286410249);
+		}
+		if constexpr (!std::is_same_v<decltype(&B::_get_collision_layer), decltype(&T::_get_collision_layer)>) {
+			BIND_VIRTUAL_METHOD(T, _get_collision_layer, 3905245786);
+		}
+		if constexpr (!std::is_same_v<decltype(&B::_set_collision_mask), decltype(&T::_set_collision_mask)>) {
+			BIND_VIRTUAL_METHOD(T, _set_collision_mask, 1286410249);
+		}
+		if constexpr (!std::is_same_v<decltype(&B::_get_collision_mask), decltype(&T::_get_collision_mask)>) {
+			BIND_VIRTUAL_METHOD(T, _get_collision_mask, 3905245786);
+		}
 		if constexpr (!std::is_same_v<decltype(&B::_get_contact_count), decltype(&T::_get_contact_count)>) {
 			BIND_VIRTUAL_METHOD(T, _get_contact_count, 3905245786);
 		}
@@ -248,4 +263,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PHYSICS_DIRECT_BODY_STATE3D_EXTENSION_HPP

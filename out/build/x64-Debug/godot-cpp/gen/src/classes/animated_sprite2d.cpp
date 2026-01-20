@@ -48,7 +48,7 @@ void AnimatedSprite2D::set_sprite_frames(const Ref<SpriteFrames> &p_sprite_frame
 
 Ref<SpriteFrames> AnimatedSprite2D::get_sprite_frames() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("get_sprite_frames")._native_ptr(), 3804851214);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<SpriteFrames>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<SpriteFrames>()));
 	return Ref<SpriteFrames>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<SpriteFrames>(_gde_method_bind, _owner));
 }
 
@@ -60,7 +60,7 @@ void AnimatedSprite2D::set_animation(const StringName &p_name) {
 
 StringName AnimatedSprite2D::get_animation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("get_animation")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -72,13 +72,13 @@ void AnimatedSprite2D::set_autoplay(const String &p_name) {
 
 String AnimatedSprite2D::get_autoplay() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("get_autoplay")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 bool AnimatedSprite2D::is_playing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("is_playing")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -120,7 +120,7 @@ void AnimatedSprite2D::set_centered(bool p_centered) {
 
 bool AnimatedSprite2D::is_centered() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("is_centered")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void AnimatedSprite2D::set_offset(const Vector2 &p_offset) {
 
 Vector2 AnimatedSprite2D::get_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("get_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void AnimatedSprite2D::set_flip_h(bool p_flip_h) {
 
 bool AnimatedSprite2D::is_flipped_h() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("is_flipped_h")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void AnimatedSprite2D::set_flip_v(bool p_flip_v) {
 
 bool AnimatedSprite2D::is_flipped_v() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("is_flipped_v")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void AnimatedSprite2D::set_frame(int32_t p_frame) {
 
 int32_t AnimatedSprite2D::get_frame() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("get_frame")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +188,7 @@ void AnimatedSprite2D::set_frame_progress(float p_progress) {
 
 float AnimatedSprite2D::get_frame_progress() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("get_frame_progress")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -212,13 +212,13 @@ void AnimatedSprite2D::set_speed_scale(float p_speed_scale) {
 
 float AnimatedSprite2D::get_speed_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("get_speed_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float AnimatedSprite2D::get_playing_speed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimatedSprite2D::get_class_static()._native_ptr(), StringName("get_playing_speed")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

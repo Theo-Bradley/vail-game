@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_SCRIPT_PICKER_HPP
-#define GODOT_CPP_EDITOR_SCRIPT_PICKER_HPP
+#pragma once
 
 #include <godot_cpp/classes/editor_resource_picker.hpp>
 
@@ -61,4 +60,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_SCRIPT_PICKER_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RETARGET_MODIFIER3D_HPP
-#define GODOT_CPP_RETARGET_MODIFIER3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/skeleton_modifier3d.hpp>
@@ -81,4 +80,3 @@ public:
 
 VARIANT_BITFIELD_CAST(RetargetModifier3D::TransformFlag);
 
-#endif // ! GODOT_CPP_RETARGET_MODIFIER3D_HPP

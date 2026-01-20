@@ -48,7 +48,7 @@ void TextureProgressBar::set_under_texture(const Ref<Texture2D> &p_tex) {
 
 Ref<Texture2D> TextureProgressBar::get_under_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_under_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -60,7 +60,7 @@ void TextureProgressBar::set_progress_texture(const Ref<Texture2D> &p_tex) {
 
 Ref<Texture2D> TextureProgressBar::get_progress_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_progress_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -72,7 +72,7 @@ void TextureProgressBar::set_over_texture(const Ref<Texture2D> &p_tex) {
 
 Ref<Texture2D> TextureProgressBar::get_over_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_over_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -86,7 +86,7 @@ void TextureProgressBar::set_fill_mode(int32_t p_mode) {
 
 int32_t TextureProgressBar::get_fill_mode() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_fill_mode")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void TextureProgressBar::set_tint_under(const Color &p_tint) {
 
 Color TextureProgressBar::get_tint_under() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_tint_under")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -110,7 +110,7 @@ void TextureProgressBar::set_tint_progress(const Color &p_tint) {
 
 Color TextureProgressBar::get_tint_progress() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_tint_progress")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -122,7 +122,7 @@ void TextureProgressBar::set_tint_over(const Color &p_tint) {
 
 Color TextureProgressBar::get_tint_over() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_tint_over")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -134,7 +134,7 @@ void TextureProgressBar::set_texture_progress_offset(const Vector2 &p_offset) {
 
 Vector2 TextureProgressBar::get_texture_progress_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_texture_progress_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -148,7 +148,7 @@ void TextureProgressBar::set_radial_initial_angle(float p_mode) {
 
 float TextureProgressBar::get_radial_initial_angle() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_radial_initial_angle")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void TextureProgressBar::set_radial_center_offset(const Vector2 &p_mode) {
 
 Vector2 TextureProgressBar::get_radial_center_offset() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_radial_center_offset")._native_ptr(), 1497962370);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void TextureProgressBar::set_fill_degrees(float p_mode) {
 
 float TextureProgressBar::get_fill_degrees() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_fill_degrees")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -190,7 +190,7 @@ void TextureProgressBar::set_stretch_margin(Side p_margin, int32_t p_value) {
 
 int32_t TextureProgressBar::get_stretch_margin(Side p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_stretch_margin")._native_ptr(), 1983885014);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_margin_encoded;
 	PtrToArg<int64_t>::encode(p_margin, &p_margin_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_margin_encoded);
@@ -206,7 +206,7 @@ void TextureProgressBar::set_nine_patch_stretch(bool p_stretch) {
 
 bool TextureProgressBar::get_nine_patch_stretch() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TextureProgressBar::get_class_static()._native_ptr(), StringName("get_nine_patch_stretch")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

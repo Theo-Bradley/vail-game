@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_JSONRPC_HPP
-#define GODOT_CPP_JSONRPC_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/dictionary.hpp>
@@ -43,6 +42,8 @@
 #include <type_traits>
 
 namespace godot {
+
+class Callable;
 
 class JSONRPC : public Object {
 	GDEXTENSION_CLASS(JSONRPC, Object)
@@ -56,7 +57,7 @@ public:
 		INTERNAL_ERROR = -32603,
 	};
 
-	void set_scope(const String &p_scope, Object *p_target);
+	void set_method(const String &p_name, const Callable &p_callback);
 	Variant process_action(const Variant &p_action, bool p_recurse = false);
 	String process_string(const String &p_action);
 	Dictionary make_request(const String &p_method, const Variant &p_params, const Variant &p_id);
@@ -77,4 +78,3 @@ public:
 
 VARIANT_ENUM_CAST(JSONRPC::ErrorCode);
 
-#endif // ! GODOT_CPP_JSONRPC_HPP

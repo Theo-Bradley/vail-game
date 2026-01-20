@@ -59,7 +59,7 @@ void ShapeCast3D::set_enabled(bool p_enabled) {
 
 bool ShapeCast3D::is_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("is_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -71,7 +71,7 @@ void ShapeCast3D::set_shape(const Ref<Shape3D> &p_shape) {
 
 Ref<Shape3D> ShapeCast3D::get_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_shape")._native_ptr(), 3214262478);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Shape3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Shape3D>()));
 	return Ref<Shape3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Shape3D>(_gde_method_bind, _owner));
 }
 
@@ -83,7 +83,7 @@ void ShapeCast3D::set_target_position(const Vector3 &p_local_point) {
 
 Vector3 ShapeCast3D::get_target_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_target_position")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -97,7 +97,7 @@ void ShapeCast3D::set_margin(float p_margin) {
 
 float ShapeCast3D::get_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -111,19 +111,19 @@ void ShapeCast3D::set_max_results(int32_t p_max_results) {
 
 int32_t ShapeCast3D::get_max_results() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_max_results")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool ShapeCast3D::is_colliding() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("is_colliding")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t ShapeCast3D::get_collision_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collision_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -135,7 +135,7 @@ void ShapeCast3D::force_shapecast_update() {
 
 Object *ShapeCast3D::get_collider(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collider")._native_ptr(), 3332903315);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret_obj<Object>(_gde_method_bind, _owner, &p_index_encoded);
@@ -143,7 +143,7 @@ Object *ShapeCast3D::get_collider(int32_t p_index) const {
 
 RID ShapeCast3D::get_collider_rid(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collider_rid")._native_ptr(), 495598643);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_index_encoded);
@@ -151,7 +151,7 @@ RID ShapeCast3D::get_collider_rid(int32_t p_index) const {
 
 int32_t ShapeCast3D::get_collider_shape(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collider_shape")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -159,7 +159,7 @@ int32_t ShapeCast3D::get_collider_shape(int32_t p_index) const {
 
 Vector3 ShapeCast3D::get_collision_point(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collision_point")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_index_encoded);
@@ -167,7 +167,7 @@ Vector3 ShapeCast3D::get_collision_point(int32_t p_index) const {
 
 Vector3 ShapeCast3D::get_collision_normal(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collision_normal")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_index_encoded);
@@ -175,13 +175,13 @@ Vector3 ShapeCast3D::get_collision_normal(int32_t p_index) const {
 
 float ShapeCast3D::get_closest_collision_safe_fraction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_closest_collision_safe_fraction")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float ShapeCast3D::get_closest_collision_unsafe_fraction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_closest_collision_unsafe_fraction")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -225,7 +225,7 @@ void ShapeCast3D::set_collision_mask(uint32_t p_mask) {
 
 uint32_t ShapeCast3D::get_collision_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collision_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -241,7 +241,7 @@ void ShapeCast3D::set_collision_mask_value(int32_t p_layer_number, bool p_value)
 
 bool ShapeCast3D::get_collision_mask_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collision_mask_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -257,7 +257,7 @@ void ShapeCast3D::set_exclude_parent_body(bool p_mask) {
 
 bool ShapeCast3D::get_exclude_parent_body() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_exclude_parent_body")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -271,7 +271,7 @@ void ShapeCast3D::set_collide_with_areas(bool p_enable) {
 
 bool ShapeCast3D::is_collide_with_areas_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("is_collide_with_areas_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -285,13 +285,13 @@ void ShapeCast3D::set_collide_with_bodies(bool p_enable) {
 
 bool ShapeCast3D::is_collide_with_bodies_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("is_collide_with_bodies_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Array ShapeCast3D::get_collision_result() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_collision_result")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
@@ -303,7 +303,7 @@ void ShapeCast3D::set_debug_shape_custom_color(const Color &p_debug_shape_custom
 
 Color ShapeCast3D::get_debug_shape_custom_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ShapeCast3D::get_class_static()._native_ptr(), StringName("get_debug_shape_custom_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 

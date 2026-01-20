@@ -48,7 +48,7 @@ void CodeEdit::set_indent_size(int32_t p_size) {
 
 int32_t CodeEdit::get_indent_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_indent_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void CodeEdit::set_indent_using_spaces(bool p_use_spaces) {
 
 bool CodeEdit::is_indent_using_spaces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_indent_using_spaces")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void CodeEdit::set_auto_indent_enabled(bool p_enable) {
 
 bool CodeEdit::is_auto_indent_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_auto_indent_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void CodeEdit::set_auto_indent_prefixes(const TypedArray<String> &p_prefixes) {
 
 TypedArray<String> CodeEdit::get_auto_indent_prefixes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_auto_indent_prefixes")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<String>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<String>()));
 	return internal::_call_native_mb_ret<TypedArray<String>>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void CodeEdit::set_auto_brace_completion_enabled(bool p_enable) {
 
 bool CodeEdit::is_auto_brace_completion_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_auto_brace_completion_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void CodeEdit::set_highlight_matching_braces_enabled(bool p_enable) {
 
 bool CodeEdit::is_highlight_matching_braces_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_highlight_matching_braces_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -162,25 +162,25 @@ void CodeEdit::set_auto_brace_completion_pairs(const Dictionary &p_pairs) {
 
 Dictionary CodeEdit::get_auto_brace_completion_pairs() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_auto_brace_completion_pairs")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
 bool CodeEdit::has_auto_brace_completion_open_key(const String &p_open_key) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("has_auto_brace_completion_open_key")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_open_key);
 }
 
 bool CodeEdit::has_auto_brace_completion_close_key(const String &p_close_key) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("has_auto_brace_completion_close_key")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_close_key);
 }
 
 String CodeEdit::get_auto_brace_completion_close_key(const String &p_open_key) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_auto_brace_completion_close_key")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_open_key);
 }
 
@@ -194,7 +194,7 @@ void CodeEdit::set_draw_breakpoints_gutter(bool p_enable) {
 
 bool CodeEdit::is_drawing_breakpoints_gutter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_drawing_breakpoints_gutter")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -208,7 +208,7 @@ void CodeEdit::set_draw_bookmarks_gutter(bool p_enable) {
 
 bool CodeEdit::is_drawing_bookmarks_gutter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_drawing_bookmarks_gutter")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -222,7 +222,7 @@ void CodeEdit::set_draw_executing_lines_gutter(bool p_enable) {
 
 bool CodeEdit::is_drawing_executing_lines_gutter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_drawing_executing_lines_gutter")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -238,7 +238,7 @@ void CodeEdit::set_line_as_breakpoint(int32_t p_line, bool p_breakpointed) {
 
 bool CodeEdit::is_line_breakpointed(int32_t p_line) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_line_breakpointed")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_line_encoded);
@@ -252,7 +252,7 @@ void CodeEdit::clear_breakpointed_lines() {
 
 PackedInt32Array CodeEdit::get_breakpointed_lines() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_breakpointed_lines")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -268,7 +268,7 @@ void CodeEdit::set_line_as_bookmarked(int32_t p_line, bool p_bookmarked) {
 
 bool CodeEdit::is_line_bookmarked(int32_t p_line) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_line_bookmarked")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_line_encoded);
@@ -282,7 +282,7 @@ void CodeEdit::clear_bookmarked_lines() {
 
 PackedInt32Array CodeEdit::get_bookmarked_lines() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_bookmarked_lines")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -298,7 +298,7 @@ void CodeEdit::set_line_as_executing(int32_t p_line, bool p_executing) {
 
 bool CodeEdit::is_line_executing(int32_t p_line) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_line_executing")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_line_encoded);
@@ -312,7 +312,7 @@ void CodeEdit::clear_executing_lines() {
 
 PackedInt32Array CodeEdit::get_executing_lines() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_executing_lines")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -326,7 +326,7 @@ void CodeEdit::set_draw_line_numbers(bool p_enable) {
 
 bool CodeEdit::is_draw_line_numbers_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_draw_line_numbers_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -340,7 +340,7 @@ void CodeEdit::set_line_numbers_zero_padded(bool p_enable) {
 
 bool CodeEdit::is_line_numbers_zero_padded() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_line_numbers_zero_padded")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -354,7 +354,7 @@ void CodeEdit::set_draw_fold_gutter(bool p_enable) {
 
 bool CodeEdit::is_drawing_fold_gutter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_drawing_fold_gutter")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -368,13 +368,13 @@ void CodeEdit::set_line_folding_enabled(bool p_enabled) {
 
 bool CodeEdit::is_line_folding_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_line_folding_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool CodeEdit::can_fold_line(int32_t p_line) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("can_fold_line")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_line_encoded);
@@ -424,7 +424,7 @@ void CodeEdit::toggle_foldable_lines_at_carets() {
 
 bool CodeEdit::is_line_folded(int32_t p_line) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_line_folded")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_line_encoded);
@@ -432,7 +432,7 @@ bool CodeEdit::is_line_folded(int32_t p_line) const {
 
 TypedArray<int> CodeEdit::get_folded_lines() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_folded_lines")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<int>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<int>()));
 	return internal::_call_native_mb_ret<TypedArray<int>>(_gde_method_bind, _owner);
 }
 
@@ -444,13 +444,13 @@ void CodeEdit::create_code_region() {
 
 String CodeEdit::get_code_region_start_tag() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_code_region_start_tag")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String CodeEdit::get_code_region_end_tag() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_code_region_end_tag")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -462,7 +462,7 @@ void CodeEdit::set_code_region_tags(const String &p_start, const String &p_end) 
 
 bool CodeEdit::is_line_code_region_start(int32_t p_line) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_line_code_region_start")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_line_encoded);
@@ -470,7 +470,7 @@ bool CodeEdit::is_line_code_region_start(int32_t p_line) const {
 
 bool CodeEdit::is_line_code_region_end(int32_t p_line) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_line_code_region_end")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_line_encoded);
@@ -492,7 +492,7 @@ void CodeEdit::remove_string_delimiter(const String &p_start_key) {
 
 bool CodeEdit::has_string_delimiter(const String &p_start_key) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("has_string_delimiter")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_start_key);
 }
 
@@ -510,13 +510,13 @@ void CodeEdit::clear_string_delimiters() {
 
 TypedArray<String> CodeEdit::get_string_delimiters() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_string_delimiters")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<String>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<String>()));
 	return internal::_call_native_mb_ret<TypedArray<String>>(_gde_method_bind, _owner);
 }
 
 int32_t CodeEdit::is_in_string(int32_t p_line, int32_t p_column) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_in_string")._native_ptr(), 688195400);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	int64_t p_column_encoded;
@@ -540,7 +540,7 @@ void CodeEdit::remove_comment_delimiter(const String &p_start_key) {
 
 bool CodeEdit::has_comment_delimiter(const String &p_start_key) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("has_comment_delimiter")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_start_key);
 }
 
@@ -558,13 +558,13 @@ void CodeEdit::clear_comment_delimiters() {
 
 TypedArray<String> CodeEdit::get_comment_delimiters() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_comment_delimiters")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<String>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<String>()));
 	return internal::_call_native_mb_ret<TypedArray<String>>(_gde_method_bind, _owner);
 }
 
 int32_t CodeEdit::is_in_comment(int32_t p_line, int32_t p_column) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_in_comment")._native_ptr(), 688195400);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	int64_t p_column_encoded;
@@ -574,7 +574,7 @@ int32_t CodeEdit::is_in_comment(int32_t p_line, int32_t p_column) const {
 
 String CodeEdit::get_delimiter_start_key(int32_t p_delimiter_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_delimiter_start_key")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_delimiter_index_encoded;
 	PtrToArg<int64_t>::encode(p_delimiter_index, &p_delimiter_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_delimiter_index_encoded);
@@ -582,7 +582,7 @@ String CodeEdit::get_delimiter_start_key(int32_t p_delimiter_index) const {
 
 String CodeEdit::get_delimiter_end_key(int32_t p_delimiter_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_delimiter_end_key")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_delimiter_index_encoded;
 	PtrToArg<int64_t>::encode(p_delimiter_index, &p_delimiter_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_delimiter_index_encoded);
@@ -590,7 +590,7 @@ String CodeEdit::get_delimiter_end_key(int32_t p_delimiter_index) const {
 
 Vector2 CodeEdit::get_delimiter_start_position(int32_t p_line, int32_t p_column) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_delimiter_start_position")._native_ptr(), 3016396712);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	int64_t p_column_encoded;
@@ -600,7 +600,7 @@ Vector2 CodeEdit::get_delimiter_start_position(int32_t p_line, int32_t p_column)
 
 Vector2 CodeEdit::get_delimiter_end_position(int32_t p_line, int32_t p_column) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_delimiter_end_position")._native_ptr(), 3016396712);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	int64_t p_column_encoded;
@@ -624,7 +624,7 @@ void CodeEdit::set_code_hint_draw_below(bool p_draw_below) {
 
 String CodeEdit::get_text_for_code_completion() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_text_for_code_completion")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -656,13 +656,13 @@ void CodeEdit::update_code_completion_options(bool p_force) {
 
 TypedArray<Dictionary> CodeEdit::get_code_completion_options() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_code_completion_options")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 
 Dictionary CodeEdit::get_code_completion_option(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_code_completion_option")._native_ptr(), 3485342025);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_index_encoded);
@@ -670,7 +670,7 @@ Dictionary CodeEdit::get_code_completion_option(int32_t p_index) const {
 
 int32_t CodeEdit::get_code_completion_selected_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_code_completion_selected_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -706,7 +706,7 @@ void CodeEdit::set_code_completion_enabled(bool p_enable) {
 
 bool CodeEdit::is_code_completion_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_code_completion_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -718,7 +718,7 @@ void CodeEdit::set_code_completion_prefixes(const TypedArray<String> &p_prefixes
 
 TypedArray<String> CodeEdit::get_code_completion_prefixes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_code_completion_prefixes")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<String>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<String>()));
 	return internal::_call_native_mb_ret<TypedArray<String>>(_gde_method_bind, _owner);
 }
 
@@ -730,7 +730,7 @@ void CodeEdit::set_line_length_guidelines(const TypedArray<int> &p_guideline_col
 
 TypedArray<int> CodeEdit::get_line_length_guidelines() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_line_length_guidelines")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<int>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<int>()));
 	return internal::_call_native_mb_ret<TypedArray<int>>(_gde_method_bind, _owner);
 }
 
@@ -744,19 +744,19 @@ void CodeEdit::set_symbol_lookup_on_click_enabled(bool p_enable) {
 
 bool CodeEdit::is_symbol_lookup_on_click_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_symbol_lookup_on_click_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 String CodeEdit::get_text_for_symbol_lookup() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_text_for_symbol_lookup")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String CodeEdit::get_text_with_cursor_char(int32_t p_line, int32_t p_column) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("get_text_with_cursor_char")._native_ptr(), 1391810591);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_line_encoded;
 	PtrToArg<int64_t>::encode(p_line, &p_line_encoded);
 	int64_t p_column_encoded;
@@ -782,7 +782,7 @@ void CodeEdit::set_symbol_tooltip_on_hover_enabled(bool p_enable) {
 
 bool CodeEdit::is_symbol_tooltip_on_hover_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CodeEdit::get_class_static()._native_ptr(), StringName("is_symbol_tooltip_on_hover_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

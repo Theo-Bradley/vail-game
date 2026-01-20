@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NODE3D_HPP
-#define GODOT_CPP_NODE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/node.hpp>
@@ -109,7 +108,7 @@ public:
 	NodePath get_visibility_parent() const;
 	void update_gizmos();
 	void add_gizmo(const Ref<Node3DGizmo> &p_gizmo);
-	TypedArray<Node3DGizmo> get_gizmos() const;
+	TypedArray<Ref<Node3DGizmo>> get_gizmos() const;
 	void clear_gizmos();
 	void set_subgizmo_selection(const Ref<Node3DGizmo> &p_gizmo, int32_t p_id, const Transform3D &p_transform);
 	void clear_subgizmo_selection();
@@ -153,4 +152,3 @@ public:
 
 VARIANT_ENUM_CAST(Node3D::RotationEditMode);
 
-#endif // ! GODOT_CPP_NODE3D_HPP

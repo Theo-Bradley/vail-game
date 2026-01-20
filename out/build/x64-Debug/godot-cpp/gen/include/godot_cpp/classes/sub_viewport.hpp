@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SUB_VIEWPORT_HPP
-#define GODOT_CPP_SUB_VIEWPORT_HPP
+#pragma once
 
 #include <godot_cpp/classes/viewport.hpp>
 #include <godot_cpp/variant/vector2i.hpp>
@@ -85,4 +84,3 @@ public:
 VARIANT_ENUM_CAST(SubViewport::ClearMode);
 VARIANT_ENUM_CAST(SubViewport::UpdateMode);
 
-#endif // ! GODOT_CPP_SUB_VIEWPORT_HPP

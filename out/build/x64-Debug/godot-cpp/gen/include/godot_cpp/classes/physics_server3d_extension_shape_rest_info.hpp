@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_SHAPE_REST_INFO_HPP
-#define GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_SHAPE_REST_INFO_HPP
+#pragma once
 
 #include <godot_cpp/variant/rid.hpp>
 
@@ -49,5 +48,3 @@ struct PhysicsServer3DExtensionShapeRestInfo {
 GDVIRTUAL_NATIVE_PTR(PhysicsServer3DExtensionShapeRestInfo);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_PHYSICS_SERVER3D_EXTENSION_SHAPE_REST_INFO_HPP

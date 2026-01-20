@@ -42,13 +42,13 @@ namespace godot {
 
 bool AnimationNodeExtension::is_looping(const PackedFloat32Array &p_node_info) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeExtension::get_class_static()._native_ptr(), StringName("is_looping")._native_ptr(), 2035584311);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, nullptr, &p_node_info);
 }
 
 double AnimationNodeExtension::get_remaining_time(const PackedFloat32Array &p_node_info, bool p_break_loop) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeExtension::get_class_static()._native_ptr(), StringName("get_remaining_time")._native_ptr(), 2851904656);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int8_t p_break_loop_encoded;
 	PtrToArg<bool>::encode(p_break_loop, &p_break_loop_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, nullptr, &p_node_info, &p_break_loop_encoded);

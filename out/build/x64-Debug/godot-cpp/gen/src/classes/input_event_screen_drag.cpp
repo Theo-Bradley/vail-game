@@ -48,7 +48,7 @@ void InputEventScreenDrag::set_index(int32_t p_index) {
 
 int32_t InputEventScreenDrag::get_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void InputEventScreenDrag::set_tilt(const Vector2 &p_tilt) {
 
 Vector2 InputEventScreenDrag::get_tilt() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_tilt")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void InputEventScreenDrag::set_pressure(float p_pressure) {
 
 float InputEventScreenDrag::get_pressure() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_pressure")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void InputEventScreenDrag::set_pen_inverted(bool p_pen_inverted) {
 
 bool InputEventScreenDrag::get_pen_inverted() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_pen_inverted")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -100,7 +100,7 @@ void InputEventScreenDrag::set_position(const Vector2 &p_position) {
 
 Vector2 InputEventScreenDrag::get_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -112,7 +112,7 @@ void InputEventScreenDrag::set_relative(const Vector2 &p_relative) {
 
 Vector2 InputEventScreenDrag::get_relative() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_relative")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -124,7 +124,7 @@ void InputEventScreenDrag::set_screen_relative(const Vector2 &p_relative) {
 
 Vector2 InputEventScreenDrag::get_screen_relative() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_screen_relative")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -136,7 +136,7 @@ void InputEventScreenDrag::set_velocity(const Vector2 &p_velocity) {
 
 Vector2 InputEventScreenDrag::get_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_velocity")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -148,7 +148,7 @@ void InputEventScreenDrag::set_screen_velocity(const Vector2 &p_velocity) {
 
 Vector2 InputEventScreenDrag::get_screen_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventScreenDrag::get_class_static()._native_ptr(), StringName("get_screen_velocity")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 

@@ -69,13 +69,21 @@ ResourceSaver::~ResourceSaver() {
 
 Error ResourceSaver::save(const Ref<Resource> &p_resource, const String &p_path, BitField<ResourceSaver::SaverFlags> p_flags) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceSaver::get_class_static()._native_ptr(), StringName("save")._native_ptr(), 2983274697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_resource != nullptr ? &p_resource->_owner : nullptr), &p_path, &p_flags);
+}
+
+Error ResourceSaver::set_uid(const String &p_resource, int64_t p_uid) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceSaver::get_class_static()._native_ptr(), StringName("set_uid")._native_ptr(), 993915709);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
+	int64_t p_uid_encoded;
+	PtrToArg<int64_t>::encode(p_uid, &p_uid_encoded);
+	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_resource, &p_uid_encoded);
 }
 
 PackedStringArray ResourceSaver::get_recognized_extensions(const Ref<Resource> &p_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceSaver::get_class_static()._native_ptr(), StringName("get_recognized_extensions")._native_ptr(), 4223597960);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner, (p_type != nullptr ? &p_type->_owner : nullptr));
 }
 
@@ -95,7 +103,7 @@ void ResourceSaver::remove_resource_format_saver(const Ref<ResourceFormatSaver> 
 
 int64_t ResourceSaver::get_resource_id_for_path(const String &p_path, bool p_generate) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceSaver::get_class_static()._native_ptr(), StringName("get_resource_id_for_path")._native_ptr(), 150756522);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int8_t p_generate_encoded;
 	PtrToArg<bool>::encode(p_generate, &p_generate_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_path, &p_generate_encoded);

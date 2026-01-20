@@ -48,7 +48,7 @@ void OpenXRHapticVibration::set_duration(int64_t p_duration) {
 
 int64_t OpenXRHapticVibration::get_duration() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRHapticVibration::get_class_static()._native_ptr(), StringName("get_duration")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void OpenXRHapticVibration::set_frequency(float p_frequency) {
 
 float OpenXRHapticVibration::get_frequency() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRHapticVibration::get_class_static()._native_ptr(), StringName("get_frequency")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void OpenXRHapticVibration::set_amplitude(float p_amplitude) {
 
 float OpenXRHapticVibration::get_amplitude() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRHapticVibration::get_class_static()._native_ptr(), StringName("get_amplitude")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

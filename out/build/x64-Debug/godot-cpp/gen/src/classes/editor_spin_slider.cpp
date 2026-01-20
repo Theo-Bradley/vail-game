@@ -46,7 +46,7 @@ void EditorSpinSlider::set_label(const String &p_label) {
 
 String EditorSpinSlider::get_label() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSpinSlider::get_class_static()._native_ptr(), StringName("get_label")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void EditorSpinSlider::set_suffix(const String &p_suffix) {
 
 String EditorSpinSlider::get_suffix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSpinSlider::get_class_static()._native_ptr(), StringName("get_suffix")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void EditorSpinSlider::set_read_only(bool p_read_only) {
 
 bool EditorSpinSlider::is_read_only() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSpinSlider::get_class_static()._native_ptr(), StringName("is_read_only")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void EditorSpinSlider::set_flat(bool p_flat) {
 
 bool EditorSpinSlider::is_flat() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSpinSlider::get_class_static()._native_ptr(), StringName("is_flat")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -100,7 +100,7 @@ void EditorSpinSlider::set_hide_slider(bool p_hide_slider) {
 
 bool EditorSpinSlider::is_hiding_slider() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSpinSlider::get_class_static()._native_ptr(), StringName("is_hiding_slider")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -114,7 +114,7 @@ void EditorSpinSlider::set_editing_integer(bool p_editing_integer) {
 
 bool EditorSpinSlider::is_editing_integer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorSpinSlider::get_class_static()._native_ptr(), StringName("is_editing_integer")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

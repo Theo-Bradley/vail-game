@@ -48,7 +48,7 @@ void VisualShaderNodeCurveXYZTexture::set_texture(const Ref<CurveXYZTexture> &p_
 
 Ref<CurveXYZTexture> VisualShaderNodeCurveXYZTexture::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeCurveXYZTexture::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 1950275015);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<CurveXYZTexture>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<CurveXYZTexture>()));
 	return Ref<CurveXYZTexture>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<CurveXYZTexture>(_gde_method_bind, _owner));
 }
 

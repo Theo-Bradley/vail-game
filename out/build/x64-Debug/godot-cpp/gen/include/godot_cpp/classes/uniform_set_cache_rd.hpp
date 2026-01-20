@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_UNIFORM_SET_CACHE_RD_HPP
-#define GODOT_CPP_UNIFORM_SET_CACHE_RD_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/rid.hpp>
@@ -49,7 +48,7 @@ class UniformSetCacheRD : public Object {
 	GDEXTENSION_CLASS(UniformSetCacheRD, Object)
 
 public:
-	static RID get_cache(const RID &p_shader, uint32_t p_set, const TypedArray<RDUniform> &p_uniforms);
+	static RID get_cache(const RID &p_shader, uint32_t p_set, const TypedArray<Ref<RDUniform>> &p_uniforms);
 
 protected:
 	template <typename T, typename B>
@@ -62,4 +61,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_UNIFORM_SET_CACHE_RD_HPP

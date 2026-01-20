@@ -46,7 +46,7 @@ void CanvasTexture::set_diffuse_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> CanvasTexture::get_diffuse_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasTexture::get_class_static()._native_ptr(), StringName("get_diffuse_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -58,7 +58,7 @@ void CanvasTexture::set_normal_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> CanvasTexture::get_normal_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasTexture::get_class_static()._native_ptr(), StringName("get_normal_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -70,7 +70,7 @@ void CanvasTexture::set_specular_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> CanvasTexture::get_specular_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasTexture::get_class_static()._native_ptr(), StringName("get_specular_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -82,7 +82,7 @@ void CanvasTexture::set_specular_color(const Color &p_color) {
 
 Color CanvasTexture::get_specular_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasTexture::get_class_static()._native_ptr(), StringName("get_specular_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -96,7 +96,7 @@ void CanvasTexture::set_specular_shininess(float p_shininess) {
 
 float CanvasTexture::get_specular_shininess() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasTexture::get_class_static()._native_ptr(), StringName("get_specular_shininess")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -110,7 +110,7 @@ void CanvasTexture::set_texture_filter(CanvasItem::TextureFilter p_filter) {
 
 CanvasItem::TextureFilter CanvasTexture::get_texture_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasTexture::get_class_static()._native_ptr(), StringName("get_texture_filter")._native_ptr(), 121960042);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CanvasItem::TextureFilter(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CanvasItem::TextureFilter(0)));
 	return (CanvasItem::TextureFilter)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -124,7 +124,7 @@ void CanvasTexture::set_texture_repeat(CanvasItem::TextureRepeat p_repeat) {
 
 CanvasItem::TextureRepeat CanvasTexture::get_texture_repeat() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasTexture::get_class_static()._native_ptr(), StringName("get_texture_repeat")._native_ptr(), 2667158319);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CanvasItem::TextureRepeat(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CanvasItem::TextureRepeat(0)));
 	return (CanvasItem::TextureRepeat)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -49,7 +49,7 @@ void MeshInstance2D::set_mesh(const Ref<Mesh> &p_mesh) {
 
 Ref<Mesh> MeshInstance2D::get_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshInstance2D::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 1808005922);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Mesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Mesh>()));
 	return Ref<Mesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Mesh>(_gde_method_bind, _owner));
 }
 
@@ -61,7 +61,7 @@ void MeshInstance2D::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> MeshInstance2D::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshInstance2D::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 

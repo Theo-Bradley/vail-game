@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_WEB_RTC_DATA_CHANNEL_HPP
-#define GODOT_CPP_WEB_RTC_DATA_CHANNEL_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/packet_peer.hpp>
@@ -89,4 +88,3 @@ public:
 VARIANT_ENUM_CAST(WebRTCDataChannel::WriteMode);
 VARIANT_ENUM_CAST(WebRTCDataChannel::ChannelState);
 
-#endif // ! GODOT_CPP_WEB_RTC_DATA_CHANNEL_HPP

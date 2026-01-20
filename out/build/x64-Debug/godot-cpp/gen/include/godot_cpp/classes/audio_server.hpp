@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_SERVER_HPP
-#define GODOT_CPP_AUDIO_SERVER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/core/object.hpp>
@@ -142,4 +141,3 @@ public:
 VARIANT_ENUM_CAST(AudioServer::SpeakerMode);
 VARIANT_ENUM_CAST(AudioServer::PlaybackType);
 
-#endif // ! GODOT_CPP_AUDIO_SERVER_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_REFLECTION_PROBE_HPP
-#define GODOT_CPP_REFLECTION_PROBE_HPP
+#pragma once
 
 #include <godot_cpp/classes/visual_instance3d.hpp>
 #include <godot_cpp/variant/color.hpp>
@@ -103,4 +102,3 @@ public:
 VARIANT_ENUM_CAST(ReflectionProbe::UpdateMode);
 VARIANT_ENUM_CAST(ReflectionProbe::AmbientMode);
 
-#endif // ! GODOT_CPP_REFLECTION_PROBE_HPP

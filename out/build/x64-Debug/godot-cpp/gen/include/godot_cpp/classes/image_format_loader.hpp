@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_IMAGE_FORMAT_LOADER_HPP
-#define GODOT_CPP_IMAGE_FORMAT_LOADER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -65,4 +64,3 @@ public:
 
 VARIANT_BITFIELD_CAST(ImageFormatLoader::LoaderFlags);
 
-#endif // ! GODOT_CPP_IMAGE_FORMAT_LOADER_HPP

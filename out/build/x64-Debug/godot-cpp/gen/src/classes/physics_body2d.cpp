@@ -43,7 +43,7 @@ namespace godot {
 
 Ref<KinematicCollision2D> PhysicsBody2D::move_and_collide(const Vector2 &p_motion, bool p_test_only, float p_safe_margin, bool p_recovery_as_collision) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody2D::get_class_static()._native_ptr(), StringName("move_and_collide")._native_ptr(), 3681923724);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<KinematicCollision2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<KinematicCollision2D>()));
 	int8_t p_test_only_encoded;
 	PtrToArg<bool>::encode(p_test_only, &p_test_only_encoded);
 	double p_safe_margin_encoded;
@@ -55,7 +55,7 @@ Ref<KinematicCollision2D> PhysicsBody2D::move_and_collide(const Vector2 &p_motio
 
 bool PhysicsBody2D::test_move(const Transform2D &p_from, const Vector2 &p_motion, const Ref<KinematicCollision2D> &p_collision, float p_safe_margin, bool p_recovery_as_collision) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody2D::get_class_static()._native_ptr(), StringName("test_move")._native_ptr(), 3324464701);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	double p_safe_margin_encoded;
 	PtrToArg<double>::encode(p_safe_margin, &p_safe_margin_encoded);
 	int8_t p_recovery_as_collision_encoded;
@@ -65,13 +65,13 @@ bool PhysicsBody2D::test_move(const Transform2D &p_from, const Vector2 &p_motion
 
 Vector2 PhysicsBody2D::get_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody2D::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
 TypedArray<PhysicsBody2D> PhysicsBody2D::get_collision_exceptions() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody2D::get_class_static()._native_ptr(), StringName("get_collision_exceptions")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<PhysicsBody2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<PhysicsBody2D>()));
 	return internal::_call_native_mb_ret<TypedArray<PhysicsBody2D>>(_gde_method_bind, _owner);
 }
 

@@ -48,7 +48,7 @@ void VisualShaderNodeFloatParameter::set_hint(VisualShaderNodeFloatParameter::Hi
 
 VisualShaderNodeFloatParameter::Hint VisualShaderNodeFloatParameter::get_hint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFloatParameter::get_class_static()._native_ptr(), StringName("get_hint")._native_ptr(), 3042240429);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeFloatParameter::Hint(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeFloatParameter::Hint(0)));
 	return (VisualShaderNodeFloatParameter::Hint)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeFloatParameter::set_min(float p_value) {
 
 float VisualShaderNodeFloatParameter::get_min() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFloatParameter::get_class_static()._native_ptr(), StringName("get_min")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void VisualShaderNodeFloatParameter::set_max(float p_value) {
 
 float VisualShaderNodeFloatParameter::get_max() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFloatParameter::get_class_static()._native_ptr(), StringName("get_max")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void VisualShaderNodeFloatParameter::set_step(float p_value) {
 
 float VisualShaderNodeFloatParameter::get_step() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFloatParameter::get_class_static()._native_ptr(), StringName("get_step")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void VisualShaderNodeFloatParameter::set_default_value_enabled(bool p_enabled) {
 
 bool VisualShaderNodeFloatParameter::is_default_value_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFloatParameter::get_class_static()._native_ptr(), StringName("is_default_value_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void VisualShaderNodeFloatParameter::set_default_value(float p_value) {
 
 float VisualShaderNodeFloatParameter::get_default_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFloatParameter::get_class_static()._native_ptr(), StringName("get_default_value")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

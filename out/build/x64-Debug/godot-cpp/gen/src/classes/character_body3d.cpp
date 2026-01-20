@@ -42,7 +42,7 @@ namespace godot {
 
 bool CharacterBody3D::move_and_slide() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("move_and_slide")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void CharacterBody3D::set_velocity(const Vector3 &p_velocity) {
 
 Vector3 CharacterBody3D::get_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_velocity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -74,13 +74,13 @@ void CharacterBody3D::set_safe_margin(float p_margin) {
 
 float CharacterBody3D::get_safe_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_safe_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool CharacterBody3D::is_floor_stop_on_slope_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_floor_stop_on_slope_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void CharacterBody3D::set_floor_constant_speed_enabled(bool p_enabled) {
 
 bool CharacterBody3D::is_floor_constant_speed_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_floor_constant_speed_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void CharacterBody3D::set_floor_block_on_wall_enabled(bool p_enabled) {
 
 bool CharacterBody3D::is_floor_block_on_wall_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_floor_block_on_wall_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void CharacterBody3D::set_slide_on_ceiling_enabled(bool p_enabled) {
 
 bool CharacterBody3D::is_slide_on_ceiling_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_slide_on_ceiling_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void CharacterBody3D::set_platform_floor_layers(uint32_t p_exclude_layer) {
 
 uint32_t CharacterBody3D::get_platform_floor_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_platform_floor_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -158,13 +158,13 @@ void CharacterBody3D::set_platform_wall_layers(uint32_t p_exclude_layer) {
 
 uint32_t CharacterBody3D::get_platform_wall_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_platform_wall_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t CharacterBody3D::get_max_slides() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_max_slides")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -178,7 +178,7 @@ void CharacterBody3D::set_max_slides(int32_t p_max_slides) {
 
 float CharacterBody3D::get_floor_max_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_floor_max_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -192,7 +192,7 @@ void CharacterBody3D::set_floor_max_angle(float p_radians) {
 
 float CharacterBody3D::get_floor_snap_length() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_floor_snap_length")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -206,7 +206,7 @@ void CharacterBody3D::set_floor_snap_length(float p_floor_snap_length) {
 
 float CharacterBody3D::get_wall_min_slide_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_wall_min_slide_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -220,7 +220,7 @@ void CharacterBody3D::set_wall_min_slide_angle(float p_radians) {
 
 Vector3 CharacterBody3D::get_up_direction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_up_direction")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -240,7 +240,7 @@ void CharacterBody3D::set_motion_mode(CharacterBody3D::MotionMode p_mode) {
 
 CharacterBody3D::MotionMode CharacterBody3D::get_motion_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_motion_mode")._native_ptr(), 3529553604);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CharacterBody3D::MotionMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CharacterBody3D::MotionMode(0)));
 	return (CharacterBody3D::MotionMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -254,103 +254,103 @@ void CharacterBody3D::set_platform_on_leave(CharacterBody3D::PlatformOnLeave p_o
 
 CharacterBody3D::PlatformOnLeave CharacterBody3D::get_platform_on_leave() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_platform_on_leave")._native_ptr(), 996491171);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CharacterBody3D::PlatformOnLeave(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CharacterBody3D::PlatformOnLeave(0)));
 	return (CharacterBody3D::PlatformOnLeave)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool CharacterBody3D::is_on_floor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_on_floor")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool CharacterBody3D::is_on_floor_only() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_on_floor_only")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool CharacterBody3D::is_on_ceiling() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_on_ceiling")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool CharacterBody3D::is_on_ceiling_only() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_on_ceiling_only")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool CharacterBody3D::is_on_wall() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_on_wall")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool CharacterBody3D::is_on_wall_only() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("is_on_wall_only")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Vector3 CharacterBody3D::get_floor_normal() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_floor_normal")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 CharacterBody3D::get_wall_normal() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_wall_normal")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 CharacterBody3D::get_last_motion() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_last_motion")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 CharacterBody3D::get_position_delta() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_position_delta")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 CharacterBody3D::get_real_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_real_velocity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 float CharacterBody3D::get_floor_angle(const Vector3 &p_up_direction) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_floor_angle")._native_ptr(), 2906300789);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_up_direction);
 }
 
 Vector3 CharacterBody3D::get_platform_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_platform_velocity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Vector3 CharacterBody3D::get_platform_angular_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_platform_angular_velocity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 int32_t CharacterBody3D::get_slide_collision_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_slide_collision_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Ref<KinematicCollision3D> CharacterBody3D::get_slide_collision(int32_t p_slide_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_slide_collision")._native_ptr(), 107003663);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<KinematicCollision3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<KinematicCollision3D>()));
 	int64_t p_slide_idx_encoded;
 	PtrToArg<int64_t>::encode(p_slide_idx, &p_slide_idx_encoded);
 	return Ref<KinematicCollision3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<KinematicCollision3D>(_gde_method_bind, _owner, &p_slide_idx_encoded));
@@ -358,7 +358,7 @@ Ref<KinematicCollision3D> CharacterBody3D::get_slide_collision(int32_t p_slide_i
 
 Ref<KinematicCollision3D> CharacterBody3D::get_last_slide_collision() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharacterBody3D::get_class_static()._native_ptr(), StringName("get_last_slide_collision")._native_ptr(), 186875014);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<KinematicCollision3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<KinematicCollision3D>()));
 	return Ref<KinematicCollision3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<KinematicCollision3D>(_gde_method_bind, _owner));
 }
 

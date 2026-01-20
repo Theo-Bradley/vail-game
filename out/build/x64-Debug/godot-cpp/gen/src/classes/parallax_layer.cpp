@@ -46,7 +46,7 @@ void ParallaxLayer::set_motion_scale(const Vector2 &p_scale) {
 
 Vector2 ParallaxLayer::get_motion_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParallaxLayer::get_class_static()._native_ptr(), StringName("get_motion_scale")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -58,7 +58,7 @@ void ParallaxLayer::set_motion_offset(const Vector2 &p_offset) {
 
 Vector2 ParallaxLayer::get_motion_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParallaxLayer::get_class_static()._native_ptr(), StringName("get_motion_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -70,7 +70,7 @@ void ParallaxLayer::set_mirroring(const Vector2 &p_mirror) {
 
 Vector2 ParallaxLayer::get_mirroring() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParallaxLayer::get_class_static()._native_ptr(), StringName("get_mirroring")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 

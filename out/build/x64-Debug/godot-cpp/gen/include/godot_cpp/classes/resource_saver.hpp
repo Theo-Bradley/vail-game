@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RESOURCE_SAVER_HPP
-#define GODOT_CPP_RESOURCE_SAVER_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -68,6 +67,7 @@ public:
 	static ResourceSaver *get_singleton();
 
 	Error save(const Ref<Resource> &p_resource, const String &p_path = String(), BitField<ResourceSaver::SaverFlags> p_flags = (BitField<ResourceSaver::SaverFlags>)0);
+	Error set_uid(const String &p_resource, int64_t p_uid);
 	PackedStringArray get_recognized_extensions(const Ref<Resource> &p_type);
 	void add_resource_format_saver(const Ref<ResourceFormatSaver> &p_format_saver, bool p_at_front = false);
 	void remove_resource_format_saver(const Ref<ResourceFormatSaver> &p_format_saver);
@@ -88,4 +88,3 @@ public:
 
 VARIANT_BITFIELD_CAST(ResourceSaver::SaverFlags);
 
-#endif // ! GODOT_CPP_RESOURCE_SAVER_HPP

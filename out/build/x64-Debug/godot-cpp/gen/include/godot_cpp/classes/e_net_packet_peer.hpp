@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_E_NET_PACKET_PEER_HPP
-#define GODOT_CPP_E_NET_PACKET_PEER_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/packet_peer.hpp>
@@ -117,4 +116,3 @@ public:
 VARIANT_ENUM_CAST(ENetPacketPeer::PeerState);
 VARIANT_ENUM_CAST(ENetPacketPeer::PeerStatistic);
 
-#endif // ! GODOT_CPP_E_NET_PACKET_PEER_HPP

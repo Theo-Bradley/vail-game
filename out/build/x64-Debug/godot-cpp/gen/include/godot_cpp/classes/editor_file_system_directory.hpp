@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_FILE_SYSTEM_DIRECTORY_HPP
-#define GODOT_CPP_EDITOR_FILE_SYSTEM_DIRECTORY_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/string.hpp>
@@ -73,4 +72,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_FILE_SYSTEM_DIRECTORY_HPP

@@ -48,7 +48,7 @@ void RDPipelineRasterizationState::set_enable_depth_clamp(bool p_member) {
 
 bool RDPipelineRasterizationState::get_enable_depth_clamp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_enable_depth_clamp")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void RDPipelineRasterizationState::set_discard_primitives(bool p_member) {
 
 bool RDPipelineRasterizationState::get_discard_primitives() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_discard_primitives")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void RDPipelineRasterizationState::set_wireframe(bool p_member) {
 
 bool RDPipelineRasterizationState::get_wireframe() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_wireframe")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void RDPipelineRasterizationState::set_cull_mode(RenderingDevice::PolygonCullMod
 
 RenderingDevice::PolygonCullMode RDPipelineRasterizationState::get_cull_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_cull_mode")._native_ptr(), 2192484313);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::PolygonCullMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::PolygonCullMode(0)));
 	return (RenderingDevice::PolygonCullMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void RDPipelineRasterizationState::set_front_face(RenderingDevice::PolygonFrontF
 
 RenderingDevice::PolygonFrontFace RDPipelineRasterizationState::get_front_face() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_front_face")._native_ptr(), 708793786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::PolygonFrontFace(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::PolygonFrontFace(0)));
 	return (RenderingDevice::PolygonFrontFace)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void RDPipelineRasterizationState::set_depth_bias_enabled(bool p_member) {
 
 bool RDPipelineRasterizationState::get_depth_bias_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_depth_bias_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void RDPipelineRasterizationState::set_depth_bias_constant_factor(float p_member
 
 float RDPipelineRasterizationState::get_depth_bias_constant_factor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_depth_bias_constant_factor")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void RDPipelineRasterizationState::set_depth_bias_clamp(float p_member) {
 
 float RDPipelineRasterizationState::get_depth_bias_clamp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_depth_bias_clamp")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void RDPipelineRasterizationState::set_depth_bias_slope_factor(float p_member) {
 
 float RDPipelineRasterizationState::get_depth_bias_slope_factor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_depth_bias_slope_factor")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void RDPipelineRasterizationState::set_line_width(float p_member) {
 
 float RDPipelineRasterizationState::get_line_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_line_width")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +188,7 @@ void RDPipelineRasterizationState::set_patch_control_points(uint32_t p_member) {
 
 uint32_t RDPipelineRasterizationState::get_patch_control_points() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineRasterizationState::get_class_static()._native_ptr(), StringName("get_patch_control_points")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

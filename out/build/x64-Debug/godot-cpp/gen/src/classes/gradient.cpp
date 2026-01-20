@@ -66,7 +66,7 @@ void Gradient::set_offset(int32_t p_point, float p_offset) {
 
 float Gradient::get_offset(int32_t p_point) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Gradient::get_class_static()._native_ptr(), StringName("get_offset")._native_ptr(), 4025615559);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_point_encoded;
 	PtrToArg<int64_t>::encode(p_point, &p_point_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_point_encoded);
@@ -88,7 +88,7 @@ void Gradient::set_color(int32_t p_point, const Color &p_color) {
 
 Color Gradient::get_color(int32_t p_point) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Gradient::get_class_static()._native_ptr(), StringName("get_color")._native_ptr(), 2624840992);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_point_encoded;
 	PtrToArg<int64_t>::encode(p_point, &p_point_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_point_encoded);
@@ -96,7 +96,7 @@ Color Gradient::get_color(int32_t p_point) {
 
 Color Gradient::sample(float p_offset) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Gradient::get_class_static()._native_ptr(), StringName("sample")._native_ptr(), 1250405064);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	double p_offset_encoded;
 	PtrToArg<double>::encode(p_offset, &p_offset_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_offset_encoded);
@@ -104,7 +104,7 @@ Color Gradient::sample(float p_offset) {
 
 int32_t Gradient::get_point_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Gradient::get_class_static()._native_ptr(), StringName("get_point_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void Gradient::set_offsets(const PackedFloat32Array &p_offsets) {
 
 PackedFloat32Array Gradient::get_offsets() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Gradient::get_class_static()._native_ptr(), StringName("get_offsets")._native_ptr(), 675695659);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedFloat32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedFloat32Array()));
 	return internal::_call_native_mb_ret<PackedFloat32Array>(_gde_method_bind, _owner);
 }
 
@@ -128,7 +128,7 @@ void Gradient::set_colors(const PackedColorArray &p_colors) {
 
 PackedColorArray Gradient::get_colors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Gradient::get_class_static()._native_ptr(), StringName("get_colors")._native_ptr(), 1392750486);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedColorArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedColorArray()));
 	return internal::_call_native_mb_ret<PackedColorArray>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void Gradient::set_interpolation_mode(Gradient::InterpolationMode p_interpolatio
 
 Gradient::InterpolationMode Gradient::get_interpolation_mode() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Gradient::get_class_static()._native_ptr(), StringName("get_interpolation_mode")._native_ptr(), 3674172981);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Gradient::InterpolationMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Gradient::InterpolationMode(0)));
 	return (Gradient::InterpolationMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -156,7 +156,7 @@ void Gradient::set_interpolation_color_space(Gradient::ColorSpace p_interpolatio
 
 Gradient::ColorSpace Gradient::get_interpolation_color_space() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Gradient::get_class_static()._native_ptr(), StringName("get_interpolation_color_space")._native_ptr(), 1538296000);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Gradient::ColorSpace(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Gradient::ColorSpace(0)));
 	return (Gradient::ColorSpace)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

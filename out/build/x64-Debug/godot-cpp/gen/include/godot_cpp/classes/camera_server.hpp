@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CAMERA_SERVER_HPP
-#define GODOT_CPP_CAMERA_SERVER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/core/object.hpp>
@@ -60,9 +59,11 @@ public:
 
 	static CameraServer *get_singleton();
 
+	void set_monitoring_feeds(bool p_is_monitoring_feeds);
+	bool is_monitoring_feeds() const;
 	Ref<CameraFeed> get_feed(int32_t p_index);
 	int32_t get_feed_count();
-	TypedArray<CameraFeed> feeds();
+	TypedArray<Ref<CameraFeed>> feeds();
 	void add_feed(const Ref<CameraFeed> &p_feed);
 	void remove_feed(const Ref<CameraFeed> &p_feed);
 
@@ -81,4 +82,3 @@ public:
 
 VARIANT_ENUM_CAST(CameraServer::FeedImage);
 
-#endif // ! GODOT_CPP_CAMERA_SERVER_HPP

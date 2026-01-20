@@ -48,7 +48,7 @@ void AudioEffectRecord::set_recording_active(bool p_record) {
 
 bool AudioEffectRecord::is_recording_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectRecord::get_class_static()._native_ptr(), StringName("is_recording_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -62,13 +62,13 @@ void AudioEffectRecord::set_format(AudioStreamWAV::Format p_format) {
 
 AudioStreamWAV::Format AudioEffectRecord::get_format() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectRecord::get_class_static()._native_ptr(), StringName("get_format")._native_ptr(), 3151724922);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioStreamWAV::Format(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioStreamWAV::Format(0)));
 	return (AudioStreamWAV::Format)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Ref<AudioStreamWAV> AudioEffectRecord::get_recording() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectRecord::get_class_static()._native_ptr(), StringName("get_recording")._native_ptr(), 2964110865);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStreamWAV>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStreamWAV>()));
 	return Ref<AudioStreamWAV>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStreamWAV>(_gde_method_bind, _owner));
 }
 

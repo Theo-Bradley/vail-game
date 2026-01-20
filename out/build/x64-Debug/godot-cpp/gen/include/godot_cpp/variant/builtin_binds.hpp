@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_BUILTIN_BINDS_HPP
-#define GODOT_CPP_BUILTIN_BINDS_HPP
+#pragma once
 
 #include <godot_cpp/variant/builtin_types.hpp>
 
@@ -42,5 +41,3 @@ VARIANT_ENUM_CAST(Vector3i::Axis);
 VARIANT_ENUM_CAST(Vector4::Axis);
 VARIANT_ENUM_CAST(Vector4i::Axis);
 VARIANT_ENUM_CAST(Projection::Planes);
-
-#endif // ! GODOT_CPP_BUILTIN_BINDS_HPP

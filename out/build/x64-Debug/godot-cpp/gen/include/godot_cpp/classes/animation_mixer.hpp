@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_MIXER_HPP
-#define GODOT_CPP_ANIMATION_MIXER_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/node.hpp>
@@ -135,4 +134,3 @@ VARIANT_ENUM_CAST(AnimationMixer::AnimationCallbackModeProcess);
 VARIANT_ENUM_CAST(AnimationMixer::AnimationCallbackModeMethod);
 VARIANT_ENUM_CAST(AnimationMixer::AnimationCallbackModeDiscrete);
 
-#endif // ! GODOT_CPP_ANIMATION_MIXER_HPP

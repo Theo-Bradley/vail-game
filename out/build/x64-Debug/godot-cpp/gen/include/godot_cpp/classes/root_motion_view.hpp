@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ROOT_MOTION_VIEW_HPP
-#define GODOT_CPP_ROOT_MOTION_VIEW_HPP
+#pragma once
 
 #include <godot_cpp/classes/visual_instance3d.hpp>
 #include <godot_cpp/variant/color.hpp>
@@ -69,4 +68,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_ROOT_MOTION_VIEW_HPP

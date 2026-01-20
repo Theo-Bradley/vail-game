@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_LABEL3D_HPP
-#define GODOT_CPP_LABEL3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/base_material3d.hpp>
 #include <godot_cpp/classes/geometry_instance3d.hpp>
@@ -105,6 +104,8 @@ public:
 	float get_line_spacing() const;
 	void set_autowrap_mode(TextServer::AutowrapMode p_autowrap_mode);
 	TextServer::AutowrapMode get_autowrap_mode() const;
+	void set_autowrap_trim_flags(BitField<TextServer::LineBreakFlag> p_autowrap_trim_flags);
+	BitField<TextServer::LineBreakFlag> get_autowrap_trim_flags() const;
 	void set_justification_flags(BitField<TextServer::JustificationFlag> p_justification_flags);
 	BitField<TextServer::JustificationFlag> get_justification_flags() const;
 	void set_width(float p_width);
@@ -145,4 +146,3 @@ public:
 VARIANT_ENUM_CAST(Label3D::DrawFlags);
 VARIANT_ENUM_CAST(Label3D::AlphaCutMode);
 
-#endif // ! GODOT_CPP_LABEL3D_HPP

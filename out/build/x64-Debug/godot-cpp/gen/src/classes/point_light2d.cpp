@@ -48,7 +48,7 @@ void PointLight2D::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> PointLight2D::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PointLight2D::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -60,7 +60,7 @@ void PointLight2D::set_texture_offset(const Vector2 &p_texture_offset) {
 
 Vector2 PointLight2D::get_texture_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PointLight2D::get_class_static()._native_ptr(), StringName("get_texture_offset")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void PointLight2D::set_texture_scale(float p_texture_scale) {
 
 float PointLight2D::get_texture_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PointLight2D::get_class_static()._native_ptr(), StringName("get_texture_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

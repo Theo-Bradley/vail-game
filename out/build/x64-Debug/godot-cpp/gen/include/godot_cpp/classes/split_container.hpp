@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SPLIT_CONTAINER_HPP
-#define GODOT_CPP_SPLIT_CONTAINER_HPP
+#pragma once
 
 #include <godot_cpp/classes/container.hpp>
 
@@ -73,6 +72,8 @@ public:
 	void set_drag_area_highlight_in_editor(bool p_drag_area_highlight_in_editor);
 	bool is_drag_area_highlight_in_editor_enabled() const;
 	Control *get_drag_area_control();
+	void set_touch_dragger_enabled(bool p_enabled);
+	bool is_touch_dragger_enabled() const;
 
 protected:
 	template <typename T, typename B>
@@ -87,4 +88,3 @@ public:
 
 VARIANT_ENUM_CAST(SplitContainer::DraggerVisibility);
 
-#endif // ! GODOT_CPP_SPLIT_CONTAINER_HPP

@@ -42,7 +42,7 @@ namespace godot {
 
 Skeleton3D *SkeletonModifier3D::get_skeleton() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModifier3D::get_class_static()._native_ptr(), StringName("get_skeleton")._native_ptr(), 1488626673);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Skeleton3D>(_gde_method_bind, _owner);
 }
 
@@ -56,7 +56,7 @@ void SkeletonModifier3D::set_active(bool p_active) {
 
 bool SkeletonModifier3D::is_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModifier3D::get_class_static()._native_ptr(), StringName("is_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -70,10 +70,16 @@ void SkeletonModifier3D::set_influence(float p_influence) {
 
 float SkeletonModifier3D::get_influence() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModifier3D::get_class_static()._native_ptr(), StringName("get_influence")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
+void SkeletonModifier3D::_process_modification_with_delta(double p_delta) {}
+
 void SkeletonModifier3D::_process_modification() {}
+
+void SkeletonModifier3D::_skeleton_changed(Skeleton3D *p_old_skeleton, Skeleton3D *p_new_skeleton) {}
+
+void SkeletonModifier3D::_validate_bone_names() {}
 
 } // namespace godot

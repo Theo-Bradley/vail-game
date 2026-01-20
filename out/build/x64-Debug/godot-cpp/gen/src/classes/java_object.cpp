@@ -42,7 +42,7 @@ namespace godot {
 
 Ref<JavaClass> JavaObject::get_java_class() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JavaObject::get_class_static()._native_ptr(), StringName("get_java_class")._native_ptr(), 541536347);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<JavaClass>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<JavaClass>()));
 	return Ref<JavaClass>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<JavaClass>(_gde_method_bind, _owner));
 }
 

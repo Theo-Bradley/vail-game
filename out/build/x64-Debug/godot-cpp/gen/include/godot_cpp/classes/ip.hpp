@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_IP_HPP
-#define GODOT_CPP_IP_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/array.hpp>
@@ -98,4 +97,3 @@ public:
 VARIANT_ENUM_CAST(IP::ResolverStatus);
 VARIANT_ENUM_CAST(IP::Type);
 
-#endif // ! GODOT_CPP_IP_HPP

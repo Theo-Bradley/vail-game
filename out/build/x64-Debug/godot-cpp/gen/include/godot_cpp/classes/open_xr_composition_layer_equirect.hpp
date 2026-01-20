@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPEN_XR_COMPOSITION_LAYER_EQUIRECT_HPP
-#define GODOT_CPP_OPEN_XR_COMPOSITION_LAYER_EQUIRECT_HPP
+#pragma once
 
 #include <godot_cpp/classes/open_xr_composition_layer.hpp>
 
@@ -67,4 +66,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_OPEN_XR_COMPOSITION_LAYER_EQUIRECT_HPP

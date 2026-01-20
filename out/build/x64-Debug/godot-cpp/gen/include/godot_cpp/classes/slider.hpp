@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SLIDER_HPP
-#define GODOT_CPP_SLIDER_HPP
+#pragma once
 
 #include <godot_cpp/classes/range.hpp>
 
@@ -45,10 +44,19 @@ class Slider : public Range {
 	GDEXTENSION_CLASS(Slider, Range)
 
 public:
+	enum TickPosition {
+		TICK_POSITION_BOTTOM_RIGHT = 0,
+		TICK_POSITION_TOP_LEFT = 1,
+		TICK_POSITION_BOTH = 2,
+		TICK_POSITION_CENTER = 3,
+	};
+
 	void set_ticks(int32_t p_count);
 	int32_t get_ticks() const;
 	bool get_ticks_on_borders() const;
 	void set_ticks_on_borders(bool p_ticks_on_border);
+	Slider::TickPosition get_ticks_position() const;
+	void set_ticks_position(Slider::TickPosition p_ticks_on_border);
 	void set_editable(bool p_editable);
 	bool is_editable() const;
 	void set_scrollable(bool p_scrollable);
@@ -65,4 +73,5 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_SLIDER_HPP
+VARIANT_ENUM_CAST(Slider::TickPosition);
+

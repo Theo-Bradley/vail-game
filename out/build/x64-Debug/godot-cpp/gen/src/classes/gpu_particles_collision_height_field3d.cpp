@@ -46,7 +46,7 @@ void GPUParticlesCollisionHeightField3D::set_size(const Vector3 &p_size) {
 
 Vector3 GPUParticlesCollisionHeightField3D::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesCollisionHeightField3D::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void GPUParticlesCollisionHeightField3D::set_resolution(GPUParticlesCollisionHei
 
 GPUParticlesCollisionHeightField3D::Resolution GPUParticlesCollisionHeightField3D::get_resolution() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesCollisionHeightField3D::get_class_static()._native_ptr(), StringName("get_resolution")._native_ptr(), 1156065644);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GPUParticlesCollisionHeightField3D::Resolution(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GPUParticlesCollisionHeightField3D::Resolution(0)));
 	return (GPUParticlesCollisionHeightField3D::Resolution)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void GPUParticlesCollisionHeightField3D::set_update_mode(GPUParticlesCollisionHe
 
 GPUParticlesCollisionHeightField3D::UpdateMode GPUParticlesCollisionHeightField3D::get_update_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesCollisionHeightField3D::get_class_static()._native_ptr(), StringName("get_update_mode")._native_ptr(), 1998141380);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GPUParticlesCollisionHeightField3D::UpdateMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GPUParticlesCollisionHeightField3D::UpdateMode(0)));
 	return (GPUParticlesCollisionHeightField3D::UpdateMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void GPUParticlesCollisionHeightField3D::set_heightfield_mask(uint32_t p_heightf
 
 uint32_t GPUParticlesCollisionHeightField3D::get_heightfield_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesCollisionHeightField3D::get_class_static()._native_ptr(), StringName("get_heightfield_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void GPUParticlesCollisionHeightField3D::set_heightfield_mask_value(int32_t p_la
 
 bool GPUParticlesCollisionHeightField3D::get_heightfield_mask_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesCollisionHeightField3D::get_class_static()._native_ptr(), StringName("get_heightfield_mask_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -120,7 +120,7 @@ void GPUParticlesCollisionHeightField3D::set_follow_camera_enabled(bool p_enable
 
 bool GPUParticlesCollisionHeightField3D::is_follow_camera_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesCollisionHeightField3D::get_class_static()._native_ptr(), StringName("is_follow_camera_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OBJECT_HPP
-#define GODOT_CPP_OBJECT_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/wrapped.hpp>
@@ -56,6 +55,7 @@ public:
 		CONNECT_PERSIST = 2,
 		CONNECT_ONE_SHOT = 4,
 		CONNECT_REFERENCE_COUNTED = 8,
+		CONNECT_APPEND_SOURCE_OBJECT = 16,
 	};
 
 	static const int NOTIFICATION_POSTINITIALIZE = 0;
@@ -92,7 +92,7 @@ private:
 public:
 	template <typename... Args>
 	Error emit_signal(const StringName &p_signal, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ Variant(p_signal), Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ Variant(p_signal), Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -106,7 +106,7 @@ private:
 public:
 	template <typename... Args>
 	Variant call(const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -120,7 +120,7 @@ private:
 public:
 	template <typename... Args>
 	Variant call_deferred(const StringName &p_method, const Args &...p_args) {
-		std::array<Variant, 1 + sizeof...(Args)> variant_args{ Variant(p_method), Variant(p_args)... };
+		std::array<Variant, 1 + sizeof...(Args)> variant_args{{ Variant(p_method), Variant(p_args)... }};
 		std::array<const Variant *, 1 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -156,6 +156,8 @@ protected:
 	static void register_virtuals() {
 	}
 
+	String _to_string() const { return "<" + get_class() + "#" + itos(get_instance_id()) + ">"; }
+
 public:
 	template <typename T>
 	static T *cast_to(Object *p_object);
@@ -166,4 +168,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_OBJECT_HPP

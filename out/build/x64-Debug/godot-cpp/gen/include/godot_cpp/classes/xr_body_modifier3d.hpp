@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_XR_BODY_MODIFIER3D_HPP
-#define GODOT_CPP_XR_BODY_MODIFIER3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/skeleton_modifier3d.hpp>
 #include <godot_cpp/variant/string_name.hpp>
@@ -79,4 +78,3 @@ public:
 VARIANT_BITFIELD_CAST(XRBodyModifier3D::BodyUpdate);
 VARIANT_ENUM_CAST(XRBodyModifier3D::BoneUpdate);
 
-#endif // ! GODOT_CPP_XR_BODY_MODIFIER3D_HPP

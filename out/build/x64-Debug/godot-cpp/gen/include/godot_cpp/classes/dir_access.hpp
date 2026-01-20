@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_DIR_ACCESS_HPP
-#define GODOT_CPP_DIR_ACCESS_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -87,7 +86,9 @@ public:
 	bool get_include_navigational() const;
 	void set_include_hidden(bool p_enable);
 	bool get_include_hidden() const;
+	String get_filesystem_type() const;
 	bool is_case_sensitive(const String &p_path) const;
+	bool is_equivalent(const String &p_path_a, const String &p_path_b) const;
 
 protected:
 	template <typename T, typename B>
@@ -100,4 +101,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_DIR_ACCESS_HPP

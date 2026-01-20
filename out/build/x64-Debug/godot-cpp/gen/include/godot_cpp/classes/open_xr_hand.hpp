@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPEN_XR_HAND_HPP
-#define GODOT_CPP_OPEN_XR_HAND_HPP
+#pragma once
 
 #include <godot_cpp/classes/node3d.hpp>
 #include <godot_cpp/variant/node_path.hpp>
@@ -97,4 +96,3 @@ VARIANT_ENUM_CAST(OpenXRHand::MotionRange);
 VARIANT_ENUM_CAST(OpenXRHand::SkeletonRig);
 VARIANT_ENUM_CAST(OpenXRHand::BoneUpdate);
 
-#endif // ! GODOT_CPP_OPEN_XR_HAND_HPP

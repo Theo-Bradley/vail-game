@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TOUCH_SCREEN_BUTTON_HPP
-#define GODOT_CPP_TOUCH_SCREEN_BUTTON_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -89,4 +88,3 @@ public:
 
 VARIANT_ENUM_CAST(TouchScreenButton::VisibilityMode);
 
-#endif // ! GODOT_CPP_TOUCH_SCREEN_BUTTON_HPP

@@ -73,21 +73,21 @@ RenderingServer::~RenderingServer() {
 
 RID RenderingServer::texture_2d_create(const Ref<Image> &p_image) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_2d_create")._native_ptr(), 2010018390);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, (p_image != nullptr ? &p_image->_owner : nullptr));
 }
 
-RID RenderingServer::texture_2d_layered_create(const TypedArray<Image> &p_layers, RenderingServer::TextureLayeredType p_layered_type) {
+RID RenderingServer::texture_2d_layered_create(const TypedArray<Ref<Image>> &p_layers, RenderingServer::TextureLayeredType p_layered_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_2d_layered_create")._native_ptr(), 913689023);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_layered_type_encoded;
 	PtrToArg<int64_t>::encode(p_layered_type, &p_layered_type_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_layers, &p_layered_type_encoded);
 }
 
-RID RenderingServer::texture_3d_create(Image::Format p_format, int32_t p_width, int32_t p_height, int32_t p_depth, bool p_mipmaps, const TypedArray<Image> &p_data) {
+RID RenderingServer::texture_3d_create(Image::Format p_format, int32_t p_width, int32_t p_height, int32_t p_depth, bool p_mipmaps, const TypedArray<Ref<Image>> &p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_3d_create")._native_ptr(), 4036838706);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_format_encoded;
 	PtrToArg<int64_t>::encode(p_format, &p_format_encoded);
 	int64_t p_width_encoded;
@@ -103,13 +103,13 @@ RID RenderingServer::texture_3d_create(Image::Format p_format, int32_t p_width, 
 
 RID RenderingServer::texture_proxy_create(const RID &p_base) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_proxy_create")._native_ptr(), 41030802);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_base);
 }
 
 RID RenderingServer::texture_create_from_native_handle(RenderingServer::TextureType p_type, Image::Format p_format, uint64_t p_native_handle, int32_t p_width, int32_t p_height, int32_t p_depth, int32_t p_layers, RenderingServer::TextureLayeredType p_layered_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_create_from_native_handle")._native_ptr(), 1682977582);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_format_encoded;
@@ -137,7 +137,7 @@ void RenderingServer::texture_2d_update(const RID &p_texture, const Ref<Image> &
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_texture, (p_image != nullptr ? &p_image->_owner : nullptr), &p_layer_encoded);
 }
 
-void RenderingServer::texture_3d_update(const RID &p_texture, const TypedArray<Image> &p_data) {
+void RenderingServer::texture_3d_update(const RID &p_texture, const TypedArray<Ref<Image>> &p_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_3d_update")._native_ptr(), 684822712);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_texture, &p_data);
@@ -151,13 +151,13 @@ void RenderingServer::texture_proxy_update(const RID &p_texture, const RID &p_pr
 
 RID RenderingServer::texture_2d_placeholder_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_2d_placeholder_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID RenderingServer::texture_2d_layered_placeholder_create(RenderingServer::TextureLayeredType p_layered_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_2d_layered_placeholder_create")._native_ptr(), 1394585590);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_layered_type_encoded;
 	PtrToArg<int64_t>::encode(p_layered_type, &p_layered_type_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_layered_type_encoded);
@@ -165,28 +165,28 @@ RID RenderingServer::texture_2d_layered_placeholder_create(RenderingServer::Text
 
 RID RenderingServer::texture_3d_placeholder_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_3d_placeholder_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 Ref<Image> RenderingServer::texture_2d_get(const RID &p_texture) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_2d_get")._native_ptr(), 4206205781);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	return Ref<Image>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Image>(_gde_method_bind, _owner, &p_texture));
 }
 
 Ref<Image> RenderingServer::texture_2d_layer_get(const RID &p_texture, int32_t p_layer) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_2d_layer_get")._native_ptr(), 2705440895);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	int64_t p_layer_encoded;
 	PtrToArg<int64_t>::encode(p_layer, &p_layer_encoded);
 	return Ref<Image>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Image>(_gde_method_bind, _owner, &p_texture, &p_layer_encoded));
 }
 
-TypedArray<Image> RenderingServer::texture_3d_get(const RID &p_texture) const {
+TypedArray<Ref<Image>> RenderingServer::texture_3d_get(const RID &p_texture) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_3d_get")._native_ptr(), 2684255073);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Image>());
-	return internal::_call_native_mb_ret<TypedArray<Image>>(_gde_method_bind, _owner, &p_texture);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<Image>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<Image>>>(_gde_method_bind, _owner, &p_texture);
 }
 
 void RenderingServer::texture_replace(const RID &p_texture, const RID &p_by_texture) {
@@ -213,13 +213,13 @@ void RenderingServer::texture_set_path(const RID &p_texture, const String &p_pat
 
 String RenderingServer::texture_get_path(const RID &p_texture) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_get_path")._native_ptr(), 642473191);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_texture);
 }
 
 Image::Format RenderingServer::texture_get_format(const RID &p_texture) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_get_format")._native_ptr(), 1932918979);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Image::Format(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Image::Format(0)));
 	return (Image::Format)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_texture);
 }
 
@@ -233,7 +233,7 @@ void RenderingServer::texture_set_force_redraw_if_visible(const RID &p_texture, 
 
 RID RenderingServer::texture_rd_create(const RID &p_rd_texture, RenderingServer::TextureLayeredType p_layer_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_rd_create")._native_ptr(), 1434128712);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_layer_type_encoded;
 	PtrToArg<int64_t>::encode(p_layer_type, &p_layer_type_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_rd_texture, &p_layer_type_encoded);
@@ -241,7 +241,7 @@ RID RenderingServer::texture_rd_create(const RID &p_rd_texture, RenderingServer:
 
 RID RenderingServer::texture_get_rd_texture(const RID &p_texture, bool p_srgb) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_get_rd_texture")._native_ptr(), 2790148051);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int8_t p_srgb_encoded;
 	PtrToArg<bool>::encode(p_srgb, &p_srgb_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_texture, &p_srgb_encoded);
@@ -249,7 +249,7 @@ RID RenderingServer::texture_get_rd_texture(const RID &p_texture, bool p_srgb) c
 
 uint64_t RenderingServer::texture_get_native_handle(const RID &p_texture, bool p_srgb) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("texture_get_native_handle")._native_ptr(), 1834114100);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int8_t p_srgb_encoded;
 	PtrToArg<bool>::encode(p_srgb, &p_srgb_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_texture, &p_srgb_encoded);
@@ -257,7 +257,7 @@ uint64_t RenderingServer::texture_get_native_handle(const RID &p_texture, bool p
 
 RID RenderingServer::shader_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("shader_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -275,19 +275,19 @@ void RenderingServer::shader_set_path_hint(const RID &p_shader, const String &p_
 
 String RenderingServer::shader_get_code(const RID &p_shader) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("shader_get_code")._native_ptr(), 642473191);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_shader);
 }
 
 TypedArray<Dictionary> RenderingServer::get_shader_parameter_list(const RID &p_shader) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_shader_parameter_list")._native_ptr(), 2684255073);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner, &p_shader);
 }
 
 Variant RenderingServer::shader_get_parameter_default(const RID &p_shader, const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("shader_get_parameter_default")._native_ptr(), 2621281810);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_shader, &p_name);
 }
 
@@ -301,7 +301,7 @@ void RenderingServer::shader_set_default_texture_parameter(const RID &p_shader, 
 
 RID RenderingServer::shader_get_default_texture_parameter(const RID &p_shader, const StringName &p_name, int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("shader_get_default_texture_parameter")._native_ptr(), 1464608890);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_shader, &p_name, &p_index_encoded);
@@ -309,7 +309,7 @@ RID RenderingServer::shader_get_default_texture_parameter(const RID &p_shader, c
 
 RID RenderingServer::material_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("material_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -327,7 +327,7 @@ void RenderingServer::material_set_param(const RID &p_material, const StringName
 
 Variant RenderingServer::material_get_param(const RID &p_material, const StringName &p_parameter) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("material_get_param")._native_ptr(), 2621281810);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_material, &p_parameter);
 }
 
@@ -347,7 +347,7 @@ void RenderingServer::material_set_next_pass(const RID &p_material, const RID &p
 
 RID RenderingServer::mesh_create_from_surfaces(const TypedArray<Dictionary> &p_surfaces, int32_t p_blend_shape_count) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_create_from_surfaces")._native_ptr(), 4291747531);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_blend_shape_count_encoded;
 	PtrToArg<int64_t>::encode(p_blend_shape_count, &p_blend_shape_count_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_surfaces, &p_blend_shape_count_encoded);
@@ -355,13 +355,13 @@ RID RenderingServer::mesh_create_from_surfaces(const TypedArray<Dictionary> &p_s
 
 RID RenderingServer::mesh_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 uint32_t RenderingServer::mesh_surface_get_format_offset(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count, int32_t p_array_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_format_offset")._native_ptr(), 2981368685);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_vertex_count_encoded;
 	PtrToArg<int64_t>::encode(p_vertex_count, &p_vertex_count_encoded);
 	int64_t p_array_index_encoded;
@@ -371,7 +371,7 @@ uint32_t RenderingServer::mesh_surface_get_format_offset(BitField<RenderingServe
 
 uint32_t RenderingServer::mesh_surface_get_format_vertex_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_format_vertex_stride")._native_ptr(), 3188363337);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_vertex_count_encoded;
 	PtrToArg<int64_t>::encode(p_vertex_count, &p_vertex_count_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_format, &p_vertex_count_encoded);
@@ -379,7 +379,7 @@ uint32_t RenderingServer::mesh_surface_get_format_vertex_stride(BitField<Renderi
 
 uint32_t RenderingServer::mesh_surface_get_format_normal_tangent_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_format_normal_tangent_stride")._native_ptr(), 3188363337);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_vertex_count_encoded;
 	PtrToArg<int64_t>::encode(p_vertex_count, &p_vertex_count_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_format, &p_vertex_count_encoded);
@@ -387,7 +387,7 @@ uint32_t RenderingServer::mesh_surface_get_format_normal_tangent_stride(BitField
 
 uint32_t RenderingServer::mesh_surface_get_format_attribute_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_format_attribute_stride")._native_ptr(), 3188363337);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_vertex_count_encoded;
 	PtrToArg<int64_t>::encode(p_vertex_count, &p_vertex_count_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_format, &p_vertex_count_encoded);
@@ -395,7 +395,15 @@ uint32_t RenderingServer::mesh_surface_get_format_attribute_stride(BitField<Rend
 
 uint32_t RenderingServer::mesh_surface_get_format_skin_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_format_skin_stride")._native_ptr(), 3188363337);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	int64_t p_vertex_count_encoded;
+	PtrToArg<int64_t>::encode(p_vertex_count, &p_vertex_count_encoded);
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_format, &p_vertex_count_encoded);
+}
+
+uint32_t RenderingServer::mesh_surface_get_format_index_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_format_index_stride")._native_ptr(), 3188363337);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_vertex_count_encoded;
 	PtrToArg<int64_t>::encode(p_vertex_count, &p_vertex_count_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_format, &p_vertex_count_encoded);
@@ -417,7 +425,7 @@ void RenderingServer::mesh_add_surface_from_arrays(const RID &p_mesh, RenderingS
 
 int32_t RenderingServer::mesh_get_blend_shape_count(const RID &p_mesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_get_blend_shape_count")._native_ptr(), 2198884583);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_mesh);
 }
 
@@ -431,7 +439,7 @@ void RenderingServer::mesh_set_blend_shape_mode(const RID &p_mesh, RenderingServ
 
 RenderingServer::BlendShapeMode RenderingServer::mesh_get_blend_shape_mode(const RID &p_mesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_get_blend_shape_mode")._native_ptr(), 4282291819);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::BlendShapeMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::BlendShapeMode(0)));
 	return (RenderingServer::BlendShapeMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_mesh);
 }
 
@@ -445,7 +453,7 @@ void RenderingServer::mesh_surface_set_material(const RID &p_mesh, int32_t p_sur
 
 RID RenderingServer::mesh_surface_get_material(const RID &p_mesh, int32_t p_surface) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_material")._native_ptr(), 1066463050);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_surface_encoded;
 	PtrToArg<int64_t>::encode(p_surface, &p_surface_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_mesh, &p_surface_encoded);
@@ -453,7 +461,7 @@ RID RenderingServer::mesh_surface_get_material(const RID &p_mesh, int32_t p_surf
 
 Dictionary RenderingServer::mesh_get_surface(const RID &p_mesh, int32_t p_surface) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_get_surface")._native_ptr(), 186674697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	int64_t p_surface_encoded;
 	PtrToArg<int64_t>::encode(p_surface, &p_surface_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_mesh, &p_surface_encoded);
@@ -461,7 +469,7 @@ Dictionary RenderingServer::mesh_get_surface(const RID &p_mesh, int32_t p_surfac
 
 Array RenderingServer::mesh_surface_get_arrays(const RID &p_mesh, int32_t p_surface) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_arrays")._native_ptr(), 1778388067);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_surface_encoded;
 	PtrToArg<int64_t>::encode(p_surface, &p_surface_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_mesh, &p_surface_encoded);
@@ -469,7 +477,7 @@ Array RenderingServer::mesh_surface_get_arrays(const RID &p_mesh, int32_t p_surf
 
 TypedArray<Array> RenderingServer::mesh_surface_get_blend_shape_arrays(const RID &p_mesh, int32_t p_surface) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_get_blend_shape_arrays")._native_ptr(), 1778388067);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Array>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Array>()));
 	int64_t p_surface_encoded;
 	PtrToArg<int64_t>::encode(p_surface, &p_surface_encoded);
 	return internal::_call_native_mb_ret<TypedArray<Array>>(_gde_method_bind, _owner, &p_mesh, &p_surface_encoded);
@@ -477,7 +485,7 @@ TypedArray<Array> RenderingServer::mesh_surface_get_blend_shape_arrays(const RID
 
 int32_t RenderingServer::mesh_get_surface_count(const RID &p_mesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_get_surface_count")._native_ptr(), 2198884583);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_mesh);
 }
 
@@ -489,7 +497,7 @@ void RenderingServer::mesh_set_custom_aabb(const RID &p_mesh, const AABB &p_aabb
 
 AABB RenderingServer::mesh_get_custom_aabb(const RID &p_mesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_get_custom_aabb")._native_ptr(), 974181306);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner, &p_mesh);
 }
 
@@ -537,6 +545,16 @@ void RenderingServer::mesh_surface_update_skin_region(const RID &p_mesh, int32_t
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_mesh, &p_surface_encoded, &p_offset_encoded, &p_data);
 }
 
+void RenderingServer::mesh_surface_update_index_region(const RID &p_mesh, int32_t p_surface, int32_t p_offset, const PackedByteArray &p_data) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_surface_update_index_region")._native_ptr(), 2900195149);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_surface_encoded;
+	PtrToArg<int64_t>::encode(p_surface, &p_surface_encoded);
+	int64_t p_offset_encoded;
+	PtrToArg<int64_t>::encode(p_offset, &p_offset_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_mesh, &p_surface_encoded, &p_offset_encoded, &p_data);
+}
+
 void RenderingServer::mesh_set_shadow_mesh(const RID &p_mesh, const RID &p_shadow_mesh) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("mesh_set_shadow_mesh")._native_ptr(), 395945892);
 	CHECK_METHOD_BIND(_gde_method_bind);
@@ -545,7 +563,7 @@ void RenderingServer::mesh_set_shadow_mesh(const RID &p_mesh, const RID &p_shado
 
 RID RenderingServer::multimesh_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -567,7 +585,7 @@ void RenderingServer::multimesh_allocate_data(const RID &p_multimesh, int32_t p_
 
 int32_t RenderingServer::multimesh_get_instance_count(const RID &p_multimesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_get_instance_count")._native_ptr(), 2198884583);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_multimesh);
 }
 
@@ -611,13 +629,13 @@ void RenderingServer::multimesh_instance_set_custom_data(const RID &p_multimesh,
 
 RID RenderingServer::multimesh_get_mesh(const RID &p_multimesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_get_mesh")._native_ptr(), 3814569979);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_multimesh);
 }
 
 AABB RenderingServer::multimesh_get_aabb(const RID &p_multimesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_get_aabb")._native_ptr(), 974181306);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner, &p_multimesh);
 }
 
@@ -629,13 +647,13 @@ void RenderingServer::multimesh_set_custom_aabb(const RID &p_multimesh, const AA
 
 AABB RenderingServer::multimesh_get_custom_aabb(const RID &p_multimesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_get_custom_aabb")._native_ptr(), 974181306);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner, &p_multimesh);
 }
 
 Transform3D RenderingServer::multimesh_instance_get_transform(const RID &p_multimesh, int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_instance_get_transform")._native_ptr(), 1050775521);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_multimesh, &p_index_encoded);
@@ -643,7 +661,7 @@ Transform3D RenderingServer::multimesh_instance_get_transform(const RID &p_multi
 
 Transform2D RenderingServer::multimesh_instance_get_transform_2d(const RID &p_multimesh, int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_instance_get_transform_2d")._native_ptr(), 1324854622);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner, &p_multimesh, &p_index_encoded);
@@ -651,7 +669,7 @@ Transform2D RenderingServer::multimesh_instance_get_transform_2d(const RID &p_mu
 
 Color RenderingServer::multimesh_instance_get_color(const RID &p_multimesh, int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_instance_get_color")._native_ptr(), 2946315076);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_multimesh, &p_index_encoded);
@@ -659,7 +677,7 @@ Color RenderingServer::multimesh_instance_get_color(const RID &p_multimesh, int3
 
 Color RenderingServer::multimesh_instance_get_custom_data(const RID &p_multimesh, int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_instance_get_custom_data")._native_ptr(), 2946315076);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_multimesh, &p_index_encoded);
@@ -675,7 +693,7 @@ void RenderingServer::multimesh_set_visible_instances(const RID &p_multimesh, in
 
 int32_t RenderingServer::multimesh_get_visible_instances(const RID &p_multimesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_get_visible_instances")._native_ptr(), 2198884583);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_multimesh);
 }
 
@@ -687,19 +705,19 @@ void RenderingServer::multimesh_set_buffer(const RID &p_multimesh, const PackedF
 
 RID RenderingServer::multimesh_get_command_buffer_rd_rid(const RID &p_multimesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_get_command_buffer_rd_rid")._native_ptr(), 3814569979);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_multimesh);
 }
 
 RID RenderingServer::multimesh_get_buffer_rd_rid(const RID &p_multimesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_get_buffer_rd_rid")._native_ptr(), 3814569979);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_multimesh);
 }
 
 PackedFloat32Array RenderingServer::multimesh_get_buffer(const RID &p_multimesh) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("multimesh_get_buffer")._native_ptr(), 3964669176);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedFloat32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedFloat32Array()));
 	return internal::_call_native_mb_ret<PackedFloat32Array>(_gde_method_bind, _owner, &p_multimesh);
 }
 
@@ -735,7 +753,7 @@ void RenderingServer::multimesh_instance_reset_physics_interpolation(const RID &
 
 RID RenderingServer::skeleton_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("skeleton_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -751,7 +769,7 @@ void RenderingServer::skeleton_allocate_data(const RID &p_skeleton, int32_t p_bo
 
 int32_t RenderingServer::skeleton_get_bone_count(const RID &p_skeleton) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("skeleton_get_bone_count")._native_ptr(), 2198884583);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_skeleton);
 }
 
@@ -765,7 +783,7 @@ void RenderingServer::skeleton_bone_set_transform(const RID &p_skeleton, int32_t
 
 Transform3D RenderingServer::skeleton_bone_get_transform(const RID &p_skeleton, int32_t p_bone) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("skeleton_bone_get_transform")._native_ptr(), 1050775521);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	int64_t p_bone_encoded;
 	PtrToArg<int64_t>::encode(p_bone, &p_bone_encoded);
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_skeleton, &p_bone_encoded);
@@ -781,7 +799,7 @@ void RenderingServer::skeleton_bone_set_transform_2d(const RID &p_skeleton, int3
 
 Transform2D RenderingServer::skeleton_bone_get_transform_2d(const RID &p_skeleton, int32_t p_bone) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("skeleton_bone_get_transform_2d")._native_ptr(), 1324854622);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	int64_t p_bone_encoded;
 	PtrToArg<int64_t>::encode(p_bone, &p_bone_encoded);
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner, &p_skeleton, &p_bone_encoded);
@@ -795,19 +813,19 @@ void RenderingServer::skeleton_set_base_transform_2d(const RID &p_skeleton, cons
 
 RID RenderingServer::directional_light_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("directional_light_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID RenderingServer::omni_light_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("omni_light_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID RenderingServer::spot_light_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("spot_light_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -979,7 +997,7 @@ void RenderingServer::directional_shadow_atlas_set_size(int32_t p_size, bool p_i
 
 RID RenderingServer::reflection_probe_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("reflection_probe_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1107,7 +1125,7 @@ void RenderingServer::reflection_probe_set_mesh_lod_threshold(const RID &p_probe
 
 RID RenderingServer::decal_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("decal_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1203,7 +1221,7 @@ void RenderingServer::gi_set_use_half_resolution(bool p_half_resolution) {
 
 RID RenderingServer::voxel_gi_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("voxel_gi_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1215,37 +1233,37 @@ void RenderingServer::voxel_gi_allocate_data(const RID &p_voxel_gi, const Transf
 
 Vector3i RenderingServer::voxel_gi_get_octree_size(const RID &p_voxel_gi) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("voxel_gi_get_octree_size")._native_ptr(), 2607699645);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3i()));
 	return internal::_call_native_mb_ret<Vector3i>(_gde_method_bind, _owner, &p_voxel_gi);
 }
 
 PackedByteArray RenderingServer::voxel_gi_get_octree_cells(const RID &p_voxel_gi) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("voxel_gi_get_octree_cells")._native_ptr(), 3348040486);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner, &p_voxel_gi);
 }
 
 PackedByteArray RenderingServer::voxel_gi_get_data_cells(const RID &p_voxel_gi) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("voxel_gi_get_data_cells")._native_ptr(), 3348040486);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner, &p_voxel_gi);
 }
 
 PackedByteArray RenderingServer::voxel_gi_get_distance_field(const RID &p_voxel_gi) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("voxel_gi_get_distance_field")._native_ptr(), 3348040486);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner, &p_voxel_gi);
 }
 
 PackedInt32Array RenderingServer::voxel_gi_get_level_counts(const RID &p_voxel_gi) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("voxel_gi_get_level_counts")._native_ptr(), 788230395);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_voxel_gi);
 }
 
 Transform3D RenderingServer::voxel_gi_get_to_cell_xform(const RID &p_voxel_gi) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("voxel_gi_get_to_cell_xform")._native_ptr(), 1128465797);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_voxel_gi);
 }
 
@@ -1323,7 +1341,7 @@ void RenderingServer::voxel_gi_set_quality(RenderingServer::VoxelGIQuality p_qua
 
 RID RenderingServer::lightmap_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("lightmap_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1357,25 +1375,25 @@ void RenderingServer::lightmap_set_probe_capture_data(const RID &p_lightmap, con
 
 PackedVector3Array RenderingServer::lightmap_get_probe_capture_points(const RID &p_lightmap) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("lightmap_get_probe_capture_points")._native_ptr(), 808965560);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector3Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector3Array()));
 	return internal::_call_native_mb_ret<PackedVector3Array>(_gde_method_bind, _owner, &p_lightmap);
 }
 
 PackedColorArray RenderingServer::lightmap_get_probe_capture_sh(const RID &p_lightmap) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("lightmap_get_probe_capture_sh")._native_ptr(), 1569415609);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedColorArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedColorArray()));
 	return internal::_call_native_mb_ret<PackedColorArray>(_gde_method_bind, _owner, &p_lightmap);
 }
 
 PackedInt32Array RenderingServer::lightmap_get_probe_capture_tetrahedra(const RID &p_lightmap) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("lightmap_get_probe_capture_tetrahedra")._native_ptr(), 788230395);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_lightmap);
 }
 
 PackedInt32Array RenderingServer::lightmap_get_probe_capture_bsp_tree(const RID &p_lightmap) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("lightmap_get_probe_capture_bsp_tree")._native_ptr(), 788230395);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_lightmap);
 }
 
@@ -1397,7 +1415,7 @@ void RenderingServer::lightmap_set_probe_capture_update_speed(float p_speed) {
 
 RID RenderingServer::particles_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("particles_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1419,7 +1437,7 @@ void RenderingServer::particles_set_emitting(const RID &p_particles, bool p_emit
 
 bool RenderingServer::particles_get_emitting(const RID &p_particles) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("particles_get_emitting")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_particles);
 }
 
@@ -1587,7 +1605,7 @@ void RenderingServer::particles_set_trail_bind_poses(const RID &p_particles, con
 
 bool RenderingServer::particles_is_inactive(const RID &p_particles) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("particles_is_inactive")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_particles);
 }
 
@@ -1643,7 +1661,7 @@ void RenderingServer::particles_set_draw_pass_mesh(const RID &p_particles, int32
 
 AABB RenderingServer::particles_get_current_aabb(const RID &p_particles) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("particles_get_current_aabb")._native_ptr(), 3952830260);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner, &p_particles);
 }
 
@@ -1655,7 +1673,7 @@ void RenderingServer::particles_set_emission_transform(const RID &p_particles, c
 
 RID RenderingServer::particles_collision_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("particles_collision_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1743,7 +1761,7 @@ void RenderingServer::particles_collision_set_height_field_mask(const RID &p_par
 
 RID RenderingServer::fog_volume_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("fog_volume_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1769,7 +1787,7 @@ void RenderingServer::fog_volume_set_material(const RID &p_fog_volume, const RID
 
 RID RenderingServer::visibility_notifier_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("visibility_notifier_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1787,7 +1805,7 @@ void RenderingServer::visibility_notifier_set_callbacks(const RID &p_notifier, c
 
 RID RenderingServer::occluder_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("occluder_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1799,7 +1817,7 @@ void RenderingServer::occluder_set_mesh(const RID &p_occluder, const PackedVecto
 
 RID RenderingServer::camera_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("camera_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1881,7 +1899,7 @@ void RenderingServer::camera_set_use_vertical_aspect(const RID &p_camera, bool p
 
 RID RenderingServer::viewport_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("viewport_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -1991,7 +2009,7 @@ void RenderingServer::viewport_set_update_mode(const RID &p_viewport, RenderingS
 
 RenderingServer::ViewportUpdateMode RenderingServer::viewport_get_update_mode(const RID &p_viewport) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("viewport_get_update_mode")._native_ptr(), 3803901472);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::ViewportUpdateMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::ViewportUpdateMode(0)));
 	return (RenderingServer::ViewportUpdateMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_viewport);
 }
 
@@ -2005,13 +2023,13 @@ void RenderingServer::viewport_set_clear_mode(const RID &p_viewport, RenderingSe
 
 RID RenderingServer::viewport_get_render_target(const RID &p_viewport) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("viewport_get_render_target")._native_ptr(), 3814569979);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_viewport);
 }
 
 RID RenderingServer::viewport_get_texture(const RID &p_viewport) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("viewport_get_texture")._native_ptr(), 3814569979);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_viewport);
 }
 
@@ -2229,7 +2247,7 @@ void RenderingServer::viewport_set_occlusion_culling_build_quality(RenderingServ
 
 int32_t RenderingServer::viewport_get_render_info(const RID &p_viewport, RenderingServer::ViewportRenderInfoType p_type, RenderingServer::ViewportRenderInfo p_info) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("viewport_get_render_info")._native_ptr(), 2041262392);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_type_encoded;
 	PtrToArg<int64_t>::encode(p_type, &p_type_encoded);
 	int64_t p_info_encoded;
@@ -2255,13 +2273,13 @@ void RenderingServer::viewport_set_measure_render_time(const RID &p_viewport, bo
 
 double RenderingServer::viewport_get_measured_render_time_cpu(const RID &p_viewport) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("viewport_get_measured_render_time_cpu")._native_ptr(), 866169185);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_viewport);
 }
 
 double RenderingServer::viewport_get_measured_render_time_gpu(const RID &p_viewport) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("viewport_get_measured_render_time_gpu")._native_ptr(), 866169185);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_viewport);
 }
 
@@ -2289,7 +2307,7 @@ void RenderingServer::viewport_set_vrs_texture(const RID &p_viewport, const RID 
 
 RID RenderingServer::sky_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("sky_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -2317,7 +2335,7 @@ void RenderingServer::sky_set_material(const RID &p_sky, const RID &p_material) 
 
 Ref<Image> RenderingServer::sky_bake_panorama(const RID &p_sky, float p_energy, bool p_bake_irradiance, const Vector2i &p_size) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("sky_bake_panorama")._native_ptr(), 3875285818);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	double p_energy_encoded;
 	PtrToArg<double>::encode(p_energy, &p_energy_encoded);
 	int8_t p_bake_irradiance_encoded;
@@ -2327,7 +2345,7 @@ Ref<Image> RenderingServer::sky_bake_panorama(const RID &p_sky, float p_energy, 
 
 RID RenderingServer::compositor_effect_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("compositor_effect_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -2359,7 +2377,7 @@ void RenderingServer::compositor_effect_set_flag(const RID &p_effect, RenderingS
 
 RID RenderingServer::compositor_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("compositor_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -2371,7 +2389,7 @@ void RenderingServer::compositor_set_compositor_effects(const RID &p_compositor,
 
 RID RenderingServer::environment_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("environment_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -2567,6 +2585,18 @@ void RenderingServer::environment_set_fog(const RID &p_env, bool p_enable, const
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_env, &p_enable_encoded, &p_light_color, &p_light_energy_encoded, &p_sun_scatter_encoded, &p_density_encoded, &p_height_encoded, &p_height_density_encoded, &p_aerial_perspective_encoded, &p_sky_affect_encoded, &p_fog_mode_encoded);
 }
 
+void RenderingServer::environment_set_fog_depth(const RID &p_env, float p_curve, float p_begin, float p_end) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("environment_set_fog_depth")._native_ptr(), 157498339);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_curve_encoded;
+	PtrToArg<double>::encode(p_curve, &p_curve_encoded);
+	double p_begin_encoded;
+	PtrToArg<double>::encode(p_begin, &p_begin_encoded);
+	double p_end_encoded;
+	PtrToArg<double>::encode(p_end, &p_end_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_env, &p_curve_encoded, &p_begin_encoded, &p_end_encoded);
+}
+
 void RenderingServer::environment_set_sdfgi(const RID &p_env, bool p_enable, int32_t p_cascades, float p_min_cell_size, RenderingServer::EnvironmentSDFGIYScale p_y_scale, bool p_use_occlusion, float p_bounce_feedback, bool p_read_sky, float p_energy, float p_normal_bias, float p_probe_bias) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("environment_set_sdfgi")._native_ptr(), 3519144388);
 	CHECK_METHOD_BIND(_gde_method_bind);
@@ -2717,7 +2747,7 @@ void RenderingServer::environment_set_volumetric_fog_filter_active(bool p_active
 
 Ref<Image> RenderingServer::environment_bake_panorama(const RID &p_environment, bool p_bake_irradiance, const Vector2i &p_size) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("environment_bake_panorama")._native_ptr(), 2452908646);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Image>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Image>()));
 	int8_t p_bake_irradiance_encoded;
 	PtrToArg<bool>::encode(p_bake_irradiance, &p_bake_irradiance_encoded);
 	return Ref<Image>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Image>(_gde_method_bind, _owner, &p_environment, &p_bake_irradiance_encoded, &p_size));
@@ -2755,7 +2785,7 @@ void RenderingServer::sub_surface_scattering_set_scale(float p_scale, float p_de
 
 RID RenderingServer::camera_attributes_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("camera_attributes_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -2825,7 +2855,7 @@ void RenderingServer::camera_attributes_set_auto_exposure(const RID &p_camera_at
 
 RID RenderingServer::scenario_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("scenario_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -2855,13 +2885,13 @@ void RenderingServer::scenario_set_compositor(const RID &p_scenario, const RID &
 
 RID RenderingServer::instance_create2(const RID &p_base, const RID &p_scenario) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_create2")._native_ptr(), 746547085);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_base, &p_scenario);
 }
 
 RID RenderingServer::instance_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -2899,20 +2929,6 @@ void RenderingServer::instance_set_transform(const RID &p_instance, const Transf
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_set_transform")._native_ptr(), 3935195649);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_instance, &p_transform);
-}
-
-void RenderingServer::instance_set_interpolated(const RID &p_instance, bool p_interpolated) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_set_interpolated")._native_ptr(), 1265174801);
-	CHECK_METHOD_BIND(_gde_method_bind);
-	int8_t p_interpolated_encoded;
-	PtrToArg<bool>::encode(p_interpolated, &p_interpolated_encoded);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_instance, &p_interpolated_encoded);
-}
-
-void RenderingServer::instance_reset_physics_interpolation(const RID &p_instance) {
-	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_reset_physics_interpolation")._native_ptr(), 2722037293);
-	CHECK_METHOD_BIND(_gde_method_bind);
-	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_instance);
 }
 
 void RenderingServer::instance_attach_object_instance_id(const RID &p_instance, uint64_t p_id) {
@@ -2955,6 +2971,12 @@ void RenderingServer::instance_geometry_set_transparency(const RID &p_instance, 
 	double p_transparency_encoded;
 	PtrToArg<double>::encode(p_transparency, &p_transparency_encoded);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_instance, &p_transparency_encoded);
+}
+
+void RenderingServer::instance_teleport(const RID &p_instance) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_teleport")._native_ptr(), 2722037293);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_instance);
 }
 
 void RenderingServer::instance_set_custom_aabb(const RID &p_instance, const AABB &p_aabb) {
@@ -3061,49 +3083,49 @@ void RenderingServer::instance_geometry_set_shader_parameter(const RID &p_instan
 
 Variant RenderingServer::instance_geometry_get_shader_parameter(const RID &p_instance, const StringName &p_parameter) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_geometry_get_shader_parameter")._native_ptr(), 2621281810);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_instance, &p_parameter);
 }
 
 Variant RenderingServer::instance_geometry_get_shader_parameter_default_value(const RID &p_instance, const StringName &p_parameter) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_geometry_get_shader_parameter_default_value")._native_ptr(), 2621281810);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_instance, &p_parameter);
 }
 
 TypedArray<Dictionary> RenderingServer::instance_geometry_get_shader_parameter_list(const RID &p_instance) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instance_geometry_get_shader_parameter_list")._native_ptr(), 2684255073);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner, &p_instance);
 }
 
 PackedInt64Array RenderingServer::instances_cull_aabb(const AABB &p_aabb, const RID &p_scenario) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instances_cull_aabb")._native_ptr(), 2570105777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt64Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt64Array()));
 	return internal::_call_native_mb_ret<PackedInt64Array>(_gde_method_bind, _owner, &p_aabb, &p_scenario);
 }
 
 PackedInt64Array RenderingServer::instances_cull_ray(const Vector3 &p_from, const Vector3 &p_to, const RID &p_scenario) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instances_cull_ray")._native_ptr(), 2208759584);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt64Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt64Array()));
 	return internal::_call_native_mb_ret<PackedInt64Array>(_gde_method_bind, _owner, &p_from, &p_to, &p_scenario);
 }
 
 PackedInt64Array RenderingServer::instances_cull_convex(const TypedArray<Plane> &p_convex, const RID &p_scenario) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("instances_cull_convex")._native_ptr(), 2488539944);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt64Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt64Array()));
 	return internal::_call_native_mb_ret<PackedInt64Array>(_gde_method_bind, _owner, &p_convex, &p_scenario);
 }
 
-TypedArray<Image> RenderingServer::bake_render_uv2(const RID &p_base, const TypedArray<RID> &p_material_overrides, const Vector2i &p_image_size) {
+TypedArray<Ref<Image>> RenderingServer::bake_render_uv2(const RID &p_base, const TypedArray<RID> &p_material_overrides, const Vector2i &p_image_size) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("bake_render_uv2")._native_ptr(), 1904608558);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Image>());
-	return internal::_call_native_mb_ret<TypedArray<Image>>(_gde_method_bind, _owner, &p_base, &p_material_overrides, &p_image_size);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<Image>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<Image>>>(_gde_method_bind, _owner, &p_base, &p_material_overrides, &p_image_size);
 }
 
 RID RenderingServer::canvas_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -3137,7 +3159,7 @@ void RenderingServer::canvas_set_disable_scale(bool p_disable) {
 
 RID RenderingServer::canvas_texture_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_texture_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -3175,7 +3197,7 @@ void RenderingServer::canvas_texture_set_texture_repeat(const RID &p_canvas_text
 
 RID RenderingServer::canvas_item_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_item_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -3533,19 +3555,19 @@ void RenderingServer::canvas_item_set_instance_shader_parameter(const RID &p_ins
 
 Variant RenderingServer::canvas_item_get_instance_shader_parameter(const RID &p_instance, const StringName &p_parameter) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_item_get_instance_shader_parameter")._native_ptr(), 2621281810);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_instance, &p_parameter);
 }
 
 Variant RenderingServer::canvas_item_get_instance_shader_parameter_default_value(const RID &p_instance, const StringName &p_parameter) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_item_get_instance_shader_parameter_default_value")._native_ptr(), 2621281810);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_instance, &p_parameter);
 }
 
 TypedArray<Dictionary> RenderingServer::canvas_item_get_instance_shader_parameter_list(const RID &p_instance) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_item_get_instance_shader_parameter_list")._native_ptr(), 2684255073);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner, &p_instance);
 }
 
@@ -3575,13 +3597,13 @@ void RenderingServer::canvas_item_set_canvas_group_mode(const RID &p_item, Rende
 
 Rect2 RenderingServer::debug_canvas_item_get_rect(const RID &p_item) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("debug_canvas_item_get_rect")._native_ptr(), 624227424);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner, &p_item);
 }
 
 RID RenderingServer::canvas_light_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_light_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -3751,7 +3773,7 @@ void RenderingServer::canvas_light_transform_physics_interpolation(const RID &p_
 
 RID RenderingServer::canvas_light_occluder_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_light_occluder_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -3819,7 +3841,7 @@ void RenderingServer::canvas_light_occluder_transform_physics_interpolation(cons
 
 RID RenderingServer::canvas_occluder_polygon_create() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("canvas_occluder_polygon_create")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -3863,7 +3885,7 @@ void RenderingServer::global_shader_parameter_remove(const StringName &p_name) {
 
 TypedArray<StringName> RenderingServer::global_shader_parameter_get_list() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("global_shader_parameter_get_list")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<StringName>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<StringName>()));
 	return internal::_call_native_mb_ret<TypedArray<StringName>>(_gde_method_bind, _owner);
 }
 
@@ -3881,13 +3903,13 @@ void RenderingServer::global_shader_parameter_set_override(const StringName &p_n
 
 Variant RenderingServer::global_shader_parameter_get(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("global_shader_parameter_get")._native_ptr(), 2760726917);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_name);
 }
 
 RenderingServer::GlobalShaderParameterType RenderingServer::global_shader_parameter_get_type(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("global_shader_parameter_get_type")._native_ptr(), 1601414142);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::GlobalShaderParameterType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::GlobalShaderParameterType(0)));
 	return (RenderingServer::GlobalShaderParameterType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -3905,13 +3927,13 @@ void RenderingServer::request_frame_drawn_callback(const Callable &p_callable) {
 
 bool RenderingServer::has_changed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("has_changed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 uint64_t RenderingServer::get_rendering_info(RenderingServer::RenderingInfo p_info) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_rendering_info")._native_ptr(), 3763192241);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_info_encoded;
 	PtrToArg<int64_t>::encode(p_info, &p_info_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_info_encoded);
@@ -3919,43 +3941,43 @@ uint64_t RenderingServer::get_rendering_info(RenderingServer::RenderingInfo p_in
 
 String RenderingServer::get_video_adapter_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_video_adapter_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String RenderingServer::get_video_adapter_vendor() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_video_adapter_vendor")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 RenderingDevice::DeviceType RenderingServer::get_video_adapter_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_video_adapter_type")._native_ptr(), 3099547011);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::DeviceType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::DeviceType(0)));
 	return (RenderingDevice::DeviceType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String RenderingServer::get_video_adapter_api_version() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_video_adapter_api_version")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String RenderingServer::get_current_rendering_driver_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_current_rendering_driver_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String RenderingServer::get_current_rendering_method() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_current_rendering_method")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 RID RenderingServer::make_sphere_mesh(int32_t p_latitudes, int32_t p_longitudes, float p_radius) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("make_sphere_mesh")._native_ptr(), 2251015897);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_latitudes_encoded;
 	PtrToArg<int64_t>::encode(p_latitudes, &p_latitudes_encoded);
 	int64_t p_longitudes_encoded;
@@ -3967,19 +3989,19 @@ RID RenderingServer::make_sphere_mesh(int32_t p_latitudes, int32_t p_longitudes,
 
 RID RenderingServer::get_test_cube() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_test_cube")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID RenderingServer::get_test_texture() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_test_texture")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 RID RenderingServer::get_white_texture() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_white_texture")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -3995,7 +4017,7 @@ void RenderingServer::set_boot_image(const Ref<Image> &p_image, const Color &p_c
 
 Color RenderingServer::get_default_clear_color() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_default_clear_color")._native_ptr(), 3200896285);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -4007,7 +4029,7 @@ void RenderingServer::set_default_clear_color(const Color &p_color) {
 
 bool RenderingServer::has_os_feature(const String &p_feature) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("has_os_feature")._native_ptr(), 3927539163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_feature);
 }
 
@@ -4021,7 +4043,7 @@ void RenderingServer::set_debug_generate_wireframes(bool p_generate) {
 
 bool RenderingServer::is_render_loop_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("is_render_loop_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -4035,7 +4057,7 @@ void RenderingServer::set_render_loop_enabled(bool p_enabled) {
 
 double RenderingServer::get_frame_setup_time_cpu() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_frame_setup_time_cpu")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -4057,19 +4079,19 @@ void RenderingServer::force_draw(bool p_swap_buffers, double p_frame_step) {
 
 RenderingDevice *RenderingServer::get_rendering_device() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("get_rendering_device")._native_ptr(), 1405107940);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<RenderingDevice>(_gde_method_bind, _owner);
 }
 
 RenderingDevice *RenderingServer::create_local_rendering_device() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("create_local_rendering_device")._native_ptr(), 1405107940);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<RenderingDevice>(_gde_method_bind, _owner);
 }
 
 bool RenderingServer::is_on_render_thread() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("is_on_render_thread")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -4081,7 +4103,7 @@ void RenderingServer::call_on_render_thread(const Callable &p_callable) {
 
 bool RenderingServer::has_feature(RenderingServer::Features p_feature) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderingServer::get_class_static()._native_ptr(), StringName("has_feature")._native_ptr(), 598462696);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_feature_encoded;
 	PtrToArg<int64_t>::encode(p_feature, &p_feature_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_feature_encoded);

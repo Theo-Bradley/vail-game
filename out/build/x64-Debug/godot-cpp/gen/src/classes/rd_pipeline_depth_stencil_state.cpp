@@ -48,7 +48,7 @@ void RDPipelineDepthStencilState::set_enable_depth_test(bool p_member) {
 
 bool RDPipelineDepthStencilState::get_enable_depth_test() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_enable_depth_test")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void RDPipelineDepthStencilState::set_enable_depth_write(bool p_member) {
 
 bool RDPipelineDepthStencilState::get_enable_depth_write() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_enable_depth_write")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void RDPipelineDepthStencilState::set_depth_compare_operator(RenderingDevice::Co
 
 RenderingDevice::CompareOperator RDPipelineDepthStencilState::get_depth_compare_operator() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_depth_compare_operator")._native_ptr(), 269730778);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::CompareOperator(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::CompareOperator(0)));
 	return (RenderingDevice::CompareOperator)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void RDPipelineDepthStencilState::set_enable_depth_range(bool p_member) {
 
 bool RDPipelineDepthStencilState::get_enable_depth_range() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_enable_depth_range")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void RDPipelineDepthStencilState::set_depth_range_min(float p_member) {
 
 float RDPipelineDepthStencilState::get_depth_range_min() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_depth_range_min")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void RDPipelineDepthStencilState::set_depth_range_max(float p_member) {
 
 float RDPipelineDepthStencilState::get_depth_range_max() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_depth_range_max")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void RDPipelineDepthStencilState::set_enable_stencil(bool p_member) {
 
 bool RDPipelineDepthStencilState::get_enable_stencil() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_enable_stencil")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void RDPipelineDepthStencilState::set_front_op_fail(RenderingDevice::StencilOper
 
 RenderingDevice::StencilOperation RDPipelineDepthStencilState::get_front_op_fail() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_front_op_fail")._native_ptr(), 1714732389);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::StencilOperation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::StencilOperation(0)));
 	return (RenderingDevice::StencilOperation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void RDPipelineDepthStencilState::set_front_op_pass(RenderingDevice::StencilOper
 
 RenderingDevice::StencilOperation RDPipelineDepthStencilState::get_front_op_pass() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_front_op_pass")._native_ptr(), 1714732389);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::StencilOperation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::StencilOperation(0)));
 	return (RenderingDevice::StencilOperation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void RDPipelineDepthStencilState::set_front_op_depth_fail(RenderingDevice::Stenc
 
 RenderingDevice::StencilOperation RDPipelineDepthStencilState::get_front_op_depth_fail() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_front_op_depth_fail")._native_ptr(), 1714732389);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::StencilOperation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::StencilOperation(0)));
 	return (RenderingDevice::StencilOperation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +188,7 @@ void RDPipelineDepthStencilState::set_front_op_compare(RenderingDevice::CompareO
 
 RenderingDevice::CompareOperator RDPipelineDepthStencilState::get_front_op_compare() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_front_op_compare")._native_ptr(), 269730778);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::CompareOperator(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::CompareOperator(0)));
 	return (RenderingDevice::CompareOperator)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -202,7 +202,7 @@ void RDPipelineDepthStencilState::set_front_op_compare_mask(uint32_t p_member) {
 
 uint32_t RDPipelineDepthStencilState::get_front_op_compare_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_front_op_compare_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -216,7 +216,7 @@ void RDPipelineDepthStencilState::set_front_op_write_mask(uint32_t p_member) {
 
 uint32_t RDPipelineDepthStencilState::get_front_op_write_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_front_op_write_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -230,7 +230,7 @@ void RDPipelineDepthStencilState::set_front_op_reference(uint32_t p_member) {
 
 uint32_t RDPipelineDepthStencilState::get_front_op_reference() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_front_op_reference")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -244,7 +244,7 @@ void RDPipelineDepthStencilState::set_back_op_fail(RenderingDevice::StencilOpera
 
 RenderingDevice::StencilOperation RDPipelineDepthStencilState::get_back_op_fail() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_back_op_fail")._native_ptr(), 1714732389);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::StencilOperation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::StencilOperation(0)));
 	return (RenderingDevice::StencilOperation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -258,7 +258,7 @@ void RDPipelineDepthStencilState::set_back_op_pass(RenderingDevice::StencilOpera
 
 RenderingDevice::StencilOperation RDPipelineDepthStencilState::get_back_op_pass() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_back_op_pass")._native_ptr(), 1714732389);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::StencilOperation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::StencilOperation(0)));
 	return (RenderingDevice::StencilOperation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -272,7 +272,7 @@ void RDPipelineDepthStencilState::set_back_op_depth_fail(RenderingDevice::Stenci
 
 RenderingDevice::StencilOperation RDPipelineDepthStencilState::get_back_op_depth_fail() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_back_op_depth_fail")._native_ptr(), 1714732389);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::StencilOperation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::StencilOperation(0)));
 	return (RenderingDevice::StencilOperation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -286,7 +286,7 @@ void RDPipelineDepthStencilState::set_back_op_compare(RenderingDevice::CompareOp
 
 RenderingDevice::CompareOperator RDPipelineDepthStencilState::get_back_op_compare() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_back_op_compare")._native_ptr(), 269730778);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::CompareOperator(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::CompareOperator(0)));
 	return (RenderingDevice::CompareOperator)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -300,7 +300,7 @@ void RDPipelineDepthStencilState::set_back_op_compare_mask(uint32_t p_member) {
 
 uint32_t RDPipelineDepthStencilState::get_back_op_compare_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_back_op_compare_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -314,7 +314,7 @@ void RDPipelineDepthStencilState::set_back_op_write_mask(uint32_t p_member) {
 
 uint32_t RDPipelineDepthStencilState::get_back_op_write_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_back_op_write_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -328,7 +328,7 @@ void RDPipelineDepthStencilState::set_back_op_reference(uint32_t p_member) {
 
 uint32_t RDPipelineDepthStencilState::get_back_op_reference() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineDepthStencilState::get_class_static()._native_ptr(), StringName("get_back_op_reference")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

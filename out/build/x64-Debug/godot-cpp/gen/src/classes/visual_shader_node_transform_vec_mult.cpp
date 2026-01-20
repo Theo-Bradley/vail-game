@@ -48,7 +48,7 @@ void VisualShaderNodeTransformVecMult::set_operator(VisualShaderNodeTransformVec
 
 VisualShaderNodeTransformVecMult::Operator VisualShaderNodeTransformVecMult::get_operator() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTransformVecMult::get_class_static()._native_ptr(), StringName("get_operator")._native_ptr(), 1622088722);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeTransformVecMult::Operator(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeTransformVecMult::Operator(0)));
 	return (VisualShaderNodeTransformVecMult::Operator)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

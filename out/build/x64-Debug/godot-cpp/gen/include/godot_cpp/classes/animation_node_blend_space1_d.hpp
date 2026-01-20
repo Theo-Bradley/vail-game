@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_NODE_BLEND_SPACE1_D_HPP
-#define GODOT_CPP_ANIMATION_NODE_BLEND_SPACE1_D_HPP
+#pragma once
 
 #include <godot_cpp/classes/animation_root_node.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -86,4 +85,3 @@ public:
 
 VARIANT_ENUM_CAST(AnimationNodeBlendSpace1D::BlendMode);
 
-#endif // ! GODOT_CPP_ANIMATION_NODE_BLEND_SPACE1_D_HPP

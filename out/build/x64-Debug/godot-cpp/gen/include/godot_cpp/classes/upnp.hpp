@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_UPNP_HPP
-#define GODOT_CPP_UPNP_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -112,4 +111,3 @@ public:
 
 VARIANT_ENUM_CAST(UPNP::UPNPResult);
 
-#endif // ! GODOT_CPP_UPNP_HPP

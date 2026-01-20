@@ -30,11 +30,12 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TRIANGLE_MESH_HPP
-#define GODOT_CPP_TRIANGLE_MESH_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
+#include <godot_cpp/variant/dictionary.hpp>
+#include <godot_cpp/variant/packed_vector3_array.hpp>
 
 #include <godot_cpp/core/class_db.hpp>
 
@@ -42,10 +43,17 @@
 
 namespace godot {
 
+struct Vector3;
+
 class TriangleMesh : public RefCounted {
 	GDEXTENSION_CLASS(TriangleMesh, RefCounted)
 
 public:
+	bool create_from_faces(const PackedVector3Array &p_faces);
+	PackedVector3Array get_faces() const;
+	Dictionary intersect_segment(const Vector3 &p_begin, const Vector3 &p_end) const;
+	Dictionary intersect_ray(const Vector3 &p_begin, const Vector3 &p_dir) const;
+
 protected:
 	template <typename T, typename B>
 	static void register_virtuals() {
@@ -57,4 +65,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_TRIANGLE_MESH_HPP

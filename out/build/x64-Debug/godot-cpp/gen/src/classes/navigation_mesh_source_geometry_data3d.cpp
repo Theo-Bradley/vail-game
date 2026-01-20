@@ -50,7 +50,7 @@ void NavigationMeshSourceGeometryData3D::set_vertices(const PackedFloat32Array &
 
 PackedFloat32Array NavigationMeshSourceGeometryData3D::get_vertices() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationMeshSourceGeometryData3D::get_class_static()._native_ptr(), StringName("get_vertices")._native_ptr(), 675695659);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedFloat32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedFloat32Array()));
 	return internal::_call_native_mb_ret<PackedFloat32Array>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void NavigationMeshSourceGeometryData3D::set_indices(const PackedInt32Array &p_i
 
 PackedInt32Array NavigationMeshSourceGeometryData3D::get_indices() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationMeshSourceGeometryData3D::get_class_static()._native_ptr(), StringName("get_indices")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void NavigationMeshSourceGeometryData3D::clear() {
 
 bool NavigationMeshSourceGeometryData3D::has_data() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationMeshSourceGeometryData3D::get_class_static()._native_ptr(), StringName("has_data")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -134,13 +134,13 @@ void NavigationMeshSourceGeometryData3D::set_projected_obstructions(const Array 
 
 Array NavigationMeshSourceGeometryData3D::get_projected_obstructions() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationMeshSourceGeometryData3D::get_class_static()._native_ptr(), StringName("get_projected_obstructions")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
 AABB NavigationMeshSourceGeometryData3D::get_bounds() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationMeshSourceGeometryData3D::get_class_static()._native_ptr(), StringName("get_bounds")._native_ptr(), 1021181044);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AABB());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AABB()));
 	return internal::_call_native_mb_ret<AABB>(_gde_method_bind, _owner);
 }
 

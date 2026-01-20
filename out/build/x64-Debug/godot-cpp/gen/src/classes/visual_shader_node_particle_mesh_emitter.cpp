@@ -48,7 +48,7 @@ void VisualShaderNodeParticleMeshEmitter::set_mesh(const Ref<Mesh> &p_mesh) {
 
 Ref<Mesh> VisualShaderNodeParticleMeshEmitter::get_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeParticleMeshEmitter::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 1808005922);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Mesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Mesh>()));
 	return Ref<Mesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Mesh>(_gde_method_bind, _owner));
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeParticleMeshEmitter::set_use_all_surfaces(bool p_enabled) {
 
 bool VisualShaderNodeParticleMeshEmitter::is_use_all_surfaces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeParticleMeshEmitter::get_class_static()._native_ptr(), StringName("is_use_all_surfaces")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void VisualShaderNodeParticleMeshEmitter::set_surface_index(int32_t p_surface_in
 
 int32_t VisualShaderNodeParticleMeshEmitter::get_surface_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeParticleMeshEmitter::get_class_static()._native_ptr(), StringName("get_surface_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

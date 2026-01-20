@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NAVIGATION_PATH_QUERY_RESULT3D_HPP
-#define GODOT_CPP_NAVIGATION_PATH_QUERY_RESULT3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -64,6 +63,8 @@ public:
 	TypedArray<RID> get_path_rids() const;
 	void set_path_owner_ids(const PackedInt64Array &p_path_owner_ids);
 	PackedInt64Array get_path_owner_ids() const;
+	void set_path_length(float p_length);
+	float get_path_length() const;
 	void reset();
 
 protected:
@@ -79,4 +80,3 @@ public:
 
 VARIANT_ENUM_CAST(NavigationPathQueryResult3D::PathSegmentType);
 
-#endif // ! GODOT_CPP_NAVIGATION_PATH_QUERY_RESULT3D_HPP

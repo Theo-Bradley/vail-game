@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_HMAC_CONTEXT_HPP
-#define GODOT_CPP_HMAC_CONTEXT_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/hashing_context.hpp>
@@ -64,4 +63,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_HMAC_CONTEXT_HPP

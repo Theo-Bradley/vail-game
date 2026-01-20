@@ -109,9 +109,19 @@ void OptionButton::set_item_tooltip(int32_t p_idx, const String &p_tooltip) {
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_idx_encoded, &p_tooltip);
 }
 
+void OptionButton::set_item_auto_translate_mode(int32_t p_idx, Node::AutoTranslateMode p_mode) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("set_item_auto_translate_mode")._native_ptr(), 287402019);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_idx_encoded;
+	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
+	int64_t p_mode_encoded;
+	PtrToArg<int64_t>::encode(p_mode, &p_mode_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_idx_encoded, &p_mode_encoded);
+}
+
 String OptionButton::get_item_text(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_item_text")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -119,7 +129,7 @@ String OptionButton::get_item_text(int32_t p_idx) const {
 
 Ref<Texture2D> OptionButton::get_item_icon(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_item_icon")._native_ptr(), 3536238170);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_idx_encoded));
@@ -127,7 +137,7 @@ Ref<Texture2D> OptionButton::get_item_icon(int32_t p_idx) const {
 
 int32_t OptionButton::get_item_id(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_item_id")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -135,7 +145,7 @@ int32_t OptionButton::get_item_id(int32_t p_idx) const {
 
 int32_t OptionButton::get_item_index(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_item_index")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_id_encoded);
@@ -143,7 +153,7 @@ int32_t OptionButton::get_item_index(int32_t p_id) const {
 
 Variant OptionButton::get_item_metadata(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_item_metadata")._native_ptr(), 4227898402);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -151,15 +161,23 @@ Variant OptionButton::get_item_metadata(int32_t p_idx) const {
 
 String OptionButton::get_item_tooltip(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_item_tooltip")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_idx_encoded);
 }
 
+Node::AutoTranslateMode OptionButton::get_item_auto_translate_mode(int32_t p_idx) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_item_auto_translate_mode")._native_ptr(), 906302372);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Node::AutoTranslateMode(0)));
+	int64_t p_idx_encoded;
+	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
+	return (Node::AutoTranslateMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_idx_encoded);
+}
+
 bool OptionButton::is_item_disabled(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("is_item_disabled")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -167,7 +185,7 @@ bool OptionButton::is_item_disabled(int32_t p_idx) const {
 
 bool OptionButton::is_item_separator(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("is_item_separator")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -195,19 +213,19 @@ void OptionButton::select(int32_t p_idx) {
 
 int32_t OptionButton::get_selected() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_selected")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t OptionButton::get_selected_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_selected_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Variant OptionButton::get_selected_metadata() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_selected_metadata")._native_ptr(), 1214101251);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner);
 }
 
@@ -221,7 +239,7 @@ void OptionButton::remove_item(int32_t p_idx) {
 
 PopupMenu *OptionButton::get_popup() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_popup")._native_ptr(), 229722558);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<PopupMenu>(_gde_method_bind, _owner);
 }
 
@@ -241,19 +259,19 @@ void OptionButton::set_item_count(int32_t p_count) {
 
 int32_t OptionButton::get_item_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_item_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool OptionButton::has_selectable_items() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("has_selectable_items")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t OptionButton::get_selectable_item(bool p_from_last) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_selectable_item")._native_ptr(), 894402480);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int8_t p_from_last_encoded;
 	PtrToArg<bool>::encode(p_from_last, &p_from_last_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_from_last_encoded);
@@ -269,7 +287,7 @@ void OptionButton::set_fit_to_longest_item(bool p_fit) {
 
 bool OptionButton::is_fit_to_longest_item() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("is_fit_to_longest_item")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -283,7 +301,7 @@ void OptionButton::set_allow_reselect(bool p_allow) {
 
 bool OptionButton::get_allow_reselect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OptionButton::get_class_static()._native_ptr(), StringName("get_allow_reselect")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

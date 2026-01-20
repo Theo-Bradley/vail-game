@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RENDERING_SERVER_HPP
-#define GODOT_CPP_RENDERING_SERVER_HPP
+#pragma once
 
 #include <godot_cpp/classes/image.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -415,7 +414,8 @@ public:
 	enum ViewportScreenSpaceAA {
 		VIEWPORT_SCREEN_SPACE_AA_DISABLED = 0,
 		VIEWPORT_SCREEN_SPACE_AA_FXAA = 1,
-		VIEWPORT_SCREEN_SPACE_AA_MAX = 2,
+		VIEWPORT_SCREEN_SPACE_AA_SMAA = 2,
+		VIEWPORT_SCREEN_SPACE_AA_MAX = 3,
 	};
 
 	enum ViewportOcclusionCullingBuildQuality {
@@ -802,6 +802,8 @@ public:
 	static const int ARRAY_WEIGHTS_SIZE = 4;
 	static const int CANVAS_ITEM_Z_MIN = -4096;
 	static const int CANVAS_ITEM_Z_MAX = 4096;
+	static const int CANVAS_LAYER_MIN = -2147483648;
+	static const int CANVAS_LAYER_MAX = 2147483647;
 	static const int MAX_GLOW_LEVELS = 7;
 	static const int MAX_CURSORS = 8;
 	static const int MAX_2D_DIRECTIONAL_LIGHTS = 8;
@@ -818,19 +820,19 @@ public:
 	static RenderingServer *get_singleton();
 
 	RID texture_2d_create(const Ref<Image> &p_image);
-	RID texture_2d_layered_create(const TypedArray<Image> &p_layers, RenderingServer::TextureLayeredType p_layered_type);
-	RID texture_3d_create(Image::Format p_format, int32_t p_width, int32_t p_height, int32_t p_depth, bool p_mipmaps, const TypedArray<Image> &p_data);
+	RID texture_2d_layered_create(const TypedArray<Ref<Image>> &p_layers, RenderingServer::TextureLayeredType p_layered_type);
+	RID texture_3d_create(Image::Format p_format, int32_t p_width, int32_t p_height, int32_t p_depth, bool p_mipmaps, const TypedArray<Ref<Image>> &p_data);
 	RID texture_proxy_create(const RID &p_base);
 	RID texture_create_from_native_handle(RenderingServer::TextureType p_type, Image::Format p_format, uint64_t p_native_handle, int32_t p_width, int32_t p_height, int32_t p_depth, int32_t p_layers = 1, RenderingServer::TextureLayeredType p_layered_type = (RenderingServer::TextureLayeredType)0);
 	void texture_2d_update(const RID &p_texture, const Ref<Image> &p_image, int32_t p_layer);
-	void texture_3d_update(const RID &p_texture, const TypedArray<Image> &p_data);
+	void texture_3d_update(const RID &p_texture, const TypedArray<Ref<Image>> &p_data);
 	void texture_proxy_update(const RID &p_texture, const RID &p_proxy_to);
 	RID texture_2d_placeholder_create();
 	RID texture_2d_layered_placeholder_create(RenderingServer::TextureLayeredType p_layered_type);
 	RID texture_3d_placeholder_create();
 	Ref<Image> texture_2d_get(const RID &p_texture) const;
 	Ref<Image> texture_2d_layer_get(const RID &p_texture, int32_t p_layer) const;
-	TypedArray<Image> texture_3d_get(const RID &p_texture) const;
+	TypedArray<Ref<Image>> texture_3d_get(const RID &p_texture) const;
 	void texture_replace(const RID &p_texture, const RID &p_by_texture);
 	void texture_set_size_override(const RID &p_texture, int32_t p_width, int32_t p_height);
 	void texture_set_path(const RID &p_texture, const String &p_path);
@@ -861,6 +863,7 @@ public:
 	uint32_t mesh_surface_get_format_normal_tangent_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const;
 	uint32_t mesh_surface_get_format_attribute_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const;
 	uint32_t mesh_surface_get_format_skin_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const;
+	uint32_t mesh_surface_get_format_index_stride(BitField<RenderingServer::ArrayFormat> p_format, int32_t p_vertex_count) const;
 	void mesh_add_surface(const RID &p_mesh, const Dictionary &p_surface);
 	void mesh_add_surface_from_arrays(const RID &p_mesh, RenderingServer::PrimitiveType p_primitive, const Array &p_arrays, const Array &p_blend_shapes = Array(), const Dictionary &p_lods = Dictionary(), BitField<RenderingServer::ArrayFormat> p_compress_format = (BitField<RenderingServer::ArrayFormat>)0);
 	int32_t mesh_get_blend_shape_count(const RID &p_mesh) const;
@@ -879,6 +882,7 @@ public:
 	void mesh_surface_update_vertex_region(const RID &p_mesh, int32_t p_surface, int32_t p_offset, const PackedByteArray &p_data);
 	void mesh_surface_update_attribute_region(const RID &p_mesh, int32_t p_surface, int32_t p_offset, const PackedByteArray &p_data);
 	void mesh_surface_update_skin_region(const RID &p_mesh, int32_t p_surface, int32_t p_offset, const PackedByteArray &p_data);
+	void mesh_surface_update_index_region(const RID &p_mesh, int32_t p_surface, int32_t p_offset, const PackedByteArray &p_data);
 	void mesh_set_shadow_mesh(const RID &p_mesh, const RID &p_shadow_mesh);
 	RID multimesh_create();
 	void multimesh_allocate_data(const RID &p_multimesh, int32_t p_instances, RenderingServer::MultimeshTransformFormat p_transform_format, bool p_color_format = false, bool p_custom_data_format = false, bool p_use_indirect = false);
@@ -1140,6 +1144,7 @@ public:
 	void environment_set_ssr(const RID &p_env, bool p_enable, int32_t p_max_steps, float p_fade_in, float p_fade_out, float p_depth_tolerance);
 	void environment_set_ssao(const RID &p_env, bool p_enable, float p_radius, float p_intensity, float p_power, float p_detail, float p_horizon, float p_sharpness, float p_light_affect, float p_ao_channel_affect);
 	void environment_set_fog(const RID &p_env, bool p_enable, const Color &p_light_color, float p_light_energy, float p_sun_scatter, float p_density, float p_height, float p_height_density, float p_aerial_perspective, float p_sky_affect, RenderingServer::EnvironmentFogMode p_fog_mode = (RenderingServer::EnvironmentFogMode)0);
+	void environment_set_fog_depth(const RID &p_env, float p_curve, float p_begin, float p_end);
 	void environment_set_sdfgi(const RID &p_env, bool p_enable, int32_t p_cascades, float p_min_cell_size, RenderingServer::EnvironmentSDFGIYScale p_y_scale, bool p_use_occlusion, float p_bounce_feedback, bool p_read_sky, float p_energy, float p_normal_bias, float p_probe_bias);
 	void environment_set_volumetric_fog(const RID &p_env, bool p_enable, float p_density, const Color &p_albedo, const Color &p_emission, float p_emission_energy, float p_anisotropy, float p_length, float p_detail_spread, float p_gi_inject, bool p_temporal_reprojection, float p_temporal_reprojection_amount, float p_ambient_inject, float p_sky_affect);
 	void environment_glow_set_use_bicubic_upscale(bool p_enable);
@@ -1173,13 +1178,12 @@ public:
 	void instance_set_layer_mask(const RID &p_instance, uint32_t p_mask);
 	void instance_set_pivot_data(const RID &p_instance, float p_sorting_offset, bool p_use_aabb_center);
 	void instance_set_transform(const RID &p_instance, const Transform3D &p_transform);
-	void instance_set_interpolated(const RID &p_instance, bool p_interpolated);
-	void instance_reset_physics_interpolation(const RID &p_instance);
 	void instance_attach_object_instance_id(const RID &p_instance, uint64_t p_id);
 	void instance_set_blend_shape_weight(const RID &p_instance, int32_t p_shape, float p_weight);
 	void instance_set_surface_override_material(const RID &p_instance, int32_t p_surface, const RID &p_material);
 	void instance_set_visible(const RID &p_instance, bool p_visible);
 	void instance_geometry_set_transparency(const RID &p_instance, float p_transparency);
+	void instance_teleport(const RID &p_instance);
 	void instance_set_custom_aabb(const RID &p_instance, const AABB &p_aabb);
 	void instance_attach_skeleton(const RID &p_instance, const RID &p_skeleton);
 	void instance_set_extra_visibility_margin(const RID &p_instance, float p_margin);
@@ -1199,7 +1203,7 @@ public:
 	PackedInt64Array instances_cull_aabb(const AABB &p_aabb, const RID &p_scenario = RID()) const;
 	PackedInt64Array instances_cull_ray(const Vector3 &p_from, const Vector3 &p_to, const RID &p_scenario = RID()) const;
 	PackedInt64Array instances_cull_convex(const TypedArray<Plane> &p_convex, const RID &p_scenario = RID()) const;
-	TypedArray<Image> bake_render_uv2(const RID &p_base, const TypedArray<RID> &p_material_overrides, const Vector2i &p_image_size);
+	TypedArray<Ref<Image>> bake_render_uv2(const RID &p_base, const TypedArray<RID> &p_material_overrides, const Vector2i &p_image_size);
 	RID canvas_create();
 	void canvas_set_item_mirroring(const RID &p_canvas, const RID &p_item, const Vector2 &p_mirroring);
 	void canvas_set_item_repeat(const RID &p_item, const Vector2 &p_repeat_size, int32_t p_repeat_times);
@@ -1432,4 +1436,3 @@ VARIANT_ENUM_CAST(RenderingServer::RenderingInfo);
 VARIANT_ENUM_CAST(RenderingServer::PipelineSource);
 VARIANT_ENUM_CAST(RenderingServer::Features);
 
-#endif // ! GODOT_CPP_RENDERING_SERVER_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NAVIGATION_MESH_HPP
-#define GODOT_CPP_NAVIGATION_MESH_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -148,4 +147,3 @@ VARIANT_ENUM_CAST(NavigationMesh::SamplePartitionType);
 VARIANT_ENUM_CAST(NavigationMesh::ParsedGeometryType);
 VARIANT_ENUM_CAST(NavigationMesh::SourceGeometryMode);
 
-#endif // ! GODOT_CPP_NAVIGATION_MESH_HPP

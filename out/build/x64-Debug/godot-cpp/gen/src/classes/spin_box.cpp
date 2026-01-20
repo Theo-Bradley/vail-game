@@ -50,7 +50,7 @@ void SpinBox::set_horizontal_alignment(HorizontalAlignment p_alignment) {
 
 HorizontalAlignment SpinBox::get_horizontal_alignment() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpinBox::get_class_static()._native_ptr(), StringName("get_horizontal_alignment")._native_ptr(), 341400642);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, HorizontalAlignment(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (HorizontalAlignment(0)));
 	return (HorizontalAlignment)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void SpinBox::set_suffix(const String &p_suffix) {
 
 String SpinBox::get_suffix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpinBox::get_class_static()._native_ptr(), StringName("get_suffix")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void SpinBox::set_prefix(const String &p_prefix) {
 
 String SpinBox::get_prefix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpinBox::get_class_static()._native_ptr(), StringName("get_prefix")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -96,13 +96,13 @@ void SpinBox::set_custom_arrow_step(double p_arrow_step) {
 
 double SpinBox::get_custom_arrow_step() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpinBox::get_class_static()._native_ptr(), StringName("get_custom_arrow_step")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool SpinBox::is_editable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpinBox::get_class_static()._native_ptr(), StringName("is_editable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void SpinBox::set_update_on_text_changed(bool p_enabled) {
 
 bool SpinBox::get_update_on_text_changed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpinBox::get_class_static()._native_ptr(), StringName("get_update_on_text_changed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void SpinBox::set_select_all_on_focus(bool p_enabled) {
 
 bool SpinBox::is_select_all_on_focus() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpinBox::get_class_static()._native_ptr(), StringName("is_select_all_on_focus")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void SpinBox::apply() {
 
 LineEdit *SpinBox::get_line_edit() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpinBox::get_class_static()._native_ptr(), StringName("get_line_edit")._native_ptr(), 4071694264);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<LineEdit>(_gde_method_bind, _owner);
 }
 

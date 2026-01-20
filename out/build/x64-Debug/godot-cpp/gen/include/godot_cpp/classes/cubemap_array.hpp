@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CUBEMAP_ARRAY_HPP
-#define GODOT_CPP_CUBEMAP_ARRAY_HPP
+#pragma once
 
 #include <godot_cpp/classes/image_texture_layered.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -61,4 +60,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_CUBEMAP_ARRAY_HPP

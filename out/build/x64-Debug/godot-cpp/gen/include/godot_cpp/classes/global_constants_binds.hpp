@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GLOBAL_CONSTANTS_BINDS_HPP
-#define GODOT_CPP_GLOBAL_CONSTANTS_BINDS_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 
@@ -56,5 +55,3 @@ VARIANT_ENUM_CAST(PropertyHint);
 VARIANT_BITFIELD_CAST(PropertyUsageFlags);
 VARIANT_BITFIELD_CAST(MethodFlags);
 VARIANT_ENUM_CAST(godot::Variant::Type);
-
-#endif // ! GODOT_CPP_GLOBAL_CONSTANTS_BINDS_HPP

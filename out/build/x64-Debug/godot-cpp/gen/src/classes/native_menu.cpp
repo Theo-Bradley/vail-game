@@ -69,7 +69,7 @@ NativeMenu::~NativeMenu() {
 
 bool NativeMenu::has_feature(NativeMenu::Feature p_feature) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("has_feature")._native_ptr(), 1708975490);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_feature_encoded;
 	PtrToArg<int64_t>::encode(p_feature, &p_feature_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_feature_encoded);
@@ -77,7 +77,7 @@ bool NativeMenu::has_feature(NativeMenu::Feature p_feature) const {
 
 bool NativeMenu::has_system_menu(NativeMenu::SystemMenus p_menu_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("has_system_menu")._native_ptr(), 718213027);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_menu_id_encoded;
 	PtrToArg<int64_t>::encode(p_menu_id, &p_menu_id_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_menu_id_encoded);
@@ -85,7 +85,7 @@ bool NativeMenu::has_system_menu(NativeMenu::SystemMenus p_menu_id) const {
 
 RID NativeMenu::get_system_menu(NativeMenu::SystemMenus p_menu_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_system_menu")._native_ptr(), 469707506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_menu_id_encoded;
 	PtrToArg<int64_t>::encode(p_menu_id, &p_menu_id_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_menu_id_encoded);
@@ -93,7 +93,7 @@ RID NativeMenu::get_system_menu(NativeMenu::SystemMenus p_menu_id) const {
 
 String NativeMenu::get_system_menu_name(NativeMenu::SystemMenus p_menu_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_system_menu_name")._native_ptr(), 1281499290);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_menu_id_encoded;
 	PtrToArg<int64_t>::encode(p_menu_id, &p_menu_id_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_menu_id_encoded);
@@ -101,13 +101,13 @@ String NativeMenu::get_system_menu_name(NativeMenu::SystemMenus p_menu_id) const
 
 RID NativeMenu::create_menu() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("create_menu")._native_ptr(), 529393457);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 bool NativeMenu::has_menu(const RID &p_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("has_menu")._native_ptr(), 4155700596);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_rid);
 }
 
@@ -119,7 +119,7 @@ void NativeMenu::free_menu(const RID &p_rid) {
 
 Vector2 NativeMenu::get_size(const RID &p_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 2440833711);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_rid);
 }
 
@@ -145,7 +145,7 @@ void NativeMenu::set_popup_open_callback(const RID &p_rid, const Callable &p_cal
 
 Callable NativeMenu::get_popup_open_callback(const RID &p_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_popup_open_callback")._native_ptr(), 3170603026);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Callable());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Callable()));
 	return internal::_call_native_mb_ret<Callable>(_gde_method_bind, _owner, &p_rid);
 }
 
@@ -157,7 +157,7 @@ void NativeMenu::set_popup_close_callback(const RID &p_rid, const Callable &p_ca
 
 Callable NativeMenu::get_popup_close_callback(const RID &p_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_popup_close_callback")._native_ptr(), 3170603026);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Callable());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Callable()));
 	return internal::_call_native_mb_ret<Callable>(_gde_method_bind, _owner, &p_rid);
 }
 
@@ -171,19 +171,19 @@ void NativeMenu::set_minimum_width(const RID &p_rid, float p_width) {
 
 float NativeMenu::get_minimum_width(const RID &p_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_minimum_width")._native_ptr(), 866169185);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_rid);
 }
 
 bool NativeMenu::is_opened(const RID &p_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("is_opened")._native_ptr(), 4155700596);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_rid);
 }
 
 int32_t NativeMenu::add_submenu_item(const RID &p_rid, const String &p_label, const RID &p_submenu_rid, const Variant &p_tag, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_submenu_item")._native_ptr(), 1002030223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_label, &p_submenu_rid, &p_tag, &p_index_encoded);
@@ -191,7 +191,7 @@ int32_t NativeMenu::add_submenu_item(const RID &p_rid, const String &p_label, co
 
 int32_t NativeMenu::add_item(const RID &p_rid, const String &p_label, const Callable &p_callback, const Callable &p_key_callback, const Variant &p_tag, Key p_accelerator, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_item")._native_ptr(), 980552939);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_accelerator_encoded;
 	PtrToArg<int64_t>::encode(p_accelerator, &p_accelerator_encoded);
 	int64_t p_index_encoded;
@@ -201,7 +201,7 @@ int32_t NativeMenu::add_item(const RID &p_rid, const String &p_label, const Call
 
 int32_t NativeMenu::add_check_item(const RID &p_rid, const String &p_label, const Callable &p_callback, const Callable &p_key_callback, const Variant &p_tag, Key p_accelerator, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_check_item")._native_ptr(), 980552939);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_accelerator_encoded;
 	PtrToArg<int64_t>::encode(p_accelerator, &p_accelerator_encoded);
 	int64_t p_index_encoded;
@@ -211,7 +211,7 @@ int32_t NativeMenu::add_check_item(const RID &p_rid, const String &p_label, cons
 
 int32_t NativeMenu::add_icon_item(const RID &p_rid, const Ref<Texture2D> &p_icon, const String &p_label, const Callable &p_callback, const Callable &p_key_callback, const Variant &p_tag, Key p_accelerator, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_icon_item")._native_ptr(), 1372188274);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_accelerator_encoded;
 	PtrToArg<int64_t>::encode(p_accelerator, &p_accelerator_encoded);
 	int64_t p_index_encoded;
@@ -221,7 +221,7 @@ int32_t NativeMenu::add_icon_item(const RID &p_rid, const Ref<Texture2D> &p_icon
 
 int32_t NativeMenu::add_icon_check_item(const RID &p_rid, const Ref<Texture2D> &p_icon, const String &p_label, const Callable &p_callback, const Callable &p_key_callback, const Variant &p_tag, Key p_accelerator, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_icon_check_item")._native_ptr(), 1372188274);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_accelerator_encoded;
 	PtrToArg<int64_t>::encode(p_accelerator, &p_accelerator_encoded);
 	int64_t p_index_encoded;
@@ -231,7 +231,7 @@ int32_t NativeMenu::add_icon_check_item(const RID &p_rid, const Ref<Texture2D> &
 
 int32_t NativeMenu::add_radio_check_item(const RID &p_rid, const String &p_label, const Callable &p_callback, const Callable &p_key_callback, const Variant &p_tag, Key p_accelerator, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_radio_check_item")._native_ptr(), 980552939);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_accelerator_encoded;
 	PtrToArg<int64_t>::encode(p_accelerator, &p_accelerator_encoded);
 	int64_t p_index_encoded;
@@ -241,7 +241,7 @@ int32_t NativeMenu::add_radio_check_item(const RID &p_rid, const String &p_label
 
 int32_t NativeMenu::add_icon_radio_check_item(const RID &p_rid, const Ref<Texture2D> &p_icon, const String &p_label, const Callable &p_callback, const Callable &p_key_callback, const Variant &p_tag, Key p_accelerator, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_icon_radio_check_item")._native_ptr(), 1372188274);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_accelerator_encoded;
 	PtrToArg<int64_t>::encode(p_accelerator, &p_accelerator_encoded);
 	int64_t p_index_encoded;
@@ -251,7 +251,7 @@ int32_t NativeMenu::add_icon_radio_check_item(const RID &p_rid, const Ref<Textur
 
 int32_t NativeMenu::add_multistate_item(const RID &p_rid, const String &p_label, int32_t p_max_states, int32_t p_default_state, const Callable &p_callback, const Callable &p_key_callback, const Variant &p_tag, Key p_accelerator, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_multistate_item")._native_ptr(), 2674635658);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_max_states_encoded;
 	PtrToArg<int64_t>::encode(p_max_states, &p_max_states_encoded);
 	int64_t p_default_state_encoded;
@@ -265,7 +265,7 @@ int32_t NativeMenu::add_multistate_item(const RID &p_rid, const String &p_label,
 
 int32_t NativeMenu::add_separator(const RID &p_rid, int32_t p_index) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("add_separator")._native_ptr(), 448810126);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_index_encoded);
@@ -273,25 +273,25 @@ int32_t NativeMenu::add_separator(const RID &p_rid, int32_t p_index) {
 
 int32_t NativeMenu::find_item_index_with_text(const RID &p_rid, const String &p_text) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("find_item_index_with_text")._native_ptr(), 1362438794);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_text);
 }
 
 int32_t NativeMenu::find_item_index_with_tag(const RID &p_rid, const Variant &p_tag) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("find_item_index_with_tag")._native_ptr(), 1260085030);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_tag);
 }
 
 int32_t NativeMenu::find_item_index_with_submenu(const RID &p_rid, const RID &p_submenu_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("find_item_index_with_submenu")._native_ptr(), 893635918);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_submenu_rid);
 }
 
 bool NativeMenu::is_item_checked(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("is_item_checked")._native_ptr(), 3120086654);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -299,7 +299,7 @@ bool NativeMenu::is_item_checked(const RID &p_rid, int32_t p_idx) const {
 
 bool NativeMenu::is_item_checkable(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("is_item_checkable")._native_ptr(), 3120086654);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -307,7 +307,7 @@ bool NativeMenu::is_item_checkable(const RID &p_rid, int32_t p_idx) const {
 
 bool NativeMenu::is_item_radio_checkable(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("is_item_radio_checkable")._native_ptr(), 3120086654);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -315,7 +315,7 @@ bool NativeMenu::is_item_radio_checkable(const RID &p_rid, int32_t p_idx) const 
 
 Callable NativeMenu::get_item_callback(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_callback")._native_ptr(), 1639989698);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Callable());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Callable()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Callable>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -323,7 +323,7 @@ Callable NativeMenu::get_item_callback(const RID &p_rid, int32_t p_idx) const {
 
 Callable NativeMenu::get_item_key_callback(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_key_callback")._native_ptr(), 1639989698);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Callable());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Callable()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Callable>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -331,7 +331,7 @@ Callable NativeMenu::get_item_key_callback(const RID &p_rid, int32_t p_idx) cons
 
 Variant NativeMenu::get_item_tag(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_tag")._native_ptr(), 4069510997);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -339,7 +339,7 @@ Variant NativeMenu::get_item_tag(const RID &p_rid, int32_t p_idx) const {
 
 String NativeMenu::get_item_text(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_text")._native_ptr(), 1464764419);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -347,7 +347,7 @@ String NativeMenu::get_item_text(const RID &p_rid, int32_t p_idx) const {
 
 RID NativeMenu::get_item_submenu(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_submenu")._native_ptr(), 1066463050);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -355,7 +355,7 @@ RID NativeMenu::get_item_submenu(const RID &p_rid, int32_t p_idx) const {
 
 Key NativeMenu::get_item_accelerator(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_accelerator")._native_ptr(), 316800700);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Key(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Key(0)));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return (Key)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -363,7 +363,7 @@ Key NativeMenu::get_item_accelerator(const RID &p_rid, int32_t p_idx) const {
 
 bool NativeMenu::is_item_disabled(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("is_item_disabled")._native_ptr(), 3120086654);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -371,7 +371,7 @@ bool NativeMenu::is_item_disabled(const RID &p_rid, int32_t p_idx) const {
 
 bool NativeMenu::is_item_hidden(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("is_item_hidden")._native_ptr(), 3120086654);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -379,7 +379,7 @@ bool NativeMenu::is_item_hidden(const RID &p_rid, int32_t p_idx) const {
 
 String NativeMenu::get_item_tooltip(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_tooltip")._native_ptr(), 1464764419);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -387,7 +387,7 @@ String NativeMenu::get_item_tooltip(const RID &p_rid, int32_t p_idx) const {
 
 int32_t NativeMenu::get_item_state(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_state")._native_ptr(), 1120910005);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -395,7 +395,7 @@ int32_t NativeMenu::get_item_state(const RID &p_rid, int32_t p_idx) const {
 
 int32_t NativeMenu::get_item_max_states(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_max_states")._native_ptr(), 1120910005);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -403,7 +403,7 @@ int32_t NativeMenu::get_item_max_states(const RID &p_rid, int32_t p_idx) const {
 
 Ref<Texture2D> NativeMenu::get_item_icon(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_icon")._native_ptr(), 3391850701);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded));
@@ -411,7 +411,7 @@ Ref<Texture2D> NativeMenu::get_item_icon(const RID &p_rid, int32_t p_idx) const 
 
 int32_t NativeMenu::get_item_indentation_level(const RID &p_rid, int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_indentation_level")._native_ptr(), 1120910005);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid, &p_idx_encoded);
@@ -573,13 +573,13 @@ void NativeMenu::set_item_indentation_level(const RID &p_rid, int32_t p_idx, int
 
 int32_t NativeMenu::get_item_count(const RID &p_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("get_item_count")._native_ptr(), 2198884583);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_rid);
 }
 
 bool NativeMenu::is_system_menu(const RID &p_rid) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NativeMenu::get_class_static()._native_ptr(), StringName("is_system_menu")._native_ptr(), 4155700596);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_rid);
 }
 

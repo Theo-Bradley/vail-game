@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_IMAGE_TEXTURE_HPP
-#define GODOT_CPP_IMAGE_TEXTURE_HPP
+#pragma once
 
 #include <godot_cpp/classes/image.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -66,4 +65,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_IMAGE_TEXTURE_HPP

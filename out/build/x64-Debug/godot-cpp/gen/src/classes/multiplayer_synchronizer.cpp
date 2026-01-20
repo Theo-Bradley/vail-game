@@ -49,7 +49,7 @@ void MultiplayerSynchronizer::set_root_path(const NodePath &p_path) {
 
 NodePath MultiplayerSynchronizer::get_root_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiplayerSynchronizer::get_class_static()._native_ptr(), StringName("get_root_path")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -63,7 +63,7 @@ void MultiplayerSynchronizer::set_replication_interval(double p_milliseconds) {
 
 double MultiplayerSynchronizer::get_replication_interval() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiplayerSynchronizer::get_class_static()._native_ptr(), StringName("get_replication_interval")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -77,7 +77,7 @@ void MultiplayerSynchronizer::set_delta_interval(double p_milliseconds) {
 
 double MultiplayerSynchronizer::get_delta_interval() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiplayerSynchronizer::get_class_static()._native_ptr(), StringName("get_delta_interval")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -89,7 +89,7 @@ void MultiplayerSynchronizer::set_replication_config(const Ref<SceneReplicationC
 
 Ref<SceneReplicationConfig> MultiplayerSynchronizer::get_replication_config() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiplayerSynchronizer::get_class_static()._native_ptr(), StringName("get_replication_config")._native_ptr(), 3200254614);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<SceneReplicationConfig>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<SceneReplicationConfig>()));
 	return Ref<SceneReplicationConfig>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<SceneReplicationConfig>(_gde_method_bind, _owner));
 }
 
@@ -103,7 +103,7 @@ void MultiplayerSynchronizer::set_visibility_update_mode(MultiplayerSynchronizer
 
 MultiplayerSynchronizer::VisibilityUpdateMode MultiplayerSynchronizer::get_visibility_update_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiplayerSynchronizer::get_class_static()._native_ptr(), StringName("get_visibility_update_mode")._native_ptr(), 3352241418);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, MultiplayerSynchronizer::VisibilityUpdateMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (MultiplayerSynchronizer::VisibilityUpdateMode(0)));
 	return (MultiplayerSynchronizer::VisibilityUpdateMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -125,7 +125,7 @@ void MultiplayerSynchronizer::set_visibility_public(bool p_visible) {
 
 bool MultiplayerSynchronizer::is_visibility_public() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiplayerSynchronizer::get_class_static()._native_ptr(), StringName("is_visibility_public")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -153,7 +153,7 @@ void MultiplayerSynchronizer::set_visibility_for(int32_t p_peer, bool p_visible)
 
 bool MultiplayerSynchronizer::get_visibility_for(int32_t p_peer) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiplayerSynchronizer::get_class_static()._native_ptr(), StringName("get_visibility_for")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_peer_encoded;
 	PtrToArg<int64_t>::encode(p_peer, &p_peer_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_peer_encoded);

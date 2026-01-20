@@ -48,7 +48,7 @@ void AudioEffectSpectrumAnalyzer::set_buffer_length(float p_seconds) {
 
 float AudioEffectSpectrumAnalyzer::get_buffer_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectSpectrumAnalyzer::get_class_static()._native_ptr(), StringName("get_buffer_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AudioEffectSpectrumAnalyzer::set_tap_back_pos(float p_seconds) {
 
 float AudioEffectSpectrumAnalyzer::get_tap_back_pos() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectSpectrumAnalyzer::get_class_static()._native_ptr(), StringName("get_tap_back_pos")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AudioEffectSpectrumAnalyzer::set_fft_size(AudioEffectSpectrumAnalyzer::FFTS
 
 AudioEffectSpectrumAnalyzer::FFTSize AudioEffectSpectrumAnalyzer::get_fft_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectSpectrumAnalyzer::get_class_static()._native_ptr(), StringName("get_fft_size")._native_ptr(), 3925405343);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioEffectSpectrumAnalyzer::FFTSize(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioEffectSpectrumAnalyzer::FFTSize(0)));
 	return (AudioEffectSpectrumAnalyzer::FFTSize)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

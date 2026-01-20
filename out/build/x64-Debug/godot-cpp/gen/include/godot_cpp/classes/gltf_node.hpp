@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GLTF_NODE_HPP
-#define GODOT_CPP_GLTF_NODE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -83,6 +82,8 @@ public:
 	void append_child_index(int32_t p_child_index);
 	int32_t get_light();
 	void set_light(int32_t p_light);
+	bool get_visible();
+	void set_visible(bool p_visible);
 	Variant get_additional_data(const StringName &p_extension_name);
 	void set_additional_data(const StringName &p_extension_name, const Variant &p_additional_data);
 	NodePath get_scene_node_path(const Ref<GLTFState> &p_gltf_state, bool p_handle_skeletons = true);
@@ -98,4 +99,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_GLTF_NODE_HPP

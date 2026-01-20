@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_XR_POSITIONAL_TRACKER_HPP
-#define GODOT_CPP_XR_POSITIONAL_TRACKER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/xr_pose.hpp>
@@ -84,4 +83,3 @@ public:
 
 VARIANT_ENUM_CAST(XRPositionalTracker::TrackerHand);
 
-#endif // ! GODOT_CPP_XR_POSITIONAL_TRACKER_HPP

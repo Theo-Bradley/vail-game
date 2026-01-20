@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_NODE_EXTENSION_HPP
-#define GODOT_CPP_ANIMATION_NODE_EXTENSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/animation_node.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -67,4 +66,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_ANIMATION_NODE_EXTENSION_HPP

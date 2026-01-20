@@ -48,7 +48,7 @@ void DirectionalLight3D::set_shadow_mode(DirectionalLight3D::ShadowMode p_mode) 
 
 DirectionalLight3D::ShadowMode DirectionalLight3D::get_shadow_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(DirectionalLight3D::get_class_static()._native_ptr(), StringName("get_shadow_mode")._native_ptr(), 2765228544);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, DirectionalLight3D::ShadowMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (DirectionalLight3D::ShadowMode(0)));
 	return (DirectionalLight3D::ShadowMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void DirectionalLight3D::set_blend_splits(bool p_enabled) {
 
 bool DirectionalLight3D::is_blend_splits_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(DirectionalLight3D::get_class_static()._native_ptr(), StringName("is_blend_splits_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void DirectionalLight3D::set_sky_mode(DirectionalLight3D::SkyMode p_mode) {
 
 DirectionalLight3D::SkyMode DirectionalLight3D::get_sky_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(DirectionalLight3D::get_class_static()._native_ptr(), StringName("get_sky_mode")._native_ptr(), 3819982774);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, DirectionalLight3D::SkyMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (DirectionalLight3D::SkyMode(0)));
 	return (DirectionalLight3D::SkyMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -46,7 +46,7 @@ void PlaceholderTextureLayered::set_size(const Vector2i &p_size) {
 
 Vector2i PlaceholderTextureLayered::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PlaceholderTextureLayered::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 

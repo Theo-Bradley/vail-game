@@ -46,7 +46,7 @@ void StyleBoxLine::set_color(const Color &p_color) {
 
 Color StyleBoxLine::get_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxLine::get_class_static()._native_ptr(), StringName("get_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void StyleBoxLine::set_thickness(int32_t p_thickness) {
 
 int32_t StyleBoxLine::get_thickness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxLine::get_class_static()._native_ptr(), StringName("get_thickness")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void StyleBoxLine::set_grow_begin(float p_offset) {
 
 float StyleBoxLine::get_grow_begin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxLine::get_class_static()._native_ptr(), StringName("get_grow_begin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void StyleBoxLine::set_grow_end(float p_offset) {
 
 float StyleBoxLine::get_grow_end() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxLine::get_class_static()._native_ptr(), StringName("get_grow_end")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void StyleBoxLine::set_vertical(bool p_vertical) {
 
 bool StyleBoxLine::is_vertical() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxLine::get_class_static()._native_ptr(), StringName("is_vertical")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

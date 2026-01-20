@@ -48,7 +48,7 @@ void VisualShaderNodeDerivativeFunc::set_op_type(VisualShaderNodeDerivativeFunc:
 
 VisualShaderNodeDerivativeFunc::OpType VisualShaderNodeDerivativeFunc::get_op_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeDerivativeFunc::get_class_static()._native_ptr(), StringName("get_op_type")._native_ptr(), 3997800514);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeDerivativeFunc::OpType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeDerivativeFunc::OpType(0)));
 	return (VisualShaderNodeDerivativeFunc::OpType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeDerivativeFunc::set_function(VisualShaderNodeDerivativeFunc
 
 VisualShaderNodeDerivativeFunc::Function VisualShaderNodeDerivativeFunc::get_function() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeDerivativeFunc::get_class_static()._native_ptr(), StringName("get_function")._native_ptr(), 2389093396);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeDerivativeFunc::Function(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeDerivativeFunc::Function(0)));
 	return (VisualShaderNodeDerivativeFunc::Function)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void VisualShaderNodeDerivativeFunc::set_precision(VisualShaderNodeDerivativeFun
 
 VisualShaderNodeDerivativeFunc::Precision VisualShaderNodeDerivativeFunc::get_precision() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeDerivativeFunc::get_class_static()._native_ptr(), StringName("get_precision")._native_ptr(), 3822547323);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeDerivativeFunc::Precision(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeDerivativeFunc::Precision(0)));
 	return (VisualShaderNodeDerivativeFunc::Precision)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

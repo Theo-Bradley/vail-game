@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TILE_SET_HPP
-#define GODOT_CPP_TILE_SET_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -208,4 +207,3 @@ VARIANT_ENUM_CAST(TileSet::TileOffsetAxis);
 VARIANT_ENUM_CAST(TileSet::CellNeighbor);
 VARIANT_ENUM_CAST(TileSet::TerrainMode);
 
-#endif // ! GODOT_CPP_TILE_SET_HPP

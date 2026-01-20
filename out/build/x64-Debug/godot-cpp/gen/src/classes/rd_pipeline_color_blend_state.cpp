@@ -50,7 +50,7 @@ void RDPipelineColorBlendState::set_enable_logic_op(bool p_member) {
 
 bool RDPipelineColorBlendState::get_enable_logic_op() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineColorBlendState::get_class_static()._native_ptr(), StringName("get_enable_logic_op")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void RDPipelineColorBlendState::set_logic_op(RenderingDevice::LogicOperation p_m
 
 RenderingDevice::LogicOperation RDPipelineColorBlendState::get_logic_op() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineColorBlendState::get_class_static()._native_ptr(), StringName("get_logic_op")._native_ptr(), 988254690);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::LogicOperation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::LogicOperation(0)));
 	return (RenderingDevice::LogicOperation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,20 +76,20 @@ void RDPipelineColorBlendState::set_blend_constant(const Color &p_member) {
 
 Color RDPipelineColorBlendState::get_blend_constant() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineColorBlendState::get_class_static()._native_ptr(), StringName("get_blend_constant")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
-void RDPipelineColorBlendState::set_attachments(const TypedArray<RDPipelineColorBlendStateAttachment> &p_attachments) {
+void RDPipelineColorBlendState::set_attachments(const TypedArray<Ref<RDPipelineColorBlendStateAttachment>> &p_attachments) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineColorBlendState::get_class_static()._native_ptr(), StringName("set_attachments")._native_ptr(), 381264803);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_attachments);
 }
 
-TypedArray<RDPipelineColorBlendStateAttachment> RDPipelineColorBlendState::get_attachments() const {
+TypedArray<Ref<RDPipelineColorBlendStateAttachment>> RDPipelineColorBlendState::get_attachments() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDPipelineColorBlendState::get_class_static()._native_ptr(), StringName("get_attachments")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<RDPipelineColorBlendStateAttachment>());
-	return internal::_call_native_mb_ret<TypedArray<RDPipelineColorBlendStateAttachment>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<RDPipelineColorBlendStateAttachment>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<RDPipelineColorBlendStateAttachment>>>(_gde_method_bind, _owner);
 }
 
 } // namespace godot

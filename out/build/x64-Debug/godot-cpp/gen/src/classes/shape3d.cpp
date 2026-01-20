@@ -50,7 +50,7 @@ void Shape3D::set_custom_solver_bias(float p_bias) {
 
 float Shape3D::get_custom_solver_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Shape3D::get_class_static()._native_ptr(), StringName("get_custom_solver_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -64,13 +64,13 @@ void Shape3D::set_margin(float p_margin) {
 
 float Shape3D::get_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Shape3D::get_class_static()._native_ptr(), StringName("get_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 Ref<ArrayMesh> Shape3D::get_debug_mesh() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Shape3D::get_class_static()._native_ptr(), StringName("get_debug_mesh")._native_ptr(), 1605880883);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ArrayMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ArrayMesh>()));
 	return Ref<ArrayMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ArrayMesh>(_gde_method_bind, _owner));
 }
 

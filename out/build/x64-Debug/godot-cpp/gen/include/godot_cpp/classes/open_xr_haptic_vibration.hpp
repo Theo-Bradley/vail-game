@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPEN_XR_HAPTIC_VIBRATION_HPP
-#define GODOT_CPP_OPEN_XR_HAPTIC_VIBRATION_HPP
+#pragma once
 
 #include <godot_cpp/classes/open_xr_haptic_base.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -64,4 +63,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_OPEN_XR_HAPTIC_VIBRATION_HPP

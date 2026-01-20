@@ -51,7 +51,7 @@ void BaseButton::set_pressed(bool p_pressed) {
 
 bool BaseButton::is_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("is_pressed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -65,7 +65,7 @@ void BaseButton::set_pressed_no_signal(bool p_pressed) {
 
 bool BaseButton::is_hovered() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("is_hovered")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -79,7 +79,7 @@ void BaseButton::set_toggle_mode(bool p_enabled) {
 
 bool BaseButton::is_toggle_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("is_toggle_mode")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -93,7 +93,7 @@ void BaseButton::set_shortcut_in_tooltip(bool p_enabled) {
 
 bool BaseButton::is_shortcut_in_tooltip_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("is_shortcut_in_tooltip_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -107,7 +107,7 @@ void BaseButton::set_disabled(bool p_disabled) {
 
 bool BaseButton::is_disabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("is_disabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -121,7 +121,7 @@ void BaseButton::set_action_mode(BaseButton::ActionMode p_mode) {
 
 BaseButton::ActionMode BaseButton::get_action_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("get_action_mode")._native_ptr(), 2589712189);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseButton::ActionMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseButton::ActionMode(0)));
 	return (BaseButton::ActionMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -133,13 +133,13 @@ void BaseButton::set_button_mask(BitField<MouseButtonMask> p_mask) {
 
 BitField<MouseButtonMask> BaseButton::get_button_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("get_button_mask")._native_ptr(), 2512161324);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<MouseButtonMask>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<MouseButtonMask>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 BaseButton::DrawMode BaseButton::get_draw_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("get_draw_mode")._native_ptr(), 2492721305);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BaseButton::DrawMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BaseButton::DrawMode(0)));
 	return (BaseButton::DrawMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -153,7 +153,7 @@ void BaseButton::set_keep_pressed_outside(bool p_enabled) {
 
 bool BaseButton::is_keep_pressed_outside() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("is_keep_pressed_outside")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -167,7 +167,7 @@ void BaseButton::set_shortcut_feedback(bool p_enabled) {
 
 bool BaseButton::is_shortcut_feedback() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("is_shortcut_feedback")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -179,7 +179,7 @@ void BaseButton::set_shortcut(const Ref<Shortcut> &p_shortcut) {
 
 Ref<Shortcut> BaseButton::get_shortcut() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("get_shortcut")._native_ptr(), 3415666916);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Shortcut>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Shortcut>()));
 	return Ref<Shortcut>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Shortcut>(_gde_method_bind, _owner));
 }
 
@@ -191,7 +191,7 @@ void BaseButton::set_button_group(const Ref<ButtonGroup> &p_button_group) {
 
 Ref<ButtonGroup> BaseButton::get_button_group() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BaseButton::get_class_static()._native_ptr(), StringName("get_button_group")._native_ptr(), 281644053);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ButtonGroup>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ButtonGroup>()));
 	return Ref<ButtonGroup>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ButtonGroup>(_gde_method_bind, _owner));
 }
 

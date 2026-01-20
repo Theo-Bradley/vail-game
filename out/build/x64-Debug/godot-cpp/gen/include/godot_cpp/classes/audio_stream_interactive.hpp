@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_STREAM_INTERACTIVE_HPP
-#define GODOT_CPP_AUDIO_STREAM_INTERACTIVE_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_stream.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -116,4 +115,3 @@ VARIANT_ENUM_CAST(AudioStreamInteractive::TransitionToTime);
 VARIANT_ENUM_CAST(AudioStreamInteractive::FadeMode);
 VARIANT_ENUM_CAST(AudioStreamInteractive::AutoAdvanceMode);
 
-#endif // ! GODOT_CPP_AUDIO_STREAM_INTERACTIVE_HPP

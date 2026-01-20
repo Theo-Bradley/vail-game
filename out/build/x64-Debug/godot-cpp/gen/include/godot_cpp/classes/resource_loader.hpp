@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RESOURCE_LOADER_HPP
-#define GODOT_CPP_RESOURCE_LOADER_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -103,4 +102,3 @@ public:
 VARIANT_ENUM_CAST(ResourceLoader::ThreadLoadStatus);
 VARIANT_ENUM_CAST(ResourceLoader::CacheMode);
 
-#endif // ! GODOT_CPP_RESOURCE_LOADER_HPP

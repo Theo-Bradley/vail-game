@@ -46,7 +46,7 @@ void VisualShaderNodeVarying::set_varying_name(const String &p_name) {
 
 String VisualShaderNodeVarying::get_varying_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeVarying::get_class_static()._native_ptr(), StringName("get_varying_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void VisualShaderNodeVarying::set_varying_type(VisualShader::VaryingType p_type)
 
 VisualShader::VaryingType VisualShaderNodeVarying::get_varying_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeVarying::get_class_static()._native_ptr(), StringName("get_varying_type")._native_ptr(), 523183580);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShader::VaryingType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShader::VaryingType(0)));
 	return (VisualShader::VaryingType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

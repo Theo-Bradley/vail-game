@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PROJECT_SETTINGS_HPP
-#define GODOT_CPP_PROJECT_SETTINGS_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/core/object.hpp>
@@ -46,6 +45,7 @@
 
 namespace godot {
 
+class PackedStringArray;
 class StringName;
 
 class ProjectSettings : public Object {
@@ -61,6 +61,7 @@ public:
 	Variant get_setting(const String &p_name, const Variant &p_default_value = nullptr) const;
 	Variant get_setting_with_override(const StringName &p_name) const;
 	TypedArray<Dictionary> get_global_class_list();
+	Variant get_setting_with_override_and_custom_features(const StringName &p_name, const PackedStringArray &p_features) const;
 	void set_order(const String &p_name, int32_t p_position);
 	int32_t get_order(const String &p_name) const;
 	void set_initial_value(const String &p_name, const Variant &p_value);
@@ -88,4 +89,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PROJECT_SETTINGS_HPP

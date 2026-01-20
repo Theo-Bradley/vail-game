@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_LINE2D_HPP
-#define GODOT_CPP_LINE2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -121,4 +120,3 @@ VARIANT_ENUM_CAST(Line2D::LineJointMode);
 VARIANT_ENUM_CAST(Line2D::LineCapMode);
 VARIANT_ENUM_CAST(Line2D::LineTextureMode);
 
-#endif // ! GODOT_CPP_LINE2D_HPP

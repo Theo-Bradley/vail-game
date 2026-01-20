@@ -43,7 +43,7 @@ namespace godot {
 
 bool LineEdit::has_ime_text() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("has_ime_text")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -69,7 +69,7 @@ void LineEdit::set_horizontal_alignment(HorizontalAlignment p_alignment) {
 
 HorizontalAlignment LineEdit::get_horizontal_alignment() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_horizontal_alignment")._native_ptr(), 341400642);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, HorizontalAlignment(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (HorizontalAlignment(0)));
 	return (HorizontalAlignment)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -87,7 +87,7 @@ void LineEdit::unedit() {
 
 bool LineEdit::is_editing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_editing")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -101,7 +101,7 @@ void LineEdit::set_keep_editing_on_text_submit(bool p_enable) {
 
 bool LineEdit::is_editing_kept_on_text_submit() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_editing_kept_on_text_submit")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -135,37 +135,37 @@ void LineEdit::deselect() {
 
 bool LineEdit::has_undo() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("has_undo")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool LineEdit::has_redo() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("has_redo")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool LineEdit::has_selection() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("has_selection")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 String LineEdit::get_selected_text() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_selected_text")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 int32_t LineEdit::get_selection_from_column() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_selection_from_column")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t LineEdit::get_selection_to_column() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_selection_to_column")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -177,13 +177,13 @@ void LineEdit::set_text(const String &p_text) {
 
 String LineEdit::get_text() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_text")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 bool LineEdit::get_draw_control_chars() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_draw_control_chars")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -205,7 +205,7 @@ void LineEdit::set_text_direction(Control::TextDirection p_direction) {
 
 Control::TextDirection LineEdit::get_text_direction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_text_direction")._native_ptr(), 797257663);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Control::TextDirection(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Control::TextDirection(0)));
 	return (Control::TextDirection)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -217,7 +217,7 @@ void LineEdit::set_language(const String &p_language) {
 
 String LineEdit::get_language() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_language")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -231,7 +231,7 @@ void LineEdit::set_structured_text_bidi_override(TextServer::StructuredTextParse
 
 TextServer::StructuredTextParser LineEdit::get_structured_text_bidi_override() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_structured_text_bidi_override")._native_ptr(), 3385126229);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TextServer::StructuredTextParser(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TextServer::StructuredTextParser(0)));
 	return (TextServer::StructuredTextParser)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -243,7 +243,7 @@ void LineEdit::set_structured_text_bidi_override_options(const Array &p_args) {
 
 Array LineEdit::get_structured_text_bidi_override_options() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_structured_text_bidi_override_options")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
@@ -255,7 +255,7 @@ void LineEdit::set_placeholder(const String &p_text) {
 
 String LineEdit::get_placeholder() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_placeholder")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -269,13 +269,29 @@ void LineEdit::set_caret_column(int32_t p_position) {
 
 int32_t LineEdit::get_caret_column() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_caret_column")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+int32_t LineEdit::get_next_composite_character_column(int32_t p_column) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_next_composite_character_column")._native_ptr(), 923996154);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	int64_t p_column_encoded;
+	PtrToArg<int64_t>::encode(p_column, &p_column_encoded);
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_column_encoded);
+}
+
+int32_t LineEdit::get_previous_composite_character_column(int32_t p_column) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_previous_composite_character_column")._native_ptr(), 923996154);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	int64_t p_column_encoded;
+	PtrToArg<int64_t>::encode(p_column, &p_column_encoded);
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_column_encoded);
 }
 
 float LineEdit::get_scroll_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_scroll_offset")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -289,7 +305,7 @@ void LineEdit::set_expand_to_text_length_enabled(bool p_enabled) {
 
 bool LineEdit::is_expand_to_text_length_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_expand_to_text_length_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -303,7 +319,7 @@ void LineEdit::set_caret_blink_enabled(bool p_enabled) {
 
 bool LineEdit::is_caret_blink_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_caret_blink_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -317,7 +333,7 @@ void LineEdit::set_caret_mid_grapheme_enabled(bool p_enabled) {
 
 bool LineEdit::is_caret_mid_grapheme_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_caret_mid_grapheme_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -331,7 +347,7 @@ void LineEdit::set_caret_force_displayed(bool p_enabled) {
 
 bool LineEdit::is_caret_force_displayed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_caret_force_displayed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -345,7 +361,7 @@ void LineEdit::set_caret_blink_interval(float p_interval) {
 
 float LineEdit::get_caret_blink_interval() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_caret_blink_interval")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -359,7 +375,7 @@ void LineEdit::set_max_length(int32_t p_chars) {
 
 int32_t LineEdit::get_max_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_max_length")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -395,7 +411,7 @@ void LineEdit::set_editable(bool p_enabled) {
 
 bool LineEdit::is_editable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_editable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -409,7 +425,7 @@ void LineEdit::set_secret(bool p_enabled) {
 
 bool LineEdit::is_secret() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_secret")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -421,7 +437,7 @@ void LineEdit::set_secret_character(const String &p_character) {
 
 String LineEdit::get_secret_character() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_secret_character")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -435,13 +451,13 @@ void LineEdit::menu_option(int32_t p_option) {
 
 PopupMenu *LineEdit::get_menu() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_menu")._native_ptr(), 229722558);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<PopupMenu>(_gde_method_bind, _owner);
 }
 
 bool LineEdit::is_menu_visible() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_menu_visible")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -455,7 +471,7 @@ void LineEdit::set_context_menu_enabled(bool p_enable) {
 
 bool LineEdit::is_context_menu_enabled() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_context_menu_enabled")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -469,7 +485,21 @@ void LineEdit::set_emoji_menu_enabled(bool p_enable) {
 
 bool LineEdit::is_emoji_menu_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_emoji_menu_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void LineEdit::set_backspace_deletes_composite_character_enabled(bool p_enable) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("set_backspace_deletes_composite_character_enabled")._native_ptr(), 2586408642);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int8_t p_enable_encoded;
+	PtrToArg<bool>::encode(p_enable, &p_enable_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_enable_encoded);
+}
+
+bool LineEdit::is_backspace_deletes_composite_character_enabled() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_backspace_deletes_composite_character_enabled")._native_ptr(), 36873697);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -483,7 +513,21 @@ void LineEdit::set_virtual_keyboard_enabled(bool p_enable) {
 
 bool LineEdit::is_virtual_keyboard_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_virtual_keyboard_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void LineEdit::set_virtual_keyboard_show_on_focus(bool p_show_on_focus) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("set_virtual_keyboard_show_on_focus")._native_ptr(), 2586408642);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int8_t p_show_on_focus_encoded;
+	PtrToArg<bool>::encode(p_show_on_focus, &p_show_on_focus_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_show_on_focus_encoded);
+}
+
+bool LineEdit::get_virtual_keyboard_show_on_focus() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_virtual_keyboard_show_on_focus")._native_ptr(), 36873697);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -497,7 +541,7 @@ void LineEdit::set_virtual_keyboard_type(LineEdit::VirtualKeyboardType p_type) {
 
 LineEdit::VirtualKeyboardType LineEdit::get_virtual_keyboard_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_virtual_keyboard_type")._native_ptr(), 1928699316);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, LineEdit::VirtualKeyboardType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (LineEdit::VirtualKeyboardType(0)));
 	return (LineEdit::VirtualKeyboardType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -511,7 +555,7 @@ void LineEdit::set_clear_button_enabled(bool p_enable) {
 
 bool LineEdit::is_clear_button_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_clear_button_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -525,7 +569,7 @@ void LineEdit::set_shortcut_keys_enabled(bool p_enable) {
 
 bool LineEdit::is_shortcut_keys_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_shortcut_keys_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -539,7 +583,7 @@ void LineEdit::set_middle_mouse_paste_enabled(bool p_enable) {
 
 bool LineEdit::is_middle_mouse_paste_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_middle_mouse_paste_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -553,7 +597,7 @@ void LineEdit::set_selecting_enabled(bool p_enable) {
 
 bool LineEdit::is_selecting_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_selecting_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -567,7 +611,7 @@ void LineEdit::set_deselect_on_focus_loss_enabled(bool p_enable) {
 
 bool LineEdit::is_deselect_on_focus_loss_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_deselect_on_focus_loss_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -581,7 +625,7 @@ void LineEdit::set_drag_and_drop_selection_enabled(bool p_enable) {
 
 bool LineEdit::is_drag_and_drop_selection_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_drag_and_drop_selection_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -593,7 +637,7 @@ void LineEdit::set_right_icon(const Ref<Texture2D> &p_icon) {
 
 Ref<Texture2D> LineEdit::get_right_icon() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("get_right_icon")._native_ptr(), 255860311);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -607,7 +651,7 @@ void LineEdit::set_flat(bool p_enabled) {
 
 bool LineEdit::is_flat() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_flat")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -621,7 +665,7 @@ void LineEdit::set_select_all_on_focus(bool p_enabled) {
 
 bool LineEdit::is_select_all_on_focus() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LineEdit::get_class_static()._native_ptr(), StringName("is_select_all_on_focus")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

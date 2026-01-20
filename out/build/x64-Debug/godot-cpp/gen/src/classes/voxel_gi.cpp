@@ -49,7 +49,7 @@ void VoxelGI::set_probe_data(const Ref<VoxelGIData> &p_data) {
 
 Ref<VoxelGIData> VoxelGI::get_probe_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGI::get_class_static()._native_ptr(), StringName("get_probe_data")._native_ptr(), 1730645405);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<VoxelGIData>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<VoxelGIData>()));
 	return Ref<VoxelGIData>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<VoxelGIData>(_gde_method_bind, _owner));
 }
 
@@ -63,7 +63,7 @@ void VoxelGI::set_subdiv(VoxelGI::Subdiv p_subdiv) {
 
 VoxelGI::Subdiv VoxelGI::get_subdiv() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGI::get_class_static()._native_ptr(), StringName("get_subdiv")._native_ptr(), 4261647950);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VoxelGI::Subdiv(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VoxelGI::Subdiv(0)));
 	return (VoxelGI::Subdiv)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -75,7 +75,7 @@ void VoxelGI::set_size(const Vector3 &p_size) {
 
 Vector3 VoxelGI::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGI::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -87,7 +87,7 @@ void VoxelGI::set_camera_attributes(const Ref<CameraAttributes> &p_camera_attrib
 
 Ref<CameraAttributes> VoxelGI::get_camera_attributes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VoxelGI::get_class_static()._native_ptr(), StringName("get_camera_attributes")._native_ptr(), 3921283215);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<CameraAttributes>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<CameraAttributes>()));
 	return Ref<CameraAttributes>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<CameraAttributes>(_gde_method_bind, _owner));
 }
 

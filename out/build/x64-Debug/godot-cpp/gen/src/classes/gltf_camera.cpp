@@ -42,31 +42,31 @@ namespace godot {
 
 Ref<GLTFCamera> GLTFCamera::from_node(Camera3D *p_camera_node) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("from_node")._native_ptr(), 237784);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<GLTFCamera>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<GLTFCamera>()));
 	return Ref<GLTFCamera>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<GLTFCamera>(_gde_method_bind, nullptr, (p_camera_node != nullptr ? &p_camera_node->_owner : nullptr)));
 }
 
 Camera3D *GLTFCamera::to_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("to_node")._native_ptr(), 2285090890);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Camera3D>(_gde_method_bind, _owner);
 }
 
 Ref<GLTFCamera> GLTFCamera::from_dictionary(const Dictionary &p_dictionary) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("from_dictionary")._native_ptr(), 2495512509);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<GLTFCamera>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<GLTFCamera>()));
 	return Ref<GLTFCamera>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<GLTFCamera>(_gde_method_bind, nullptr, &p_dictionary));
 }
 
 Dictionary GLTFCamera::to_dictionary() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("to_dictionary")._native_ptr(), 3102165223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
 bool GLTFCamera::get_perspective() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("get_perspective")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void GLTFCamera::set_perspective(bool p_perspective) {
 
 float GLTFCamera::get_fov() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("get_fov")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -94,7 +94,7 @@ void GLTFCamera::set_fov(float p_fov) {
 
 float GLTFCamera::get_size_mag() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("get_size_mag")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void GLTFCamera::set_size_mag(float p_size_mag) {
 
 float GLTFCamera::get_depth_far() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("get_depth_far")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -122,7 +122,7 @@ void GLTFCamera::set_depth_far(float p_zdepth_far) {
 
 float GLTFCamera::get_depth_near() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFCamera::get_class_static()._native_ptr(), StringName("get_depth_near")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

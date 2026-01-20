@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_SELECTION_HPP
-#define GODOT_CPP_EDITOR_SELECTION_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/typed_array.hpp>
@@ -52,6 +51,7 @@ public:
 	void add_node(Node *p_node);
 	void remove_node(Node *p_node);
 	TypedArray<Node> get_selected_nodes();
+	TypedArray<Node> get_top_selected_nodes();
 	TypedArray<Node> get_transformable_selected_nodes();
 
 protected:
@@ -65,4 +65,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_SELECTION_HPP

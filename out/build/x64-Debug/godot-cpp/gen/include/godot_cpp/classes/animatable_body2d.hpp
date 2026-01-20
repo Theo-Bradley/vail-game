@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATABLE_BODY2D_HPP
-#define GODOT_CPP_ANIMATABLE_BODY2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/static_body2d.hpp>
 
@@ -59,4 +58,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_ANIMATABLE_BODY2D_HPP

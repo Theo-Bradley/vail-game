@@ -48,7 +48,7 @@ void RDAttachmentFormat::set_format(RenderingDevice::DataFormat p_member) {
 
 RenderingDevice::DataFormat RDAttachmentFormat::get_format() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDAttachmentFormat::get_class_static()._native_ptr(), StringName("get_format")._native_ptr(), 2235804183);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::DataFormat(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::DataFormat(0)));
 	return (RenderingDevice::DataFormat)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void RDAttachmentFormat::set_samples(RenderingDevice::TextureSamples p_member) {
 
 RenderingDevice::TextureSamples RDAttachmentFormat::get_samples() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDAttachmentFormat::get_class_static()._native_ptr(), StringName("get_samples")._native_ptr(), 407791724);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::TextureSamples(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::TextureSamples(0)));
 	return (RenderingDevice::TextureSamples)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void RDAttachmentFormat::set_usage_flags(uint32_t p_member) {
 
 uint32_t RDAttachmentFormat::get_usage_flags() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDAttachmentFormat::get_class_static()._native_ptr(), StringName("get_usage_flags")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

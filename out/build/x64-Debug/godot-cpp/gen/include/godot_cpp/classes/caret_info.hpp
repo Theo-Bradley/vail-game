@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CARET_INFO_HPP
-#define GODOT_CPP_CARET_INFO_HPP
+#pragma once
 
 #include <godot_cpp/classes/text_server.hpp>
 
@@ -47,5 +46,3 @@ struct CaretInfo {
 GDVIRTUAL_NATIVE_PTR(CaretInfo);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_CARET_INFO_HPP

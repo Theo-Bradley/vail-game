@@ -45,13 +45,13 @@ namespace godot {
 
 bool PhysicsServer3DExtension::body_test_motion_is_excluding_body(const RID &p_body) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsServer3DExtension::get_class_static()._native_ptr(), StringName("body_test_motion_is_excluding_body")._native_ptr(), 4155700596);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_body);
 }
 
 bool PhysicsServer3DExtension::body_test_motion_is_excluding_object(uint64_t p_object) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsServer3DExtension::get_class_static()._native_ptr(), StringName("body_test_motion_is_excluding_object")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_object_encoded;
 	PtrToArg<int64_t>::encode(p_object, &p_object_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_object_encoded);
@@ -449,6 +449,12 @@ float PhysicsServer3DExtension::_soft_body_get_linear_stiffness(const RID &p_bod
 	return 0.0;
 }
 
+void PhysicsServer3DExtension::_soft_body_set_shrinking_factor(const RID &p_body, float p_shrinking_factor) {}
+
+float PhysicsServer3DExtension::_soft_body_get_shrinking_factor(const RID &p_body) const {
+	return 0.0;
+}
+
 void PhysicsServer3DExtension::_soft_body_set_pressure_coefficient(const RID &p_body, float p_pressure_coefficient) {}
 
 float PhysicsServer3DExtension::_soft_body_get_pressure_coefficient(const RID &p_body) const {
@@ -486,6 +492,14 @@ void PhysicsServer3DExtension::_soft_body_pin_point(const RID &p_body, int32_t p
 bool PhysicsServer3DExtension::_soft_body_is_point_pinned(const RID &p_body, int32_t p_point_index) const {
 	return false;
 }
+
+void PhysicsServer3DExtension::_soft_body_apply_point_impulse(const RID &p_body, int32_t p_point_index, const Vector3 &p_impulse) {}
+
+void PhysicsServer3DExtension::_soft_body_apply_point_force(const RID &p_body, int32_t p_point_index, const Vector3 &p_force) {}
+
+void PhysicsServer3DExtension::_soft_body_apply_central_impulse(const RID &p_body, const Vector3 &p_impulse) {}
+
+void PhysicsServer3DExtension::_soft_body_apply_central_force(const RID &p_body, const Vector3 &p_force) {}
 
 RID PhysicsServer3DExtension::_joint_create() {
 	return RID();

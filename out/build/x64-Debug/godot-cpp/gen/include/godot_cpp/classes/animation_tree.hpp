@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_TREE_HPP
-#define GODOT_CPP_ANIMATION_TREE_HPP
+#pragma once
 
 #include <godot_cpp/classes/animation_mixer.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -77,4 +76,3 @@ public:
 
 VARIANT_ENUM_CAST(AnimationTree::AnimationProcessCallback);
 
-#endif // ! GODOT_CPP_ANIMATION_TREE_HPP

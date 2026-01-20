@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TRANSLATION_DOMAIN_HPP
-#define GODOT_CPP_TRANSLATION_DOMAIN_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -56,6 +55,10 @@ public:
 	void clear();
 	StringName translate(const StringName &p_message, const StringName &p_context = StringName()) const;
 	StringName translate_plural(const StringName &p_message, const StringName &p_message_plural, int32_t p_n, const StringName &p_context = StringName()) const;
+	String get_locale_override() const;
+	void set_locale_override(const String &p_locale);
+	bool is_enabled() const;
+	void set_enabled(bool p_enabled);
 	bool is_pseudolocalization_enabled() const;
 	void set_pseudolocalization_enabled(bool p_enabled);
 	bool is_pseudolocalization_accents_enabled() const;
@@ -87,4 +90,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_TRANSLATION_DOMAIN_HPP

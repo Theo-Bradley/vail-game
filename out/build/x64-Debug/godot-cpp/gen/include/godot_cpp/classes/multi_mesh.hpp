@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_MULTI_MESH_HPP
-#define GODOT_CPP_MULTI_MESH_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -107,4 +106,3 @@ public:
 VARIANT_ENUM_CAST(MultiMesh::TransformFormat);
 VARIANT_ENUM_CAST(MultiMesh::PhysicsInterpolationQuality);
 
-#endif // ! GODOT_CPP_MULTI_MESH_HPP

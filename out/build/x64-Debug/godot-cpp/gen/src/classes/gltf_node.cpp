@@ -43,7 +43,7 @@ namespace godot {
 
 String GLTFNode::get_original_name() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_original_name")._native_ptr(), 2841200299);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -55,7 +55,7 @@ void GLTFNode::set_original_name(const String &p_original_name) {
 
 int32_t GLTFNode::get_parent() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_parent")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -69,7 +69,7 @@ void GLTFNode::set_parent(int32_t p_parent) {
 
 int32_t GLTFNode::get_height() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_height")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -83,7 +83,7 @@ void GLTFNode::set_height(int32_t p_height) {
 
 Transform3D GLTFNode::get_xform() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_xform")._native_ptr(), 4183770049);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
@@ -95,7 +95,7 @@ void GLTFNode::set_xform(const Transform3D &p_xform) {
 
 int32_t GLTFNode::get_mesh() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -109,7 +109,7 @@ void GLTFNode::set_mesh(int32_t p_mesh) {
 
 int32_t GLTFNode::get_camera() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_camera")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -123,7 +123,7 @@ void GLTFNode::set_camera(int32_t p_camera) {
 
 int32_t GLTFNode::get_skin() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_skin")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -137,7 +137,7 @@ void GLTFNode::set_skin(int32_t p_skin) {
 
 int32_t GLTFNode::get_skeleton() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_skeleton")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -151,7 +151,7 @@ void GLTFNode::set_skeleton(int32_t p_skeleton) {
 
 Vector3 GLTFNode::get_position() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 3783033775);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -163,7 +163,7 @@ void GLTFNode::set_position(const Vector3 &p_position) {
 
 Quaternion GLTFNode::get_rotation() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_rotation")._native_ptr(), 2916281908);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Quaternion());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Quaternion()));
 	return internal::_call_native_mb_ret<Quaternion>(_gde_method_bind, _owner);
 }
 
@@ -175,7 +175,7 @@ void GLTFNode::set_rotation(const Quaternion &p_rotation) {
 
 Vector3 GLTFNode::get_scale() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_scale")._native_ptr(), 3783033775);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -187,7 +187,7 @@ void GLTFNode::set_scale(const Vector3 &p_scale) {
 
 PackedInt32Array GLTFNode::get_children() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_children")._native_ptr(), 969006518);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
@@ -207,7 +207,7 @@ void GLTFNode::append_child_index(int32_t p_child_index) {
 
 int32_t GLTFNode::get_light() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_light")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -219,9 +219,23 @@ void GLTFNode::set_light(int32_t p_light) {
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_light_encoded);
 }
 
+bool GLTFNode::get_visible() {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_visible")._native_ptr(), 2240911060);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void GLTFNode::set_visible(bool p_visible) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("set_visible")._native_ptr(), 2586408642);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int8_t p_visible_encoded;
+	PtrToArg<bool>::encode(p_visible, &p_visible_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_visible_encoded);
+}
+
 Variant GLTFNode::get_additional_data(const StringName &p_extension_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_additional_data")._native_ptr(), 2138907829);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_extension_name);
 }
 
@@ -233,7 +247,7 @@ void GLTFNode::set_additional_data(const StringName &p_extension_name, const Var
 
 NodePath GLTFNode::get_scene_node_path(const Ref<GLTFState> &p_gltf_state, bool p_handle_skeletons) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GLTFNode::get_class_static()._native_ptr(), StringName("get_scene_node_path")._native_ptr(), 573359477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int8_t p_handle_skeletons_encoded;
 	PtrToArg<bool>::encode(p_handle_skeletons, &p_handle_skeletons_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, (p_gltf_state != nullptr ? &p_gltf_state->_owner : nullptr), &p_handle_skeletons_encoded);

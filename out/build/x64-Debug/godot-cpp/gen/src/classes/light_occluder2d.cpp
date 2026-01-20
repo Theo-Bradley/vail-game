@@ -48,7 +48,7 @@ void LightOccluder2D::set_occluder_polygon(const Ref<OccluderPolygon2D> &p_polyg
 
 Ref<OccluderPolygon2D> LightOccluder2D::get_occluder_polygon() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightOccluder2D::get_class_static()._native_ptr(), StringName("get_occluder_polygon")._native_ptr(), 3962317075);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OccluderPolygon2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OccluderPolygon2D>()));
 	return Ref<OccluderPolygon2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OccluderPolygon2D>(_gde_method_bind, _owner));
 }
 
@@ -62,7 +62,7 @@ void LightOccluder2D::set_occluder_light_mask(int32_t p_mask) {
 
 int32_t LightOccluder2D::get_occluder_light_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightOccluder2D::get_class_static()._native_ptr(), StringName("get_occluder_light_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void LightOccluder2D::set_as_sdf_collision(bool p_enable) {
 
 bool LightOccluder2D::is_set_as_sdf_collision() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightOccluder2D::get_class_static()._native_ptr(), StringName("is_set_as_sdf_collision")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

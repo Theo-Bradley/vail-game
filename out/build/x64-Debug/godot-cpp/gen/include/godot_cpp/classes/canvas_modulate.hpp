@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CANVAS_MODULATE_HPP
-#define GODOT_CPP_CANVAS_MODULATE_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/variant/color.hpp>
@@ -60,4 +59,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_CANVAS_MODULATE_HPP

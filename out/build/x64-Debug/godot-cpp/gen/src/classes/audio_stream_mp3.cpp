@@ -42,13 +42,13 @@ namespace godot {
 
 Ref<AudioStreamMP3> AudioStreamMP3::load_from_buffer(const PackedByteArray &p_stream_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamMP3::get_class_static()._native_ptr(), StringName("load_from_buffer")._native_ptr(), 1674970313);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStreamMP3>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStreamMP3>()));
 	return Ref<AudioStreamMP3>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStreamMP3>(_gde_method_bind, nullptr, &p_stream_data));
 }
 
 Ref<AudioStreamMP3> AudioStreamMP3::load_from_file(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamMP3::get_class_static()._native_ptr(), StringName("load_from_file")._native_ptr(), 4238362998);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStreamMP3>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStreamMP3>()));
 	return Ref<AudioStreamMP3>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStreamMP3>(_gde_method_bind, nullptr, &p_path));
 }
 
@@ -60,7 +60,7 @@ void AudioStreamMP3::set_data(const PackedByteArray &p_data) {
 
 PackedByteArray AudioStreamMP3::get_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamMP3::get_class_static()._native_ptr(), StringName("get_data")._native_ptr(), 2362200018);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedByteArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedByteArray()));
 	return internal::_call_native_mb_ret<PackedByteArray>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void AudioStreamMP3::set_loop(bool p_enable) {
 
 bool AudioStreamMP3::has_loop() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamMP3::get_class_static()._native_ptr(), StringName("has_loop")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void AudioStreamMP3::set_loop_offset(double p_seconds) {
 
 double AudioStreamMP3::get_loop_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamMP3::get_class_static()._native_ptr(), StringName("get_loop_offset")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void AudioStreamMP3::set_bpm(double p_bpm) {
 
 double AudioStreamMP3::get_bpm() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamMP3::get_class_static()._native_ptr(), StringName("get_bpm")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void AudioStreamMP3::set_beat_count(int32_t p_count) {
 
 int32_t AudioStreamMP3::get_beat_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamMP3::get_class_static()._native_ptr(), StringName("get_beat_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void AudioStreamMP3::set_bar_beats(int32_t p_count) {
 
 int32_t AudioStreamMP3::get_bar_beats() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamMP3::get_class_static()._native_ptr(), StringName("get_bar_beats")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -48,7 +48,7 @@ void InputEventMIDI::set_channel(int32_t p_channel) {
 
 int32_t InputEventMIDI::get_channel() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMIDI::get_class_static()._native_ptr(), StringName("get_channel")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void InputEventMIDI::set_message(MIDIMessage p_message) {
 
 MIDIMessage InputEventMIDI::get_message() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMIDI::get_class_static()._native_ptr(), StringName("get_message")._native_ptr(), 1936512097);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, MIDIMessage(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (MIDIMessage(0)));
 	return (MIDIMessage)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void InputEventMIDI::set_pitch(int32_t p_pitch) {
 
 int32_t InputEventMIDI::get_pitch() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMIDI::get_class_static()._native_ptr(), StringName("get_pitch")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void InputEventMIDI::set_velocity(int32_t p_velocity) {
 
 int32_t InputEventMIDI::get_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMIDI::get_class_static()._native_ptr(), StringName("get_velocity")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void InputEventMIDI::set_instrument(int32_t p_instrument) {
 
 int32_t InputEventMIDI::get_instrument() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMIDI::get_class_static()._native_ptr(), StringName("get_instrument")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void InputEventMIDI::set_pressure(int32_t p_pressure) {
 
 int32_t InputEventMIDI::get_pressure() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMIDI::get_class_static()._native_ptr(), StringName("get_pressure")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void InputEventMIDI::set_controller_number(int32_t p_controller_number) {
 
 int32_t InputEventMIDI::get_controller_number() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMIDI::get_class_static()._native_ptr(), StringName("get_controller_number")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void InputEventMIDI::set_controller_value(int32_t p_controller_value) {
 
 int32_t InputEventMIDI::get_controller_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(InputEventMIDI::get_class_static()._native_ptr(), StringName("get_controller_value")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

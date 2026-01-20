@@ -30,12 +30,12 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_POPUP_MENU_HPP
-#define GODOT_CPP_POPUP_MENU_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/native_menu.hpp>
+#include <godot_cpp/classes/node.hpp>
 #include <godot_cpp/classes/popup.hpp>
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/variant/color.hpp>
@@ -78,6 +78,7 @@ public:
 	void set_item_text(int32_t p_index, const String &p_text);
 	void set_item_text_direction(int32_t p_index, Control::TextDirection p_direction);
 	void set_item_language(int32_t p_index, const String &p_language);
+	void set_item_auto_translate_mode(int32_t p_index, Node::AutoTranslateMode p_mode);
 	void set_item_icon(int32_t p_index, const Ref<Texture2D> &p_icon);
 	void set_item_icon_max_width(int32_t p_index, int32_t p_width);
 	void set_item_icon_modulate(int32_t p_index, const Color &p_modulate);
@@ -102,6 +103,7 @@ public:
 	String get_item_text(int32_t p_index) const;
 	Control::TextDirection get_item_text_direction(int32_t p_index) const;
 	String get_item_language(int32_t p_index) const;
+	Node::AutoTranslateMode get_item_auto_translate_mode(int32_t p_index) const;
 	Ref<Texture2D> get_item_icon(int32_t p_index) const;
 	int32_t get_item_icon_max_width(int32_t p_index) const;
 	Color get_item_icon_modulate(int32_t p_index) const;
@@ -155,4 +157,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_POPUP_MENU_HPP

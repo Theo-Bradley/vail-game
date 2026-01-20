@@ -48,7 +48,7 @@ void VisualShaderNodeCompare::set_comparison_type(VisualShaderNodeCompare::Compa
 
 VisualShaderNodeCompare::ComparisonType VisualShaderNodeCompare::get_comparison_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeCompare::get_class_static()._native_ptr(), StringName("get_comparison_type")._native_ptr(), 3495315961);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeCompare::ComparisonType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeCompare::ComparisonType(0)));
 	return (VisualShaderNodeCompare::ComparisonType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeCompare::set_function(VisualShaderNodeCompare::Function p_f
 
 VisualShaderNodeCompare::Function VisualShaderNodeCompare::get_function() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeCompare::get_class_static()._native_ptr(), StringName("get_function")._native_ptr(), 4089164265);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeCompare::Function(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeCompare::Function(0)));
 	return (VisualShaderNodeCompare::Function)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void VisualShaderNodeCompare::set_condition(VisualShaderNodeCompare::Condition p
 
 VisualShaderNodeCompare::Condition VisualShaderNodeCompare::get_condition() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeCompare::get_class_static()._native_ptr(), StringName("get_condition")._native_ptr(), 3281078941);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeCompare::Condition(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeCompare::Condition(0)));
 	return (VisualShaderNodeCompare::Condition)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

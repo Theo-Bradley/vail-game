@@ -42,7 +42,7 @@ namespace godot {
 
 Ref<Translation> TranslationDomain::get_translation_object(const String &p_locale) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("get_translation_object")._native_ptr(), 606768082);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Translation>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Translation>()));
 	return Ref<Translation>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Translation>(_gde_method_bind, _owner, &p_locale));
 }
 
@@ -66,21 +66,47 @@ void TranslationDomain::clear() {
 
 StringName TranslationDomain::translate(const StringName &p_message, const StringName &p_context) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("translate")._native_ptr(), 1829228469);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_message, &p_context);
 }
 
 StringName TranslationDomain::translate_plural(const StringName &p_message, const StringName &p_message_plural, int32_t p_n, const StringName &p_context) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("translate_plural")._native_ptr(), 229954002);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_n_encoded;
 	PtrToArg<int64_t>::encode(p_n, &p_n_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_message, &p_message_plural, &p_n_encoded, &p_context);
 }
 
+String TranslationDomain::get_locale_override() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("get_locale_override")._native_ptr(), 201670096);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
+	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
+}
+
+void TranslationDomain::set_locale_override(const String &p_locale) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("set_locale_override")._native_ptr(), 83702148);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_locale);
+}
+
+bool TranslationDomain::is_enabled() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("is_enabled")._native_ptr(), 36873697);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void TranslationDomain::set_enabled(bool p_enabled) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("set_enabled")._native_ptr(), 2586408642);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int8_t p_enabled_encoded;
+	PtrToArg<bool>::encode(p_enabled, &p_enabled_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_enabled_encoded);
+}
+
 bool TranslationDomain::is_pseudolocalization_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("is_pseudolocalization_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -94,7 +120,7 @@ void TranslationDomain::set_pseudolocalization_enabled(bool p_enabled) {
 
 bool TranslationDomain::is_pseudolocalization_accents_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("is_pseudolocalization_accents_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +134,7 @@ void TranslationDomain::set_pseudolocalization_accents_enabled(bool p_enabled) {
 
 bool TranslationDomain::is_pseudolocalization_double_vowels_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("is_pseudolocalization_double_vowels_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -122,7 +148,7 @@ void TranslationDomain::set_pseudolocalization_double_vowels_enabled(bool p_enab
 
 bool TranslationDomain::is_pseudolocalization_fake_bidi_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("is_pseudolocalization_fake_bidi_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -136,7 +162,7 @@ void TranslationDomain::set_pseudolocalization_fake_bidi_enabled(bool p_enabled)
 
 bool TranslationDomain::is_pseudolocalization_override_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("is_pseudolocalization_override_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -150,7 +176,7 @@ void TranslationDomain::set_pseudolocalization_override_enabled(bool p_enabled) 
 
 bool TranslationDomain::is_pseudolocalization_skip_placeholders_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("is_pseudolocalization_skip_placeholders_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -164,7 +190,7 @@ void TranslationDomain::set_pseudolocalization_skip_placeholders_enabled(bool p_
 
 float TranslationDomain::get_pseudolocalization_expansion_ratio() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("get_pseudolocalization_expansion_ratio")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -178,7 +204,7 @@ void TranslationDomain::set_pseudolocalization_expansion_ratio(float p_ratio) {
 
 String TranslationDomain::get_pseudolocalization_prefix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("get_pseudolocalization_prefix")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -190,7 +216,7 @@ void TranslationDomain::set_pseudolocalization_prefix(const String &p_prefix) {
 
 String TranslationDomain::get_pseudolocalization_suffix() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("get_pseudolocalization_suffix")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -202,7 +228,7 @@ void TranslationDomain::set_pseudolocalization_suffix(const String &p_suffix) {
 
 StringName TranslationDomain::pseudolocalize(const StringName &p_message) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TranslationDomain::get_class_static()._native_ptr(), StringName("pseudolocalize")._native_ptr(), 1965194235);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_message);
 }
 

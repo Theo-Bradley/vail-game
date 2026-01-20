@@ -86,7 +86,7 @@ void ENetPacketPeer::reset() {
 
 Error ENetPacketPeer::send(int32_t p_channel, const PackedByteArray &p_packet, int32_t p_flags) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetPacketPeer::get_class_static()._native_ptr(), StringName("send")._native_ptr(), 120522849);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_channel_encoded;
 	PtrToArg<int64_t>::encode(p_channel, &p_channel_encoded);
 	int64_t p_flags_encoded;
@@ -120,25 +120,25 @@ void ENetPacketPeer::set_timeout(int32_t p_timeout, int32_t p_timeout_min, int32
 
 int32_t ENetPacketPeer::get_packet_flags() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetPacketPeer::get_class_static()._native_ptr(), StringName("get_packet_flags")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String ENetPacketPeer::get_remote_address() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetPacketPeer::get_class_static()._native_ptr(), StringName("get_remote_address")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 int32_t ENetPacketPeer::get_remote_port() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetPacketPeer::get_class_static()._native_ptr(), StringName("get_remote_port")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 double ENetPacketPeer::get_statistic(ENetPacketPeer::PeerStatistic p_statistic) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetPacketPeer::get_class_static()._native_ptr(), StringName("get_statistic")._native_ptr(), 1642578323);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_statistic_encoded;
 	PtrToArg<int64_t>::encode(p_statistic, &p_statistic_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_statistic_encoded);
@@ -146,19 +146,19 @@ double ENetPacketPeer::get_statistic(ENetPacketPeer::PeerStatistic p_statistic) 
 
 ENetPacketPeer::PeerState ENetPacketPeer::get_state() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetPacketPeer::get_class_static()._native_ptr(), StringName("get_state")._native_ptr(), 711068532);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ENetPacketPeer::PeerState(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ENetPacketPeer::PeerState(0)));
 	return (ENetPacketPeer::PeerState)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t ENetPacketPeer::get_channels() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetPacketPeer::get_class_static()._native_ptr(), StringName("get_channels")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool ENetPacketPeer::is_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ENetPacketPeer::get_class_static()._native_ptr(), StringName("is_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

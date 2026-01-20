@@ -42,7 +42,7 @@ namespace godot {
 
 int64_t AudioStreamPlaybackPolyphonic::play_stream(const Ref<AudioStream> &p_stream, float p_from_offset, float p_volume_db, float p_pitch_scale, AudioServer::PlaybackType p_playback_type, const StringName &p_bus) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlaybackPolyphonic::get_class_static()._native_ptr(), StringName("play_stream")._native_ptr(), 1846744803);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	double p_from_offset_encoded;
 	PtrToArg<double>::encode(p_from_offset, &p_from_offset_encoded);
 	double p_volume_db_encoded;
@@ -76,7 +76,7 @@ void AudioStreamPlaybackPolyphonic::set_stream_pitch_scale(int64_t p_stream, flo
 
 bool AudioStreamPlaybackPolyphonic::is_stream_playing(int64_t p_stream) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlaybackPolyphonic::get_class_static()._native_ptr(), StringName("is_stream_playing")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_stream_encoded;
 	PtrToArg<int64_t>::encode(p_stream, &p_stream_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_stream_encoded);

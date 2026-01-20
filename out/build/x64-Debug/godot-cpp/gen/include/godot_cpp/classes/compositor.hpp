@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_COMPOSITOR_HPP
-#define GODOT_CPP_COMPOSITOR_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -49,8 +48,8 @@ class Compositor : public Resource {
 	GDEXTENSION_CLASS(Compositor, Resource)
 
 public:
-	void set_compositor_effects(const TypedArray<CompositorEffect> &p_compositor_effects);
-	TypedArray<CompositorEffect> get_compositor_effects() const;
+	void set_compositor_effects(const TypedArray<Ref<CompositorEffect>> &p_compositor_effects);
+	TypedArray<Ref<CompositorEffect>> get_compositor_effects() const;
 
 protected:
 	template <typename T, typename B>
@@ -63,4 +62,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_COMPOSITOR_HPP

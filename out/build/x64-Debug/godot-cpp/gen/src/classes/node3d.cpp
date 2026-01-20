@@ -49,7 +49,7 @@ void Node3D::set_transform(const Transform3D &p_local) {
 
 Transform3D Node3D::get_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_transform")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
@@ -61,7 +61,7 @@ void Node3D::set_position(const Vector3 &p_position) {
 
 Vector3 Node3D::get_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -73,7 +73,7 @@ void Node3D::set_rotation(const Vector3 &p_euler_radians) {
 
 Vector3 Node3D::get_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_rotation")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -85,7 +85,7 @@ void Node3D::set_rotation_degrees(const Vector3 &p_euler_degrees) {
 
 Vector3 Node3D::get_rotation_degrees() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_rotation_degrees")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -99,7 +99,7 @@ void Node3D::set_rotation_order(EulerOrder p_order) {
 
 EulerOrder Node3D::get_rotation_order() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_rotation_order")._native_ptr(), 916939469);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, EulerOrder(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (EulerOrder(0)));
 	return (EulerOrder)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -113,7 +113,7 @@ void Node3D::set_rotation_edit_mode(Node3D::RotationEditMode p_edit_mode) {
 
 Node3D::RotationEditMode Node3D::get_rotation_edit_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_rotation_edit_mode")._native_ptr(), 1572188370);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Node3D::RotationEditMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Node3D::RotationEditMode(0)));
 	return (Node3D::RotationEditMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -125,7 +125,7 @@ void Node3D::set_scale(const Vector3 &p_scale) {
 
 Vector3 Node3D::get_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_scale")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -137,7 +137,7 @@ void Node3D::set_quaternion(const Quaternion &p_quaternion) {
 
 Quaternion Node3D::get_quaternion() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_quaternion")._native_ptr(), 1222331677);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Quaternion());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Quaternion()));
 	return internal::_call_native_mb_ret<Quaternion>(_gde_method_bind, _owner);
 }
 
@@ -149,7 +149,7 @@ void Node3D::set_basis(const Basis &p_basis) {
 
 Basis Node3D::get_basis() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_basis")._native_ptr(), 2716978435);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Basis());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Basis()));
 	return internal::_call_native_mb_ret<Basis>(_gde_method_bind, _owner);
 }
 
@@ -161,13 +161,13 @@ void Node3D::set_global_transform(const Transform3D &p_global) {
 
 Transform3D Node3D::get_global_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_global_transform")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
 Transform3D Node3D::get_global_transform_interpolated() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_global_transform_interpolated")._native_ptr(), 4183770049);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
@@ -179,7 +179,7 @@ void Node3D::set_global_position(const Vector3 &p_position) {
 
 Vector3 Node3D::get_global_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_global_position")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -191,7 +191,7 @@ void Node3D::set_global_basis(const Basis &p_basis) {
 
 Basis Node3D::get_global_basis() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_global_basis")._native_ptr(), 2716978435);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Basis());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Basis()));
 	return internal::_call_native_mb_ret<Basis>(_gde_method_bind, _owner);
 }
 
@@ -203,7 +203,7 @@ void Node3D::set_global_rotation(const Vector3 &p_euler_radians) {
 
 Vector3 Node3D::get_global_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_global_rotation")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -215,13 +215,13 @@ void Node3D::set_global_rotation_degrees(const Vector3 &p_euler_degrees) {
 
 Vector3 Node3D::get_global_rotation_degrees() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_global_rotation_degrees")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 Node3D *Node3D::get_parent_node_3d() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_parent_node_3d")._native_ptr(), 151077316);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node3D>(_gde_method_bind, _owner);
 }
 
@@ -243,7 +243,7 @@ void Node3D::set_as_top_level(bool p_enable) {
 
 bool Node3D::is_set_as_top_level() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("is_set_as_top_level")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -257,13 +257,13 @@ void Node3D::set_disable_scale(bool p_disable) {
 
 bool Node3D::is_scale_disabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("is_scale_disabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Ref<World3D> Node3D::get_world_3d() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_world_3d")._native_ptr(), 317588385);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<World3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<World3D>()));
 	return Ref<World3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<World3D>(_gde_method_bind, _owner));
 }
 
@@ -281,7 +281,7 @@ void Node3D::set_visibility_parent(const NodePath &p_path) {
 
 NodePath Node3D::get_visibility_parent() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_visibility_parent")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -297,10 +297,10 @@ void Node3D::add_gizmo(const Ref<Node3DGizmo> &p_gizmo) {
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, (p_gizmo != nullptr ? &p_gizmo->_owner : nullptr));
 }
 
-TypedArray<Node3DGizmo> Node3D::get_gizmos() const {
+TypedArray<Ref<Node3DGizmo>> Node3D::get_gizmos() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("get_gizmos")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Node3DGizmo>());
-	return internal::_call_native_mb_ret<TypedArray<Node3DGizmo>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<Node3DGizmo>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<Node3DGizmo>>>(_gde_method_bind, _owner);
 }
 
 void Node3D::clear_gizmos() {
@@ -333,13 +333,13 @@ void Node3D::set_visible(bool p_visible) {
 
 bool Node3D::is_visible() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("is_visible")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool Node3D::is_visible_in_tree() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("is_visible_in_tree")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -365,7 +365,7 @@ void Node3D::set_notify_local_transform(bool p_enable) {
 
 bool Node3D::is_local_transform_notification_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("is_local_transform_notification_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -379,7 +379,7 @@ void Node3D::set_notify_transform(bool p_enable) {
 
 bool Node3D::is_transform_notification_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("is_transform_notification_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -491,13 +491,13 @@ void Node3D::look_at_from_position(const Vector3 &p_position, const Vector3 &p_t
 
 Vector3 Node3D::to_local(const Vector3 &p_global_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("to_local")._native_ptr(), 192990374);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_global_point);
 }
 
 Vector3 Node3D::to_global(const Vector3 &p_local_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Node3D::get_class_static()._native_ptr(), StringName("to_global")._native_ptr(), 192990374);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_local_point);
 }
 

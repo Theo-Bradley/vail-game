@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PARALLAX_BACKGROUND_HPP
-#define GODOT_CPP_PARALLAX_BACKGROUND_HPP
+#pragma once
 
 #include <godot_cpp/classes/canvas_layer.hpp>
 #include <godot_cpp/variant/vector2.hpp>
@@ -70,4 +69,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PARALLAX_BACKGROUND_HPP

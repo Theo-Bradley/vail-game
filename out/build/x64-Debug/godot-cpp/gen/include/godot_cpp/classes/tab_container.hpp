@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TAB_CONTAINER_HPP
-#define GODOT_CPP_TAB_CONTAINER_HPP
+#pragma once
 
 #include <godot_cpp/classes/container.hpp>
 #include <godot_cpp/classes/control.hpp>
@@ -124,4 +123,3 @@ public:
 
 VARIANT_ENUM_CAST(TabContainer::TabPosition);
 
-#endif // ! GODOT_CPP_TAB_CONTAINER_HPP

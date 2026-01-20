@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_DECAL_HPP
-#define GODOT_CPP_DECAL_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/visual_instance3d.hpp>
@@ -96,4 +95,3 @@ public:
 
 VARIANT_ENUM_CAST(Decal::DecalTexture);
 
-#endif // ! GODOT_CPP_DECAL_HPP

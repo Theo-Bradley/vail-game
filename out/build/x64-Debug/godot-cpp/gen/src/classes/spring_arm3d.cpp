@@ -43,7 +43,7 @@ namespace godot {
 
 float SpringArm3D::get_hit_length() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringArm3D::get_class_static()._native_ptr(), StringName("get_hit_length")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -57,7 +57,7 @@ void SpringArm3D::set_length(float p_length) {
 
 float SpringArm3D::get_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringArm3D::get_class_static()._native_ptr(), StringName("get_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -69,7 +69,7 @@ void SpringArm3D::set_shape(const Ref<Shape3D> &p_shape) {
 
 Ref<Shape3D> SpringArm3D::get_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringArm3D::get_class_static()._native_ptr(), StringName("get_shape")._native_ptr(), 3214262478);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Shape3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Shape3D>()));
 	return Ref<Shape3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Shape3D>(_gde_method_bind, _owner));
 }
 
@@ -81,7 +81,7 @@ void SpringArm3D::add_excluded_object(const RID &p_RID) {
 
 bool SpringArm3D::remove_excluded_object(const RID &p_RID) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringArm3D::get_class_static()._native_ptr(), StringName("remove_excluded_object")._native_ptr(), 3521089500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_RID);
 }
 
@@ -101,7 +101,7 @@ void SpringArm3D::set_collision_mask(uint32_t p_mask) {
 
 uint32_t SpringArm3D::get_collision_mask() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringArm3D::get_class_static()._native_ptr(), StringName("get_collision_mask")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -115,7 +115,7 @@ void SpringArm3D::set_margin(float p_margin) {
 
 float SpringArm3D::get_margin() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringArm3D::get_class_static()._native_ptr(), StringName("get_margin")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

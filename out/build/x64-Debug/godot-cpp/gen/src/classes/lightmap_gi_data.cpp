@@ -41,28 +41,28 @@
 
 namespace godot {
 
-void LightmapGIData::set_lightmap_textures(const TypedArray<TextureLayered> &p_light_textures) {
+void LightmapGIData::set_lightmap_textures(const TypedArray<Ref<TextureLayered>> &p_light_textures) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGIData::get_class_static()._native_ptr(), StringName("set_lightmap_textures")._native_ptr(), 381264803);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_light_textures);
 }
 
-TypedArray<TextureLayered> LightmapGIData::get_lightmap_textures() const {
+TypedArray<Ref<TextureLayered>> LightmapGIData::get_lightmap_textures() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGIData::get_class_static()._native_ptr(), StringName("get_lightmap_textures")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<TextureLayered>());
-	return internal::_call_native_mb_ret<TypedArray<TextureLayered>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<TextureLayered>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<TextureLayered>>>(_gde_method_bind, _owner);
 }
 
-void LightmapGIData::set_shadowmask_textures(const TypedArray<TextureLayered> &p_shadowmask_textures) {
+void LightmapGIData::set_shadowmask_textures(const TypedArray<Ref<TextureLayered>> &p_shadowmask_textures) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGIData::get_class_static()._native_ptr(), StringName("set_shadowmask_textures")._native_ptr(), 381264803);
 	CHECK_METHOD_BIND(_gde_method_bind);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_shadowmask_textures);
 }
 
-TypedArray<TextureLayered> LightmapGIData::get_shadowmask_textures() const {
+TypedArray<Ref<TextureLayered>> LightmapGIData::get_shadowmask_textures() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGIData::get_class_static()._native_ptr(), StringName("get_shadowmask_textures")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<TextureLayered>());
-	return internal::_call_native_mb_ret<TypedArray<TextureLayered>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<TextureLayered>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<TextureLayered>>>(_gde_method_bind, _owner);
 }
 
 void LightmapGIData::set_uses_spherical_harmonics(bool p_uses_spherical_harmonics) {
@@ -75,7 +75,7 @@ void LightmapGIData::set_uses_spherical_harmonics(bool p_uses_spherical_harmonic
 
 bool LightmapGIData::is_using_spherical_harmonics() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGIData::get_class_static()._native_ptr(), StringName("is_using_spherical_harmonics")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -91,13 +91,13 @@ void LightmapGIData::add_user(const NodePath &p_path, const Rect2 &p_uv_scale, i
 
 int32_t LightmapGIData::get_user_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGIData::get_class_static()._native_ptr(), StringName("get_user_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 NodePath LightmapGIData::get_user_path(int32_t p_user_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGIData::get_class_static()._native_ptr(), StringName("get_user_path")._native_ptr(), 408788394);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_user_idx_encoded;
 	PtrToArg<int64_t>::encode(p_user_idx, &p_user_idx_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, &p_user_idx_encoded);
@@ -117,7 +117,7 @@ void LightmapGIData::set_light_texture(const Ref<TextureLayered> &p_light_textur
 
 Ref<TextureLayered> LightmapGIData::get_light_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(LightmapGIData::get_class_static()._native_ptr(), StringName("get_light_texture")._native_ptr(), 3984243839);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<TextureLayered>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<TextureLayered>()));
 	return Ref<TextureLayered>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<TextureLayered>(_gde_method_bind, _owner));
 }
 

@@ -43,7 +43,7 @@ namespace godot {
 
 Ref<OpenXRBindingModifier> OpenXRBindingModifierEditor::get_binding_modifier() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRBindingModifierEditor::get_class_static()._native_ptr(), StringName("get_binding_modifier")._native_ptr(), 2930765082);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<OpenXRBindingModifier>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<OpenXRBindingModifier>()));
 	return Ref<OpenXRBindingModifier>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<OpenXRBindingModifier>(_gde_method_bind, _owner));
 }
 

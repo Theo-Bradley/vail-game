@@ -48,7 +48,7 @@ void GPUParticlesCollision3D::set_cull_mask(uint32_t p_mask) {
 
 uint32_t GPUParticlesCollision3D::get_cull_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GPUParticlesCollision3D::get_class_static()._native_ptr(), StringName("get_cull_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

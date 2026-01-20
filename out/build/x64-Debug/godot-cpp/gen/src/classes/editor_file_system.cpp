@@ -43,19 +43,19 @@ namespace godot {
 
 EditorFileSystemDirectory *EditorFileSystem::get_filesystem() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFileSystem::get_class_static()._native_ptr(), StringName("get_filesystem")._native_ptr(), 842323275);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorFileSystemDirectory>(_gde_method_bind, _owner);
 }
 
 bool EditorFileSystem::is_scanning() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFileSystem::get_class_static()._native_ptr(), StringName("is_scanning")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 float EditorFileSystem::get_scanning_progress() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFileSystem::get_class_static()._native_ptr(), StringName("get_scanning_progress")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -79,13 +79,13 @@ void EditorFileSystem::update_file(const String &p_path) {
 
 EditorFileSystemDirectory *EditorFileSystem::get_filesystem_path(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFileSystem::get_class_static()._native_ptr(), StringName("get_filesystem_path")._native_ptr(), 3188521125);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<EditorFileSystemDirectory>(_gde_method_bind, _owner, &p_path);
 }
 
 String EditorFileSystem::get_file_type(const String &p_path) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorFileSystem::get_class_static()._native_ptr(), StringName("get_file_type")._native_ptr(), 3135753539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_path);
 }
 

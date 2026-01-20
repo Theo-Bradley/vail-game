@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GENERIC6_DOF_JOINT3D_HPP
-#define GODOT_CPP_GENERIC6_DOF_JOINT3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/joint3d.hpp>
 
@@ -108,4 +107,3 @@ public:
 VARIANT_ENUM_CAST(Generic6DOFJoint3D::Param);
 VARIANT_ENUM_CAST(Generic6DOFJoint3D::Flag);
 
-#endif // ! GODOT_CPP_GENERIC6_DOF_JOINT3D_HPP

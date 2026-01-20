@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SCENE_REPLICATION_CONFIG_HPP
-#define GODOT_CPP_SCENE_REPLICATION_CONFIG_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -81,4 +80,3 @@ public:
 
 VARIANT_ENUM_CAST(SceneReplicationConfig::ReplicationMode);
 
-#endif // ! GODOT_CPP_SCENE_REPLICATION_CONFIG_HPP

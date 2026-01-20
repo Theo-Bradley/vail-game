@@ -48,7 +48,7 @@ void RetargetModifier3D::set_profile(const Ref<SkeletonProfile> &p_profile) {
 
 Ref<SkeletonProfile> RetargetModifier3D::get_profile() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RetargetModifier3D::get_class_static()._native_ptr(), StringName("get_profile")._native_ptr(), 4291782652);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<SkeletonProfile>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<SkeletonProfile>()));
 	return Ref<SkeletonProfile>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<SkeletonProfile>(_gde_method_bind, _owner));
 }
 
@@ -62,7 +62,7 @@ void RetargetModifier3D::set_use_global_pose(bool p_use_global_pose) {
 
 bool RetargetModifier3D::is_using_global_pose() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RetargetModifier3D::get_class_static()._native_ptr(), StringName("is_using_global_pose")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void RetargetModifier3D::set_enable_flags(BitField<RetargetModifier3D::Transform
 
 BitField<RetargetModifier3D::TransformFlag> RetargetModifier3D::get_enable_flags() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RetargetModifier3D::get_class_static()._native_ptr(), StringName("get_enable_flags")._native_ptr(), 358995420);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<RetargetModifier3D::TransformFlag>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<RetargetModifier3D::TransformFlag>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void RetargetModifier3D::set_position_enabled(bool p_enabled) {
 
 bool RetargetModifier3D::is_position_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RetargetModifier3D::get_class_static()._native_ptr(), StringName("is_position_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void RetargetModifier3D::set_rotation_enabled(bool p_enabled) {
 
 bool RetargetModifier3D::is_rotation_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RetargetModifier3D::get_class_static()._native_ptr(), StringName("is_rotation_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void RetargetModifier3D::set_scale_enabled(bool p_enabled) {
 
 bool RetargetModifier3D::is_scale_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RetargetModifier3D::get_class_static()._native_ptr(), StringName("is_scale_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

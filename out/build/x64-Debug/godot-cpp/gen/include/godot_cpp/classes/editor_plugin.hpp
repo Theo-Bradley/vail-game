@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_PLUGIN_HPP
-#define GODOT_CPP_EDITOR_PLUGIN_HPP
+#pragma once
 
 #include <godot_cpp/classes/editor_context_menu_plugin.hpp>
 #include <godot_cpp/classes/node.hpp>
@@ -271,4 +270,3 @@ VARIANT_ENUM_CAST(EditorPlugin::CustomControlContainer);
 VARIANT_ENUM_CAST(EditorPlugin::DockSlot);
 VARIANT_ENUM_CAST(EditorPlugin::AfterGUIInput);
 
-#endif // ! GODOT_CPP_EDITOR_PLUGIN_HPP

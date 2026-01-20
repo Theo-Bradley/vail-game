@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SHADER_INCLUDE_DB_HPP
-#define GODOT_CPP_SHADER_INCLUDE_DB_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/packed_string_array.hpp>
@@ -62,4 +61,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_SHADER_INCLUDE_DB_HPP

@@ -50,7 +50,7 @@ void Line2D::set_points(const PackedVector2Array &p_points) {
 
 PackedVector2Array Line2D::get_points() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_points")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void Line2D::set_point_position(int32_t p_index, const Vector2 &p_position) {
 
 Vector2 Line2D::get_point_position(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_point_position")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_index_encoded);
@@ -72,7 +72,7 @@ Vector2 Line2D::get_point_position(int32_t p_index) const {
 
 int32_t Line2D::get_point_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_point_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void Line2D::set_closed(bool p_closed) {
 
 bool Line2D::is_closed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("is_closed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -122,7 +122,7 @@ void Line2D::set_width(float p_width) {
 
 float Line2D::get_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_width")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -134,7 +134,7 @@ void Line2D::set_curve(const Ref<Curve> &p_curve) {
 
 Ref<Curve> Line2D::get_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_curve")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -146,7 +146,7 @@ void Line2D::set_default_color(const Color &p_color) {
 
 Color Line2D::get_default_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_default_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void Line2D::set_gradient(const Ref<Gradient> &p_color) {
 
 Ref<Gradient> Line2D::get_gradient() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_gradient")._native_ptr(), 132272999);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Gradient>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Gradient>()));
 	return Ref<Gradient>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Gradient>(_gde_method_bind, _owner));
 }
 
@@ -170,7 +170,7 @@ void Line2D::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> Line2D::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -184,7 +184,7 @@ void Line2D::set_texture_mode(Line2D::LineTextureMode p_mode) {
 
 Line2D::LineTextureMode Line2D::get_texture_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_texture_mode")._native_ptr(), 2341040722);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Line2D::LineTextureMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Line2D::LineTextureMode(0)));
 	return (Line2D::LineTextureMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -198,7 +198,7 @@ void Line2D::set_joint_mode(Line2D::LineJointMode p_mode) {
 
 Line2D::LineJointMode Line2D::get_joint_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_joint_mode")._native_ptr(), 2546544037);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Line2D::LineJointMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Line2D::LineJointMode(0)));
 	return (Line2D::LineJointMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -212,7 +212,7 @@ void Line2D::set_begin_cap_mode(Line2D::LineCapMode p_mode) {
 
 Line2D::LineCapMode Line2D::get_begin_cap_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_begin_cap_mode")._native_ptr(), 1107511441);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Line2D::LineCapMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Line2D::LineCapMode(0)));
 	return (Line2D::LineCapMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -226,7 +226,7 @@ void Line2D::set_end_cap_mode(Line2D::LineCapMode p_mode) {
 
 Line2D::LineCapMode Line2D::get_end_cap_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_end_cap_mode")._native_ptr(), 1107511441);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Line2D::LineCapMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Line2D::LineCapMode(0)));
 	return (Line2D::LineCapMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -240,7 +240,7 @@ void Line2D::set_sharp_limit(float p_limit) {
 
 float Line2D::get_sharp_limit() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_sharp_limit")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -254,7 +254,7 @@ void Line2D::set_round_precision(int32_t p_precision) {
 
 int32_t Line2D::get_round_precision() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_round_precision")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -268,7 +268,7 @@ void Line2D::set_antialiased(bool p_antialiased) {
 
 bool Line2D::get_antialiased() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Line2D::get_class_static()._native_ptr(), StringName("get_antialiased")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

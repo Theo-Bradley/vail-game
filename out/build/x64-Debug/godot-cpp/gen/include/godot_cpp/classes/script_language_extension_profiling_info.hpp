@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SCRIPT_LANGUAGE_EXTENSION_PROFILING_INFO_HPP
-#define GODOT_CPP_SCRIPT_LANGUAGE_EXTENSION_PROFILING_INFO_HPP
+#pragma once
 
 #include <godot_cpp/variant/string_name.hpp>
 
@@ -47,5 +46,3 @@ struct ScriptLanguageExtensionProfilingInfo {
 GDVIRTUAL_NATIVE_PTR(ScriptLanguageExtensionProfilingInfo);
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_SCRIPT_LANGUAGE_EXTENSION_PROFILING_INFO_HPP

@@ -46,7 +46,7 @@ void VisualShaderNodeTransformConstant::set_constant(const Transform3D &p_consta
 
 Transform3D VisualShaderNodeTransformConstant::get_constant() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTransformConstant::get_class_static()._native_ptr(), StringName("get_constant")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 

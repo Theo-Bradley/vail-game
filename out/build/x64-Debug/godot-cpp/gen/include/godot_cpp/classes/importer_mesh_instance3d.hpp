@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_IMPORTER_MESH_INSTANCE3D_HPP
-#define GODOT_CPP_IMPORTER_MESH_INSTANCE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/geometry_instance3d.hpp>
 #include <godot_cpp/classes/node3d.hpp>
@@ -83,4 +82,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_IMPORTER_MESH_INSTANCE3D_HPP

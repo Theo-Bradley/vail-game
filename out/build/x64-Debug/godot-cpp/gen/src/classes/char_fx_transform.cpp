@@ -40,7 +40,7 @@ namespace godot {
 
 Transform2D CharFXTransform::get_transform() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_transform")._native_ptr(), 3761352769);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
@@ -52,7 +52,7 @@ void CharFXTransform::set_transform(const Transform2D &p_transform) {
 
 Vector2i CharFXTransform::get_range() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_range")._native_ptr(), 2741790807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void CharFXTransform::set_range(const Vector2i &p_range) {
 
 double CharFXTransform::get_elapsed_time() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_elapsed_time")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -78,7 +78,7 @@ void CharFXTransform::set_elapsed_time(double p_time) {
 
 bool CharFXTransform::is_visible() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("is_visible")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void CharFXTransform::set_visibility(bool p_visibility) {
 
 bool CharFXTransform::is_outline() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("is_outline")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -106,7 +106,7 @@ void CharFXTransform::set_outline(bool p_outline) {
 
 Vector2 CharFXTransform::get_offset() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_offset")._native_ptr(), 1497962370);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void CharFXTransform::set_offset(const Vector2 &p_offset) {
 
 Color CharFXTransform::get_color() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_color")._native_ptr(), 3200896285);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void CharFXTransform::set_color(const Color &p_color) {
 
 Dictionary CharFXTransform::get_environment() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_environment")._native_ptr(), 2382534195);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void CharFXTransform::set_environment(const Dictionary &p_environment) {
 
 uint32_t CharFXTransform::get_glyph_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_glyph_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -156,7 +156,7 @@ void CharFXTransform::set_glyph_index(uint32_t p_glyph_index) {
 
 int32_t CharFXTransform::get_relative_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_relative_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -170,7 +170,7 @@ void CharFXTransform::set_relative_index(int32_t p_relative_index) {
 
 uint8_t CharFXTransform::get_glyph_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_glyph_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -184,7 +184,7 @@ void CharFXTransform::set_glyph_count(uint8_t p_glyph_count) {
 
 uint16_t CharFXTransform::get_glyph_flags() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_glyph_flags")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -198,7 +198,7 @@ void CharFXTransform::set_glyph_flags(uint16_t p_glyph_flags) {
 
 RID CharFXTransform::get_font() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CharFXTransform::get_class_static()._native_ptr(), StringName("get_font")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 

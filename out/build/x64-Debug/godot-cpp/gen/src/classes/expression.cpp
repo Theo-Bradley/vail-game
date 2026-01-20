@@ -40,13 +40,13 @@ namespace godot {
 
 Error Expression::parse(const String &p_expression, const PackedStringArray &p_input_names) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Expression::get_class_static()._native_ptr(), StringName("parse")._native_ptr(), 3069722906);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_expression, &p_input_names);
 }
 
 Variant Expression::execute(const Array &p_inputs, Object *p_base_instance, bool p_show_error, bool p_const_calls_only) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Expression::get_class_static()._native_ptr(), StringName("execute")._native_ptr(), 3712471238);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int8_t p_show_error_encoded;
 	PtrToArg<bool>::encode(p_show_error, &p_show_error_encoded);
 	int8_t p_const_calls_only_encoded;
@@ -56,13 +56,13 @@ Variant Expression::execute(const Array &p_inputs, Object *p_base_instance, bool
 
 bool Expression::has_execute_failed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Expression::get_class_static()._native_ptr(), StringName("has_execute_failed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 String Expression::get_error_text() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Expression::get_class_static()._native_ptr(), StringName("get_error_text")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 

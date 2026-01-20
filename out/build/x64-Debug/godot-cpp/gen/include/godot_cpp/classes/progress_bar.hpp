@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PROGRESS_BAR_HPP
-#define GODOT_CPP_PROGRESS_BAR_HPP
+#pragma once
 
 #include <godot_cpp/classes/range.hpp>
 
@@ -74,4 +73,3 @@ public:
 
 VARIANT_ENUM_CAST(ProgressBar::FillMode);
 
-#endif // ! GODOT_CPP_PROGRESS_BAR_HPP

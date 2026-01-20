@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_E_NET_CONNECTION_HPP
-#define GODOT_CPP_E_NET_CONNECTION_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -93,7 +92,7 @@ public:
 	double pop_statistic(ENetConnection::HostStatistic p_statistic);
 	int32_t get_max_channels() const;
 	int32_t get_local_port() const;
-	TypedArray<ENetPacketPeer> get_peers();
+	TypedArray<Ref<ENetPacketPeer>> get_peers();
 	void socket_send(const String &p_destination_address, int32_t p_destination_port, const PackedByteArray &p_packet);
 
 protected:
@@ -111,4 +110,3 @@ VARIANT_ENUM_CAST(ENetConnection::CompressionMode);
 VARIANT_ENUM_CAST(ENetConnection::EventType);
 VARIANT_ENUM_CAST(ENetConnection::HostStatistic);
 
-#endif // ! GODOT_CPP_E_NET_CONNECTION_HPP

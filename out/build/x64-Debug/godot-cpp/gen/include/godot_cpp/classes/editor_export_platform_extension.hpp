@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_EXPORT_PLATFORM_EXTENSION_HPP
-#define GODOT_CPP_EDITOR_EXPORT_PLATFORM_EXTENSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/editor_export_platform.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -48,7 +47,6 @@
 namespace godot {
 
 class EditorExportPreset;
-class ImageTexture;
 class StringName;
 class Texture2D;
 
@@ -72,7 +70,7 @@ public:
 	virtual bool _poll_export();
 	virtual int32_t _get_options_count() const;
 	virtual String _get_options_tooltip() const;
-	virtual Ref<ImageTexture> _get_option_icon(int32_t p_device) const;
+	virtual Ref<Texture2D> _get_option_icon(int32_t p_device) const;
 	virtual String _get_option_label(int32_t p_device) const;
 	virtual String _get_option_tooltip(int32_t p_device) const;
 	virtual String _get_device_architecture(int32_t p_device) const;
@@ -132,7 +130,7 @@ protected:
 			BIND_VIRTUAL_METHOD(T, _get_options_tooltip, 201670096);
 		}
 		if constexpr (!std::is_same_v<decltype(&B::_get_option_icon), decltype(&T::_get_option_icon)>) {
-			BIND_VIRTUAL_METHOD(T, _get_option_icon, 3991065292);
+			BIND_VIRTUAL_METHOD(T, _get_option_icon, 3536238170);
 		}
 		if constexpr (!std::is_same_v<decltype(&B::_get_option_label), decltype(&T::_get_option_label)>) {
 			BIND_VIRTUAL_METHOD(T, _get_option_label, 844755477);
@@ -192,4 +190,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_EXPORT_PLATFORM_EXTENSION_HPP

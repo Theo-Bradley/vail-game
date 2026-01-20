@@ -128,7 +128,7 @@ void MeshLibrary::set_item_preview(int32_t p_id, const Ref<Texture2D> &p_texture
 
 String MeshLibrary::get_item_name(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_name")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_id_encoded);
@@ -136,7 +136,7 @@ String MeshLibrary::get_item_name(int32_t p_id) const {
 
 Ref<Mesh> MeshLibrary::get_item_mesh(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_mesh")._native_ptr(), 1576363275);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Mesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Mesh>()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return Ref<Mesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Mesh>(_gde_method_bind, _owner, &p_id_encoded));
@@ -144,7 +144,7 @@ Ref<Mesh> MeshLibrary::get_item_mesh(int32_t p_id) const {
 
 Transform3D MeshLibrary::get_item_mesh_transform(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_mesh_transform")._native_ptr(), 1965739696);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_id_encoded);
@@ -152,7 +152,7 @@ Transform3D MeshLibrary::get_item_mesh_transform(int32_t p_id) const {
 
 RenderingServer::ShadowCastingSetting MeshLibrary::get_item_mesh_cast_shadow(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_mesh_cast_shadow")._native_ptr(), 1841766007);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::ShadowCastingSetting(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::ShadowCastingSetting(0)));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return (RenderingServer::ShadowCastingSetting)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_id_encoded);
@@ -160,7 +160,7 @@ RenderingServer::ShadowCastingSetting MeshLibrary::get_item_mesh_cast_shadow(int
 
 Ref<NavigationMesh> MeshLibrary::get_item_navigation_mesh(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_navigation_mesh")._native_ptr(), 2729647406);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<NavigationMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<NavigationMesh>()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return Ref<NavigationMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<NavigationMesh>(_gde_method_bind, _owner, &p_id_encoded));
@@ -168,7 +168,7 @@ Ref<NavigationMesh> MeshLibrary::get_item_navigation_mesh(int32_t p_id) const {
 
 Transform3D MeshLibrary::get_item_navigation_mesh_transform(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_navigation_mesh_transform")._native_ptr(), 1965739696);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner, &p_id_encoded);
@@ -176,7 +176,7 @@ Transform3D MeshLibrary::get_item_navigation_mesh_transform(int32_t p_id) const 
 
 uint32_t MeshLibrary::get_item_navigation_layers(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_navigation_layers")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_id_encoded);
@@ -184,7 +184,7 @@ uint32_t MeshLibrary::get_item_navigation_layers(int32_t p_id) const {
 
 Array MeshLibrary::get_item_shapes(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_shapes")._native_ptr(), 663333327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner, &p_id_encoded);
@@ -192,7 +192,7 @@ Array MeshLibrary::get_item_shapes(int32_t p_id) const {
 
 Ref<Texture2D> MeshLibrary::get_item_preview(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_preview")._native_ptr(), 3536238170);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_id_encoded));
@@ -208,7 +208,7 @@ void MeshLibrary::remove_item(int32_t p_id) {
 
 int32_t MeshLibrary::find_item_by_name(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("find_item_by_name")._native_ptr(), 1321353865);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_name);
 }
 
@@ -220,13 +220,13 @@ void MeshLibrary::clear() {
 
 PackedInt32Array MeshLibrary::get_item_list() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_item_list")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
 int32_t MeshLibrary::get_last_unused_item_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshLibrary::get_class_static()._native_ptr(), StringName("get_last_unused_item_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

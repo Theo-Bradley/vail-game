@@ -46,7 +46,7 @@ void ViewportTexture::set_viewport_path_in_scene(const NodePath &p_path) {
 
 NodePath ViewportTexture::get_viewport_path_in_scene() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ViewportTexture::get_class_static()._native_ptr(), StringName("get_viewport_path_in_scene")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 

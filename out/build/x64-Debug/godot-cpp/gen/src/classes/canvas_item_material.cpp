@@ -48,7 +48,7 @@ void CanvasItemMaterial::set_blend_mode(CanvasItemMaterial::BlendMode p_blend_mo
 
 CanvasItemMaterial::BlendMode CanvasItemMaterial::get_blend_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItemMaterial::get_class_static()._native_ptr(), StringName("get_blend_mode")._native_ptr(), 3318684035);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CanvasItemMaterial::BlendMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CanvasItemMaterial::BlendMode(0)));
 	return (CanvasItemMaterial::BlendMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void CanvasItemMaterial::set_light_mode(CanvasItemMaterial::LightMode p_light_mo
 
 CanvasItemMaterial::LightMode CanvasItemMaterial::get_light_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItemMaterial::get_class_static()._native_ptr(), StringName("get_light_mode")._native_ptr(), 3863292382);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CanvasItemMaterial::LightMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CanvasItemMaterial::LightMode(0)));
 	return (CanvasItemMaterial::LightMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void CanvasItemMaterial::set_particles_animation(bool p_particles_anim) {
 
 bool CanvasItemMaterial::get_particles_animation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItemMaterial::get_class_static()._native_ptr(), StringName("get_particles_animation")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void CanvasItemMaterial::set_particles_anim_h_frames(int32_t p_frames) {
 
 int32_t CanvasItemMaterial::get_particles_anim_h_frames() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItemMaterial::get_class_static()._native_ptr(), StringName("get_particles_anim_h_frames")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void CanvasItemMaterial::set_particles_anim_v_frames(int32_t p_frames) {
 
 int32_t CanvasItemMaterial::get_particles_anim_v_frames() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItemMaterial::get_class_static()._native_ptr(), StringName("get_particles_anim_v_frames")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void CanvasItemMaterial::set_particles_anim_loop(bool p_loop) {
 
 bool CanvasItemMaterial::get_particles_anim_loop() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CanvasItemMaterial::get_class_static()._native_ptr(), StringName("get_particles_anim_loop")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

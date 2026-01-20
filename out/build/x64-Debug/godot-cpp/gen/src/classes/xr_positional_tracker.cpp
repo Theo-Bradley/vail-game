@@ -44,7 +44,7 @@ namespace godot {
 
 String XRPositionalTracker::get_tracker_profile() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRPositionalTracker::get_class_static()._native_ptr(), StringName("get_tracker_profile")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -56,7 +56,7 @@ void XRPositionalTracker::set_tracker_profile(const String &p_profile) {
 
 XRPositionalTracker::TrackerHand XRPositionalTracker::get_tracker_hand() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRPositionalTracker::get_class_static()._native_ptr(), StringName("get_tracker_hand")._native_ptr(), 4181770860);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, XRPositionalTracker::TrackerHand(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (XRPositionalTracker::TrackerHand(0)));
 	return (XRPositionalTracker::TrackerHand)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -70,13 +70,13 @@ void XRPositionalTracker::set_tracker_hand(XRPositionalTracker::TrackerHand p_ha
 
 bool XRPositionalTracker::has_pose(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRPositionalTracker::get_class_static()._native_ptr(), StringName("has_pose")._native_ptr(), 2619796661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_name);
 }
 
 Ref<XRPose> XRPositionalTracker::get_pose(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRPositionalTracker::get_class_static()._native_ptr(), StringName("get_pose")._native_ptr(), 4099720006);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<XRPose>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<XRPose>()));
 	return Ref<XRPose>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<XRPose>(_gde_method_bind, _owner, &p_name));
 }
 
@@ -96,7 +96,7 @@ void XRPositionalTracker::set_pose(const StringName &p_name, const Transform3D &
 
 Variant XRPositionalTracker::get_input(const StringName &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRPositionalTracker::get_class_static()._native_ptr(), StringName("get_input")._native_ptr(), 2760726917);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_name);
 }
 

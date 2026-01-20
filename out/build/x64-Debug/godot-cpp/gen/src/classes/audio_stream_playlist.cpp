@@ -48,13 +48,13 @@ void AudioStreamPlaylist::set_stream_count(int32_t p_stream_count) {
 
 int32_t AudioStreamPlaylist::get_stream_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlaylist::get_class_static()._native_ptr(), StringName("get_stream_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 double AudioStreamPlaylist::get_bpm() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlaylist::get_class_static()._native_ptr(), StringName("get_bpm")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -68,7 +68,7 @@ void AudioStreamPlaylist::set_list_stream(int32_t p_stream_index, const Ref<Audi
 
 Ref<AudioStream> AudioStreamPlaylist::get_list_stream(int32_t p_stream_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlaylist::get_class_static()._native_ptr(), StringName("get_list_stream")._native_ptr(), 2739380747);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStream>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStream>()));
 	int64_t p_stream_index_encoded;
 	PtrToArg<int64_t>::encode(p_stream_index, &p_stream_index_encoded);
 	return Ref<AudioStream>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStream>(_gde_method_bind, _owner, &p_stream_index_encoded));
@@ -84,7 +84,7 @@ void AudioStreamPlaylist::set_shuffle(bool p_shuffle) {
 
 bool AudioStreamPlaylist::get_shuffle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlaylist::get_class_static()._native_ptr(), StringName("get_shuffle")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void AudioStreamPlaylist::set_fade_time(float p_dec) {
 
 float AudioStreamPlaylist::get_fade_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlaylist::get_class_static()._native_ptr(), StringName("get_fade_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -112,7 +112,7 @@ void AudioStreamPlaylist::set_loop(bool p_loop) {
 
 bool AudioStreamPlaylist::has_loop() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlaylist::get_class_static()._native_ptr(), StringName("has_loop")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

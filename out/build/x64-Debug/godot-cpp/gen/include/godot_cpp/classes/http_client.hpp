@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_HTTP_CLIENT_HPP
-#define GODOT_CPP_HTTP_CLIENT_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -182,4 +181,3 @@ VARIANT_ENUM_CAST(HTTPClient::Method);
 VARIANT_ENUM_CAST(HTTPClient::Status);
 VARIANT_ENUM_CAST(HTTPClient::ResponseCode);
 
-#endif // ! GODOT_CPP_HTTP_CLIENT_HPP

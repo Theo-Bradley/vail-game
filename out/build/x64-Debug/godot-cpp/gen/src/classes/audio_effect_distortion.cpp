@@ -48,7 +48,7 @@ void AudioEffectDistortion::set_mode(AudioEffectDistortion::Mode p_mode) {
 
 AudioEffectDistortion::Mode AudioEffectDistortion::get_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDistortion::get_class_static()._native_ptr(), StringName("get_mode")._native_ptr(), 809118343);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioEffectDistortion::Mode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioEffectDistortion::Mode(0)));
 	return (AudioEffectDistortion::Mode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AudioEffectDistortion::set_pre_gain(float p_pre_gain) {
 
 float AudioEffectDistortion::get_pre_gain() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDistortion::get_class_static()._native_ptr(), StringName("get_pre_gain")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AudioEffectDistortion::set_keep_hf_hz(float p_keep_hf_hz) {
 
 float AudioEffectDistortion::get_keep_hf_hz() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDistortion::get_class_static()._native_ptr(), StringName("get_keep_hf_hz")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void AudioEffectDistortion::set_drive(float p_drive) {
 
 float AudioEffectDistortion::get_drive() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDistortion::get_class_static()._native_ptr(), StringName("get_drive")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void AudioEffectDistortion::set_post_gain(float p_post_gain) {
 
 float AudioEffectDistortion::get_post_gain() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectDistortion::get_class_static()._native_ptr(), StringName("get_post_gain")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

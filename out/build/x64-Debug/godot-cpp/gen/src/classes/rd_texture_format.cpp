@@ -48,7 +48,7 @@ void RDTextureFormat::set_format(RenderingDevice::DataFormat p_member) {
 
 RenderingDevice::DataFormat RDTextureFormat::get_format() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_format")._native_ptr(), 2235804183);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::DataFormat(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::DataFormat(0)));
 	return (RenderingDevice::DataFormat)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void RDTextureFormat::set_width(uint32_t p_member) {
 
 uint32_t RDTextureFormat::get_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_width")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void RDTextureFormat::set_height(uint32_t p_member) {
 
 uint32_t RDTextureFormat::get_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_height")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void RDTextureFormat::set_depth(uint32_t p_member) {
 
 uint32_t RDTextureFormat::get_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_depth")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void RDTextureFormat::set_array_layers(uint32_t p_member) {
 
 uint32_t RDTextureFormat::get_array_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_array_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void RDTextureFormat::set_mipmaps(uint32_t p_member) {
 
 uint32_t RDTextureFormat::get_mipmaps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_mipmaps")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void RDTextureFormat::set_texture_type(RenderingDevice::TextureType p_member) {
 
 RenderingDevice::TextureType RDTextureFormat::get_texture_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_texture_type")._native_ptr(), 4036357416);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::TextureType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::TextureType(0)));
 	return (RenderingDevice::TextureType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void RDTextureFormat::set_samples(RenderingDevice::TextureSamples p_member) {
 
 RenderingDevice::TextureSamples RDTextureFormat::get_samples() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_samples")._native_ptr(), 407791724);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingDevice::TextureSamples(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingDevice::TextureSamples(0)));
 	return (RenderingDevice::TextureSamples)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void RDTextureFormat::set_usage_bits(BitField<RenderingDevice::TextureUsageBits>
 
 BitField<RenderingDevice::TextureUsageBits> RDTextureFormat::get_usage_bits() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_usage_bits")._native_ptr(), 1313398998);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<RenderingDevice::TextureUsageBits>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<RenderingDevice::TextureUsageBits>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -172,7 +172,7 @@ void RDTextureFormat::set_is_resolve_buffer(bool p_member) {
 
 bool RDTextureFormat::get_is_resolve_buffer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_is_resolve_buffer")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -186,7 +186,7 @@ void RDTextureFormat::set_is_discardable(bool p_member) {
 
 bool RDTextureFormat::get_is_discardable() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RDTextureFormat::get_class_static()._native_ptr(), StringName("get_is_discardable")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

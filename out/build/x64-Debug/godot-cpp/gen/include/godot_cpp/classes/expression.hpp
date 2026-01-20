@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EXPRESSION_HPP
-#define GODOT_CPP_EXPRESSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -68,4 +67,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EXPRESSION_HPP

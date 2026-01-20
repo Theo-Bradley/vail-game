@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_BASE_BUTTON_HPP
-#define GODOT_CPP_BASE_BUTTON_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -109,4 +108,3 @@ public:
 VARIANT_ENUM_CAST(BaseButton::DrawMode);
 VARIANT_ENUM_CAST(BaseButton::ActionMode);
 
-#endif // ! GODOT_CPP_BASE_BUTTON_HPP

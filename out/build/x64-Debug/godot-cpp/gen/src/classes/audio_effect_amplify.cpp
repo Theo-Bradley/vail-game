@@ -48,7 +48,7 @@ void AudioEffectAmplify::set_volume_db(float p_volume) {
 
 float AudioEffectAmplify::get_volume_db() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectAmplify::get_class_static()._native_ptr(), StringName("get_volume_db")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AudioEffectAmplify::set_volume_linear(float p_volume) {
 
 float AudioEffectAmplify::get_volume_linear() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioEffectAmplify::get_class_static()._native_ptr(), StringName("get_volume_linear")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

@@ -48,7 +48,7 @@ void VisualShaderNodeSample3D::set_source(VisualShaderNodeSample3D::Source p_val
 
 VisualShaderNodeSample3D::Source VisualShaderNodeSample3D::get_source() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeSample3D::get_class_static()._native_ptr(), StringName("get_source")._native_ptr(), 1079494121);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeSample3D::Source(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeSample3D::Source(0)));
 	return (VisualShaderNodeSample3D::Source)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

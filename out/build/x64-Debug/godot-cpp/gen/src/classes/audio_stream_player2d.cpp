@@ -49,7 +49,7 @@ void AudioStreamPlayer2D::set_stream(const Ref<AudioStream> &p_stream) {
 
 Ref<AudioStream> AudioStreamPlayer2D::get_stream() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_stream")._native_ptr(), 160907539);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStream>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStream>()));
 	return Ref<AudioStream>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStream>(_gde_method_bind, _owner));
 }
 
@@ -63,7 +63,7 @@ void AudioStreamPlayer2D::set_volume_db(float p_volume_db) {
 
 float AudioStreamPlayer2D::get_volume_db() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_volume_db")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -77,7 +77,7 @@ void AudioStreamPlayer2D::set_volume_linear(float p_volume_linear) {
 
 float AudioStreamPlayer2D::get_volume_linear() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_volume_linear")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -91,7 +91,7 @@ void AudioStreamPlayer2D::set_pitch_scale(float p_pitch_scale) {
 
 float AudioStreamPlayer2D::get_pitch_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_pitch_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -119,13 +119,13 @@ void AudioStreamPlayer2D::stop() {
 
 bool AudioStreamPlayer2D::is_playing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("is_playing")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 float AudioStreamPlayer2D::get_playback_position() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_playback_position")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -137,7 +137,7 @@ void AudioStreamPlayer2D::set_bus(const StringName &p_bus) {
 
 StringName AudioStreamPlayer2D::get_bus() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_bus")._native_ptr(), 2002593661);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner);
 }
 
@@ -151,7 +151,7 @@ void AudioStreamPlayer2D::set_autoplay(bool p_enable) {
 
 bool AudioStreamPlayer2D::is_autoplay_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("is_autoplay_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -173,7 +173,7 @@ void AudioStreamPlayer2D::set_max_distance(float p_pixels) {
 
 float AudioStreamPlayer2D::get_max_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_max_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -187,7 +187,7 @@ void AudioStreamPlayer2D::set_attenuation(float p_curve) {
 
 float AudioStreamPlayer2D::get_attenuation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_attenuation")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -201,7 +201,7 @@ void AudioStreamPlayer2D::set_area_mask(uint32_t p_mask) {
 
 uint32_t AudioStreamPlayer2D::get_area_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_area_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -215,7 +215,7 @@ void AudioStreamPlayer2D::set_stream_paused(bool p_pause) {
 
 bool AudioStreamPlayer2D::get_stream_paused() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_stream_paused")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -229,7 +229,7 @@ void AudioStreamPlayer2D::set_max_polyphony(int32_t p_max_polyphony) {
 
 int32_t AudioStreamPlayer2D::get_max_polyphony() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_max_polyphony")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -243,19 +243,19 @@ void AudioStreamPlayer2D::set_panning_strength(float p_panning_strength) {
 
 float AudioStreamPlayer2D::get_panning_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_panning_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool AudioStreamPlayer2D::has_stream_playback() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("has_stream_playback")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Ref<AudioStreamPlayback> AudioStreamPlayer2D::get_stream_playback() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_stream_playback")._native_ptr(), 210135309);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStreamPlayback>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStreamPlayback>()));
 	return Ref<AudioStreamPlayback>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStreamPlayback>(_gde_method_bind, _owner));
 }
 
@@ -269,7 +269,7 @@ void AudioStreamPlayer2D::set_playback_type(AudioServer::PlaybackType p_playback
 
 AudioServer::PlaybackType AudioStreamPlayer2D::get_playback_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamPlayer2D::get_class_static()._native_ptr(), StringName("get_playback_type")._native_ptr(), 4011264623);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioServer::PlaybackType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioServer::PlaybackType(0)));
 	return (AudioServer::PlaybackType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

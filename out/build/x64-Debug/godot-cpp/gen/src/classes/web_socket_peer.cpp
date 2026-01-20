@@ -43,19 +43,19 @@ namespace godot {
 
 Error WebSocketPeer::connect_to_url(const String &p_url, const Ref<TLSOptions> &p_tls_client_options) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("connect_to_url")._native_ptr(), 1966198364);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_url, (p_tls_client_options != nullptr ? &p_tls_client_options->_owner : nullptr));
 }
 
 Error WebSocketPeer::accept_stream(const Ref<StreamPeer> &p_stream) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("accept_stream")._native_ptr(), 255125695);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_stream != nullptr ? &p_stream->_owner : nullptr));
 }
 
 Error WebSocketPeer::send(const PackedByteArray &p_message, WebSocketPeer::WriteMode p_write_mode) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("send")._native_ptr(), 2780360567);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_write_mode_encoded;
 	PtrToArg<int64_t>::encode(p_write_mode, &p_write_mode_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_message, &p_write_mode_encoded);
@@ -63,13 +63,13 @@ Error WebSocketPeer::send(const PackedByteArray &p_message, WebSocketPeer::Write
 
 Error WebSocketPeer::send_text(const String &p_message) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("send_text")._native_ptr(), 166001499);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_message);
 }
 
 bool WebSocketPeer::was_string_packet() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("was_string_packet")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -89,25 +89,25 @@ void WebSocketPeer::close(int32_t p_code, const String &p_reason) {
 
 String WebSocketPeer::get_connected_host() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_connected_host")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 uint16_t WebSocketPeer::get_connected_port() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_connected_port")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String WebSocketPeer::get_selected_protocol() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_selected_protocol")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 String WebSocketPeer::get_requested_url() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_requested_url")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -121,31 +121,31 @@ void WebSocketPeer::set_no_delay(bool p_enabled) {
 
 int32_t WebSocketPeer::get_current_outbound_buffered_amount() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_current_outbound_buffered_amount")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 WebSocketPeer::State WebSocketPeer::get_ready_state() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_ready_state")._native_ptr(), 346482985);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, WebSocketPeer::State(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (WebSocketPeer::State(0)));
 	return (WebSocketPeer::State)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t WebSocketPeer::get_close_code() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_close_code")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 String WebSocketPeer::get_close_reason() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_close_reason")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 PackedStringArray WebSocketPeer::get_supported_protocols() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_supported_protocols")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -157,7 +157,7 @@ void WebSocketPeer::set_supported_protocols(const PackedStringArray &p_protocols
 
 PackedStringArray WebSocketPeer::get_handshake_headers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_handshake_headers")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -169,7 +169,7 @@ void WebSocketPeer::set_handshake_headers(const PackedStringArray &p_protocols) 
 
 int32_t WebSocketPeer::get_inbound_buffer_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_inbound_buffer_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -183,7 +183,7 @@ void WebSocketPeer::set_inbound_buffer_size(int32_t p_buffer_size) {
 
 int32_t WebSocketPeer::get_outbound_buffer_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_outbound_buffer_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -205,7 +205,7 @@ void WebSocketPeer::set_max_queued_packets(int32_t p_buffer_size) {
 
 int32_t WebSocketPeer::get_max_queued_packets() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_max_queued_packets")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -219,7 +219,7 @@ void WebSocketPeer::set_heartbeat_interval(double p_interval) {
 
 double WebSocketPeer::get_heartbeat_interval() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(WebSocketPeer::get_class_static()._native_ptr(), StringName("get_heartbeat_interval")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

@@ -40,7 +40,7 @@ namespace godot {
 
 RID RenderSceneBuffersConfiguration::get_render_target() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_render_target")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -52,7 +52,7 @@ void RenderSceneBuffersConfiguration::set_render_target(const RID &p_render_targ
 
 Vector2i RenderSceneBuffersConfiguration::get_internal_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_internal_size")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void RenderSceneBuffersConfiguration::set_internal_size(const Vector2i &p_intern
 
 Vector2i RenderSceneBuffersConfiguration::get_target_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_target_size")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void RenderSceneBuffersConfiguration::set_target_size(const Vector2i &p_target_s
 
 uint32_t RenderSceneBuffersConfiguration::get_view_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_view_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void RenderSceneBuffersConfiguration::set_view_count(uint32_t p_view_count) {
 
 RenderingServer::ViewportScaling3DMode RenderSceneBuffersConfiguration::get_scaling_3d_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_scaling_3d_mode")._native_ptr(), 976778074);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::ViewportScaling3DMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::ViewportScaling3DMode(0)));
 	return (RenderingServer::ViewportScaling3DMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void RenderSceneBuffersConfiguration::set_scaling_3d_mode(RenderingServer::Viewp
 
 RenderingServer::ViewportMSAA RenderSceneBuffersConfiguration::get_msaa_3d() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_msaa_3d")._native_ptr(), 3109158617);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::ViewportMSAA(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::ViewportMSAA(0)));
 	return (RenderingServer::ViewportMSAA)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void RenderSceneBuffersConfiguration::set_msaa_3d(RenderingServer::ViewportMSAA 
 
 RenderingServer::ViewportScreenSpaceAA RenderSceneBuffersConfiguration::get_screen_space_aa() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_screen_space_aa")._native_ptr(), 641513172);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::ViewportScreenSpaceAA(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::ViewportScreenSpaceAA(0)));
 	return (RenderingServer::ViewportScreenSpaceAA)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void RenderSceneBuffersConfiguration::set_screen_space_aa(RenderingServer::Viewp
 
 float RenderSceneBuffersConfiguration::get_fsr_sharpness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_fsr_sharpness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void RenderSceneBuffersConfiguration::set_fsr_sharpness(float p_fsr_sharpness) {
 
 float RenderSceneBuffersConfiguration::get_texture_mipmap_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_texture_mipmap_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void RenderSceneBuffersConfiguration::set_texture_mipmap_bias(float p_texture_mi
 
 RenderingServer::ViewportAnisotropicFiltering RenderSceneBuffersConfiguration::get_anisotropic_filtering_level() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(RenderSceneBuffersConfiguration::get_class_static()._native_ptr(), StringName("get_anisotropic_filtering_level")._native_ptr(), 1617414954);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RenderingServer::ViewportAnisotropicFiltering(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RenderingServer::ViewportAnisotropicFiltering(0)));
 	return (RenderingServer::ViewportAnisotropicFiltering)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

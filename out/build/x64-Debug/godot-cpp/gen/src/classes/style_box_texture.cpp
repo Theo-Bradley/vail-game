@@ -48,7 +48,7 @@ void StyleBoxTexture::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> StyleBoxTexture::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxTexture::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -72,7 +72,7 @@ void StyleBoxTexture::set_texture_margin_all(float p_size) {
 
 float StyleBoxTexture::get_texture_margin(Side p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxTexture::get_class_static()._native_ptr(), StringName("get_texture_margin")._native_ptr(), 2869120046);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_margin_encoded;
 	PtrToArg<int64_t>::encode(p_margin, &p_margin_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_margin_encoded);
@@ -98,7 +98,7 @@ void StyleBoxTexture::set_expand_margin_all(float p_size) {
 
 float StyleBoxTexture::get_expand_margin(Side p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxTexture::get_class_static()._native_ptr(), StringName("get_expand_margin")._native_ptr(), 2869120046);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_margin_encoded;
 	PtrToArg<int64_t>::encode(p_margin, &p_margin_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_margin_encoded);
@@ -112,7 +112,7 @@ void StyleBoxTexture::set_region_rect(const Rect2 &p_region) {
 
 Rect2 StyleBoxTexture::get_region_rect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxTexture::get_class_static()._native_ptr(), StringName("get_region_rect")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 
@@ -126,7 +126,7 @@ void StyleBoxTexture::set_draw_center(bool p_enable) {
 
 bool StyleBoxTexture::is_draw_center_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxTexture::get_class_static()._native_ptr(), StringName("is_draw_center_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -138,7 +138,7 @@ void StyleBoxTexture::set_modulate(const Color &p_color) {
 
 Color StyleBoxTexture::get_modulate() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxTexture::get_class_static()._native_ptr(), StringName("get_modulate")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -152,7 +152,7 @@ void StyleBoxTexture::set_h_axis_stretch_mode(StyleBoxTexture::AxisStretchMode p
 
 StyleBoxTexture::AxisStretchMode StyleBoxTexture::get_h_axis_stretch_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxTexture::get_class_static()._native_ptr(), StringName("get_h_axis_stretch_mode")._native_ptr(), 3807744063);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StyleBoxTexture::AxisStretchMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StyleBoxTexture::AxisStretchMode(0)));
 	return (StyleBoxTexture::AxisStretchMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -166,7 +166,7 @@ void StyleBoxTexture::set_v_axis_stretch_mode(StyleBoxTexture::AxisStretchMode p
 
 StyleBoxTexture::AxisStretchMode StyleBoxTexture::get_v_axis_stretch_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(StyleBoxTexture::get_class_static()._native_ptr(), StringName("get_v_axis_stretch_mode")._native_ptr(), 3807744063);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StyleBoxTexture::AxisStretchMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StyleBoxTexture::AxisStretchMode(0)));
 	return (StyleBoxTexture::AxisStretchMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

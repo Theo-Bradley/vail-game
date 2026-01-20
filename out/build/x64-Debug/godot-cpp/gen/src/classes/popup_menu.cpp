@@ -44,7 +44,7 @@ namespace godot {
 
 bool PopupMenu::activate_item_by_event(const Ref<InputEvent> &p_event, bool p_for_global_only) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("activate_item_by_event")._native_ptr(), 3716412023);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int8_t p_for_global_only_encoded;
 	PtrToArg<bool>::encode(p_for_global_only, &p_for_global_only_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, (p_event != nullptr ? &p_event->_owner : nullptr), &p_for_global_only_encoded);
@@ -60,13 +60,13 @@ void PopupMenu::set_prefer_native_menu(bool p_enabled) {
 
 bool PopupMenu::is_prefer_native_menu() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_prefer_native_menu")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool PopupMenu::is_native_menu() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_native_menu")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -248,6 +248,16 @@ void PopupMenu::set_item_language(int32_t p_index, const String &p_language) {
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_index_encoded, &p_language);
+}
+
+void PopupMenu::set_item_auto_translate_mode(int32_t p_index, Node::AutoTranslateMode p_mode) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("set_item_auto_translate_mode")._native_ptr(), 287402019);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_index_encoded;
+	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
+	int64_t p_mode_encoded;
+	PtrToArg<int64_t>::encode(p_mode, &p_mode_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_index_encoded, &p_mode_encoded);
 }
 
 void PopupMenu::set_item_icon(int32_t p_index, const Ref<Texture2D> &p_icon) {
@@ -446,7 +456,7 @@ void PopupMenu::toggle_item_multistate(int32_t p_index) {
 
 String PopupMenu::get_item_text(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_text")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_index_encoded);
@@ -454,7 +464,7 @@ String PopupMenu::get_item_text(int32_t p_index) const {
 
 Control::TextDirection PopupMenu::get_item_text_direction(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_text_direction")._native_ptr(), 4235602388);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Control::TextDirection(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Control::TextDirection(0)));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return (Control::TextDirection)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -462,15 +472,23 @@ Control::TextDirection PopupMenu::get_item_text_direction(int32_t p_index) const
 
 String PopupMenu::get_item_language(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_language")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_index_encoded);
 }
 
+Node::AutoTranslateMode PopupMenu::get_item_auto_translate_mode(int32_t p_index) const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_auto_translate_mode")._native_ptr(), 906302372);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Node::AutoTranslateMode(0)));
+	int64_t p_index_encoded;
+	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
+	return (Node::AutoTranslateMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
+}
+
 Ref<Texture2D> PopupMenu::get_item_icon(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_icon")._native_ptr(), 3536238170);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_index_encoded));
@@ -478,7 +496,7 @@ Ref<Texture2D> PopupMenu::get_item_icon(int32_t p_index) const {
 
 int32_t PopupMenu::get_item_icon_max_width(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_icon_max_width")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -486,7 +504,7 @@ int32_t PopupMenu::get_item_icon_max_width(int32_t p_index) const {
 
 Color PopupMenu::get_item_icon_modulate(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_icon_modulate")._native_ptr(), 3457211756);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_index_encoded);
@@ -494,7 +512,7 @@ Color PopupMenu::get_item_icon_modulate(int32_t p_index) const {
 
 bool PopupMenu::is_item_checked(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_item_checked")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -502,7 +520,7 @@ bool PopupMenu::is_item_checked(int32_t p_index) const {
 
 int32_t PopupMenu::get_item_id(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_id")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -510,7 +528,7 @@ int32_t PopupMenu::get_item_id(int32_t p_index) const {
 
 int32_t PopupMenu::get_item_index(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_index")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_id_encoded);
@@ -518,7 +536,7 @@ int32_t PopupMenu::get_item_index(int32_t p_id) const {
 
 Key PopupMenu::get_item_accelerator(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_accelerator")._native_ptr(), 253789942);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Key(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Key(0)));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return (Key)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -526,7 +544,7 @@ Key PopupMenu::get_item_accelerator(int32_t p_index) const {
 
 Variant PopupMenu::get_item_metadata(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_metadata")._native_ptr(), 4227898402);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_index_encoded);
@@ -534,7 +552,7 @@ Variant PopupMenu::get_item_metadata(int32_t p_index) const {
 
 bool PopupMenu::is_item_disabled(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_item_disabled")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -542,7 +560,7 @@ bool PopupMenu::is_item_disabled(int32_t p_index) const {
 
 String PopupMenu::get_item_submenu(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_submenu")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_index_encoded);
@@ -550,7 +568,7 @@ String PopupMenu::get_item_submenu(int32_t p_index) const {
 
 PopupMenu *PopupMenu::get_item_submenu_node(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_submenu_node")._native_ptr(), 2100501353);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret_obj<PopupMenu>(_gde_method_bind, _owner, &p_index_encoded);
@@ -558,7 +576,7 @@ PopupMenu *PopupMenu::get_item_submenu_node(int32_t p_index) const {
 
 bool PopupMenu::is_item_separator(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_item_separator")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -566,7 +584,7 @@ bool PopupMenu::is_item_separator(int32_t p_index) const {
 
 bool PopupMenu::is_item_checkable(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_item_checkable")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -574,7 +592,7 @@ bool PopupMenu::is_item_checkable(int32_t p_index) const {
 
 bool PopupMenu::is_item_radio_checkable(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_item_radio_checkable")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -582,7 +600,7 @@ bool PopupMenu::is_item_radio_checkable(int32_t p_index) const {
 
 bool PopupMenu::is_item_shortcut_disabled(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_item_shortcut_disabled")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -590,7 +608,7 @@ bool PopupMenu::is_item_shortcut_disabled(int32_t p_index) const {
 
 String PopupMenu::get_item_tooltip(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_tooltip")._native_ptr(), 844755477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner, &p_index_encoded);
@@ -598,7 +616,7 @@ String PopupMenu::get_item_tooltip(int32_t p_index) const {
 
 Ref<Shortcut> PopupMenu::get_item_shortcut(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_shortcut")._native_ptr(), 1449483325);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Shortcut>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Shortcut>()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return Ref<Shortcut>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Shortcut>(_gde_method_bind, _owner, &p_index_encoded));
@@ -606,7 +624,7 @@ Ref<Shortcut> PopupMenu::get_item_shortcut(int32_t p_index) const {
 
 int32_t PopupMenu::get_item_indent(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_indent")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -614,7 +632,7 @@ int32_t PopupMenu::get_item_indent(int32_t p_index) const {
 
 int32_t PopupMenu::get_item_multistate_max(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_multistate_max")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -622,7 +640,7 @@ int32_t PopupMenu::get_item_multistate_max(int32_t p_index) const {
 
 int32_t PopupMenu::get_item_multistate(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_multistate")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_index_encoded);
@@ -638,7 +656,7 @@ void PopupMenu::set_focused_item(int32_t p_index) {
 
 int32_t PopupMenu::get_focused_item() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_focused_item")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -652,7 +670,7 @@ void PopupMenu::set_item_count(int32_t p_count) {
 
 int32_t PopupMenu::get_item_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_item_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -698,7 +716,7 @@ void PopupMenu::set_hide_on_item_selection(bool p_enable) {
 
 bool PopupMenu::is_hide_on_item_selection() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_hide_on_item_selection")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -712,7 +730,7 @@ void PopupMenu::set_hide_on_checkable_item_selection(bool p_enable) {
 
 bool PopupMenu::is_hide_on_checkable_item_selection() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_hide_on_checkable_item_selection")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -726,7 +744,7 @@ void PopupMenu::set_hide_on_state_item_selection(bool p_enable) {
 
 bool PopupMenu::is_hide_on_state_item_selection() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_hide_on_state_item_selection")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -740,7 +758,7 @@ void PopupMenu::set_submenu_popup_delay(float p_seconds) {
 
 float PopupMenu::get_submenu_popup_delay() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_submenu_popup_delay")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -754,13 +772,13 @@ void PopupMenu::set_allow_search(bool p_allow) {
 
 bool PopupMenu::get_allow_search() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_allow_search")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool PopupMenu::is_system_menu() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("is_system_menu")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -774,7 +792,7 @@ void PopupMenu::set_system_menu(NativeMenu::SystemMenus p_system_menu_id) {
 
 NativeMenu::SystemMenus PopupMenu::get_system_menu() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PopupMenu::get_class_static()._native_ptr(), StringName("get_system_menu")._native_ptr(), 1222557358);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NativeMenu::SystemMenus(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NativeMenu::SystemMenus(0)));
 	return (NativeMenu::SystemMenus)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

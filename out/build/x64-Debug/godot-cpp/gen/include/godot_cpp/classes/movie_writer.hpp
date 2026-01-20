@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_MOVIE_WRITER_HPP
-#define GODOT_CPP_MOVIE_WRITER_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_server.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -89,4 +88,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_MOVIE_WRITER_HPP

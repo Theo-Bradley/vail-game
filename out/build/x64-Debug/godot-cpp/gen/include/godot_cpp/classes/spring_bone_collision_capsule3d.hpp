@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SPRING_BONE_COLLISION_CAPSULE3D_HPP
-#define GODOT_CPP_SPRING_BONE_COLLISION_CAPSULE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/spring_bone_collision3d.hpp>
 
@@ -49,6 +48,8 @@ public:
 	float get_radius() const;
 	void set_height(float p_height);
 	float get_height() const;
+	void set_mid_height(float p_mid_height);
+	float get_mid_height() const;
 	void set_inside(bool p_enabled);
 	bool is_inside() const;
 
@@ -63,4 +64,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_SPRING_BONE_COLLISION_CAPSULE3D_HPP

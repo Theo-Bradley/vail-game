@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_FILE_DIALOG_HPP
-#define GODOT_CPP_EDITOR_FILE_DIALOG_HPP
+#pragma once
 
 #include <godot_cpp/classes/confirmation_dialog.hpp>
 #include <godot_cpp/variant/dictionary.hpp>
@@ -125,4 +124,3 @@ VARIANT_ENUM_CAST(EditorFileDialog::FileMode);
 VARIANT_ENUM_CAST(EditorFileDialog::Access);
 VARIANT_ENUM_CAST(EditorFileDialog::DisplayMode);
 
-#endif // ! GODOT_CPP_EDITOR_FILE_DIALOG_HPP

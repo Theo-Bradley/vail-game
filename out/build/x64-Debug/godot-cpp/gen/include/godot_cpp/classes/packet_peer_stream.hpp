@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PACKET_PEER_STREAM_HPP
-#define GODOT_CPP_PACKET_PEER_STREAM_HPP
+#pragma once
 
 #include <godot_cpp/classes/packet_peer.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -66,4 +65,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PACKET_PEER_STREAM_HPP

@@ -48,7 +48,7 @@ void ParticleProcessMaterial::set_direction(const Vector3 &p_degrees) {
 
 Vector3 ParticleProcessMaterial::get_direction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_direction")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void ParticleProcessMaterial::set_inherit_velocity_ratio(double p_ratio) {
 
 double ParticleProcessMaterial::get_inherit_velocity_ratio() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_inherit_velocity_ratio")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void ParticleProcessMaterial::set_spread(float p_degrees) {
 
 float ParticleProcessMaterial::get_spread() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_spread")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void ParticleProcessMaterial::set_flatness(float p_amount) {
 
 float ParticleProcessMaterial::get_flatness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_flatness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void ParticleProcessMaterial::set_param(ParticleProcessMaterial::Parameter p_par
 
 Vector2 ParticleProcessMaterial::get_param(ParticleProcessMaterial::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_param")._native_ptr(), 2623708480);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_param_encoded);
@@ -122,7 +122,7 @@ void ParticleProcessMaterial::set_param_min(ParticleProcessMaterial::Parameter p
 
 float ParticleProcessMaterial::get_param_min(ParticleProcessMaterial::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_param_min")._native_ptr(), 3903786503);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_param_encoded);
@@ -140,7 +140,7 @@ void ParticleProcessMaterial::set_param_max(ParticleProcessMaterial::Parameter p
 
 float ParticleProcessMaterial::get_param_max(ParticleProcessMaterial::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_param_max")._native_ptr(), 3903786503);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_param_encoded);
@@ -156,7 +156,7 @@ void ParticleProcessMaterial::set_param_texture(ParticleProcessMaterial::Paramet
 
 Ref<Texture2D> ParticleProcessMaterial::get_param_texture(ParticleProcessMaterial::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_param_texture")._native_ptr(), 3489372978);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_param_encoded));
@@ -170,7 +170,7 @@ void ParticleProcessMaterial::set_color(const Color &p_color) {
 
 Color ParticleProcessMaterial::get_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -182,7 +182,7 @@ void ParticleProcessMaterial::set_color_ramp(const Ref<Texture2D> &p_ramp) {
 
 Ref<Texture2D> ParticleProcessMaterial::get_color_ramp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_color_ramp")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -194,7 +194,7 @@ void ParticleProcessMaterial::set_alpha_curve(const Ref<Texture2D> &p_curve) {
 
 Ref<Texture2D> ParticleProcessMaterial::get_alpha_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_alpha_curve")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -206,7 +206,7 @@ void ParticleProcessMaterial::set_emission_curve(const Ref<Texture2D> &p_curve) 
 
 Ref<Texture2D> ParticleProcessMaterial::get_emission_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_curve")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -218,7 +218,7 @@ void ParticleProcessMaterial::set_color_initial_ramp(const Ref<Texture2D> &p_ram
 
 Ref<Texture2D> ParticleProcessMaterial::get_color_initial_ramp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_color_initial_ramp")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -230,7 +230,7 @@ void ParticleProcessMaterial::set_velocity_limit_curve(const Ref<Texture2D> &p_c
 
 Ref<Texture2D> ParticleProcessMaterial::get_velocity_limit_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_velocity_limit_curve")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -246,7 +246,7 @@ void ParticleProcessMaterial::set_particle_flag(ParticleProcessMaterial::Particl
 
 bool ParticleProcessMaterial::get_particle_flag(ParticleProcessMaterial::ParticleFlags p_particle_flag) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_particle_flag")._native_ptr(), 3895316907);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_particle_flag_encoded;
 	PtrToArg<int64_t>::encode(p_particle_flag, &p_particle_flag_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_particle_flag_encoded);
@@ -260,7 +260,7 @@ void ParticleProcessMaterial::set_velocity_pivot(const Vector3 &p_pivot) {
 
 Vector3 ParticleProcessMaterial::get_velocity_pivot() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_velocity_pivot")._native_ptr(), 3783033775);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -274,7 +274,7 @@ void ParticleProcessMaterial::set_emission_shape(ParticleProcessMaterial::Emissi
 
 ParticleProcessMaterial::EmissionShape ParticleProcessMaterial::get_emission_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_shape")._native_ptr(), 3719733018);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ParticleProcessMaterial::EmissionShape(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ParticleProcessMaterial::EmissionShape(0)));
 	return (ParticleProcessMaterial::EmissionShape)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -288,7 +288,7 @@ void ParticleProcessMaterial::set_emission_sphere_radius(float p_radius) {
 
 float ParticleProcessMaterial::get_emission_sphere_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_sphere_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -300,7 +300,7 @@ void ParticleProcessMaterial::set_emission_box_extents(const Vector3 &p_extents)
 
 Vector3 ParticleProcessMaterial::get_emission_box_extents() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_box_extents")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -312,7 +312,7 @@ void ParticleProcessMaterial::set_emission_point_texture(const Ref<Texture2D> &p
 
 Ref<Texture2D> ParticleProcessMaterial::get_emission_point_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_point_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -324,7 +324,7 @@ void ParticleProcessMaterial::set_emission_normal_texture(const Ref<Texture2D> &
 
 Ref<Texture2D> ParticleProcessMaterial::get_emission_normal_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_normal_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -336,7 +336,7 @@ void ParticleProcessMaterial::set_emission_color_texture(const Ref<Texture2D> &p
 
 Ref<Texture2D> ParticleProcessMaterial::get_emission_color_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_color_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -350,7 +350,7 @@ void ParticleProcessMaterial::set_emission_point_count(int32_t p_point_count) {
 
 int32_t ParticleProcessMaterial::get_emission_point_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_point_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -362,7 +362,7 @@ void ParticleProcessMaterial::set_emission_ring_axis(const Vector3 &p_axis) {
 
 Vector3 ParticleProcessMaterial::get_emission_ring_axis() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_ring_axis")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -376,7 +376,7 @@ void ParticleProcessMaterial::set_emission_ring_height(float p_height) {
 
 float ParticleProcessMaterial::get_emission_ring_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_ring_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -390,7 +390,7 @@ void ParticleProcessMaterial::set_emission_ring_radius(float p_radius) {
 
 float ParticleProcessMaterial::get_emission_ring_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_ring_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -404,7 +404,7 @@ void ParticleProcessMaterial::set_emission_ring_inner_radius(float p_inner_radiu
 
 float ParticleProcessMaterial::get_emission_ring_inner_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_ring_inner_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -418,7 +418,7 @@ void ParticleProcessMaterial::set_emission_ring_cone_angle(float p_cone_angle) {
 
 float ParticleProcessMaterial::get_emission_ring_cone_angle() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_ring_cone_angle")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -430,7 +430,7 @@ void ParticleProcessMaterial::set_emission_shape_offset(const Vector3 &p_emissio
 
 Vector3 ParticleProcessMaterial::get_emission_shape_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_shape_offset")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -442,13 +442,13 @@ void ParticleProcessMaterial::set_emission_shape_scale(const Vector3 &p_emission
 
 Vector3 ParticleProcessMaterial::get_emission_shape_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_emission_shape_scale")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
 bool ParticleProcessMaterial::get_turbulence_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_turbulence_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -462,7 +462,7 @@ void ParticleProcessMaterial::set_turbulence_enabled(bool p_turbulence_enabled) 
 
 float ParticleProcessMaterial::get_turbulence_noise_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_turbulence_noise_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -476,7 +476,7 @@ void ParticleProcessMaterial::set_turbulence_noise_strength(float p_turbulence_n
 
 float ParticleProcessMaterial::get_turbulence_noise_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_turbulence_noise_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -490,7 +490,7 @@ void ParticleProcessMaterial::set_turbulence_noise_scale(float p_turbulence_nois
 
 float ParticleProcessMaterial::get_turbulence_noise_speed_random() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_turbulence_noise_speed_random")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -504,7 +504,7 @@ void ParticleProcessMaterial::set_turbulence_noise_speed_random(float p_turbulen
 
 Vector3 ParticleProcessMaterial::get_turbulence_noise_speed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_turbulence_noise_speed")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -516,7 +516,7 @@ void ParticleProcessMaterial::set_turbulence_noise_speed(const Vector3 &p_turbul
 
 Vector3 ParticleProcessMaterial::get_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -536,13 +536,13 @@ void ParticleProcessMaterial::set_lifetime_randomness(double p_randomness) {
 
 double ParticleProcessMaterial::get_lifetime_randomness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_lifetime_randomness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 ParticleProcessMaterial::SubEmitterMode ParticleProcessMaterial::get_sub_emitter_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_sub_emitter_mode")._native_ptr(), 2399052877);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ParticleProcessMaterial::SubEmitterMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ParticleProcessMaterial::SubEmitterMode(0)));
 	return (ParticleProcessMaterial::SubEmitterMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -556,7 +556,7 @@ void ParticleProcessMaterial::set_sub_emitter_mode(ParticleProcessMaterial::SubE
 
 double ParticleProcessMaterial::get_sub_emitter_frequency() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_sub_emitter_frequency")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -570,7 +570,7 @@ void ParticleProcessMaterial::set_sub_emitter_frequency(double p_hz) {
 
 int32_t ParticleProcessMaterial::get_sub_emitter_amount_at_end() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_sub_emitter_amount_at_end")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -584,7 +584,7 @@ void ParticleProcessMaterial::set_sub_emitter_amount_at_end(int32_t p_amount) {
 
 int32_t ParticleProcessMaterial::get_sub_emitter_amount_at_collision() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_sub_emitter_amount_at_collision")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -598,7 +598,7 @@ void ParticleProcessMaterial::set_sub_emitter_amount_at_collision(int32_t p_amou
 
 int32_t ParticleProcessMaterial::get_sub_emitter_amount_at_start() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_sub_emitter_amount_at_start")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -612,7 +612,7 @@ void ParticleProcessMaterial::set_sub_emitter_amount_at_start(int32_t p_amount) 
 
 bool ParticleProcessMaterial::get_sub_emitter_keep_velocity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_sub_emitter_keep_velocity")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -634,7 +634,7 @@ void ParticleProcessMaterial::set_attractor_interaction_enabled(bool p_enabled) 
 
 bool ParticleProcessMaterial::is_attractor_interaction_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("is_attractor_interaction_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -648,7 +648,7 @@ void ParticleProcessMaterial::set_collision_mode(ParticleProcessMaterial::Collis
 
 ParticleProcessMaterial::CollisionMode ParticleProcessMaterial::get_collision_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_collision_mode")._native_ptr(), 139371864);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ParticleProcessMaterial::CollisionMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ParticleProcessMaterial::CollisionMode(0)));
 	return (ParticleProcessMaterial::CollisionMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -662,7 +662,7 @@ void ParticleProcessMaterial::set_collision_use_scale(bool p_radius) {
 
 bool ParticleProcessMaterial::is_collision_using_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("is_collision_using_scale")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -676,7 +676,7 @@ void ParticleProcessMaterial::set_collision_friction(float p_friction) {
 
 float ParticleProcessMaterial::get_collision_friction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_collision_friction")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -690,7 +690,7 @@ void ParticleProcessMaterial::set_collision_bounce(float p_bounce) {
 
 float ParticleProcessMaterial::get_collision_bounce() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ParticleProcessMaterial::get_class_static()._native_ptr(), StringName("get_collision_bounce")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

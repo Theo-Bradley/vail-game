@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_STREAM_PLAYER3D_HPP
-#define GODOT_CPP_AUDIO_STREAM_PLAYER3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_server.hpp>
 #include <godot_cpp/classes/node3d.hpp>
@@ -129,4 +128,3 @@ public:
 VARIANT_ENUM_CAST(AudioStreamPlayer3D::AttenuationModel);
 VARIANT_ENUM_CAST(AudioStreamPlayer3D::DopplerTracking);
 
-#endif // ! GODOT_CPP_AUDIO_STREAM_PLAYER3D_HPP

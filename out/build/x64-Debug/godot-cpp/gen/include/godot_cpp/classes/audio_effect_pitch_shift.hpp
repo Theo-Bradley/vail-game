@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_AUDIO_EFFECT_PITCH_SHIFT_HPP
-#define GODOT_CPP_AUDIO_EFFECT_PITCH_SHIFT_HPP
+#pragma once
 
 #include <godot_cpp/classes/audio_effect.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -75,4 +74,3 @@ public:
 
 VARIANT_ENUM_CAST(AudioEffectPitchShift::FFTSize);
 
-#endif // ! GODOT_CPP_AUDIO_EFFECT_PITCH_SHIFT_HPP

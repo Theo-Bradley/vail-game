@@ -48,7 +48,7 @@ void AudioStreamInteractive::set_clip_count(int32_t p_clip_count) {
 
 int32_t AudioStreamInteractive::get_clip_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_clip_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void AudioStreamInteractive::set_initial_clip(int32_t p_clip_index) {
 
 int32_t AudioStreamInteractive::get_initial_clip() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_initial_clip")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void AudioStreamInteractive::set_clip_name(int32_t p_clip_index, const StringNam
 
 StringName AudioStreamInteractive::get_clip_name(int32_t p_clip_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_clip_name")._native_ptr(), 659327637);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	int64_t p_clip_index_encoded;
 	PtrToArg<int64_t>::encode(p_clip_index, &p_clip_index_encoded);
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_clip_index_encoded);
@@ -92,7 +92,7 @@ void AudioStreamInteractive::set_clip_stream(int32_t p_clip_index, const Ref<Aud
 
 Ref<AudioStream> AudioStreamInteractive::get_clip_stream(int32_t p_clip_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_clip_stream")._native_ptr(), 2739380747);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStream>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStream>()));
 	int64_t p_clip_index_encoded;
 	PtrToArg<int64_t>::encode(p_clip_index, &p_clip_index_encoded);
 	return Ref<AudioStream>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStream>(_gde_method_bind, _owner, &p_clip_index_encoded));
@@ -110,7 +110,7 @@ void AudioStreamInteractive::set_clip_auto_advance(int32_t p_clip_index, AudioSt
 
 AudioStreamInteractive::AutoAdvanceMode AudioStreamInteractive::get_clip_auto_advance(int32_t p_clip_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_clip_auto_advance")._native_ptr(), 1778634807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioStreamInteractive::AutoAdvanceMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioStreamInteractive::AutoAdvanceMode(0)));
 	int64_t p_clip_index_encoded;
 	PtrToArg<int64_t>::encode(p_clip_index, &p_clip_index_encoded);
 	return (AudioStreamInteractive::AutoAdvanceMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_clip_index_encoded);
@@ -128,7 +128,7 @@ void AudioStreamInteractive::set_clip_auto_advance_next_clip(int32_t p_clip_inde
 
 int32_t AudioStreamInteractive::get_clip_auto_advance_next_clip(int32_t p_clip_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_clip_auto_advance_next_clip")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_clip_index_encoded;
 	PtrToArg<int64_t>::encode(p_clip_index, &p_clip_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_clip_index_encoded);
@@ -160,7 +160,7 @@ void AudioStreamInteractive::add_transition(int32_t p_from_clip, int32_t p_to_cl
 
 bool AudioStreamInteractive::has_transition(int32_t p_from_clip, int32_t p_to_clip) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("has_transition")._native_ptr(), 2522259332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_from_clip_encoded;
 	PtrToArg<int64_t>::encode(p_from_clip, &p_from_clip_encoded);
 	int64_t p_to_clip_encoded;
@@ -180,13 +180,13 @@ void AudioStreamInteractive::erase_transition(int32_t p_from_clip, int32_t p_to_
 
 PackedInt32Array AudioStreamInteractive::get_transition_list() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_transition_list")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 
 AudioStreamInteractive::TransitionFromTime AudioStreamInteractive::get_transition_from_time(int32_t p_from_clip, int32_t p_to_clip) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_transition_from_time")._native_ptr(), 3453338158);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioStreamInteractive::TransitionFromTime(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioStreamInteractive::TransitionFromTime(0)));
 	int64_t p_from_clip_encoded;
 	PtrToArg<int64_t>::encode(p_from_clip, &p_from_clip_encoded);
 	int64_t p_to_clip_encoded;
@@ -196,7 +196,7 @@ AudioStreamInteractive::TransitionFromTime AudioStreamInteractive::get_transitio
 
 AudioStreamInteractive::TransitionToTime AudioStreamInteractive::get_transition_to_time(int32_t p_from_clip, int32_t p_to_clip) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_transition_to_time")._native_ptr(), 1369651373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioStreamInteractive::TransitionToTime(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioStreamInteractive::TransitionToTime(0)));
 	int64_t p_from_clip_encoded;
 	PtrToArg<int64_t>::encode(p_from_clip, &p_from_clip_encoded);
 	int64_t p_to_clip_encoded;
@@ -206,7 +206,7 @@ AudioStreamInteractive::TransitionToTime AudioStreamInteractive::get_transition_
 
 AudioStreamInteractive::FadeMode AudioStreamInteractive::get_transition_fade_mode(int32_t p_from_clip, int32_t p_to_clip) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_transition_fade_mode")._native_ptr(), 4065396087);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AudioStreamInteractive::FadeMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AudioStreamInteractive::FadeMode(0)));
 	int64_t p_from_clip_encoded;
 	PtrToArg<int64_t>::encode(p_from_clip, &p_from_clip_encoded);
 	int64_t p_to_clip_encoded;
@@ -216,7 +216,7 @@ AudioStreamInteractive::FadeMode AudioStreamInteractive::get_transition_fade_mod
 
 float AudioStreamInteractive::get_transition_fade_beats(int32_t p_from_clip, int32_t p_to_clip) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_transition_fade_beats")._native_ptr(), 3085491603);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_from_clip_encoded;
 	PtrToArg<int64_t>::encode(p_from_clip, &p_from_clip_encoded);
 	int64_t p_to_clip_encoded;
@@ -226,7 +226,7 @@ float AudioStreamInteractive::get_transition_fade_beats(int32_t p_from_clip, int
 
 bool AudioStreamInteractive::is_transition_using_filler_clip(int32_t p_from_clip, int32_t p_to_clip) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("is_transition_using_filler_clip")._native_ptr(), 2522259332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_from_clip_encoded;
 	PtrToArg<int64_t>::encode(p_from_clip, &p_from_clip_encoded);
 	int64_t p_to_clip_encoded;
@@ -236,7 +236,7 @@ bool AudioStreamInteractive::is_transition_using_filler_clip(int32_t p_from_clip
 
 int32_t AudioStreamInteractive::get_transition_filler_clip(int32_t p_from_clip, int32_t p_to_clip) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("get_transition_filler_clip")._native_ptr(), 3175239445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_from_clip_encoded;
 	PtrToArg<int64_t>::encode(p_from_clip, &p_from_clip_encoded);
 	int64_t p_to_clip_encoded;
@@ -246,7 +246,7 @@ int32_t AudioStreamInteractive::get_transition_filler_clip(int32_t p_from_clip, 
 
 bool AudioStreamInteractive::is_transition_holding_previous(int32_t p_from_clip, int32_t p_to_clip) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AudioStreamInteractive::get_class_static()._native_ptr(), StringName("is_transition_holding_previous")._native_ptr(), 2522259332);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_from_clip_encoded;
 	PtrToArg<int64_t>::encode(p_from_clip, &p_from_clip_encoded);
 	int64_t p_to_clip_encoded;

@@ -49,7 +49,7 @@ void MultiMeshInstance2D::set_multimesh(const Ref<MultiMesh> &p_multimesh) {
 
 Ref<MultiMesh> MultiMeshInstance2D::get_multimesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMeshInstance2D::get_class_static()._native_ptr(), StringName("get_multimesh")._native_ptr(), 1385450523);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<MultiMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<MultiMesh>()));
 	return Ref<MultiMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<MultiMesh>(_gde_method_bind, _owner));
 }
 
@@ -61,7 +61,7 @@ void MultiMeshInstance2D::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> MultiMeshInstance2D::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MultiMeshInstance2D::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 

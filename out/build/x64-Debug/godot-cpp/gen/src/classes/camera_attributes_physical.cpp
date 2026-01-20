@@ -48,7 +48,7 @@ void CameraAttributesPhysical::set_aperture(float p_aperture) {
 
 float CameraAttributesPhysical::get_aperture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_aperture")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void CameraAttributesPhysical::set_shutter_speed(float p_shutter_speed) {
 
 float CameraAttributesPhysical::get_shutter_speed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_shutter_speed")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void CameraAttributesPhysical::set_focal_length(float p_focal_length) {
 
 float CameraAttributesPhysical::get_focal_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_focal_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void CameraAttributesPhysical::set_focus_distance(float p_focus_distance) {
 
 float CameraAttributesPhysical::get_focus_distance() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_focus_distance")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void CameraAttributesPhysical::set_near(float p_near) {
 
 float CameraAttributesPhysical::get_near() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_near")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -118,13 +118,13 @@ void CameraAttributesPhysical::set_far(float p_far) {
 
 float CameraAttributesPhysical::get_far() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_far")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float CameraAttributesPhysical::get_fov() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_fov")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -138,7 +138,7 @@ void CameraAttributesPhysical::set_auto_exposure_max_exposure_value(float p_expo
 
 float CameraAttributesPhysical::get_auto_exposure_max_exposure_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_auto_exposure_max_exposure_value")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -152,7 +152,7 @@ void CameraAttributesPhysical::set_auto_exposure_min_exposure_value(float p_expo
 
 float CameraAttributesPhysical::get_auto_exposure_min_exposure_value() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraAttributesPhysical::get_class_static()._native_ptr(), StringName("get_auto_exposure_min_exposure_value")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

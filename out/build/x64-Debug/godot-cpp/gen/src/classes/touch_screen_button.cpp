@@ -50,7 +50,7 @@ void TouchScreenButton::set_texture_normal(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> TouchScreenButton::get_texture_normal() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("get_texture_normal")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -62,7 +62,7 @@ void TouchScreenButton::set_texture_pressed(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> TouchScreenButton::get_texture_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("get_texture_pressed")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -74,7 +74,7 @@ void TouchScreenButton::set_bitmask(const Ref<BitMap> &p_bitmask) {
 
 Ref<BitMap> TouchScreenButton::get_bitmask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("get_bitmask")._native_ptr(), 2459671998);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<BitMap>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<BitMap>()));
 	return Ref<BitMap>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<BitMap>(_gde_method_bind, _owner));
 }
 
@@ -86,7 +86,7 @@ void TouchScreenButton::set_shape(const Ref<Shape2D> &p_shape) {
 
 Ref<Shape2D> TouchScreenButton::get_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("get_shape")._native_ptr(), 522005891);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Shape2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Shape2D>()));
 	return Ref<Shape2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Shape2D>(_gde_method_bind, _owner));
 }
 
@@ -100,7 +100,7 @@ void TouchScreenButton::set_shape_centered(bool p_bool) {
 
 bool TouchScreenButton::is_shape_centered() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("is_shape_centered")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -114,7 +114,7 @@ void TouchScreenButton::set_shape_visible(bool p_bool) {
 
 bool TouchScreenButton::is_shape_visible() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("is_shape_visible")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -126,7 +126,7 @@ void TouchScreenButton::set_action(const String &p_action) {
 
 String TouchScreenButton::get_action() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("get_action")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -140,7 +140,7 @@ void TouchScreenButton::set_visibility_mode(TouchScreenButton::VisibilityMode p_
 
 TouchScreenButton::VisibilityMode TouchScreenButton::get_visibility_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("get_visibility_mode")._native_ptr(), 2558996468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TouchScreenButton::VisibilityMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TouchScreenButton::VisibilityMode(0)));
 	return (TouchScreenButton::VisibilityMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -154,13 +154,13 @@ void TouchScreenButton::set_passby_press(bool p_enabled) {
 
 bool TouchScreenButton::is_passby_press_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("is_passby_press_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool TouchScreenButton::is_pressed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TouchScreenButton::get_class_static()._native_ptr(), StringName("is_pressed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

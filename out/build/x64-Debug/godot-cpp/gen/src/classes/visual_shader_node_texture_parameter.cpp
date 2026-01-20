@@ -48,7 +48,7 @@ void VisualShaderNodeTextureParameter::set_texture_type(VisualShaderNodeTextureP
 
 VisualShaderNodeTextureParameter::TextureType VisualShaderNodeTextureParameter::get_texture_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTextureParameter::get_class_static()._native_ptr(), StringName("get_texture_type")._native_ptr(), 367922070);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeTextureParameter::TextureType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeTextureParameter::TextureType(0)));
 	return (VisualShaderNodeTextureParameter::TextureType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void VisualShaderNodeTextureParameter::set_color_default(VisualShaderNodeTexture
 
 VisualShaderNodeTextureParameter::ColorDefault VisualShaderNodeTextureParameter::get_color_default() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTextureParameter::get_class_static()._native_ptr(), StringName("get_color_default")._native_ptr(), 3837060134);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeTextureParameter::ColorDefault(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeTextureParameter::ColorDefault(0)));
 	return (VisualShaderNodeTextureParameter::ColorDefault)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void VisualShaderNodeTextureParameter::set_texture_filter(VisualShaderNodeTextur
 
 VisualShaderNodeTextureParameter::TextureFilter VisualShaderNodeTextureParameter::get_texture_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTextureParameter::get_class_static()._native_ptr(), StringName("get_texture_filter")._native_ptr(), 4184490817);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeTextureParameter::TextureFilter(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeTextureParameter::TextureFilter(0)));
 	return (VisualShaderNodeTextureParameter::TextureFilter)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void VisualShaderNodeTextureParameter::set_texture_repeat(VisualShaderNodeTextur
 
 VisualShaderNodeTextureParameter::TextureRepeat VisualShaderNodeTextureParameter::get_texture_repeat() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTextureParameter::get_class_static()._native_ptr(), StringName("get_texture_repeat")._native_ptr(), 1690132794);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeTextureParameter::TextureRepeat(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeTextureParameter::TextureRepeat(0)));
 	return (VisualShaderNodeTextureParameter::TextureRepeat)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void VisualShaderNodeTextureParameter::set_texture_source(VisualShaderNodeTextur
 
 VisualShaderNodeTextureParameter::TextureSource VisualShaderNodeTextureParameter::get_texture_source() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeTextureParameter::get_class_static()._native_ptr(), StringName("get_texture_source")._native_ptr(), 2039092262);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, VisualShaderNodeTextureParameter::TextureSource(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (VisualShaderNodeTextureParameter::TextureSource(0)));
 	return (VisualShaderNodeTextureParameter::TextureSource)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

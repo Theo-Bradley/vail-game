@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_VISIBLE_ON_SCREEN_NOTIFIER3D_HPP
-#define GODOT_CPP_VISIBLE_ON_SCREEN_NOTIFIER3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/visual_instance3d.hpp>
 
@@ -61,4 +60,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_VISIBLE_ON_SCREEN_NOTIFIER3D_HPP

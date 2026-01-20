@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RID_HPP
-#define GODOT_CPP_RID_HPP
+#pragma once
 
 #include <godot_cpp/core/defs.hpp>
 
@@ -94,5 +93,3 @@ public:
 };
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_RID_HPP

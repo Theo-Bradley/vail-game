@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PACKED_COLOR_ARRAY_HPP
-#define GODOT_CPP_PACKED_COLOR_ARRAY_HPP
+#pragma once
 
 #include <godot_cpp/core/defs.hpp>
 
@@ -84,6 +83,7 @@ class PackedColorArray {
 		GDExtensionPtrBuiltInMethod method_find;
 		GDExtensionPtrBuiltInMethod method_rfind;
 		GDExtensionPtrBuiltInMethod method_count;
+		GDExtensionPtrBuiltInMethod method_erase;
 		GDExtensionPtrIndexedSetter indexed_setter;
 		GDExtensionPtrIndexedGetter indexed_getter;
 		GDExtensionPtrOperatorEvaluator operator_equal_Variant;
@@ -130,6 +130,7 @@ public:
 	int64_t find(const Color &p_value, int64_t p_from = 0) const;
 	int64_t rfind(const Color &p_value, int64_t p_from = -1) const;
 	int64_t count(const Color &p_value) const;
+	bool erase(const Color &p_value);
 	bool operator==(const Variant &p_other) const;
 	bool operator!=(const Variant &p_other) const;
 	bool operator!() const;
@@ -218,5 +219,3 @@ public:
 };
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_PACKED_COLOR_ARRAY_HPP

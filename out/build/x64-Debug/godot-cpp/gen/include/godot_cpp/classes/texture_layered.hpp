@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TEXTURE_LAYERED_HPP
-#define GODOT_CPP_TEXTURE_LAYERED_HPP
+#pragma once
 
 #include <godot_cpp/classes/image.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -102,4 +101,3 @@ public:
 
 VARIANT_ENUM_CAST(TextureLayered::LayeredType);
 
-#endif // ! GODOT_CPP_TEXTURE_LAYERED_HPP

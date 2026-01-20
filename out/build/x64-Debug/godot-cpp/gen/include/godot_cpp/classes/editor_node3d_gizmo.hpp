@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_NODE3D_GIZMO_HPP
-#define GODOT_CPP_EDITOR_NODE3D_GIZMO_HPP
+#pragma once
 
 #include <godot_cpp/classes/material.hpp>
 #include <godot_cpp/classes/node3d_gizmo.hpp>
@@ -137,4 +136,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_NODE3D_GIZMO_HPP

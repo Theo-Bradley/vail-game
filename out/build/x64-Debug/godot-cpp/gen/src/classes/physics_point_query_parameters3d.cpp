@@ -46,7 +46,7 @@ void PhysicsPointQueryParameters3D::set_position(const Vector3 &p_position) {
 
 Vector3 PhysicsPointQueryParameters3D::get_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsPointQueryParameters3D::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void PhysicsPointQueryParameters3D::set_collision_mask(uint32_t p_collision_mask
 
 uint32_t PhysicsPointQueryParameters3D::get_collision_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsPointQueryParameters3D::get_class_static()._native_ptr(), StringName("get_collision_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void PhysicsPointQueryParameters3D::set_exclude(const TypedArray<RID> &p_exclude
 
 TypedArray<RID> PhysicsPointQueryParameters3D::get_exclude() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsPointQueryParameters3D::get_class_static()._native_ptr(), StringName("get_exclude")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<RID>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<RID>()));
 	return internal::_call_native_mb_ret<TypedArray<RID>>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void PhysicsPointQueryParameters3D::set_collide_with_bodies(bool p_enable) {
 
 bool PhysicsPointQueryParameters3D::is_collide_with_bodies_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsPointQueryParameters3D::get_class_static()._native_ptr(), StringName("is_collide_with_bodies_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -100,7 +100,7 @@ void PhysicsPointQueryParameters3D::set_collide_with_areas(bool p_enable) {
 
 bool PhysicsPointQueryParameters3D::is_collide_with_areas_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsPointQueryParameters3D::get_class_static()._native_ptr(), StringName("is_collide_with_areas_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

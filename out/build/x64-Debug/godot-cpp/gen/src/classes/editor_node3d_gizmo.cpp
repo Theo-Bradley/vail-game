@@ -100,13 +100,13 @@ void EditorNode3DGizmo::set_node_3d(Node *p_node) {
 
 Node3D *EditorNode3DGizmo::get_node_3d() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorNode3DGizmo::get_class_static()._native_ptr(), StringName("get_node_3d")._native_ptr(), 151077316);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Node3D>(_gde_method_bind, _owner);
 }
 
 Ref<EditorNode3DGizmoPlugin> EditorNode3DGizmo::get_plugin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorNode3DGizmo::get_class_static()._native_ptr(), StringName("get_plugin")._native_ptr(), 4250544552);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<EditorNode3DGizmoPlugin>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<EditorNode3DGizmoPlugin>()));
 	return Ref<EditorNode3DGizmoPlugin>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<EditorNode3DGizmoPlugin>(_gde_method_bind, _owner));
 }
 
@@ -126,7 +126,7 @@ void EditorNode3DGizmo::set_hidden(bool p_hidden) {
 
 bool EditorNode3DGizmo::is_subgizmo_selected(int32_t p_id) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorNode3DGizmo::get_class_static()._native_ptr(), StringName("is_subgizmo_selected")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_id_encoded;
 	PtrToArg<int64_t>::encode(p_id, &p_id_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_id_encoded);
@@ -134,7 +134,7 @@ bool EditorNode3DGizmo::is_subgizmo_selected(int32_t p_id) const {
 
 PackedInt32Array EditorNode3DGizmo::get_subgizmo_selection() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(EditorNode3DGizmo::get_class_static()._native_ptr(), StringName("get_subgizmo_selection")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_SERVER3D_HPP
-#define GODOT_CPP_PHYSICS_SERVER3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_test_motion_result3d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -392,6 +391,8 @@ public:
 	float soft_body_get_total_mass(const RID &p_body) const;
 	void soft_body_set_linear_stiffness(const RID &p_body, float p_stiffness);
 	float soft_body_get_linear_stiffness(const RID &p_body) const;
+	void soft_body_set_shrinking_factor(const RID &p_body, float p_shrinking_factor);
+	float soft_body_get_shrinking_factor(const RID &p_body) const;
 	void soft_body_set_pressure_coefficient(const RID &p_body, float p_pressure_coefficient);
 	float soft_body_get_pressure_coefficient(const RID &p_body) const;
 	void soft_body_set_damping_coefficient(const RID &p_body, float p_damping_coefficient);
@@ -403,6 +404,10 @@ public:
 	void soft_body_remove_all_pinned_points(const RID &p_body);
 	void soft_body_pin_point(const RID &p_body, int32_t p_point_index, bool p_pin);
 	bool soft_body_is_point_pinned(const RID &p_body, int32_t p_point_index) const;
+	void soft_body_apply_point_impulse(const RID &p_body, int32_t p_point_index, const Vector3 &p_impulse);
+	void soft_body_apply_point_force(const RID &p_body, int32_t p_point_index, const Vector3 &p_force);
+	void soft_body_apply_central_impulse(const RID &p_body, const Vector3 &p_impulse);
+	void soft_body_apply_central_force(const RID &p_body, const Vector3 &p_force);
 	RID joint_create();
 	void joint_clear(const RID &p_joint);
 	void joint_make_pin(const RID &p_joint, const RID &p_body_A, const Vector3 &p_local_A, const RID &p_body_B, const Vector3 &p_local_B);
@@ -470,4 +475,3 @@ VARIANT_ENUM_CAST(PhysicsServer3D::ProcessInfo);
 VARIANT_ENUM_CAST(PhysicsServer3D::SpaceParameter);
 VARIANT_ENUM_CAST(PhysicsServer3D::BodyAxis);
 
-#endif // ! GODOT_CPP_PHYSICS_SERVER3D_HPP

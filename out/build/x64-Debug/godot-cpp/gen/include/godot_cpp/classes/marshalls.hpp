@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_MARSHALLS_HPP
-#define GODOT_CPP_MARSHALLS_HPP
+#pragma once
 
 #include <godot_cpp/core/object.hpp>
 #include <godot_cpp/variant/packed_byte_array.hpp>
@@ -72,4 +71,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_MARSHALLS_HPP

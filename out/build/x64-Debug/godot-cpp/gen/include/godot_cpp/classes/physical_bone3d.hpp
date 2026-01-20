@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICAL_BONE3D_HPP
-#define GODOT_CPP_PHYSICAL_BONE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_body3d.hpp>
 #include <godot_cpp/variant/transform3d.hpp>
@@ -119,4 +118,3 @@ public:
 VARIANT_ENUM_CAST(PhysicalBone3D::DampMode);
 VARIANT_ENUM_CAST(PhysicalBone3D::JointType);
 
-#endif // ! GODOT_CPP_PHYSICAL_BONE3D_HPP

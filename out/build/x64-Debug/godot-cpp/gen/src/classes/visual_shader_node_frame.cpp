@@ -46,7 +46,7 @@ void VisualShaderNodeFrame::set_title(const String &p_title) {
 
 String VisualShaderNodeFrame::get_title() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFrame::get_class_static()._native_ptr(), StringName("get_title")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void VisualShaderNodeFrame::set_tint_color_enabled(bool p_enable) {
 
 bool VisualShaderNodeFrame::is_tint_color_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFrame::get_class_static()._native_ptr(), StringName("is_tint_color_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void VisualShaderNodeFrame::set_tint_color(const Color &p_color) {
 
 Color VisualShaderNodeFrame::get_tint_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFrame::get_class_static()._native_ptr(), StringName("get_tint_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void VisualShaderNodeFrame::set_autoshrink_enabled(bool p_enable) {
 
 bool VisualShaderNodeFrame::is_autoshrink_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFrame::get_class_static()._native_ptr(), StringName("is_autoshrink_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -114,7 +114,7 @@ void VisualShaderNodeFrame::set_attached_nodes(const PackedInt32Array &p_attache
 
 PackedInt32Array VisualShaderNodeFrame::get_attached_nodes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(VisualShaderNodeFrame::get_class_static()._native_ptr(), StringName("get_attached_nodes")._native_ptr(), 1930428628);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner);
 }
 

@@ -52,7 +52,7 @@ void ScrollContainer::set_h_scroll(int32_t p_value) {
 
 int32_t ScrollContainer::get_h_scroll() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_h_scroll")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -66,7 +66,7 @@ void ScrollContainer::set_v_scroll(int32_t p_value) {
 
 int32_t ScrollContainer::get_v_scroll() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_v_scroll")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -80,7 +80,7 @@ void ScrollContainer::set_horizontal_custom_step(float p_value) {
 
 float ScrollContainer::get_horizontal_custom_step() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_horizontal_custom_step")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -94,7 +94,7 @@ void ScrollContainer::set_vertical_custom_step(float p_value) {
 
 float ScrollContainer::get_vertical_custom_step() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_vertical_custom_step")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -108,7 +108,7 @@ void ScrollContainer::set_horizontal_scroll_mode(ScrollContainer::ScrollMode p_e
 
 ScrollContainer::ScrollMode ScrollContainer::get_horizontal_scroll_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_horizontal_scroll_mode")._native_ptr(), 3987985145);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ScrollContainer::ScrollMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ScrollContainer::ScrollMode(0)));
 	return (ScrollContainer::ScrollMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -122,7 +122,7 @@ void ScrollContainer::set_vertical_scroll_mode(ScrollContainer::ScrollMode p_ena
 
 ScrollContainer::ScrollMode ScrollContainer::get_vertical_scroll_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_vertical_scroll_mode")._native_ptr(), 3987985145);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, ScrollContainer::ScrollMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (ScrollContainer::ScrollMode(0)));
 	return (ScrollContainer::ScrollMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -136,7 +136,7 @@ void ScrollContainer::set_deadzone(int32_t p_deadzone) {
 
 int32_t ScrollContainer::get_deadzone() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_deadzone")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -150,19 +150,19 @@ void ScrollContainer::set_follow_focus(bool p_enabled) {
 
 bool ScrollContainer::is_following_focus() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("is_following_focus")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 HScrollBar *ScrollContainer::get_h_scroll_bar() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_h_scroll_bar")._native_ptr(), 4004517983);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<HScrollBar>(_gde_method_bind, _owner);
 }
 
 VScrollBar *ScrollContainer::get_v_scroll_bar() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_v_scroll_bar")._native_ptr(), 2630340773);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<VScrollBar>(_gde_method_bind, _owner);
 }
 
@@ -182,7 +182,7 @@ void ScrollContainer::set_draw_focus_border(bool p_draw) {
 
 bool ScrollContainer::get_draw_focus_border() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ScrollContainer::get_class_static()._native_ptr(), StringName("get_draw_focus_border")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

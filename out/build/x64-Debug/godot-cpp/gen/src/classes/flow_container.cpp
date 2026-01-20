@@ -40,7 +40,7 @@ namespace godot {
 
 int32_t FlowContainer::get_line_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FlowContainer::get_class_static()._native_ptr(), StringName("get_line_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -54,7 +54,7 @@ void FlowContainer::set_alignment(FlowContainer::AlignmentMode p_alignment) {
 
 FlowContainer::AlignmentMode FlowContainer::get_alignment() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FlowContainer::get_class_static()._native_ptr(), StringName("get_alignment")._native_ptr(), 3749743559);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FlowContainer::AlignmentMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FlowContainer::AlignmentMode(0)));
 	return (FlowContainer::AlignmentMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -68,7 +68,7 @@ void FlowContainer::set_last_wrap_alignment(FlowContainer::LastWrapAlignmentMode
 
 FlowContainer::LastWrapAlignmentMode FlowContainer::get_last_wrap_alignment() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FlowContainer::get_class_static()._native_ptr(), StringName("get_last_wrap_alignment")._native_ptr(), 3743456014);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FlowContainer::LastWrapAlignmentMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FlowContainer::LastWrapAlignmentMode(0)));
 	return (FlowContainer::LastWrapAlignmentMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -82,7 +82,7 @@ void FlowContainer::set_vertical(bool p_vertical) {
 
 bool FlowContainer::is_vertical() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FlowContainer::get_class_static()._native_ptr(), StringName("is_vertical")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -96,7 +96,7 @@ void FlowContainer::set_reverse_fill(bool p_reverse_fill) {
 
 bool FlowContainer::is_reverse_fill() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FlowContainer::get_class_static()._native_ptr(), StringName("is_reverse_fill")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

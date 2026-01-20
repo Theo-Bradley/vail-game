@@ -42,7 +42,7 @@ namespace godot {
 
 Error HTTPRequest::request(const String &p_url, const PackedStringArray &p_custom_headers, HTTPClient::Method p_method, const String &p_request_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("request")._native_ptr(), 3215244323);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_method_encoded;
 	PtrToArg<int64_t>::encode(p_method, &p_method_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_url, &p_custom_headers, &p_method_encoded, &p_request_data);
@@ -50,7 +50,7 @@ Error HTTPRequest::request(const String &p_url, const PackedStringArray &p_custo
 
 Error HTTPRequest::request_raw(const String &p_url, const PackedStringArray &p_custom_headers, HTTPClient::Method p_method, const PackedByteArray &p_request_data_raw) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("request_raw")._native_ptr(), 2714829993);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_method_encoded;
 	PtrToArg<int64_t>::encode(p_method, &p_method_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_url, &p_custom_headers, &p_method_encoded, &p_request_data_raw);
@@ -70,7 +70,7 @@ void HTTPRequest::set_tls_options(const Ref<TLSOptions> &p_client_options) {
 
 HTTPClient::Status HTTPRequest::get_http_client_status() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("get_http_client_status")._native_ptr(), 1426656811);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, HTTPClient::Status(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (HTTPClient::Status(0)));
 	return (HTTPClient::Status)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -84,7 +84,7 @@ void HTTPRequest::set_use_threads(bool p_enable) {
 
 bool HTTPRequest::is_using_threads() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("is_using_threads")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void HTTPRequest::set_accept_gzip(bool p_enable) {
 
 bool HTTPRequest::is_accepting_gzip() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("is_accepting_gzip")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -112,7 +112,7 @@ void HTTPRequest::set_body_size_limit(int32_t p_bytes) {
 
 int32_t HTTPRequest::get_body_size_limit() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("get_body_size_limit")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -126,7 +126,7 @@ void HTTPRequest::set_max_redirects(int32_t p_amount) {
 
 int32_t HTTPRequest::get_max_redirects() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("get_max_redirects")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -138,19 +138,19 @@ void HTTPRequest::set_download_file(const String &p_path) {
 
 String HTTPRequest::get_download_file() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("get_download_file")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 int32_t HTTPRequest::get_downloaded_bytes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("get_downloaded_bytes")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t HTTPRequest::get_body_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("get_body_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -164,7 +164,7 @@ void HTTPRequest::set_timeout(double p_timeout) {
 
 double HTTPRequest::get_timeout() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("get_timeout")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -178,7 +178,7 @@ void HTTPRequest::set_download_chunk_size(int32_t p_chunk_size) {
 
 int32_t HTTPRequest::get_download_chunk_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(HTTPRequest::get_class_static()._native_ptr(), StringName("get_download_chunk_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

@@ -48,7 +48,7 @@ void NinePatchRect::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> NinePatchRect::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NinePatchRect::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -64,7 +64,7 @@ void NinePatchRect::set_patch_margin(Side p_margin, int32_t p_value) {
 
 int32_t NinePatchRect::get_patch_margin(Side p_margin) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NinePatchRect::get_class_static()._native_ptr(), StringName("get_patch_margin")._native_ptr(), 1983885014);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_margin_encoded;
 	PtrToArg<int64_t>::encode(p_margin, &p_margin_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_margin_encoded);
@@ -78,7 +78,7 @@ void NinePatchRect::set_region_rect(const Rect2 &p_rect) {
 
 Rect2 NinePatchRect::get_region_rect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NinePatchRect::get_class_static()._native_ptr(), StringName("get_region_rect")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void NinePatchRect::set_draw_center(bool p_draw_center) {
 
 bool NinePatchRect::is_draw_center_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NinePatchRect::get_class_static()._native_ptr(), StringName("is_draw_center_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -106,7 +106,7 @@ void NinePatchRect::set_h_axis_stretch_mode(NinePatchRect::AxisStretchMode p_mod
 
 NinePatchRect::AxisStretchMode NinePatchRect::get_h_axis_stretch_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NinePatchRect::get_class_static()._native_ptr(), StringName("get_h_axis_stretch_mode")._native_ptr(), 3317113799);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NinePatchRect::AxisStretchMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NinePatchRect::AxisStretchMode(0)));
 	return (NinePatchRect::AxisStretchMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -120,7 +120,7 @@ void NinePatchRect::set_v_axis_stretch_mode(NinePatchRect::AxisStretchMode p_mod
 
 NinePatchRect::AxisStretchMode NinePatchRect::get_v_axis_stretch_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NinePatchRect::get_class_static()._native_ptr(), StringName("get_v_axis_stretch_mode")._native_ptr(), 3317113799);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NinePatchRect::AxisStretchMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NinePatchRect::AxisStretchMode(0)));
 	return (NinePatchRect::AxisStretchMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

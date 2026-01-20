@@ -30,12 +30,12 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_EXPORT_PLUGIN_HPP
-#define GODOT_CPP_EDITOR_EXPORT_PLUGIN_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
 #include <godot_cpp/variant/dictionary.hpp>
+#include <godot_cpp/variant/packed_byte_array.hpp>
 #include <godot_cpp/variant/packed_string_array.hpp>
 #include <godot_cpp/variant/string.hpp>
 #include <godot_cpp/variant/typed_array.hpp>
@@ -50,7 +50,6 @@ namespace godot {
 class EditorExportPlatform;
 class EditorExportPreset;
 class Node;
-class PackedByteArray;
 class Resource;
 class StringName;
 
@@ -59,8 +58,15 @@ class EditorExportPlugin : public RefCounted {
 
 public:
 	void add_shared_object(const String &p_path, const PackedStringArray &p_tags, const String &p_target);
-	void add_ios_project_static_lib(const String &p_path);
 	void add_file(const String &p_path, const PackedByteArray &p_file, bool p_remap);
+	void add_apple_embedded_platform_project_static_lib(const String &p_path);
+	void add_apple_embedded_platform_framework(const String &p_path);
+	void add_apple_embedded_platform_embedded_framework(const String &p_path);
+	void add_apple_embedded_platform_plist_content(const String &p_plist_content);
+	void add_apple_embedded_platform_linker_flags(const String &p_flags);
+	void add_apple_embedded_platform_bundle_file(const String &p_path);
+	void add_apple_embedded_platform_cpp_code(const String &p_code);
+	void add_ios_project_static_lib(const String &p_path);
 	void add_ios_framework(const String &p_path);
 	void add_ios_embedded_framework(const String &p_path);
 	void add_ios_plist_content(const String &p_plist_content);
@@ -96,6 +102,7 @@ public:
 	virtual String _get_android_manifest_activity_element_contents(const Ref<EditorExportPlatform> &p_platform, bool p_debug) const;
 	virtual String _get_android_manifest_application_element_contents(const Ref<EditorExportPlatform> &p_platform, bool p_debug) const;
 	virtual String _get_android_manifest_element_contents(const Ref<EditorExportPlatform> &p_platform, bool p_debug) const;
+	virtual PackedByteArray _update_android_prebuilt_manifest(const Ref<EditorExportPlatform> &p_platform, const PackedByteArray &p_manifest_data) const;
 
 protected:
 	template <typename T, typename B>
@@ -173,6 +180,9 @@ protected:
 		if constexpr (!std::is_same_v<decltype(&B::_get_android_manifest_element_contents), decltype(&T::_get_android_manifest_element_contents)>) {
 			BIND_VIRTUAL_METHOD(T, _get_android_manifest_element_contents, 4013372917);
 		}
+		if constexpr (!std::is_same_v<decltype(&B::_update_android_prebuilt_manifest), decltype(&T::_update_android_prebuilt_manifest)>) {
+			BIND_VIRTUAL_METHOD(T, _update_android_prebuilt_manifest, 3304965187);
+		}
 	}
 
 public:
@@ -180,4 +190,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_EDITOR_EXPORT_PLUGIN_HPP

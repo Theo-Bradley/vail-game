@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_HASHING_CONTEXT_HPP
-#define GODOT_CPP_HASHING_CONTEXT_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -71,4 +70,3 @@ public:
 
 VARIANT_ENUM_CAST(HashingContext::HashType);
 
-#endif // ! GODOT_CPP_HASHING_CONTEXT_HPP

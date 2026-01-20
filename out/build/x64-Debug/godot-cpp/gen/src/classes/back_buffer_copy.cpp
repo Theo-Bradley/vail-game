@@ -46,7 +46,7 @@ void BackBufferCopy::set_rect(const Rect2 &p_rect) {
 
 Rect2 BackBufferCopy::get_rect() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BackBufferCopy::get_class_static()._native_ptr(), StringName("get_rect")._native_ptr(), 1639390495);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2()));
 	return internal::_call_native_mb_ret<Rect2>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void BackBufferCopy::set_copy_mode(BackBufferCopy::CopyMode p_copy_mode) {
 
 BackBufferCopy::CopyMode BackBufferCopy::get_copy_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(BackBufferCopy::get_class_static()._native_ptr(), StringName("get_copy_mode")._native_ptr(), 3271169440);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BackBufferCopy::CopyMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BackBufferCopy::CopyMode(0)));
 	return (BackBufferCopy::CopyMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

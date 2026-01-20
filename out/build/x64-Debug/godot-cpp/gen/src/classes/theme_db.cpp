@@ -71,13 +71,13 @@ ThemeDB::~ThemeDB() {
 
 Ref<Theme> ThemeDB::get_default_theme() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ThemeDB::get_class_static()._native_ptr(), StringName("get_default_theme")._native_ptr(), 754276358);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Theme>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Theme>()));
 	return Ref<Theme>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Theme>(_gde_method_bind, _owner));
 }
 
 Ref<Theme> ThemeDB::get_project_theme() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ThemeDB::get_class_static()._native_ptr(), StringName("get_project_theme")._native_ptr(), 754276358);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Theme>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Theme>()));
 	return Ref<Theme>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Theme>(_gde_method_bind, _owner));
 }
 
@@ -91,7 +91,7 @@ void ThemeDB::set_fallback_base_scale(float p_base_scale) {
 
 float ThemeDB::get_fallback_base_scale() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ThemeDB::get_class_static()._native_ptr(), StringName("get_fallback_base_scale")._native_ptr(), 191475506);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -103,7 +103,7 @@ void ThemeDB::set_fallback_font(const Ref<Font> &p_font) {
 
 Ref<Font> ThemeDB::get_fallback_font() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ThemeDB::get_class_static()._native_ptr(), StringName("get_fallback_font")._native_ptr(), 3656929885);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Font>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Font>()));
 	return Ref<Font>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Font>(_gde_method_bind, _owner));
 }
 
@@ -117,7 +117,7 @@ void ThemeDB::set_fallback_font_size(int32_t p_font_size) {
 
 int32_t ThemeDB::get_fallback_font_size() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ThemeDB::get_class_static()._native_ptr(), StringName("get_fallback_font_size")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -129,7 +129,7 @@ void ThemeDB::set_fallback_icon(const Ref<Texture2D> &p_icon) {
 
 Ref<Texture2D> ThemeDB::get_fallback_icon() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ThemeDB::get_class_static()._native_ptr(), StringName("get_fallback_icon")._native_ptr(), 255860311);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -141,7 +141,7 @@ void ThemeDB::set_fallback_stylebox(const Ref<StyleBox> &p_stylebox) {
 
 Ref<StyleBox> ThemeDB::get_fallback_stylebox() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ThemeDB::get_class_static()._native_ptr(), StringName("get_fallback_stylebox")._native_ptr(), 496040854);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<StyleBox>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<StyleBox>()));
 	return Ref<StyleBox>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<StyleBox>(_gde_method_bind, _owner));
 }
 

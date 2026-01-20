@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GD_SCRIPT_HPP
-#define GODOT_CPP_GD_SCRIPT_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/script.hpp>
@@ -54,7 +53,7 @@ private:
 public:
 	template <typename... Args>
 	Variant new_(const Args &...p_args) {
-		std::array<Variant, 0 + sizeof...(Args)> variant_args{ Variant(p_args)... };
+		std::array<Variant, 0 + sizeof...(Args)> variant_args{{ Variant(p_args)... }};
 		std::array<const Variant *, 0 + sizeof...(Args)> call_args;
 		for (size_t i = 0; i < variant_args.size(); i++) {
 			call_args[i] = &variant_args[i];
@@ -73,4 +72,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_GD_SCRIPT_HPP

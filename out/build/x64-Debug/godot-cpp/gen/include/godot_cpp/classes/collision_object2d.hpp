@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_COLLISION_OBJECT2D_HPP
-#define GODOT_CPP_COLLISION_OBJECT2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -128,4 +127,3 @@ public:
 
 VARIANT_ENUM_CAST(CollisionObject2D::DisableMode);
 
-#endif // ! GODOT_CPP_COLLISION_OBJECT2D_HPP

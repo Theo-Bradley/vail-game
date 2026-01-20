@@ -42,13 +42,13 @@ namespace godot {
 
 RID SkinReference::get_skeleton() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkinReference::get_class_static()._native_ptr(), StringName("get_skeleton")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
 Ref<Skin> SkinReference::get_skin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkinReference::get_class_static()._native_ptr(), StringName("get_skin")._native_ptr(), 2074563878);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Skin>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Skin>()));
 	return Ref<Skin>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Skin>(_gde_method_bind, _owner));
 }
 

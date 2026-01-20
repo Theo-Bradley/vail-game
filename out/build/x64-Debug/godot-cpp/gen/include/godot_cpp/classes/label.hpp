@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_LABEL_HPP
-#define GODOT_CPP_LABEL_HPP
+#pragma once
 
 #include <godot_cpp/classes/control.hpp>
 #include <godot_cpp/classes/global_constants.hpp>
@@ -70,6 +69,8 @@ public:
 	String get_paragraph_separator() const;
 	void set_autowrap_mode(TextServer::AutowrapMode p_autowrap_mode);
 	TextServer::AutowrapMode get_autowrap_mode() const;
+	void set_autowrap_trim_flags(BitField<TextServer::LineBreakFlag> p_autowrap_trim_flags);
+	BitField<TextServer::LineBreakFlag> get_autowrap_trim_flags() const;
 	void set_justification_flags(BitField<TextServer::JustificationFlag> p_justification_flags);
 	BitField<TextServer::JustificationFlag> get_justification_flags() const;
 	void set_clip_text(bool p_enable);
@@ -113,4 +114,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_LABEL_HPP

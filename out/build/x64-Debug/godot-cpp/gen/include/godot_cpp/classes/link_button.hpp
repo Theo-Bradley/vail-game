@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_LINK_BUTTON_HPP
-#define GODOT_CPP_LINK_BUTTON_HPP
+#pragma once
 
 #include <godot_cpp/classes/base_button.hpp>
 #include <godot_cpp/classes/control.hpp>
@@ -83,4 +82,3 @@ public:
 
 VARIANT_ENUM_CAST(LinkButton::UnderlineMode);
 
-#endif // ! GODOT_CPP_LINK_BUTTON_HPP

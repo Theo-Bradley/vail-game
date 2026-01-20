@@ -50,7 +50,7 @@ void SplitContainer::set_split_offset(int32_t p_offset) {
 
 int32_t SplitContainer::get_split_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("get_split_offset")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -70,7 +70,7 @@ void SplitContainer::set_collapsed(bool p_collapsed) {
 
 bool SplitContainer::is_collapsed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("is_collapsed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -84,7 +84,7 @@ void SplitContainer::set_dragger_visibility(SplitContainer::DraggerVisibility p_
 
 SplitContainer::DraggerVisibility SplitContainer::get_dragger_visibility() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("get_dragger_visibility")._native_ptr(), 967297479);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, SplitContainer::DraggerVisibility(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (SplitContainer::DraggerVisibility(0)));
 	return (SplitContainer::DraggerVisibility)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void SplitContainer::set_vertical(bool p_vertical) {
 
 bool SplitContainer::is_vertical() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("is_vertical")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -112,7 +112,7 @@ void SplitContainer::set_dragging_enabled(bool p_dragging_enabled) {
 
 bool SplitContainer::is_dragging_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("is_dragging_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -126,7 +126,7 @@ void SplitContainer::set_drag_area_margin_begin(int32_t p_margin) {
 
 int32_t SplitContainer::get_drag_area_margin_begin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("get_drag_area_margin_begin")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -140,7 +140,7 @@ void SplitContainer::set_drag_area_margin_end(int32_t p_margin) {
 
 int32_t SplitContainer::get_drag_area_margin_end() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("get_drag_area_margin_end")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void SplitContainer::set_drag_area_offset(int32_t p_offset) {
 
 int32_t SplitContainer::get_drag_area_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("get_drag_area_offset")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -168,14 +168,28 @@ void SplitContainer::set_drag_area_highlight_in_editor(bool p_drag_area_highligh
 
 bool SplitContainer::is_drag_area_highlight_in_editor_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("is_drag_area_highlight_in_editor_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Control *SplitContainer::get_drag_area_control() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("get_drag_area_control")._native_ptr(), 829782337);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<Control>(_gde_method_bind, _owner);
+}
+
+void SplitContainer::set_touch_dragger_enabled(bool p_enabled) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("set_touch_dragger_enabled")._native_ptr(), 2586408642);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int8_t p_enabled_encoded;
+	PtrToArg<bool>::encode(p_enabled, &p_enabled_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_enabled_encoded);
+}
+
+bool SplitContainer::is_touch_dragger_enabled() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SplitContainer::get_class_static()._native_ptr(), StringName("is_touch_dragger_enabled")._native_ptr(), 36873697);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
+	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 } // namespace godot

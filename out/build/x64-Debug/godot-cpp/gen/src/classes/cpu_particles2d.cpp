@@ -149,73 +149,73 @@ void CPUParticles2D::request_particles_process(float p_process_time) {
 
 bool CPUParticles2D::is_emitting() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("is_emitting")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t CPUParticles2D::get_amount() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_amount")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 double CPUParticles2D::get_lifetime() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_lifetime")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool CPUParticles2D::get_one_shot() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_one_shot")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 double CPUParticles2D::get_pre_process_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_pre_process_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float CPUParticles2D::get_explosiveness_ratio() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_explosiveness_ratio")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float CPUParticles2D::get_randomness_ratio() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_randomness_ratio")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 double CPUParticles2D::get_lifetime_randomness() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_lifetime_randomness")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool CPUParticles2D::get_use_local_coordinates() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_use_local_coordinates")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 int32_t CPUParticles2D::get_fixed_fps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_fixed_fps")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool CPUParticles2D::get_fractional_delta() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_fractional_delta")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 double CPUParticles2D::get_speed_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_speed_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -229,7 +229,7 @@ void CPUParticles2D::set_use_fixed_seed(bool p_use_fixed_seed) {
 
 bool CPUParticles2D::get_use_fixed_seed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_use_fixed_seed")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -243,7 +243,7 @@ void CPUParticles2D::set_seed(uint32_t p_seed) {
 
 uint32_t CPUParticles2D::get_seed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_seed")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -257,7 +257,7 @@ void CPUParticles2D::set_draw_order(CPUParticles2D::DrawOrder p_order) {
 
 CPUParticles2D::DrawOrder CPUParticles2D::get_draw_order() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_draw_order")._native_ptr(), 1668655735);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CPUParticles2D::DrawOrder(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CPUParticles2D::DrawOrder(0)));
 	return (CPUParticles2D::DrawOrder)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -269,7 +269,7 @@ void CPUParticles2D::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> CPUParticles2D::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -289,7 +289,7 @@ void CPUParticles2D::set_direction(const Vector2 &p_direction) {
 
 Vector2 CPUParticles2D::get_direction() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_direction")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -303,7 +303,7 @@ void CPUParticles2D::set_spread(float p_spread) {
 
 float CPUParticles2D::get_spread() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_spread")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -319,7 +319,7 @@ void CPUParticles2D::set_param_min(CPUParticles2D::Parameter p_param, float p_va
 
 float CPUParticles2D::get_param_min(CPUParticles2D::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_param_min")._native_ptr(), 2038050600);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_param_encoded);
@@ -337,7 +337,7 @@ void CPUParticles2D::set_param_max(CPUParticles2D::Parameter p_param, float p_va
 
 float CPUParticles2D::get_param_max(CPUParticles2D::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_param_max")._native_ptr(), 2038050600);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_param_encoded);
@@ -353,7 +353,7 @@ void CPUParticles2D::set_param_curve(CPUParticles2D::Parameter p_param, const Re
 
 Ref<Curve> CPUParticles2D::get_param_curve(CPUParticles2D::Parameter p_param) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_param_curve")._native_ptr(), 2603158474);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	int64_t p_param_encoded;
 	PtrToArg<int64_t>::encode(p_param, &p_param_encoded);
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner, &p_param_encoded));
@@ -367,7 +367,7 @@ void CPUParticles2D::set_color(const Color &p_color) {
 
 Color CPUParticles2D::get_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -379,7 +379,7 @@ void CPUParticles2D::set_color_ramp(const Ref<Gradient> &p_ramp) {
 
 Ref<Gradient> CPUParticles2D::get_color_ramp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_color_ramp")._native_ptr(), 132272999);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Gradient>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Gradient>()));
 	return Ref<Gradient>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Gradient>(_gde_method_bind, _owner));
 }
 
@@ -391,7 +391,7 @@ void CPUParticles2D::set_color_initial_ramp(const Ref<Gradient> &p_ramp) {
 
 Ref<Gradient> CPUParticles2D::get_color_initial_ramp() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_color_initial_ramp")._native_ptr(), 132272999);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Gradient>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Gradient>()));
 	return Ref<Gradient>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Gradient>(_gde_method_bind, _owner));
 }
 
@@ -407,7 +407,7 @@ void CPUParticles2D::set_particle_flag(CPUParticles2D::ParticleFlags p_particle_
 
 bool CPUParticles2D::get_particle_flag(CPUParticles2D::ParticleFlags p_particle_flag) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_particle_flag")._native_ptr(), 2829976507);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_particle_flag_encoded;
 	PtrToArg<int64_t>::encode(p_particle_flag, &p_particle_flag_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_particle_flag_encoded);
@@ -423,7 +423,7 @@ void CPUParticles2D::set_emission_shape(CPUParticles2D::EmissionShape p_shape) {
 
 CPUParticles2D::EmissionShape CPUParticles2D::get_emission_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_emission_shape")._native_ptr(), 1740246024);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CPUParticles2D::EmissionShape(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CPUParticles2D::EmissionShape(0)));
 	return (CPUParticles2D::EmissionShape)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -437,7 +437,7 @@ void CPUParticles2D::set_emission_sphere_radius(float p_radius) {
 
 float CPUParticles2D::get_emission_sphere_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_emission_sphere_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -449,7 +449,7 @@ void CPUParticles2D::set_emission_rect_extents(const Vector2 &p_extents) {
 
 Vector2 CPUParticles2D::get_emission_rect_extents() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_emission_rect_extents")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -461,7 +461,7 @@ void CPUParticles2D::set_emission_points(const PackedVector2Array &p_array) {
 
 PackedVector2Array CPUParticles2D::get_emission_points() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_emission_points")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -473,7 +473,7 @@ void CPUParticles2D::set_emission_normals(const PackedVector2Array &p_array) {
 
 PackedVector2Array CPUParticles2D::get_emission_normals() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_emission_normals")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
@@ -485,13 +485,13 @@ void CPUParticles2D::set_emission_colors(const PackedColorArray &p_array) {
 
 PackedColorArray CPUParticles2D::get_emission_colors() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_emission_colors")._native_ptr(), 1392750486);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedColorArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedColorArray()));
 	return internal::_call_native_mb_ret<PackedColorArray>(_gde_method_bind, _owner);
 }
 
 Vector2 CPUParticles2D::get_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -503,7 +503,7 @@ void CPUParticles2D::set_gravity(const Vector2 &p_accel_vec) {
 
 bool CPUParticles2D::get_split_scale() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_split_scale")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -517,7 +517,7 @@ void CPUParticles2D::set_split_scale(bool p_split_scale) {
 
 Ref<Curve> CPUParticles2D::get_scale_curve_x() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_scale_curve_x")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -529,7 +529,7 @@ void CPUParticles2D::set_scale_curve_x(const Ref<Curve> &p_scale_curve) {
 
 Ref<Curve> CPUParticles2D::get_scale_curve_y() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CPUParticles2D::get_class_static()._native_ptr(), StringName("get_scale_curve_y")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 

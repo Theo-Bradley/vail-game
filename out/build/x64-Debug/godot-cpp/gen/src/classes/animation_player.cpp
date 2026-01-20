@@ -46,7 +46,7 @@ void AnimationPlayer::animation_set_next(const StringName &p_animation_from, con
 
 StringName AnimationPlayer::animation_get_next(const StringName &p_animation_from) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("animation_get_next")._native_ptr(), 1965194235);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, StringName());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (StringName()));
 	return internal::_call_native_mb_ret<StringName>(_gde_method_bind, _owner, &p_animation_from);
 }
 
@@ -60,7 +60,7 @@ void AnimationPlayer::set_blend_time(const StringName &p_animation_from, const S
 
 double AnimationPlayer::get_blend_time(const StringName &p_animation_from, const StringName &p_animation_to) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_blend_time")._native_ptr(), 1958752504);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_animation_from, &p_animation_to);
 }
 
@@ -74,7 +74,7 @@ void AnimationPlayer::set_default_blend_time(double p_sec) {
 
 double AnimationPlayer::get_default_blend_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_default_blend_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void AnimationPlayer::set_auto_capture(bool p_auto_capture) {
 
 bool AnimationPlayer::is_auto_capture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("is_auto_capture")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void AnimationPlayer::set_auto_capture_duration(double p_auto_capture_duration) 
 
 double AnimationPlayer::get_auto_capture_duration() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_auto_capture_duration")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void AnimationPlayer::set_auto_capture_transition_type(Tween::TransitionType p_a
 
 Tween::TransitionType AnimationPlayer::get_auto_capture_transition_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_auto_capture_transition_type")._native_ptr(), 3842314528);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Tween::TransitionType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Tween::TransitionType(0)));
 	return (Tween::TransitionType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void AnimationPlayer::set_auto_capture_ease_type(Tween::EaseType p_auto_capture_
 
 Tween::EaseType AnimationPlayer::get_auto_capture_ease_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_auto_capture_ease_type")._native_ptr(), 631880200);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Tween::EaseType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Tween::EaseType(0)));
 	return (Tween::EaseType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -236,7 +236,7 @@ void AnimationPlayer::stop(bool p_keep_state) {
 
 bool AnimationPlayer::is_playing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("is_playing")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -248,7 +248,7 @@ void AnimationPlayer::set_current_animation(const String &p_animation) {
 
 String AnimationPlayer::get_current_animation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_current_animation")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -260,7 +260,7 @@ void AnimationPlayer::set_assigned_animation(const String &p_animation) {
 
 String AnimationPlayer::get_assigned_animation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_assigned_animation")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -272,7 +272,7 @@ void AnimationPlayer::queue(const StringName &p_name) {
 
 PackedStringArray AnimationPlayer::get_queue() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_queue")._native_ptr(), 2981934095);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 
@@ -292,13 +292,13 @@ void AnimationPlayer::set_speed_scale(float p_speed) {
 
 float AnimationPlayer::get_speed_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_speed_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float AnimationPlayer::get_playing_speed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_playing_speed")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -310,7 +310,7 @@ void AnimationPlayer::set_autoplay(const String &p_name) {
 
 String AnimationPlayer::get_autoplay() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_autoplay")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -324,19 +324,19 @@ void AnimationPlayer::set_movie_quit_on_finish_enabled(bool p_enabled) {
 
 bool AnimationPlayer::is_movie_quit_on_finish_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("is_movie_quit_on_finish_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 double AnimationPlayer::get_current_animation_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_current_animation_position")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 double AnimationPlayer::get_current_animation_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_current_animation_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -364,19 +364,19 @@ void AnimationPlayer::reset_section() {
 
 double AnimationPlayer::get_section_start_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_section_start_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 double AnimationPlayer::get_section_end_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_section_end_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool AnimationPlayer::has_section() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("has_section")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -402,7 +402,7 @@ void AnimationPlayer::set_process_callback(AnimationPlayer::AnimationProcessCall
 
 AnimationPlayer::AnimationProcessCallback AnimationPlayer::get_process_callback() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_process_callback")._native_ptr(), 4207496604);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AnimationPlayer::AnimationProcessCallback(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AnimationPlayer::AnimationProcessCallback(0)));
 	return (AnimationPlayer::AnimationProcessCallback)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -416,7 +416,7 @@ void AnimationPlayer::set_method_call_mode(AnimationPlayer::AnimationMethodCallM
 
 AnimationPlayer::AnimationMethodCallMode AnimationPlayer::get_method_call_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_method_call_mode")._native_ptr(), 3583380054);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AnimationPlayer::AnimationMethodCallMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AnimationPlayer::AnimationMethodCallMode(0)));
 	return (AnimationPlayer::AnimationMethodCallMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -428,7 +428,7 @@ void AnimationPlayer::set_root(const NodePath &p_path) {
 
 NodePath AnimationPlayer::get_root() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationPlayer::get_class_static()._native_ptr(), StringName("get_root")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_VISIBLE_ON_SCREEN_NOTIFIER2D_HPP
-#define GODOT_CPP_VISIBLE_ON_SCREEN_NOTIFIER2D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node2d.hpp>
 #include <godot_cpp/variant/rect2.hpp>
@@ -48,6 +47,8 @@ class VisibleOnScreenNotifier2D : public Node2D {
 public:
 	void set_rect(const Rect2 &p_rect);
 	Rect2 get_rect() const;
+	void set_show_rect(bool p_show_rect);
+	bool is_showing_rect() const;
 	bool is_on_screen() const;
 
 protected:
@@ -61,4 +62,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_VISIBLE_ON_SCREEN_NOTIFIER2D_HPP

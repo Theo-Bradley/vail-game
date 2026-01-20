@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_GLTF_BUFFER_VIEW_HPP
-#define GODOT_CPP_GLTF_BUFFER_VIEW_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -52,12 +51,12 @@ public:
 	PackedByteArray load_buffer_view_data(const Ref<GLTFState> &p_state) const;
 	int32_t get_buffer() const;
 	void set_buffer(int32_t p_buffer);
-	int32_t get_byte_offset() const;
-	void set_byte_offset(int32_t p_byte_offset);
-	int32_t get_byte_length() const;
-	void set_byte_length(int32_t p_byte_length);
-	int32_t get_byte_stride() const;
-	void set_byte_stride(int32_t p_byte_stride);
+	int64_t get_byte_offset() const;
+	void set_byte_offset(int64_t p_byte_offset);
+	int64_t get_byte_length() const;
+	void set_byte_length(int64_t p_byte_length);
+	int64_t get_byte_stride() const;
+	void set_byte_stride(int64_t p_byte_stride);
 	bool get_indices() const;
 	void set_indices(bool p_indices);
 	bool get_vertex_attributes() const;
@@ -74,4 +73,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_GLTF_BUFFER_VIEW_HPP

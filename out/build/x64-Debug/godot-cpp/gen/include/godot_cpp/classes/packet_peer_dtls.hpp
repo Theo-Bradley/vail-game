@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PACKET_PEER_DTLS_HPP
-#define GODOT_CPP_PACKET_PEER_DTLS_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/packet_peer.hpp>
@@ -77,4 +76,3 @@ public:
 
 VARIANT_ENUM_CAST(PacketPeerDTLS::Status);
 
-#endif // ! GODOT_CPP_PACKET_PEER_DTLS_HPP

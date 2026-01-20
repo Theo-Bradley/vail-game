@@ -70,13 +70,13 @@ JavaClassWrapper::~JavaClassWrapper() {
 
 Ref<JavaClass> JavaClassWrapper::wrap(const String &p_name) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JavaClassWrapper::get_class_static()._native_ptr(), StringName("wrap")._native_ptr(), 1124367868);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<JavaClass>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<JavaClass>()));
 	return Ref<JavaClass>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<JavaClass>(_gde_method_bind, _owner, &p_name));
 }
 
 Ref<JavaObject> JavaClassWrapper::get_exception() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(JavaClassWrapper::get_class_static()._native_ptr(), StringName("get_exception")._native_ptr(), 3277089691);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<JavaObject>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<JavaObject>()));
 	return Ref<JavaObject>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<JavaObject>(_gde_method_bind, _owner));
 }
 

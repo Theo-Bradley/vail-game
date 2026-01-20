@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_IMAGE_TEXTURE3D_HPP
-#define GODOT_CPP_IMAGE_TEXTURE3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/image.hpp>
@@ -49,8 +48,8 @@ class ImageTexture3D : public Texture3D {
 	GDEXTENSION_CLASS(ImageTexture3D, Texture3D)
 
 public:
-	Error create(Image::Format p_format, int32_t p_width, int32_t p_height, int32_t p_depth, bool p_use_mipmaps, const TypedArray<Image> &p_data);
-	void update(const TypedArray<Image> &p_data);
+	Error create(Image::Format p_format, int32_t p_width, int32_t p_height, int32_t p_depth, bool p_use_mipmaps, const TypedArray<Ref<Image>> &p_data);
+	void update(const TypedArray<Ref<Image>> &p_data);
 
 protected:
 	template <typename T, typename B>
@@ -63,4 +62,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_IMAGE_TEXTURE3D_HPP

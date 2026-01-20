@@ -30,11 +30,11 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_INPUT_MAP_HPP
-#define GODOT_CPP_INPUT_MAP_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/core/object.hpp>
+#include <godot_cpp/variant/string.hpp>
 #include <godot_cpp/variant/string_name.hpp>
 #include <godot_cpp/variant/typed_array.hpp>
 
@@ -58,13 +58,14 @@ public:
 	TypedArray<StringName> get_actions();
 	void add_action(const StringName &p_action, float p_deadzone = 0.2);
 	void erase_action(const StringName &p_action);
+	String get_action_description(const StringName &p_action) const;
 	void action_set_deadzone(const StringName &p_action, float p_deadzone);
 	float action_get_deadzone(const StringName &p_action);
 	void action_add_event(const StringName &p_action, const Ref<InputEvent> &p_event);
 	bool action_has_event(const StringName &p_action, const Ref<InputEvent> &p_event);
 	void action_erase_event(const StringName &p_action, const Ref<InputEvent> &p_event);
 	void action_erase_events(const StringName &p_action);
-	TypedArray<InputEvent> action_get_events(const StringName &p_action);
+	TypedArray<Ref<InputEvent>> action_get_events(const StringName &p_action);
 	bool event_is_action(const Ref<InputEvent> &p_event, const StringName &p_action, bool p_exact_match = false) const;
 	void load_from_project_settings();
 
@@ -81,4 +82,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_INPUT_MAP_HPP

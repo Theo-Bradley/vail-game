@@ -44,13 +44,13 @@ namespace godot {
 
 Ref<AudioStreamOggVorbis> ResourceImporterOggVorbis::load_from_buffer(const PackedByteArray &p_stream_data) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceImporterOggVorbis::get_class_static()._native_ptr(), StringName("load_from_buffer")._native_ptr(), 354904730);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStreamOggVorbis>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStreamOggVorbis>()));
 	return Ref<AudioStreamOggVorbis>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStreamOggVorbis>(_gde_method_bind, nullptr, &p_stream_data));
 }
 
 Ref<AudioStreamOggVorbis> ResourceImporterOggVorbis::load_from_file(const String &p_path) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ResourceImporterOggVorbis::get_class_static()._native_ptr(), StringName("load_from_file")._native_ptr(), 797568536);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AudioStreamOggVorbis>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AudioStreamOggVorbis>()));
 	return Ref<AudioStreamOggVorbis>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AudioStreamOggVorbis>(_gde_method_bind, nullptr, &p_path));
 }
 

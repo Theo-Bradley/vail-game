@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SCENE_STATE_HPP
-#define GODOT_CPP_SCENE_STATE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -61,6 +60,8 @@ public:
 		GEN_EDIT_STATE_MAIN_INHERITED = 3,
 	};
 
+	String get_path() const;
+	Ref<SceneState> get_base_scene_state() const;
 	int32_t get_node_count() const;
 	StringName get_node_type(int32_t p_idx) const;
 	StringName get_node_name(int32_t p_idx) const;
@@ -96,4 +97,3 @@ public:
 
 VARIANT_ENUM_CAST(SceneState::GenEditState);
 
-#endif // ! GODOT_CPP_SCENE_STATE_HPP

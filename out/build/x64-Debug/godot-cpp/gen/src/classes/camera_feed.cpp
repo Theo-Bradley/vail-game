@@ -43,13 +43,13 @@ namespace godot {
 
 int32_t CameraFeed::get_id() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("get_id")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool CameraFeed::is_active() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("is_active")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -63,7 +63,7 @@ void CameraFeed::set_active(bool p_active) {
 
 String CameraFeed::get_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("get_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -75,7 +75,7 @@ void CameraFeed::set_name(const String &p_name) {
 
 CameraFeed::FeedPosition CameraFeed::get_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("get_position")._native_ptr(), 2711679033);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CameraFeed::FeedPosition(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CameraFeed::FeedPosition(0)));
 	return (CameraFeed::FeedPosition)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -89,7 +89,7 @@ void CameraFeed::set_position(CameraFeed::FeedPosition p_position) {
 
 Transform2D CameraFeed::get_transform() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("get_transform")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
@@ -123,7 +123,7 @@ void CameraFeed::set_external(int32_t p_width, int32_t p_height) {
 
 uint64_t CameraFeed::get_texture_tex_id(CameraServer::FeedImage p_feed_image_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("get_texture_tex_id")._native_ptr(), 1135699418);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_feed_image_type_encoded;
 	PtrToArg<int64_t>::encode(p_feed_image_type, &p_feed_image_type_encoded);
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner, &p_feed_image_type_encoded);
@@ -131,19 +131,19 @@ uint64_t CameraFeed::get_texture_tex_id(CameraServer::FeedImage p_feed_image_typ
 
 CameraFeed::FeedDataType CameraFeed::get_datatype() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("get_datatype")._native_ptr(), 1477782850);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, CameraFeed::FeedDataType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (CameraFeed::FeedDataType(0)));
 	return (CameraFeed::FeedDataType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Array CameraFeed::get_formats() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("get_formats")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
 bool CameraFeed::set_format(int32_t p_index, const Dictionary &p_parameters) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CameraFeed::get_class_static()._native_ptr(), StringName("set_format")._native_ptr(), 31872775);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_index_encoded, &p_parameters);

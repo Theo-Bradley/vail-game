@@ -52,7 +52,7 @@ void GridMap::set_collision_layer(uint32_t p_layer) {
 
 uint32_t GridMap::get_collision_layer() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_collision_layer")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -66,7 +66,7 @@ void GridMap::set_collision_mask(uint32_t p_mask) {
 
 uint32_t GridMap::get_collision_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_collision_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -82,7 +82,7 @@ void GridMap::set_collision_mask_value(int32_t p_layer_number, bool p_value) {
 
 bool GridMap::get_collision_mask_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_collision_mask_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -100,7 +100,7 @@ void GridMap::set_collision_layer_value(int32_t p_layer_number, bool p_value) {
 
 bool GridMap::get_collision_layer_value(int32_t p_layer_number) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_collision_layer_value")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_layer_number_encoded;
 	PtrToArg<int64_t>::encode(p_layer_number, &p_layer_number_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_layer_number_encoded);
@@ -116,7 +116,7 @@ void GridMap::set_collision_priority(float p_priority) {
 
 float GridMap::get_collision_priority() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_collision_priority")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -128,7 +128,7 @@ void GridMap::set_physics_material(const Ref<PhysicsMaterial> &p_material) {
 
 Ref<PhysicsMaterial> GridMap::get_physics_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_physics_material")._native_ptr(), 2521850424);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<PhysicsMaterial>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<PhysicsMaterial>()));
 	return Ref<PhysicsMaterial>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<PhysicsMaterial>(_gde_method_bind, _owner));
 }
 
@@ -142,7 +142,7 @@ void GridMap::set_bake_navigation(bool p_bake_navigation) {
 
 bool GridMap::is_baking_navigation() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("is_baking_navigation")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -154,7 +154,7 @@ void GridMap::set_navigation_map(const RID &p_navigation_map) {
 
 RID GridMap::get_navigation_map() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_navigation_map")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -166,7 +166,7 @@ void GridMap::set_mesh_library(const Ref<MeshLibrary> &p_mesh_library) {
 
 Ref<MeshLibrary> GridMap::get_mesh_library() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_mesh_library")._native_ptr(), 3350993772);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<MeshLibrary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<MeshLibrary>()));
 	return Ref<MeshLibrary>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<MeshLibrary>(_gde_method_bind, _owner));
 }
 
@@ -178,7 +178,7 @@ void GridMap::set_cell_size(const Vector3 &p_size) {
 
 Vector3 GridMap::get_cell_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_cell_size")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -192,7 +192,7 @@ void GridMap::set_cell_scale(float p_scale) {
 
 float GridMap::get_cell_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_cell_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -206,7 +206,7 @@ void GridMap::set_octant_size(int32_t p_size) {
 
 int32_t GridMap::get_octant_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_octant_size")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -222,25 +222,25 @@ void GridMap::set_cell_item(const Vector3i &p_position, int32_t p_item, int32_t 
 
 int32_t GridMap::get_cell_item(const Vector3i &p_position) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_cell_item")._native_ptr(), 3724960147);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_position);
 }
 
 int32_t GridMap::get_cell_item_orientation(const Vector3i &p_position) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_cell_item_orientation")._native_ptr(), 3724960147);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_position);
 }
 
 Basis GridMap::get_cell_item_basis(const Vector3i &p_position) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_cell_item_basis")._native_ptr(), 3493604918);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Basis());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Basis()));
 	return internal::_call_native_mb_ret<Basis>(_gde_method_bind, _owner, &p_position);
 }
 
 Basis GridMap::get_basis_with_orthogonal_index(int32_t p_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_basis_with_orthogonal_index")._native_ptr(), 2816196998);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Basis());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Basis()));
 	int64_t p_index_encoded;
 	PtrToArg<int64_t>::encode(p_index, &p_index_encoded);
 	return internal::_call_native_mb_ret<Basis>(_gde_method_bind, _owner, &p_index_encoded);
@@ -248,19 +248,19 @@ Basis GridMap::get_basis_with_orthogonal_index(int32_t p_index) const {
 
 int32_t GridMap::get_orthogonal_index_from_basis(const Basis &p_basis) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_orthogonal_index_from_basis")._native_ptr(), 4210359952);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_basis);
 }
 
 Vector3i GridMap::local_to_map(const Vector3 &p_local_position) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("local_to_map")._native_ptr(), 1257687843);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3i()));
 	return internal::_call_native_mb_ret<Vector3i>(_gde_method_bind, _owner, &p_local_position);
 }
 
 Vector3 GridMap::map_to_local(const Vector3i &p_map_position) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("map_to_local")._native_ptr(), 1088329196);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_map_position);
 }
 
@@ -280,7 +280,7 @@ void GridMap::set_center_x(bool p_enable) {
 
 bool GridMap::get_center_x() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_center_x")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -294,7 +294,7 @@ void GridMap::set_center_y(bool p_enable) {
 
 bool GridMap::get_center_y() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_center_y")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -308,7 +308,7 @@ void GridMap::set_center_z(bool p_enable) {
 
 bool GridMap::get_center_z() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_center_z")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -320,13 +320,13 @@ void GridMap::clear() {
 
 TypedArray<Vector3i> GridMap::get_used_cells() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_used_cells")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Vector3i>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Vector3i>()));
 	return internal::_call_native_mb_ret<TypedArray<Vector3i>>(_gde_method_bind, _owner);
 }
 
 TypedArray<Vector3i> GridMap::get_used_cells_by_item(int32_t p_item) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_used_cells_by_item")._native_ptr(), 663333327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Vector3i>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Vector3i>()));
 	int64_t p_item_encoded;
 	PtrToArg<int64_t>::encode(p_item, &p_item_encoded);
 	return internal::_call_native_mb_ret<TypedArray<Vector3i>>(_gde_method_bind, _owner, &p_item_encoded);
@@ -334,19 +334,19 @@ TypedArray<Vector3i> GridMap::get_used_cells_by_item(int32_t p_item) const {
 
 Array GridMap::get_meshes() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_meshes")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
 Array GridMap::get_bake_meshes() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_bake_meshes")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Array()));
 	return internal::_call_native_mb_ret<Array>(_gde_method_bind, _owner);
 }
 
 RID GridMap::get_bake_mesh_instance(int32_t p_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GridMap::get_class_static()._native_ptr(), StringName("get_bake_mesh_instance")._native_ptr(), 937000113);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner, &p_idx_encoded);

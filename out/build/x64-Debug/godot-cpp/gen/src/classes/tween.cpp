@@ -50,7 +50,7 @@ namespace godot {
 
 Ref<PropertyTweener> Tween::tween_property(Object *p_object, const NodePath &p_property, const Variant &p_final_val, double p_duration) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("tween_property")._native_ptr(), 4049770449);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<PropertyTweener>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<PropertyTweener>()));
 	double p_duration_encoded;
 	PtrToArg<double>::encode(p_duration, &p_duration_encoded);
 	return Ref<PropertyTweener>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<PropertyTweener>(_gde_method_bind, _owner, (p_object != nullptr ? &p_object->_owner : nullptr), &p_property, &p_final_val, &p_duration_encoded));
@@ -58,7 +58,7 @@ Ref<PropertyTweener> Tween::tween_property(Object *p_object, const NodePath &p_p
 
 Ref<IntervalTweener> Tween::tween_interval(double p_time) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("tween_interval")._native_ptr(), 413360199);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<IntervalTweener>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<IntervalTweener>()));
 	double p_time_encoded;
 	PtrToArg<double>::encode(p_time, &p_time_encoded);
 	return Ref<IntervalTweener>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<IntervalTweener>(_gde_method_bind, _owner, &p_time_encoded));
@@ -66,13 +66,13 @@ Ref<IntervalTweener> Tween::tween_interval(double p_time) {
 
 Ref<CallbackTweener> Tween::tween_callback(const Callable &p_callback) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("tween_callback")._native_ptr(), 1540176488);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<CallbackTweener>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<CallbackTweener>()));
 	return Ref<CallbackTweener>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<CallbackTweener>(_gde_method_bind, _owner, &p_callback));
 }
 
 Ref<MethodTweener> Tween::tween_method(const Callable &p_method, const Variant &p_from, const Variant &p_to, double p_duration) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("tween_method")._native_ptr(), 2337877153);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<MethodTweener>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<MethodTweener>()));
 	double p_duration_encoded;
 	PtrToArg<double>::encode(p_duration, &p_duration_encoded);
 	return Ref<MethodTweener>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<MethodTweener>(_gde_method_bind, _owner, &p_method, &p_from, &p_to, &p_duration_encoded));
@@ -80,13 +80,13 @@ Ref<MethodTweener> Tween::tween_method(const Callable &p_method, const Variant &
 
 Ref<SubtweenTweener> Tween::tween_subtween(const Ref<Tween> &p_subtween) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("tween_subtween")._native_ptr(), 1567358477);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<SubtweenTweener>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<SubtweenTweener>()));
 	return Ref<SubtweenTweener>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<SubtweenTweener>(_gde_method_bind, _owner, (p_subtween != nullptr ? &p_subtween->_owner : nullptr)));
 }
 
 bool Tween::custom_step(double p_delta) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("custom_step")._native_ptr(), 330693286);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	double p_delta_encoded;
 	PtrToArg<double>::encode(p_delta, &p_delta_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_delta_encoded);
@@ -118,31 +118,31 @@ void Tween::kill() {
 
 double Tween::get_total_elapsed_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("get_total_elapsed_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 bool Tween::is_running() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("is_running")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 bool Tween::is_valid() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("is_valid")._native_ptr(), 2240911060);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
 Ref<Tween> Tween::bind_node(Node *p_node) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("bind_node")._native_ptr(), 2946786331);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, (p_node != nullptr ? &p_node->_owner : nullptr)));
 }
 
 Ref<Tween> Tween::set_process_mode(Tween::TweenProcessMode p_mode) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("set_process_mode")._native_ptr(), 855258840);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	int64_t p_mode_encoded;
 	PtrToArg<int64_t>::encode(p_mode, &p_mode_encoded);
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, &p_mode_encoded));
@@ -150,7 +150,7 @@ Ref<Tween> Tween::set_process_mode(Tween::TweenProcessMode p_mode) {
 
 Ref<Tween> Tween::set_pause_mode(Tween::TweenPauseMode p_mode) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("set_pause_mode")._native_ptr(), 3363368837);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	int64_t p_mode_encoded;
 	PtrToArg<int64_t>::encode(p_mode, &p_mode_encoded);
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, &p_mode_encoded));
@@ -158,7 +158,7 @@ Ref<Tween> Tween::set_pause_mode(Tween::TweenPauseMode p_mode) {
 
 Ref<Tween> Tween::set_ignore_time_scale(bool p_ignore) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("set_ignore_time_scale")._native_ptr(), 1942052223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	int8_t p_ignore_encoded;
 	PtrToArg<bool>::encode(p_ignore, &p_ignore_encoded);
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, &p_ignore_encoded));
@@ -166,7 +166,7 @@ Ref<Tween> Tween::set_ignore_time_scale(bool p_ignore) {
 
 Ref<Tween> Tween::set_parallel(bool p_parallel) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("set_parallel")._native_ptr(), 1942052223);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	int8_t p_parallel_encoded;
 	PtrToArg<bool>::encode(p_parallel, &p_parallel_encoded);
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, &p_parallel_encoded));
@@ -174,7 +174,7 @@ Ref<Tween> Tween::set_parallel(bool p_parallel) {
 
 Ref<Tween> Tween::set_loops(int32_t p_loops) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("set_loops")._native_ptr(), 2670836414);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	int64_t p_loops_encoded;
 	PtrToArg<int64_t>::encode(p_loops, &p_loops_encoded);
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, &p_loops_encoded));
@@ -182,13 +182,13 @@ Ref<Tween> Tween::set_loops(int32_t p_loops) {
 
 int32_t Tween::get_loops_left() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("get_loops_left")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Ref<Tween> Tween::set_speed_scale(float p_speed) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("set_speed_scale")._native_ptr(), 3961971106);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	double p_speed_encoded;
 	PtrToArg<double>::encode(p_speed, &p_speed_encoded);
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, &p_speed_encoded));
@@ -196,7 +196,7 @@ Ref<Tween> Tween::set_speed_scale(float p_speed) {
 
 Ref<Tween> Tween::set_trans(Tween::TransitionType p_trans) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("set_trans")._native_ptr(), 3965963875);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	int64_t p_trans_encoded;
 	PtrToArg<int64_t>::encode(p_trans, &p_trans_encoded);
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, &p_trans_encoded));
@@ -204,7 +204,7 @@ Ref<Tween> Tween::set_trans(Tween::TransitionType p_trans) {
 
 Ref<Tween> Tween::set_ease(Tween::EaseType p_ease) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("set_ease")._native_ptr(), 1208117252);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	int64_t p_ease_encoded;
 	PtrToArg<int64_t>::encode(p_ease, &p_ease_encoded);
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner, &p_ease_encoded));
@@ -212,19 +212,19 @@ Ref<Tween> Tween::set_ease(Tween::EaseType p_ease) {
 
 Ref<Tween> Tween::parallel() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("parallel")._native_ptr(), 3426978995);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner));
 }
 
 Ref<Tween> Tween::chain() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("chain")._native_ptr(), 3426978995);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Tween>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Tween>()));
 	return Ref<Tween>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Tween>(_gde_method_bind, _owner));
 }
 
 Variant Tween::interpolate_value(const Variant &p_initial_value, const Variant &p_delta_value, double p_elapsed_time, double p_duration, Tween::TransitionType p_trans_type, Tween::EaseType p_ease_type) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Tween::get_class_static()._native_ptr(), StringName("interpolate_value")._native_ptr(), 3452526450);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	double p_elapsed_time_encoded;
 	PtrToArg<double>::encode(p_elapsed_time, &p_elapsed_time_encoded);
 	double p_duration_encoded;

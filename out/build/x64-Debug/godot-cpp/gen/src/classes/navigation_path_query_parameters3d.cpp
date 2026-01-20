@@ -48,7 +48,7 @@ void NavigationPathQueryParameters3D::set_pathfinding_algorithm(NavigationPathQu
 
 NavigationPathQueryParameters3D::PathfindingAlgorithm NavigationPathQueryParameters3D::get_pathfinding_algorithm() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_pathfinding_algorithm")._native_ptr(), 3398491350);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NavigationPathQueryParameters3D::PathfindingAlgorithm(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NavigationPathQueryParameters3D::PathfindingAlgorithm(0)));
 	return (NavigationPathQueryParameters3D::PathfindingAlgorithm)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void NavigationPathQueryParameters3D::set_path_postprocessing(NavigationPathQuer
 
 NavigationPathQueryParameters3D::PathPostProcessing NavigationPathQueryParameters3D::get_path_postprocessing() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_path_postprocessing")._native_ptr(), 3883858360);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NavigationPathQueryParameters3D::PathPostProcessing(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NavigationPathQueryParameters3D::PathPostProcessing(0)));
 	return (NavigationPathQueryParameters3D::PathPostProcessing)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void NavigationPathQueryParameters3D::set_map(const RID &p_map) {
 
 RID NavigationPathQueryParameters3D::get_map() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_map")._native_ptr(), 2944877500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, RID());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (RID()));
 	return internal::_call_native_mb_ret<RID>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void NavigationPathQueryParameters3D::set_start_position(const Vector3 &p_start_
 
 Vector3 NavigationPathQueryParameters3D::get_start_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_start_position")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -98,7 +98,7 @@ void NavigationPathQueryParameters3D::set_target_position(const Vector3 &p_targe
 
 Vector3 NavigationPathQueryParameters3D::get_target_position() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_target_position")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -112,7 +112,7 @@ void NavigationPathQueryParameters3D::set_navigation_layers(uint32_t p_navigatio
 
 uint32_t NavigationPathQueryParameters3D::get_navigation_layers() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_navigation_layers")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -124,7 +124,7 @@ void NavigationPathQueryParameters3D::set_metadata_flags(BitField<NavigationPath
 
 BitField<NavigationPathQueryParameters3D::PathMetadataFlags> NavigationPathQueryParameters3D::get_metadata_flags() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_metadata_flags")._native_ptr(), 1582332802);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, BitField<NavigationPathQueryParameters3D::PathMetadataFlags>(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (BitField<NavigationPathQueryParameters3D::PathMetadataFlags>(0)));
 	return (int64_t)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -138,7 +138,7 @@ void NavigationPathQueryParameters3D::set_simplify_path(bool p_enabled) {
 
 bool NavigationPathQueryParameters3D::get_simplify_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_simplify_path")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -152,7 +152,87 @@ void NavigationPathQueryParameters3D::set_simplify_epsilon(float p_epsilon) {
 
 float NavigationPathQueryParameters3D::get_simplify_epsilon() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_simplify_epsilon")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void NavigationPathQueryParameters3D::set_included_regions(const TypedArray<RID> &p_regions) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("set_included_regions")._native_ptr(), 381264803);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_regions);
+}
+
+TypedArray<RID> NavigationPathQueryParameters3D::get_included_regions() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_included_regions")._native_ptr(), 3995934104);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<RID>()));
+	return internal::_call_native_mb_ret<TypedArray<RID>>(_gde_method_bind, _owner);
+}
+
+void NavigationPathQueryParameters3D::set_excluded_regions(const TypedArray<RID> &p_regions) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("set_excluded_regions")._native_ptr(), 381264803);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_regions);
+}
+
+TypedArray<RID> NavigationPathQueryParameters3D::get_excluded_regions() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_excluded_regions")._native_ptr(), 3995934104);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<RID>()));
+	return internal::_call_native_mb_ret<TypedArray<RID>>(_gde_method_bind, _owner);
+}
+
+void NavigationPathQueryParameters3D::set_path_return_max_length(float p_length) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("set_path_return_max_length")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_length_encoded;
+	PtrToArg<double>::encode(p_length, &p_length_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_length_encoded);
+}
+
+float NavigationPathQueryParameters3D::get_path_return_max_length() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_path_return_max_length")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void NavigationPathQueryParameters3D::set_path_return_max_radius(float p_radius) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("set_path_return_max_radius")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_radius_encoded;
+	PtrToArg<double>::encode(p_radius, &p_radius_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_radius_encoded);
+}
+
+float NavigationPathQueryParameters3D::get_path_return_max_radius() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_path_return_max_radius")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void NavigationPathQueryParameters3D::set_path_search_max_polygons(int32_t p_max_polygons) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("set_path_search_max_polygons")._native_ptr(), 1286410249);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_max_polygons_encoded;
+	PtrToArg<int64_t>::encode(p_max_polygons, &p_max_polygons_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_max_polygons_encoded);
+}
+
+int32_t NavigationPathQueryParameters3D::get_path_search_max_polygons() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_path_search_max_polygons")._native_ptr(), 3905245786);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
+	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
+}
+
+void NavigationPathQueryParameters3D::set_path_search_max_distance(float p_distance) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("set_path_search_max_distance")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_distance_encoded;
+	PtrToArg<double>::encode(p_distance, &p_distance_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_distance_encoded);
+}
+
+float NavigationPathQueryParameters3D::get_path_search_max_distance() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(NavigationPathQueryParameters3D::get_class_static()._native_ptr(), StringName("get_path_search_max_distance")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

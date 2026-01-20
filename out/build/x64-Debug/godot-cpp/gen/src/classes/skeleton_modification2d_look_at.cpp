@@ -46,7 +46,7 @@ void SkeletonModification2DLookAt::set_bone2d_node(const NodePath &p_bone2d_node
 
 NodePath SkeletonModification2DLookAt::get_bone2d_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DLookAt::get_class_static()._native_ptr(), StringName("get_bone2d_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void SkeletonModification2DLookAt::set_bone_index(int32_t p_bone_idx) {
 
 int32_t SkeletonModification2DLookAt::get_bone_index() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DLookAt::get_class_static()._native_ptr(), StringName("get_bone_index")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void SkeletonModification2DLookAt::set_target_node(const NodePath &p_target_node
 
 NodePath SkeletonModification2DLookAt::get_target_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DLookAt::get_class_static()._native_ptr(), StringName("get_target_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void SkeletonModification2DLookAt::set_additional_rotation(float p_rotation) {
 
 float SkeletonModification2DLookAt::get_additional_rotation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DLookAt::get_class_static()._native_ptr(), StringName("get_additional_rotation")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -100,7 +100,7 @@ void SkeletonModification2DLookAt::set_enable_constraint(bool p_enable_constrain
 
 bool SkeletonModification2DLookAt::get_enable_constraint() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DLookAt::get_class_static()._native_ptr(), StringName("get_enable_constraint")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -114,7 +114,7 @@ void SkeletonModification2DLookAt::set_constraint_angle_min(float p_angle_min) {
 
 float SkeletonModification2DLookAt::get_constraint_angle_min() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DLookAt::get_class_static()._native_ptr(), StringName("get_constraint_angle_min")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -128,7 +128,7 @@ void SkeletonModification2DLookAt::set_constraint_angle_max(float p_angle_max) {
 
 float SkeletonModification2DLookAt::get_constraint_angle_max() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DLookAt::get_class_static()._native_ptr(), StringName("get_constraint_angle_max")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -142,7 +142,7 @@ void SkeletonModification2DLookAt::set_constraint_angle_invert(bool p_invert) {
 
 bool SkeletonModification2DLookAt::get_constraint_angle_invert() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DLookAt::get_class_static()._native_ptr(), StringName("get_constraint_angle_invert")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

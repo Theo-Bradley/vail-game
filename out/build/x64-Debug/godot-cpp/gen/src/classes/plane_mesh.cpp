@@ -46,7 +46,7 @@ void PlaneMesh::set_size(const Vector2 &p_size) {
 
 Vector2 PlaneMesh::get_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PlaneMesh::get_class_static()._native_ptr(), StringName("get_size")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void PlaneMesh::set_subdivide_width(int32_t p_subdivide) {
 
 int32_t PlaneMesh::get_subdivide_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PlaneMesh::get_class_static()._native_ptr(), StringName("get_subdivide_width")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void PlaneMesh::set_subdivide_depth(int32_t p_subdivide) {
 
 int32_t PlaneMesh::get_subdivide_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PlaneMesh::get_class_static()._native_ptr(), StringName("get_subdivide_depth")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void PlaneMesh::set_center_offset(const Vector3 &p_offset) {
 
 Vector3 PlaneMesh::get_center_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PlaneMesh::get_class_static()._native_ptr(), StringName("get_center_offset")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -100,7 +100,7 @@ void PlaneMesh::set_orientation(PlaneMesh::Orientation p_orientation) {
 
 PlaneMesh::Orientation PlaneMesh::get_orientation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PlaneMesh::get_class_static()._native_ptr(), StringName("get_orientation")._native_ptr(), 3227599250);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PlaneMesh::Orientation(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PlaneMesh::Orientation(0)));
 	return (PlaneMesh::Orientation)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

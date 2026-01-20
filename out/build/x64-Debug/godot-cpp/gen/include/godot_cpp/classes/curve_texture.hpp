@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CURVE_TEXTURE_HPP
-#define GODOT_CPP_CURVE_TEXTURE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/texture2d.hpp>
@@ -72,4 +71,3 @@ public:
 
 VARIANT_ENUM_CAST(CurveTexture::TextureMode);
 
-#endif // ! GODOT_CPP_CURVE_TEXTURE_HPP

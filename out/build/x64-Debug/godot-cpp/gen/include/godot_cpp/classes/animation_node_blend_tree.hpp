@@ -30,11 +30,12 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_ANIMATION_NODE_BLEND_TREE_HPP
-#define GODOT_CPP_ANIMATION_NODE_BLEND_TREE_HPP
+#pragma once
 
 #include <godot_cpp/classes/animation_root_node.hpp>
 #include <godot_cpp/classes/ref.hpp>
+#include <godot_cpp/variant/string_name.hpp>
+#include <godot_cpp/variant/typed_array.hpp>
 #include <godot_cpp/variant/vector2.hpp>
 
 #include <godot_cpp/core/class_db.hpp>
@@ -44,7 +45,6 @@
 namespace godot {
 
 class AnimationNode;
-class StringName;
 
 class AnimationNodeBlendTree : public AnimationRootNode {
 	GDEXTENSION_CLASS(AnimationNodeBlendTree, AnimationRootNode)
@@ -64,6 +64,7 @@ public:
 	bool has_node(const StringName &p_name) const;
 	void connect_node(const StringName &p_input_node, int32_t p_input_index, const StringName &p_output_node);
 	void disconnect_node(const StringName &p_input_node, int32_t p_input_index);
+	TypedArray<StringName> get_node_list() const;
 	void set_node_position(const StringName &p_name, const Vector2 &p_position);
 	Vector2 get_node_position(const StringName &p_name) const;
 	void set_graph_offset(const Vector2 &p_offset);
@@ -80,4 +81,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_ANIMATION_NODE_BLEND_TREE_HPP

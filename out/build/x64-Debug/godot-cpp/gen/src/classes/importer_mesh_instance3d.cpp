@@ -49,7 +49,7 @@ void ImporterMeshInstance3D::set_mesh(const Ref<ImporterMesh> &p_mesh) {
 
 Ref<ImporterMesh> ImporterMeshInstance3D::get_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 3161779525);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ImporterMesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ImporterMesh>()));
 	return Ref<ImporterMesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ImporterMesh>(_gde_method_bind, _owner));
 }
 
@@ -61,7 +61,7 @@ void ImporterMeshInstance3D::set_skin(const Ref<Skin> &p_skin) {
 
 Ref<Skin> ImporterMeshInstance3D::get_skin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_skin")._native_ptr(), 2074563878);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Skin>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Skin>()));
 	return Ref<Skin>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Skin>(_gde_method_bind, _owner));
 }
 
@@ -73,7 +73,7 @@ void ImporterMeshInstance3D::set_skeleton_path(const NodePath &p_skeleton_path) 
 
 NodePath ImporterMeshInstance3D::get_skeleton_path() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_skeleton_path")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -87,7 +87,7 @@ void ImporterMeshInstance3D::set_layer_mask(uint32_t p_layer_mask) {
 
 uint32_t ImporterMeshInstance3D::get_layer_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_layer_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -101,7 +101,7 @@ void ImporterMeshInstance3D::set_cast_shadows_setting(GeometryInstance3D::Shadow
 
 GeometryInstance3D::ShadowCastingSetting ImporterMeshInstance3D::get_cast_shadows_setting() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_cast_shadows_setting")._native_ptr(), 3383019359);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GeometryInstance3D::ShadowCastingSetting(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GeometryInstance3D::ShadowCastingSetting(0)));
 	return (GeometryInstance3D::ShadowCastingSetting)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -115,7 +115,7 @@ void ImporterMeshInstance3D::set_visibility_range_end_margin(float p_distance) {
 
 float ImporterMeshInstance3D::get_visibility_range_end_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_end_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -129,7 +129,7 @@ void ImporterMeshInstance3D::set_visibility_range_end(float p_distance) {
 
 float ImporterMeshInstance3D::get_visibility_range_end() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_end")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -143,7 +143,7 @@ void ImporterMeshInstance3D::set_visibility_range_begin_margin(float p_distance)
 
 float ImporterMeshInstance3D::get_visibility_range_begin_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_begin_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -157,7 +157,7 @@ void ImporterMeshInstance3D::set_visibility_range_begin(float p_distance) {
 
 float ImporterMeshInstance3D::get_visibility_range_begin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_begin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -171,7 +171,7 @@ void ImporterMeshInstance3D::set_visibility_range_fade_mode(GeometryInstance3D::
 
 GeometryInstance3D::VisibilityRangeFadeMode ImporterMeshInstance3D::get_visibility_range_fade_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImporterMeshInstance3D::get_class_static()._native_ptr(), StringName("get_visibility_range_fade_mode")._native_ptr(), 2067221882);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, GeometryInstance3D::VisibilityRangeFadeMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (GeometryInstance3D::VisibilityRangeFadeMode(0)));
 	return (GeometryInstance3D::VisibilityRangeFadeMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

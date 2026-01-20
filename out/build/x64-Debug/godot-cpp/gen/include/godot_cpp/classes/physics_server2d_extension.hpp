@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_HPP
-#define GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/physics_server2d.hpp>
 #include <godot_cpp/classes/physics_server2d_extension_motion_result.hpp>
@@ -622,4 +621,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_PHYSICS_SERVER2D_EXTENSION_HPP

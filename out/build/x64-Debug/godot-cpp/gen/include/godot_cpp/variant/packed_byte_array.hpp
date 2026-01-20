@@ -30,13 +30,14 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_PACKED_BYTE_ARRAY_HPP
-#define GODOT_CPP_PACKED_BYTE_ARRAY_HPP
+#pragma once
 
 #include <godot_cpp/core/defs.hpp>
 
 #include <godot_cpp/core/error_macros.hpp>
 #include <initializer_list>
+
+#include <godot_cpp/variant/string.hpp>
 
 #include <gdextension_interface.h>
 
@@ -44,11 +45,14 @@ namespace godot {
 
 class Array;
 class Dictionary;
+class PackedColorArray;
 class PackedFloat32Array;
 class PackedFloat64Array;
 class PackedInt32Array;
 class PackedInt64Array;
-class String;
+class PackedVector2Array;
+class PackedVector3Array;
+class PackedVector4Array;
 class Variant;
 
 class PackedByteArray {
@@ -84,11 +88,13 @@ class PackedByteArray {
 		GDExtensionPtrBuiltInMethod method_find;
 		GDExtensionPtrBuiltInMethod method_rfind;
 		GDExtensionPtrBuiltInMethod method_count;
+		GDExtensionPtrBuiltInMethod method_erase;
 		GDExtensionPtrBuiltInMethod method_get_string_from_ascii;
 		GDExtensionPtrBuiltInMethod method_get_string_from_utf8;
 		GDExtensionPtrBuiltInMethod method_get_string_from_utf16;
 		GDExtensionPtrBuiltInMethod method_get_string_from_utf32;
 		GDExtensionPtrBuiltInMethod method_get_string_from_wchar;
+		GDExtensionPtrBuiltInMethod method_get_string_from_multibyte_char;
 		GDExtensionPtrBuiltInMethod method_hex_encode;
 		GDExtensionPtrBuiltInMethod method_compress;
 		GDExtensionPtrBuiltInMethod method_decompress;
@@ -111,6 +117,13 @@ class PackedByteArray {
 		GDExtensionPtrBuiltInMethod method_to_int64_array;
 		GDExtensionPtrBuiltInMethod method_to_float32_array;
 		GDExtensionPtrBuiltInMethod method_to_float64_array;
+		GDExtensionPtrBuiltInMethod method_to_vector2_array;
+		GDExtensionPtrBuiltInMethod method_to_vector3_array;
+		GDExtensionPtrBuiltInMethod method_to_vector4_array;
+		GDExtensionPtrBuiltInMethod method_to_color_array;
+		GDExtensionPtrBuiltInMethod method_bswap16;
+		GDExtensionPtrBuiltInMethod method_bswap32;
+		GDExtensionPtrBuiltInMethod method_bswap64;
 		GDExtensionPtrBuiltInMethod method_encode_u8;
 		GDExtensionPtrBuiltInMethod method_encode_s8;
 		GDExtensionPtrBuiltInMethod method_encode_u16;
@@ -168,11 +181,13 @@ public:
 	int64_t find(int64_t p_value, int64_t p_from = 0) const;
 	int64_t rfind(int64_t p_value, int64_t p_from = -1) const;
 	int64_t count(int64_t p_value) const;
+	bool erase(int64_t p_value);
 	String get_string_from_ascii() const;
 	String get_string_from_utf8() const;
 	String get_string_from_utf16() const;
 	String get_string_from_utf32() const;
 	String get_string_from_wchar() const;
+	String get_string_from_multibyte_char(const String &p_encoding = String()) const;
 	String hex_encode() const;
 	PackedByteArray compress(int64_t p_compression_mode = 0) const;
 	PackedByteArray decompress(int64_t p_buffer_size, int64_t p_compression_mode = 0) const;
@@ -195,6 +210,13 @@ public:
 	PackedInt64Array to_int64_array() const;
 	PackedFloat32Array to_float32_array() const;
 	PackedFloat64Array to_float64_array() const;
+	PackedVector2Array to_vector2_array() const;
+	PackedVector3Array to_vector3_array() const;
+	PackedVector4Array to_vector4_array() const;
+	PackedColorArray to_color_array() const;
+	void bswap16(int64_t p_offset = 0, int64_t p_count = -1);
+	void bswap32(int64_t p_offset = 0, int64_t p_count = -1);
+	void bswap64(int64_t p_offset = 0, int64_t p_count = -1);
 	void encode_u8(int64_t p_byte_offset, int64_t p_value);
 	void encode_s8(int64_t p_byte_offset, int64_t p_value);
 	void encode_u16(int64_t p_byte_offset, int64_t p_value);
@@ -295,5 +317,3 @@ public:
 };
 
 } // namespace godot
-
-#endif // ! GODOT_CPP_PACKED_BYTE_ARRAY_HPP

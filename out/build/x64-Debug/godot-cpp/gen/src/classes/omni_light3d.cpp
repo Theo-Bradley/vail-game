@@ -48,7 +48,7 @@ void OmniLight3D::set_shadow_mode(OmniLight3D::ShadowMode p_mode) {
 
 OmniLight3D::ShadowMode OmniLight3D::get_shadow_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OmniLight3D::get_class_static()._native_ptr(), StringName("get_shadow_mode")._native_ptr(), 4181586331);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, OmniLight3D::ShadowMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (OmniLight3D::ShadowMode(0)));
 	return (OmniLight3D::ShadowMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

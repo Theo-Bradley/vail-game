@@ -40,7 +40,7 @@ namespace godot {
 
 int32_t Curve2D::get_point_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_point_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -70,7 +70,7 @@ void Curve2D::set_point_position(int32_t p_idx, const Vector2 &p_position) {
 
 Vector2 Curve2D::get_point_position(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_point_position")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -86,7 +86,7 @@ void Curve2D::set_point_in(int32_t p_idx, const Vector2 &p_position) {
 
 Vector2 Curve2D::get_point_in(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_point_in")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -102,7 +102,7 @@ void Curve2D::set_point_out(int32_t p_idx, const Vector2 &p_position) {
 
 Vector2 Curve2D::get_point_out(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_point_out")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -124,7 +124,7 @@ void Curve2D::clear_points() {
 
 Vector2 Curve2D::sample(int32_t p_idx, float p_t) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("sample")._native_ptr(), 26514310);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	double p_t_encoded;
@@ -134,7 +134,7 @@ Vector2 Curve2D::sample(int32_t p_idx, float p_t) const {
 
 Vector2 Curve2D::samplef(float p_fofs) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("samplef")._native_ptr(), 3588506812);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	double p_fofs_encoded;
 	PtrToArg<double>::encode(p_fofs, &p_fofs_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_fofs_encoded);
@@ -150,19 +150,19 @@ void Curve2D::set_bake_interval(float p_distance) {
 
 float Curve2D::get_bake_interval() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_bake_interval")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 float Curve2D::get_baked_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_baked_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
 Vector2 Curve2D::sample_baked(float p_offset, bool p_cubic) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("sample_baked")._native_ptr(), 3464257706);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	double p_offset_encoded;
 	PtrToArg<double>::encode(p_offset, &p_offset_encoded);
 	int8_t p_cubic_encoded;
@@ -172,7 +172,7 @@ Vector2 Curve2D::sample_baked(float p_offset, bool p_cubic) const {
 
 Transform2D Curve2D::sample_baked_with_rotation(float p_offset, bool p_cubic) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("sample_baked_with_rotation")._native_ptr(), 3296056341);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	double p_offset_encoded;
 	PtrToArg<double>::encode(p_offset, &p_offset_encoded);
 	int8_t p_cubic_encoded;
@@ -182,25 +182,25 @@ Transform2D Curve2D::sample_baked_with_rotation(float p_offset, bool p_cubic) co
 
 PackedVector2Array Curve2D::get_baked_points() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_baked_points")._native_ptr(), 2961356807);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner);
 }
 
 Vector2 Curve2D::get_closest_point(const Vector2 &p_to_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_closest_point")._native_ptr(), 2656412154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_to_point);
 }
 
 float Curve2D::get_closest_offset(const Vector2 &p_to_point) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("get_closest_offset")._native_ptr(), 2276447920);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_to_point);
 }
 
 PackedVector2Array Curve2D::tessellate(int32_t p_max_stages, float p_tolerance_degrees) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("tessellate")._native_ptr(), 958145977);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	int64_t p_max_stages_encoded;
 	PtrToArg<int64_t>::encode(p_max_stages, &p_max_stages_encoded);
 	double p_tolerance_degrees_encoded;
@@ -210,7 +210,7 @@ PackedVector2Array Curve2D::tessellate(int32_t p_max_stages, float p_tolerance_d
 
 PackedVector2Array Curve2D::tessellate_even_length(int32_t p_max_stages, float p_tolerance_length) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Curve2D::get_class_static()._native_ptr(), StringName("tessellate_even_length")._native_ptr(), 2319761637);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	int64_t p_max_stages_encoded;
 	PtrToArg<int64_t>::encode(p_max_stages, &p_max_stages_encoded);
 	double p_tolerance_length_encoded;

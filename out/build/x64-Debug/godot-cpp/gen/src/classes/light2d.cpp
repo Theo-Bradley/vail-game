@@ -48,7 +48,7 @@ void Light2D::set_enabled(bool p_enabled) {
 
 bool Light2D::is_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("is_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void Light2D::set_editor_only(bool p_editor_only) {
 
 bool Light2D::is_editor_only() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("is_editor_only")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void Light2D::set_color(const Color &p_color) {
 
 Color Light2D::get_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void Light2D::set_energy(float p_energy) {
 
 float Light2D::get_energy() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_energy")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void Light2D::set_z_range_min(int32_t p_z) {
 
 int32_t Light2D::get_z_range_min() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_z_range_min")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void Light2D::set_z_range_max(int32_t p_z) {
 
 int32_t Light2D::get_z_range_max() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_z_range_max")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void Light2D::set_layer_range_min(int32_t p_layer) {
 
 int32_t Light2D::get_layer_range_min() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_layer_range_min")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void Light2D::set_layer_range_max(int32_t p_layer) {
 
 int32_t Light2D::get_layer_range_max() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_layer_range_max")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void Light2D::set_item_cull_mask(int32_t p_item_cull_mask) {
 
 int32_t Light2D::get_item_cull_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_item_cull_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -172,7 +172,7 @@ void Light2D::set_item_shadow_cull_mask(int32_t p_item_shadow_cull_mask) {
 
 int32_t Light2D::get_item_shadow_cull_mask() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_item_shadow_cull_mask")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -186,7 +186,7 @@ void Light2D::set_shadow_enabled(bool p_enabled) {
 
 bool Light2D::is_shadow_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("is_shadow_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -200,7 +200,7 @@ void Light2D::set_shadow_smooth(float p_smooth) {
 
 float Light2D::get_shadow_smooth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_shadow_smooth")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -214,7 +214,7 @@ void Light2D::set_shadow_filter(Light2D::ShadowFilter p_filter) {
 
 Light2D::ShadowFilter Light2D::get_shadow_filter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_shadow_filter")._native_ptr(), 1973619177);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Light2D::ShadowFilter(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Light2D::ShadowFilter(0)));
 	return (Light2D::ShadowFilter)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -226,7 +226,7 @@ void Light2D::set_shadow_color(const Color &p_shadow_color) {
 
 Color Light2D::get_shadow_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_shadow_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -240,7 +240,7 @@ void Light2D::set_blend_mode(Light2D::BlendMode p_mode) {
 
 Light2D::BlendMode Light2D::get_blend_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_blend_mode")._native_ptr(), 936255250);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Light2D::BlendMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Light2D::BlendMode(0)));
 	return (Light2D::BlendMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -254,7 +254,7 @@ void Light2D::set_height(float p_height) {
 
 float Light2D::get_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Light2D::get_class_static()._native_ptr(), StringName("get_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

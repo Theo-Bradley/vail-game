@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_XR_SERVER_HPP
-#define GODOT_CPP_XR_SERVER_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/core/object.hpp>
@@ -116,4 +115,3 @@ public:
 VARIANT_ENUM_CAST(XRServer::TrackerType);
 VARIANT_ENUM_CAST(XRServer::RotationMode);
 
-#endif // ! GODOT_CPP_XR_SERVER_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_BUTTON_HPP
-#define GODOT_CPP_BUTTON_HPP
+#pragma once
 
 #include <godot_cpp/classes/base_button.hpp>
 #include <godot_cpp/classes/control.hpp>
@@ -58,6 +57,8 @@ public:
 	TextServer::OverrunBehavior get_text_overrun_behavior() const;
 	void set_autowrap_mode(TextServer::AutowrapMode p_autowrap_mode);
 	TextServer::AutowrapMode get_autowrap_mode() const;
+	void set_autowrap_trim_flags(BitField<TextServer::LineBreakFlag> p_autowrap_trim_flags);
+	BitField<TextServer::LineBreakFlag> get_autowrap_trim_flags() const;
 	void set_text_direction(Control::TextDirection p_direction);
 	Control::TextDirection get_text_direction() const;
 	void set_language(const String &p_language);
@@ -88,4 +89,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_BUTTON_HPP

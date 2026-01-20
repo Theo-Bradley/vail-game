@@ -46,7 +46,7 @@ void OpenXRAction::set_localized_name(const String &p_localized_name) {
 
 String OpenXRAction::get_localized_name() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAction::get_class_static()._native_ptr(), StringName("get_localized_name")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void OpenXRAction::set_action_type(OpenXRAction::ActionType p_action_type) {
 
 OpenXRAction::ActionType OpenXRAction::get_action_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAction::get_class_static()._native_ptr(), StringName("get_action_type")._native_ptr(), 3536542431);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, OpenXRAction::ActionType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (OpenXRAction::ActionType(0)));
 	return (OpenXRAction::ActionType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void OpenXRAction::set_toplevel_paths(const PackedStringArray &p_toplevel_paths)
 
 PackedStringArray OpenXRAction::get_toplevel_paths() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(OpenXRAction::get_class_static()._native_ptr(), StringName("get_toplevel_paths")._native_ptr(), 1139954409);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedStringArray());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedStringArray()));
 	return internal::_call_native_mb_ret<PackedStringArray>(_gde_method_bind, _owner);
 }
 

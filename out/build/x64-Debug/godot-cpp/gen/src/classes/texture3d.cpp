@@ -42,43 +42,43 @@ namespace godot {
 
 Image::Format Texture3D::get_format() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture3D::get_class_static()._native_ptr(), StringName("get_format")._native_ptr(), 3847873762);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Image::Format(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Image::Format(0)));
 	return (Image::Format)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t Texture3D::get_width() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture3D::get_class_static()._native_ptr(), StringName("get_width")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t Texture3D::get_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture3D::get_class_static()._native_ptr(), StringName("get_height")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t Texture3D::get_depth() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture3D::get_class_static()._native_ptr(), StringName("get_depth")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 bool Texture3D::has_mipmaps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture3D::get_class_static()._native_ptr(), StringName("has_mipmaps")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
-TypedArray<Image> Texture3D::get_data() const {
+TypedArray<Ref<Image>> Texture3D::get_data() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture3D::get_class_static()._native_ptr(), StringName("get_data")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Image>());
-	return internal::_call_native_mb_ret<TypedArray<Image>>(_gde_method_bind, _owner);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Ref<Image>>()));
+	return internal::_call_native_mb_ret<TypedArray<Ref<Image>>>(_gde_method_bind, _owner);
 }
 
 Ref<Resource> Texture3D::create_placeholder() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(Texture3D::get_class_static()._native_ptr(), StringName("create_placeholder")._native_ptr(), 121922552);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Resource>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Resource>()));
 	return Ref<Resource>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Resource>(_gde_method_bind, _owner));
 }
 
@@ -102,8 +102,8 @@ bool Texture3D::_has_mipmaps() const {
 	return false;
 }
 
-TypedArray<Image> Texture3D::_get_data() const {
-	return TypedArray<Image>();
+TypedArray<Ref<Image>> Texture3D::_get_data() const {
+	return TypedArray<Ref<Image>>();
 }
 
 } // namespace godot

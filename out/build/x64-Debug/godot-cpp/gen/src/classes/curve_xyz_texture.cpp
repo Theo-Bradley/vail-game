@@ -56,7 +56,7 @@ void CurveXYZTexture::set_curve_x(const Ref<Curve> &p_curve) {
 
 Ref<Curve> CurveXYZTexture::get_curve_x() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CurveXYZTexture::get_class_static()._native_ptr(), StringName("get_curve_x")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -68,7 +68,7 @@ void CurveXYZTexture::set_curve_y(const Ref<Curve> &p_curve) {
 
 Ref<Curve> CurveXYZTexture::get_curve_y() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CurveXYZTexture::get_class_static()._native_ptr(), StringName("get_curve_y")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -80,7 +80,7 @@ void CurveXYZTexture::set_curve_z(const Ref<Curve> &p_curve) {
 
 Ref<Curve> CurveXYZTexture::get_curve_z() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CurveXYZTexture::get_class_static()._native_ptr(), StringName("get_curve_z")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 

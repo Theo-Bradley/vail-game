@@ -1,2 +1,2 @@
-Make Gun spawn a resource Bullet instead of a Node
+Make scons define _DEBUG
 Change Application/Config/Custom User Dir Name to final name of the game

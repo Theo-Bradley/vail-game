@@ -55,7 +55,7 @@ void CollisionShape3D::set_shape(const Ref<Shape3D> &p_shape) {
 
 Ref<Shape3D> CollisionShape3D::get_shape() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionShape3D::get_class_static()._native_ptr(), StringName("get_shape")._native_ptr(), 3214262478);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Shape3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Shape3D>()));
 	return Ref<Shape3D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Shape3D>(_gde_method_bind, _owner));
 }
 
@@ -69,7 +69,7 @@ void CollisionShape3D::set_disabled(bool p_enable) {
 
 bool CollisionShape3D::is_disabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionShape3D::get_class_static()._native_ptr(), StringName("is_disabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -87,7 +87,7 @@ void CollisionShape3D::set_debug_color(const Color &p_color) {
 
 Color CollisionShape3D::get_debug_color() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionShape3D::get_class_static()._native_ptr(), StringName("get_debug_color")._native_ptr(), 3444240500);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner);
 }
 
@@ -101,7 +101,7 @@ void CollisionShape3D::set_enable_debug_fill(bool p_enable) {
 
 bool CollisionShape3D::get_enable_debug_fill() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CollisionShape3D::get_class_static()._native_ptr(), StringName("get_enable_debug_fill")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

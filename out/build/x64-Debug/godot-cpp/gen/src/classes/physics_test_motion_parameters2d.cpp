@@ -40,7 +40,7 @@ namespace godot {
 
 Transform2D PhysicsTestMotionParameters2D::get_from() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsTestMotionParameters2D::get_class_static()._native_ptr(), StringName("get_from")._native_ptr(), 3814499831);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform2D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform2D()));
 	return internal::_call_native_mb_ret<Transform2D>(_gde_method_bind, _owner);
 }
 
@@ -52,7 +52,7 @@ void PhysicsTestMotionParameters2D::set_from(const Transform2D &p_from) {
 
 Vector2 PhysicsTestMotionParameters2D::get_motion() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsTestMotionParameters2D::get_class_static()._native_ptr(), StringName("get_motion")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void PhysicsTestMotionParameters2D::set_motion(const Vector2 &p_motion) {
 
 float PhysicsTestMotionParameters2D::get_margin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsTestMotionParameters2D::get_class_static()._native_ptr(), StringName("get_margin")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -78,7 +78,7 @@ void PhysicsTestMotionParameters2D::set_margin(float p_margin) {
 
 bool PhysicsTestMotionParameters2D::is_collide_separation_ray_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsTestMotionParameters2D::get_class_static()._native_ptr(), StringName("is_collide_separation_ray_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void PhysicsTestMotionParameters2D::set_collide_separation_ray_enabled(bool p_en
 
 TypedArray<RID> PhysicsTestMotionParameters2D::get_exclude_bodies() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsTestMotionParameters2D::get_class_static()._native_ptr(), StringName("get_exclude_bodies")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<RID>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<RID>()));
 	return internal::_call_native_mb_ret<TypedArray<RID>>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void PhysicsTestMotionParameters2D::set_exclude_bodies(const TypedArray<RID> &p_
 
 TypedArray<int> PhysicsTestMotionParameters2D::get_exclude_objects() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsTestMotionParameters2D::get_class_static()._native_ptr(), StringName("get_exclude_objects")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<int>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<int>()));
 	return internal::_call_native_mb_ret<TypedArray<int>>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void PhysicsTestMotionParameters2D::set_exclude_objects(const TypedArray<int> &p
 
 bool PhysicsTestMotionParameters2D::is_recovery_as_collision_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsTestMotionParameters2D::get_class_static()._native_ptr(), StringName("is_recovery_as_collision_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

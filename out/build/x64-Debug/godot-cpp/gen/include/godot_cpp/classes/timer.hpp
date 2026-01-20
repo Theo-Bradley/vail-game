@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_TIMER_HPP
-#define GODOT_CPP_TIMER_HPP
+#pragma once
 
 #include <godot_cpp/classes/node.hpp>
 
@@ -80,4 +79,3 @@ public:
 
 VARIANT_ENUM_CAST(Timer::TimerProcessCallback);
 
-#endif // ! GODOT_CPP_TIMER_HPP

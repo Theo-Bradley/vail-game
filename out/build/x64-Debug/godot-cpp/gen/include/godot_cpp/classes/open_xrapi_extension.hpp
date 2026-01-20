@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPEN_XRAPI_EXTENSION_HPP
-#define GODOT_CPP_OPEN_XRAPI_EXTENSION_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -47,7 +46,7 @@
 namespace godot {
 
 class Array;
-class OpenXRExtensionWrapperExtension;
+class OpenXRExtensionWrapper;
 struct Rect2i;
 struct Vector2i;
 
@@ -76,6 +75,7 @@ public:
 	void insert_debug_label(const String &p_label_name);
 	bool is_initialized();
 	bool is_running();
+	void set_custom_play_space(const void *p_space);
 	uint64_t get_play_space();
 	int64_t get_predicted_display_time();
 	int64_t get_next_frame_time();
@@ -83,10 +83,12 @@ public:
 	RID find_action(const String &p_name, const RID &p_action_set);
 	uint64_t action_get_handle(const RID &p_action);
 	uint64_t get_hand_tracker(int32_t p_hand_index);
-	void register_composition_layer_provider(OpenXRExtensionWrapperExtension *p_extension);
-	void unregister_composition_layer_provider(OpenXRExtensionWrapperExtension *p_extension);
-	void register_projection_views_extension(OpenXRExtensionWrapperExtension *p_extension);
-	void unregister_projection_views_extension(OpenXRExtensionWrapperExtension *p_extension);
+	void register_composition_layer_provider(OpenXRExtensionWrapper *p_extension);
+	void unregister_composition_layer_provider(OpenXRExtensionWrapper *p_extension);
+	void register_projection_views_extension(OpenXRExtensionWrapper *p_extension);
+	void unregister_projection_views_extension(OpenXRExtensionWrapper *p_extension);
+	void register_frame_info_extension(OpenXRExtensionWrapper *p_extension);
+	void unregister_frame_info_extension(OpenXRExtensionWrapper *p_extension);
 	double get_render_state_z_near();
 	double get_render_state_z_far();
 	void set_velocity_texture(const RID &p_render_target);
@@ -117,4 +119,3 @@ public:
 
 VARIANT_ENUM_CAST(OpenXRAPIExtension::OpenXRAlphaBlendModeSupport);
 
-#endif // ! GODOT_CPP_OPEN_XRAPI_EXTENSION_HPP

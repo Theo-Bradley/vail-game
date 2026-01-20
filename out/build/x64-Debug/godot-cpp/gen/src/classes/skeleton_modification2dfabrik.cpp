@@ -46,7 +46,7 @@ void SkeletonModification2DFABRIK::set_target_node(const NodePath &p_target_node
 
 NodePath SkeletonModification2DFABRIK::get_target_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DFABRIK::get_class_static()._native_ptr(), StringName("get_target_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -60,7 +60,7 @@ void SkeletonModification2DFABRIK::set_fabrik_data_chain_length(int32_t p_length
 
 int32_t SkeletonModification2DFABRIK::get_fabrik_data_chain_length() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DFABRIK::get_class_static()._native_ptr(), StringName("get_fabrik_data_chain_length")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -74,7 +74,7 @@ void SkeletonModification2DFABRIK::set_fabrik_joint_bone2d_node(int32_t p_joint_
 
 NodePath SkeletonModification2DFABRIK::get_fabrik_joint_bone2d_node(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DFABRIK::get_class_static()._native_ptr(), StringName("get_fabrik_joint_bone2d_node")._native_ptr(), 408788394);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -92,7 +92,7 @@ void SkeletonModification2DFABRIK::set_fabrik_joint_bone_index(int32_t p_joint_i
 
 int32_t SkeletonModification2DFABRIK::get_fabrik_joint_bone_index(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DFABRIK::get_class_static()._native_ptr(), StringName("get_fabrik_joint_bone_index")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -108,7 +108,7 @@ void SkeletonModification2DFABRIK::set_fabrik_joint_magnet_position(int32_t p_jo
 
 Vector2 SkeletonModification2DFABRIK::get_fabrik_joint_magnet_position(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DFABRIK::get_class_static()._native_ptr(), StringName("get_fabrik_joint_magnet_position")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_joint_idx_encoded);
@@ -126,7 +126,7 @@ void SkeletonModification2DFABRIK::set_fabrik_joint_use_target_rotation(int32_t 
 
 bool SkeletonModification2DFABRIK::get_fabrik_joint_use_target_rotation(int32_t p_joint_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SkeletonModification2DFABRIK::get_class_static()._native_ptr(), StringName("get_fabrik_joint_use_target_rotation")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_joint_idx_encoded;
 	PtrToArg<int64_t>::encode(p_joint_idx, &p_joint_idx_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_joint_idx_encoded);

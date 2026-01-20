@@ -48,7 +48,7 @@ void FastNoiseLite::set_noise_type(FastNoiseLite::NoiseType p_type) {
 
 FastNoiseLite::NoiseType FastNoiseLite::get_noise_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_noise_type")._native_ptr(), 1458108610);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FastNoiseLite::NoiseType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FastNoiseLite::NoiseType(0)));
 	return (FastNoiseLite::NoiseType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void FastNoiseLite::set_seed(int32_t p_seed) {
 
 int32_t FastNoiseLite::get_seed() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_seed")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void FastNoiseLite::set_frequency(float p_freq) {
 
 float FastNoiseLite::get_frequency() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_frequency")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -88,7 +88,7 @@ void FastNoiseLite::set_offset(const Vector3 &p_offset) {
 
 Vector3 FastNoiseLite::get_offset() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_offset")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -102,7 +102,7 @@ void FastNoiseLite::set_fractal_type(FastNoiseLite::FractalType p_type) {
 
 FastNoiseLite::FractalType FastNoiseLite::get_fractal_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_fractal_type")._native_ptr(), 1036889279);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FastNoiseLite::FractalType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FastNoiseLite::FractalType(0)));
 	return (FastNoiseLite::FractalType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -116,7 +116,7 @@ void FastNoiseLite::set_fractal_octaves(int32_t p_octave_count) {
 
 int32_t FastNoiseLite::get_fractal_octaves() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_fractal_octaves")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -130,7 +130,7 @@ void FastNoiseLite::set_fractal_lacunarity(float p_lacunarity) {
 
 float FastNoiseLite::get_fractal_lacunarity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_fractal_lacunarity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -144,7 +144,7 @@ void FastNoiseLite::set_fractal_gain(float p_gain) {
 
 float FastNoiseLite::get_fractal_gain() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_fractal_gain")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -158,7 +158,7 @@ void FastNoiseLite::set_fractal_weighted_strength(float p_weighted_strength) {
 
 float FastNoiseLite::get_fractal_weighted_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_fractal_weighted_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -172,7 +172,7 @@ void FastNoiseLite::set_fractal_ping_pong_strength(float p_ping_pong_strength) {
 
 float FastNoiseLite::get_fractal_ping_pong_strength() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_fractal_ping_pong_strength")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -186,7 +186,7 @@ void FastNoiseLite::set_cellular_distance_function(FastNoiseLite::CellularDistan
 
 FastNoiseLite::CellularDistanceFunction FastNoiseLite::get_cellular_distance_function() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_cellular_distance_function")._native_ptr(), 2021274088);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FastNoiseLite::CellularDistanceFunction(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FastNoiseLite::CellularDistanceFunction(0)));
 	return (FastNoiseLite::CellularDistanceFunction)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -200,7 +200,7 @@ void FastNoiseLite::set_cellular_jitter(float p_jitter) {
 
 float FastNoiseLite::get_cellular_jitter() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_cellular_jitter")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -214,7 +214,7 @@ void FastNoiseLite::set_cellular_return_type(FastNoiseLite::CellularReturnType p
 
 FastNoiseLite::CellularReturnType FastNoiseLite::get_cellular_return_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_cellular_return_type")._native_ptr(), 3699796343);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FastNoiseLite::CellularReturnType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FastNoiseLite::CellularReturnType(0)));
 	return (FastNoiseLite::CellularReturnType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -228,7 +228,7 @@ void FastNoiseLite::set_domain_warp_enabled(bool p_domain_warp_enabled) {
 
 bool FastNoiseLite::is_domain_warp_enabled() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("is_domain_warp_enabled")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -242,7 +242,7 @@ void FastNoiseLite::set_domain_warp_type(FastNoiseLite::DomainWarpType p_domain_
 
 FastNoiseLite::DomainWarpType FastNoiseLite::get_domain_warp_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_domain_warp_type")._native_ptr(), 2980162020);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FastNoiseLite::DomainWarpType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FastNoiseLite::DomainWarpType(0)));
 	return (FastNoiseLite::DomainWarpType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -256,7 +256,7 @@ void FastNoiseLite::set_domain_warp_amplitude(float p_domain_warp_amplitude) {
 
 float FastNoiseLite::get_domain_warp_amplitude() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_domain_warp_amplitude")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -270,7 +270,7 @@ void FastNoiseLite::set_domain_warp_frequency(float p_domain_warp_frequency) {
 
 float FastNoiseLite::get_domain_warp_frequency() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_domain_warp_frequency")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -284,7 +284,7 @@ void FastNoiseLite::set_domain_warp_fractal_type(FastNoiseLite::DomainWarpFracta
 
 FastNoiseLite::DomainWarpFractalType FastNoiseLite::get_domain_warp_fractal_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_domain_warp_fractal_type")._native_ptr(), 407716934);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, FastNoiseLite::DomainWarpFractalType(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (FastNoiseLite::DomainWarpFractalType(0)));
 	return (FastNoiseLite::DomainWarpFractalType)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -298,7 +298,7 @@ void FastNoiseLite::set_domain_warp_fractal_octaves(int32_t p_domain_warp_octave
 
 int32_t FastNoiseLite::get_domain_warp_fractal_octaves() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_domain_warp_fractal_octaves")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -312,7 +312,7 @@ void FastNoiseLite::set_domain_warp_fractal_lacunarity(float p_domain_warp_lacun
 
 float FastNoiseLite::get_domain_warp_fractal_lacunarity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_domain_warp_fractal_lacunarity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -326,7 +326,7 @@ void FastNoiseLite::set_domain_warp_fractal_gain(float p_domain_warp_gain) {
 
 float FastNoiseLite::get_domain_warp_fractal_gain() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(FastNoiseLite::get_class_static()._native_ptr(), StringName("get_domain_warp_fractal_gain")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 

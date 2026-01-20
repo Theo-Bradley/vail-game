@@ -48,7 +48,7 @@ void MeshConvexDecompositionSettings::set_max_concavity(float p_max_concavity) {
 
 float MeshConvexDecompositionSettings::get_max_concavity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_max_concavity")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,7 @@ void MeshConvexDecompositionSettings::set_symmetry_planes_clipping_bias(float p_
 
 float MeshConvexDecompositionSettings::get_symmetry_planes_clipping_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_symmetry_planes_clipping_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +76,7 @@ void MeshConvexDecompositionSettings::set_revolution_axes_clipping_bias(float p_
 
 float MeshConvexDecompositionSettings::get_revolution_axes_clipping_bias() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_revolution_axes_clipping_bias")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -90,7 +90,7 @@ void MeshConvexDecompositionSettings::set_min_volume_per_convex_hull(float p_min
 
 float MeshConvexDecompositionSettings::get_min_volume_per_convex_hull() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_min_volume_per_convex_hull")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void MeshConvexDecompositionSettings::set_resolution(uint32_t p_min_volume_per_c
 
 uint32_t MeshConvexDecompositionSettings::get_resolution() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_resolution")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -118,7 +118,7 @@ void MeshConvexDecompositionSettings::set_max_num_vertices_per_convex_hull(uint3
 
 uint32_t MeshConvexDecompositionSettings::get_max_num_vertices_per_convex_hull() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_max_num_vertices_per_convex_hull")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -132,7 +132,7 @@ void MeshConvexDecompositionSettings::set_plane_downsampling(uint32_t p_plane_do
 
 uint32_t MeshConvexDecompositionSettings::get_plane_downsampling() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_plane_downsampling")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void MeshConvexDecompositionSettings::set_convex_hull_downsampling(uint32_t p_co
 
 uint32_t MeshConvexDecompositionSettings::get_convex_hull_downsampling() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_convex_hull_downsampling")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -160,7 +160,7 @@ void MeshConvexDecompositionSettings::set_normalize_mesh(bool p_normalize_mesh) 
 
 bool MeshConvexDecompositionSettings::get_normalize_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_normalize_mesh")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -174,7 +174,7 @@ void MeshConvexDecompositionSettings::set_mode(MeshConvexDecompositionSettings::
 
 MeshConvexDecompositionSettings::Mode MeshConvexDecompositionSettings::get_mode() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_mode")._native_ptr(), 23479454);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, MeshConvexDecompositionSettings::Mode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (MeshConvexDecompositionSettings::Mode(0)));
 	return (MeshConvexDecompositionSettings::Mode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -188,7 +188,7 @@ void MeshConvexDecompositionSettings::set_convex_hull_approximation(bool p_conve
 
 bool MeshConvexDecompositionSettings::get_convex_hull_approximation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_convex_hull_approximation")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -202,7 +202,7 @@ void MeshConvexDecompositionSettings::set_max_convex_hulls(uint32_t p_max_convex
 
 uint32_t MeshConvexDecompositionSettings::get_max_convex_hulls() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_max_convex_hulls")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -216,7 +216,7 @@ void MeshConvexDecompositionSettings::set_project_hull_vertices(bool p_project_h
 
 bool MeshConvexDecompositionSettings::get_project_hull_vertices() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshConvexDecompositionSettings::get_class_static()._native_ptr(), StringName("get_project_hull_vertices")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

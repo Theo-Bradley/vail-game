@@ -49,7 +49,7 @@ void MeshDataTool::clear() {
 
 Error MeshDataTool::create_from_surface(const Ref<ArrayMesh> &p_mesh, int32_t p_surface) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("create_from_surface")._native_ptr(), 2727020678);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_surface_encoded;
 	PtrToArg<int64_t>::encode(p_surface, &p_surface_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_mesh != nullptr ? &p_mesh->_owner : nullptr), &p_surface_encoded);
@@ -57,7 +57,7 @@ Error MeshDataTool::create_from_surface(const Ref<ArrayMesh> &p_mesh, int32_t p_
 
 Error MeshDataTool::commit_to_surface(const Ref<ArrayMesh> &p_mesh, uint64_t p_compression_flags) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("commit_to_surface")._native_ptr(), 2021686445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Error(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Error(0)));
 	int64_t p_compression_flags_encoded;
 	PtrToArg<int64_t>::encode(p_compression_flags, &p_compression_flags_encoded);
 	return (Error)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, (p_mesh != nullptr ? &p_mesh->_owner : nullptr), &p_compression_flags_encoded);
@@ -65,25 +65,25 @@ Error MeshDataTool::commit_to_surface(const Ref<ArrayMesh> &p_mesh, uint64_t p_c
 
 uint64_t MeshDataTool::get_format() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_format")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<uint64_t>(_gde_method_bind, _owner);
 }
 
 int32_t MeshDataTool::get_vertex_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t MeshDataTool::get_edge_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_edge_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t MeshDataTool::get_face_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_face_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -97,7 +97,7 @@ void MeshDataTool::set_vertex(int32_t p_idx, const Vector3 &p_vertex) {
 
 Vector3 MeshDataTool::get_vertex(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -113,7 +113,7 @@ void MeshDataTool::set_vertex_normal(int32_t p_idx, const Vector3 &p_normal) {
 
 Vector3 MeshDataTool::get_vertex_normal(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_normal")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -129,7 +129,7 @@ void MeshDataTool::set_vertex_tangent(int32_t p_idx, const Plane &p_tangent) {
 
 Plane MeshDataTool::get_vertex_tangent(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_tangent")._native_ptr(), 1372055458);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Plane());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Plane()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Plane>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -145,7 +145,7 @@ void MeshDataTool::set_vertex_uv(int32_t p_idx, const Vector2 &p_uv) {
 
 Vector2 MeshDataTool::get_vertex_uv(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_uv")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -161,7 +161,7 @@ void MeshDataTool::set_vertex_uv2(int32_t p_idx, const Vector2 &p_uv2) {
 
 Vector2 MeshDataTool::get_vertex_uv2(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_uv2")._native_ptr(), 2299179447);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -177,7 +177,7 @@ void MeshDataTool::set_vertex_color(int32_t p_idx, const Color &p_color) {
 
 Color MeshDataTool::get_vertex_color(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_color")._native_ptr(), 3457211756);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -193,7 +193,7 @@ void MeshDataTool::set_vertex_bones(int32_t p_idx, const PackedInt32Array &p_bon
 
 PackedInt32Array MeshDataTool::get_vertex_bones(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_bones")._native_ptr(), 1706082319);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -209,7 +209,7 @@ void MeshDataTool::set_vertex_weights(int32_t p_idx, const PackedFloat32Array &p
 
 PackedFloat32Array MeshDataTool::get_vertex_weights(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_weights")._native_ptr(), 1542882410);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedFloat32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedFloat32Array()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<PackedFloat32Array>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -225,7 +225,7 @@ void MeshDataTool::set_vertex_meta(int32_t p_idx, const Variant &p_meta) {
 
 Variant MeshDataTool::get_vertex_meta(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_meta")._native_ptr(), 4227898402);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -233,7 +233,7 @@ Variant MeshDataTool::get_vertex_meta(int32_t p_idx) const {
 
 PackedInt32Array MeshDataTool::get_vertex_edges(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_edges")._native_ptr(), 1706082319);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -241,7 +241,7 @@ PackedInt32Array MeshDataTool::get_vertex_edges(int32_t p_idx) const {
 
 PackedInt32Array MeshDataTool::get_vertex_faces(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_vertex_faces")._native_ptr(), 1706082319);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -249,7 +249,7 @@ PackedInt32Array MeshDataTool::get_vertex_faces(int32_t p_idx) const {
 
 int32_t MeshDataTool::get_edge_vertex(int32_t p_idx, int32_t p_vertex) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_edge_vertex")._native_ptr(), 3175239445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	int64_t p_vertex_encoded;
@@ -259,7 +259,7 @@ int32_t MeshDataTool::get_edge_vertex(int32_t p_idx, int32_t p_vertex) const {
 
 PackedInt32Array MeshDataTool::get_edge_faces(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_edge_faces")._native_ptr(), 1706082319);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedInt32Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedInt32Array()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<PackedInt32Array>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -275,7 +275,7 @@ void MeshDataTool::set_edge_meta(int32_t p_idx, const Variant &p_meta) {
 
 Variant MeshDataTool::get_edge_meta(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_edge_meta")._native_ptr(), 4227898402);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -283,7 +283,7 @@ Variant MeshDataTool::get_edge_meta(int32_t p_idx) const {
 
 int32_t MeshDataTool::get_face_vertex(int32_t p_idx, int32_t p_vertex) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_face_vertex")._native_ptr(), 3175239445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	int64_t p_vertex_encoded;
@@ -293,7 +293,7 @@ int32_t MeshDataTool::get_face_vertex(int32_t p_idx, int32_t p_vertex) const {
 
 int32_t MeshDataTool::get_face_edge(int32_t p_idx, int32_t p_edge) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_face_edge")._native_ptr(), 3175239445);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	int64_t p_edge_encoded;
@@ -311,7 +311,7 @@ void MeshDataTool::set_face_meta(int32_t p_idx, const Variant &p_meta) {
 
 Variant MeshDataTool::get_face_meta(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_face_meta")._native_ptr(), 4227898402);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Variant());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Variant()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Variant>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -319,7 +319,7 @@ Variant MeshDataTool::get_face_meta(int32_t p_idx) const {
 
 Vector3 MeshDataTool::get_face_normal(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_face_normal")._native_ptr(), 711720468);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner, &p_idx_encoded);
@@ -333,7 +333,7 @@ void MeshDataTool::set_material(const Ref<Material> &p_material) {
 
 Ref<Material> MeshDataTool::get_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshDataTool::get_class_static()._native_ptr(), StringName("get_material")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 

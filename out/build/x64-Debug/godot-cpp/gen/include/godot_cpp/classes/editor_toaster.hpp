@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_TOASTER_HPP
-#define GODOT_CPP_EDITOR_TOASTER_HPP
+#pragma once
 
 #include <godot_cpp/classes/h_box_container.hpp>
 #include <godot_cpp/variant/string.hpp>
@@ -67,4 +66,3 @@ public:
 
 VARIANT_ENUM_CAST(EditorToaster::Severity);
 
-#endif // ! GODOT_CPP_EDITOR_TOASTER_HPP

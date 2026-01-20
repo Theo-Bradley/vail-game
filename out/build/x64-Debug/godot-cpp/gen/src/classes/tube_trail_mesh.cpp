@@ -50,7 +50,7 @@ void TubeTrailMesh::set_radius(float p_radius) {
 
 float TubeTrailMesh::get_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TubeTrailMesh::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void TubeTrailMesh::set_radial_steps(int32_t p_radial_steps) {
 
 int32_t TubeTrailMesh::get_radial_steps() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TubeTrailMesh::get_class_static()._native_ptr(), StringName("get_radial_steps")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -78,7 +78,7 @@ void TubeTrailMesh::set_sections(int32_t p_sections) {
 
 int32_t TubeTrailMesh::get_sections() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TubeTrailMesh::get_class_static()._native_ptr(), StringName("get_sections")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void TubeTrailMesh::set_section_length(float p_section_length) {
 
 float TubeTrailMesh::get_section_length() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TubeTrailMesh::get_class_static()._native_ptr(), StringName("get_section_length")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -106,7 +106,7 @@ void TubeTrailMesh::set_section_rings(int32_t p_section_rings) {
 
 int32_t TubeTrailMesh::get_section_rings() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TubeTrailMesh::get_class_static()._native_ptr(), StringName("get_section_rings")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -120,7 +120,7 @@ void TubeTrailMesh::set_cap_top(bool p_cap_top) {
 
 bool TubeTrailMesh::is_cap_top() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TubeTrailMesh::get_class_static()._native_ptr(), StringName("is_cap_top")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -134,7 +134,7 @@ void TubeTrailMesh::set_cap_bottom(bool p_cap_bottom) {
 
 bool TubeTrailMesh::is_cap_bottom() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TubeTrailMesh::get_class_static()._native_ptr(), StringName("is_cap_bottom")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -146,7 +146,7 @@ void TubeTrailMesh::set_curve(const Ref<Curve> &p_curve) {
 
 Ref<Curve> TubeTrailMesh::get_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TubeTrailMesh::get_class_static()._native_ptr(), StringName("get_curve")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 

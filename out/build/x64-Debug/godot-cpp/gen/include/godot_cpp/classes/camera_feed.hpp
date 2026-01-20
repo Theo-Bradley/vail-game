@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_CAMERA_FEED_HPP
-#define GODOT_CPP_CAMERA_FEED_HPP
+#pragma once
 
 #include <godot_cpp/classes/camera_server.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -106,4 +105,3 @@ public:
 VARIANT_ENUM_CAST(CameraFeed::FeedDataType);
 VARIANT_ENUM_CAST(CameraFeed::FeedPosition);
 
-#endif // ! GODOT_CPP_CAMERA_FEED_HPP

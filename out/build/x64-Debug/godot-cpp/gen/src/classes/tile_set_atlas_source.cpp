@@ -49,7 +49,7 @@ void TileSetAtlasSource::set_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> TileSetAtlasSource::get_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
@@ -61,7 +61,7 @@ void TileSetAtlasSource::set_margins(const Vector2i &p_margins) {
 
 Vector2i TileSetAtlasSource::get_margins() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_margins")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -73,7 +73,7 @@ void TileSetAtlasSource::set_separation(const Vector2i &p_separation) {
 
 Vector2i TileSetAtlasSource::get_separation() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_separation")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -85,7 +85,7 @@ void TileSetAtlasSource::set_texture_region_size(const Vector2i &p_texture_regio
 
 Vector2i TileSetAtlasSource::get_texture_region_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_texture_region_size")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
@@ -99,7 +99,7 @@ void TileSetAtlasSource::set_use_texture_padding(bool p_use_texture_padding) {
 
 bool TileSetAtlasSource::get_use_texture_padding() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_use_texture_padding")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -123,13 +123,13 @@ void TileSetAtlasSource::move_tile_in_atlas(const Vector2i &p_atlas_coords, cons
 
 Vector2i TileSetAtlasSource::get_tile_size_in_atlas(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_size_in_atlas")._native_ptr(), 3050897911);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
 bool TileSetAtlasSource::has_room_for_tile(const Vector2i &p_atlas_coords, const Vector2i &p_size, int32_t p_animation_columns, const Vector2i &p_animation_separation, int32_t p_frames_count, const Vector2i &p_ignored_tile) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("has_room_for_tile")._native_ptr(), 3018597268);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_animation_columns_encoded;
 	PtrToArg<int64_t>::encode(p_animation_columns, &p_animation_columns_encoded);
 	int64_t p_frames_count_encoded;
@@ -139,19 +139,19 @@ bool TileSetAtlasSource::has_room_for_tile(const Vector2i &p_atlas_coords, const
 
 PackedVector2Array TileSetAtlasSource::get_tiles_to_be_removed_on_change(const Ref<Texture2D> &p_texture, const Vector2i &p_margins, const Vector2i &p_separation, const Vector2i &p_texture_region_size) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tiles_to_be_removed_on_change")._native_ptr(), 1240378054);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, PackedVector2Array());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (PackedVector2Array()));
 	return internal::_call_native_mb_ret<PackedVector2Array>(_gde_method_bind, _owner, (p_texture != nullptr ? &p_texture->_owner : nullptr), &p_margins, &p_separation, &p_texture_region_size);
 }
 
 Vector2i TileSetAtlasSource::get_tile_at_coords(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_at_coords")._native_ptr(), 3050897911);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
 bool TileSetAtlasSource::has_tiles_outside_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("has_tiles_outside_texture")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -171,7 +171,7 @@ void TileSetAtlasSource::set_tile_animation_columns(const Vector2i &p_atlas_coor
 
 int32_t TileSetAtlasSource::get_tile_animation_columns(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_animation_columns")._native_ptr(), 2485466453);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
@@ -183,7 +183,7 @@ void TileSetAtlasSource::set_tile_animation_separation(const Vector2i &p_atlas_c
 
 Vector2i TileSetAtlasSource::get_tile_animation_separation(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_animation_separation")._native_ptr(), 3050897911);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
@@ -197,7 +197,7 @@ void TileSetAtlasSource::set_tile_animation_speed(const Vector2i &p_atlas_coords
 
 float TileSetAtlasSource::get_tile_animation_speed(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_animation_speed")._native_ptr(), 719993801);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
@@ -211,7 +211,7 @@ void TileSetAtlasSource::set_tile_animation_mode(const Vector2i &p_atlas_coords,
 
 TileSetAtlasSource::TileAnimationMode TileSetAtlasSource::get_tile_animation_mode(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_animation_mode")._native_ptr(), 4025349959);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TileSetAtlasSource::TileAnimationMode(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TileSetAtlasSource::TileAnimationMode(0)));
 	return (TileSetAtlasSource::TileAnimationMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
@@ -225,7 +225,7 @@ void TileSetAtlasSource::set_tile_animation_frames_count(const Vector2i &p_atlas
 
 int32_t TileSetAtlasSource::get_tile_animation_frames_count(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_animation_frames_count")._native_ptr(), 2485466453);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
@@ -241,7 +241,7 @@ void TileSetAtlasSource::set_tile_animation_frame_duration(const Vector2i &p_atl
 
 float TileSetAtlasSource::get_tile_animation_frame_duration(const Vector2i &p_atlas_coords, int32_t p_frame_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_animation_frame_duration")._native_ptr(), 1802448425);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	int64_t p_frame_index_encoded;
 	PtrToArg<int64_t>::encode(p_frame_index, &p_frame_index_encoded);
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_atlas_coords, &p_frame_index_encoded);
@@ -249,13 +249,13 @@ float TileSetAtlasSource::get_tile_animation_frame_duration(const Vector2i &p_at
 
 float TileSetAtlasSource::get_tile_animation_total_duration(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_animation_total_duration")._native_ptr(), 719993801);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
 int32_t TileSetAtlasSource::create_alternative_tile(const Vector2i &p_atlas_coords, int32_t p_alternative_id_override) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("create_alternative_tile")._native_ptr(), 2226298068);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_alternative_id_override_encoded;
 	PtrToArg<int64_t>::encode(p_alternative_id_override, &p_alternative_id_override_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_atlas_coords, &p_alternative_id_override_encoded);
@@ -281,13 +281,13 @@ void TileSetAtlasSource::set_alternative_tile_id(const Vector2i &p_atlas_coords,
 
 int32_t TileSetAtlasSource::get_next_alternative_tile_id(const Vector2i &p_atlas_coords) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_next_alternative_tile_id")._native_ptr(), 2485466453);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_atlas_coords);
 }
 
 TileData *TileSetAtlasSource::get_tile_data(const Vector2i &p_atlas_coords, int32_t p_alternative_tile) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_data")._native_ptr(), 3534028207);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	int64_t p_alternative_tile_encoded;
 	PtrToArg<int64_t>::encode(p_alternative_tile, &p_alternative_tile_encoded);
 	return internal::_call_native_mb_ret_obj<TileData>(_gde_method_bind, _owner, &p_atlas_coords, &p_alternative_tile_encoded);
@@ -295,13 +295,13 @@ TileData *TileSetAtlasSource::get_tile_data(const Vector2i &p_atlas_coords, int3
 
 Vector2i TileSetAtlasSource::get_atlas_grid_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_atlas_grid_size")._native_ptr(), 3690982128);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2i()));
 	return internal::_call_native_mb_ret<Vector2i>(_gde_method_bind, _owner);
 }
 
 Rect2i TileSetAtlasSource::get_tile_texture_region(const Vector2i &p_atlas_coords, int32_t p_frame) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_tile_texture_region")._native_ptr(), 241857547);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2i()));
 	int64_t p_frame_encoded;
 	PtrToArg<int64_t>::encode(p_frame, &p_frame_encoded);
 	return internal::_call_native_mb_ret<Rect2i>(_gde_method_bind, _owner, &p_atlas_coords, &p_frame_encoded);
@@ -309,13 +309,13 @@ Rect2i TileSetAtlasSource::get_tile_texture_region(const Vector2i &p_atlas_coord
 
 Ref<Texture2D> TileSetAtlasSource::get_runtime_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_runtime_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 
 Rect2i TileSetAtlasSource::get_runtime_tile_texture_region(const Vector2i &p_atlas_coords, int32_t p_frame) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(TileSetAtlasSource::get_class_static()._native_ptr(), StringName("get_runtime_tile_texture_region")._native_ptr(), 104874263);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Rect2i());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Rect2i()));
 	int64_t p_frame_encoded;
 	PtrToArg<int64_t>::encode(p_frame, &p_frame_encoded);
 	return internal::_call_native_mb_ret<Rect2i>(_gde_method_bind, _owner, &p_atlas_coords, &p_frame_encoded);

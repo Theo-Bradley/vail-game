@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_EDITOR_FEATURE_PROFILE_HPP
-#define GODOT_CPP_EDITOR_FEATURE_PROFILE_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/ref.hpp>
@@ -88,4 +87,3 @@ public:
 
 VARIANT_ENUM_CAST(EditorFeatureProfile::Feature);
 
-#endif // ! GODOT_CPP_EDITOR_FEATURE_PROFILE_HPP

@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OMNI_LIGHT3D_HPP
-#define GODOT_CPP_OMNI_LIGHT3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/light3d.hpp>
 
@@ -66,4 +65,3 @@ public:
 
 VARIANT_ENUM_CAST(OmniLight3D::ShadowMode);
 
-#endif // ! GODOT_CPP_OMNI_LIGHT3D_HPP

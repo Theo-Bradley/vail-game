@@ -48,7 +48,7 @@ void SpringBoneCollisionCapsule3D::set_radius(float p_radius) {
 
 float SpringBoneCollisionCapsule3D::get_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneCollisionCapsule3D::get_class_static()._native_ptr(), StringName("get_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -62,7 +62,21 @@ void SpringBoneCollisionCapsule3D::set_height(float p_height) {
 
 float SpringBoneCollisionCapsule3D::get_height() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneCollisionCapsule3D::get_class_static()._native_ptr(), StringName("get_height")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
+	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
+}
+
+void SpringBoneCollisionCapsule3D::set_mid_height(float p_mid_height) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneCollisionCapsule3D::get_class_static()._native_ptr(), StringName("set_mid_height")._native_ptr(), 373806689);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	double p_mid_height_encoded;
+	PtrToArg<double>::encode(p_mid_height, &p_mid_height_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_mid_height_encoded);
+}
+
+float SpringBoneCollisionCapsule3D::get_mid_height() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneCollisionCapsule3D::get_class_static()._native_ptr(), StringName("get_mid_height")._native_ptr(), 1740695150);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -76,7 +90,7 @@ void SpringBoneCollisionCapsule3D::set_inside(bool p_enabled) {
 
 bool SpringBoneCollisionCapsule3D::is_inside() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(SpringBoneCollisionCapsule3D::get_class_static()._native_ptr(), StringName("is_inside")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

@@ -50,7 +50,7 @@ void CSGTorus3D::set_inner_radius(float p_radius) {
 
 float CSGTorus3D::get_inner_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGTorus3D::get_class_static()._native_ptr(), StringName("get_inner_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -64,7 +64,7 @@ void CSGTorus3D::set_outer_radius(float p_radius) {
 
 float CSGTorus3D::get_outer_radius() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGTorus3D::get_class_static()._native_ptr(), StringName("get_outer_radius")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -78,7 +78,7 @@ void CSGTorus3D::set_sides(int32_t p_sides) {
 
 int32_t CSGTorus3D::get_sides() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGTorus3D::get_class_static()._native_ptr(), StringName("get_sides")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -92,7 +92,7 @@ void CSGTorus3D::set_ring_sides(int32_t p_sides) {
 
 int32_t CSGTorus3D::get_ring_sides() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGTorus3D::get_class_static()._native_ptr(), StringName("get_ring_sides")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -104,7 +104,7 @@ void CSGTorus3D::set_material(const Ref<Material> &p_material) {
 
 Ref<Material> CSGTorus3D::get_material() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGTorus3D::get_class_static()._native_ptr(), StringName("get_material")._native_ptr(), 5934680);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Material>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Material>()));
 	return Ref<Material>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Material>(_gde_method_bind, _owner));
 }
 
@@ -118,7 +118,7 @@ void CSGTorus3D::set_smooth_faces(bool p_smooth_faces) {
 
 bool CSGTorus3D::get_smooth_faces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(CSGTorus3D::get_class_static()._native_ptr(), StringName("get_smooth_faces")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

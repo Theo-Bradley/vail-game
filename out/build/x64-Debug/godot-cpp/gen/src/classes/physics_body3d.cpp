@@ -43,7 +43,7 @@ namespace godot {
 
 Ref<KinematicCollision3D> PhysicsBody3D::move_and_collide(const Vector3 &p_motion, bool p_test_only, float p_safe_margin, bool p_recovery_as_collision, int32_t p_max_collisions) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody3D::get_class_static()._native_ptr(), StringName("move_and_collide")._native_ptr(), 3208792678);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<KinematicCollision3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<KinematicCollision3D>()));
 	int8_t p_test_only_encoded;
 	PtrToArg<bool>::encode(p_test_only, &p_test_only_encoded);
 	double p_safe_margin_encoded;
@@ -57,7 +57,7 @@ Ref<KinematicCollision3D> PhysicsBody3D::move_and_collide(const Vector3 &p_motio
 
 bool PhysicsBody3D::test_move(const Transform3D &p_from, const Vector3 &p_motion, const Ref<KinematicCollision3D> &p_collision, float p_safe_margin, bool p_recovery_as_collision, int32_t p_max_collisions) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody3D::get_class_static()._native_ptr(), StringName("test_move")._native_ptr(), 2481691619);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	double p_safe_margin_encoded;
 	PtrToArg<double>::encode(p_safe_margin, &p_safe_margin_encoded);
 	int8_t p_recovery_as_collision_encoded;
@@ -69,7 +69,7 @@ bool PhysicsBody3D::test_move(const Transform3D &p_from, const Vector3 &p_motion
 
 Vector3 PhysicsBody3D::get_gravity() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody3D::get_class_static()._native_ptr(), StringName("get_gravity")._native_ptr(), 3360562783);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector3());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector3()));
 	return internal::_call_native_mb_ret<Vector3>(_gde_method_bind, _owner);
 }
 
@@ -85,7 +85,7 @@ void PhysicsBody3D::set_axis_lock(PhysicsServer3D::BodyAxis p_axis, bool p_lock)
 
 bool PhysicsBody3D::get_axis_lock(PhysicsServer3D::BodyAxis p_axis) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody3D::get_class_static()._native_ptr(), StringName("get_axis_lock")._native_ptr(), 2264617709);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_axis_encoded;
 	PtrToArg<int64_t>::encode(p_axis, &p_axis_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_axis_encoded);
@@ -93,7 +93,7 @@ bool PhysicsBody3D::get_axis_lock(PhysicsServer3D::BodyAxis p_axis) const {
 
 TypedArray<PhysicsBody3D> PhysicsBody3D::get_collision_exceptions() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(PhysicsBody3D::get_class_static()._native_ptr(), StringName("get_collision_exceptions")._native_ptr(), 2915620761);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<PhysicsBody3D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<PhysicsBody3D>()));
 	return internal::_call_native_mb_ret<TypedArray<PhysicsBody3D>>(_gde_method_bind, _owner);
 }
 

@@ -48,7 +48,7 @@ void MeshTexture::set_mesh(const Ref<Mesh> &p_mesh) {
 
 Ref<Mesh> MeshTexture::get_mesh() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshTexture::get_class_static()._native_ptr(), StringName("get_mesh")._native_ptr(), 1808005922);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Mesh>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Mesh>()));
 	return Ref<Mesh>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Mesh>(_gde_method_bind, _owner));
 }
 
@@ -60,7 +60,7 @@ void MeshTexture::set_image_size(const Vector2 &p_size) {
 
 Vector2 MeshTexture::get_image_size() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshTexture::get_class_static()._native_ptr(), StringName("get_image_size")._native_ptr(), 3341600327);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void MeshTexture::set_base_texture(const Ref<Texture2D> &p_texture) {
 
 Ref<Texture2D> MeshTexture::get_base_texture() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(MeshTexture::get_class_static()._native_ptr(), StringName("get_base_texture")._native_ptr(), 3635182373);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner));
 }
 

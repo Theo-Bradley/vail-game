@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_NAVIGATION_POLYGON_HPP
-#define GODOT_CPP_NAVIGATION_POLYGON_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/resource.hpp>
@@ -127,4 +126,3 @@ VARIANT_ENUM_CAST(NavigationPolygon::SamplePartitionType);
 VARIANT_ENUM_CAST(NavigationPolygon::ParsedGeometryType);
 VARIANT_ENUM_CAST(NavigationPolygon::SourceGeometryMode);
 
-#endif // ! GODOT_CPP_NAVIGATION_POLYGON_HPP

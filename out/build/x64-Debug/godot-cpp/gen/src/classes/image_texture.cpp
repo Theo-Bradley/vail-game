@@ -42,13 +42,13 @@ namespace godot {
 
 Ref<ImageTexture> ImageTexture::create_from_image(const Ref<Image> &p_image) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImageTexture::get_class_static()._native_ptr(), StringName("create_from_image")._native_ptr(), 2775144163);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<ImageTexture>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<ImageTexture>()));
 	return Ref<ImageTexture>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<ImageTexture>(_gde_method_bind, nullptr, (p_image != nullptr ? &p_image->_owner : nullptr)));
 }
 
 Image::Format ImageTexture::get_format() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(ImageTexture::get_class_static()._native_ptr(), StringName("get_format")._native_ptr(), 3847873762);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Image::Format(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Image::Format(0)));
 	return (Image::Format)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

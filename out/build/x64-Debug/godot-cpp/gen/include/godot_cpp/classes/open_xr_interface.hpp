@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_OPEN_XR_INTERFACE_HPP
-#define GODOT_CPP_OPEN_XR_INTERFACE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/xr_interface.hpp>
@@ -51,6 +50,18 @@ class OpenXRInterface : public XRInterface {
 	GDEXTENSION_CLASS(OpenXRInterface, XRInterface)
 
 public:
+	enum SessionState {
+		SESSION_STATE_UNKNOWN = 0,
+		SESSION_STATE_IDLE = 1,
+		SESSION_STATE_READY = 2,
+		SESSION_STATE_SYNCHRONIZED = 3,
+		SESSION_STATE_VISIBLE = 4,
+		SESSION_STATE_FOCUSED = 5,
+		SESSION_STATE_STOPPING = 6,
+		SESSION_STATE_LOSS_PENDING = 7,
+		SESSION_STATE_EXITING = 8,
+	};
+
 	enum Hand {
 		HAND_LEFT = 0,
 		HAND_RIGHT = 1,
@@ -100,6 +111,25 @@ public:
 		HAND_JOINT_MAX = 26,
 	};
 
+	enum PerfSettingsLevel {
+		PERF_SETTINGS_LEVEL_POWER_SAVINGS = 0,
+		PERF_SETTINGS_LEVEL_SUSTAINED_LOW = 1,
+		PERF_SETTINGS_LEVEL_SUSTAINED_HIGH = 2,
+		PERF_SETTINGS_LEVEL_BOOST = 3,
+	};
+
+	enum PerfSettingsSubDomain {
+		PERF_SETTINGS_SUB_DOMAIN_COMPOSITING = 0,
+		PERF_SETTINGS_SUB_DOMAIN_RENDERING = 1,
+		PERF_SETTINGS_SUB_DOMAIN_THERMAL = 2,
+	};
+
+	enum PerfSettingsNotificationLevel {
+		PERF_SETTINGS_NOTIF_LEVEL_NORMAL = 0,
+		PERF_SETTINGS_NOTIF_LEVEL_WARNING = 1,
+		PERF_SETTINGS_NOTIF_LEVEL_IMPAIRED = 2,
+	};
+
 	enum HandJointFlags : uint64_t {
 		HAND_JOINT_NONE = 0,
 		HAND_JOINT_ORIENTATION_VALID = 1,
@@ -110,6 +140,7 @@ public:
 		HAND_JOINT_ANGULAR_VELOCITY_VALID = 32,
 	};
 
+	OpenXRInterface::SessionState get_session_state();
 	float get_display_refresh_rate() const;
 	void set_display_refresh_rate(float p_refresh_rate);
 	double get_render_target_size_multiplier() const;
@@ -139,6 +170,8 @@ public:
 	void set_vrs_min_radius(float p_radius);
 	float get_vrs_strength() const;
 	void set_vrs_strength(float p_strength);
+	void set_cpu_level(OpenXRInterface::PerfSettingsLevel p_level);
+	void set_gpu_level(OpenXRInterface::PerfSettingsLevel p_level);
 
 protected:
 	template <typename T, typename B>
@@ -151,10 +184,13 @@ public:
 
 } // namespace godot
 
+VARIANT_ENUM_CAST(OpenXRInterface::SessionState);
 VARIANT_ENUM_CAST(OpenXRInterface::Hand);
 VARIANT_ENUM_CAST(OpenXRInterface::HandMotionRange);
 VARIANT_ENUM_CAST(OpenXRInterface::HandTrackedSource);
 VARIANT_ENUM_CAST(OpenXRInterface::HandJoints);
+VARIANT_ENUM_CAST(OpenXRInterface::PerfSettingsLevel);
+VARIANT_ENUM_CAST(OpenXRInterface::PerfSettingsSubDomain);
+VARIANT_ENUM_CAST(OpenXRInterface::PerfSettingsNotificationLevel);
 VARIANT_BITFIELD_CAST(OpenXRInterface::HandJointFlags);
 
-#endif // ! GODOT_CPP_OPEN_XR_INTERFACE_HPP

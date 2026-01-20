@@ -48,7 +48,7 @@ void AnimationTree::set_tree_root(const Ref<AnimationRootNode> &p_animation_node
 
 Ref<AnimationRootNode> AnimationTree::get_tree_root() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationTree::get_class_static()._native_ptr(), StringName("get_tree_root")._native_ptr(), 4110384712);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<AnimationRootNode>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<AnimationRootNode>()));
 	return Ref<AnimationRootNode>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<AnimationRootNode>(_gde_method_bind, _owner));
 }
 
@@ -60,7 +60,7 @@ void AnimationTree::set_advance_expression_base_node(const NodePath &p_path) {
 
 NodePath AnimationTree::get_advance_expression_base_node() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationTree::get_class_static()._native_ptr(), StringName("get_advance_expression_base_node")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -72,7 +72,7 @@ void AnimationTree::set_animation_player(const NodePath &p_path) {
 
 NodePath AnimationTree::get_animation_player() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationTree::get_class_static()._native_ptr(), StringName("get_animation_player")._native_ptr(), 4075236667);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, NodePath());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (NodePath()));
 	return internal::_call_native_mb_ret<NodePath>(_gde_method_bind, _owner);
 }
 
@@ -86,7 +86,7 @@ void AnimationTree::set_process_callback(AnimationTree::AnimationProcessCallback
 
 AnimationTree::AnimationProcessCallback AnimationTree::get_process_callback() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationTree::get_class_static()._native_ptr(), StringName("get_process_callback")._native_ptr(), 891317132);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, AnimationTree::AnimationProcessCallback(0));
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (AnimationTree::AnimationProcessCallback(0)));
 	return (AnimationTree::AnimationProcessCallback)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 

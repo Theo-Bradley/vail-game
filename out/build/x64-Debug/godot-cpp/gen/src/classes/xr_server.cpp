@@ -71,7 +71,7 @@ XRServer::~XRServer() {
 
 double XRServer::get_world_scale() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_world_scale")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -85,7 +85,7 @@ void XRServer::set_world_scale(double p_scale) {
 
 Transform3D XRServer::get_world_origin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_world_origin")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
@@ -97,7 +97,7 @@ void XRServer::set_world_origin(const Transform3D &p_world_origin) {
 
 Transform3D XRServer::get_reference_frame() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_reference_frame")._native_ptr(), 3229777777);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
@@ -119,7 +119,7 @@ void XRServer::center_on_hmd(XRServer::RotationMode p_rotation_mode, bool p_keep
 
 Transform3D XRServer::get_hmd_transform() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_hmd_transform")._native_ptr(), 4183770049);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Transform3D());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Transform3D()));
 	return internal::_call_native_mb_ret<Transform3D>(_gde_method_bind, _owner);
 }
 
@@ -133,7 +133,7 @@ void XRServer::set_camera_locked_to_origin(bool p_enabled) {
 
 bool XRServer::is_camera_locked_to_origin() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("is_camera_locked_to_origin")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 
@@ -145,7 +145,7 @@ void XRServer::add_interface(const Ref<XRInterface> &p_interface) {
 
 int32_t XRServer::get_interface_count() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_interface_count")._native_ptr(), 3905245786);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
@@ -157,7 +157,7 @@ void XRServer::remove_interface(const Ref<XRInterface> &p_interface) {
 
 Ref<XRInterface> XRServer::get_interface(int32_t p_idx) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_interface")._native_ptr(), 4237347919);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<XRInterface>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<XRInterface>()));
 	int64_t p_idx_encoded;
 	PtrToArg<int64_t>::encode(p_idx, &p_idx_encoded);
 	return Ref<XRInterface>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<XRInterface>(_gde_method_bind, _owner, &p_idx_encoded));
@@ -165,13 +165,13 @@ Ref<XRInterface> XRServer::get_interface(int32_t p_idx) const {
 
 TypedArray<Dictionary> XRServer::get_interfaces() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_interfaces")._native_ptr(), 3995934104);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, TypedArray<Dictionary>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (TypedArray<Dictionary>()));
 	return internal::_call_native_mb_ret<TypedArray<Dictionary>>(_gde_method_bind, _owner);
 }
 
 Ref<XRInterface> XRServer::find_interface(const String &p_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("find_interface")._native_ptr(), 1395192955);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<XRInterface>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<XRInterface>()));
 	return Ref<XRInterface>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<XRInterface>(_gde_method_bind, _owner, &p_name));
 }
 
@@ -189,7 +189,7 @@ void XRServer::remove_tracker(const Ref<XRTracker> &p_tracker) {
 
 Dictionary XRServer::get_trackers(int32_t p_tracker_types) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_trackers")._native_ptr(), 3554694381);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Dictionary());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Dictionary()));
 	int64_t p_tracker_types_encoded;
 	PtrToArg<int64_t>::encode(p_tracker_types, &p_tracker_types_encoded);
 	return internal::_call_native_mb_ret<Dictionary>(_gde_method_bind, _owner, &p_tracker_types_encoded);
@@ -197,13 +197,13 @@ Dictionary XRServer::get_trackers(int32_t p_tracker_types) {
 
 Ref<XRTracker> XRServer::get_tracker(const StringName &p_tracker_name) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_tracker")._native_ptr(), 147382240);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<XRTracker>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<XRTracker>()));
 	return Ref<XRTracker>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<XRTracker>(_gde_method_bind, _owner, &p_tracker_name));
 }
 
 Ref<XRInterface> XRServer::get_primary_interface() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(XRServer::get_class_static()._native_ptr(), StringName("get_primary_interface")._native_ptr(), 2143545064);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<XRInterface>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<XRInterface>()));
 	return Ref<XRInterface>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<XRInterface>(_gde_method_bind, _owner));
 }
 

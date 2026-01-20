@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SKELETON_MODIFIER3D_HPP
-#define GODOT_CPP_SKELETON_MODIFIER3D_HPP
+#pragma once
 
 #include <godot_cpp/classes/node3d.hpp>
 
@@ -61,14 +60,26 @@ public:
 	bool is_active() const;
 	void set_influence(float p_influence);
 	float get_influence() const;
+	virtual void _process_modification_with_delta(double p_delta);
 	virtual void _process_modification();
+	virtual void _skeleton_changed(Skeleton3D *p_old_skeleton, Skeleton3D *p_new_skeleton);
+	virtual void _validate_bone_names();
 
 protected:
 	template <typename T, typename B>
 	static void register_virtuals() {
 		Node3D::register_virtuals<T, B>();
+		if constexpr (!std::is_same_v<decltype(&B::_process_modification_with_delta), decltype(&T::_process_modification_with_delta)>) {
+			BIND_VIRTUAL_METHOD(T, _process_modification_with_delta, 373806689);
+		}
 		if constexpr (!std::is_same_v<decltype(&B::_process_modification), decltype(&T::_process_modification)>) {
 			BIND_VIRTUAL_METHOD(T, _process_modification, 3218959716);
+		}
+		if constexpr (!std::is_same_v<decltype(&B::_skeleton_changed), decltype(&T::_skeleton_changed)>) {
+			BIND_VIRTUAL_METHOD(T, _skeleton_changed, 2926744397);
+		}
+		if constexpr (!std::is_same_v<decltype(&B::_validate_bone_names), decltype(&T::_validate_bone_names)>) {
+			BIND_VIRTUAL_METHOD(T, _validate_bone_names, 3218959716);
 		}
 	}
 
@@ -79,4 +90,3 @@ public:
 
 VARIANT_ENUM_CAST(SkeletonModifier3D::BoneAxis);
 
-#endif // ! GODOT_CPP_SKELETON_MODIFIER3D_HPP

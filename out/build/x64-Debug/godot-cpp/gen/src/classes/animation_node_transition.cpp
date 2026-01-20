@@ -60,7 +60,7 @@ void AnimationNodeTransition::set_input_as_auto_advance(int32_t p_input, bool p_
 
 bool AnimationNodeTransition::is_input_set_as_auto_advance(int32_t p_input) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeTransition::get_class_static()._native_ptr(), StringName("is_input_set_as_auto_advance")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_input_encoded;
 	PtrToArg<int64_t>::encode(p_input, &p_input_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_input_encoded);
@@ -78,7 +78,7 @@ void AnimationNodeTransition::set_input_break_loop_at_end(int32_t p_input, bool 
 
 bool AnimationNodeTransition::is_input_loop_broken_at_end(int32_t p_input) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeTransition::get_class_static()._native_ptr(), StringName("is_input_loop_broken_at_end")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_input_encoded;
 	PtrToArg<int64_t>::encode(p_input, &p_input_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_input_encoded);
@@ -96,7 +96,7 @@ void AnimationNodeTransition::set_input_reset(int32_t p_input, bool p_enable) {
 
 bool AnimationNodeTransition::is_input_reset(int32_t p_input) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeTransition::get_class_static()._native_ptr(), StringName("is_input_reset")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_input_encoded;
 	PtrToArg<int64_t>::encode(p_input, &p_input_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_input_encoded);
@@ -112,7 +112,7 @@ void AnimationNodeTransition::set_xfade_time(double p_time) {
 
 double AnimationNodeTransition::get_xfade_time() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeTransition::get_class_static()._native_ptr(), StringName("get_xfade_time")._native_ptr(), 1740695150);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0.0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0.0));
 	return internal::_call_native_mb_ret<double>(_gde_method_bind, _owner);
 }
 
@@ -124,7 +124,7 @@ void AnimationNodeTransition::set_xfade_curve(const Ref<Curve> &p_curve) {
 
 Ref<Curve> AnimationNodeTransition::get_xfade_curve() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeTransition::get_class_static()._native_ptr(), StringName("get_xfade_curve")._native_ptr(), 2460114913);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Curve>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Curve>()));
 	return Ref<Curve>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Curve>(_gde_method_bind, _owner));
 }
 
@@ -138,7 +138,7 @@ void AnimationNodeTransition::set_allow_transition_to_self(bool p_enable) {
 
 bool AnimationNodeTransition::is_allow_transition_to_self() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(AnimationNodeTransition::get_class_static()._native_ptr(), StringName("is_allow_transition_to_self")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
 }
 

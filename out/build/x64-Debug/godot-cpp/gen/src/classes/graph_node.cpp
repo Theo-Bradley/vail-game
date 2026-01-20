@@ -49,13 +49,13 @@ void GraphNode::set_title(const String &p_title) {
 
 String GraphNode::get_title() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_title")._native_ptr(), 201670096);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, String());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (String()));
 	return internal::_call_native_mb_ret<String>(_gde_method_bind, _owner);
 }
 
 HBoxContainer *GraphNode::get_titlebar_hbox() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_titlebar_hbox")._native_ptr(), 3590609951);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, nullptr);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (nullptr));
 	return internal::_call_native_mb_ret_obj<HBoxContainer>(_gde_method_bind, _owner);
 }
 
@@ -93,7 +93,7 @@ void GraphNode::clear_all_slots() {
 
 bool GraphNode::is_slot_enabled_left(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("is_slot_enabled_left")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_slot_index_encoded);
@@ -121,7 +121,7 @@ void GraphNode::set_slot_type_left(int32_t p_slot_index, int32_t p_type) {
 
 int32_t GraphNode::get_slot_type_left(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_slot_type_left")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_slot_index_encoded);
@@ -137,7 +137,7 @@ void GraphNode::set_slot_color_left(int32_t p_slot_index, const Color &p_color) 
 
 Color GraphNode::get_slot_color_left(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_slot_color_left")._native_ptr(), 3457211756);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_slot_index_encoded);
@@ -153,7 +153,7 @@ void GraphNode::set_slot_custom_icon_left(int32_t p_slot_index, const Ref<Textur
 
 Ref<Texture2D> GraphNode::get_slot_custom_icon_left(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_slot_custom_icon_left")._native_ptr(), 3536238170);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_slot_index_encoded));
@@ -161,7 +161,7 @@ Ref<Texture2D> GraphNode::get_slot_custom_icon_left(int32_t p_slot_index) const 
 
 bool GraphNode::is_slot_enabled_right(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("is_slot_enabled_right")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_slot_index_encoded);
@@ -189,7 +189,7 @@ void GraphNode::set_slot_type_right(int32_t p_slot_index, int32_t p_type) {
 
 int32_t GraphNode::get_slot_type_right(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_slot_type_right")._native_ptr(), 923996154);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_slot_index_encoded);
@@ -205,7 +205,7 @@ void GraphNode::set_slot_color_right(int32_t p_slot_index, const Color &p_color)
 
 Color GraphNode::get_slot_color_right(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_slot_color_right")._native_ptr(), 3457211756);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_slot_index_encoded);
@@ -221,7 +221,7 @@ void GraphNode::set_slot_custom_icon_right(int32_t p_slot_index, const Ref<Textu
 
 Ref<Texture2D> GraphNode::get_slot_custom_icon_right(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_slot_custom_icon_right")._native_ptr(), 3536238170);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Ref<Texture2D>());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Ref<Texture2D>()));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return Ref<Texture2D>::_gde_internal_constructor(internal::_call_native_mb_ret_obj<Texture2D>(_gde_method_bind, _owner, &p_slot_index_encoded));
@@ -229,7 +229,7 @@ Ref<Texture2D> GraphNode::get_slot_custom_icon_right(int32_t p_slot_index) const
 
 bool GraphNode::is_slot_draw_stylebox(int32_t p_slot_index) const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("is_slot_draw_stylebox")._native_ptr(), 1116898809);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	int64_t p_slot_index_encoded;
 	PtrToArg<int64_t>::encode(p_slot_index, &p_slot_index_encoded);
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner, &p_slot_index_encoded);
@@ -255,19 +255,33 @@ void GraphNode::set_ignore_invalid_connection_type(bool p_ignore) {
 
 bool GraphNode::is_ignoring_valid_connection_type() const {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("is_ignoring_valid_connection_type")._native_ptr(), 36873697);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, false);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (false));
 	return internal::_call_native_mb_ret<int8_t>(_gde_method_bind, _owner);
+}
+
+void GraphNode::set_slots_focus_mode(Control::FocusMode p_focus_mode) {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("set_slots_focus_mode")._native_ptr(), 3232914922);
+	CHECK_METHOD_BIND(_gde_method_bind);
+	int64_t p_focus_mode_encoded;
+	PtrToArg<int64_t>::encode(p_focus_mode, &p_focus_mode_encoded);
+	internal::_call_native_mb_no_ret(_gde_method_bind, _owner, &p_focus_mode_encoded);
+}
+
+Control::FocusMode GraphNode::get_slots_focus_mode() const {
+	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_slots_focus_mode")._native_ptr(), 2132829277);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Control::FocusMode(0)));
+	return (Control::FocusMode)internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 int32_t GraphNode::get_input_port_count() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_input_port_count")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Vector2 GraphNode::get_input_port_position(int32_t p_port_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_input_port_position")._native_ptr(), 3114997196);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_port_idx_encoded;
 	PtrToArg<int64_t>::encode(p_port_idx, &p_port_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_port_idx_encoded);
@@ -275,7 +289,7 @@ Vector2 GraphNode::get_input_port_position(int32_t p_port_idx) {
 
 int32_t GraphNode::get_input_port_type(int32_t p_port_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_input_port_type")._native_ptr(), 3744713108);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_port_idx_encoded;
 	PtrToArg<int64_t>::encode(p_port_idx, &p_port_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_port_idx_encoded);
@@ -283,7 +297,7 @@ int32_t GraphNode::get_input_port_type(int32_t p_port_idx) {
 
 Color GraphNode::get_input_port_color(int32_t p_port_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_input_port_color")._native_ptr(), 2624840992);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_port_idx_encoded;
 	PtrToArg<int64_t>::encode(p_port_idx, &p_port_idx_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_port_idx_encoded);
@@ -291,7 +305,7 @@ Color GraphNode::get_input_port_color(int32_t p_port_idx) {
 
 int32_t GraphNode::get_input_port_slot(int32_t p_port_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_input_port_slot")._native_ptr(), 3744713108);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_port_idx_encoded;
 	PtrToArg<int64_t>::encode(p_port_idx, &p_port_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_port_idx_encoded);
@@ -299,13 +313,13 @@ int32_t GraphNode::get_input_port_slot(int32_t p_port_idx) {
 
 int32_t GraphNode::get_output_port_count() {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_output_port_count")._native_ptr(), 2455072627);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner);
 }
 
 Vector2 GraphNode::get_output_port_position(int32_t p_port_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_output_port_position")._native_ptr(), 3114997196);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Vector2());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Vector2()));
 	int64_t p_port_idx_encoded;
 	PtrToArg<int64_t>::encode(p_port_idx, &p_port_idx_encoded);
 	return internal::_call_native_mb_ret<Vector2>(_gde_method_bind, _owner, &p_port_idx_encoded);
@@ -313,7 +327,7 @@ Vector2 GraphNode::get_output_port_position(int32_t p_port_idx) {
 
 int32_t GraphNode::get_output_port_type(int32_t p_port_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_output_port_type")._native_ptr(), 3744713108);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_port_idx_encoded;
 	PtrToArg<int64_t>::encode(p_port_idx, &p_port_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_port_idx_encoded);
@@ -321,7 +335,7 @@ int32_t GraphNode::get_output_port_type(int32_t p_port_idx) {
 
 Color GraphNode::get_output_port_color(int32_t p_port_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_output_port_color")._native_ptr(), 2624840992);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, Color());
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (Color()));
 	int64_t p_port_idx_encoded;
 	PtrToArg<int64_t>::encode(p_port_idx, &p_port_idx_encoded);
 	return internal::_call_native_mb_ret<Color>(_gde_method_bind, _owner, &p_port_idx_encoded);
@@ -329,7 +343,7 @@ Color GraphNode::get_output_port_color(int32_t p_port_idx) {
 
 int32_t GraphNode::get_output_port_slot(int32_t p_port_idx) {
 	static GDExtensionMethodBindPtr _gde_method_bind = internal::gdextension_interface_classdb_get_method_bind(GraphNode::get_class_static()._native_ptr(), StringName("get_output_port_slot")._native_ptr(), 3744713108);
-	CHECK_METHOD_BIND_RET(_gde_method_bind, 0);
+	CHECK_METHOD_BIND_RET(_gde_method_bind, (0));
 	int64_t p_port_idx_encoded;
 	PtrToArg<int64_t>::encode(p_port_idx, &p_port_idx_encoded);
 	return internal::_call_native_mb_ret<int64_t>(_gde_method_bind, _owner, &p_port_idx_encoded);

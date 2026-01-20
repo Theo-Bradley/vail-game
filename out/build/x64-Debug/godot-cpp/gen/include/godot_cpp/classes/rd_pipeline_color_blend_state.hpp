@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_RD_PIPELINE_COLOR_BLEND_STATE_HPP
-#define GODOT_CPP_RD_PIPELINE_COLOR_BLEND_STATE_HPP
+#pragma once
 
 #include <godot_cpp/classes/ref.hpp>
 #include <godot_cpp/classes/ref_counted.hpp>
@@ -57,8 +56,8 @@ public:
 	RenderingDevice::LogicOperation get_logic_op() const;
 	void set_blend_constant(const Color &p_member);
 	Color get_blend_constant() const;
-	void set_attachments(const TypedArray<RDPipelineColorBlendStateAttachment> &p_attachments);
-	TypedArray<RDPipelineColorBlendStateAttachment> get_attachments() const;
+	void set_attachments(const TypedArray<Ref<RDPipelineColorBlendStateAttachment>> &p_attachments);
+	TypedArray<Ref<RDPipelineColorBlendStateAttachment>> get_attachments() const;
 
 protected:
 	template <typename T, typename B>
@@ -71,4 +70,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_RD_PIPELINE_COLOR_BLEND_STATE_HPP

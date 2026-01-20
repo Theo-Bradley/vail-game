@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_INPUT_EVENT_JOYPAD_MOTION_HPP
-#define GODOT_CPP_INPUT_EVENT_JOYPAD_MOTION_HPP
+#pragma once
 
 #include <godot_cpp/classes/global_constants.hpp>
 #include <godot_cpp/classes/input_event.hpp>
@@ -63,4 +62,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_INPUT_EVENT_JOYPAD_MOTION_HPP

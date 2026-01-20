@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_V_SLIDER_HPP
-#define GODOT_CPP_V_SLIDER_HPP
+#pragma once
 
 #include <godot_cpp/classes/slider.hpp>
 
@@ -56,4 +55,3 @@ public:
 
 } // namespace godot
 
-#endif // ! GODOT_CPP_V_SLIDER_HPP

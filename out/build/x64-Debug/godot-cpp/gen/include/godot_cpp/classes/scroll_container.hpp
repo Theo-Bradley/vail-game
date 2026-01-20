@@ -30,8 +30,7 @@
 
 // THIS FILE IS GENERATED. EDITS WILL BE LOST.
 
-#ifndef GODOT_CPP_SCROLL_CONTAINER_HPP
-#define GODOT_CPP_SCROLL_CONTAINER_HPP
+#pragma once
 
 #include <godot_cpp/classes/container.hpp>
 
@@ -92,4 +91,3 @@ public:
 
 VARIANT_ENUM_CAST(ScrollContainer::ScrollMode);
 
-#endif // ! GODOT_CPP_SCROLL_CONTAINER_HPP
