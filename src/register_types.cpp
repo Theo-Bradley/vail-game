@@ -8,6 +8,7 @@
 #include "Player/player_movement.h"
 #include "gun.h"
 #include "Player/player_look.h"
+#include "bullet.h"
 
 using namespace godot;
 
@@ -19,6 +20,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	GDREGISTER_RUNTIME_CLASS(PlayerMovement);
 	GDREGISTER_RUNTIME_CLASS(PlayerLook);
 	GDREGISTER_RUNTIME_CLASS(Gun);
+	GDREGISTER_RUNTIME_CLASS(Bullet);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {

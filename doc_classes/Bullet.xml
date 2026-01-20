@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Bullet" inherits="Area3D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+		Bullet detects overlaps in its Area3D.
+	</brief_description>
+	<description>
+		Bullet is an Area3D that calls hit logic on the overlapping hittable_script if a [CollisionObject3D] with metadata [param hittable] = [code]true[/code] overlaps it.
+	</description>
+	<methods>
+		<method name="body_entered_area">
+			<return type="float" />
+			<argument index="0" name="body" type="Node3D" />
+			<description>
+				Called if a body is overlapping the Area3D. Checks if the body has metadata [param hittable] = [code]true[/code], and if so, it calls [code]_on_hit[/code]
+				Also reduces [param damage] and sets [param hit] = true
+			</description>
+		</method>
+		<method name="print_type" qualifiers="const">
+			<return type="void" />
+			<param index="0" name="variant" type="Variant" />
+			<description>
+				Print the type of the variant.
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="Bullet Speed" type="float" getter="get_bullet_speed" setter="set_bullet_speed">
+			Bullet maximum speed in units per second.
+		</member>
+		<member name="Inital Damage" type="" getter="" setter="">
+			Bullet's inital damage. Reduced on each hit by [method body_entered_area].
+		</member>
+		<member name="RigidBody" type="" getter="" setter="">
+			Reference to the bullet [RigidBody3D], typically the root node of the PackedScene.
+		</member>
+	</members>
+</class>

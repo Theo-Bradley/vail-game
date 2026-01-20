@@ -1,3 +1,82 @@
-[gd_scene format=3 uid="uid://dqbjq4jjwipx"]
+[gd_scene load_steps=10 format=3 uid="uid://dqbjq4jjwipx"]
+
+[ext_resource type="PackedScene" uid="uid://bhbd7m4k3dgwo" path="res://TestScenes/Guns/Bullets/bullet.tscn" id="1_utl4d"]
+[ext_resource type="Script" uid="uid://crx5e1umxskqa" path="res://Scripts/recoil_pistol.gd" id="2_rvdi8"]
+[ext_resource type="Script" uid="uid://bgqk5iew2wvhd" path="res://Scripts/hittable_script.gd" id="3_rvdi8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_opdje"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p61rx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gvvr5"]
+size = Vector3(0.12, 0.12, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rvdi8"]
+size = Vector3(0.06, 0.12, 0.06)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_utl4d"]
+size = Vector2(20, 20)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rvdi8"]
+size = Vector3(2009.9299, 0.7462891, 20)
 
 [node name="0_1_alpha" type="Node3D"]
+
+[node name="PlayerParent" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="PlayerMovement" type="PlayerMovement" parent="PlayerParent"]
+"Max Speed" = 6.0
+"Moving Acceleration" = 60.0
+"Moving Friction" = 0.45
+collision_layer = 4
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerParent/PlayerMovement"]
+mesh = SubResource("BoxMesh_opdje")
+skeleton = NodePath("../..")
+
+[node name="MovementHitbox" type="CollisionShape3D" parent="PlayerParent/PlayerMovement"]
+shape = SubResource("CapsuleShape3D_p61rx")
+
+[node name="PlayerLook" type="PlayerLook" parent="PlayerParent/PlayerMovement"]
+
+[node name="Gun" type="Gun" parent="PlayerParent/PlayerMovement/PlayerLook" node_paths=PackedStringArray("Muzzle")]
+Muzzle = NodePath("Muzzle")
+"Bullet Resource" = ExtResource("1_utl4d")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2064197, -0.5743743)
+
+[node name="Muzzle" type="Node3D" parent="PlayerParent/PlayerMovement/PlayerLook/Gun"]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, -0.22457474)
+script = ExtResource("2_rvdi8")
+recoil = 4.0
+recoil_decay = 12.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerParent/PlayerMovement/PlayerLook/Gun"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.072425365)
+mesh = SubResource("BoxMesh_gvvr5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerParent/PlayerMovement/PlayerLook/Gun"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08102393, 0.05406058)
+mesh = SubResource("BoxMesh_rvdi8")
+
+[node name="Camera3D" type="Camera3D" parent="PlayerParent/PlayerMovement/PlayerLook"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2675388, -0.016058207)
+
+[node name="Ground" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("PlaneMesh_utl4d")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Ground"]
+collision_layer = 3
+script = ExtResource("3_rvdi8")
+metadata/hittable = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 994.96497, -0.32314453, 0)
+shape = SubResource("BoxShape3D_rvdi8")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.48551163, 0.8742302, 0, -0.8742302, 0.48551163, 0, 0, 0)
+light_color = Color(1, 0.8627451, 0.7490196, 1)
