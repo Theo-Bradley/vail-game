@@ -23,6 +23,10 @@ protected:
 	RigidBody3D* rb = nullptr;
 	void set_rb(RigidBody3D* ref);
 	RigidBody3D* get_rb();
+	float lifetime = 5.0f;
+	void set_lifetime(float val);
+	float get_lifetime();
+	bool valid = true;
 
 public:
 	Bullet() = default;

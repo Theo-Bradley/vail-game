@@ -26,10 +26,11 @@ size = Vector3(2009.9299, 0.7462891, 20)
 [node name="PlayerParent" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
-[node name="PlayerMovement" type="PlayerMovement" parent="PlayerParent"]
+[node name="PlayerMovement" type="PlayerMovement" parent="PlayerParent" node_paths=PackedStringArray("Player Look")]
 "Max Speed" = 6.0
 "Moving Acceleration" = 60.0
 "Moving Friction" = 0.45
+"Player Look" = NodePath("PlayerLook")
 collision_layer = 4
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerParent/PlayerMovement"]

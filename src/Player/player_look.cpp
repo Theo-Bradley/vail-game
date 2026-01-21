@@ -14,12 +14,21 @@ void PlayerLook::_input(const Ref<InputEvent> event)
 	}
 }
 
+void PlayerLook::_ready()
+{
+	Input::get_singleton()->set_mouse_mode(Input::MOUSE_MODE_CAPTURED);
+}
+
 void PlayerLook::_process(double delta)
 {
 	Vector3 old = get_rotation_degrees();
 	set_rotation_degrees(Vector3(old.x + pitch, old.y + yaw, 0.0f)); //rotate by pitch and yaw
 	pitch = 0.0f; //reset for next frame
 	yaw = 0.0f;
+	if (Input::get_singleton()->is_action_just_pressed("Release_Mouse"))
+	{
+		Input::get_singleton()->set_mouse_mode(Input::MOUSE_MODE_VISIBLE);
+	}
 }
 
 void PlayerLook::print_type(const Variant &p_variant) const {

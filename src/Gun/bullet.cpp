@@ -11,6 +11,10 @@ void Bullet::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("get_inital_damage"), &Bullet::get_inital_damage);
 	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "Inital Damage"), "set_inital_damage", "get_inital_damage");
 
+	ClassDB::bind_method(D_METHOD("set_lifetime", "val"), &Bullet::set_lifetime);
+	ClassDB::bind_method(D_METHOD("get_lifetime"), &Bullet::get_lifetime);
+	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "lifetime"), "set_lifetime", "get_lifetime");
+
 	ClassDB::bind_method(D_METHOD("set_rb", "ref"), &Bullet::set_rb);
 	ClassDB::bind_method(D_METHOD("get_rb"), &Bullet::get_rb);
 	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "RigidBody", PROPERTY_HINT_NODE_TYPE, "RigidBody3D"), "set_rb", "get_rb");
@@ -38,8 +42,14 @@ void Bullet::_physics_process(double delta)
 	//v=u+at
 	if (!hit && rb != nullptr)
 	{
-		float a = (-bullet_speed - rb->get_linear_velocity().z) / delta; //calc acceleration to get to bullet_speed in 1 frame
+		float a = -(bullet_speed - rb->get_linear_velocity().length()) / delta; //calc acceleration to get to bullet_speed in 1 frame
 		rb->apply_central_force(rb->get_transform().get_basis().xform(Vector3(0.0f, 0.0f, rb->get_mass() * a))); //apply to local z
+	}
+	lifetime -= delta;
+	if (lifetime <= 0 && valid)
+	{
+		valid = false;
+		get_parent()->queue_free();
 	}
 }
 
@@ -79,4 +89,14 @@ void Bullet::set_rb(RigidBody3D* ref)
 RigidBody3D* Bullet::get_rb()
 {
 	return rb;
+}
+
+void Bullet::set_lifetime(float val)
+{
+	lifetime = val;
+}
+
+float Bullet::get_lifetime()
+{
+	return lifetime;
 }

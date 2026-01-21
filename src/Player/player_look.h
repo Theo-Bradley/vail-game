@@ -20,6 +20,7 @@ protected:
 public:
 	PlayerLook() = default;
 	~PlayerLook() override = default;
+	void _ready();
 	void _process(double delta);
 	void _input(const Ref<InputEvent> event);
 

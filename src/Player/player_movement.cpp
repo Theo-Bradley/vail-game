@@ -14,6 +14,10 @@ void PlayerMovement::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("get_moveFriction"), &PlayerMovement::get_moveFriction);
 	ClassDB::bind_method(D_METHOD("set_moveFriction", "val"), &PlayerMovement::set_moveFriction);
 	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "Moving Friction"), "set_moveFriction", "get_moveFriction");
+
+	ClassDB::bind_method(D_METHOD("get_playerLook"), &PlayerMovement::get_playerLook);
+	ClassDB::bind_method(D_METHOD("set_playerLook", "ref"), &PlayerMovement::set_playerLook);
+	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Player Look", PROPERTY_HINT_NODE_TYPE, "Node3D"), "set_playerLook", "get_playerLook");
 }
 
 void PlayerMovement::_process(double delta)
@@ -34,7 +38,10 @@ void PlayerMovement::_process(double delta)
 void PlayerMovement::_physics_process(double delta)
 {
 	Vector3 u = get_real_velocity(); //inital velocity
-	Vector3 am = moveAccel * Vector3(moveDirection.x, 0.0f, -moveDirection.y); //movement acceleration (-y because +z is into the camera)
+	Basis basis = get_basis();
+	if (playerLook != nullptr)
+		basis = playerLook->get_basis();
+	Vector3 am = basis.xform(moveAccel * Vector3(moveDirection.x, 0.0f, -moveDirection.y)); //movement acceleration (-y because +z is into the camera)
 	Vector3 af = u.length_squared() > 0.1f ? -u.normalized() * moveFriction * moveAccel * Vector3(1.0f, 0.0f, 1.0f) : Vector3(0.f, 0.f, 0.f); //friction accel (no y friction)
 	//if not moving -> no friction
 	if (u.x == 0.0f)
@@ -79,6 +86,16 @@ float PlayerMovement::get_moveFriction()
 void PlayerMovement::set_moveFriction(float val)
 {
 	moveFriction = val;
+}
+
+void PlayerMovement::set_playerLook(Node3D* ref)
+{
+	playerLook = ref;
+}
+
+Node3D* PlayerMovement::get_playerLook()
+{
+	return playerLook;
 }
 
 void PlayerMovement::print_type(const Variant &p_variant) const {

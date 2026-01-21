@@ -35,4 +35,7 @@ private:
 	float moveFriction = 0.8f;
 	float get_moveFriction();
 	void set_moveFriction(float val);
+	Node3D* playerLook = nullptr;
+	void set_playerLook(Node3D* ref);
+	Node3D* get_playerLook();
 };
