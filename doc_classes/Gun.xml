@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Gun" inherits="Node3D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+		Gun base class, to handle shooting logic.
+	</brief_description>
+	<description>
+		Gun is a class that is spawned in the world, and shoots by spawning a [Bullet] stored in a [PackedScene] [param Bullet Resource]
+	</description>
+	<methods>
+		<method name="shoot">
+			<return type="void" />
+			<description>
+				Called to Shoot the gun. Tries to spawn [param Bullet Resource] at [param Muzzle].
+				First [code]get_child(0)->call("_on_shoot");[/code] calls [method RecoilScript._on_shoot], then a [param Bullet Resource] is spawned for each [Vector2] spawned.
+			</description>
+		</method>
+		<method name="_process">
+			<return type="void" />
+			<description>
+				Checks if input action [code]"Shoot"[/code] was just pressed, and if so calls [method shoot]
+			</description>
+		</method>
+		<method name="print_type" qualifiers="const">
+			<return type="void" />
+			<param index="0" name="variant" type="Variant" />
+			<description>
+				Print the type of the variant.
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="Muzzle" type="Node3D" getter="" setter="">
+			Reference to the [Node3D] that represents the muzzle, where the [param Bullet Resource] will spawn.
+		</member>
+		<member name="Bullet Resource" type="" getter="" setter="">
+			Reference to the [PackedScene] that contains the [Bullet] and other [Node](s) to spawn.
+		</member>
+	</members>
+</class>

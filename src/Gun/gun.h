@@ -19,7 +19,7 @@ protected:
 public:
 	Gun() = default;
 	~Gun() override = default;
-	void Shoot();
+	void shoot();
 	void _process(double delta);
 
 	Node3D* muzzle = nullptr;

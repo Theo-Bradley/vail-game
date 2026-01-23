@@ -8,15 +8,15 @@ void Gun::_bind_methods()
 	ClassDB::bind_method(D_METHOD("get_muzzle"), &Gun::get_muzzle);
 	ClassDB::bind_method(D_METHOD("set_muzzle", "ref"), &Gun::set_muzzle);
 	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Muzzle", PROPERTY_HINT_NODE_TYPE, "Node3D"), "set_muzzle", "get_muzzle");
-	//ClassDB::bind_method(D_METHOD("get_bullet"), &Gun::get_bullet);
-	//ClassDB::bind_method(D_METHOD("set_bullet", "ref"), &Gun::set_bullet);
-	//ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Bullet", PROPERTY_HINT_NODE_TYPE, "Node3D"), "set_bullet", "get_bullet");
+
 	ClassDB::bind_method(D_METHOD("get_bullet_res"), &Gun::get_bullet_res);
 	ClassDB::bind_method(D_METHOD("set_bullet_res", "res"), &Gun::set_bullet_res);
 	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Bullet Resource", PROPERTY_HINT_RESOURCE_TYPE, "PackedScene"), "set_bullet_res", "get_bullet_res");
+
+	ClassDB::bind_method(D_METHOD("shoot"), &Gun::shoot);
 }
 
-void Gun::Shoot()
+void Gun::shoot()
 {
 	if (bullet_res == nullptr)
 	{
@@ -35,7 +35,7 @@ void Gun::Shoot()
 		#ifdef _DEBUG
 		try
 		{
-			new_bullet = dynamic_cast<Node3D*>(bullet_res->instantiate());
+			new_bullet = dynamic_cast<Node3D*>(bullet_res->instantiate()); //copy bullet_res
 		}
 		catch (std::bad_cast)
 		{
@@ -47,18 +47,21 @@ void Gun::Shoot()
 			throw(e);
 		}
 		#else
-		new_bullet = dynamic_cast<Node3D*>(bullet_res->instantiate());
+		new_bullet = dynamic_cast<Node3D*>(bullet_res->instantiate()); //copy bullet_res
 		#endif
-		get_tree()->get_current_scene()->add_child(new_bullet);
+		get_tree()->get_current_scene()->add_child(new_bullet); //add new bullet to scene root
 		if (muzzle != nullptr)
 		{
+			//set bullet pos rot to muzzle pos rot
 			new_bullet->set_position(muzzle->get_global_position());
 			new_bullet->set_rotation(muzzle->get_global_rotation() + Vector3(Vector2(*it).y, Vector2(*it).x, 0.0f));
 		}
+		#ifdef _DEBUG
 		else
 		{
 			UtilityFunctions::push_warning("Failed to set bullet position! Gun::muzzle is nullptr!");
 		}
+		#endif
 	}
 }
 
@@ -66,7 +69,7 @@ void Gun::_process(double delta)
 {
 	if (Input::get_singleton()->is_action_just_pressed("Shoot"))
 	{
-		Shoot();
+		shoot();
 	}
 }
 
@@ -83,16 +86,6 @@ Node3D* Gun::get_muzzle()
 {
 	return muzzle;
 }
-
-/*void Gun::set_bullet(Node3D* ref)
-{
-	bullet = ref;
-}
-
-Node3D* Gun::get_bullet()
-{
-	return bullet;
-}*/
 
 Ref<PackedScene> Gun::get_bullet_res()
 {
