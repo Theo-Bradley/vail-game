@@ -17,7 +17,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	if (p_level != MODULE_INITIALIZATION_LEVEL_SCENE) {
 		return;
 	}
-	GDREGISTER_RUNTIME_CLASS(PlayerMovement);
+	GDREGISTER_RUNTIME_CLASS(PlayerMove);
 	GDREGISTER_RUNTIME_CLASS(PlayerLook);
 	GDREGISTER_RUNTIME_CLASS(Gun);
 	GDREGISTER_RUNTIME_CLASS(Bullet);

@@ -14,6 +14,7 @@ void Gun::_bind_methods()
 	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Bullet Resource", PROPERTY_HINT_RESOURCE_TYPE, "PackedScene"), "set_bullet_res", "get_bullet_res");
 
 	ClassDB::bind_method(D_METHOD("shoot"), &Gun::shoot);
+	GDVIRTUAL_BIND(_process, "delta");
 }
 
 void Gun::shoot()

@@ -4,6 +4,7 @@
 #include "godot_cpp/classes/wrapped.hpp"
 #include "godot_cpp/variant/variant.hpp"
 #include "godot_cpp/classes/rigid_body3d.hpp"
+#include "godot_cpp/core/gdvirtual.gen.inc"
 
 using namespace godot;
 
@@ -33,7 +34,9 @@ public:
 	~Bullet() override = default;
 
 	void _ready();
+	GDVIRTUAL0(_ready);
 	void _physics_process(double delta);
+	GDVIRTUAL1(_physics_process, double);
 	void body_entered_area(Node3D* body);
 
 	void print_type(const Variant &p_variant) const;

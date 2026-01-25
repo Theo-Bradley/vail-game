@@ -2,15 +2,18 @@
 
 void PlayerLook::_bind_methods() {
 	godot::ClassDB::bind_method(D_METHOD("print_type", "variant"), &PlayerLook::print_type);
+	GDVIRTUAL_BIND(_ready);
+	GDVIRTUAL_BIND(_process, "delta");
+	GDVIRTUAL_BIND(_input, "p_event");
 }
 
-void PlayerLook::_input(const Ref<InputEvent> event)
+void PlayerLook::_input(const Ref<InputEvent>& p_event)
 {
-	if (event->get_class() == "InputEventMouseMotion")
+	if (p_event->get_class() == "InputEventMouseMotion")
 	{
 		Vector2 sensitivity = get_node<Node>(NodePath("/root/Globals"))->get("sensitivity"); //get mouse sensitivity from Globals.gd
-		yaw += ((Ref<InputEventMouseMotion>)event)->get_screen_relative().x * sensitivity.x * -1.f; //increment pitch and yaw
-		pitch += ((Ref<InputEventMouseMotion>)event)->get_screen_relative().y * sensitivity.y * -1.f; //..
+		yaw += ((Ref<InputEventMouseMotion>)p_event)->get_screen_relative().x * sensitivity.x * -1.f; //increment pitch and yaw
+		pitch += ((Ref<InputEventMouseMotion>)p_event)->get_screen_relative().y * sensitivity.y * -1.f; //..
 	}
 }
 

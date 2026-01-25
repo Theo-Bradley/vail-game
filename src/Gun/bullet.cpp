@@ -13,13 +13,15 @@ void Bullet::_bind_methods() {
 
 	ClassDB::bind_method(D_METHOD("set_lifetime", "val"), &Bullet::set_lifetime);
 	ClassDB::bind_method(D_METHOD("get_lifetime"), &Bullet::get_lifetime);
-	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "lifetime"), "set_lifetime", "get_lifetime");
+	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "Lifetime"), "set_lifetime", "get_lifetime");
 
 	ClassDB::bind_method(D_METHOD("set_rb", "ref"), &Bullet::set_rb);
 	ClassDB::bind_method(D_METHOD("get_rb"), &Bullet::get_rb);
 	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "RigidBody", PROPERTY_HINT_NODE_TYPE, "RigidBody3D"), "set_rb", "get_rb");
 
 	ClassDB::bind_method(D_METHOD("body_entered_area", "body"), &Bullet::body_entered_area);
+	GDVIRTUAL_BIND(_ready);
+	GDVIRTUAL_BIND(_physics_process, "delta");
 }
 
 void Bullet::print_type(const Variant &p_variant) const {

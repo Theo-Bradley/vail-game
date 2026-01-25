@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="PlayerLook" inherits="Node3D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+		Class to process player input for aiming.
+	</brief_description>
+	<description>
+		This [Node3D] rotates based on mouse input. This input is scaled by [code]Globals.sensitivity[/code].
+	</description>
+	<methods>
+		<method name="_ready" qualifiers="virtual">
+			<return type="void" />
+			<description>
+				Captures mouse, setting [enum Input.MouseMode] to [code]MOUSE_MODE_CAPTURED[/code].
+			</description>
+		</method>
+		<method name="_process" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="delta">
+			<description>
+				Rotates the [Node3D] base by the mouse input.
+				Checks if the Input Action [code]Mouse_Released[/code] is pressed, and if so, sets [enum Input.MouseMode] to [code]MOUSE_MODE_VISIBLE[/code].
+			</description>
+		</method>
+		<method name="_input" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="event">
+			<description>
+				Checks if [param event] is a [InputEventMouseMotion] and if so scales the input by [param Globals.sensitivity]
+			</description>
+		</method>
+		<method name="print_type" qualifiers="const">
+			<return type="void" />
+			<param index="0" name="variant" type="Variant" />
+			<description>
+				Print the type of the variant.
+			</description>
+		</method>
+	</methods>
+</class>

@@ -15,6 +15,20 @@
 				Also reduces [param damage] and sets [param hit] = true
 			</description>
 		</method>
+		<method name="_ready">
+			<return type="void" />
+			<description>
+				Connects [signal body_entered] to [method body_entered_area]
+				Disables gravity for [param RigidBody].
+			</description>
+		</method>
+		<method name="_physics_process">
+			<return type="void" />
+			<description>
+				Applies movement force to [param RigidBody] based on Bullet Speed.
+				Checks if [param Lifetime] is 0 and calls [code]get_parent()->queue_free()[/code] if so.
+			</description>
+		</method>
 		<method name="print_type" qualifiers="const">
 			<return type="void" />
 			<param index="0" name="variant" type="Variant" />
@@ -32,6 +46,9 @@
 		</member>
 		<member name="RigidBody" type="" getter="" setter="">
 			Reference to the bullet [RigidBody3D], typically the root node of the PackedScene.
+		</member>
+		<member name="Lifetime" type="" getter="" setter="">
+			Bullet lifetime before deleting its parent in seconds.
 		</member>
 	</members>
 </class>

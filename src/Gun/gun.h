@@ -7,6 +7,7 @@
 #include "godot_cpp/classes/input.hpp"
 #include"godot_cpp/classes/static_body3d.hpp"
 #include "godot_cpp/classes/packed_scene.hpp"
+#include "godot_cpp/core/gdvirtual.gen.inc"
 
 using namespace godot;
 
@@ -20,7 +21,8 @@ public:
 	Gun() = default;
 	~Gun() override = default;
 	void shoot();
-	void _process(double delta);
+	void _process(double delta) override;
+	GDVIRTUAL1(_process, double);
 
 	Node3D* muzzle = nullptr;
 	Node3D* get_muzzle();

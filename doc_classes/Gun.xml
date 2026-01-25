@@ -17,7 +17,7 @@
 		<method name="_process">
 			<return type="void" />
 			<description>
-				Checks if input action [code]"Shoot"[/code] was just pressed, and if so calls [method shoot]
+				Checks if input action [code]"Shoot"[/code] was just pressed, and if so calls [method shoot].
 			</description>
 		</method>
 		<method name="print_type" qualifiers="const">

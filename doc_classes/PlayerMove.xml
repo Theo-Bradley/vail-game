@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="PlayerMove" inherits="CharacterBody3D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+		An extension of [CharacterBody3D] to process movement input.
+	</brief_description>
+	<description>
+		This class moves the [CharacterBody3D] base class based on the Input Actions [code]Left, Right, Forward, Backward[/code] at a rate less than [param Max Speed].
+	</description>
+	<methods>
+		<method name="_process" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="delta">
+			<description>
+				Sets [Vector2] [param moveDirection] based on the Input Actions [code]Left, Right, Forward, Backward[/code].
+			</description>
+		</method>
+		<method name="_physics_process" qualifiers="virtual">
+			<return type="void" />
+			<argument index="0" name="delta">
+			<description>
+				Calculates the velocity with SUVAT equations.
+				If [param Player Look] is [code]NULL[/code] then forces are local to the PlayerMove class instead of the PlayerLook class.
+				This function also calculates movement friction using [param Moving Friction] coefficient and the inital velocity.
+			</description>
+		</method>
+		<method name="print_type" qualifiers="const">
+			<return type="void" />
+			<param index="0" name="variant" type="Variant" />
+			<description>
+				Print the type of the variant.
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="Max Speed" type="" getter="" setter="">
+			Max player movement speed in Units/sec. The player velocity is clamped to this AFTER friction calulation (innacurate but lets player actually reach [param Max Speed]).
+		</member>
+		<member name="Moving Acceleration" type="" getter="" setter="">
+			Player movement speed in Units/sec^2.
+		</member>
+		<member name="Moving Friction" type="" getter="" setter="">
+			Dynamic/Static Friction coefficient.
+		</member>
+		<member name="Player Look" type="" getter="" setter="">
+			Reference to the [PlayerLook] node on the player. If not set, movement will be relative to the [PlayerMove] class instead.
+		</member>
+	</members>
+</class>

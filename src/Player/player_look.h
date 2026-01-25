@@ -6,6 +6,7 @@
 #include "godot_cpp/classes/input.hpp"
 #include "godot_cpp/classes/input_event.hpp"
 #include "godot_cpp/classes/input_event_mouse_motion.hpp"
+#include "godot_cpp/core/gdvirtual.gen.inc"
 
 using namespace godot;
 
@@ -20,9 +21,12 @@ protected:
 public:
 	PlayerLook() = default;
 	~PlayerLook() override = default;
-	void _ready();
-	void _process(double delta);
-	void _input(const Ref<InputEvent> event);
+	void _ready() override;
+	GDVIRTUAL0(_ready);
+	void _process(double delta) override;
+	GDVIRTUAL1(_process, double);
+	void _input(const Ref<InputEvent>& p_event) override;
+	GDVIRTUAL1(_input, Ref<InputEvent>);
 
 	void print_type(const Variant &p_variant) const;
 };
