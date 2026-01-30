@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="game"
-run/main_scene="uid://dqbjq4jjwipx"
+run/main_scene="uid://kknvi3pauwlq"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="vail_game"
 config/features=PackedStringArray("4.5", "GL Compatibility")

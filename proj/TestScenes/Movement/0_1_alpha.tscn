@@ -19,7 +19,7 @@ size = Vector3(0.06, 0.12, 0.06)
 size = Vector2(20, 20)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rvdi8"]
-size = Vector3(2009.9299, 0.7462891, 20)
+size = Vector3(20, 0.746, 20)
 
 [node name="0_1_alpha" type="Node3D"]
 
@@ -27,9 +27,6 @@ size = Vector3(2009.9299, 0.7462891, 20)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
 
 [node name="PlayerMovement" type="PlayerMove" parent="PlayerParent" node_paths=PackedStringArray("Player Look")]
-"Max Speed" = 6.0
-"Moving Acceleration" = 60.0
-"Moving Friction" = 8.0
 "Player Look" = NodePath("PlayerLook")
 collision_layer = 4
 
@@ -75,7 +72,7 @@ script = ExtResource("3_rvdi8")
 metadata/hittable = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 994.96497, -0.32314453, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.323, 0)
 shape = SubResource("BoxShape3D_rvdi8")
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
