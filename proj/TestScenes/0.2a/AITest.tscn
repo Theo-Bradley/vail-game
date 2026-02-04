@@ -1,8 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://kknvi3pauwlq"]
+[gd_scene load_steps=11 format=3 uid="uid://kknvi3pauwlq"]
 
 [ext_resource type="Script" uid="uid://c0630578teptr" path="res://Scripts/EnemyTest/set_node_to_mouse.gd" id="1_7mr7k"]
 [ext_resource type="Script" uid="uid://bgqk5iew2wvhd" path="res://Scripts/hittable_script.gd" id="1_pi2j2"]
-[ext_resource type="Script" uid="uid://dpwkltk8yvifc" path="res://Scripts/EnemyTest/enemy_test.gd" id="2_yf0fh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf0fh"]
 albedo_color = Color(1, 0, 0, 1)
@@ -42,10 +41,30 @@ script = ExtResource("1_7mr7k")
 main_cam = NodePath("../Camera3D")
 metadata/_custom_type_script = "uid://c0630578teptr"
 
-[node name="Enemy" type="Node3D" parent="." node_paths=PackedStringArray("target")]
+[node name="EnemyCPP" type="Enemy" parent="." node_paths=PackedStringArray("Target", "Nav Agent")]
+Target = NodePath("../MousePosNode")
+"Nav Agent" = NodePath("NavigationAgent3D")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010622025, 0, 8.909662)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="EnemyCPP"]
+path_desired_distance = 0.5
+target_desired_distance = 0.5
+avoidance_enabled = true
+max_speed = 3.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="EnemyCPP"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_pi2j2")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyCPP"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_yf0fh")
+
+[node name="Enemy" type="Node3D" parent="."]
+process_mode = 4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0053110123, 0, 5.30083)
-script = ExtResource("2_yf0fh")
-target = NodePath("../MousePosNode")
+visible = false
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="Enemy"]
 path_desired_distance = 0.5
@@ -103,4 +122,5 @@ transform = Transform3D(1, 0, 0, 0, 0.9274452, 0.3739592, 0, -0.3739592, 0.92744
 light_color = Color(1, 0.8627451, 0.7490196, 1)
 shadow_enabled = true
 
+[connection signal="velocity_computed" from="EnemyCPP/NavigationAgent3D" to="EnemyCPP" method="calculated_safe_velocity"]
 [connection signal="velocity_computed" from="Enemy/NavigationAgent3D" to="Enemy" method="calculated_safe_velocity"]

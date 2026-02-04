@@ -9,6 +9,8 @@
 #include "gun.h"
 #include "Player/player_look.h"
 #include "bullet.h"
+#include "enemy.h"
+#include "ai_manager.h"
 
 using namespace godot;
 
@@ -21,6 +23,8 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 	GDREGISTER_RUNTIME_CLASS(PlayerLook);
 	GDREGISTER_RUNTIME_CLASS(Gun);
 	GDREGISTER_RUNTIME_CLASS(Bullet);
+	GDREGISTER_RUNTIME_CLASS(Enemy);
+	GDREGISTER_RUNTIME_CLASS(AiManager);
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {
