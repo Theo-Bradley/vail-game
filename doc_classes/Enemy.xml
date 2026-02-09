@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="Enemy" inherits="Node3D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
+	<brief_description>
+		Homing Enemy base class.
+	</brief_description>
+	<description>
+		Enemy is a class that is designed to be inherited.
+		Initialization logic will be called at the end of [method _enter_tree] via the [method _init_logic] virtual function. Per tick behaviour can be controlled with the [method _ai_tick] virtual function, which is called once per AI tick by the [AiManager].
+	</description>
+	<methods>
+		<method name="_init_logic">
+			<return type="void" />
+			<description>
+				Called at the end of [method _enter_tree]. Override this to use custom initialization logic.
+			</description>
+		</method>
+		<method name="_ai_tick" qualifiers="const">
+			<return type="void" />
+			<param index="0" name="delta" type="float" />
+			<description>
+				Called on each AI tick. Every [code]1/manager.interval[/code] by the [AiManager][code]manager[/code]. Used to update target. Override for custom AI logic.
+			</description>
+		</method>
+		<method name="_physics_process" qualifiers="const">
+			<return type="void" />
+			<param index="0" name="delta" type="float" />
+			<description>
+				Called on each Physics Tick. Used to move the Enemy, and smoothly rotate towards the next position on the navmesh.
+			</description>
+		</method>
+		<method name="print_type" qualifiers="const">
+			<return type="void" />
+			<param index="0" name="variant" type="Variant" />
+			<description>
+				Print the type of the variant.
+			</description>
+		</method>
+	</methods>
+	<members>
+		<member name="Target" type="" getter="" setter="">
+			Reference to the [MousePosNode] that the Enemy will target.
+		</member>
+		<member name="Nav Agent" type="" getter="" setter="">
+			Reference to the [NavigationAgent3D] that the Enemy uses to navigate.
+		</member>
+	</members>
+</class>
