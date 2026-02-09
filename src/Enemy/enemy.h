@@ -4,6 +4,7 @@
 #include "godot_cpp/classes/wrapped.hpp"
 #include "godot_cpp/variant/variant.hpp"
 #include "godot_cpp/classes/navigation_agent3d.hpp"
+#include "godot_cpp/core/gdvirtual.gen.inc"
 #include "ai_manager.h"
 
 using namespace godot;
@@ -22,8 +23,12 @@ public:
 	~Enemy() override = default;
 
 	virtual void _enter_tree() override;
-	virtual void _ai_tick();
+	virtual void _init_logic();
+	GDVIRTUAL0(_init_logic);
+	virtual void _ai_tick(double delta);
+	GDVIRTUAL1(_ai_tick, double);
 	virtual void _physics_process(double delta) override;
+	GDVIRTUAL1(_physics_process, double);
 	void _on_velocity_computed(Vector3 safe_velocity);
 
 	void print_type(const Variant &p_variant) const;

@@ -17,7 +17,7 @@ func _enter_tree() -> void:
 	(get_child(0) as NavigationAgent3D).velocity_computed.connect(Callable(_on_velocity_computed));
 
 #on _ai_tick update the target pos
-func _ai_tick() -> void:
+func _ai_tick(_delta: float) -> void:
 	(get_child(0) as NavigationAgent3D).target_position = target.position;
 			
 #Update player

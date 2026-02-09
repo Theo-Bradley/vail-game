@@ -1,3 +1,4 @@
 Enemy AI testing
+Add proper godot virtual funcion code to Enemy.cpp
 Documentation for new classes
 Change Application/Config/Custom User Dir Name to final name of the game

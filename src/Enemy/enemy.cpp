@@ -13,13 +13,21 @@ void Enemy::_bind_methods()
 
 	ClassDB::bind_method(D_METHOD("_on_ai_tick"), &Enemy::_ai_tick);
 	ClassDB::bind_method(D_METHOD("_on_velocity_computed"), &Enemy::_on_velocity_computed);
+	GDVIRTUAL_BIND(_init_logic);
+	GDVIRTUAL_BIND(_physics_process, "delta");
+	GDVIRTUAL_BIND(_ai_tick, "delta");
 }
 
 //on _ai_tick update the target pos
-void Enemy::_ai_tick()
+void Enemy::_ai_tick(double delta)
 {
 	if (nav_agent != nullptr && target != nullptr)
 		nav_agent->set_target_position(target->get_global_position());
+}
+
+void Enemy::_init_logic()
+{
+	//add code to call godot sub class function overrides
 }
 
 void Enemy::_enter_tree()
@@ -46,6 +54,9 @@ void Enemy::_enter_tree()
 	#endif
 	manager->connect("_ai_tick", Callable(this, "_on_ai_tick"));
 	next_pos = get_global_position();
+
+	//call custom init func
+	_init_logic();
 }
 
 void Enemy::_physics_process(double delta)
@@ -54,6 +65,8 @@ void Enemy::_physics_process(double delta)
 	if (nav_agent != nullptr && nav_agent->is_navigation_finished() == false)
 	{
 		next_pos = nav_agent->get_next_path_position(); //get next position on path to player
+		
+		//smoothly rotate towards next_pos
 		Vector3 dir = (next_pos - get_global_position()).normalized(); //get direction to next position
 		if (dir.length() > 0)
 		{
@@ -67,7 +80,7 @@ void Enemy::_physics_process(double delta)
 			}
 			
 			float delta_angle = Math::min(total_angle, (float)delta * turn_speed) * rot_dir;
-			rotate_y(delta_angle);
+			rotate_y(delta_angle); //apply rotation
 
 			//calc velocity and either set it(let avoidance call velocity_computed signal) or manually call _on_velocity_computed
 			Vector3 velocity = dir * speed;
@@ -79,6 +92,7 @@ void Enemy::_physics_process(double delta)
 	}
 }
 
+//Update player pos by safe_velocity and _physics_delta
 void Enemy::_on_velocity_computed(Vector3 safe_velocity)
 {
 	if (nav_agent != nullptr && nav_agent->is_navigation_finished() == false)
