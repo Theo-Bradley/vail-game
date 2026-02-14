@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <class name="Bullet" inherits="Area3D" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/godotengine/godot/master/doc/class.xsd">
 	<brief_description>
-		Bullet detects overlaps in its Area3D.
+		Bullet detects overlaps in its Area3D on Collision Layer 2.
 	</brief_description>
 	<description>
 		Bullet is an Area3D that calls hit logic on the overlapping hittable_script if a [CollisionObject3D] with metadata [param hittable] = [code]true[/code] overlaps it.

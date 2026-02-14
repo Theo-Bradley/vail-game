@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://b5rfsy42a2m0i"]
+
+[ext_resource type="PackedScene" uid="uid://bhbd7m4k3dgwo" path="res://TestScenes/Guns/Bullets/bullet.tscn" id="1_q3lat"]
+[ext_resource type="Script" uid="uid://crx5e1umxskqa" path="res://Scripts/recoil_pistol.gd" id="2_tok1r"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_opdje"]
+size = Vector3(1, 2, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p61rx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gvvr5"]
+size = Vector3(0.12, 0.12, 0.3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rvdi8"]
+size = Vector3(0.06, 0.12, 0.06)
+
+[node name="PlayerMovement" type="PlayerMove" node_paths=PackedStringArray("Player Look")]
+"Player Look" = NodePath("PlayerLook")
+collision_layer = 4
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_opdje")
+skeleton = NodePath("../..")
+
+[node name="MovementHitbox" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_p61rx")
+
+[node name="PlayerLook" type="PlayerLook" parent="."]
+
+[node name="Gun" type="Gun" parent="PlayerLook" node_paths=PackedStringArray("Muzzle")]
+Muzzle = NodePath("Muzzle")
+"Bullet Resource" = ExtResource("1_q3lat")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2064197, -0.5743743)
+
+[node name="Muzzle" type="Node3D" parent="PlayerLook/Gun"]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, -0.22457474)
+script = ExtResource("2_tok1r")
+recoil = 4.0
+recoil_decay = 12.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="PlayerLook/Gun"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.072425365)
+mesh = SubResource("BoxMesh_gvvr5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="PlayerLook/Gun"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.08102393, 0.05406058)
+mesh = SubResource("BoxMesh_rvdi8")
+
+[node name="Camera3D" type="Camera3D" parent="PlayerLook"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2675388, -0.016058207)

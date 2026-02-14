@@ -23,3 +23,4 @@ func body_entered_area(body: Node3D):
 	if (body.get_meta("hittable", false) == true):
 		body.call("_on_hit", damage);
 		damage -= 0.1; #replace with penetration calc
+		print("hit something");

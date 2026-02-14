@@ -59,8 +59,10 @@ void Bullet::body_entered_area(Node3D* body)
 {
 	hit = true;
 	if (body->get_meta("hittable", false) == Variant(true))
+	{
 		body->call("_on_hit", damage);
 		damage *= 0.9; //replace with penetration calc
+	}
 }
 
 float Bullet::get_bullet_speed()

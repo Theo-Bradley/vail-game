@@ -41,4 +41,10 @@ public:
 	void set_target(Node3D* ref);
 	NavigationAgent3D* get_nav_agent();
 	void set_nav_agent(NavigationAgent3D* ref);
+	float health = 10.0f;
+	virtual void _on_hit(float damage);
+	void heal(float amt);
+	Node3D* collider = nullptr;
+	void set_collider(Node3D* ref);
+	Node3D* get_collider();
 };

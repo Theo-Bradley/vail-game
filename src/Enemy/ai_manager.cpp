@@ -21,7 +21,7 @@ void AiManager::_process(double delta)
 	interval -= delta;
 	if (interval <= 0.0f)
 	{
-		emit_signal("_ai_tick");
+		emit_signal("_ai_tick", delta);
 		interval = calculate_interval();
 	}
 }

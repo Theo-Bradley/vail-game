@@ -6,13 +6,17 @@ void Enemy::_bind_methods()
 	
 	ClassDB::bind_method(D_METHOD("get_target"), &Enemy::get_target);
 	ClassDB::bind_method(D_METHOD("set_target", "ref"), &Enemy::set_target);
-	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Target", PROPERTY_HINT_NODE_TYPE, "MousePosNode"), "set_target", "get_target");
+	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Target", PROPERTY_HINT_NODE_TYPE, "Node3D"), "set_target", "get_target");
 	ClassDB::bind_method(D_METHOD("get_nav_agent"), &Enemy::get_nav_agent);
 	ClassDB::bind_method(D_METHOD("set_nav_agent", "ref"), &Enemy::set_nav_agent);
 	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Nav Agent", PROPERTY_HINT_NODE_TYPE, "NavigationAgent3D"), "set_nav_agent", "get_nav_agent");
+	ClassDB::bind_method(D_METHOD("set_collider", "ref"), &Enemy::set_collider);
+	ClassDB::bind_method(D_METHOD("get_collider"), &Enemy::get_collider);
+	ADD_PROPERTY(PropertyInfo(Variant::OBJECT, "Collider", PROPERTY_HINT_NODE_TYPE, "CollisionObject3D"), "set_collider", "get_collider");
 
 	ClassDB::bind_method(D_METHOD("_on_ai_tick"), &Enemy::_ai_tick);
 	ClassDB::bind_method(D_METHOD("_on_velocity_computed"), &Enemy::_on_velocity_computed);
+	ClassDB::bind_method(D_METHOD("_on_hit", "damage"), &Enemy::_on_hit);
 	GDVIRTUAL_BIND(_init_logic);
 	GDVIRTUAL_BIND(_physics_process, "delta");
 	GDVIRTUAL_BIND(_ai_tick, "delta");
@@ -48,13 +52,35 @@ void Enemy::_enter_tree()
 	#ifdef _DEBUG
 	if (manager == nullptr)
 	{
-		UtilityFunctions::push_warning("Warning! No AiManager found!   Enemy_enter_tree()::manager.");
+		UtilityFunctions::push_warning("Warning! No AiManager found! Enemy_enter_tree()::manager.");
 		return;
 	}
 	#endif
 	manager->connect("_ai_tick", Callable(this, "_on_ai_tick"));
 	next_pos = get_global_position();
 
+
+	//look for hittable_script
+	if (collider != nullptr)
+	{
+		if (collider->has_signal("_hit"))
+		{
+			collider->connect("_hit", Callable(this, "_on_hit"));
+			UtilityFunctions::print("connected sig");
+		}
+		#ifdef _DEBUG
+		else
+		{
+			UtilityFunctions::push_warning("Warning! Failed to connect Enemy::_on_hit() to '_hit' signal: no '_hit' signal found! Enemy_enter_tree()::collider.");
+		}
+		#endif
+	}
+	#ifdef _DEBUG
+	else
+	{
+		UtilityFunctions::push_warning("Warning! Collider not set! Enemy won't be hit. Enemy_enter_tree()::collider.");
+	}
+	#endif
 	//call custom init func
 	_init_logic();
 }
@@ -92,6 +118,16 @@ void Enemy::_physics_process(double delta)
 	}
 }
 
+void Enemy::_on_hit(float damage)
+{
+	health -= damage;
+	if (health <= 0.0f)
+	{
+		//die
+	}
+	UtilityFunctions::print(health);
+}
+
 //Update player pos by safe_velocity and _physics_delta
 void Enemy::_on_velocity_computed(Vector3 safe_velocity)
 {
@@ -117,6 +153,21 @@ void Enemy::set_nav_agent(NavigationAgent3D* ref)
 NavigationAgent3D* Enemy::get_nav_agent()
 {
 	return nav_agent;
+}
+
+void Enemy::heal(float amt)
+{
+	health += amt;
+}
+
+void Enemy::set_collider(Node3D* ref)
+{
+	collider = ref;
+}
+
+Node3D* Enemy::get_collider()
+{
+	return collider;
 }
 
 void Enemy::print_type(const Variant& p_variant) const

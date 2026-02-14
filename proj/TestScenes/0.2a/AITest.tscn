@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://kknvi3pauwlq"]
 
-[ext_resource type="Script" uid="uid://c0630578teptr" path="res://Scripts/EnemyTest/set_node_to_mouse.gd" id="1_7mr7k"]
 [ext_resource type="Script" uid="uid://bgqk5iew2wvhd" path="res://Scripts/hittable_script.gd" id="1_pi2j2"]
+[ext_resource type="PackedScene" uid="uid://b5rfsy42a2m0i" path="res://Player/Player.tscn" id="1_yf0fh"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf0fh"]
 albedo_color = Color(1, 0, 0, 1)
@@ -36,15 +36,14 @@ size = Vector3(20, 0.746, 20)
 [node name="AiManager" type="AiManager" parent="."]
 unique_name_in_owner = true
 
-[node name="MousePosNode" type="Node3D" parent="." node_paths=PackedStringArray("main_cam")]
-script = ExtResource("1_7mr7k")
-main_cam = NodePath("../Camera3D")
-metadata/_custom_type_script = "uid://c0630578teptr"
+[node name="PlayerParent" parent="." instance=ExtResource("1_yf0fh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.188971, 0)
 
-[node name="EnemyCPP" type="Enemy" parent="." node_paths=PackedStringArray("Target", "Nav Agent")]
-Target = NodePath("../MousePosNode")
+[node name="EnemyCPP" type="Enemy" parent="." node_paths=PackedStringArray("Target", "Nav Agent", "Collider")]
+Target = NodePath("../PlayerParent")
 "Nav Agent" = NodePath("NavigationAgent3D")
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010622025, 0, 8.909662)
+Collider = NodePath("Collider3D")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.155653, 0, -8.058836)
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="EnemyCPP"]
 path_desired_distance = 0.5
@@ -57,7 +56,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 mesh = SubResource("BoxMesh_pi2j2")
 skeleton = NodePath("../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyCPP"]
+[node name="Collider3D" type="StaticBody3D" parent="EnemyCPP"]
+collision_layer = 3
+script = ExtResource("1_pi2j2")
+metadata/hittable = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyCPP/Collider3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("BoxShape3D_yf0fh")
 
@@ -83,6 +87,7 @@ shape = SubResource("BoxShape3D_yf0fh")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 23.572289, 0)
+visible = false
 
 [node name="Environment" type="Node" parent="."]
 
@@ -99,7 +104,7 @@ mesh = SubResource("PlaneMesh_yf0fh")
 [node name="StaticBody3D" type="StaticBody3D" parent="Environment/Room1/NavigationRegion3D/Ground/MeshInstance3D"]
 collision_layer = 3
 script = ExtResource("1_pi2j2")
-metadata/hittable = true
+metadata/hittable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Room1/NavigationRegion3D/Ground/MeshInstance3D/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.323, 0)
